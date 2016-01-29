@@ -1,15 +1,12 @@
 {
-  "name": "sage",
-  "version": "8.4.1",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "name": "anp-network-main-redux",
+  "version": "2.0.0",
+  "author": "Pea Glocal <pea@glocal.coop>",
+  "homepage": "https://github.com/glocalcoop/anp-network-main-redux",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
-  },
-  "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "git://github.com/glocalcoop/anp-network-main-redux.git"
   },
   "licenses": [
     {
