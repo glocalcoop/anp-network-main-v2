@@ -1,9 +1,43 @@
 // Glyphicons font path
-$icon-font-path:        "../fonts/";
+$icon-font-path:            "../fonts/";
+
+$white:                     #fff;
+$black:                     #111;
+
+$gray-dark:                 #373a3c;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
+
+$brand-primary:             #0275d8;
+$brand-success:             #5cb85c;
+$brand-info:                #5bc0de;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+// $enable-flex:               false;
+$enable-rounded:            false;
+$enable-shadows:            true;
+// $enable-gradients:          false;
+$enable-transitions:        true;
+// $enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+
 
 // Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$main-sm-columns:           12;
+$sidebar-sm-columns:        4;
 
-// Colors
-$brand-primary:         #27ae60;
+$screen-sm-min:             34em;
+$screen-md-min:             48em;
+$screen-lg-min:             62em;
+$screen-xl-min:             75em;
+
+
+$thumbnail-caption-padding: 1em;
