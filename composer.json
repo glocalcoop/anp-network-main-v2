@@ -14,8 +14,31 @@
   "keywords": [
     "wordpress"
   ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+          "name": "justintadlock/hybrid-core",
+          "version": "master",
+          "type": "theme-library",
+          "dist": {
+              "type": "zip",
+              "url": "https://github.com/justintadlock/hybrid-core/archive/master.zip"
+          }
+      },
+      "require": {
+        "composer/installers": "~1.0",
+      }
+    }
+  ],
   "require": {
     "php": ">=5.4.0",
-    "composer/installers": "~1.0"
-  }
+    "composer/installers": "~1.0",
+    "justintadlock/hybrid-core": "dev-master"
+  },
+    "extra": {
+        "installer-paths": {
+            "./libs/{$name}/": ["type:theme-library"]
+        }
+    }
 }
