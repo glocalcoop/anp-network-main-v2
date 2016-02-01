@@ -10,16 +10,8 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 
-// Launch the Hybrid Core framework.
-require_once( trailingslashit( get_template_directory() ) . '/lib/hybrid-core/hybrid.php' );
-
-define( 'HYBRID_DIR', trailingslashit( get_template_directory() ) . 'lib/hybrid-core/' );
-
-new Hybrid();
-
-include_once( 'lib/hybrid.php' );
-
-
+// Include the Hybrid Core framework.
+include_once( trailingslashit( get_template_directory() ) . 'lib/hybrid.php' );
 
 
 $sage_includes = [

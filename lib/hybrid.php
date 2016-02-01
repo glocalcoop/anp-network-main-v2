@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Initialize Hybrid
+ *
+ */
+
+require_once( trailingslashit( get_template_directory() ) . '/lib/hybrid-core/hybrid.php' );
+
+define( 'HYBRID_DIR', trailingslashit( get_template_directory() ) . 'lib/hybrid-core/' );
+
+new Hybrid();
+
+
 
 # Theme setup
 add_action( 'after_setup_theme', 'anp_network_main_hybrid_setup', 5 );
