@@ -17,7 +17,7 @@ define( 'HYBRID_DIR', trailingslashit( get_template_directory() ) . 'lib/hybrid-
 
 new Hybrid();
 
-include_one( 'lib/hybrid.php' );
+include_once( 'lib/hybrid.php' );
 
 
 
