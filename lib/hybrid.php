@@ -28,6 +28,4 @@ function anp_network_main_hybrid_setup() {
       'grid'          => 'grid'
     ) );
 
-    add_custom_background();
-
 }
