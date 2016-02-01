@@ -1,0 +1,30 @@
+.nav-primary {
+    @extend .navbar;
+    @extend .navbar-inverse;
+
+    margin-bottom: 0;
+    border: none;
+
+    .brand {
+        @extend .navbar-brand;
+    }
+
+    .menu-main-menu-container {
+
+        @extend .collapse;
+        @extend .navbar-collapse;
+
+    }
+
+    .nav {
+        @extend .navbar-nav;
+
+        .menu-item-has-children {
+            @extend .drop-down;
+
+            .sub-menu {
+                @extend .dropdown-menu;
+            }
+        }
+    }
+}
