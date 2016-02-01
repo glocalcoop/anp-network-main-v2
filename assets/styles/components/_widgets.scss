@@ -1,0 +1,16 @@
+.widget_sow-headline,
+.widget_sow-cta .sow-cta-base {
+    @extend .jumbotron;
+
+    .ow-button-hover {
+        @extend .btn;
+        @extend .btn-warning;
+        @extend .btn-lg;
+    }
+
+    .sow-cta-text {}
+
+    .sow-icon-fontawesome {
+        display: none;
+    }
+}
