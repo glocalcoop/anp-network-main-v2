@@ -5,3 +5,4 @@ assets/vendor/
 node_modules
 npm-debug.log
 assets/manifest.json
+*.~
