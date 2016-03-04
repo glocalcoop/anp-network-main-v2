@@ -1,33 +1,41 @@
 <?php
 /**
- * Sage includes
+ * Theme functions and definitions
  *
- * The $sage_includes array determines the code library included in your theme.
- * Add or remove files to the array as needed. Supports child theme overrides.
- *
- * Please note that missing files will produce a fatal error.
- *
- * @link https://github.com/roots/sage/pull/1042
+ * @package Activist_Network_Theme
  */
 
-// Include the Hybrid Core framework.
-include_once( trailingslashit( get_template_directory() ) . 'lib/hybrid.php' );
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/setup.php';
 
+/**
+ * Include Hybrid Core framework
+ */
+include_once( trailingslashit( get_template_directory() ) . 'inc/hybrid.php' );
 
-$sage_includes = [
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/extras.php',    // Custom functions
-  'lib/setup.php',     // Theme setup
-  'lib/titles.php',    // Page titles
-  'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
-];
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
 
-foreach ($sage_includes as $file) {
-  if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
-  }
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
 
-  require_once $filepath;
-}
-unset($file, $filepath);
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';
