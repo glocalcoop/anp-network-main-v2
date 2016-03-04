@@ -1,0 +1,398 @@
+/*********************
+BUDDYPRESS STYLES
+*********************/
+
+body.buddypress {
+
+    .page-title {
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    @include breakpoint(md) {
+        h1 {
+            text-align: left;
+        }
+    }
+
+}
+
+#buddypress,
+#bbpress-forums {
+
+    form {
+        background-color: $color__background-panel;
+        padding: .5em;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    .item-list-tabs {
+
+        ul {
+            @extend .nav;
+            @extend .nav-pills;
+            @extend .nav-justified;
+            max-width: 100%;
+            
+            li {
+                background-color: lighten($color__primary, 40%);
+
+                &.selected {
+                    background-color: $color__primary;
+                }
+
+                a {
+                    color: $color__text-nav-alt;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $color__background-nav-hover-alt;
+                    }
+
+                    span {
+                        @extend .badge;
+                    }
+                }
+
+                &:not(:last-child) {
+                    border-right: 1px solid $color__border-nav-alt;
+                }
+
+            }
+        }
+
+        &#subnav {
+            border-bottom: 1px solid $color__border-nav-alt;
+            li {
+                background-color: $color__background-widget-alt;
+                color: $color__text-nav;
+
+                &.selected {
+                    background-color: rgba(0,0,0,.2);
+                }
+
+                a {
+                    color: $color__text-nav;
+                    &:hover,
+                    &:focus {
+                        background-color: rgba(0,0,0,.4);
+                    }
+                    &:visited {
+                        color: $color__text-nav;
+                    }
+                }
+
+                &#activity-filter-select {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // Lists
+    .item-list {
+        @extend .media-list;
+
+        .activity-comments {
+            ul {
+               padding-left: 1.5em; 
+            }
+        }
+
+        li {
+            @extend .media;
+            padding-top: .5em;
+
+            .item-avatar,
+            .activity-avatar,
+            .acomment-avatar  {
+                @extend .media-left;
+            }
+            .item,
+            .activity-content,
+            .activity-comment-content {
+                @extend .media-body;
+            }
+            .action {
+                @extend .media-right;
+                min-width: 20%;
+            }
+
+            .activity-comments > ul {
+                margin-top: .5em;
+            }
+
+            .activity-avatar,
+            .acomment-avatar {
+                min-width: 50px;
+            }
+
+            li {
+                background-color: rgba($color__primary, .05);
+                padding: .25em;
+            }
+        }
+
+        &> li:not(:first-child) {
+            border-top: 1px solid $color__border-nav-alt;
+        }
+
+        @media screen and (max-width: $sm-screen) {
+            li {
+                display: block;
+
+                .item-avatar,
+                .activity-avatar,
+                .acomment-avatar,
+                .item,
+                .activity-content,
+                .activity-comment-content,
+                .action  {
+                    display: block;
+                    width: 100%;
+                }
+
+                .item-avatar,
+                .activity-avatar,
+                .acomment-avatar {
+                    text-align: center
+                }
+
+            }
+        }
+    }
+
+    .forums {
+        @include no-bullets;
+        @extend .panel;
+        @extend .panel-default;
+
+        .bbp-header {
+            @extend .panel-heading;
+
+        }
+        .bbp-body {
+            @extend .panel-body;
+
+            .bbp-admin-links {
+                @extend .pull-right;
+            }
+            .bbp-reply-header {
+                background-color: $color__background-panel;
+                padding: .5em .25em;
+            }
+
+            .bbp-reply-author {
+                @include make-sm-column(2);
+
+                @media screen and (min-width: $sm-screen) {
+                    padding-left: 0;
+                }
+            }
+            .entry {
+                @include make-sm-column(10);
+                margin-top: .25em;
+            }
+
+
+        }
+
+        .bbp-footer {
+            @extend .panel-footer;
+        }
+    }
+
+    #item-header-cover-image {
+        #item-header-avatar,
+        #item-header-content,
+        #item-actions {
+            text-align: center;
+        }
+
+        #item-header-avatar {}
+        #item-header-content {}
+        #item-actions {
+            @extend .panel;
+            @extend .panel-primary;
+
+            h3 {
+                @extend .panel-heading;
+                margin-top: 0;
+            }
+            ul {
+                @include inline-list;
+                li {
+                    padding: .25em;
+                }
+            }
+        }
+
+        #item-meta {
+            .activity {
+                @extend .label;
+                @extend .label-default;
+            }
+
+            .activity + p {
+                margin-top: .5em;
+            }
+        }
+    }
+
+    // Pagination
+    .bbp-pagination-links {}
+    .pagination {
+        display: block;
+    }
+
+
+    // Images
+    img {
+        &.avatar {
+            @extend .img-circle;
+            padding: 2px;
+            margin-right: .25em;
+            margin-left: .25em;
+            border: 1px solid $color__background-hr-alt;
+        }
+    }
+
+    
+
+    #whats-new-avatar,
+    .activity-greeting {
+        text-align: center;
+
+        @include breakpoint(md) {
+            text-align: left;
+        }
+    }
+
+    #whats-new-avatar {
+        @include breakpoint(md) {
+            img {
+                float: left;
+                margin-right: .5em;
+            }
+        }
+    }
+
+    // Labels
+    .highlight {
+        @extend .label;
+        @extend .label-info;
+    }
+
+    .bbp-topic-tags {
+        a {
+            @extend .label;
+            @extend .label-default;
+        }
+    }
+
+    .bbp-reply-permalink,
+    span.time-since {
+        @extend .label;
+        @extend .label-default;
+    }
+
+    // Badges
+    a {
+        span {
+            @extend .badge;
+
+        }
+    }
+
+        // Buttons
+    .row-actions,
+    .group-button,
+    .activity-meta,
+    .acomment-options {
+        a {
+            @include button-text();
+
+            color: $color__text-light;
+
+            &[href$="document-title/"] {
+                @include button-text($icon: eye);
+            }
+            &[href$="edit/"] {
+                @include button-text($icon: pencil);
+            }
+            &[href$="history"] {
+                @include button-text($icon: history);
+            }
+            &.leave-group {
+                @include button-text($icon: sign-out);
+            }
+            &.acomment-reply {
+                @include button-text($icon: reply);
+            }
+            &.fav {
+                @include button-text($icon: heart);
+            }
+            &.delete-activity {
+                @include button-text($icon: trash);
+            }
+            &.unlink-from-group {
+                @include button-text($icon: chain-broken);
+            }
+        }
+    }
+
+    #bp-create-doc-button {
+        @include button-text($icon: plus-circle);
+    }
+
+    #members-list,
+    #members-dir-list {
+        .small {
+            display: block;
+            &> a {
+                &.member-ban {
+                    @include button-text($icon: ban);
+                }
+                &.member-promote-to-mod {
+                    @include button-text($icon: level-up);
+                }
+                &.member-promote-to-admin {
+                     @include button-text($icon: level-up);
+                }
+                &.confirm {
+                    @include button-text($icon: times);
+                }
+            }
+        }
+
+        .bp-single-member {
+            text-align: center;
+
+            .item-title {
+                font-weight: bold;
+            }
+
+            .activity {
+                display: inline-block;
+                @extend .label;
+                @extend .label-default;
+
+            }
+
+            .is-online .activity {
+                @extend .label-warning;
+            }
+            .is-current-user .activity {
+                @extend .label-info;
+            }
+        }
+    }
+}
+
+

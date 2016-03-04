@@ -1,0 +1,106 @@
+/*********************
+PAGE BUILDER
+*********************/
+
+.so-widget-sow-post-carousel {
+
+    h3 a {
+        @extend .post-excerpt;
+        color: $color__text-main;
+        font-weight: 300;
+    }
+	.sow-carousel-thumbnail {
+        background-color: $color__secondary;
+    }
+    a.sow-carousel-next,
+    a.sow-carousel-previous {
+        background-color: $color__link;
+        border-radius: 0;
+        &:hover,
+        &:focus {
+            background-color: $color__link-hover;
+        }
+    }
+}
+
+// Headline Widget
+.so-widget-sow-headline {
+
+    h1,
+    h2 {
+        color: $color__text-headings !important;
+    }
+    .decoration {}
+}
+
+// Call to Action
+.so-widget-sow-cta {
+
+    .sow-cta-base {
+        background-color: $white !important;
+        border-color: $color__background-hr-alt !important;
+
+        h4 {
+            @extend h2;
+            color: $color__text-headings !important;
+        }
+        h5 {
+            color: $color__text-headings !important;
+        }
+
+        .ow-button-base a {
+            @extend %button;
+            border-radius: 0;
+
+            &:hover,
+            &:focus {
+                background-color: $color__link-hover !important;
+            }
+
+            .sow-icon-fontawesome {
+                color: $white !important;
+            }
+        }
+
+    }
+}
+
+// Slider
+.so-widget-sow-slider {
+
+    .sow-slider-base {
+        border: $color__border-frame;
+    }
+    .sow-slider-images {
+
+        li {
+            max-height: 500px;
+            overflow: hidden;
+        }
+        .sow-slider-image,
+        .sow-slider-image-cover {
+            background-position: top;
+        }
+    }
+    .sow-slide-nav a {
+        color: $color__link !important;
+    }
+}
+
+// Hero
+.so-widget-sow-hero {
+
+    .sow-slider-image-wrapper {
+        padding: 1em;
+    }
+    .sow-slider-base {
+        border: $color__border-frame;
+        h2 {
+            font-size: 2.25rem !important;
+            color: $white;
+        }
+        li {
+            min-height: 250px;
+        }
+    }
+}

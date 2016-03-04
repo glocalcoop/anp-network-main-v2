@@ -1,0 +1,51 @@
+
+.layout-2c-r,
+.layout-2c-l {
+
+
+	#primary {
+		@include make-md-column(9);
+	}
+	#secondary {
+		@include make-md-column(3);
+	}
+
+	#primary,
+	#secondary {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.layout-2c-r {
+	#primary {}
+	#secondary {}
+	@include breakpoint(md) {
+		#primary {
+			padding-right: .5em;
+		}
+		#secondary {
+			padding-left: .5em;
+		}
+	}
+}
+
+.layout-2c-l {
+	#primary {
+		@include make-md-column-push(3);
+	}
+	#secondary {
+		@include make-md-column-pull(9);
+	}	
+	@include breakpoint(md) {
+		#primary {
+			padding-left: .5em;
+		}
+		#secondary {
+			padding-right: .5em;
+		}
+	}
+}
+
+.layout-1c {}
+.layout-grid {}

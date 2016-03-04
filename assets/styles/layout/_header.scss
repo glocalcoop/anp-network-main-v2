@@ -1,0 +1,54 @@
+#masthead {
+
+    .custom-header {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .site-branding {
+        clear: both;
+        padding: 1em;
+        background-color: $color__background-header;
+    }
+
+    .site-title,
+    .site-title a,
+    .site-description {
+        color: $color__text-header;
+    }
+
+    .site-title {
+        @include font-size($h6);
+        margin: 0 .5em 0 0;
+        text-align: center;
+
+        @include breakpoint(md) {
+            @include font-size($h5);
+            display: inline-block;
+            text-align: inherit;
+        }
+        
+        @include breakpoint(lg) {
+            @include font-size($h4);
+        }
+    }
+
+    .site-description {
+        display: none;
+
+        @include breakpoint(md) {
+            @include font-size($h5);
+            margin: 0;
+            font-weight: 300;
+            display: inline-block;
+        }
+        
+        @include breakpoint(lg) {
+            @include font-size($h4);
+        }
+
+    }
+
+}

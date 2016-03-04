@@ -1,0 +1,351 @@
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar,
+.widget-area {
+    
+    p {
+      line-height: 1.3;
+      @include font-size($h6);
+    }
+    .menu a, 
+    .menu a:visited,
+    .menu a:hover {
+        color: $color__white;
+    }
+
+}
+
+/**
+ * General Widget Styles
+ */
+h3.widgettitle,
+h3.widget-title {
+    margin: -5px 0 0.5em;
+    @include font-size($h6);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+.widget {
+    margin: 0 0 $space-half;
+
+    .wrap {
+        @include clearfix;
+    }
+
+    a, 
+    a:visited {
+        display: block;
+        padding: 0.5em 0;
+        font-weight: 300;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+    ul {
+        @include no-bullets;
+        margin: 0;
+        width: 100%;
+    }
+    li {
+        padding: 0;
+        margin: 0;
+        line-height: 1.3;
+        display: block;
+        
+        /* deep nesting */
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            border: 0;
+        }
+        li {
+            border: 0;
+            padding: 0;
+        }
+        a {
+            @include sliding-hover-effect;
+            border: 0;
+        }
+    }
+    form {
+        background: transparent;
+    }
+    label {
+        margin-bottom: 0;
+    }
+    input[type="text"], 
+    input[type="password"], 
+    input[type='email'] {
+      padding: 2px 5px;
+    }
+}
+
+/**
+ * Primary Sidebar Styles
+ */
+#secondary {
+
+    .wrap {
+        background-color: $color__background-widget;
+        padding: 1.5em;
+    }
+
+    .widget {
+        color: $color__white;
+        background-color: $color__background-widget;
+
+        h3.widgettitle,
+        h3.widget-title {
+            color: $color__text-widget-header;
+        }
+
+        a, 
+        a:visited {
+            color: $color__text-widget;
+            &:hover,
+            &:focus {
+                color: $color__text-widget;
+            }
+        }
+        ul {
+            border-bottom: 1px solid $color__border-widget;
+        }
+        li {
+            border-top: 1px solid $color__border-widget;
+            
+            /* deep nesting */
+            li {
+                color: $color__text-widget;
+            }
+        }
+
+    } 
+}
+
+/**
+ * Secondary Sidebar Styles
+ */
+.header-widgets,
+.footer-widgets,
+.content-widgets,
+.home-widgets {
+
+    .wrap {
+        padding: 1.5em;
+        background-color: $color__background-widget-alt;
+    }
+
+    .widget {
+        color: $color__text-widget-alt;
+
+        h3.widgettitle,
+        h3.widget-title {
+            color: $color__text-widget-alt-header;
+        }
+
+        a, 
+        a:visited {
+            color: $color__text-widget-alt;
+            &:hover,
+            &:focus {
+                color: $color__text-widget-alt;
+            }
+        }
+        ul {
+            border-bottom: 1px solid $color__border-widget-alt;
+        }
+        li {
+            border-top: 1px solid $color__border-widget-alt;
+            
+            /* deep nesting */
+            li {
+                color: $color__text-widget-alt;
+            }
+        }
+    }
+
+
+}
+
+.header-widgets {
+
+    .widget.widget_nav_menu {
+        @include clearfix;
+
+        div[class^="menu-"] {
+            @include clearfix;
+        }
+
+        ul {
+            @include clearfix;
+            @include no-bullets;
+            display: table;
+            width: auto;
+            margin: 0 auto;
+            border: none;
+
+            li {
+                display: table-cell;
+                padding-right: .25em;
+                border: none;
+            }
+        }
+
+
+        a {
+            border: 1px solid $color__border-nav;
+            border-radius: 50%;
+            color: $color__text-nav;
+            display: block;
+            height: 35px;
+            width: 35px;
+            position: relative;
+            padding: inherit;
+            // Hide the text
+            white-space: nowrap;
+            overflow: hidden;
+            text-indent: 70px;
+            &:hover,
+            &:focus {
+                padding: inherit;
+            }
+            @include icon-font($icon: cog, $position: before);
+            &:before {
+                height: 33px;
+                width: 33px;
+                line-height: 33px;
+                text-align: center;
+                // Don't hide icon
+                text-indent: 0;
+                float: left;
+            }
+            &:hover:before,
+            &:focus:before {
+                color: $color__text-nav-hover;
+            }
+        }
+        a[href*="codepen.io"]:before {
+            @extend %icon-codepen;
+        }
+        a[href*="digg.com"]:before {
+            @extend %icon-digg;
+        }
+        a[href*="dribbble.com"]:before {
+            @extend %icon-dribble;
+        }
+        a[href*="dropbox.com"]:before {
+            @extend %icon-dropbox;
+        }
+        a[href*="facebook.com"]:before {
+            @extend %icon-facebook;
+        }
+        a[href*="flickr.com"]:before {
+            @extend %icon-flickr;
+        }
+        a[href*="foursquare.com"]:before {
+            @extend %icon-foursquare;
+        }
+        a[href*="plus.google.com"]:before {
+            @extend %icon-google-plus;
+        }
+        a[href*="github.com"]:before {
+            @extend %icon-github;
+        }
+        a[href*="instagram.com"]:before {
+            @extend %icon-instagram;
+        }
+        a[href*="linkedin.com"]:before {
+            @extend %icon-linkedin;
+        }
+        a[href*="path.com"]:before {
+            @extend %icon-cog;
+        }
+        a[href*="pinterest.com"]:before {
+            @extend %icon-pinterest;
+        }
+        a[href*="getpocket.com"]:before {
+            @extend %icon-get-pocket;
+        }
+        a[href*="polldaddy.com"]:before {
+            @extend %icon-cog;
+        }
+        a[href*="reddit.com"]:before {
+            @extend %icon-reddit;
+        }
+        a[href*="skype.com"]:before {
+            @extend %icon-skype;
+        }
+        a[href*="stumbleupon.com"]:before {
+            @extend %icon-stumbleupon;
+        }
+        a[href*="tumblr.com"]:before {
+           @extend %icon-tumblr;
+        }
+        a[href*="twitter.com"]:before {
+            @extend %icon-twitter;
+        }
+        a[href*="vimeo.com"]:before {
+            @extend %icon-vimeo;
+        }
+        a[href*="wordpress.com"]:before {
+            @extend %icon-wordpress;
+        }
+        a[href*="wordpress.org"]:before {
+            @extend %icon-wordpress;
+        }
+        a[href*="youtube.com"]:before {
+            @extend %icon-youtube;
+        }
+        a[href^="mailto:"]:before {
+            @extend %icon-envelope;
+        }
+        a[href*="spotify.com"]:before {
+            @extend %icon-spotify;
+        }
+        a[href*="twitch.tv"]:before {
+            @extend %icon-twitch;
+        }
+        a[href$="/feed/"]:before {
+            @extend %icon-feed;
+        }
+
+
+        @include breakpoint(md) {
+
+            div[class^="menu-"],
+            div[class^="menu-"] ul {
+                text-align: right;
+                float:right;
+            }
+            ul {
+                margin: 0 0 -0.4375em;
+                display: inherit;
+            }
+            li {
+                display: inherit;
+                float: left;
+                margin: 0 0.4375em 0.4375em 0;
+            }
+        }
+
+    }    
+
+}
+
+
+// ARCHIVE, META
+
+.widget_archive, 
+.widget_meta {
+    li {
+        white-space: nowrap;
+        @include font-size($h6);
+        line-height: 1.1;
+    }
+}

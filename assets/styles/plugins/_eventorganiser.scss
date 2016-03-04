@@ -1,0 +1,374 @@
+/*********************
+EVENT ORGANISER
+*********************/
+
+
+.page-events #main {
+    width: 100%;
+}
+
+// EVENT LIST
+
+.event-list {
+    p {
+        margin: 0;
+        line-height: 1.5;
+    }
+    a {
+        color: $color__link;
+        &.button {
+            margin: 0 0 1em 0;
+        }
+    }
+    .event-list-header {
+        display: none;
+    }
+    .event {
+        padding: 10px 0;
+        clear: both;
+    }
+    .event-header {
+        @include make-sm-column(12); 
+        @include make-md-column(3); 
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint(md) {
+            padding: 34px 0 24px 24px;
+        }
+        .meta,
+        .meta span {
+            margin: 0;
+            line-height: 1.5;
+            color: $color__mid-grey;
+            display: inline-block;
+            @include font-size($h6);
+            text-transform: uppercase;
+            &:after {
+                letter-spacing: 5px;
+            }
+            &:last-child:after {
+                content: '';
+            }
+            a, a:visited {
+                color: $color__mid-grey;
+                &:hover {
+                    color: $color__text-main;
+                }
+            }
+        }
+        .event-meta {
+            display: block;
+        }
+        .event-categories {
+            margin-top: 1em;
+            color: $color__link;
+        }
+        span {
+            padding-right: 5px;
+        }
+        .event-time {
+            font-size: 75%;
+            margin-top: .75em;
+        }
+    }
+    .event-content {
+        @include make-sm-column(12); 
+        @include make-md-column(8); 
+    }
+    .event-image {
+        border: $color__border-frame;  
+        img {
+            display: block;
+            margin: 0;
+        }
+        @include breakpoint(md) {
+            float: right; 
+            width: 33%; 
+            height: auto; 
+            max-height: 300px; 
+            margin-left: 20px; 
+            margin-bottom: 10px;
+        }
+    }
+    .event-title {
+        margin: .75em 0 .25em;
+        @include breakpoint(md) {
+            margin-top: .25em;
+        }
+    }
+    .event-location {
+        @include font-size($h6);
+        color: $color__mid-grey;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        span {
+            display: block;
+            @include breakpoint(xs) {
+                display: inline; 
+                padding-right: 5px; 
+                &:after {
+                    content: ' /';
+                }
+            }
+            &:last-child:after {
+                content: '';
+            }
+        }
+    }
+    .event-description {
+        margin-bottom: 1em;
+    }
+}
+
+// SINGLE EVENT PAGE
+.single-event {
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .byline {
+        display: none;
+    }
+    .event-image {
+        border: $color__border-frame;
+        max-height: 150px;
+        overflow: hidden;
+        margin-bottom: 1.5em;
+        @include breakpoint(sm) {
+            max-height: 300px;
+        }
+        img {
+            border: 0;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .event-details {
+        @include breakpoint(sm) {
+            float: left; width: 33%;
+        }
+        .location-address span {
+            @include breakpoint(sm) {
+                display: block;
+            }
+        }
+
+        .city-state-postalcode span {
+            display: inline-block;
+        }
+    }
+    .date-time, 
+    .event-location {
+        margin: .75em 0;
+        line-height: 1.5;
+        @include breakpoint(sm) {
+            margin-bottom: 1.5em;
+        }        
+        span {
+            margin-right: 5px;
+        }
+    }
+    .event-time,
+    .location-address {
+        @include breakpoint(sm) {
+            margin-top: .75em;
+        }        
+    }
+    .location-name,
+    .city-state-postalcode {
+        display: block;
+    }
+    .meta {
+        font-size: 1rem;
+    }
+    div.tools {
+        margin: 1.5em 0;
+        margin-right: 10px;
+        @include breakpoint(sm) {
+            margin-top: 2.25em;
+        }        
+    }
+    .event-description {
+        margin: 2em 0;
+        @include breakpoint(sm) {
+            padding-left: 34%; 
+            padding-right: 20px;
+        }        
+    }
+    .event-map {
+        border: $color__border-frame;
+        margin: 1.5em 0;
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+    }
+    .event-categories {
+        margin-top: 1em;
+    }
+    .event-footer {
+        clear: both;
+    }
+}
+
+// CATEGORIES LIST
+ul.event-categories {
+    margin: 0;
+    margin-top: -18px;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline;
+        margin-right: 20px;
+    }
+}
+
+
+.all-events-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+// SINGLE VENUE & CATEGORY
+
+.tax-event-venue,
+.tax-event-category {
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .page-header {
+        margin-bottom: 2em;
+    }
+
+    .venue-address {
+        margin-bottom: 2em;
+    }
+
+    .city-state-postalcode {
+        display: block;
+    }
+
+    .event-title {
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .date-time {
+        display: inline-block;
+
+        &:before {
+            content: ' - ';
+        }
+    }
+
+    .event-time {
+        &:before {
+            content: ' - ';
+        }
+    }
+
+}
+
+
+
+// HOME PAGE MODULE
+
+.home-modules {
+    .events-list ul { 
+        li {
+            @include transition(background 0.25s ease);
+            background: $color__primary;
+            color: $color__white;
+            max-height: 100px; 
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            @include make-xs-column(2);
+            @include make-sm-column(6);
+
+            &:hover {
+                background: $color__tertiary;
+                cursor: pointer;
+            }
+        }
+        .event-promo,
+        .all-events-link {
+            //background: lighten($color__primary, 10);
+            height: 100px;
+            a {
+                display: block;
+                color: $color__white;
+                text-align: center;
+                line-height: 95px;
+            }
+        }
+        .all-events-link {
+            @include font-size($h3);
+        }
+    }
+    .event-start {
+        float: left;
+        width: 24%;
+        text-align: center;
+        color: $color__white;
+        border-right: 1px solid $color__white;
+        border-right: 1px solid rgba(255,255,255,.3);
+        margin: 0 10px 0 0;
+        padding: 10px 0;
+        line-height: 1.1;
+        .event-date {
+            display: block;
+            font-size: 250%;
+        }
+    }
+    .event-title {
+        width: 70%;
+        margin: 0;
+        padding: 10px 0;
+        max-height: 90px; 
+        overflow: hidden;
+        @include breakpoint(xs) {
+            @include font-size(20); line-height: 1.3;
+        }
+        a {
+            display: block;
+            color: $color__white;
+        }
+    }
+
+    @media (max-width: $md-screen) {
+
+        .event-start {
+            float: none;
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid rgba(255,255,255,.3);
+
+            .event-month,
+            .event-day,
+            .event-date,
+            .all-events-link {
+                @include font-size(16); 
+                line-height: 1.3;
+            }
+            .event-date {
+                display: inline;
+            }
+        }
+
+        .event-title {
+            margin-right: auto;
+            margin-left: auto;
+            max-height: auto;
+            text-align: center;
+        }
+
+    }
+}
+

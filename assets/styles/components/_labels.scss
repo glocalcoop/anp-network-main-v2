@@ -1,0 +1,15 @@
+.tags a,
+.category a,
+.cat-links a {
+    @extend .label;
+    @extend .label-default;
+    &:visited {
+        color: $color__text-button;
+    }
+}
+
+a[href*="=edit"] {
+	margin-right: .25em;
+	margin-left: .25em;
+	@include icon-font(pencil, before);
+}

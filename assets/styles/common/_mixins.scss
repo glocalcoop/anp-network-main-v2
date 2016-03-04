@@ -1,0 +1,407 @@
+// RWD BREAKPOINTS 
+// mobile first! so you only have to use floats etc in larger sizes
+// set breakpoints where your content breaks, not particular devices
+
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media screen and (min-width: $xs-screen)  { @content; } 
+  }
+  @if $point == sm {
+    @media screen and (min-width: $sm-screen) { @content; }
+  }
+  @if $point == md {
+    @media screen and (min-width: $md-screen) { @content; }
+  }
+  @if $point == lg {
+    @media screen and (min-width: $lg-screen) { @content; }
+  }
+  @else if $point == xl {
+    @media screen and (min-width: $xl-screen) { @content; }
+  }
+}
+
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+/**
+ * Lists
+ */
+@mixin no-bullets() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin inline-list() {
+  @include no-bullets();
+  li {
+   display: inline-block; 
+ }
+}
+
+
+@mixin inline-table-list() {
+  @include no-bullets();
+  display: table;
+  li {
+    display: table-cell;
+  }
+}
+
+@mixin inline-flex-list($direction: row, $wrap: wrap, $align: space-between, $shrink: 1, $grow: 0, $context: auto) {
+  @include no-bullets();
+  display: flex;
+  flex-wrap: $wrap;
+  li {
+    flex: $shrink $grow $context;
+    margin-bottom: 1px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0,0,0,.1);
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+/**
+ * Navigation
+ */
+@mixin tab-nav($color: $white, $color__background-body: $color__default, $active-color: $white, $active-bg-color: $color__primary, $border-color: rgba(0,0,0,.1)) {
+  ul {
+    @include inline-list();
+    width: 100%;
+
+    li {
+      a {
+        display: block;
+        padding: .25em .5em;
+        background-color: $color__background-body;
+        color: $color;
+        &:hover,
+        &:focus {
+          background-color: darken($color__background-body, 20%);
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid $border-color;
+        }
+      }
+
+      &:active a,
+      &.current a,
+      &.selected a {
+        background-color: $active-bg-color;
+        color: $active-color;
+      }
+    }
+  }
+  
+}
+
+@mixin flex-tab-nav($color: $white, $bg-color: $color__default, $active-color: $white, $active-bg-color: $color__primary, $border-color: rgba(0,0,0,.1), $direction: row, $wrap: wrap, $align: space-between) {
+  ul {
+    @include inline-flex-list($direction, $wrap, $align);
+    li {
+      a {
+        display: block;
+        padding: .5em .75em;
+        background-color: $color__background-body;
+        color: $color;
+        &:hover,
+        &:focus {
+          background-color: darken($color__background-body, 20%);
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid rbga($color__background-body,.1);
+        }
+      }
+
+      &:active a,
+      &.current a,
+      &.selected a {
+        background-color: $active-bg-color;
+        color: $active-color;
+      }
+
+    }
+  }
+}
+
+/**
+ * Modules
+ */
+@mixin card($background: transparent, $border: rgba(0,0,0,.1), $color: $color__text-main) {
+  border: 1px solid $border;
+  padding: 0.4em 1.2em;
+  background-color: $background;
+
+  h3 {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    text-transform: uppercase;
+    color: $color;
+    @include font-size($smaller);
+    margin-bottom: .35em;
+
+    @include breakpoint(md) {
+      @include font-size($small);
+      margin-bottom: .5em;
+    }
+
+  }
+}
+
+/**
+ * Buttons
+ */
+@mixin button($font-size: $small, $color: $white, $bg-color: $color__default) {
+
+  @include transition(all 0.25s ease);
+  @include font-size($font-size);
+  text-transform: uppercase; 
+  line-height: 1.2;
+  font-weight: 700;
+  padding: .75em 3em;
+  text-align: center;
+  border: 0;
+  background: $color__background-body;
+  color: $color !important;
+  display: inline-block;
+  border-radius: $border-radius-base;
+  &:link,
+  &:visited {
+    color: $color !important;
+  }
+  &:hover,
+  &:focus {
+    background: lighten($color__background-body, 10);
+    color: $color !important;
+  }
+}
+
+@mixin icon-font($icon: cog, $position: none) {
+  @if $position == "after" {
+    &:after {
+      margin-left: .5em;
+      @include fa-icon;
+      @extend %icon-#{$icon};
+    }
+  }
+  @elseif $position == "before" {
+    &:before {
+      margin-right: .5em;
+      @include fa-icon;
+      @extend %icon-#{$icon};
+    }
+  }
+  @else {
+    @include fa-icon;
+    @extend %icon-#{$icon};
+  }
+}
+
+@mixin button-text($color: $color__text-main, $icon: cog, $icon-color: $color__default) {
+  font-weight: normal;
+  color: $color;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0;
+  background: transparent;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: inherit;
+  padding: 0 .5em 0 0;
+  @include font-size($small);
+
+  @include breakpoint(md) {
+    @include font-size($h6);
+  }
+
+  &:link,
+  &:visited  {
+    color: $color;
+  }
+  &:hover,
+  &:focus  {
+    color: darken($color, 20%);
+  }
+
+  &:before {
+    @include icon-font($icon);
+    margin-right: 4px;
+    color: $icon-color;
+  }
+}
+
+
+@mixin button-icon($icon: cog, $color: $white, $background-color: $color__default) {
+  @include button($color: $color, $color__background-body: $background-color);
+  
+  &:before {
+    @include icon-font($icon);
+  }
+}
+
+
+/**
+ * Elements
+ */
+@mixin flip-button($color: $color__white){
+  background: $color;
+  border-color: $color;
+  color: $color !important;
+  &:hover,
+  &:focus {
+    background: $color__background-content;
+    color: $color !important;
+  }
+}
+
+@mixin badge($color: $white, $bgcolor: $color__default, $font-size: $tiny) {
+  @include font-size($font-size);
+  background-color: $bgcolor;
+  border-radius: 10px;
+  color: $color;
+  display: inline-block;
+  line-height: 1;
+  min-width: 10px;
+  padding: 3px 7px;
+}
+
+/**
+ * Utilities
+ */
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+// Hide/show with transition
+// http://bitsofco.de/3-useful-reusable-sass-mixins/#hidingandshowingelementswithatransition
+@mixin fade($type) {
+
+  @if $type == 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+  }
+
+  @else if $type == 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+  }
+
+}
+
+@mixin screen-reader-text() {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  /* many screen reader and browser combinations announce broken words as they would appear visually */
+  word-wrap: normal !important;
+}
+
+@mixin visuallyhidden() {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin fullwidth($bg-color: $color__black, $opacity: .5) {
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: rgba($color__black, $opacity);
+}
+
+@mixin border($position: bottom, $color: $color__background-hr, $weight: 1px, $style: solid, $space: .25em) {
+
+  @if $position == 'bottom' {
+    border-bottom: $weight $style $color;
+    margin-bottom: $space;
+    padding-bottom: $space;
+  }
+  @else if $position == 'top' {
+    border-top: $weight $style $color;
+    margin-top: $space;
+    padding-top: $space;
+  }
+  @else if $position == 'right' {
+    border-right: $weight $style $color;
+    margin-right: $space;
+    padding-right: $space;
+  }
+  @else if $position == 'left' {
+    border-left: $weight $style $color;
+    margin-left: $space;
+    padding-left: $space;
+  }
+
+}
+
+// Sliding hover effect
+@mixin sliding-hover-effect() {
+    padding-left: 0;
+    padding-right: 20px;
+    &:hover,
+    &:focus {
+        padding-left: 15px;
+        padding-right: 5px;
+        background-color: darken($color__background-widget, 10%);
+        background-color: rgba(0,0,0,.1);
+    }
+}

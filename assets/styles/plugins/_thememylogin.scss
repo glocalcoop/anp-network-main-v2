@@ -1,0 +1,75 @@
+/*********************
+THEME MY LOGIN
+*********************/
+
+.login {
+	padding: 0 0 20px;
+	p.error, 
+	p.message {
+        padding: 20px;
+        margin-bottom: 20px;
+        color: $color__text-main;
+        border: 0;
+        @include font-size($h5);
+	}
+	p.error {
+        background-color: lighten($brand-danger, 30);
+    }
+    p.message {
+        background-color: lighten($warning, 30);
+    }
+    form label {
+        margin-bottom: 0;
+    }
+}
+
+#pass-strength-result {
+    background-color: $color__light-grey;
+    border-color: $color__mid-grey !important;
+    &.bad {
+        background-color: lighten($color__secondary, 30);
+        border-color: $color__secondary !important;
+    }
+    
+    &.good {
+        background-color: lighten($warning, 30);
+        border-color: $warning !important;
+    }
+    &.short {
+        background-color: lighten($brand-danger, 30);
+        border-color: $brand-danger !important;
+    }
+    &.strong {
+        background-color: lighten($success, 30);
+        border-color: $success !important;
+    }
+}
+
+
+.tml-action-links li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px 10px 0;
+}
+
+
+// WIDGET
+
+.widget_theme_my_login {
+    
+    .widgettitle {
+        max-width: 75%;
+    }
+    .login {
+        position: relative;
+    }
+    .tml-user-avatar {
+        float: right;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        img {
+            border: 3px solid white;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.widget {
+	// margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+.header-widgets,
+.content-widgets,
+.footer-widgets {
+
+    &.per-row-2 {
+        .widget {
+            @include make-md-column(6);
+        }
+        
+    }
+    &.per-row-3 {
+        .widget {
+            @include make-md-column(4);
+        }       
+    }
+    &.per-row-4 {
+        .widget {
+            @include make-md-column(3);
+        }
+
+    }
+
+    &.per-row-2,
+    &.per-row-3,
+    &.per-row-4 {
+        .widget {
+            padding: 0;
+
+            @include breakpoint(md) {
+                padding-right: 1em;
+                padding-left: 1em;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+
+}
