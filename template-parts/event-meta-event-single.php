@@ -1,28 +1,12 @@
 <?php
 /**
- * The template is used for displaying a single event details.
+ * Template part for displaying Event Organiser meta content
  *
- * You can use this to edit how the details re displayed on your site. (see notice below).
- *
- * Or you can edit the entire single event template by creating a single-event.php template
- * in your theme.
- *
- * For a list of available functions (outputting dates, venue details etc) see http://codex.wp-event-organiser.com
- *
- ***************** NOTICE: *****************
- *  Do not make changes to this file. Any changes made to this file
- * will be overwritten if the plug-in is updated.
- *
- * To overwrite this template with your own, make a copy of it (with the same name)
- * in your theme directory. See http://docs.wp-event-organiser.com/theme-integration for more information
- *
- * WordPress will automatically prioritise the template in your theme directory.
- ***************** NOTICE: *****************
- *
- * @package Event Organiser (plug-in)
- * @since 1.7
+ * @package Activist_Network_Theme
  */
+
 ?>
+
 
 <!-- Choose a different date format depending on whether we want to include time -->
 <?php 

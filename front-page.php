@@ -17,19 +17,20 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part( 'template-parts/content', 'hero' ); ?>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+				<?php get_template_part( 'template-parts/content', 'front' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+    <?php if ( is_active_sidebar( 'sidebar-home' ) ) : ?>
+    <?php $widget_class = anp_network_main_count_widgets( 'sidebar-home' ); ?>
+    <div class="home-widgets <?php echo $widget_class; ?>">
+        <?php dynamic_sidebar( 'sidebar-home' ); ?>
+    </div>
+    <?php endif; ?>
+
 <?php get_footer(); ?>
