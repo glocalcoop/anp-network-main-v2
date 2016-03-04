@@ -13,3 +13,11 @@ NETWORK CONTENT
     }
 
 }
+
+.widget {
+    h4 {
+        @include font-size($h6);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
