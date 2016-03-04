@@ -1,8 +1,8 @@
 {
   "name": "glocalcoop/anp-network-main-redux",
   "type": "wordpress-theme",
-  "license": "MIT",
-  "description": "Main network theme for the Activist Network, based on Roots Sage.",
+  "license": "GPL-3.0",
+  "description": " A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap",
   "homepage": "https://github.com/glocalcoop/anp-network-main-redux",
   "authors": [
     {
