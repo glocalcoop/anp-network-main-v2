@@ -10586,7 +10586,8 @@ h3.widget-title {
   font-weight: 300; }
 
 .widget, article.handbook .table-of-contents {
-  margin: 0 0 12px; }
+  margin: 0 0 12px;
+  border-radius: 0; }
   .widget .wrap:after, article.handbook .table-of-contents .wrap:after {
     content: "";
     display: table;
@@ -10642,11 +10643,13 @@ h3.widget-title {
  */
 #secondary .wrap {
   background-color: #2f4550;
+  border-radius: 0;
   padding: 1.5em; }
 
 #secondary .widget, #secondary article.handbook .table-of-contents, article.handbook #secondary .table-of-contents {
-  color: #fff;
-  background-color: #2f4550; }
+  background-color: #2f4550;
+  border-radius: 0;
+  color: #fff; }
   #secondary .widget h3.widgettitle, article.handbook .table-of-contents #secondary .widget h3, #secondary article.handbook .table-of-contents h3, article.handbook #secondary .table-of-contents h3,
   #secondary .widget h3.widget-title,
   #secondary article.handbook .table-of-contents h3.widget-title, article.handbook
@@ -10681,7 +10684,8 @@ h3.widget-title {
 .content-widgets .wrap,
 .home-widgets .wrap {
   padding: 1.5em;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  border-radius: 0; }
 
 .header-widgets .widget, .header-widgets article.handbook .table-of-contents, article.handbook .header-widgets .table-of-contents,
 .footer-widgets .widget,
@@ -11083,7 +11087,9 @@ body {
 #masthead .site-branding {
   clear: both;
   padding: 1em;
-  background-color: #2f4550; }
+  background-color: #2f4550;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
 
 #masthead .site-title,
 #masthead .site-title a,
@@ -11792,6 +11798,9 @@ object {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+form {
+  border-radius: 0; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],

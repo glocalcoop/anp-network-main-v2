@@ -35,7 +35,8 @@
   background-color: #f7f7f7;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  border-radius: 4px; }
 
 .bp-user #buddypress #cover-image-container #item-header-avatar,
 .groups #buddypress #cover-image-container #item-header-avatar {

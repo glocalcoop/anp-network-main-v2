@@ -11,7 +11,8 @@
         clear: both;
         padding: 1em;
         background-color: $color__background-header;
-    }
+        border-top-right-radius:: $element__border-radius-base;
+        border-top-left-radius:: $element__border-radius-base;    }
 
     .site-title,
     .site-title a,

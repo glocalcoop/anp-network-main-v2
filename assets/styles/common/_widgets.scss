@@ -32,6 +32,7 @@ h3.widget-title {
 
 .widget {
     margin: 0 0 $space-half;
+    border-radius: $element__widget-radius;
 
     .wrap {
         @include clearfix;
@@ -93,12 +94,14 @@ h3.widget-title {
 
     .wrap {
         background-color: $color__background-widget;
+        border-radius: $element__widget-radius;
         padding: 1.5em;
     }
 
     .widget {
-        color: $color__white;
         background-color: $color__background-widget;
+        border-radius: $element__widget-radius;
+        color: $color__white;
 
         h3.widgettitle,
         h3.widget-title {
@@ -139,6 +142,7 @@ h3.widget-title {
     .wrap {
         padding: 1.5em;
         background-color: $color__background-widget-alt;
+        border-radius: $element__widget-radius;
     }
 
     .widget {
