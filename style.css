@@ -11032,6 +11032,11 @@ body {
 .site-footer {
   clear: both;
   width: 100%; }
+  .site-footer .footer-widgets:after,
+  .site-footer .copyright:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .layout-2c-r #primary,
 .layout-2c-l #primary {
