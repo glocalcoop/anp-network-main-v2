@@ -1,102 +1,37 @@
 <?php
 /**
- * The template for displaying a single event
+ * The template for displaying all single posts.
  *
- * Please note that since 1.7, this template is not used by default. You can edit the 'event details'
- * by using the event-meta-event-single.php template.
- *
- * Or you can edit the entire single event template by creating a single-event.php template
- * in your theme. You can use this template as a guide.
- *
- * For a list of available functions (outputting dates, venue details etc) see http://codex.wp-event-organiser.com/
- *
- ***************** NOTICE: *****************
- *  Do not make changes to this file. Any changes made to this file
- * will be overwritten if the plug-in is updated.
- *
- * To overwrite this template with your own, make a copy of it (with the same name)
- * in your theme directory. See http://docs.wp-event-organiser.com/theme-integration for more information
- *
- * WordPress will automatically prioritise the template in your theme directory.
- ***************** NOTICE: *****************
- *
- * @package Event Organiser (plug-in)
- * @since 1.0.0
+ * @package Activist_Network_Theme
  */
 
-//Call the template header
 get_header(); ?>
 
-<div class="content">
-
-    <div class="wrap">
-
-        <main role="main">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+            <?php get_template_part( 'template-parts/content', 'single-event' ); ?>
 
-                <header class="article-header">
+            <?php the_post_navigation(); ?>
 
-                    <?php if( has_post_thumbnail() ) : ?>
+            <?php
+                // If comments are open or we have at least one comment, load up the comment template.
+                if ( comments_open() || get_comments_number() ) :
+                    comments_template();
+                endif;
+            ?>
 
-                        <section class="event-image">
-                            <?php the_post_thumbnail('full'); ?> 
-                        </section>
+        <?php endwhile; // End of the loop. ?>
 
-                    <?php endif; ?>
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
-                    <!-- Display event title -->
-                    <h1 class="entry-title single-title event-title" itemprop="headline"><?php the_title(); ?></h1>
+<?php if( 'full' != hybrid_get_post_layout( get_the_id() ) && 'grid' != hybrid_get_post_layout( get_the_id() ) ) : ?>
 
-                </header><!-- .entry-header -->
-        
-                <!-- Get event information, see template: event-meta-event-single.php -->
-                <?php get_template_part( 'partials/event-meta', 'event-single' ); ?>
+<?php get_sidebar(); ?>
 
-                <section class="event-description">
+<?php endif; ?>
 
-                    <!-- The content or the description of the event-->
-                    <?php the_content(); ?>
-
-                    <!-- Does the event have a venue? -->
-                    <?php if( eo_get_venue() ): ?>
-                        <!-- Display map -->
-                        <div class="event-map">
-                            <?php echo eo_get_venue_map(eo_get_venue(),array('width'=>'100%')); ?>
-                        </div>
-                    <?php endif; ?>
-
-                </section>
-
-                <footer class="event-footer">
-
-                    <?php if( function_exists( 'eo_get_event_meta_list' ) ) : ?>
-                        <?php echo anp_get_event_meta_list(); ?>
-                    <?php endif; ?>
-                
-                    <?php edit_post_link( __( 'Edit'), '<span class="edit-link">', '</span>' ); ?>
-                </footer><!-- .entry-meta -->
-
-            </article><!-- #post-<?php the_ID(); ?> -->
-
-            <!-- If comments are enabled, show them -->
-            <div class="comments-template">
-                <?php comments_template(); ?>
-            </div>              
-
-        <?php endwhile; // end of the loop. ?>
-
-
-        </main>
-
-        <?php get_sidebar(); ?>
-
-    </div>
-
-</div>
-
-
-<!-- Call template footer -->
 <?php get_footer(); ?>

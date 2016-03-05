@@ -23,7 +23,7 @@
 	</h4>
 
 	<!-- Get event information, see template: event-venue-address.php -->
-	<?php get_template_part( '/partials/event', 'venue-address' ); ?>
+	<?php get_template_part( 'event', 'venue-address' ); ?>
 
 	<div class="tools"><a href="" class="add-to-calendar button"><?php _e( 'Save to Calendar', 'anp-network-theme' ); ?></a></div>
 
