@@ -1,0 +1,162 @@
+/**
+ * BuddyPress Header Style
+ * Styles are compiled from source assets/styles/plugins/buddypress-cover-image.scss
+ * Primary BuddyPress styles are compiled into main stylesheet
+ */
+
+@import "../variables/variables";
+@import "../common/mixins";
+
+.bp-user #buddypress,
+.groups #buddypress {
+
+    #cover-image-container {
+
+        // Cover Image
+        #header-cover-image {
+            display: block;
+            max-height: 100px;
+            width: 100%;
+            background-color: $color__background-panel;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #item-header-avatar {
+            margin-top: -15%;
+            text-align: center;
+            img {
+                width: 30%;
+                max-width: 150px;
+            }
+        }
+
+        #item-header-content {
+            text-align: center;
+            width: 100%;
+            clear: both;
+
+        }
+
+    }
+
+}
+
+.bp-user #buddypress {
+
+    #item-header {
+        @include clearfix;
+    }
+
+    @include breakpoint(md) {
+
+        #cover-image-container {
+            position: relative;
+            margin-bottom: 50px;
+            clear: both;
+
+            // Cover Image
+            #header-cover-image {
+                width: 100%;
+                max-height: 225px;
+                z-index: 1;
+            }
+
+            // The avatar and user info
+            #item-header-cover-image {
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+                bottom: -45px;
+
+                #item-header-avatar,
+                #item-header-content {
+                    clear: none;
+                    display: block;
+                    float: left;
+                }
+
+                #item-header-avatar {
+                    margin-top: 0;
+                    width: 20%;
+                    padding-right: .5em;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                #item-header-content {
+                      width: 75%;
+                      text-align: left;
+
+                    h2 {
+                        color: $color__white;
+                        text-shadow: 4px 4px 2px rgba(255, 255, 255, .2),  -3px -4px 2px rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    @include breakpoint(lg) {
+
+        #cover-image-container {
+
+            margin-bottom: 85px;
+            
+            // Cover Image
+            #header-cover-image {}
+
+            // The avatar and user info
+            #item-header-cover-image {
+
+                bottom: -80px;
+
+                #item-header-avatar {}
+
+                #item-header-content {}
+
+            }
+
+        }
+   }
+
+}
+
+.groups #buddypress {
+
+    @include breakpoint(md) {
+
+        #cover-image-container {
+            // Cover Image
+            #header-cover-image {
+                max-height: 225px;
+            }
+
+            // The avatar and user info
+            #item-header-cover-image {
+
+                #item-header-avatar,
+                #item-header-content {}
+
+                #item-header-avatar {
+                    margin-top: -8%;
+                    img {}
+                }
+
+                #item-header-content {
+                    h2 {}
+                }
+
+            }
+
+        }
+
+    }
+
+}
