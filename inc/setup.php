@@ -182,8 +182,7 @@ function anp_network_main_scripts() {
 
   // Dequeue BuddyPress styles
   wp_dequeue_style( 'bp-groupblog-screen' );
-  wp_dequeue_style( 'bbp-default' );
-  // wp_dequeue_style( 'bp-legacy-css' );
+  //wp_dequeue_style( 'bbp-default' );
   wp_dequeue_style( 'invite-anyone-by-email-style' );
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

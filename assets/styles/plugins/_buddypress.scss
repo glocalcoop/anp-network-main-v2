@@ -223,8 +223,7 @@ body.buddypress {
     }
 
     // Sections
-    .forums,
-    .bbp-topics {
+    .forums {
         @include no-bullets;
         @extend .panel;
         @extend .panel-default;
