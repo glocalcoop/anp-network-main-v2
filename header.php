@@ -35,8 +35,6 @@
 
         <?php get_template_part( 'components/custom-header/custom-header' ); ?>
 
-		<?php get_template_part( 'components/site-logo/site-logo' ); ?>
-
 		<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
 
 

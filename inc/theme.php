@@ -120,3 +120,18 @@ add_filter( 'bp_before_groups_cover_image_settings_parse_args', 'anp_buddypress_
  */
 remove_theme_support( 'jetpack-testimonial' );
 
+
+/**
+ * Return early if Site Logo is not available.
+ */
+function anp_network_main_site_logo() {
+  if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
+    return;
+  } else {
+    if ( ! jetpack_has_site_logo() ) {
+      echo bloginfo( 'name' );
+    }
+    jetpack_the_site_logo();
+  }
+}
+
