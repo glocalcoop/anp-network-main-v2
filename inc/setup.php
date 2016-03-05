@@ -157,6 +157,15 @@ function anp_network_main_widgets_init() {
     'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ) );
+  register_sidebar( array(
+    'name'          => esc_html__( 'Community', 'anp-network-main' ),
+    'id'            => 'sidebar-buddypress',
+    'description'   => '',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="wrap">',
+    'after_widget'  => '</div></aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
 
 }
 add_action( 'widgets_init', 'anp_network_main_widgets_init' );
@@ -174,7 +183,7 @@ function anp_network_main_scripts() {
   // Dequeue BuddyPress styles
   wp_dequeue_style( 'bp-groupblog-screen' );
   wp_dequeue_style( 'bbp-default' );
-  wp_dequeue_style( 'bp-legacy-css' );
+  // wp_dequeue_style( 'bp-legacy-css' );
   wp_dequeue_style( 'invite-anyone-by-email-style' );
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
