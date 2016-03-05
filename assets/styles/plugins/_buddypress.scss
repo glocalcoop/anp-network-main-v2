@@ -270,6 +270,7 @@ body.buddypress {
         #item-header-content,
         #item-actions {
             text-align: center;
+
         }
 
         @include breakpoint(md) {
@@ -277,6 +278,7 @@ body.buddypress {
             #item-header-content,
             #item-actions {
                 text-align: left;
+                @include font-size($h6);
             }
         }
 
@@ -287,8 +289,13 @@ body.buddypress {
             @extend .panel-primary;
 
             h3 {
-                @extend .panel-heading;
                 margin-top: 0;
+                @extend .panel-heading;
+                @include font-size($small);
+
+                @include breakpoint(md) {  
+                    @include font-size($h6);
+                }
             }
             ul {
                 @include inline-list;

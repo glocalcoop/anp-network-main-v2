@@ -12086,11 +12086,20 @@ body.buddypress h1 {
   #bbpress-forums #item-header-cover-image #item-header-avatar,
   #bbpress-forums #item-header-cover-image #item-header-content,
   #bbpress-forums #item-header-cover-image #item-actions {
-    text-align: left; } }
+    text-align: left;
+    font-size: 16px;
+    font-size: 1rem; } }
 
 #buddypress #item-header-cover-image #item-actions h3,
 #bbpress-forums #item-header-cover-image #item-actions h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  @media screen and (min-width: 768px) {
+    #buddypress #item-header-cover-image #item-actions h3,
+    #bbpress-forums #item-header-cover-image #item-actions h3 {
+      font-size: 16px;
+      font-size: 1rem; } }
 
 #buddypress #item-header-cover-image #item-actions ul,
 #bbpress-forums #item-header-cover-image #item-actions ul {
