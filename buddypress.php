@@ -7,25 +7,26 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package _s
+ * @package Activist_Network_Theme
  */
 
 get_header(); ?>
 
-	<div class="wrap">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 
-		<div class="primary content-area">
-			<main class="site-main">
+            <?php while ( have_posts() ) : the_post(); ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+                <?php get_template_part( 'template-parts/content', 'buddypress' ); ?>
 
-					<?php get_template_part( 'template-parts/content', 'buddypress' ); ?>
+            <?php endwhile; // End of the loop. ?>
 
-				<?php endwhile; // end of the loop. ?>
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
-			</main><!-- #main -->
-		</div><!-- .primary -->
-
-	</div><!-- .wrap -->
-
+<?php if ( is_active_sidebar( 'sidebar-buddypress' ) ) : ?>
+    <div id="secondary" class="widget-area sidebar" role="complementary">
+        <?php dynamic_sidebar( 'sidebar-buddypress' ); ?>
+    </div><!-- #secondary -->
+<?php endif; ?>
 <?php get_footer(); ?>
