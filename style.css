@@ -11135,8 +11135,10 @@ body {
       font-size: 22px;
       font-size: 1.375rem; } }
 
-#colophon .copyright {
-  padding: .5em .5em .5em 1em; }
+#colophon {
+  margin-top: 1em; }
+  #colophon .copyright {
+    padding: .5em .5em .5em 1em; }
 
 .widget, article.handbook .table-of-contents {
   /* Make sure select elements fit in widgets. */ }
