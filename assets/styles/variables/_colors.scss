@@ -49,6 +49,7 @@ $color__link-visited: darken($color__link, 20%);
 $color__link-hover: darken($color__link, 20%);
 $color__text-main: $color__dark-grey;
 $color__text-light: $color__mid-grey;
+$color__text-inverted: $color__white;
 $color__text-headings: $color__dark-grey;
 
 $color__border-abbr: $color__light-black;
@@ -64,8 +65,8 @@ $color__text-nav-hover: $color__text-nav;
 $color__border-nav: rgba($color__black,.1);
 
 $color__background-nav-alt: $color__primary;
-$color__background-nav-active-alt: $color__background-nav-hover;
-$color__background-nav-hover-alt: $color__background-nav-hover;
+$color__background-nav-active-alt: rgba($color__background-nav-alt,.5);
+$color__background-nav-hover-alt: $color__background-nav-active-alt;
 $color__text-nav-alt: $color__white;
 $color__text-nav-hover-alt: $color__white;
 $color__border-nav-alt: $color__background-nav-hover;

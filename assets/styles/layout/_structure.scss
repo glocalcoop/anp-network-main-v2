@@ -18,12 +18,18 @@ body {
 	margin-top: 1em;
 }
 
+.site-header {
+	@include clearfix;
+}
+
 .site-main {
 	margin: 0;
 }
 
 .site-content {
 	clear: both;
+	@include clearfix;
+	margin-top: 1.5em;
 }
 
 .site-content .widget-area {

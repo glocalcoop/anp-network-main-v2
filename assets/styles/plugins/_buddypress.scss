@@ -1,6 +1,6 @@
-/*********************
-BUDDYPRESS STYLES
-*********************/
+/**
+ * BuddyPress Styles
+ */
 
 body.buddypress {
 
@@ -29,60 +29,95 @@ body.buddypress {
     }
 
     ul {
-        margin-left: 0;
+        @include no-bullets;
+    }
+
+    #item-header {
+        @include clearfix;
+        margin-bottom: .5em;
     }
 
     .item-list-tabs {
 
-        ul {
-            @extend .nav;
-            @extend .nav-pills;
-            @extend .nav-justified;
-            max-width: 100%;
-            
-            li {
-                background-color: lighten($color__primary, 40%);
+        width: 100%;
 
-                &.selected {
-                    background-color: $color__primary;
+        ul {
+            @include no-bullets;
+
+            li {
+                padding: .5em .125em;
+                background-color: lighten($color__background-nav-alt, 40%);
+                color: $color__text-nav-alt;
+                text-align: center;
+
+                &.active,
+                &.selected,
+                &:hover,
+                &:focus {
+                    background-color: $color__background-nav-alt;
+                    color: $color__text-nav-hover-alt;
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(0,0,0,.2);
                 }
 
                 a {
+                    display: block;
                     color: $color__text-nav-alt;
 
                     &:hover,
                     &:focus {
-                        background-color: $color__background-nav-hover-alt;
+                        color: $color__text-nav-hover-alt;
                     }
 
                     span {
                         @extend .badge;
                     }
                 }
+            }
 
-                &:not(:last-child) {
-                    border-right: 1px solid $color__border-nav-alt;
+        }
+
+        @include breakpoint(md) {
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    flex-grow: 1;
+                    border-bottom: none;
+
+                    &:not(:last-child) {
+                        border-bottom: none;
+                        border-right: 1px solid rgba(0,0,0,.2);
+                    }
                 }
-
             }
         }
 
+
         &#subnav {
             border-bottom: 1px solid $color__border-nav-alt;
+
             li {
                 background-color: $color__background-widget-alt;
                 color: $color__text-nav;
 
-                &.selected {
+                &.active,
+                &.selected,
+                &:hover,
+                &:focus {
                     background-color: rgba(0,0,0,.2);
+                    color: $color__text-nav-hover-alt;
                 }
 
                 a {
                     color: $color__text-nav;
-                    &:hover,
-                    &:focus {
-                        background-color: rgba(0,0,0,.4);
-                    }
                     &:visited {
                         color: $color__text-nav;
                     }
@@ -93,6 +128,8 @@ body.buddypress {
                 }
             }
         }
+
+
     }
 
     // Lists
@@ -113,6 +150,7 @@ body.buddypress {
             .activity-avatar,
             .acomment-avatar  {
                 @extend .media-left;
+                min-width: 50px;
             }
             .item,
             .activity-content,
@@ -131,6 +169,14 @@ body.buddypress {
             .activity-avatar,
             .acomment-avatar {
                 min-width: 50px;
+            }
+
+            .item-title a {
+                font-weight: 500;
+            }
+
+            .activity {
+                color: $color__text-light;
             }
 
             li {
@@ -161,14 +207,24 @@ body.buddypress {
                 .item-avatar,
                 .activity-avatar,
                 .acomment-avatar {
-                    text-align: center
+                    text-align: center;
+                }
+
+                @include breakpoint(md) {
+                    .item-avatar,
+                    .activity-avatar,
+                    .acomment-avatar {
+                        text-align: left;
+                    }
                 }
 
             }
         }
     }
 
-    .forums {
+    // Sections
+    .forums,
+    .bbp-topics {
         @include no-bullets;
         @extend .panel;
         @extend .panel-default;
@@ -177,6 +233,7 @@ body.buddypress {
             @extend .panel-heading;
 
         }
+
         .bbp-body {
             @extend .panel-body;
 
@@ -209,10 +266,19 @@ body.buddypress {
     }
 
     #item-header-cover-image {
+
         #item-header-avatar,
         #item-header-content,
         #item-actions {
             text-align: center;
+        }
+
+        @include breakpoint(md) {
+            #item-header-avatar,
+            #item-header-content,
+            #item-actions {
+                text-align: left;
+            }
         }
 
         #item-header-avatar {}
@@ -245,6 +311,43 @@ body.buddypress {
         }
     }
 
+    // Tables
+    table {
+        @extend .table;
+        @extend .table-striped;
+        @extend .table-hover;
+
+        border-top: 1px solid $color__border-nav;
+
+        tr {
+            border-top: none;
+            border-bottom: 1px solid $color__border-nav;
+
+            td {
+                border: none;
+
+                &.label {
+                    display: block;
+                    border: none;
+                    background-color: lighten($color__background-nav-alt, 40%);
+                    @include font-size($h6);
+                    color: $color__white;
+                    border-radius: $element__border-radius-base;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        tbody > tr > td {
+            border: none;
+        }
+
+    }
+
     // Pagination
     .bbp-pagination-links {}
     .pagination {
@@ -263,13 +366,15 @@ body.buddypress {
         }
     }
 
-    
 
     #whats-new-avatar,
     .activity-greeting {
         text-align: center;
+    }
 
-        @include breakpoint(md) {
+    @include breakpoint(md) {
+        #whats-new-avatar,
+        .activity-greeting {
             text-align: left;
         }
     }
@@ -296,6 +401,13 @@ body.buddypress {
         }
     }
 
+    .tags-cell {
+        a {
+            @extend .label;
+            @extend .label-default;
+        }
+    }
+
     .bbp-reply-permalink,
     span.time-since {
         @extend .label;
@@ -310,7 +422,7 @@ body.buddypress {
         }
     }
 
-        // Buttons
+    // Buttons
     .row-actions,
     .group-button,
     .activity-meta,
@@ -348,7 +460,7 @@ body.buddypress {
     }
 
     #bp-create-doc-button {
-        @include button-text($icon: plus-circle);
+        @include button-text(plus-circle);
     }
 
     #members-list,
@@ -371,8 +483,12 @@ body.buddypress {
             }
         }
 
-        .bp-single-member {
+        .item-header-content {
             text-align: center;
+
+            @include breakpoint(md) {
+                text-align: left;
+            }
 
             .item-title {
                 font-weight: bold;
@@ -393,6 +509,70 @@ body.buddypress {
             }
         }
     }
+
+    // Alerts
+    .info p {
+        @extend .alert;
+        @extend .alert-info;
+    }
+}
+
+.bp-user {
+
+    // Events
+    &.events {
+        .bpeo-ical-download {
+            ul {
+                @include no-bullets;
+            }
+
+            .bpeo-ical-link {
+                @include icon-font(calendar, before);
+            }
+        }
+    }
 }
 
 
+// Widgets
+
+.widget.buddypress {
+
+    text-align: center;
+    
+    .item-options a {
+        display: inline-block;
+    }
+
+    .item-title
+    .item-meta {
+        display: block;
+    }
+
+    img.avatar {
+        @extend .img-circle;
+        padding: 2px;
+        margin-right: .25em;
+        margin-left: .25em;
+        border: 1px solid $color__background-hr-alt;
+    }
+
+    .item-meta {
+        color: rgba($color__text-inverted, .4);
+        text-weight: 300;
+    }
+
+    @include breakpoint(md) {
+
+        text-align: left;
+
+        li {
+            @include clearfix;
+        }
+
+        .item-avatar {
+            float: left;
+        }
+        
+    }
+}

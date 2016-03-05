@@ -237,11 +237,12 @@
   display: inline-block;
   vertical-align: middle;
   border-radius: 0;
-  background: transparent;
+  background-color: transparent;
   text-transform: none;
   letter-spacing: normal;
   line-height: inherit;
   padding: 0 .5em 0 0;
+  border: none;
   @include font-size($small);
 
   @include breakpoint(md) {
@@ -254,7 +255,7 @@
   }
   &:hover,
   &:focus  {
-    color: darken($color, 20%);
+    color: rgba(0,0,0,.2);
   }
 
   &:before {
