@@ -14,8 +14,9 @@
 			</div><!-- #header-image .custom-header -->
 		<?php } else { ?>
 			<div class="site-branding">
+				<?php get_template_part( 'components/site-logo/site-logo' ); ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php get_template_part( 'components/site-logo/site-logo' ); ?>
+					
 				</a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div><!-- .site-branding -->
