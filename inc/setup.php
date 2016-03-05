@@ -51,6 +51,7 @@ function anp_network_main_setup() {
    *
    * @link https://make.wordpress.org/core/2016/02/24/theme-logo-support/
    */
+  add_image_size( 'site-logo', 0, 100 );
   add_theme_support( 'site-logo', array(
       'header-text' => array(
           'site-title',
@@ -58,7 +59,6 @@ function anp_network_main_setup() {
       ),
       'size' => 'site-logo',
   )); 
-  add_image_size( 'site-logo', 0, 100 );
 
 
   /*

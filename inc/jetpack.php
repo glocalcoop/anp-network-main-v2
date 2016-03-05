@@ -38,10 +38,10 @@ add_theme_support( 'jetpack-responsive-videos' );
  * Add support for the Site Logo
  */
 function anp_network_main_site_logo_init() {
-	add_image_size( 'component-s-logo', 100, 100 );
+	add_image_size( 'component-s-logo', 200, 200 );
 	add_theme_support( 'site-logo', array( 'size' => 'component-s-logo' ) );
 }
-add_action( 'after_setup_theme', 'anp_network_main_site_logo_init' );
+//add_action( 'after_setup_theme', 'anp_network_main_site_logo_init' );
 
 /**
  * Return early if Site Logo is not available.
