@@ -86,9 +86,7 @@ gulp.task( 'buddypress', function() {
             sort: true
         }),
     ]))
-    .pipe(sourcemaps.init())
     .pipe( minifycss() )
-    .pipe(sourcemaps.write())
     .pipe( rename( { basename: 'buddypress.min' } ) )
     .pipe( gulp.dest( paths.buddypressOutput ) )
     .pipe( notify( { message: 'BuddyPress task complete' } ) );
