@@ -26,4 +26,11 @@
  		<span class="country"><?php echo $venue_address['country']; ?></span>
 	</div>
 
+	<?php if ( eo_get_venue() && eo_venue_has_latlng( eo_get_venue() ) ) : ?>
+		<!-- Display map -->
+		<div class="eo-event-venue-map">
+			<?php echo eo_get_venue_map( eo_get_venue(), array( 'width' => '100%' ) ); ?>
+		</div>
+	<?php endif; ?>
+
 <?php endif; ?>
