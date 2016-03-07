@@ -25,7 +25,7 @@ add_action( 'after_setup_theme', 'anp_network_main_jetpack_setup' );
 function anp_network_main_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/content', get_post_format() );
+		get_template_part( 'template-parts/content', get_post_type() );
 	}
 } // end function anp_network_main_infinite_scroll_render
 
