@@ -121,3 +121,88 @@ add_filter( 'bp_before_groups_cover_image_settings_parse_args', 'anp_buddypress_
 remove_theme_support( 'jetpack-testimonial' );
 
 
+remove_action( 'eventorganiser_additional_event_meta', 'bpeo_add_ical_link_to_eventmeta', 50 );
+
+remove_action( 'eventorganiser_additional_event_meta', 'bpeo_list_connected_groups' );
+
+remove_action( 'eventorganiser_additional_event_meta', 'bpeo_list_author' );
+
+
+if( function_exists( 'bpeo_get_the_ical_link' ) ) {
+
+  function anp_add_ical_link_to_eventmeta() {
+    // do not show for drafts
+    if ( 'draft' === get_post( get_the_ID() )->post_status ) {
+      return;
+    }
+  ?>
+    <li><?php
+      printf(
+      __( "%sSave to Calendar%s", 'bp-event-organiser' ),
+      '<a class="add-to-calendar button" href="' . bpeo_get_the_ical_link( get_the_ID() ) . '">',
+      '</a>'
+    ); ?></li>
+
+  <?php
+  }
+  //add_action( 'eventorganiser_additional_event_meta', 'anp_add_ical_link_to_eventmeta', 50 );
+
+/**
+ * Display a list of connected groups on single event pages.
+ */
+if( function_exists( 'bpeo_get_event_groups' ) ) {
+  function anp_list_event_groups() {
+    $event_group_ids = bpeo_get_event_groups( get_the_ID() );
+
+    if ( empty( $event_group_ids ) ) {
+      return;
+    }
+
+    $event_groups = groups_get_groups( array(
+      'include' => $event_group_ids,
+      'show_hidden' => true, // We roll our own.
+    ) );
+
+    $markup = array();
+    foreach ( $event_groups['groups'] as $eg ) {
+      // Remove groups that the current user should not have access to.
+      if ( 'public' !== $eg->status && ! current_user_can( 'bp_moderate' ) && ! groups_is_user_member( bp_current_user_id(), $eg->id ) ) {
+        continue;
+      }
+
+      $markup[] = sprintf(
+        '<a href="%s">%s</a>',
+        esc_url( bpeo_get_group_permalink( $eg ) ),
+        esc_html( stripslashes( $eg->name ) )
+      );
+    }
+
+    if ( empty( $markup ) ) {
+      return;
+    }
+
+    $count = count( $markup );
+    $base = _n( '<span class="meta-label">Group</span> %s', '<span class="meta-label">Groups</span> %s', $count, 'anp-network-main' );
+
+    echo sprintf( '<li>' . wp_filter_kses( $base ) . '</li>', implode( ', ', $markup ) );
+  }
+  add_action( 'eventorganiser_additional_event_meta', 'anp_list_event_groups' );
+  }
+
+}
+
+/**
+ * Display the event author on single event pages.
+ */
+if( function_exists( 'bp_core_get_userlink' ) ) {
+  function anp_event_author() {
+    $event = get_post( get_the_ID() );
+    $author_id = $event->post_author;
+
+    $base = __( '%s', 'anp-network-main' );
+
+    echo sprintf( '<div class="entry-author"><span class="meta-label">Author</span> ' . wp_filter_kses( $base ) . '</div>', bp_core_get_userlink( $author_id ) );
+  }
+  add_action( 'eventorganiser_additional_event_meta', 'anp_event_author' );
+
+}
