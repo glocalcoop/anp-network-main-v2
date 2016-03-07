@@ -240,7 +240,6 @@ h3.widget-title {
             }
         }
 
-
         a {
             border: 1px solid $color__border-nav;
             border-radius: 50%;
@@ -258,7 +257,7 @@ h3.widget-title {
             &:focus {
                 padding: inherit;
             }
-            @include icon-font($icon: cog, $position: before);
+            @include icon-font(cog, before);
             &:before {
                 height: 33px;
                 width: 33px;
@@ -273,91 +272,87 @@ h3.widget-title {
                 color: $color__text-nav-hover;
             }
         }
+                a:before {
+            @include icon-font(cog);
+        }
         a[href*="codepen.io"]:before {
-            @extend %icon-codepen;
+            @include icon-font(codepen);
         }
         a[href*="digg.com"]:before {
-            @extend %icon-digg;
+            @include icon-font(digg);
         }
         a[href*="dribbble.com"]:before {
-            @extend %icon-dribble;
+             @include icon-font(dribble);
         }
         a[href*="dropbox.com"]:before {
-            @extend %icon-dropbox;
+             @include icon-font(dropbox);
         }
         a[href*="facebook.com"]:before {
-            @extend %icon-facebook;
+             @include icon-font(facebook);
         }
         a[href*="flickr.com"]:before {
-            @extend %icon-flickr;
+             @include icon-font(flickr);
         }
         a[href*="foursquare.com"]:before {
-            @extend %icon-foursquare;
+             @include icon-font(foursquare);
         }
         a[href*="plus.google.com"]:before {
-            @extend %icon-google-plus;
+             @include icon-font(google-plus);
         }
         a[href*="github.com"]:before {
-            @extend %icon-github;
+             @include icon-font(github);
         }
         a[href*="instagram.com"]:before {
-            @extend %icon-instagram;
+             @include icon-font(instagram);
         }
         a[href*="linkedin.com"]:before {
-            @extend %icon-linkedin;
-        }
-        a[href*="path.com"]:before {
-            @extend %icon-cog;
+             @include icon-font(linkedin);
         }
         a[href*="pinterest.com"]:before {
-            @extend %icon-pinterest;
+             @include icon-font(pinterest);
         }
         a[href*="getpocket.com"]:before {
-            @extend %icon-get-pocket;
-        }
-        a[href*="polldaddy.com"]:before {
-            @extend %icon-cog;
+             @include icon-font(get-pocket);
         }
         a[href*="reddit.com"]:before {
-            @extend %icon-reddit;
+             @include icon-font(reddit);
         }
         a[href*="skype.com"]:before {
-            @extend %icon-skype;
+            @include icon-font(skype);
         }
         a[href*="stumbleupon.com"]:before {
-            @extend %icon-stumbleupon;
+            @include icon-font(stumbleupon);
         }
         a[href*="tumblr.com"]:before {
-           @extend %icon-tumblr;
+           @include icon-font(tumblr);
         }
         a[href*="twitter.com"]:before {
-            @extend %icon-twitter;
+            @include icon-font(twitter);
         }
         a[href*="vimeo.com"]:before {
-            @extend %icon-vimeo;
+            @include icon-font(vimeo);
         }
         a[href*="wordpress.com"]:before {
-            @extend %icon-wordpress;
+            @include icon-font(wordpress);
         }
         a[href*="wordpress.org"]:before {
-            @extend %icon-wordpress;
+            @include icon-font(wordpress);
         }
         a[href*="youtube.com"]:before {
-            @extend %icon-youtube;
+            @include icon-font(youtube);
         }
         a[href^="mailto:"]:before {
-            @extend %icon-envelope;
+            @include icon-font(envelope);
         }
         a[href*="spotify.com"]:before {
-            @extend %icon-spotify;
+            @include icon-font(spotify);
         }
         a[href*="twitch.tv"]:before {
-            @extend %icon-twitch;
+            @include icon-font(twitch);
         }
         a[href$="/feed/"]:before {
-            @extend %icon-feed;
+            @include icon-font(feed);
         }
-
 
         @include breakpoint(md) {
 

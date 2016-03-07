@@ -69,7 +69,145 @@ a {
 	color: $color__text-light;
 }
 
-@import "../../../components/social-menu/social-menu";
+// @import "../../../components/social-menu/social-menu";
+
+/**
+ * Social Nav
+ */
+.social-links {
+	margin: 0 auto;
+	padding: 0;
+	ul {
+        @include clearfix;
+        @include no-bullets;
+        display: table;
+        width: auto;
+        margin: 0 auto;
+        border: none;
+        a {
+            border: 1px solid $color__text-nav-alt;
+            border-radius: 50%;
+            color: $color__text-nav-alt;
+            display: block;
+            height: 35px;
+            width: 35px;
+            position: relative;
+            padding: inherit;
+            // Hide the text
+            white-space: nowrap;
+            overflow: hidden;
+            text-indent: 70px;
+            &:hover,
+            &:focus {
+                padding: inherit;
+                background-color: $color__black;
+            }
+            @include icon-font(cog, before);
+            &:before {
+            	margin-top: 8px;
+                height: 33px;
+                width: 33px;
+                line-height: 33px;
+                text-align: center;
+                // Don't hide icon
+                text-indent: 0;
+                float: left;
+            }
+            &:hover:before,
+            &:focus:before {
+                color: $color__text-nav-alt;
+            }
+        }
+		li {
+            display: table-cell;
+            padding-right: .25em;
+            border: none;
+            vertical-align: middle;
+		}
+		a:before {
+			@include icon-font(cog);
+		}
+		a[href*="codepen.io"]:before {
+			@include icon-font(codepen);
+        }
+        a[href*="digg.com"]:before {
+            @include icon-font(digg);
+        }
+        a[href*="dribbble.com"]:before {
+             @include icon-font(dribble);
+        }
+        a[href*="dropbox.com"]:before {
+             @include icon-font(dropbox);
+        }
+        a[href*="facebook.com"]:before {
+             @include icon-font(facebook);
+        }
+        a[href*="flickr.com"]:before {
+             @include icon-font(flickr);
+        }
+        a[href*="foursquare.com"]:before {
+             @include icon-font(foursquare);
+        }
+        a[href*="plus.google.com"]:before {
+             @include icon-font(google-plus);
+        }
+        a[href*="github.com"]:before {
+             @include icon-font(github);
+        }
+        a[href*="instagram.com"]:before {
+             @include icon-font(instagram);
+        }
+        a[href*="linkedin.com"]:before {
+             @include icon-font(linkedin);
+        }
+        a[href*="pinterest.com"]:before {
+             @include icon-font(pinterest);
+        }
+        a[href*="getpocket.com"]:before {
+             @include icon-font(get-pocket);
+        }
+        a[href*="reddit.com"]:before {
+             @include icon-font(reddit);
+        }
+        a[href*="skype.com"]:before {
+            @include icon-font(skype);
+        }
+        a[href*="stumbleupon.com"]:before {
+            @include icon-font(stumbleupon);
+        }
+        a[href*="tumblr.com"]:before {
+           @include icon-font(tumblr);
+        }
+        a[href*="twitter.com"]:before {
+            @include icon-font(twitter);
+        }
+        a[href*="vimeo.com"]:before {
+            @include icon-font(vimeo);
+        }
+        a[href*="wordpress.com"]:before {
+            @include icon-font(wordpress);
+        }
+        a[href*="wordpress.org"]:before {
+            @include icon-font(wordpress);
+        }
+        a[href*="youtube.com"]:before {
+            @include icon-font(youtube);
+        }
+        a[href^="mailto:"]:before {
+            @include icon-font(envelope);
+        }
+        a[href*="spotify.com"]:before {
+            @include icon-font(spotify);
+        }
+        a[href*="twitch.tv"]:before {
+            @include icon-font(twitch);
+        }
+        a[href$="/feed/"]:before {
+            @include icon-font(feed);
+        }
+	}
+
+}
 
 .site-header-menu {
 	display: none;
@@ -90,6 +228,9 @@ a {
 	}
 }
 
+/**
+ * Main Nav
+ */
 .main-navigation {
 
 	&.toggled {

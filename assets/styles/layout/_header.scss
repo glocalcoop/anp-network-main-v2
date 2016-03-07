@@ -9,10 +9,61 @@
 
     .site-branding {
         clear: both;
+        @include clearfix;
         padding: 1em;
+
+
         background-color: $color__background-header;
-        border-top-right-radius:: $element__border-radius-base;
-        border-top-left-radius:: $element__border-radius-base;    }
+        border-top-right-radius: $element__border-radius-base;
+        border-top-left-radius: $element__border-radius-base;
+        text-align: center;
+
+        .site-logo-link,
+        .social-links {
+            display: block;
+            text-align: center;
+        }
+
+        .site-logo-link {
+
+            .site-logo {
+                height: 100px;
+                width: auto;
+            }
+
+        }
+
+        .social-links {
+            ul {
+                display: table;
+                vertical-align: middle;
+                li {
+                    display: table-cell;
+                }
+            }
+        }
+
+
+        @include breakpoint(md) {
+            display: table;
+            width: 100%;
+
+            .site-logo-link,
+            .site-description,
+            .social-links {
+                display: table-cell;
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            .site-description {
+                padding-right: .5em;
+                padding-left: .5em;
+            }
+        }
+
+
+    }
 
     .site-title,
     .site-title a,
@@ -41,14 +92,14 @@
         display: none;
 
         @include breakpoint(md) {
-            @include font-size($h5);
+            @include font-size($h4);
             margin: 0;
             font-weight: 300;
             display: inline-block;
         }
         
         @include breakpoint(lg) {
-            @include font-size($h4);
+            @include font-size($h3);
         }
 
     }
