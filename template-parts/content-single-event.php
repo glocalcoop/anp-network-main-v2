@@ -11,9 +11,9 @@
 	<header class="entry-header">
 
 		<?php if( has_post_thumbnail() ) : ?>
-		<section class="event-image">
+		<div class="entry-image event-image">
 			<?php the_post_thumbnail('full'); ?> 
-		</section>
+		</div>
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -23,7 +23,7 @@
 	<div class="entry-content">
 
 		<?php get_template_part( 'event-meta', 'event-single' ); ?>
-         <section class="entry-description event-description">
+         <div class="entry-description event-description">
 
             <!-- The content or the description of the event-->
             <?php the_content(); ?>
@@ -36,7 +36,7 @@
                 </div>
             <?php endif; ?>
 
-        </section>
+        </div>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'anp-network-main' ),

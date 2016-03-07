@@ -29,17 +29,19 @@
 
     <div class="entry-content event-content">
 
-        <div class="post-image event-image">
-            <?php the_post_thumbnail( 'medium' ); ?>
+        <?php if( has_post_thumbnail() ) : ?>
+        <div class="entry-image event-image">
+            <?php the_post_thumbnail('medium'); ?> 
         </div>
+        <?php endif; ?>
 
-        <h3 class="post-title event-title">
+        <h3 class="entry-title event-title">
             <a title="<?php echo get_the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title();?></a>
         </h3>
 
         <?php get_template_part( 'event-venue', 'address' ); ?>
 
-        <p class="post-excerpt event-description">
+        <p class="entry-excerpt event-description">
             <?php the_excerpt(); ?>
         </p>
         
