@@ -276,12 +276,12 @@ th {
     page-break-after: avoid; }
   .navbar {
     display: none; }
-  .btn > .caret, .home .entry button > .caret, button > .caret,
+  .btn > .caret, .home .entry.intro-content button > .caret, button > .caret,
   .button:not(.wpb_button_a) > .caret,
   input[type="button"] > .caret,
   input[type="reset"] > .caret,
   input[type="submit"] > .caret, .wpb_button > .caret, .so-widget-sow-cta .sow-cta-base .ow-button-base a > .caret, #secondary .sow-cta-base .ow-button-base a > .caret,
-  .dropup > .btn > .caret, .home .entry
+  .dropup > .btn > .caret, .home .entry.intro-content
   .dropup > button > .caret,
   .dropup > button > .caret,
   .dropup >
@@ -1962,7 +1962,7 @@ fieldset[disabled]
   min-height: 38px; }
   .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
   .input-group-lg > .form-control-static.input-group-addon,
-  .input-group-lg > .input-group-btn > .form-control-static.btn, .home .entry
+  .input-group-lg > .input-group-btn > .form-control-static.btn, .home .entry.intro-content
   .input-group-lg > .input-group-btn > button.form-control-static,
   .input-group-lg > .input-group-btn > button.form-control-static,
   .input-group-lg > .input-group-btn >
@@ -1977,7 +1977,7 @@ fieldset[disabled]
   .input-group-lg > .input-group-btn > a.form-control-static, #secondary .sow-cta-base .ow-button-base
   .input-group-lg > .input-group-btn > a.form-control-static, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
   .input-group-sm > .form-control-static.input-group-addon,
-  .input-group-sm > .input-group-btn > .form-control-static.btn, .home .entry
+  .input-group-sm > .input-group-btn > .form-control-static.btn, .home .entry.intro-content
   .input-group-sm > .input-group-btn > button.form-control-static,
   .input-group-sm > .input-group-btn > button.form-control-static,
   .input-group-sm > .input-group-btn >
@@ -1996,7 +1996,7 @@ fieldset[disabled]
 
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn, .home .entry
+.input-group-sm > .input-group-btn > .btn, .home .entry.intro-content
 .input-group-sm > .input-group-btn > button,
 .input-group-sm > .input-group-btn > button,
 .input-group-sm > .input-group-btn >
@@ -2064,7 +2064,7 @@ select[multiple].button:not(.wpb_button_a),
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn, .home .entry
+.input-group-lg > .input-group-btn > .btn, .home .entry.intro-content
 .input-group-lg > .input-group-btn > button,
 .input-group-lg > .input-group-btn > button,
 .input-group-lg > .input-group-btn >
@@ -2149,7 +2149,7 @@ select[multiple].button:not(.wpb_button_a),
 
 .input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
-.input-group-lg > .input-group-btn > .btn + .form-control-feedback, .home .entry
+.input-group-lg > .input-group-btn > .btn + .form-control-feedback, .home .entry.intro-content
 .input-group-lg > .input-group-btn > button + .form-control-feedback,
 .input-group-lg > .input-group-btn > button + .form-control-feedback,
 .input-group-lg > .input-group-btn >
@@ -2171,7 +2171,7 @@ input[type="submit"] + .form-control-feedback,
 
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
-.input-group-sm > .input-group-btn > .btn + .form-control-feedback, .home .entry
+.input-group-sm > .input-group-btn > .btn + .form-control-feedback, .home .entry.intro-content
 .input-group-sm > .input-group-btn > button + .form-control-feedback,
 .input-group-sm > .input-group-btn > button + .form-control-feedback,
 .input-group-sm > .input-group-btn >
@@ -2369,7 +2369,7 @@ input[type="submit"] + .form-control-feedback,
     padding-top: 6px;
     font-size: 14px; } }
 
-.btn, .home .entry button, button,
+.btn, .home .entry.intro-content button, button,
 .button:not(.wpb_button_a),
 input[type="button"],
 input[type="reset"],
@@ -2392,27 +2392,27 @@ input[type="submit"], .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-b
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .btn:focus, .home .entry button:focus, button:focus,
+  .btn:focus, .home .entry.intro-content button:focus, button:focus,
   .button:focus:not(.wpb_button_a),
   input[type="button"]:focus,
   input[type="reset"]:focus,
-  input[type="submit"]:focus, .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry button.focus, button.focus,
+  input[type="submit"]:focus, .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry.intro-content button.focus, button.focus,
   .focus.button:not(.wpb_button_a),
   input.focus[type="button"],
   input.focus[type="reset"],
-  input.focus[type="submit"], .focus.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus, .btn:active:focus, button:active:focus,
+  input.focus[type="submit"], .focus.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus, .btn:active:focus, .home .entry.intro-content button:active:focus, button:active:focus,
   .button:active:focus:not(.wpb_button_a),
   input[type="button"]:active:focus,
   input[type="reset"]:active:focus,
-  input[type="submit"]:active:focus, .wpb_button:active:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active:focus, #secondary .sow-cta-base .ow-button-base a:active:focus, .btn:active.focus, button:active.focus,
+  input[type="submit"]:active:focus, .wpb_button:active:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active:focus, #secondary .sow-cta-base .ow-button-base a:active:focus, .btn:active.focus, .home .entry.intro-content button:active.focus, button:active.focus,
   .button:active.focus:not(.wpb_button_a),
   input[type="button"]:active.focus,
   input[type="reset"]:active.focus,
-  input[type="submit"]:active.focus, .wpb_button:active.focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active.focus, #secondary .sow-cta-base .ow-button-base a:active.focus, .btn.active:focus, button.active:focus,
+  input[type="submit"]:active.focus, .wpb_button:active.focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active.focus, #secondary .sow-cta-base .ow-button-base a:active.focus, .btn.active:focus, .home .entry.intro-content button.active:focus, button.active:focus,
   .active.button:focus:not(.wpb_button_a),
   input.active[type="button"]:focus,
   input.active[type="reset"]:focus,
-  input.active[type="submit"]:focus, .active.wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active:focus, #secondary .sow-cta-base .ow-button-base a.active:focus, .btn.active.focus, button.active.focus,
+  input.active[type="submit"]:focus, .active.wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active:focus, #secondary .sow-cta-base .ow-button-base a.active:focus, .btn.active.focus, .home .entry.intro-content button.active.focus, button.active.focus,
   .active.focus.button:not(.wpb_button_a),
   input.active.focus[type="button"],
   input.active.focus[type="reset"],
@@ -2420,26 +2420,26 @@ input[type="submit"], .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-b
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:hover, .home .entry button:hover, button:hover,
+  .btn:hover, .home .entry.intro-content button:hover, button:hover,
   .button:hover:not(.wpb_button_a),
   input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover, .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover, .btn:focus, .home .entry button:focus, button:focus,
+  input[type="submit"]:hover, .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover, .btn:focus, .home .entry.intro-content button:focus, button:focus,
   .button:focus:not(.wpb_button_a),
   input[type="button"]:focus,
   input[type="reset"]:focus,
-  input[type="submit"]:focus, .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry button.focus, button.focus,
+  input[type="submit"]:focus, .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry.intro-content button.focus, button.focus,
   .focus.button:not(.wpb_button_a),
   input.focus[type="button"],
   input.focus[type="reset"],
   input.focus[type="submit"], .focus.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus {
     color: #fff;
     text-decoration: none; }
-  .btn:active, .home .entry button:active, button:active,
+  .btn:active, .home .entry.intro-content button:active, button:active,
   .button:active:not(.wpb_button_a),
   input[type="button"]:active,
   input[type="reset"]:active,
-  input[type="submit"]:active, .wpb_button:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn.active, .home .entry button.active, button.active,
+  input[type="submit"]:active, .wpb_button:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn.active, .home .entry.intro-content button.active, button.active,
   .active.button:not(.wpb_button_a),
   input.active[type="button"],
   input.active[type="reset"],
@@ -2448,17 +2448,17 @@ input[type="submit"], .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-b
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-  .btn.disabled, .home .entry button.disabled, button.disabled,
+  .btn.disabled, .home .entry.intro-content button.disabled, button.disabled,
   .disabled.button:not(.wpb_button_a),
   input.disabled[type="button"],
   input.disabled[type="reset"],
-  input.disabled[type="submit"], .disabled.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base a.disabled, #secondary .sow-cta-base .ow-button-base a.disabled, .btn[disabled], .home .entry button[disabled], button[disabled],
+  input.disabled[type="submit"], .disabled.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base a.disabled, #secondary .sow-cta-base .ow-button-base a.disabled, .btn[disabled], .home .entry.intro-content button[disabled], button[disabled],
   [disabled].button:not(.wpb_button_a),
   input[disabled][type="button"],
   input[disabled][type="reset"],
   input[disabled][type="submit"], [disabled].wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base a[disabled], #secondary .sow-cta-base .ow-button-base a[disabled],
   fieldset[disabled] .btn,
-  fieldset[disabled] .home .entry button, .home .entry
+  fieldset[disabled] .home .entry.intro-content button, .home .entry.intro-content
   fieldset[disabled] button,
   fieldset[disabled] button,
   fieldset[disabled]
@@ -2973,77 +2973,77 @@ input[type="submit"], .wpb_btn-info {
     color: #EFE4A6;
     background-color: #fff; }
 
-.btn-danger, .home .entry button, input[type="reset"], .wpb_btn-danger {
+.btn-danger, .home .entry.intro-content button, input[type="reset"], .wpb_btn-danger {
   color: #fff;
   background-color: #E53634;
   border-color: #e2201d; }
-  .btn-danger:focus, .home .entry button:focus, input[type="reset"]:focus, .wpb_btn-danger:focus, .btn-danger.focus, .home .entry button.focus, input.focus[type="reset"], .focus.wpb_btn-danger {
+  .btn-danger:focus, .home .entry.intro-content button:focus, input[type="reset"]:focus, .wpb_btn-danger:focus, .btn-danger.focus, .home .entry.intro-content button.focus, input.focus[type="reset"], .focus.wpb_btn-danger {
     color: #fff;
     background-color: #cc1c1a;
     border-color: #71100f; }
-  .btn-danger:hover, .home .entry button:hover, input[type="reset"]:hover, .wpb_btn-danger:hover {
+  .btn-danger:hover, .home .entry.intro-content button:hover, input[type="reset"]:hover, .wpb_btn-danger:hover {
     color: #fff;
     background-color: #cc1c1a;
     border-color: #ac1816; }
-  .btn-danger:active, .home .entry button:active, input[type="reset"]:active, .wpb_btn-danger:active, .btn-danger.active, .home .entry button.active, input.active[type="reset"], .active.wpb_btn-danger,
-  .open > .btn-danger.dropdown-toggle, .home .entry
+  .btn-danger:active, .home .entry.intro-content button:active, input[type="reset"]:active, .wpb_btn-danger:active, .btn-danger.active, .home .entry.intro-content button.active, input.active[type="reset"], .active.wpb_btn-danger,
+  .open > .btn-danger.dropdown-toggle, .home .entry.intro-content
   .open > button.dropdown-toggle,
   .open > input.dropdown-toggle[type="reset"],
   .open > .dropdown-toggle.wpb_btn-danger {
     color: #fff;
     background-color: #cc1c1a;
     border-color: #ac1816; }
-    .btn-danger:active:hover, .home .entry button:active:hover, input[type="reset"]:active:hover, .wpb_btn-danger:active:hover, .btn-danger:active:focus, .home .entry button:active:focus, input[type="reset"]:active:focus, .wpb_btn-danger:active:focus, .btn-danger:active.focus, .home .entry button:active.focus, input[type="reset"]:active.focus, .wpb_btn-danger:active.focus, .btn-danger.active:hover, .home .entry button.active:hover, input.active[type="reset"]:hover, .active.wpb_btn-danger:hover, .btn-danger.active:focus, .home .entry button.active:focus, input.active[type="reset"]:focus, .active.wpb_btn-danger:focus, .btn-danger.active.focus, .home .entry button.active.focus, input.active.focus[type="reset"], .active.focus.wpb_btn-danger,
-    .open > .btn-danger.dropdown-toggle:hover, .home .entry
+    .btn-danger:active:hover, .home .entry.intro-content button:active:hover, input[type="reset"]:active:hover, .wpb_btn-danger:active:hover, .btn-danger:active:focus, .home .entry.intro-content button:active:focus, input[type="reset"]:active:focus, .wpb_btn-danger:active:focus, .btn-danger:active.focus, .home .entry.intro-content button:active.focus, input[type="reset"]:active.focus, .wpb_btn-danger:active.focus, .btn-danger.active:hover, .home .entry.intro-content button.active:hover, input.active[type="reset"]:hover, .active.wpb_btn-danger:hover, .btn-danger.active:focus, .home .entry.intro-content button.active:focus, input.active[type="reset"]:focus, .active.wpb_btn-danger:focus, .btn-danger.active.focus, .home .entry.intro-content button.active.focus, input.active.focus[type="reset"], .active.focus.wpb_btn-danger,
+    .open > .btn-danger.dropdown-toggle:hover, .home .entry.intro-content
     .open > button.dropdown-toggle:hover,
     .open > input.dropdown-toggle[type="reset"]:hover,
     .open > .dropdown-toggle.wpb_btn-danger:hover,
-    .open > .btn-danger.dropdown-toggle:focus, .home .entry
+    .open > .btn-danger.dropdown-toggle:focus, .home .entry.intro-content
     .open > button.dropdown-toggle:focus,
     .open > input.dropdown-toggle[type="reset"]:focus,
     .open > .dropdown-toggle.wpb_btn-danger:focus,
-    .open > .btn-danger.dropdown-toggle.focus, .home .entry
+    .open > .btn-danger.dropdown-toggle.focus, .home .entry.intro-content
     .open > button.dropdown-toggle.focus,
     .open > input.dropdown-toggle.focus[type="reset"],
     .open > .dropdown-toggle.focus.wpb_btn-danger {
       color: #fff;
       background-color: #ac1816;
       border-color: #71100f; }
-  .btn-danger:active, .home .entry button:active, input[type="reset"]:active, .wpb_btn-danger:active, .btn-danger.active, .home .entry button.active, input.active[type="reset"], .active.wpb_btn-danger,
-  .open > .btn-danger.dropdown-toggle, .home .entry
+  .btn-danger:active, .home .entry.intro-content button:active, input[type="reset"]:active, .wpb_btn-danger:active, .btn-danger.active, .home .entry.intro-content button.active, input.active[type="reset"], .active.wpb_btn-danger,
+  .open > .btn-danger.dropdown-toggle, .home .entry.intro-content
   .open > button.dropdown-toggle,
   .open > input.dropdown-toggle[type="reset"],
   .open > .dropdown-toggle.wpb_btn-danger {
     background-image: none; }
-  .btn-danger.disabled:hover, .home .entry button.disabled:hover, input.disabled[type="reset"]:hover, .disabled.wpb_btn-danger:hover, .btn-danger.disabled:focus, .home .entry button.disabled:focus, input.disabled[type="reset"]:focus, .disabled.wpb_btn-danger:focus, .btn-danger.disabled.focus, .home .entry button.disabled.focus, input.disabled.focus[type="reset"], .disabled.focus.wpb_btn-danger, .btn-danger[disabled]:hover, .home .entry button[disabled]:hover, input[disabled][type="reset"]:hover, [disabled].wpb_btn-danger:hover, .btn-danger[disabled]:focus, .home .entry button[disabled]:focus, input[disabled][type="reset"]:focus, [disabled].wpb_btn-danger:focus, .btn-danger[disabled].focus, .home .entry button[disabled].focus, input[disabled].focus[type="reset"], [disabled].focus.wpb_btn-danger,
+  .btn-danger.disabled:hover, .home .entry.intro-content button.disabled:hover, input.disabled[type="reset"]:hover, .disabled.wpb_btn-danger:hover, .btn-danger.disabled:focus, .home .entry.intro-content button.disabled:focus, input.disabled[type="reset"]:focus, .disabled.wpb_btn-danger:focus, .btn-danger.disabled.focus, .home .entry.intro-content button.disabled.focus, input.disabled.focus[type="reset"], .disabled.focus.wpb_btn-danger, .btn-danger[disabled]:hover, .home .entry.intro-content button[disabled]:hover, input[disabled][type="reset"]:hover, [disabled].wpb_btn-danger:hover, .btn-danger[disabled]:focus, .home .entry.intro-content button[disabled]:focus, input[disabled][type="reset"]:focus, [disabled].wpb_btn-danger:focus, .btn-danger[disabled].focus, .home .entry.intro-content button[disabled].focus, input[disabled].focus[type="reset"], [disabled].focus.wpb_btn-danger,
   fieldset[disabled] .btn-danger:hover,
-  fieldset[disabled] .home .entry button:hover, .home .entry
+  fieldset[disabled] .home .entry.intro-content button:hover, .home .entry.intro-content
   fieldset[disabled] button:hover,
   fieldset[disabled] input[type="reset"]:hover,
   fieldset[disabled] .wpb_btn-danger:hover,
   fieldset[disabled] .btn-danger:focus,
-  fieldset[disabled] .home .entry button:focus, .home .entry
+  fieldset[disabled] .home .entry.intro-content button:focus, .home .entry.intro-content
   fieldset[disabled] button:focus,
   fieldset[disabled] input[type="reset"]:focus,
   fieldset[disabled] .wpb_btn-danger:focus,
   fieldset[disabled] .btn-danger.focus,
-  fieldset[disabled] .home .entry button.focus, .home .entry
+  fieldset[disabled] .home .entry.intro-content button.focus, .home .entry.intro-content
   fieldset[disabled] button.focus,
   fieldset[disabled] input.focus[type="reset"],
   fieldset[disabled] .focus.wpb_btn-danger {
     background-color: #E53634;
     border-color: #e2201d; }
-  .btn-danger .badge, .home .entry button .badge, input[type="reset"] .badge, .wpb_btn-danger .badge, .btn-danger #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-danger span, input[type="reset"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a input[type="reset"] span, .wpb_btn-danger #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-danger span, .btn-danger
+  .btn-danger .badge, .home .entry.intro-content button .badge, input[type="reset"] .badge, .wpb_btn-danger .badge, .btn-danger #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-danger span, input[type="reset"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a input[type="reset"] span, .wpb_btn-danger #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-danger span, .btn-danger
   #bbpress-forums .item-list-tabs ul li a span,
   #bbpress-forums .item-list-tabs ul li a .btn-danger span, input[type="reset"]
   #bbpress-forums .item-list-tabs ul li a span,
   #bbpress-forums .item-list-tabs ul li a input[type="reset"] span, .wpb_btn-danger
   #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_btn-danger span, .btn-danger #buddypress a span, #buddypress a .btn-danger span, .home .entry button #buddypress a span, #buddypress a .home .entry button span, input[type="reset"] #buddypress a span, #buddypress a input[type="reset"] span, .wpb_btn-danger #buddypress a span, #buddypress a .wpb_btn-danger span, .btn-danger
+  #bbpress-forums .item-list-tabs ul li a .wpb_btn-danger span, .btn-danger #buddypress a span, #buddypress a .btn-danger span, .home .entry.intro-content button #buddypress a span, #buddypress a .home .entry.intro-content button span, input[type="reset"] #buddypress a span, #buddypress a input[type="reset"] span, .wpb_btn-danger #buddypress a span, #buddypress a .wpb_btn-danger span, .btn-danger
   #bbpress-forums a span,
-  #bbpress-forums a .btn-danger span, .home .entry button
+  #bbpress-forums a .btn-danger span, .home .entry.intro-content button
   #bbpress-forums a span,
-  #bbpress-forums a .home .entry button span, input[type="reset"]
+  #bbpress-forums a .home .entry.intro-content button span, input[type="reset"]
   #bbpress-forums a span,
   #bbpress-forums a input[type="reset"] span, .wpb_btn-danger
   #bbpress-forums a span,
@@ -3076,13 +3076,13 @@ input[type="submit"], .wpb_btn-info {
 .button:not(.wpb_button_a), .btn-group-lg >
 input[type="button"], .btn-group-lg >
 input[type="reset"], .btn-group-lg >
-input[type="submit"], .btn-group-lg > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg > a, #secondary .sow-cta-base .ow-button-base .btn-group-lg > a, .home .entry button, .wpb_btn-large {
+input[type="submit"], .btn-group-lg > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg > a, #secondary .sow-cta-base .ow-button-base .btn-group-lg > a, .home .entry.intro-content button, .wpb_btn-large {
   padding: 10px 16px;
   font-size: 22px;
   line-height: 1.33333;
   border-radius: 0; }
 
-.btn-sm, .btn-group-sm > .btn, .home .entry .btn-group-sm > button, .btn-group-sm > button, .btn-group-sm >
+.btn-sm, .btn-group-sm > .btn, .home .entry.intro-content .btn-group-sm > button, .btn-group-sm > button, .btn-group-sm >
 .button:not(.wpb_button_a), .btn-group-sm >
 input[type="button"], .btn-group-sm >
 input[type="reset"], .btn-group-sm >
@@ -3092,7 +3092,7 @@ input[type="submit"], .btn-group-sm > .wpb_button, .so-widget-sow-cta .sow-cta-b
   line-height: 1.5;
   border-radius: 0; }
 
-.btn-xs, .btn-group-xs > .btn, .home .entry .btn-group-xs > button, .btn-group-xs > button, .btn-group-xs >
+.btn-xs, .btn-group-xs > .btn, .home .entry.intro-content .btn-group-xs > button, .btn-group-xs > button, .btn-group-xs >
 .button:not(.wpb_button_a), .btn-group-xs >
 input[type="button"], .btn-group-xs >
 input[type="reset"], .btn-group-xs >
@@ -3282,12 +3282,12 @@ tbody.collapse.in {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
-  .btn-group > .btn, .home .entry .btn-group > button, .btn-group > button, .btn-group >
+  .btn-group > .btn, .home .entry.intro-content .btn-group > button, .btn-group > button, .btn-group >
   .button:not(.wpb_button_a), .btn-group >
   input[type="button"], .btn-group >
   input[type="reset"], .btn-group >
   input[type="submit"], .btn-group > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a, #secondary .sow-cta-base .ow-button-base .btn-group > a,
-  .btn-group-vertical > .btn, .home .entry
+  .btn-group-vertical > .btn, .home .entry.intro-content
   .btn-group-vertical > button,
   .btn-group-vertical > button,
   .btn-group-vertical >
@@ -3303,24 +3303,24 @@ tbody.collapse.in {
   .btn-group-vertical > a {
     position: relative;
     float: left; }
-    .btn-group > .btn:hover, .home .entry .btn-group > button:hover, .btn-group > button:hover, .btn-group >
+    .btn-group > .btn:hover, .home .entry.intro-content .btn-group > button:hover, .btn-group > button:hover, .btn-group >
     .button:hover:not(.wpb_button_a), .btn-group >
     input[type="button"]:hover, .btn-group >
     input[type="reset"]:hover, .btn-group >
-    input[type="submit"]:hover, .btn-group > .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:hover, #secondary .sow-cta-base .ow-button-base .btn-group > a:hover, .btn-group > .btn:focus, .home .entry .btn-group > button:focus, .btn-group > button:focus, .btn-group >
+    input[type="submit"]:hover, .btn-group > .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:hover, #secondary .sow-cta-base .ow-button-base .btn-group > a:hover, .btn-group > .btn:focus, .home .entry.intro-content .btn-group > button:focus, .btn-group > button:focus, .btn-group >
     .button:focus:not(.wpb_button_a), .btn-group >
     input[type="button"]:focus, .btn-group >
     input[type="reset"]:focus, .btn-group >
-    input[type="submit"]:focus, .btn-group > .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:focus, #secondary .sow-cta-base .ow-button-base .btn-group > a:focus, .btn-group > .btn:active, .home .entry .btn-group > button:active, .btn-group > button:active, .btn-group >
+    input[type="submit"]:focus, .btn-group > .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:focus, #secondary .sow-cta-base .ow-button-base .btn-group > a:focus, .btn-group > .btn:active, .home .entry.intro-content .btn-group > button:active, .btn-group > button:active, .btn-group >
     .button:active:not(.wpb_button_a), .btn-group >
     input[type="button"]:active, .btn-group >
     input[type="reset"]:active, .btn-group >
-    input[type="submit"]:active, .btn-group > .wpb_button:active, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:active, #secondary .sow-cta-base .ow-button-base .btn-group > a:active, .btn-group > .btn.active, .home .entry .btn-group > button.active, .btn-group > button.active, .btn-group >
+    input[type="submit"]:active, .btn-group > .wpb_button:active, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:active, #secondary .sow-cta-base .ow-button-base .btn-group > a:active, .btn-group > .btn.active, .home .entry.intro-content .btn-group > button.active, .btn-group > button.active, .btn-group >
     .active.button:not(.wpb_button_a), .btn-group >
     input.active[type="button"], .btn-group >
     input.active[type="reset"], .btn-group >
     input.active[type="submit"], .btn-group > .active.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a.active, #secondary .sow-cta-base .ow-button-base .btn-group > a.active,
-    .btn-group-vertical > .btn:hover, .home .entry
+    .btn-group-vertical > .btn:hover, .home .entry.intro-content
     .btn-group-vertical > button:hover,
     .btn-group-vertical > button:hover,
     .btn-group-vertical >
@@ -3334,7 +3334,7 @@ tbody.collapse.in {
     .btn-group-vertical > .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base
     .btn-group-vertical > a:hover, #secondary .sow-cta-base .ow-button-base
     .btn-group-vertical > a:hover,
-    .btn-group-vertical > .btn:focus, .home .entry
+    .btn-group-vertical > .btn:focus, .home .entry.intro-content
     .btn-group-vertical > button:focus,
     .btn-group-vertical > button:focus,
     .btn-group-vertical >
@@ -3348,7 +3348,7 @@ tbody.collapse.in {
     .btn-group-vertical > .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base
     .btn-group-vertical > a:focus, #secondary .sow-cta-base .ow-button-base
     .btn-group-vertical > a:focus,
-    .btn-group-vertical > .btn:active, .home .entry
+    .btn-group-vertical > .btn:active, .home .entry.intro-content
     .btn-group-vertical > button:active,
     .btn-group-vertical > button:active,
     .btn-group-vertical >
@@ -3362,7 +3362,7 @@ tbody.collapse.in {
     .btn-group-vertical > .wpb_button:active, .so-widget-sow-cta .sow-cta-base .ow-button-base
     .btn-group-vertical > a:active, #secondary .sow-cta-base .ow-button-base
     .btn-group-vertical > a:active,
-    .btn-group-vertical > .btn.active, .home .entry
+    .btn-group-vertical > .btn.active, .home .entry.intro-content
     .btn-group-vertical > button.active,
     .btn-group-vertical > button.active,
     .btn-group-vertical >
@@ -3378,23 +3378,23 @@ tbody.collapse.in {
     .btn-group-vertical > a.active {
       z-index: 2; }
 
-.btn-group .btn + .btn, .btn-group .home .entry button + .btn, .home .entry .btn-group button + .btn, .btn-group button + .btn, .btn-group
+.btn-group .btn + .btn, .btn-group .home .entry.intro-content button + .btn, .home .entry.intro-content .btn-group button + .btn, .btn-group button + .btn, .btn-group
 .button:not(.wpb_button_a) + .btn, .btn-group
 input[type="button"] + .btn, .btn-group
 input[type="reset"] + .btn, .btn-group
-input[type="submit"] + .btn, .btn-group .wpb_button + .btn, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + .btn, .btn-group #secondary .sow-cta-base .ow-button-base a + .btn, #secondary .sow-cta-base .ow-button-base .btn-group a + .btn, .btn-group .home .entry .btn + button, .home .entry .btn-group .btn + button, .btn-group .home .entry
-.button:not(.wpb_button_a) + button, .btn-group .home .entry
-input[type="button"] + button, .home .entry .btn-group
-input[type="button"] + button, .btn-group .home .entry
-input[type="reset"] + button, .home .entry .btn-group
-input[type="reset"] + button, .btn-group .home .entry
-input[type="submit"] + button, .home .entry .btn-group
-input[type="submit"] + button, .btn-group .home .entry .wpb_button + button, .home .entry .btn-group .wpb_button + button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .home .entry a + button, .btn-group #secondary .sow-cta-base .ow-button-base .home .entry a + button, #secondary .sow-cta-base .ow-button-base .btn-group .home .entry a + button, .btn-group .btn + button, .btn-group .home .entry button + button, .home .entry .btn-group button + button, .btn-group button + button, .btn-group
+input[type="submit"] + .btn, .btn-group .wpb_button + .btn, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + .btn, .btn-group #secondary .sow-cta-base .ow-button-base a + .btn, #secondary .sow-cta-base .ow-button-base .btn-group a + .btn, .btn-group .home .entry.intro-content .btn + button, .home .entry.intro-content .btn-group .btn + button, .btn-group .home .entry.intro-content
+.button:not(.wpb_button_a) + button, .btn-group .home .entry.intro-content
+input[type="button"] + button, .home .entry.intro-content .btn-group
+input[type="button"] + button, .btn-group .home .entry.intro-content
+input[type="reset"] + button, .home .entry.intro-content .btn-group
+input[type="reset"] + button, .btn-group .home .entry.intro-content
+input[type="submit"] + button, .home .entry.intro-content .btn-group
+input[type="submit"] + button, .btn-group .home .entry.intro-content .wpb_button + button, .home .entry.intro-content .btn-group .wpb_button + button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .home .entry.intro-content a + button, .btn-group #secondary .sow-cta-base .ow-button-base .home .entry.intro-content a + button, #secondary .sow-cta-base .ow-button-base .btn-group .home .entry.intro-content a + button, .btn-group .btn + button, .btn-group .home .entry.intro-content button + button, .home .entry.intro-content .btn-group button + button, .btn-group button + button, .btn-group
 .button:not(.wpb_button_a) + button, .btn-group
 input[type="button"] + button, .btn-group
 input[type="reset"] + button, .btn-group
 input[type="submit"] + button, .btn-group .wpb_button + button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + button, .btn-group #secondary .sow-cta-base .ow-button-base a + button, #secondary .sow-cta-base .ow-button-base .btn-group a + button, .btn-group .btn +
-.button:not(.wpb_button_a), .btn-group .home .entry button +
+.button:not(.wpb_button_a), .btn-group .home .entry.intro-content button +
 .button:not(.wpb_button_a), .btn-group button +
 .button:not(.wpb_button_a), .btn-group
 .button:not(.wpb_button_a) +
@@ -3410,8 +3410,8 @@ input[type="submit"] +
 .button:not(.wpb_button_a), .btn-group #secondary .sow-cta-base .ow-button-base a +
 .button:not(.wpb_button_a), #secondary .sow-cta-base .ow-button-base .btn-group a +
 .button:not(.wpb_button_a), .btn-group .btn +
-input[type="button"], .btn-group .home .entry button +
-input[type="button"], .home .entry .btn-group button +
+input[type="button"], .btn-group .home .entry.intro-content button +
+input[type="button"], .home .entry.intro-content .btn-group button +
 input[type="button"], .btn-group button +
 input[type="button"], .btn-group
 .button:not(.wpb_button_a) +
@@ -3427,8 +3427,8 @@ input[type="button"], .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-grou
 input[type="button"], .btn-group #secondary .sow-cta-base .ow-button-base a +
 input[type="button"], #secondary .sow-cta-base .ow-button-base .btn-group a +
 input[type="button"], .btn-group .btn +
-input[type="reset"], .btn-group .home .entry button +
-input[type="reset"], .home .entry .btn-group button +
+input[type="reset"], .btn-group .home .entry.intro-content button +
+input[type="reset"], .home .entry.intro-content .btn-group button +
 input[type="reset"], .btn-group button +
 input[type="reset"], .btn-group
 .button:not(.wpb_button_a) +
@@ -3444,8 +3444,8 @@ input[type="reset"], .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group
 input[type="reset"], .btn-group #secondary .sow-cta-base .ow-button-base a +
 input[type="reset"], #secondary .sow-cta-base .ow-button-base .btn-group a +
 input[type="reset"], .btn-group .btn +
-input[type="submit"], .btn-group .home .entry button +
-input[type="submit"], .home .entry .btn-group button +
+input[type="submit"], .btn-group .home .entry.intro-content button +
+input[type="submit"], .home .entry.intro-content .btn-group button +
 input[type="submit"], .btn-group button +
 input[type="submit"], .btn-group
 .button:not(.wpb_button_a) +
@@ -3460,11 +3460,11 @@ input[type="submit"], .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-bas
 input[type="submit"], .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a +
 input[type="submit"], .btn-group #secondary .sow-cta-base .ow-button-base a +
 input[type="submit"], #secondary .sow-cta-base .ow-button-base .btn-group a +
-input[type="submit"], .btn-group .btn + .wpb_button, .btn-group .home .entry button + .wpb_button, .home .entry .btn-group button + .wpb_button, .btn-group button + .wpb_button, .btn-group
+input[type="submit"], .btn-group .btn + .wpb_button, .btn-group .home .entry.intro-content button + .wpb_button, .home .entry.intro-content .btn-group button + .wpb_button, .btn-group button + .wpb_button, .btn-group
 .button:not(.wpb_button_a) + .wpb_button, .btn-group
 input[type="button"] + .wpb_button, .btn-group
 input[type="reset"] + .wpb_button, .btn-group
-input[type="submit"] + .wpb_button, .btn-group .wpb_button + .wpb_button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + .wpb_button, .btn-group #secondary .sow-cta-base .ow-button-base a + .wpb_button, #secondary .sow-cta-base .ow-button-base .btn-group a + .wpb_button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .home .entry button + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group button + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
+input[type="submit"] + .wpb_button, .btn-group .wpb_button + .wpb_button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + .wpb_button, .btn-group #secondary .sow-cta-base .ow-button-base a + .wpb_button, #secondary .sow-cta-base .ow-button-base .btn-group a + .wpb_button, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .home .entry.intro-content button + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group button + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
 .button:not(.wpb_button_a) + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group
 .button:not(.wpb_button_a) + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
 input[type="button"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group
@@ -3472,7 +3472,7 @@ input[type="button"] + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button
 input[type="reset"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group
 input[type="reset"] + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
 input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group
-input[type="submit"] + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .wpb_button + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + a, .btn-group #secondary .sow-cta-base .ow-button-base .btn + a, #secondary .sow-cta-base .ow-button-base .btn-group .btn + a, #secondary .sow-cta-base .ow-button-base .btn-group .home .entry button + a, .btn-group #secondary .sow-cta-base .ow-button-base button + a, #secondary .sow-cta-base .ow-button-base .btn-group button + a, .btn-group #secondary .sow-cta-base .ow-button-base
+input[type="submit"] + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group .wpb_button + a, .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group a + a, .btn-group #secondary .sow-cta-base .ow-button-base .btn + a, #secondary .sow-cta-base .ow-button-base .btn-group .btn + a, #secondary .sow-cta-base .ow-button-base .btn-group .home .entry.intro-content button + a, .btn-group #secondary .sow-cta-base .ow-button-base button + a, #secondary .sow-cta-base .ow-button-base .btn-group button + a, .btn-group #secondary .sow-cta-base .ow-button-base
 .button:not(.wpb_button_a) + a, #secondary .sow-cta-base .ow-button-base .btn-group
 .button:not(.wpb_button_a) + a, .btn-group #secondary .sow-cta-base .ow-button-base
 input[type="button"] + a, #secondary .sow-cta-base .ow-button-base .btn-group
@@ -3482,7 +3482,7 @@ input[type="reset"] + a, .btn-group #secondary .sow-cta-base .ow-button-base
 input[type="submit"] + a, #secondary .sow-cta-base .ow-button-base .btn-group
 input[type="submit"] + a, .btn-group #secondary .sow-cta-base .ow-button-base .wpb_button + a, #secondary .sow-cta-base .ow-button-base .btn-group .wpb_button + a, #secondary .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .btn-group #secondary .sow-cta-base .ow-button-base a + a, #secondary .sow-cta-base .ow-button-base .btn-group a + a,
 .btn-group .btn + .btn-group,
-.btn-group .home .entry button + .btn-group, .home .entry
+.btn-group .home .entry.intro-content button + .btn-group, .home .entry.intro-content
 .btn-group button + .btn-group,
 .btn-group button + .btn-group,
 .btn-group
@@ -3499,7 +3499,7 @@ input[type="submit"] + .btn-group,
 .btn-group #secondary .sow-cta-base .ow-button-base a + .btn-group, #secondary .sow-cta-base .ow-button-base
 .btn-group a + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .home .entry .btn-group + button, .home .entry
+.btn-group .home .entry.intro-content .btn-group + button, .home .entry.intro-content
 .btn-group .btn-group + button,
 .btn-group .btn-group + button,
 .btn-group .btn-group +
@@ -3525,7 +3525,7 @@ input[type="submit"],
     display: table; }
   .btn-toolbar:after {
     clear: both; }
-  .btn-toolbar .btn, .btn-toolbar .home .entry button, .home .entry .btn-toolbar button, .btn-toolbar button, .btn-toolbar
+  .btn-toolbar .btn, .btn-toolbar .home .entry.intro-content button, .home .entry.intro-content .btn-toolbar button, .btn-toolbar button, .btn-toolbar
   .button:not(.wpb_button_a), .btn-toolbar
   input[type="button"], .btn-toolbar
   input[type="reset"], .btn-toolbar
@@ -3533,7 +3533,7 @@ input[type="submit"],
   .btn-toolbar .btn-group,
   .btn-toolbar .input-group {
     float: left; }
-  .btn-toolbar > .btn, .home .entry .btn-toolbar > button, .btn-toolbar > button, .btn-toolbar >
+  .btn-toolbar > .btn, .home .entry.intro-content .btn-toolbar > button, .btn-toolbar > button, .btn-toolbar >
   .button:not(.wpb_button_a), .btn-toolbar >
   input[type="button"], .btn-toolbar >
   input[type="reset"], .btn-toolbar >
@@ -3542,20 +3542,20 @@ input[type="submit"],
   .btn-toolbar > .input-group {
     margin-left: 5px; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .home .entry .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .home .entry.intro-content .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
 .button:not(:first-child):not(:last-child):not(.dropdown-toggle):not(.wpb_button_a), .btn-group >
 input[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
 input[type="reset"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group >
 input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .wpb_button:not(:first-child):not(:last-child):not(.dropdown-toggle), .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), #secondary .sow-cta-base .ow-button-base .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, .home .entry .btn-group > button:first-child, .btn-group > button:first-child, .btn-group >
+.btn-group > .btn:first-child, .home .entry.intro-content .btn-group > button:first-child, .btn-group > button:first-child, .btn-group >
 .button:first-child:not(.wpb_button_a), .btn-group >
 input[type="button"]:first-child, .btn-group >
 input[type="reset"]:first-child, .btn-group >
 input[type="submit"]:first-child, .btn-group > .wpb_button:first-child, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > a:first-child, #secondary .sow-cta-base .ow-button-base .btn-group > a:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .home .entry .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group >
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .home .entry.intro-content .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group >
   .button:first-child:not(:last-child):not(.dropdown-toggle):not(.wpb_button_a), .btn-group >
   input[type="button"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group >
   input[type="reset"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group >
@@ -3563,7 +3563,7 @@ input[type="submit"]:first-child, .btn-group > .wpb_button:first-child, .so-widg
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), .home .entry .btn-group > button:last-child:not(:first-child), .btn-group > button:last-child:not(:first-child), .btn-group >
+.btn-group > .btn:last-child:not(:first-child), .home .entry.intro-content .btn-group > button:last-child:not(:first-child), .btn-group > button:last-child:not(:first-child), .btn-group >
 .button:last-child:not(:first-child):not(.wpb_button_a), .btn-group >
 input[type="button"]:last-child:not(:first-child), .btn-group >
 input[type="reset"]:last-child:not(:first-child), .btn-group >
@@ -3575,14 +3575,14 @@ input[type="submit"]:last-child:not(:first-child), .btn-group > .wpb_button:last
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .home .entry .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .btn-group > .btn-group:not(:first-child):not(:last-child) >
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .home .entry.intro-content .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .btn-group > .btn-group:not(:first-child):not(:last-child) >
 .button:not(.wpb_button_a), .btn-group > .btn-group:not(:first-child):not(:last-child) >
 input[type="button"], .btn-group > .btn-group:not(:first-child):not(:last-child) >
 input[type="reset"], .btn-group > .btn-group:not(:first-child):not(:last-child) >
 input[type="submit"], .btn-group > .btn-group:not(:first-child):not(:last-child) > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group > .btn-group:not(:first-child):not(:last-child) > a, #secondary .sow-cta-base .ow-button-base .btn-group > .btn-group:not(:first-child):not(:last-child) > a {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .home .entry .btn-group > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group > .btn-group:first-child:not(:last-child) >
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .home .entry.intro-content .btn-group > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group > .btn-group:first-child:not(:last-child) >
 .button:last-child:not(.wpb_button_a), .btn-group > .btn-group:first-child:not(:last-child) >
 input[type="button"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) >
 input[type="reset"]:last-child, .btn-group > .btn-group:first-child:not(:last-child) >
@@ -3591,7 +3591,7 @@ input[type="submit"]:last-child, .btn-group > .btn-group:first-child:not(:last-c
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .home .entry .btn-group > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group > .btn-group:last-child:not(:first-child) >
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .home .entry.intro-content .btn-group > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group > .btn-group:last-child:not(:first-child) >
 .button:first-child:not(.wpb_button_a), .btn-group > .btn-group:last-child:not(:first-child) >
 input[type="button"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) >
 input[type="reset"]:first-child, .btn-group > .btn-group:last-child:not(:first-child) >
@@ -3603,7 +3603,7 @@ input[type="submit"]:first-child, .btn-group > .btn-group:last-child:not(:first-
 .btn-group.open .dropdown-toggle {
   outline: 0; }
 
-.btn-group > .btn + .dropdown-toggle, .home .entry .btn-group > button + .dropdown-toggle, .btn-group > button + .dropdown-toggle, .btn-group >
+.btn-group > .btn + .dropdown-toggle, .home .entry.intro-content .btn-group > button + .dropdown-toggle, .btn-group > button + .dropdown-toggle, .btn-group >
 .button:not(.wpb_button_a) + .dropdown-toggle, .btn-group >
 input[type="button"] + .dropdown-toggle, .btn-group >
 input[type="reset"] + .dropdown-toggle, .btn-group >
@@ -3615,7 +3615,7 @@ input[type="submit"] + .dropdown-toggle, .btn-group > .wpb_button + .dropdown-to
 .button:not(.wpb_button_a) + .dropdown-toggle, .btn-group-lg.btn-group >
 input[type="button"] + .dropdown-toggle, .btn-group-lg.btn-group >
 input[type="reset"] + .dropdown-toggle, .btn-group-lg.btn-group >
-input[type="submit"] + .dropdown-toggle, .btn-group-lg.btn-group > .wpb_button + .dropdown-toggle, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg.btn-group > a + .dropdown-toggle, #secondary .sow-cta-base .ow-button-base .btn-group-lg.btn-group > a + .dropdown-toggle, .home .entry .btn-group > button + .dropdown-toggle, .btn-group > .wpb_btn-large + .dropdown-toggle {
+input[type="submit"] + .dropdown-toggle, .btn-group-lg.btn-group > .wpb_button + .dropdown-toggle, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg.btn-group > a + .dropdown-toggle, #secondary .sow-cta-base .ow-button-base .btn-group-lg.btn-group > a + .dropdown-toggle, .home .entry.intro-content .btn-group > button + .dropdown-toggle, .btn-group > .wpb_btn-large + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px; }
 
@@ -3626,7 +3626,7 @@ input[type="submit"] + .dropdown-toggle, .btn-group-lg.btn-group > .wpb_button +
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-.btn .caret, .home .entry button .caret, button .caret,
+.btn .caret, .home .entry.intro-content button .caret, button .caret,
 .button:not(.wpb_button_a) .caret,
 input[type="button"] .caret,
 input[type="reset"] .caret,
@@ -3637,7 +3637,7 @@ input[type="submit"] .caret, .wpb_button .caret, .so-widget-sow-cta .sow-cta-bas
 .button:not(.wpb_button_a) .caret, .btn-group-lg >
 input[type="button"] .caret, .btn-group-lg >
 input[type="reset"] .caret, .btn-group-lg >
-input[type="submit"] .caret, .btn-group-lg > .wpb_button .caret, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg > a .caret, #secondary .sow-cta-base .ow-button-base .btn-group-lg > a .caret, .home .entry button .caret, .wpb_btn-large .caret {
+input[type="submit"] .caret, .btn-group-lg > .wpb_button .caret, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg > a .caret, #secondary .sow-cta-base .ow-button-base .btn-group-lg > a .caret, .home .entry.intro-content button .caret, .wpb_btn-large .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0; }
 
@@ -3645,16 +3645,16 @@ input[type="submit"] .caret, .btn-group-lg > .wpb_button .caret, .so-widget-sow-
 .button:not(.wpb_button_a) .caret, .dropup .btn-group-lg >
 input[type="button"] .caret, .dropup .btn-group-lg >
 input[type="reset"] .caret, .dropup .btn-group-lg >
-input[type="submit"] .caret, .dropup .btn-group-lg > .wpb_button .caret, .dropup .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg > a .caret, .so-widget-sow-cta .sow-cta-base .ow-button-base .dropup .btn-group-lg > a .caret, .dropup #secondary .sow-cta-base .ow-button-base .btn-group-lg > a .caret, #secondary .sow-cta-base .ow-button-base .dropup .btn-group-lg > a .caret, .dropup .home .entry button .caret, .home .entry .dropup button .caret, .dropup .wpb_btn-large .caret {
+input[type="submit"] .caret, .dropup .btn-group-lg > .wpb_button .caret, .dropup .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-lg > a .caret, .so-widget-sow-cta .sow-cta-base .ow-button-base .dropup .btn-group-lg > a .caret, .dropup #secondary .sow-cta-base .ow-button-base .btn-group-lg > a .caret, #secondary .sow-cta-base .ow-button-base .dropup .btn-group-lg > a .caret, .dropup .home .entry.intro-content button .caret, .home .entry.intro-content .dropup button .caret, .dropup .wpb_btn-large .caret {
   border-width: 0 5px 5px; }
 
-.btn-group-vertical > .btn, .home .entry .btn-group-vertical > button, .btn-group-vertical > button, .btn-group-vertical >
+.btn-group-vertical > .btn, .home .entry.intro-content .btn-group-vertical > button, .btn-group-vertical > button, .btn-group-vertical >
 .button:not(.wpb_button_a), .btn-group-vertical >
 input[type="button"], .btn-group-vertical >
 input[type="reset"], .btn-group-vertical >
 input[type="submit"], .btn-group-vertical > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a,
 .btn-group-vertical > .btn-group,
-.btn-group-vertical > .btn-group > .btn, .home .entry
+.btn-group-vertical > .btn-group > .btn, .home .entry.intro-content
 .btn-group-vertical > .btn-group > button,
 .btn-group-vertical > .btn-group > button,
 .btn-group-vertical > .btn-group >
@@ -3680,27 +3680,27 @@ input[type="submit"],
 .btn-group-vertical > .btn-group:after {
   clear: both; }
 
-.btn-group-vertical > .btn-group > .btn, .home .entry .btn-group-vertical > .btn-group > button, .btn-group-vertical > .btn-group > button, .btn-group-vertical > .btn-group >
+.btn-group-vertical > .btn-group > .btn, .home .entry.intro-content .btn-group-vertical > .btn-group > button, .btn-group-vertical > .btn-group > button, .btn-group-vertical > .btn-group >
 .button:not(.wpb_button_a), .btn-group-vertical > .btn-group >
 input[type="button"], .btn-group-vertical > .btn-group >
 input[type="reset"], .btn-group-vertical > .btn-group >
 input[type="submit"], .btn-group-vertical > .btn-group > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > .btn-group > a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > .btn-group > a {
   float: none; }
 
-.btn-group-vertical > .btn + .btn, .home .entry .btn-group-vertical > button + .btn, .btn-group-vertical > button + .btn, .btn-group-vertical >
+.btn-group-vertical > .btn + .btn, .home .entry.intro-content .btn-group-vertical > button + .btn, .btn-group-vertical > button + .btn, .btn-group-vertical >
 .button:not(.wpb_button_a) + .btn, .btn-group-vertical >
 input[type="button"] + .btn, .btn-group-vertical >
 input[type="reset"] + .btn, .btn-group-vertical >
-input[type="submit"] + .btn, .btn-group-vertical > .wpb_button + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + .btn, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a + .btn, .home .entry .btn-group-vertical > .btn + button, .home .entry .btn-group-vertical >
-.button:not(.wpb_button_a) + button, .home .entry .btn-group-vertical >
-input[type="button"] + button, .home .entry .btn-group-vertical >
-input[type="reset"] + button, .home .entry .btn-group-vertical >
-input[type="submit"] + button, .home .entry .btn-group-vertical > .wpb_button + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry .btn-group-vertical > a + button, #secondary .sow-cta-base .ow-button-base .home .entry .btn-group-vertical > a + button, .btn-group-vertical > .btn + button, .home .entry .btn-group-vertical > button + button, .btn-group-vertical > button + button, .btn-group-vertical >
+input[type="submit"] + .btn, .btn-group-vertical > .wpb_button + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + .btn, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a + .btn, .home .entry.intro-content .btn-group-vertical > .btn + button, .home .entry.intro-content .btn-group-vertical >
+.button:not(.wpb_button_a) + button, .home .entry.intro-content .btn-group-vertical >
+input[type="button"] + button, .home .entry.intro-content .btn-group-vertical >
+input[type="reset"] + button, .home .entry.intro-content .btn-group-vertical >
+input[type="submit"] + button, .home .entry.intro-content .btn-group-vertical > .wpb_button + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content .btn-group-vertical > a + button, #secondary .sow-cta-base .ow-button-base .home .entry.intro-content .btn-group-vertical > a + button, .btn-group-vertical > .btn + button, .home .entry.intro-content .btn-group-vertical > button + button, .btn-group-vertical > button + button, .btn-group-vertical >
 .button:not(.wpb_button_a) + button, .btn-group-vertical >
 input[type="button"] + button, .btn-group-vertical >
 input[type="reset"] + button, .btn-group-vertical >
 input[type="submit"] + button, .btn-group-vertical > .wpb_button + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + button, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a + button, .btn-group-vertical > .btn +
-.button:not(.wpb_button_a), .home .entry .btn-group-vertical > button +
+.button:not(.wpb_button_a), .home .entry.intro-content .btn-group-vertical > button +
 .button:not(.wpb_button_a), .btn-group-vertical > button +
 .button:not(.wpb_button_a), .btn-group-vertical >
 .button:not(.wpb_button_a) +
@@ -3714,7 +3714,7 @@ input[type="submit"] +
 .button:not(.wpb_button_a), .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a +
 .button:not(.wpb_button_a), #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a +
 .button:not(.wpb_button_a), .btn-group-vertical > .btn +
-input[type="button"], .home .entry .btn-group-vertical > button +
+input[type="button"], .home .entry.intro-content .btn-group-vertical > button +
 input[type="button"], .btn-group-vertical > button +
 input[type="button"], .btn-group-vertical >
 .button:not(.wpb_button_a) +
@@ -3728,7 +3728,7 @@ input[type="button"], .btn-group-vertical > .wpb_button +
 input[type="button"], .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a +
 input[type="button"], #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a +
 input[type="button"], .btn-group-vertical > .btn +
-input[type="reset"], .home .entry .btn-group-vertical > button +
+input[type="reset"], .home .entry.intro-content .btn-group-vertical > button +
 input[type="reset"], .btn-group-vertical > button +
 input[type="reset"], .btn-group-vertical >
 .button:not(.wpb_button_a) +
@@ -3742,7 +3742,7 @@ input[type="reset"], .btn-group-vertical > .wpb_button +
 input[type="reset"], .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a +
 input[type="reset"], #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a +
 input[type="reset"], .btn-group-vertical > .btn +
-input[type="submit"], .home .entry .btn-group-vertical > button +
+input[type="submit"], .home .entry.intro-content .btn-group-vertical > button +
 input[type="submit"], .btn-group-vertical > button +
 input[type="submit"], .btn-group-vertical >
 .button:not(.wpb_button_a) +
@@ -3755,20 +3755,20 @@ input[type="submit"] +
 input[type="submit"], .btn-group-vertical > .wpb_button +
 input[type="submit"], .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a +
 input[type="submit"], #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a +
-input[type="submit"], .btn-group-vertical > .btn + .wpb_button, .home .entry .btn-group-vertical > button + .wpb_button, .btn-group-vertical > button + .wpb_button, .btn-group-vertical >
+input[type="submit"], .btn-group-vertical > .btn + .wpb_button, .home .entry.intro-content .btn-group-vertical > button + .wpb_button, .btn-group-vertical > button + .wpb_button, .btn-group-vertical >
 .button:not(.wpb_button_a) + .wpb_button, .btn-group-vertical >
 input[type="button"] + .wpb_button, .btn-group-vertical >
 input[type="reset"] + .wpb_button, .btn-group-vertical >
-input[type="submit"] + .wpb_button, .btn-group-vertical > .wpb_button + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + .wpb_button, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry .btn-group-vertical > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical >
+input[type="submit"] + .wpb_button, .btn-group-vertical > .wpb_button + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + .wpb_button, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content .btn-group-vertical > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical >
 .button:not(.wpb_button_a) + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical >
 input[type="button"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical >
 input[type="reset"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical >
-input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > .btn + a, #secondary .sow-cta-base .ow-button-base .home .entry .btn-group-vertical > button + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > button + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical >
+input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > .btn + a, #secondary .sow-cta-base .ow-button-base .home .entry.intro-content .btn-group-vertical > button + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > button + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical >
 .button:not(.wpb_button_a) + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical >
 input[type="button"] + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical >
 input[type="reset"] + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical >
 input[type="submit"] + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > .wpb_button + a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a + a,
-.btn-group-vertical > .btn + .btn-group, .home .entry
+.btn-group-vertical > .btn + .btn-group, .home .entry.intro-content
 .btn-group-vertical > button + .btn-group,
 .btn-group-vertical > button + .btn-group,
 .btn-group-vertical >
@@ -3782,7 +3782,7 @@ input[type="submit"] + .btn-group,
 .btn-group-vertical > .wpb_button + .btn-group, .so-widget-sow-cta .sow-cta-base .ow-button-base
 .btn-group-vertical > a + .btn-group, #secondary .sow-cta-base .ow-button-base
 .btn-group-vertical > a + .btn-group,
-.btn-group-vertical > .btn-group + .btn, .home .entry
+.btn-group-vertical > .btn-group + .btn, .home .entry.intro-content
 .btn-group-vertical > .btn-group + button,
 .btn-group-vertical > .btn-group + button,
 .btn-group-vertical > .btn-group +
@@ -3800,14 +3800,14 @@ input[type="submit"],
   margin-top: -1px;
   margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .home .entry .btn-group-vertical > button:not(:first-child):not(:last-child), .btn-group-vertical > button:not(:first-child):not(:last-child), .btn-group-vertical >
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .home .entry.intro-content .btn-group-vertical > button:not(:first-child):not(:last-child), .btn-group-vertical > button:not(:first-child):not(:last-child), .btn-group-vertical >
 .button:not(:first-child):not(:last-child):not(.wpb_button_a), .btn-group-vertical >
 input[type="button"]:not(:first-child):not(:last-child), .btn-group-vertical >
 input[type="reset"]:not(:first-child):not(:last-child), .btn-group-vertical >
 input[type="submit"]:not(:first-child):not(:last-child), .btn-group-vertical > .wpb_button:not(:first-child):not(:last-child), .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > a:not(:first-child):not(:last-child), #secondary .sow-cta-base .ow-button-base .btn-group-vertical > a:not(:first-child):not(:last-child) {
   border-radius: 0; }
 
-.btn-group-vertical > .btn:first-child:not(:last-child), .home .entry .btn-group-vertical > button:first-child:not(:last-child), .btn-group-vertical > button:first-child:not(:last-child), .btn-group-vertical >
+.btn-group-vertical > .btn:first-child:not(:last-child), .home .entry.intro-content .btn-group-vertical > button:first-child:not(:last-child), .btn-group-vertical > button:first-child:not(:last-child), .btn-group-vertical >
 .button:first-child:not(:last-child):not(.wpb_button_a), .btn-group-vertical >
 input[type="button"]:first-child:not(:last-child), .btn-group-vertical >
 input[type="reset"]:first-child:not(:last-child), .btn-group-vertical >
@@ -3817,7 +3817,7 @@ input[type="submit"]:first-child:not(:last-child), .btn-group-vertical > .wpb_bu
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn:last-child:not(:first-child), .home .entry .btn-group-vertical > button:last-child:not(:first-child), .btn-group-vertical > button:last-child:not(:first-child), .btn-group-vertical >
+.btn-group-vertical > .btn:last-child:not(:first-child), .home .entry.intro-content .btn-group-vertical > button:last-child:not(:first-child), .btn-group-vertical > button:last-child:not(:first-child), .btn-group-vertical >
 .button:last-child:not(:first-child):not(.wpb_button_a), .btn-group-vertical >
 input[type="button"]:last-child:not(:first-child), .btn-group-vertical >
 input[type="reset"]:last-child:not(:first-child), .btn-group-vertical >
@@ -3827,14 +3827,14 @@ input[type="submit"]:last-child:not(:first-child), .btn-group-vertical > .wpb_bu
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .home .entry .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .home .entry.intro-content .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
 .button:not(.wpb_button_a), .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
 input[type="button"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
 input[type="reset"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) >
 input[type="submit"], .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, #secondary .sow-cta-base .ow-button-base .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .home .entry .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) >
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .home .entry.intro-content .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) >
 .button:last-child:not(.wpb_button_a), .btn-group-vertical > .btn-group:first-child:not(:last-child) >
 input[type="button"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) >
 input[type="reset"]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) >
@@ -3843,7 +3843,7 @@ input[type="submit"]:last-child, .btn-group-vertical > .btn-group:first-child:no
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .home .entry .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) >
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .home .entry.intro-content .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) >
 .button:first-child:not(.wpb_button_a), .btn-group-vertical > .btn-group:last-child:not(:first-child) >
 input[type="button"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) >
 input[type="reset"]:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) >
@@ -3856,7 +3856,7 @@ input[type="submit"]:first-child, .btn-group-vertical > .btn-group:last-child:no
   width: 100%;
   table-layout: fixed;
   border-collapse: separate; }
-  .btn-group-justified > .btn, .home .entry .btn-group-justified > button, .btn-group-justified > button, .btn-group-justified >
+  .btn-group-justified > .btn, .home .entry.intro-content .btn-group-justified > button, .btn-group-justified > button, .btn-group-justified >
   .button:not(.wpb_button_a), .btn-group-justified >
   input[type="button"], .btn-group-justified >
   input[type="reset"], .btn-group-justified >
@@ -3865,7 +3865,7 @@ input[type="submit"]:first-child, .btn-group-vertical > .btn-group:last-child:no
     float: none;
     display: table-cell;
     width: 1%; }
-  .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .home .entry button, .home .entry .btn-group-justified > .btn-group button, .btn-group-justified > .btn-group button, .btn-group-justified > .btn-group
+  .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .home .entry.intro-content button, .home .entry.intro-content .btn-group-justified > .btn-group button, .btn-group-justified > .btn-group button, .btn-group-justified > .btn-group
   .button:not(.wpb_button_a), .btn-group-justified > .btn-group
   input[type="button"], .btn-group-justified > .btn-group
   input[type="reset"], .btn-group-justified > .btn-group
@@ -3874,12 +3874,12 @@ input[type="submit"]:first-child, .btn-group-vertical > .btn-group:last-child:no
   .btn-group-justified > .btn-group .dropdown-menu {
     left: auto; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .home .entry [data-toggle="buttons"] > button input[type="radio"], [data-toggle="buttons"] > button input[type="radio"], [data-toggle="buttons"] >
+[data-toggle="buttons"] > .btn input[type="radio"], .home .entry.intro-content [data-toggle="buttons"] > button input[type="radio"], [data-toggle="buttons"] > button input[type="radio"], [data-toggle="buttons"] >
 .button:not(.wpb_button_a) input[type="radio"], [data-toggle="buttons"] >
 input[type="button"] input[type="radio"], [data-toggle="buttons"] >
 input[type="reset"] input[type="radio"], [data-toggle="buttons"] >
 input[type="submit"] input[type="radio"], [data-toggle="buttons"] > .wpb_button input[type="radio"], .so-widget-sow-cta .sow-cta-base .ow-button-base [data-toggle="buttons"] > a input[type="radio"], #secondary .sow-cta-base .ow-button-base [data-toggle="buttons"] > a input[type="radio"],
-[data-toggle="buttons"] > .btn input[type="checkbox"], .home .entry
+[data-toggle="buttons"] > .btn input[type="checkbox"], .home .entry.intro-content
 [data-toggle="buttons"] > button input[type="checkbox"],
 [data-toggle="buttons"] > button input[type="checkbox"],
 [data-toggle="buttons"] >
@@ -3893,7 +3893,7 @@ input[type="submit"] input[type="checkbox"],
 [data-toggle="buttons"] > .wpb_button input[type="checkbox"], .so-widget-sow-cta .sow-cta-base .ow-button-base
 [data-toggle="buttons"] > a input[type="checkbox"], #secondary .sow-cta-base .ow-button-base
 [data-toggle="buttons"] > a input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="radio"], .home .entry
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"], .home .entry.intro-content
 [data-toggle="buttons"] > .btn-group > button input[type="radio"],
 [data-toggle="buttons"] > .btn-group > button input[type="radio"],
 [data-toggle="buttons"] > .btn-group >
@@ -3907,7 +3907,7 @@ input[type="submit"] input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .wpb_button input[type="radio"], .so-widget-sow-cta .sow-cta-base .ow-button-base
 [data-toggle="buttons"] > .btn-group > a input[type="radio"], #secondary .sow-cta-base .ow-button-base
 [data-toggle="buttons"] > .btn-group > a input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .home .entry
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .home .entry.intro-content
 [data-toggle="buttons"] > .btn-group > button input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > button input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group >
@@ -3969,7 +3969,7 @@ input[type="submit"] input[type="checkbox"],
   border-radius: 0; }
   .input-group-addon.input-sm,
   .input-group-sm > .input-group-addon,
-  .input-group-sm > .input-group-btn > .input-group-addon.btn, .home .entry
+  .input-group-sm > .input-group-btn > .input-group-addon.btn, .home .entry.intro-content
   .input-group-sm > .input-group-btn > button.input-group-addon,
   .input-group-sm > .input-group-btn > button.input-group-addon,
   .input-group-sm > .input-group-btn >
@@ -3988,7 +3988,7 @@ input[type="submit"] input[type="checkbox"],
     border-radius: 0; }
   .input-group-addon.input-lg,
   .input-group-lg > .input-group-addon,
-  .input-group-lg > .input-group-btn > .input-group-addon.btn, .home .entry
+  .input-group-lg > .input-group-btn > .input-group-addon.btn, .home .entry.intro-content
   .input-group-lg > .input-group-btn > button.input-group-addon,
   .input-group-lg > .input-group-btn > button.input-group-addon,
   .input-group-lg > .input-group-btn >
@@ -4011,7 +4011,7 @@ input[type="submit"] input[type="checkbox"],
 
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
-.input-group-btn:first-child > .btn, .home .entry
+.input-group-btn:first-child > .btn, .home .entry.intro-content
 .input-group-btn:first-child > button,
 .input-group-btn:first-child > button,
 .input-group-btn:first-child >
@@ -4025,7 +4025,7 @@ input[type="submit"],
 .input-group-btn:first-child > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base
 .input-group-btn:first-child > a, #secondary .sow-cta-base .ow-button-base
 .input-group-btn:first-child > a,
-.input-group-btn:first-child > .btn-group > .btn, .home .entry
+.input-group-btn:first-child > .btn-group > .btn, .home .entry.intro-content
 .input-group-btn:first-child > .btn-group > button,
 .input-group-btn:first-child > .btn-group > button,
 .input-group-btn:first-child > .btn-group >
@@ -4040,7 +4040,7 @@ input[type="submit"],
 .input-group-btn:first-child > .btn-group > a, #secondary .sow-cta-base .ow-button-base
 .input-group-btn:first-child > .btn-group > a,
 .input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .home .entry
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .home .entry.intro-content
 .input-group-btn:last-child > button:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > button:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child >
@@ -4054,7 +4054,7 @@ input[type="submit"]:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .wpb_button:not(:last-child):not(.dropdown-toggle), .so-widget-sow-cta .sow-cta-base .ow-button-base
 .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle), #secondary .sow-cta-base .ow-button-base
 .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .home .entry
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .home .entry.intro-content
 .input-group-btn:last-child > .btn-group:not(:last-child) > button,
 .input-group-btn:last-child > .btn-group:not(:last-child) > button,
 .input-group-btn:last-child > .btn-group:not(:last-child) >
@@ -4076,7 +4076,7 @@ input[type="submit"],
 
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
-.input-group-btn:last-child > .btn, .home .entry
+.input-group-btn:last-child > .btn, .home .entry.intro-content
 .input-group-btn:last-child > button,
 .input-group-btn:last-child > button,
 .input-group-btn:last-child >
@@ -4090,7 +4090,7 @@ input[type="submit"],
 .input-group-btn:last-child > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base
 .input-group-btn:last-child > a, #secondary .sow-cta-base .ow-button-base
 .input-group-btn:last-child > a,
-.input-group-btn:last-child > .btn-group > .btn, .home .entry
+.input-group-btn:last-child > .btn-group > .btn, .home .entry.intro-content
 .input-group-btn:last-child > .btn-group > button,
 .input-group-btn:last-child > .btn-group > button,
 .input-group-btn:last-child > .btn-group >
@@ -4105,7 +4105,7 @@ input[type="submit"],
 .input-group-btn:last-child > .btn-group > a, #secondary .sow-cta-base .ow-button-base
 .input-group-btn:last-child > .btn-group > a,
 .input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child), .home .entry
+.input-group-btn:first-child > .btn:not(:first-child), .home .entry.intro-content
 .input-group-btn:first-child > button:not(:first-child),
 .input-group-btn:first-child > button:not(:first-child),
 .input-group-btn:first-child >
@@ -4119,7 +4119,7 @@ input[type="submit"]:not(:first-child),
 .input-group-btn:first-child > .wpb_button:not(:first-child), .so-widget-sow-cta .sow-cta-base .ow-button-base
 .input-group-btn:first-child > a:not(:first-child), #secondary .sow-cta-base .ow-button-base
 .input-group-btn:first-child > a:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .home .entry
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .home .entry.intro-content
 .input-group-btn:first-child > .btn-group:not(:first-child) > button,
 .input-group-btn:first-child > .btn-group:not(:first-child) > button,
 .input-group-btn:first-child > .btn-group:not(:first-child) >
@@ -4143,26 +4143,26 @@ input[type="submit"],
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, .home .entry .input-group-btn > button, .input-group-btn > button, .input-group-btn >
+  .input-group-btn > .btn, .home .entry.intro-content .input-group-btn > button, .input-group-btn > button, .input-group-btn >
   .button:not(.wpb_button_a), .input-group-btn >
   input[type="button"], .input-group-btn >
   input[type="reset"], .input-group-btn >
   input[type="submit"], .input-group-btn > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a, #secondary .sow-cta-base .ow-button-base .input-group-btn > a {
     position: relative; }
-    .input-group-btn > .btn + .btn, .home .entry .input-group-btn > button + .btn, .input-group-btn > button + .btn, .input-group-btn >
+    .input-group-btn > .btn + .btn, .home .entry.intro-content .input-group-btn > button + .btn, .input-group-btn > button + .btn, .input-group-btn >
     .button:not(.wpb_button_a) + .btn, .input-group-btn >
     input[type="button"] + .btn, .input-group-btn >
     input[type="reset"] + .btn, .input-group-btn >
-    input[type="submit"] + .btn, .input-group-btn > .wpb_button + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + .btn, #secondary .sow-cta-base .ow-button-base .input-group-btn > a + .btn, .home .entry .input-group-btn > .btn + button, .home .entry .input-group-btn >
-    .button:not(.wpb_button_a) + button, .home .entry .input-group-btn >
-    input[type="button"] + button, .home .entry .input-group-btn >
-    input[type="reset"] + button, .home .entry .input-group-btn >
-    input[type="submit"] + button, .home .entry .input-group-btn > .wpb_button + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry .input-group-btn > a + button, #secondary .sow-cta-base .ow-button-base .home .entry .input-group-btn > a + button, .input-group-btn > .btn + button, .home .entry .input-group-btn > button + button, .input-group-btn > button + button, .input-group-btn >
+    input[type="submit"] + .btn, .input-group-btn > .wpb_button + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + .btn, #secondary .sow-cta-base .ow-button-base .input-group-btn > a + .btn, .home .entry.intro-content .input-group-btn > .btn + button, .home .entry.intro-content .input-group-btn >
+    .button:not(.wpb_button_a) + button, .home .entry.intro-content .input-group-btn >
+    input[type="button"] + button, .home .entry.intro-content .input-group-btn >
+    input[type="reset"] + button, .home .entry.intro-content .input-group-btn >
+    input[type="submit"] + button, .home .entry.intro-content .input-group-btn > .wpb_button + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content .input-group-btn > a + button, #secondary .sow-cta-base .ow-button-base .home .entry.intro-content .input-group-btn > a + button, .input-group-btn > .btn + button, .home .entry.intro-content .input-group-btn > button + button, .input-group-btn > button + button, .input-group-btn >
     .button:not(.wpb_button_a) + button, .input-group-btn >
     input[type="button"] + button, .input-group-btn >
     input[type="reset"] + button, .input-group-btn >
     input[type="submit"] + button, .input-group-btn > .wpb_button + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + button, #secondary .sow-cta-base .ow-button-base .input-group-btn > a + button, .input-group-btn > .btn +
-    .button:not(.wpb_button_a), .home .entry .input-group-btn > button +
+    .button:not(.wpb_button_a), .home .entry.intro-content .input-group-btn > button +
     .button:not(.wpb_button_a), .input-group-btn > button +
     .button:not(.wpb_button_a), .input-group-btn >
     .button:not(.wpb_button_a) +
@@ -4176,7 +4176,7 @@ input[type="submit"],
     .button:not(.wpb_button_a), .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a +
     .button:not(.wpb_button_a), #secondary .sow-cta-base .ow-button-base .input-group-btn > a +
     .button:not(.wpb_button_a), .input-group-btn > .btn +
-    input[type="button"], .home .entry .input-group-btn > button +
+    input[type="button"], .home .entry.intro-content .input-group-btn > button +
     input[type="button"], .input-group-btn > button +
     input[type="button"], .input-group-btn >
     .button:not(.wpb_button_a) +
@@ -4190,7 +4190,7 @@ input[type="submit"],
     input[type="button"], .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a +
     input[type="button"], #secondary .sow-cta-base .ow-button-base .input-group-btn > a +
     input[type="button"], .input-group-btn > .btn +
-    input[type="reset"], .home .entry .input-group-btn > button +
+    input[type="reset"], .home .entry.intro-content .input-group-btn > button +
     input[type="reset"], .input-group-btn > button +
     input[type="reset"], .input-group-btn >
     .button:not(.wpb_button_a) +
@@ -4204,7 +4204,7 @@ input[type="submit"],
     input[type="reset"], .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a +
     input[type="reset"], #secondary .sow-cta-base .ow-button-base .input-group-btn > a +
     input[type="reset"], .input-group-btn > .btn +
-    input[type="submit"], .home .entry .input-group-btn > button +
+    input[type="submit"], .home .entry.intro-content .input-group-btn > button +
     input[type="submit"], .input-group-btn > button +
     input[type="submit"], .input-group-btn >
     .button:not(.wpb_button_a) +
@@ -4217,42 +4217,42 @@ input[type="submit"],
     input[type="submit"], .input-group-btn > .wpb_button +
     input[type="submit"], .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a +
     input[type="submit"], #secondary .sow-cta-base .ow-button-base .input-group-btn > a +
-    input[type="submit"], .input-group-btn > .btn + .wpb_button, .home .entry .input-group-btn > button + .wpb_button, .input-group-btn > button + .wpb_button, .input-group-btn >
+    input[type="submit"], .input-group-btn > .btn + .wpb_button, .home .entry.intro-content .input-group-btn > button + .wpb_button, .input-group-btn > button + .wpb_button, .input-group-btn >
     .button:not(.wpb_button_a) + .wpb_button, .input-group-btn >
     input[type="button"] + .wpb_button, .input-group-btn >
     input[type="reset"] + .wpb_button, .input-group-btn >
-    input[type="submit"] + .wpb_button, .input-group-btn > .wpb_button + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + .wpb_button, #secondary .sow-cta-base .ow-button-base .input-group-btn > a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry .input-group-btn > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn >
+    input[type="submit"] + .wpb_button, .input-group-btn > .wpb_button + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + .wpb_button, #secondary .sow-cta-base .ow-button-base .input-group-btn > a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content .input-group-btn > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn >
     .button:not(.wpb_button_a) + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn >
     input[type="button"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn >
     input[type="reset"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn >
-    input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + a, #secondary .sow-cta-base .ow-button-base .input-group-btn > .btn + a, #secondary .sow-cta-base .ow-button-base .home .entry .input-group-btn > button + a, #secondary .sow-cta-base .ow-button-base .input-group-btn > button + a, #secondary .sow-cta-base .ow-button-base .input-group-btn >
+    input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a + a, #secondary .sow-cta-base .ow-button-base .input-group-btn > .btn + a, #secondary .sow-cta-base .ow-button-base .home .entry.intro-content .input-group-btn > button + a, #secondary .sow-cta-base .ow-button-base .input-group-btn > button + a, #secondary .sow-cta-base .ow-button-base .input-group-btn >
     .button:not(.wpb_button_a) + a, #secondary .sow-cta-base .ow-button-base .input-group-btn >
     input[type="button"] + a, #secondary .sow-cta-base .ow-button-base .input-group-btn >
     input[type="reset"] + a, #secondary .sow-cta-base .ow-button-base .input-group-btn >
     input[type="submit"] + a, #secondary .sow-cta-base .ow-button-base .input-group-btn > .wpb_button + a, #secondary .sow-cta-base .ow-button-base .input-group-btn > a + a {
       margin-left: -1px; }
-    .input-group-btn > .btn:hover, .home .entry .input-group-btn > button:hover, .input-group-btn > button:hover, .input-group-btn >
+    .input-group-btn > .btn:hover, .home .entry.intro-content .input-group-btn > button:hover, .input-group-btn > button:hover, .input-group-btn >
     .button:hover:not(.wpb_button_a), .input-group-btn >
     input[type="button"]:hover, .input-group-btn >
     input[type="reset"]:hover, .input-group-btn >
-    input[type="submit"]:hover, .input-group-btn > .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a:hover, #secondary .sow-cta-base .ow-button-base .input-group-btn > a:hover, .input-group-btn > .btn:focus, .home .entry .input-group-btn > button:focus, .input-group-btn > button:focus, .input-group-btn >
+    input[type="submit"]:hover, .input-group-btn > .wpb_button:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a:hover, #secondary .sow-cta-base .ow-button-base .input-group-btn > a:hover, .input-group-btn > .btn:focus, .home .entry.intro-content .input-group-btn > button:focus, .input-group-btn > button:focus, .input-group-btn >
     .button:focus:not(.wpb_button_a), .input-group-btn >
     input[type="button"]:focus, .input-group-btn >
     input[type="reset"]:focus, .input-group-btn >
-    input[type="submit"]:focus, .input-group-btn > .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a:focus, #secondary .sow-cta-base .ow-button-base .input-group-btn > a:focus, .input-group-btn > .btn:active, .home .entry .input-group-btn > button:active, .input-group-btn > button:active, .input-group-btn >
+    input[type="submit"]:focus, .input-group-btn > .wpb_button:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a:focus, #secondary .sow-cta-base .ow-button-base .input-group-btn > a:focus, .input-group-btn > .btn:active, .home .entry.intro-content .input-group-btn > button:active, .input-group-btn > button:active, .input-group-btn >
     .button:active:not(.wpb_button_a), .input-group-btn >
     input[type="button"]:active, .input-group-btn >
     input[type="reset"]:active, .input-group-btn >
     input[type="submit"]:active, .input-group-btn > .wpb_button:active, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn > a:active, #secondary .sow-cta-base .ow-button-base .input-group-btn > a:active {
       z-index: 2; }
-  .input-group-btn:first-child > .btn, .home .entry .input-group-btn:first-child > button, .input-group-btn:first-child > button, .input-group-btn:first-child >
+  .input-group-btn:first-child > .btn, .home .entry.intro-content .input-group-btn:first-child > button, .input-group-btn:first-child > button, .input-group-btn:first-child >
   .button:not(.wpb_button_a), .input-group-btn:first-child >
   input[type="button"], .input-group-btn:first-child >
   input[type="reset"], .input-group-btn:first-child >
   input[type="submit"], .input-group-btn:first-child > .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .input-group-btn:first-child > a, #secondary .sow-cta-base .ow-button-base .input-group-btn:first-child > a,
   .input-group-btn:first-child > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:last-child > .btn, .home .entry .input-group-btn:last-child > button, .input-group-btn:last-child > button, .input-group-btn:last-child >
+  .input-group-btn:last-child > .btn, .home .entry.intro-content .input-group-btn:last-child > button, .input-group-btn:last-child > button, .input-group-btn:last-child >
   .button:not(.wpb_button_a), .input-group-btn:last-child >
   input[type="button"], .input-group-btn:last-child >
   input[type="reset"], .input-group-btn:last-child >
@@ -4635,14 +4635,14 @@ input[type="submit"],
 .navbar-btn {
   margin-top: 7px;
   margin-bottom: 7px; }
-  .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .home .entry .btn-group-sm > button.navbar-btn, .btn-group-sm > button.navbar-btn, .btn-group-sm >
+  .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .home .entry.intro-content .btn-group-sm > button.navbar-btn, .btn-group-sm > button.navbar-btn, .btn-group-sm >
   .navbar-btn.button:not(.wpb_button_a), .btn-group-sm >
   input.navbar-btn[type="button"], .btn-group-sm >
   input.navbar-btn[type="reset"], .btn-group-sm >
   input.navbar-btn[type="submit"], .btn-group-sm > .navbar-btn.wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-sm > a.navbar-btn, #secondary .sow-cta-base .ow-button-base .btn-group-sm > a.navbar-btn {
     margin-top: 8.5px;
     margin-bottom: 8.5px; }
-  .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .home .entry .btn-group-xs > button.navbar-btn, .btn-group-xs > button.navbar-btn, .btn-group-xs >
+  .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .home .entry.intro-content .btn-group-xs > button.navbar-btn, .btn-group-xs > button.navbar-btn, .btn-group-xs >
   .navbar-btn.button:not(.wpb_button_a), .btn-group-xs >
   input.navbar-btn[type="button"], .btn-group-xs >
   input.navbar-btn[type="reset"], .btn-group-xs >
@@ -4963,11 +4963,11 @@ input[type="submit"],
   #bbpress-forums #members-list .item-header-content .activity:empty,
   #bbpress-forums #members-dir-list .item-header-content .activity:empty {
     display: none; }
-  .btn .label, .home .entry button .label, button .label,
+  .btn .label, .home .entry.intro-content button .label, button .label,
   .button:not(.wpb_button_a) .label,
   input[type="button"] .label,
   input[type="reset"] .label,
-  input[type="submit"] .label, .wpb_button .label, .so-widget-sow-cta .sow-cta-base .ow-button-base a .label, #secondary .sow-cta-base .ow-button-base a .label, .btn .tags a, .tags .btn a, .home .entry button .tags a, .tags .home .entry button a, button .tags a, .tags button a,
+  input[type="submit"] .label, .wpb_button .label, .so-widget-sow-cta .sow-cta-base .ow-button-base a .label, #secondary .sow-cta-base .ow-button-base a .label, .btn .tags a, .tags .btn a, .home .entry.intro-content button .tags a, .tags .home .entry.intro-content button a, button .tags a, .tags button a,
   .button:not(.wpb_button_a) .tags a, .tags
   .button:not(.wpb_button_a) a,
   input[type="button"] .tags a, .tags
@@ -4977,9 +4977,9 @@ input[type="submit"],
   input[type="submit"] .tags a, .tags
   input[type="submit"] a, .wpb_button .tags a, .tags .wpb_button a, .so-widget-sow-cta .sow-cta-base .ow-button-base a .tags a, .tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a .tags a, .tags #secondary .sow-cta-base .ow-button-base a a, .btn
   .category a,
-  .category .btn a, .home .entry button
+  .category .btn a, .home .entry.intro-content button
   .category a,
-  .category .home .entry button a, button
+  .category .home .entry.intro-content button a, button
   .category a,
   .category button a,
   .button:not(.wpb_button_a)
@@ -5005,9 +5005,9 @@ input[type="submit"],
   .category a,
   .category #secondary .sow-cta-base .ow-button-base a a, .btn
   .cat-links a,
-  .cat-links .btn a, .home .entry button
+  .cat-links .btn a, .home .entry.intro-content button
   .cat-links a,
-  .cat-links .home .entry button a, button
+  .cat-links .home .entry.intro-content button a, button
   .cat-links a,
   .cat-links button a,
   .button:not(.wpb_button_a)
@@ -5031,7 +5031,7 @@ input[type="submit"],
   .cat-links a,
   .cat-links .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   .cat-links a,
-  .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .btn .activity, .home .entry button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .home .entry button .activity, button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta button .activity,
+  .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta button .activity,
   .button:not(.wpb_button_a) #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
   .button:not(.wpb_button_a) .activity,
   input[type="button"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
@@ -5041,9 +5041,9 @@ input[type="submit"],
   input[type="submit"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
   input[type="submit"] .activity, .wpb_button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .wpb_button .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .btn .activity, .home .entry button
+  #bbpress-forums #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button
   #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .home .entry button .activity, button
+  #bbpress-forums #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button
   #bbpress-forums #item-header-cover-image #item-meta .activity,
   #bbpress-forums #item-header-cover-image #item-meta button .activity,
   .button:not(.wpb_button_a)
@@ -5067,7 +5067,7 @@ input[type="submit"],
   #bbpress-forums #item-header-cover-image #item-meta .activity,
   #bbpress-forums #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn #buddypress .highlight, #buddypress .btn .highlight, .home .entry button #buddypress .highlight, #buddypress .home .entry button .highlight, button #buddypress .highlight, #buddypress button .highlight,
+  #bbpress-forums #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn #buddypress .highlight, #buddypress .btn .highlight, .home .entry.intro-content button #buddypress .highlight, #buddypress .home .entry.intro-content button .highlight, button #buddypress .highlight, #buddypress button .highlight,
   .button:not(.wpb_button_a) #buddypress .highlight, #buddypress
   .button:not(.wpb_button_a) .highlight,
   input[type="button"] #buddypress .highlight, #buddypress
@@ -5077,9 +5077,9 @@ input[type="submit"],
   input[type="submit"] #buddypress .highlight, #buddypress
   input[type="submit"] .highlight, .wpb_button #buddypress .highlight, #buddypress .wpb_button .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .highlight, #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a #buddypress .highlight, #buddypress #secondary .sow-cta-base .ow-button-base a .highlight, .btn
   #bbpress-forums .highlight,
-  #bbpress-forums .btn .highlight, .home .entry button
+  #bbpress-forums .btn .highlight, .home .entry.intro-content button
   #bbpress-forums .highlight,
-  #bbpress-forums .home .entry button .highlight, button
+  #bbpress-forums .home .entry.intro-content button .highlight, button
   #bbpress-forums .highlight,
   #bbpress-forums button .highlight,
   .button:not(.wpb_button_a)
@@ -5103,7 +5103,7 @@ input[type="submit"],
   #bbpress-forums .highlight,
   #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .highlight,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a .highlight, .btn #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .btn a, .home .entry button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .home .entry button a, button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags button a,
+  #bbpress-forums #secondary .sow-cta-base .ow-button-base a .highlight, .btn #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .btn a, .home .entry.intro-content button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .home .entry.intro-content button a, button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags button a,
   .button:not(.wpb_button_a) #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
   .button:not(.wpb_button_a) a,
   input[type="button"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
@@ -5113,9 +5113,9 @@ input[type="submit"],
   input[type="submit"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
   input[type="submit"] a, .wpb_button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .wpb_button a, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn
   #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .btn a, .home .entry button
+  #bbpress-forums .bbp-topic-tags .btn a, .home .entry.intro-content button
   #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .home .entry button a, button
+  #bbpress-forums .bbp-topic-tags .home .entry.intro-content button a, button
   #bbpress-forums .bbp-topic-tags a,
   #bbpress-forums .bbp-topic-tags button a,
   .button:not(.wpb_button_a)
@@ -5139,7 +5139,7 @@ input[type="submit"],
   #bbpress-forums .bbp-topic-tags a,
   #bbpress-forums .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .tags-cell a, #buddypress .tags-cell .btn a, .home .entry button #buddypress .tags-cell a, #buddypress .tags-cell .home .entry button a, button #buddypress .tags-cell a, #buddypress .tags-cell button a,
+  #bbpress-forums .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .tags-cell a, #buddypress .tags-cell .btn a, .home .entry.intro-content button #buddypress .tags-cell a, #buddypress .tags-cell .home .entry.intro-content button a, button #buddypress .tags-cell a, #buddypress .tags-cell button a,
   .button:not(.wpb_button_a) #buddypress .tags-cell a, #buddypress .tags-cell
   .button:not(.wpb_button_a) a,
   input[type="button"] #buddypress .tags-cell a, #buddypress .tags-cell
@@ -5149,9 +5149,9 @@ input[type="submit"],
   input[type="submit"] #buddypress .tags-cell a, #buddypress .tags-cell
   input[type="submit"] a, .wpb_button #buddypress .tags-cell a, #buddypress .tags-cell .wpb_button a, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn
   #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .btn a, .home .entry button
+  #bbpress-forums .tags-cell .btn a, .home .entry.intro-content button
   #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .home .entry button a, button
+  #bbpress-forums .tags-cell .home .entry.intro-content button a, button
   #bbpress-forums .tags-cell a,
   #bbpress-forums .tags-cell button a,
   .button:not(.wpb_button_a)
@@ -5175,7 +5175,7 @@ input[type="submit"],
   #bbpress-forums .tags-cell a,
   #bbpress-forums .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .bbp-reply-permalink, #buddypress .btn .bbp-reply-permalink, .home .entry button #buddypress .bbp-reply-permalink, #buddypress .home .entry button .bbp-reply-permalink, button #buddypress .bbp-reply-permalink, #buddypress button .bbp-reply-permalink,
+  #bbpress-forums .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .bbp-reply-permalink, #buddypress .btn .bbp-reply-permalink, .home .entry.intro-content button #buddypress .bbp-reply-permalink, #buddypress .home .entry.intro-content button .bbp-reply-permalink, button #buddypress .bbp-reply-permalink, #buddypress button .bbp-reply-permalink,
   .button:not(.wpb_button_a) #buddypress .bbp-reply-permalink, #buddypress
   .button:not(.wpb_button_a) .bbp-reply-permalink,
   input[type="button"] #buddypress .bbp-reply-permalink, #buddypress
@@ -5185,9 +5185,9 @@ input[type="submit"],
   input[type="submit"] #buddypress .bbp-reply-permalink, #buddypress
   input[type="submit"] .bbp-reply-permalink, .wpb_button #buddypress .bbp-reply-permalink, #buddypress .wpb_button .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
   #buddypress span.time-since,
-  #buddypress .btn span.time-since, .home .entry button
+  #buddypress .btn span.time-since, .home .entry.intro-content button
   #buddypress span.time-since,
-  #buddypress .home .entry button span.time-since, button
+  #buddypress .home .entry.intro-content button span.time-since, button
   #buddypress span.time-since,
   #buddypress button span.time-since,
   .button:not(.wpb_button_a)
@@ -5213,9 +5213,9 @@ input[type="submit"],
   #buddypress span.time-since,
   #buddypress #secondary .sow-cta-base .ow-button-base a span.time-since, .btn
   #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .btn .bbp-reply-permalink, .home .entry button
+  #bbpress-forums .btn .bbp-reply-permalink, .home .entry.intro-content button
   #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .home .entry button .bbp-reply-permalink, button
+  #bbpress-forums .home .entry.intro-content button .bbp-reply-permalink, button
   #bbpress-forums .bbp-reply-permalink,
   #bbpress-forums button .bbp-reply-permalink,
   .button:not(.wpb_button_a)
@@ -5241,9 +5241,9 @@ input[type="submit"],
   #bbpress-forums .bbp-reply-permalink,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
   #bbpress-forums span.time-since,
-  #bbpress-forums .btn span.time-since, .home .entry button
+  #bbpress-forums .btn span.time-since, .home .entry.intro-content button
   #bbpress-forums span.time-since,
-  #bbpress-forums .home .entry button span.time-since, button
+  #bbpress-forums .home .entry.intro-content button span.time-since, button
   #bbpress-forums span.time-since,
   #bbpress-forums button span.time-since,
   .button:not(.wpb_button_a)
@@ -5267,7 +5267,7 @@ input[type="submit"],
   #bbpress-forums span.time-since,
   #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums span.time-since,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a span.time-since, .btn #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .btn .activity, .home .entry button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .home .entry button .activity, button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content button .activity,
+  #bbpress-forums #secondary .sow-cta-base .ow-button-base a span.time-since, .btn #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .btn .activity, .home .entry.intro-content button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .home .entry.intro-content button .activity, button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content button .activity,
   .button:not(.wpb_button_a) #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
   .button:not(.wpb_button_a) .activity,
   input[type="button"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
@@ -5277,9 +5277,9 @@ input[type="submit"],
   input[type="submit"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
   input[type="submit"] .activity, .wpb_button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .wpb_button .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .btn .activity, .home .entry button
+  #buddypress #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
   #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .home .entry button .activity, button
+  #buddypress #members-dir-list .item-header-content .home .entry.intro-content button .activity, button
   #buddypress #members-dir-list .item-header-content .activity,
   #buddypress #members-dir-list .item-header-content button .activity,
   .button:not(.wpb_button_a)
@@ -5305,9 +5305,9 @@ input[type="submit"],
   #buddypress #members-dir-list .item-header-content .activity,
   #buddypress #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .btn .activity, .home .entry button
+  #bbpress-forums #members-list .item-header-content .btn .activity, .home .entry.intro-content button
   #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .home .entry button .activity, button
+  #bbpress-forums #members-list .item-header-content .home .entry.intro-content button .activity, button
   #bbpress-forums #members-list .item-header-content .activity,
   #bbpress-forums #members-list .item-header-content button .activity,
   .button:not(.wpb_button_a)
@@ -5333,9 +5333,9 @@ input[type="submit"],
   #bbpress-forums #members-list .item-header-content .activity,
   #bbpress-forums #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .btn .activity, .home .entry button
+  #bbpress-forums #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
   #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .home .entry button .activity, button
+  #bbpress-forums #members-dir-list .item-header-content .home .entry.intro-content button .activity, button
   #bbpress-forums #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-dir-list .item-header-content button .activity,
   .button:not(.wpb_button_a)
@@ -5491,7 +5491,7 @@ a.label:hover, .tags a:hover,
   #bbpress-forums .item-list-tabs ul li a span:empty, #buddypress a span:empty,
   #bbpress-forums a span:empty {
     display: none; }
-  .btn .badge, .home .entry button .badge, button .badge,
+  .btn .badge, .home .entry.intro-content button .badge, button .badge,
   .button:not(.wpb_button_a) .badge,
   input[type="button"] .badge,
   input[type="reset"] .badge,
@@ -5556,7 +5556,7 @@ a.label:hover, .tags a:hover,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base a span {
     position: relative;
     top: -1px; }
-  .btn-xs .badge, .btn-group-xs > .btn .badge, .home .entry .btn-group-xs > button .badge, .btn-group-xs > button .badge, .btn-group-xs >
+  .btn-xs .badge, .btn-group-xs > .btn .badge, .home .entry.intro-content .btn-group-xs > button .badge, .btn-group-xs > button .badge, .btn-group-xs >
   .button:not(.wpb_button_a) .badge, .btn-group-xs >
   input[type="button"] .badge, .btn-group-xs >
   input[type="reset"] .badge, .btn-group-xs >
@@ -5566,7 +5566,7 @@ a.label:hover, .tags a:hover,
   #bbpress-forums .item-list-tabs ul li a span,
   #bbpress-forums .item-list-tabs ul li a .btn-group-xs > button span, .so-widget-sow-cta .sow-cta-base .ow-button-base
   #bbpress-forums .item-list-tabs ul li .btn-group-xs > a span, #secondary .sow-cta-base .ow-button-base
-  #bbpress-forums .item-list-tabs ul li .btn-group-xs > a span, .btn-xs #buddypress a span, #buddypress a .btn-xs span, .btn-group-xs > .btn #buddypress a span, #buddypress a .btn-group-xs > .btn span, .home .entry .btn-group-xs > button #buddypress a span, #buddypress a .home .entry .btn-group-xs > button span, .btn-group-xs > button #buddypress a span, #buddypress a .btn-group-xs > button span, .btn-group-xs >
+  #bbpress-forums .item-list-tabs ul li .btn-group-xs > a span, .btn-xs #buddypress a span, #buddypress a .btn-xs span, .btn-group-xs > .btn #buddypress a span, #buddypress a .btn-group-xs > .btn span, .home .entry.intro-content .btn-group-xs > button #buddypress a span, #buddypress a .home .entry.intro-content .btn-group-xs > button span, .btn-group-xs > button #buddypress a span, #buddypress a .btn-group-xs > button span, .btn-group-xs >
   .button:not(.wpb_button_a) #buddypress a span, #buddypress a .btn-group-xs >
   .button:not(.wpb_button_a) span, .btn-group-xs >
   input[type="button"] #buddypress a span, #buddypress a .btn-group-xs >
@@ -5578,9 +5578,9 @@ a.label:hover, .tags a:hover,
   #bbpress-forums a span,
   #bbpress-forums a .btn-xs span, .btn-group-xs > .btn
   #bbpress-forums a span,
-  #bbpress-forums a .btn-group-xs > .btn span, .home .entry .btn-group-xs > button
+  #bbpress-forums a .btn-group-xs > .btn span, .home .entry.intro-content .btn-group-xs > button
   #bbpress-forums a span,
-  #bbpress-forums a .home .entry .btn-group-xs > button span, .btn-group-xs > button
+  #bbpress-forums a .home .entry.intro-content .btn-group-xs > button span, .btn-group-xs > button
   #bbpress-forums a span,
   #bbpress-forums a .btn-group-xs > button span, .btn-group-xs >
   .button:not(.wpb_button_a)
@@ -5605,7 +5605,7 @@ a.label:hover, .tags a:hover,
   #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base .btn-group-xs > a span, #secondary .sow-cta-base .ow-button-base
   #bbpress-forums .btn-group-xs > a span,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base .btn-group-xs > a span,
-  .btn-group-xs > .btn .badge, .home .entry
+  .btn-group-xs > .btn .badge, .home .entry.intro-content
   .btn-group-xs > button .badge,
   .btn-group-xs > button .badge,
   .btn-group-xs >
@@ -5632,8 +5632,8 @@ a.label:hover, .tags a:hover,
   #bbpress-forums .item-list-tabs ul li
   .btn-group-xs > a span,
   .btn-group-xs > .btn #buddypress a span, #buddypress a
-  .btn-group-xs > .btn span, .home .entry
-  .btn-group-xs > button #buddypress a span, #buddypress a .home .entry
+  .btn-group-xs > .btn span, .home .entry.intro-content
+  .btn-group-xs > button #buddypress a span, #buddypress a .home .entry.intro-content
   .btn-group-xs > button span,
   .btn-group-xs > button #buddypress a span, #buddypress a
   .btn-group-xs > button span,
@@ -5662,10 +5662,10 @@ a.label:hover, .tags a:hover,
   .btn-group-xs > .btn
   #bbpress-forums a span,
   #bbpress-forums a
-  .btn-group-xs > .btn span, .home .entry
+  .btn-group-xs > .btn span, .home .entry.intro-content
   .btn-group-xs > button
   #bbpress-forums a span,
-  #bbpress-forums a .home .entry
+  #bbpress-forums a .home .entry.intro-content
   .btn-group-xs > button span,
   .btn-group-xs > button
   #bbpress-forums a span,
@@ -5740,42 +5740,42 @@ a.badge:hover, a.badge:focus {
   text-decoration: none;
   cursor: pointer; }
 
-.jumbotron, .home .entry {
+.jumbotron, .home .entry.intro-content {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #fff; }
-  .jumbotron h1, .home .entry h1,
-  .jumbotron .h1, .home .entry .h1 {
+  .jumbotron h1, .home .entry.intro-content h1,
+  .jumbotron .h1, .home .entry.intro-content .h1 {
     color: inherit; }
-  .jumbotron p, .home .entry p {
+  .jumbotron p, .home .entry.intro-content p {
     margin-bottom: 15px;
     font-size: 24px;
     font-weight: 200; }
-  .jumbotron > hr, .home .entry > hr {
+  .jumbotron > hr, .home .entry.intro-content > hr {
     border-top-color: #e6e6e6; }
-  .container .jumbotron, .container .home .entry, .home .container .entry,
+  .container .jumbotron, .container .home .entry.intro-content, .home .container .entry.intro-content,
   .container-fluid .jumbotron,
-  .container-fluid .home .entry, .home
-  .container-fluid .entry {
+  .container-fluid .home .entry.intro-content, .home
+  .container-fluid .entry.intro-content {
     border-radius: 0;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, .home .entry .container {
+  .jumbotron .container, .home .entry.intro-content .container {
     max-width: 100%; }
   @media screen and (min-width: 544px) {
-    .jumbotron, .home .entry {
+    .jumbotron, .home .entry.intro-content {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, .container .home .entry, .home .container .entry,
+      .container .jumbotron, .container .home .entry.intro-content, .home .container .entry.intro-content,
       .container-fluid .jumbotron,
-      .container-fluid .home .entry, .home
-      .container-fluid .entry {
+      .container-fluid .home .entry.intro-content, .home
+      .container-fluid .entry.intro-content {
         padding-left: 60px;
         padding-right: 60px; }
-      .jumbotron h1, .home .entry h1,
-      .jumbotron .h1, .home .entry .h1 {
+      .jumbotron h1, .home .entry.intro-content h1,
+      .jumbotron .h1, .home .entry.intro-content .h1 {
         font-size: 72px; } }
 
 .thumbnail {
@@ -7560,23 +7560,23 @@ button.close {
     display: table; }
   .modal-footer:after {
     clear: both; }
-  .modal-footer .btn + .btn, .modal-footer .home .entry button + .btn, .home .entry .modal-footer button + .btn, .modal-footer button + .btn, .modal-footer
+  .modal-footer .btn + .btn, .modal-footer .home .entry.intro-content button + .btn, .home .entry.intro-content .modal-footer button + .btn, .modal-footer button + .btn, .modal-footer
   .button:not(.wpb_button_a) + .btn, .modal-footer
   input[type="button"] + .btn, .modal-footer
   input[type="reset"] + .btn, .modal-footer
-  input[type="submit"] + .btn, .modal-footer .wpb_button + .btn, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + .btn, .modal-footer #secondary .sow-cta-base .ow-button-base a + .btn, #secondary .sow-cta-base .ow-button-base .modal-footer a + .btn, .modal-footer .home .entry .btn + button, .home .entry .modal-footer .btn + button, .modal-footer .home .entry
-  .button:not(.wpb_button_a) + button, .modal-footer .home .entry
-  input[type="button"] + button, .home .entry .modal-footer
-  input[type="button"] + button, .modal-footer .home .entry
-  input[type="reset"] + button, .home .entry .modal-footer
-  input[type="reset"] + button, .modal-footer .home .entry
-  input[type="submit"] + button, .home .entry .modal-footer
-  input[type="submit"] + button, .modal-footer .home .entry .wpb_button + button, .home .entry .modal-footer .wpb_button + button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .home .entry a + button, .modal-footer #secondary .sow-cta-base .ow-button-base .home .entry a + button, #secondary .sow-cta-base .ow-button-base .modal-footer .home .entry a + button, .modal-footer .btn + button, .modal-footer .home .entry button + button, .home .entry .modal-footer button + button, .modal-footer button + button, .modal-footer
+  input[type="submit"] + .btn, .modal-footer .wpb_button + .btn, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + .btn, .modal-footer #secondary .sow-cta-base .ow-button-base a + .btn, #secondary .sow-cta-base .ow-button-base .modal-footer a + .btn, .modal-footer .home .entry.intro-content .btn + button, .home .entry.intro-content .modal-footer .btn + button, .modal-footer .home .entry.intro-content
+  .button:not(.wpb_button_a) + button, .modal-footer .home .entry.intro-content
+  input[type="button"] + button, .home .entry.intro-content .modal-footer
+  input[type="button"] + button, .modal-footer .home .entry.intro-content
+  input[type="reset"] + button, .home .entry.intro-content .modal-footer
+  input[type="reset"] + button, .modal-footer .home .entry.intro-content
+  input[type="submit"] + button, .home .entry.intro-content .modal-footer
+  input[type="submit"] + button, .modal-footer .home .entry.intro-content .wpb_button + button, .home .entry.intro-content .modal-footer .wpb_button + button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .home .entry.intro-content a + button, .modal-footer #secondary .sow-cta-base .ow-button-base .home .entry.intro-content a + button, #secondary .sow-cta-base .ow-button-base .modal-footer .home .entry.intro-content a + button, .modal-footer .btn + button, .modal-footer .home .entry.intro-content button + button, .home .entry.intro-content .modal-footer button + button, .modal-footer button + button, .modal-footer
   .button:not(.wpb_button_a) + button, .modal-footer
   input[type="button"] + button, .modal-footer
   input[type="reset"] + button, .modal-footer
   input[type="submit"] + button, .modal-footer .wpb_button + button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + button, .modal-footer #secondary .sow-cta-base .ow-button-base a + button, #secondary .sow-cta-base .ow-button-base .modal-footer a + button, .modal-footer .btn +
-  .button:not(.wpb_button_a), .modal-footer .home .entry button +
+  .button:not(.wpb_button_a), .modal-footer .home .entry.intro-content button +
   .button:not(.wpb_button_a), .modal-footer button +
   .button:not(.wpb_button_a), .modal-footer
   .button:not(.wpb_button_a) +
@@ -7592,8 +7592,8 @@ button.close {
   .button:not(.wpb_button_a), .modal-footer #secondary .sow-cta-base .ow-button-base a +
   .button:not(.wpb_button_a), #secondary .sow-cta-base .ow-button-base .modal-footer a +
   .button:not(.wpb_button_a), .modal-footer .btn +
-  input[type="button"], .modal-footer .home .entry button +
-  input[type="button"], .home .entry .modal-footer button +
+  input[type="button"], .modal-footer .home .entry.intro-content button +
+  input[type="button"], .home .entry.intro-content .modal-footer button +
   input[type="button"], .modal-footer button +
   input[type="button"], .modal-footer
   .button:not(.wpb_button_a) +
@@ -7609,8 +7609,8 @@ button.close {
   input[type="button"], .modal-footer #secondary .sow-cta-base .ow-button-base a +
   input[type="button"], #secondary .sow-cta-base .ow-button-base .modal-footer a +
   input[type="button"], .modal-footer .btn +
-  input[type="reset"], .modal-footer .home .entry button +
-  input[type="reset"], .home .entry .modal-footer button +
+  input[type="reset"], .modal-footer .home .entry.intro-content button +
+  input[type="reset"], .home .entry.intro-content .modal-footer button +
   input[type="reset"], .modal-footer button +
   input[type="reset"], .modal-footer
   .button:not(.wpb_button_a) +
@@ -7626,8 +7626,8 @@ button.close {
   input[type="reset"], .modal-footer #secondary .sow-cta-base .ow-button-base a +
   input[type="reset"], #secondary .sow-cta-base .ow-button-base .modal-footer a +
   input[type="reset"], .modal-footer .btn +
-  input[type="submit"], .modal-footer .home .entry button +
-  input[type="submit"], .home .entry .modal-footer button +
+  input[type="submit"], .modal-footer .home .entry.intro-content button +
+  input[type="submit"], .home .entry.intro-content .modal-footer button +
   input[type="submit"], .modal-footer button +
   input[type="submit"], .modal-footer
   .button:not(.wpb_button_a) +
@@ -7642,11 +7642,11 @@ button.close {
   input[type="submit"], .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a +
   input[type="submit"], .modal-footer #secondary .sow-cta-base .ow-button-base a +
   input[type="submit"], #secondary .sow-cta-base .ow-button-base .modal-footer a +
-  input[type="submit"], .modal-footer .btn + .wpb_button, .modal-footer .home .entry button + .wpb_button, .home .entry .modal-footer button + .wpb_button, .modal-footer button + .wpb_button, .modal-footer
+  input[type="submit"], .modal-footer .btn + .wpb_button, .modal-footer .home .entry.intro-content button + .wpb_button, .home .entry.intro-content .modal-footer button + .wpb_button, .modal-footer button + .wpb_button, .modal-footer
   .button:not(.wpb_button_a) + .wpb_button, .modal-footer
   input[type="button"] + .wpb_button, .modal-footer
   input[type="reset"] + .wpb_button, .modal-footer
-  input[type="submit"] + .wpb_button, .modal-footer .wpb_button + .wpb_button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + .wpb_button, .modal-footer #secondary .sow-cta-base .ow-button-base a + .wpb_button, #secondary .sow-cta-base .ow-button-base .modal-footer a + .wpb_button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .home .entry button + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer button + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base
+  input[type="submit"] + .wpb_button, .modal-footer .wpb_button + .wpb_button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + .wpb_button, .modal-footer #secondary .sow-cta-base .ow-button-base a + .wpb_button, #secondary .sow-cta-base .ow-button-base .modal-footer a + .wpb_button, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .home .entry.intro-content button + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer button + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base
   .button:not(.wpb_button_a) + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer
   .button:not(.wpb_button_a) + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base
   input[type="button"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer
@@ -7654,7 +7654,7 @@ button.close {
   input[type="reset"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer
   input[type="reset"] + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base
   input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer
-  input[type="submit"] + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .wpb_button + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + a, .modal-footer #secondary .sow-cta-base .ow-button-base .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .home .entry button + a, .modal-footer #secondary .sow-cta-base .ow-button-base button + a, #secondary .sow-cta-base .ow-button-base .modal-footer button + a, .modal-footer #secondary .sow-cta-base .ow-button-base
+  input[type="submit"] + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .wpb_button + a, .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer a + a, .modal-footer #secondary .sow-cta-base .ow-button-base .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .home .entry.intro-content button + a, .modal-footer #secondary .sow-cta-base .ow-button-base button + a, #secondary .sow-cta-base .ow-button-base .modal-footer button + a, .modal-footer #secondary .sow-cta-base .ow-button-base
   .button:not(.wpb_button_a) + a, #secondary .sow-cta-base .ow-button-base .modal-footer
   .button:not(.wpb_button_a) + a, .modal-footer #secondary .sow-cta-base .ow-button-base
   input[type="button"] + a, #secondary .sow-cta-base .ow-button-base .modal-footer
@@ -7665,23 +7665,23 @@ button.close {
   input[type="submit"] + a, .modal-footer #secondary .sow-cta-base .ow-button-base .wpb_button + a, #secondary .sow-cta-base .ow-button-base .modal-footer .wpb_button + a, #secondary .modal-footer .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .modal-footer #secondary .sow-cta-base .ow-button-base a + a, #secondary .sow-cta-base .ow-button-base .modal-footer a + a {
     margin-left: 5px;
     margin-bottom: 0; }
-  .modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .home .entry button + .btn, .home .entry .modal-footer .btn-group button + .btn, .modal-footer .btn-group button + .btn, .modal-footer .btn-group
+  .modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .home .entry.intro-content button + .btn, .home .entry.intro-content .modal-footer .btn-group button + .btn, .modal-footer .btn-group button + .btn, .modal-footer .btn-group
   .button:not(.wpb_button_a) + .btn, .modal-footer .btn-group
   input[type="button"] + .btn, .modal-footer .btn-group
   input[type="reset"] + .btn, .modal-footer .btn-group
-  input[type="submit"] + .btn, .modal-footer .btn-group .wpb_button + .btn, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + .btn, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a + .btn, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a + .btn, .modal-footer .btn-group .home .entry .btn + button, .home .entry .modal-footer .btn-group .btn + button, .modal-footer .btn-group .home .entry
-  .button:not(.wpb_button_a) + button, .modal-footer .btn-group .home .entry
-  input[type="button"] + button, .home .entry .modal-footer .btn-group
-  input[type="button"] + button, .modal-footer .btn-group .home .entry
-  input[type="reset"] + button, .home .entry .modal-footer .btn-group
-  input[type="reset"] + button, .modal-footer .btn-group .home .entry
-  input[type="submit"] + button, .home .entry .modal-footer .btn-group
-  input[type="submit"] + button, .modal-footer .btn-group .home .entry .wpb_button + button, .home .entry .modal-footer .btn-group .wpb_button + button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry a + button, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base .home .entry a + button, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry a + button, .modal-footer .btn-group .btn + button, .modal-footer .btn-group .home .entry button + button, .home .entry .modal-footer .btn-group button + button, .modal-footer .btn-group button + button, .modal-footer .btn-group
+  input[type="submit"] + .btn, .modal-footer .btn-group .wpb_button + .btn, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .btn, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + .btn, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a + .btn, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a + .btn, .modal-footer .btn-group .home .entry.intro-content .btn + button, .home .entry.intro-content .modal-footer .btn-group .btn + button, .modal-footer .btn-group .home .entry.intro-content
+  .button:not(.wpb_button_a) + button, .modal-footer .btn-group .home .entry.intro-content
+  input[type="button"] + button, .home .entry.intro-content .modal-footer .btn-group
+  input[type="button"] + button, .modal-footer .btn-group .home .entry.intro-content
+  input[type="reset"] + button, .home .entry.intro-content .modal-footer .btn-group
+  input[type="reset"] + button, .modal-footer .btn-group .home .entry.intro-content
+  input[type="submit"] + button, .home .entry.intro-content .modal-footer .btn-group
+  input[type="submit"] + button, .modal-footer .btn-group .home .entry.intro-content .wpb_button + button, .home .entry.intro-content .modal-footer .btn-group .wpb_button + button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .home .entry.intro-content a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry.intro-content a + button, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base .home .entry.intro-content a + button, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry.intro-content a + button, .modal-footer .btn-group .btn + button, .modal-footer .btn-group .home .entry.intro-content button + button, .home .entry.intro-content .modal-footer .btn-group button + button, .modal-footer .btn-group button + button, .modal-footer .btn-group
   .button:not(.wpb_button_a) + button, .modal-footer .btn-group
   input[type="button"] + button, .modal-footer .btn-group
   input[type="reset"] + button, .modal-footer .btn-group
   input[type="submit"] + button, .modal-footer .btn-group .wpb_button + button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + button, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a + button, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a + button, .modal-footer .btn-group .btn +
-  .button:not(.wpb_button_a), .modal-footer .btn-group .home .entry button +
+  .button:not(.wpb_button_a), .modal-footer .btn-group .home .entry.intro-content button +
   .button:not(.wpb_button_a), .modal-footer .btn-group button +
   .button:not(.wpb_button_a), .modal-footer .btn-group
   .button:not(.wpb_button_a) +
@@ -7697,8 +7697,8 @@ button.close {
   .button:not(.wpb_button_a), .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a +
   .button:not(.wpb_button_a), #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a +
   .button:not(.wpb_button_a), .modal-footer .btn-group .btn +
-  input[type="button"], .modal-footer .btn-group .home .entry button +
-  input[type="button"], .home .entry .modal-footer .btn-group button +
+  input[type="button"], .modal-footer .btn-group .home .entry.intro-content button +
+  input[type="button"], .home .entry.intro-content .modal-footer .btn-group button +
   input[type="button"], .modal-footer .btn-group button +
   input[type="button"], .modal-footer .btn-group
   .button:not(.wpb_button_a) +
@@ -7714,8 +7714,8 @@ button.close {
   input[type="button"], .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a +
   input[type="button"], #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a +
   input[type="button"], .modal-footer .btn-group .btn +
-  input[type="reset"], .modal-footer .btn-group .home .entry button +
-  input[type="reset"], .home .entry .modal-footer .btn-group button +
+  input[type="reset"], .modal-footer .btn-group .home .entry.intro-content button +
+  input[type="reset"], .home .entry.intro-content .modal-footer .btn-group button +
   input[type="reset"], .modal-footer .btn-group button +
   input[type="reset"], .modal-footer .btn-group
   .button:not(.wpb_button_a) +
@@ -7731,8 +7731,8 @@ button.close {
   input[type="reset"], .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a +
   input[type="reset"], #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a +
   input[type="reset"], .modal-footer .btn-group .btn +
-  input[type="submit"], .modal-footer .btn-group .home .entry button +
-  input[type="submit"], .home .entry .modal-footer .btn-group button +
+  input[type="submit"], .modal-footer .btn-group .home .entry.intro-content button +
+  input[type="submit"], .home .entry.intro-content .modal-footer .btn-group button +
   input[type="submit"], .modal-footer .btn-group button +
   input[type="submit"], .modal-footer .btn-group
   .button:not(.wpb_button_a) +
@@ -7747,11 +7747,11 @@ button.close {
   input[type="submit"], .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a +
   input[type="submit"], .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a +
   input[type="submit"], #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a +
-  input[type="submit"], .modal-footer .btn-group .btn + .wpb_button, .modal-footer .btn-group .home .entry button + .wpb_button, .home .entry .modal-footer .btn-group button + .wpb_button, .modal-footer .btn-group button + .wpb_button, .modal-footer .btn-group
+  input[type="submit"], .modal-footer .btn-group .btn + .wpb_button, .modal-footer .btn-group .home .entry.intro-content button + .wpb_button, .home .entry.intro-content .modal-footer .btn-group button + .wpb_button, .modal-footer .btn-group button + .wpb_button, .modal-footer .btn-group
   .button:not(.wpb_button_a) + .wpb_button, .modal-footer .btn-group
   input[type="button"] + .wpb_button, .modal-footer .btn-group
   input[type="reset"] + .wpb_button, .modal-footer .btn-group
-  input[type="submit"] + .wpb_button, .modal-footer .btn-group .wpb_button + .wpb_button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + .wpb_button, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a + .wpb_button, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a + .wpb_button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry button + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group button + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
+  input[type="submit"] + .wpb_button, .modal-footer .btn-group .wpb_button + .wpb_button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + .wpb_button, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + .wpb_button, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base a + .wpb_button, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group a + .wpb_button, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .btn + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry.intro-content button + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group button + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
   .button:not(.wpb_button_a) + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group
   .button:not(.wpb_button_a) + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
   input[type="button"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group
@@ -7759,7 +7759,7 @@ button.close {
   input[type="reset"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group
   input[type="reset"] + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base
   input[type="submit"] + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group
-  input[type="submit"] + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .wpb_button + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry button + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base button + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group button + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base
+  input[type="submit"] + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base .wpb_button + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group .wpb_button + a, .modal-footer .btn-group .so-widget-sow-cta .sow-cta-base .ow-button-base a + a, .so-widget-sow-cta .sow-cta-base .ow-button-base .modal-footer .btn-group a + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group .btn + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group .home .entry.intro-content button + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base button + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group button + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base
   .button:not(.wpb_button_a) + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group
   .button:not(.wpb_button_a) + a, .modal-footer .btn-group #secondary .sow-cta-base .ow-button-base
   input[type="button"] + a, #secondary .sow-cta-base .ow-button-base .modal-footer .btn-group
@@ -8189,7 +8189,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn, .carousel-caption .home .entry button, .home .entry .carousel-caption button, .carousel-caption button, .carousel-caption
+  .carousel-caption .btn, .carousel-caption .home .entry.intro-content button, .home .entry.intro-content .carousel-caption button, .carousel-caption button, .carousel-caption
   .button:not(.wpb_button_a), .carousel-caption
   input[type="button"], .carousel-caption
   input[type="reset"], .carousel-caption
@@ -12081,7 +12081,7 @@ body {
   width: 100%;
   height: auto; }
 
-.home .entry {
+.home .entry.intro-content {
   padding: 1.5em;
   border-top: 5px solid rgba(17, 17, 17, 0.2);
   border-bottom: 5px solid rgba(17, 17, 17, 0.2);
@@ -12089,10 +12089,13 @@ body {
   border-radius: 0;
   text-align: center; }
   @media screen and (min-width: 768px) {
-    .home .entry {
+    .home .entry.intro-content {
       padding: 0 0 2em 0;
       background-color: transparent;
       text-align: inherit; } }
+
+.home .entry.empty {
+  display: none; }
 
 body.archive .site-main .entry,
 body.blog .site-main .entry {

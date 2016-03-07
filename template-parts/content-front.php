@@ -6,8 +6,8 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php $home_post_class = ($post->post_content) ? 'intro-content' : 'empty' ; ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class($home_post_class); ?>>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
