@@ -15,7 +15,6 @@ EVENT ORGANISER
         line-height: 1.5;
     }
     a {
-        color: $color__link;
         &.button {
             margin: 0 0 1em 0;
         }
@@ -28,60 +27,26 @@ EVENT ORGANISER
         clear: both;
     }
     .event-header {
-        @include make-sm-column(12); 
         @include make-md-column(3); 
         margin: 0;
         padding: 0;
 
-        @include breakpoint(md) {
-            padding: 34px 0 24px 24px;
-        }
-        .meta,
-        .meta span {
-            margin: 0;
-            line-height: 1.5;
-            color: $color__mid-grey;
-            display: inline-block;
-            @include font-size($h6);
-            text-transform: uppercase;
-            &:after {
-                letter-spacing: 5px;
-            }
-            &:last-child:after {
-                content: '';
-            }
-            a, a:visited {
-                color: $color__mid-grey;
-                &:hover {
-                    color: $color__text-main;
-                }
-            }
-        }
-        .event-meta {
-            display: block;
-        }
-        .event-categories {
-            margin-top: 1em;
-            color: $color__link;
-        }
-        span {
-            padding-right: 5px;
-        }
-        .event-time {
-            font-size: 75%;
-            margin-top: .75em;
-        }
+        @include breakpoint(md) {}
     }
     .event-content {
-        @include make-sm-column(12); 
-        @include make-md-column(8); 
+        @include make-md-column(9); 
+        padding: 0;
     }
     .event-image {
         border: $color__border-frame;  
+        max-height: 150px;
+        overflow: hidden;
+
         img {
-            display: block;
             margin: 0;
+            width: 100%;
         }
+
         @include breakpoint(md) {
             float: right; 
             width: 33%; 
@@ -94,14 +59,34 @@ EVENT ORGANISER
     .event-title {
         margin: .75em 0 .25em;
         @include breakpoint(md) {
-            margin-top: .25em;
+            margin-top: 0;
         }
     }
+    .event-meta {
+        .event-day,
+        .event-date,
+        .event-time {
+            @include font-size($h6);
+            font-weight: 300;
+        }
+        .event-date {
+            display: block;
+        }
+
+        @include breakpoint(md) {
+            .event-day,
+            .event-date,
+            .event-time {
+                @include font-size($h4);
+                font-weight: 300;
+            }
+        }
+    }
+
     .event-location {
         @include font-size($h6);
         color: $color__mid-grey;
         margin-bottom: 1em;
-        text-transform: uppercase;
         span {
             display: block;
             @include breakpoint(xs) {
@@ -215,19 +200,11 @@ EVENT ORGANISER
 
 // CATEGORIES LIST
 ul.event-categories {
-    margin: 0;
-    margin-top: -18px;
-    padding: 0;
-    list-style: none;
-    li {
-        display: inline;
-        margin-right: 20px;
-    }
+    @include no-bullets;
 }
 
 
 .all-events-link {
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
 }

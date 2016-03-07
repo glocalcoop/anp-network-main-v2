@@ -1,23 +1,117 @@
 /*********************
 NETWORK CONTENT
 *********************/
-// Page
-.entry-content > ul.sites-list {
 
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.widget__anp-network-posts,
+.widget__anp-network-sites,
+.widget__anp-network-events {
 
-    & > li {
-        padding: 24px;
+    &.widget {
+        li {
+            padding-bottom: .5em;
+            a {
+                &:hover,
+                &:focus {
+                    padding-left: 0;
+                    padding-right: 20px;
+                    background-color: transparent;
+                }
+                
+            }
+        }
+
+        h3,
+        h4,
+        .entry-title {
+            @include font-size($h6);
+            margin-top: 0;
+            margin-bottom: 0;
+
+            a {
+                @include sliding-hover-effect;
+            }
+        }
+
+        .entry-meta {
+
+            padding: .25em 0;
+            font-style: italic;
+
+            .recent-post {
+                font-weight: normal;
+                @include font-size($h6);
+            }
+
+            span,
+            a {
+                display: inline;
+                padding-right: 0;
+
+                &:hover,
+                &:focus {
+                    padding-right: 0;
+
+                }
+            }
+
+            .site-name,
+            .post-date {
+                &:after {
+                    content: ' / ';
+                }
+            }
+        }      
     }
-
 }
 
-.widget {
-    h4 {
-        @include font-size($h6);
-        margin-top: 0;
-        margin-bottom: 0;
+#secondary {
+    .widget__anp-network-posts,
+    .widget__anp-network-sites,
+    .widget__anp-network-events {
+
+        &.widget {
+            
+            color: $color__text-widget;
+
+            .entry-meta {
+                color: $color__text-widget-header;
+
+                time,
+                .category,
+                a {
+                    color: $color__text-widget-header;
+                }
+                
+            }
+
+        }
+
     }
 }
+
+
+.widget-count-3 {
+
+    .widget__anp-network-posts,
+    .widget__anp-network-sites,
+    .widget__anp-network-events {
+
+        @include breakpoint(md) {
+            .entry-meta {
+                .site-name,
+                .post-date,
+                .entry-date,
+                .entry-author  {
+                    display: block;
+
+                    &:after {
+                        content: none;
+                    }
+                }  
+            }
+
+        }
+
+    }
+}
+

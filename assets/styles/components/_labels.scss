@@ -3,6 +3,10 @@
 .cat-links a {
     @extend .label;
     @extend .label-default;
+    color: $color__text-button;
+    
+    &:hover,
+    &:focus,
     &:visited {
         color: $color__text-button;
     }

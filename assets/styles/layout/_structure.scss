@@ -26,6 +26,10 @@ body {
 	margin: 0;
 }
 
+.site-main article {
+	@include clearfix;
+}
+
 .site-content {
 	clear: both;
 	@include clearfix;

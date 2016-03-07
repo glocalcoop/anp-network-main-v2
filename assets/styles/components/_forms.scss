@@ -3,7 +3,7 @@ form {
 }
 
 button,
-.button,
+.button:not(.wpb_button_a),
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {

@@ -9,11 +9,11 @@ $gray:                   $color__mid-grey; // #555
 $gray-light:             $color__light-grey; // #777
 $gray-lighter:           $color__lightest-grey; // #eee
 
-$brand-primary:         $color__primary;
-$brand-success:         $color__primary;
-$brand-info:            $color__secondary;
-$brand-warning:         $color__highlight;
-$brand-danger:          $color__tertiary;
+$brand-primary:         #509EA3;
+$brand-success:         #AFBB87;
+$brand-info:            #1C2A42;
+$brand-warning:         #EFE4A6;
+$brand-danger:          #E53634;
 
 
 //== Scaffolding
@@ -370,10 +370,10 @@ $navbar-default-bg:                $color__background-nav;
 
 // Navbar links
 $navbar-default-link-color:                $color__link;
-$navbar-default-link-hover-color:          darken($brand-primary, 10%);
+$navbar-default-link-hover-color:          $color__background-nav-hover;
 // $navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         darken($brand-primary, 10%);
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
+$navbar-default-link-active-color:         $color__background-nav-active;
+$navbar-default-link-active-bg:            $color__background-nav-hover;
 $navbar-default-link-disabled-color:       $gray;
 // $navbar-default-link-disabled-bg:          transparent;
 
