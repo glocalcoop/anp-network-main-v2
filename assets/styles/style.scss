@@ -48,13 +48,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Libraries
 --------------------------------------------------------------*/
+@import "variables/variables";
 @import "variables/variable-overrides";
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-@import "variables/variables";
+//@import "variables/variables";
 @import "common/mixins";
 @import "common/extends";
 
@@ -112,6 +113,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Pages
 --------------------------------------------------------------*/
 @import "pages/home";
+@import "pages/archive";
 
 /*--------------------------------------------------------------
 # Infinite scroll
