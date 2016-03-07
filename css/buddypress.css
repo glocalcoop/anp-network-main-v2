@@ -4,7 +4,7 @@
  * Primary BuddyPress styles are compiled into main stylesheet
  */
 /**
- * Colors are defined in _bootstrap-overrides.scss. Uncomment and change as desired.
+ * Uncomment and change as desired.
  */
 /**
  * Elements
@@ -32,7 +32,7 @@
   display: block;
   max-height: 100px;
   width: 100%;
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
