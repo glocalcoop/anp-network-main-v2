@@ -8,11 +8,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	@extend .btn;
-	@extend .btn-info;
+	@include button-variant($color__text-button, $color__background-button, $color__border-button);
 }
 
 input[type="reset"] {
-	@extend .btn-danger;
+	@extend .btn;
+	@include button-variant($color__text-button, $brand-danger, $brand-danger);
 }
 
 input[type="text"],

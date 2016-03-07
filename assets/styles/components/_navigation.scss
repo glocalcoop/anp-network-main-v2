@@ -78,8 +78,15 @@ a {
 }
 
 .main-navigation {
-	background-color: $color__background-nav;
 
+	&.toggled {
+		background-color: $color__background-nav;
+	}
+
+	@include breakpoint(md) {
+		background-color: $color__background-nav;
+	}
+	
 	ul {
 		list-style: none;
 		margin: 0;
