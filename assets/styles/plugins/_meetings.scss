@@ -9,13 +9,13 @@ MEETINGS ARCHIVE & SINGLE STYLES
 // </ul>
 
 // Meetings List - Archive
-.post-type-archive-meeting,
-.post-type-archive-proposal,
-.post-type-archive-summary,
-.post-type-archive-agenda,
-.tax-meeting_tag,
-.tax-meeting_type,
-.tax-proposal_status {
+.archive-meeting,
+.archive-agenda,
+.archive-summary,
+.archive-proposal,
+.taxonomy-meeting_type,
+.taxonomy-meeting_tag,
+.taxonomy-proposal_status {
 
     .content-filter {
         @extend %clearfix;
@@ -34,12 +34,9 @@ MEETINGS ARCHIVE & SINGLE STYLES
 
             a {
                 display: block;
-                color: $white;
             }
 
-            &.active {
-                background-color: $black;
-            }
+            &.active {}
 
         }
 
@@ -55,28 +52,16 @@ MEETINGS ARCHIVE & SINGLE STYLES
 
     }
 
-    article {
-
-        background-color: $white;
-        margin-bottom: .125em;
-        padding: .75em;
+    .entry {
         
         p.meta {
-            margin-bottom: 0;
-        }
-
-        header h2, 
-        header h3 {
-            @include font-size($h4);
             margin-bottom: 0;
         }
 
         .entry-content {}
 
         .connected-content {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            @include no-bullets;
 
             li {
                 display: inline-block;
@@ -84,47 +69,32 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 margin-bottom: 0;
 
                 a {
-                    color: $black;
 
                     &:hover,
-                    &:focus {
-                        color: $color__primary;
-                    }
+                    &:focus {}
                 }
 
-                @extend %fa-before;
 
                 &.agenda-link {
-                    @extend %fa-list;
+                    @include icon-font(list, before);
                 }
                 &.summary-link,
                 &.meeting-link {
-                    @extend %fa-clipboard;
+                    @include icon-font(clipboard, before);
                 }
                 &.proposal-link {
-                    @extend %fa-gavel;
+                    @include icon-font(gavel, before);
                 }
 
-                &::before {
-                    margin-right: .25em;
-                    color: $color__mid-grey;
-                }
+                &:before {}
             }
         }
 
         .tags {
-            color: $color__mid-grey;
 
-            a {
-                color: $color__mid-grey;
-            }
+            a {}
 
-            @extend %fa-before;
-            @extend %fa-tags;
-
-            &::before {
-                margin-right: .25em;
-            }
+            @include icon-font(tags, before);
         }
 
         .article-footer {

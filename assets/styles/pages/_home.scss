@@ -5,4 +5,29 @@
             height: auto;
         }
     }
+
+    .entry {
+        padding: 1.5em;
+        border-top: $color__border-frame;
+        border-bottom: $color__border-frame;
+        background-color: $color__background-panel;
+        border-radius: $element__border-radius-base;
+        text-align: center;
+
+        @extend .jumbotron;
+
+        button {
+            @extend .btn;
+            @extend .btn-danger;
+            @extend .btn-lg;
+        }
+
+        @include breakpoint(md) {
+            padding: 0 0 2em 0;
+            background-color: transparent;
+            text-align: inherit;
+        }
+
+    }
+
 }

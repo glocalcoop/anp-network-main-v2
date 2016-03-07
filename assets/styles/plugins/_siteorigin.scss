@@ -2,6 +2,48 @@
 PAGE BUILDER
 *********************/
 
+
+.wpb_button {
+    @extend .btn;
+}
+
+.wpb_btn-default {
+    @extend .btn-default;
+}
+.wpb_btn-danger {
+    @extend .btn-danger;
+}
+.wpb_btn-warning {
+    @extend .btn-warning;
+}
+.wpb_btn-info {
+    @extend .btn-info;
+}
+.wpb_btn-success {
+    @extend .btn-success;
+}
+
+.wpb_btn-large {
+    @extend .btn-lg;
+}
+
+
+/**
+ * Override theme widget settings
+ */
+.widget_siteorigin-panels-builder.widget,
+.so-panel.widget {
+        clear: both !important;
+        float: none !important;
+        width: 100% !important;
+
+        background-color: transparent;
+
+        .wrap {
+            background-color: transparent;
+        }
+}
+
 .so-widget-sow-post-carousel {
 
     h3 a {
@@ -28,41 +70,83 @@ PAGE BUILDER
 
     h1,
     h2 {
-        color: $color__text-headings !important;
+        color: $color__text-widget-alt !important;
     }
     .decoration {}
 }
+
+#secondary {
+
+    // Headline Widget
+    .so-widget-sow-headline {
+
+        h1,
+        h2,
+        h3 {
+            color: $color__text-widget !important;
+        }
+        color: $color__text-widget !important;
+
+        .decoration {}
+    }
+
+}
+
 
 // Call to Action
 .so-widget-sow-cta {
 
     .sow-cta-base {
-        background-color: $white !important;
-        border-color: $color__background-hr-alt !important;
+        background-color: $color__background-widget-alt !important;
+        border-color: $color__border-widget-alt !important;
 
         h4 {
-            @extend h2;
-            color: $color__text-headings !important;
+            @include font-size($h2);
+            color: $color__text-widget-alt !important;
         }
         h5 {
-            color: $color__text-headings !important;
+            color: $color__text-widget-alt !important;
         }
 
         .ow-button-base a {
-            @extend %button;
-            border-radius: 0;
-
-            &:hover,
-            &:focus {
-                background-color: $color__link-hover !important;
-            }
+            @extend .btn;
+            @extend .btn-default;
 
             .sow-icon-fontawesome {
-                color: $white !important;
+                color: $color__text-widget-alt !important;
             }
         }
 
     }
+}
+
+#secondary {
+
+    // Call to Action
+    .sow-cta-base {
+        background-color: $color__background-widget !important;
+        border-color: $color__border-widget !important;
+        color: $color__text-widget !important;
+
+        h4 {
+            @include font-size($h2);
+            color: $color__text-widget !important;
+        }
+        h5 {
+            color: $color__text-widget !important;
+        }
+
+        .ow-button-base a {
+            @extend .btn;
+            @extend .btn-default;
+
+            .sow-icon-fontawesome {
+                color: $color__text-widget !important;
+            }
+        }
+
+    }
+
 }
 
 // Slider

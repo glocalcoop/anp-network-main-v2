@@ -14,22 +14,23 @@
 
 .header-widgets,
 .content-widgets,
-.footer-widgets {
+.footer-widgets,
+.home-widgets {
 
     &.per-row-2 {
-        .widget {
+        .widget:not(.widget_siteorigin-panels-builder) {
             @include make-md-column(6);
         }
         
     }
     &.per-row-3 {
-        .widget {
+        .widget:not(.widget_siteorigin-panels-builder) {
             @include make-md-column(4);
         }       
     }
     &.per-row-4 {
-        .widget {
-            @include make-md-column(3);
+        .widget:not(.widget_siteorigin-panels-builder) {
+            @include make-md-column(4);
         }
 
     }
@@ -37,7 +38,7 @@
     &.per-row-2,
     &.per-row-3,
     &.per-row-4 {
-        .widget {
+        .widget:not(.widget_siteorigin-panels-builder) {
             padding: 0;
 
             @include breakpoint(md) {
