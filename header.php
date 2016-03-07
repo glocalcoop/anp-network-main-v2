@@ -34,9 +34,8 @@
         <?php endif; ?>
 
         <?php get_template_part( 'components/custom-header/custom-header' ); ?>
-
+        
 		<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
-
 
 	</header><!-- #masthead -->
 
