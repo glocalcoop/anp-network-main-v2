@@ -60,11 +60,11 @@ if( !function_exists( 'anp_get_event_meta_list' ) ) {
     $venue = get_taxonomy( 'event-venue' );
 
     if( get_the_terms( $event_id, 'event-category' ) ) {
-      $html .= get_the_term_list( $event_id, 'event-category', '<ul class="meta event-categories categories"><li>','</li><li>', '</li></ul>' );
+      $html .= get_the_term_list( $event_id, 'event-category', '<ul class="category event-category"><li>','</li><li>', '</li></ul>' );
     }
 
     if( get_the_terms( $event_id, 'event-tag' ) && !is_wp_error( get_the_terms( $event_id, 'event-tag' ) ) ) {
-      $html .= get_the_term_list( $event_id, 'event-tag', '<ul class="meta event-tags tags"><li>','</li><li>', '</li></ul>' );
+      $html .= get_the_term_list( $event_id, 'event-tag', '<ul class="event-tags tags"><li>','</li><li>', '</li></ul>' );
     }
 
     $html .='</div>';
