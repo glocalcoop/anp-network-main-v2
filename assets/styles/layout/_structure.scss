@@ -14,11 +14,11 @@ body {
 	width: 100%;
 }
 
-.content-widgets {
-	margin-top: 1em;
-}
-
-.site-header {
+.site-header,
+.site-main article,
+.site-content,
+.entry-content,
+.entry-footer {
 	@include clearfix;
 }
 
@@ -26,13 +26,8 @@ body {
 	margin: 0;
 }
 
-.site-main article {
-	@include clearfix;
-}
-
 .site-content {
 	clear: both;
-	@include clearfix;
 	margin-top: 1.5em;
 }
 
@@ -40,6 +35,10 @@ body {
 	float: none;
 	overflow: hidden;
 	width: 100%;
+}
+
+.content-widgets {
+	margin-top: 1em;
 }
 
 .site-footer {

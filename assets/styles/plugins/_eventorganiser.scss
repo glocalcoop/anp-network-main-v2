@@ -107,7 +107,8 @@ EVENT ORGANISER
 }
 
 // SINGLE EVENT PAGE
-.single-event {
+.single-event,
+.singular-event {
 
     h3 {
         margin-bottom: 0;
@@ -131,23 +132,9 @@ EVENT ORGANISER
             height: auto;
         }
     }
-    .event-details {
-        @include breakpoint(sm) {
-            float: left; width: 33%;
-        }
-        .location-address span {
-            @include breakpoint(sm) {
-                display: block;
-            }
-        }
 
-        .city-state-postalcode span {
-            display: inline-block;
-        }
-    }
     .date-time, 
     .event-location {
-        margin: .75em 0;
         line-height: 1.5;
         @include breakpoint(sm) {
             margin-bottom: 1.5em;
@@ -166,9 +153,26 @@ EVENT ORGANISER
     .city-state-postalcode {
         display: block;
     }
-    .meta {
-        font-size: 1rem;
+
+
+    .event-details {
+        @include make-md-column(3);
+        padding: 0;
+
+        @include breakpoint(md) {
+            padding-right: 15px;
+        }
     }
+
+    .entry-description {
+        @include make-md-column(9);
+        padding: 0;
+
+        @include breakpoint(md) {
+            padding-left: 15px;
+        }
+    }
+
     div.tools {
         margin: 1.5em 0;
         margin-right: 10px;
@@ -176,13 +180,15 @@ EVENT ORGANISER
             margin-top: 2.25em;
         }        
     }
-    .event-description {
-        margin: 2em 0;
-        @include breakpoint(sm) {
-            padding-left: 34%; 
-            padding-right: 20px;
-        }        
+
+    .eo-event-meta {
+        @include no-bullets;
     }
+
+    .meta-label {
+        color: $color__text-light;
+    }
+
     .event-map {
         border: $color__border-frame;
         margin: 1.5em 0;

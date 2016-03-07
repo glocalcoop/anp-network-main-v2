@@ -17,6 +17,7 @@
         @extend .jumbotron;
 
         button {
+            @include button-variant($color__text-button, $color__background-button, $color__border-button);
             @extend .btn;
             @extend .btn-danger;
             @extend .btn-lg;

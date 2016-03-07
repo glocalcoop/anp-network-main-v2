@@ -21,6 +21,19 @@ a {
 	}
 }
 
+
+.nav-links {
+	.nav-previous,
+	.nav-next {}
+	.nav-previous {
+		@include icon-font(angle-double-left, before);
+	}
+	.nav-next {
+		@include icon-font(angle-double-right, after);
+	}
+}
+
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
