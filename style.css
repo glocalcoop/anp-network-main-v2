@@ -11109,11 +11109,13 @@ h3.widget-title {
     list-style: none;
     margin: 0;
     width: 100%; }
+    .widget ul > li:hover, article.handbook .table-of-contents ul > li:hover, .widget ul > li:focus, article.handbook .table-of-contents ul > li:focus {
+      background-color: rgba(17, 17, 17, 0.1); }
   .widget li, article.handbook .table-of-contents li {
     margin: 0;
     line-height: 1.3;
     display: block;
-    color: #fff;
+    color: #666666;
     /* deep nesting */ }
     .widget li ul, article.handbook .table-of-contents li ul {
       margin: 0;
@@ -11123,14 +11125,7 @@ h3.widget-title {
       border: 0;
       padding: 0; }
     .widget li a, article.handbook .table-of-contents li a {
-      padding-left: 0;
-      padding-right: 20px;
       border: 0; }
-      .widget li a:hover, article.handbook .table-of-contents li a:hover, .widget li a:focus, article.handbook .table-of-contents li a:focus {
-        padding-left: 15px;
-        padding-right: 5px;
-        background-color: #192437;
-        background-color: rgba(0, 0, 0, 0.1); }
   .widget form, article.handbook .table-of-contents form {
     background: transparent; }
   .widget label, article.handbook .table-of-contents label {
@@ -11141,11 +11136,14 @@ h3.widget-title {
     padding: 2px 5px; }
   .widget .entry-title a, article.handbook .table-of-contents .entry-title a {
     font-weight: normal; }
-  .widget .entry-meta, article.handbook .table-of-contents .entry-meta {
+  .widget .entry-meta, article.handbook .table-of-contents .entry-meta,
+  .widget .activity, article.handbook .table-of-contents .activity {
     font-size: 14px;
     font-size: 0.875rem;
-    font-weight: 300; }
-    .widget .entry-meta .meta-label, article.handbook .table-of-contents .entry-meta .meta-label {
+    font-weight: 300;
+    font-style: italic; }
+    .widget .entry-meta .meta-label, article.handbook .table-of-contents .entry-meta .meta-label,
+    .widget .activity .meta-label, article.handbook .table-of-contents .activity .meta-label {
       clip: rect(1px, 1px, 1px, 1px);
       height: 1px;
       overflow: hidden;
@@ -11153,7 +11151,8 @@ h3.widget-title {
       width: 1px;
       /* many screen reader and browser combinations announce broken words as they would appear visually */
       word-wrap: normal !important; }
-      .widget .entry-meta .meta-label:after, article.handbook .table-of-contents .entry-meta .meta-label:after {
+      .widget .entry-meta .meta-label:after, article.handbook .table-of-contents .entry-meta .meta-label:after,
+      .widget .activity .meta-label:after, article.handbook .table-of-contents .activity .meta-label:after {
         content: ': '; }
   .widget .entry-content, article.handbook .table-of-contents .entry-content {
     line-height: 1.5; }
@@ -11371,6 +11370,20 @@ h3.widget-title {
     .home-widgets article.handbook .table-of-contents li li, article.handbook
     .home-widgets .table-of-contents li li {
       color: #666666; }
+
+/**
+ * Header
+ */
+.header-widgets .widget_nav_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none; }
+  .header-widgets .widget_nav_menu ul li {
+    display: inline-block; }
+  .header-widgets .widget_nav_menu ul li {
+    border: none;
+    padding: .25em; }
 
 .widget_archive li,
 .widget_meta li {
@@ -11648,208 +11661,247 @@ body {
 .widget_search .search-submit {
   display: none; }
 
-.header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-      float: left;
-      width: 50%; } }
-
-.header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-      float: left;
-      width: 33.33333%; } }
-
-.header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-      float: left;
-      width: 33.33333%; } }
-
-.header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-.content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-.footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-.home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-.home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-  padding: 0; }
+.header-widgets,
+.content-widgets,
+.footer-widgets,
+.home-widgets {
+  transition: all 2s ease; }
+  .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+        float: left;
+        width: 50%; } }
+  .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+        float: left;
+        width: 33.33333%; } }
+  .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+        float: left;
+        width: 33.33333%; } }
+  .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+  .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+  .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+  .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+  .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+      .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+      .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
+      .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
+      .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
+        padding-right: 1em;
+        padding-left: 1em; } }
   @media screen and (min-width: 768px) {
-    .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-    .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-    .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder),
-    .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder), article.handbook
-    .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder) {
-      padding-right: 1em;
-      padding-left: 1em; }
-      .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):first-child, .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):first-child, .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):first-child, .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child,
-      .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):first-child,
-      .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):first-child, article.handbook
-      .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):first-child {
-        padding-left: 0; }
-      .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):last-child, .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):last-child, .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):last-child, .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child,
-      .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):last-child,
-      .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):last-child, article.handbook
-      .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):last-child {
-        padding-right: 0; } }
+    .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n+1), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1),
+    .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n+1),
+    .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1), article.handbook
+    .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1),
+    .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n+1),
+    .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1), article.handbook
+    .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1),
+    .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n+1),
+    .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1), article.handbook
+    .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n+1) {
+      padding-left: 0; }
+    .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n),
+    .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n),
+    .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n), article.handbook
+    .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n),
+    .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n),
+    .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n), article.handbook
+    .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n),
+    .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(2n),
+    .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n), article.handbook
+    .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(2n) {
+      padding-right: 0; }
+    .header-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n), .header-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook .header-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .content-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .content-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .content-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .footer-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .footer-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .footer-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .home-widgets.per-row-2 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .home-widgets.per-row-2 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .home-widgets.per-row-2 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n) {
+      clear: both; } }
+  @media screen and (min-width: 768px) {
+    .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook
+    .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook
+    .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook
+    .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook
+    .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook
+    .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n+1),
+    .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1), article.handbook
+    .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n+1) {
+      padding-left: 0; }
+    .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(3n),
+    .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n), article.handbook
+    .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(3n) {
+      padding-right: 0; }
+    .header-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n), .header-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook .header-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), .header-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n), .header-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook .header-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .content-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .content-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook
+    .content-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .content-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .content-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook
+    .content-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .footer-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .footer-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook
+    .footer-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .footer-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .footer-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook
+    .footer-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .home-widgets.per-row-3 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .home-widgets.per-row-3 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook
+    .home-widgets.per-row-3 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .home-widgets.per-row-4 .widget:not(.widget_siteorigin-panels-builder):nth-child(4n),
+    .home-widgets.per-row-4 article.handbook .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n), article.handbook
+    .home-widgets.per-row-4 .table-of-contents:not(.widget_siteorigin-panels-builder):nth-child(4n) {
+      clear: both; } }
 
 /*--------------------------------------------------------------
 # Pages
@@ -14276,7 +14328,6 @@ body.buddypress h1 {
     margin-left: .25em;
     border: 1px solid rgba(17, 17, 17, 0.2); }
   .widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
-    color: rgba(255, 255, 255, 0.4);
     text-weight: 300; }
   @media screen and (min-width: 768px) {
     .widget.buddypress, article.handbook .buddypress.table-of-contents {
@@ -14287,6 +14338,9 @@ body.buddypress h1 {
         clear: both; }
       .widget.buddypress .item-avatar, article.handbook .buddypress.table-of-contents .item-avatar {
         float: left; } }
+
+#secondary .widget.buddypress, #secondary article.handbook .buddypress.table-of-contents, article.handbook #secondary .buddypress.table-of-contents {
+  color: rgba(255, 255, 255, 0.4); }
 
 /*********************
 EVENT ORGANISER
@@ -15179,44 +15233,11 @@ NETWORK CONTENT
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0; }
-  .widget__anp-network-posts.widget h3 a, article.handbook .widget__anp-network-posts.table-of-contents h3 a,
-  .widget__anp-network-posts.widget h4 a, article.handbook .widget__anp-network-posts.table-of-contents h4 a,
-  .widget__anp-network-posts.widget .entry-title a, article.handbook .widget__anp-network-posts.table-of-contents .entry-title a,
-  .widget__anp-network-sites.widget h3 a, article.handbook .widget__anp-network-sites.table-of-contents h3 a,
-  .widget__anp-network-sites.widget h4 a, article.handbook .widget__anp-network-sites.table-of-contents h4 a,
-  .widget__anp-network-sites.widget .entry-title a, article.handbook .widget__anp-network-sites.table-of-contents .entry-title a,
-  .widget__anp-network-events.widget h3 a, article.handbook .widget__anp-network-events.table-of-contents h3 a,
-  .widget__anp-network-events.widget h4 a, article.handbook .widget__anp-network-events.table-of-contents h4 a,
-  .widget__anp-network-events.widget .entry-title a, article.handbook .widget__anp-network-events.table-of-contents .entry-title a {
-    padding-left: 0;
-    padding-right: 20px; }
-    .widget__anp-network-posts.widget h3 a:hover, article.handbook .widget__anp-network-posts.table-of-contents h3 a:hover, .widget__anp-network-posts.widget h3 a:focus, article.handbook .widget__anp-network-posts.table-of-contents h3 a:focus,
-    .widget__anp-network-posts.widget h4 a:hover, article.handbook .widget__anp-network-posts.table-of-contents h4 a:hover,
-    .widget__anp-network-posts.widget h4 a:focus, article.handbook .widget__anp-network-posts.table-of-contents h4 a:focus,
-    .widget__anp-network-posts.widget .entry-title a:hover, article.handbook .widget__anp-network-posts.table-of-contents .entry-title a:hover,
-    .widget__anp-network-posts.widget .entry-title a:focus, article.handbook .widget__anp-network-posts.table-of-contents .entry-title a:focus,
-    .widget__anp-network-sites.widget h3 a:hover, article.handbook .widget__anp-network-sites.table-of-contents h3 a:hover,
-    .widget__anp-network-sites.widget h3 a:focus, article.handbook .widget__anp-network-sites.table-of-contents h3 a:focus,
-    .widget__anp-network-sites.widget h4 a:hover, article.handbook .widget__anp-network-sites.table-of-contents h4 a:hover,
-    .widget__anp-network-sites.widget h4 a:focus, article.handbook .widget__anp-network-sites.table-of-contents h4 a:focus,
-    .widget__anp-network-sites.widget .entry-title a:hover, article.handbook .widget__anp-network-sites.table-of-contents .entry-title a:hover,
-    .widget__anp-network-sites.widget .entry-title a:focus, article.handbook .widget__anp-network-sites.table-of-contents .entry-title a:focus,
-    .widget__anp-network-events.widget h3 a:hover, article.handbook .widget__anp-network-events.table-of-contents h3 a:hover,
-    .widget__anp-network-events.widget h3 a:focus, article.handbook .widget__anp-network-events.table-of-contents h3 a:focus,
-    .widget__anp-network-events.widget h4 a:hover, article.handbook .widget__anp-network-events.table-of-contents h4 a:hover,
-    .widget__anp-network-events.widget h4 a:focus, article.handbook .widget__anp-network-events.table-of-contents h4 a:focus,
-    .widget__anp-network-events.widget .entry-title a:hover, article.handbook .widget__anp-network-events.table-of-contents .entry-title a:hover,
-    .widget__anp-network-events.widget .entry-title a:focus, article.handbook .widget__anp-network-events.table-of-contents .entry-title a:focus {
-      padding-left: 15px;
-      padding-right: 5px;
-      background-color: #192437;
-      background-color: rgba(0, 0, 0, 0.1); }
 
 .widget__anp-network-posts.widget .entry-meta, article.handbook .widget__anp-network-posts.table-of-contents .entry-meta,
 .widget__anp-network-sites.widget .entry-meta, article.handbook .widget__anp-network-sites.table-of-contents .entry-meta,
 .widget__anp-network-events.widget .entry-meta, article.handbook .widget__anp-network-events.table-of-contents .entry-meta {
-  padding: .25em 0;
-  font-style: italic; }
+  padding: .25em 0; }
   .widget__anp-network-posts.widget .entry-meta .recent-post, article.handbook .widget__anp-network-posts.table-of-contents .entry-meta .recent-post,
   .widget__anp-network-sites.widget .entry-meta .recent-post, article.handbook .widget__anp-network-sites.table-of-contents .entry-meta .recent-post,
   .widget__anp-network-events.widget .entry-meta .recent-post, article.handbook .widget__anp-network-events.table-of-contents .entry-meta .recent-post {

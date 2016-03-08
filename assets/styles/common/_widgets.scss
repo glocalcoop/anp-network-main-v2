@@ -52,12 +52,19 @@ h3.widget-title {
         @include no-bullets;
         margin: 0;
         width: 100%;
+
+        &> li {
+            &:hover,
+            &:focus {
+                background-color: rgba($color__black,.1);
+            }
+        }
     }
     li {
         margin: 0;
         line-height: 1.3;
         display: block;
-        color: $color__text-widget;
+        color: $color__text-widget-alt;
         
         /* deep nesting */
         ul {
@@ -71,7 +78,6 @@ h3.widget-title {
         }
 
         a {
-            @include sliding-hover-effect;
             border: 0;
         }
     }
@@ -91,18 +97,19 @@ h3.widget-title {
         font-weight: normal;
     }
 
-    .entry-meta {
+    .entry-meta,
+    .activity {
         @include font-size($small);
         font-weight: 300;
+        font-style: italic;
         .meta-label {
-
             &:after {
                 content: ': ';
             }
-
             @include screen-reader-text;
         }
     }
+
     .entry-content {
         line-height: 1.5;
     }
@@ -213,7 +220,23 @@ h3.widget-title {
         }
     }
 
+}
 
+/**
+ * Header
+ */
+.header-widgets {
+    .widget_nav_menu {
+        ul {
+            @include inline-list;
+            border: none;
+
+            li {
+                border: none;
+                padding: .25em;
+            }
+        }
+    }   
 }
 
 

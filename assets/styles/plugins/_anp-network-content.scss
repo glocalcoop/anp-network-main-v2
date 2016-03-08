@@ -27,15 +27,11 @@ NETWORK CONTENT
             margin-top: 0;
             margin-bottom: 0;
 
-            a {
-                @include sliding-hover-effect;
-            }
+            a {}
         }
 
         .entry-meta {
-
             padding: .25em 0;
-            font-style: italic;
 
             .recent-post {
                 font-weight: normal;

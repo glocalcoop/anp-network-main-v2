@@ -17,22 +17,24 @@
 .footer-widgets,
 .home-widgets {
 
+    transition: all 2s ease;
+
     &.per-row-2 {
         .widget:not(.widget_siteorigin-panels-builder) {
             @include make-md-column(6);
-        }
-        
+        }  
     }
+
     &.per-row-3 {
         .widget:not(.widget_siteorigin-panels-builder) {
             @include make-md-column(4);
         }       
     }
+
     &.per-row-4 {
         .widget:not(.widget_siteorigin-panels-builder) {
             @include make-md-column(4);
         }
-
     }
 
     &.per-row-2,
@@ -44,16 +46,43 @@
             @include breakpoint(md) {
                 padding-right: 1em;
                 padding-left: 1em;
+            }
+        }
+    }
 
-                &:first-child {
+    &.per-row-2 {
+        .widget:not(.widget_siteorigin-panels-builder) {
+
+            @include breakpoint(md) {
+                &:nth-child(2n+1) {
                     padding-left: 0;
                 }
-                &:last-child {
+                &:nth-child(2n) {
                     padding-right: 0;
+                }
+                &:nth-child(3n) {
+                    clear: both;
                 }
             }
         }
     }
 
+    &.per-row-3,
+    &.per-row-4 {
+        .widget:not(.widget_siteorigin-panels-builder) {
+
+            @include breakpoint(md) {
+                &:nth-child(3n+1) {
+                    padding-left: 0;
+                }
+                &:nth-child(3n) {
+                    padding-right: 0;
+                }
+                &:nth-child(4n) {
+                    clear: both;
+                }
+            }
+        }
+    }
 
 }
