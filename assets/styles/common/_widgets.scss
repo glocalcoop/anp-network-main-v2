@@ -216,169 +216,8 @@ h3.widget-title {
 
 }
 
-.header-widgets {
-
-    .widget.widget_nav_menu {
-        @include clearfix;
-
-        div[class^="menu-"] {
-            @include clearfix;
-        }
-
-        ul {
-            @include clearfix;
-            @include no-bullets;
-            display: table;
-            width: auto;
-            margin: 0 auto;
-            border: none;
-
-            li {
-                display: table-cell;
-                padding-right: .25em;
-                border: none;
-            }
-        }
-
-        a {
-            border: 1px solid $color__border-nav;
-            border-radius: 50%;
-            color: $color__text-nav;
-            display: block;
-            height: 35px;
-            width: 35px;
-            position: relative;
-            padding: inherit;
-            // Hide the text
-            white-space: nowrap;
-            overflow: hidden;
-            text-indent: 70px;
-            &:hover,
-            &:focus {
-                padding: inherit;
-            }
-            @include icon-font(cog, before);
-            &:before {
-                height: 33px;
-                width: 33px;
-                line-height: 33px;
-                text-align: center;
-                // Don't hide icon
-                text-indent: 0;
-                float: left;
-            }
-            &:hover:before,
-            &:focus:before {
-                color: $color__text-nav-hover;
-            }
-        }
-                a:before {
-            @include icon-font(cog);
-        }
-        a[href*="codepen.io"]:before {
-            @include icon-font(codepen);
-        }
-        a[href*="digg.com"]:before {
-            @include icon-font(digg);
-        }
-        a[href*="dribbble.com"]:before {
-             @include icon-font(dribble);
-        }
-        a[href*="dropbox.com"]:before {
-             @include icon-font(dropbox);
-        }
-        a[href*="facebook.com"]:before {
-             @include icon-font(facebook);
-        }
-        a[href*="flickr.com"]:before {
-             @include icon-font(flickr);
-        }
-        a[href*="foursquare.com"]:before {
-             @include icon-font(foursquare);
-        }
-        a[href*="plus.google.com"]:before {
-             @include icon-font(google-plus);
-        }
-        a[href*="github.com"]:before {
-             @include icon-font(github);
-        }
-        a[href*="instagram.com"]:before {
-             @include icon-font(instagram);
-        }
-        a[href*="linkedin.com"]:before {
-             @include icon-font(linkedin);
-        }
-        a[href*="pinterest.com"]:before {
-             @include icon-font(pinterest);
-        }
-        a[href*="getpocket.com"]:before {
-             @include icon-font(get-pocket);
-        }
-        a[href*="reddit.com"]:before {
-             @include icon-font(reddit);
-        }
-        a[href*="skype.com"]:before {
-            @include icon-font(skype);
-        }
-        a[href*="stumbleupon.com"]:before {
-            @include icon-font(stumbleupon);
-        }
-        a[href*="tumblr.com"]:before {
-           @include icon-font(tumblr);
-        }
-        a[href*="twitter.com"]:before {
-            @include icon-font(twitter);
-        }
-        a[href*="vimeo.com"]:before {
-            @include icon-font(vimeo);
-        }
-        a[href*="wordpress.com"]:before {
-            @include icon-font(wordpress);
-        }
-        a[href*="wordpress.org"]:before {
-            @include icon-font(wordpress);
-        }
-        a[href*="youtube.com"]:before {
-            @include icon-font(youtube);
-        }
-        a[href^="mailto:"]:before {
-            @include icon-font(envelope);
-        }
-        a[href*="spotify.com"]:before {
-            @include icon-font(spotify);
-        }
-        a[href*="twitch.tv"]:before {
-            @include icon-font(twitch);
-        }
-        a[href$="/feed/"]:before {
-            @include icon-font(feed);
-        }
-
-        @include breakpoint(md) {
-
-            div[class^="menu-"],
-            div[class^="menu-"] ul {
-                text-align: right;
-                float:right;
-            }
-            ul {
-                margin: 0 0 -0.4375em;
-                display: inherit;
-            }
-            li {
-                display: inherit;
-                float: left;
-                margin: 0 0.4375em 0.4375em 0;
-            }
-        }
-
-    }    
-
-}
-
 
 // ARCHIVE, META
-
 .widget_archive, 
 .widget_meta {
     li {
@@ -387,3 +226,8 @@ h3.widget-title {
         line-height: 1.1;
     }
 }
+
+.widget_sow-social-media-buttons {}
+.widget_wpcom_social_media_icons_widget {}
+.widget_nav_menu {}
+.widget_sow-button {}

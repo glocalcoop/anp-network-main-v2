@@ -2,11 +2,12 @@
 PAGE BUILDER
 *********************/
 
-
+/**
+ * Buttons
+ */
 .wpb_button {
     @extend .btn;
 }
-
 .wpb_btn-default {
     @extend .btn-default;
 }
@@ -25,6 +26,16 @@ PAGE BUILDER
 
 .wpb_btn-large {
     @extend .btn-lg;
+}
+
+.ow-button-base a {
+    @extend .btn;
+    @extend .btn-default;
+    border-radius: $element__border-radius-base !important;
+
+    .sow-icon-fontawesome {
+        color: $color__text-button !important;
+    }
 }
 
 
