@@ -15,6 +15,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+            <?php do_action ( 'anp_network_main_home_site_main_top' );?>
+
+            <?php do_action ( 'anp_network_main_site_main_top' );?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'hero' ); ?>
@@ -23,8 +27,14 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+            <?php do_action ( 'anp_network_main_site_main_bottom' );?>
+
+            <?php do_action ( 'anp_network_main_home_site_main_bottom' );?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+    <?php do_action ( 'anp_network_main_home_widgets_before' );?>
 
     <?php if ( is_active_sidebar( 'sidebar-home' ) ) : ?>
     <?php $widget_class = anp_network_main_count_widgets( 'sidebar-home' ); ?>
@@ -32,5 +42,7 @@ get_header(); ?>
         <?php dynamic_sidebar( 'sidebar-home' ); ?>
     </div>
     <?php endif; ?>
+
+    <?php do_action ( 'anp_network_main_home_widgets_after' );?>
 
 <?php get_footer(); ?>

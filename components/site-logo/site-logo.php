@@ -1,5 +1,7 @@
 <?php if( function_exists( 'jetpack_has_site_logo' ) ) : ?>
 
+    <?php do_action ( 'anp_network_main_site_title' );?>
+
     <?php if( jetpack_has_site_logo() ) : ?>
 
         <?php anp_network_main_the_site_logo(); ?>

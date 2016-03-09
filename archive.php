@@ -12,6 +12,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<?php do_action ( 'anp_network_main_site_main_top' );?>
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php get_template_part( 'components/archive-header/archive-header' ); ?>
@@ -38,6 +40,8 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+		<?php do_action ( 'anp_network_main_site_main_bottom' );?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1,4 +1,7 @@
 <header class="page-header">
+
+    <?php do_action ( 'anp_network_main_page_header_top' );?>
+
     <?php $venue_id = get_queried_object_id(); ?>
     <?php $venue_address = eo_get_venue_address( $venue_id ); ?>
     
@@ -25,4 +28,7 @@
     <?php echo eo_get_venue_map( $venue_id, array('width'=>"100%") ); ?>
 
     <h3><?php _e( 'Upcoming Events', 'anp-network-main' ); ?></h3>
+
+    <?php do_action ( 'anp_network_main_page_header_bottom' );?>
+
 </header><!-- .page-header -->

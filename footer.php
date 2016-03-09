@@ -8,26 +8,42 @@
  */
 
 ?>
+        <?php do_action ( 'anp_network_main_site_content_bottom' );?>
+
+        </div><!-- .site-content-container-->
 
 	</div><!-- #content -->
 
+    <?php do_action ( 'anp_network_main_footer_before' );?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
+        <?php do_action ( 'anp_network_main_footer_top' );?>
 
         <?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
         <?php $widget_class = anp_network_main_count_widgets( 'sidebar-footer' ); ?>
         <div class="footer-widgets <?php echo $widget_class; ?>">
-            <?php dynamic_sidebar( 'sidebar-footer' ); ?>
+            <div class="footer-widget-container">
+            <?php dynamic_sidebar( 'sidebar-footer' ); ?>    
+            </div>
         </div>
         <?php endif; ?>
 
+        <?php get_template_part( 'components/bottom-navigation/bottom-navigation' ); ?>
+
         <div class="copyright">
             <?php get_template_part( 'components/site-info/site-info' ); ?>
-
-            <?php get_template_part( 'components/top-navigation/bottom-navigation' ); ?>
         </div>
 
+        <?php do_action ( 'anp_network_main_footer_bottom' );?>
+
 	</footer><!-- #colophon -->
+
+    <?php do_action ( 'anp_network_main_footer_after' );?>
+
 </div><!-- #page -->
+
+<?php do_action ( 'anp_network_main_after' );?>
 
 <?php wp_footer(); ?>
 

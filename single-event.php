@@ -10,6 +10,8 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
+        <?php do_action ( 'anp_network_main_site_main_top' );?>
+
         <?php while ( have_posts() ) : the_post(); ?>
 
             <?php get_template_part( 'template-parts/content', 'single-event' ); ?>
@@ -25,13 +27,11 @@ get_header(); ?>
 
         <?php endwhile; // End of the loop. ?>
 
+        <?php do_action ( 'anp_network_main_site_main_bottom' );?>
+
         </main><!-- #main -->
     </div><!-- #primary -->
 
-<?php if( 'full' != hybrid_get_post_layout( get_the_id() ) && 'grid' != hybrid_get_post_layout( get_the_id() ) ) : ?>
-
 <?php get_sidebar(); ?>
-
-<?php endif; ?>
 
 <?php get_footer(); ?>

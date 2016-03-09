@@ -8,12 +8,26 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php do_action ( 'anp_network_main_entry_header_before' );?>
+
 	<header class="entry-header">
+
+		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+
 		<?php the_title( '<h1 class="en
 		try-title">', '</h1>' ); ?>
+
+		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+
 	</header><!-- .entry-header -->
 
+	<?php do_action ( 'anp_network_main_entry_content_before' );?>
+
 	<div class="entry-content">
+
+		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -21,9 +35,17 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+
 	</div><!-- .entry-content -->
 
+	<?php do_action ( 'anp_network_main_entry_content_after' );?>
+
 	<footer class="entry-footer">
+
+		<?php do_action ( 'anp_network_main_entry_footer_top' );?>
+
 		<?php edit_post_link( esc_html__( 'Edit', 'anp-network-main' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php if ( is_active_sidebar( 'content-bottom' ) ) : ?>
@@ -32,6 +54,12 @@
             <?php dynamic_sidebar( 'content-bottom' ); ?>
         </div>
         <?php endif; ?>
+
+        <?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+
 	</footer><!-- .entry-footer -->
+
+	<?php do_action ( 'anp_network_main_entry_footer_after' );?>
+	
 </article><!-- #post-## -->
 

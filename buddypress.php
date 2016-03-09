@@ -15,18 +15,23 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
+        <?php do_action ( 'anp_network_main_buddypress_site_main_top' );?>
+
+        <?php do_action ( 'anp_network_main_site_main_top' );?>
+
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php get_template_part( 'template-parts/content', 'buddypress' ); ?>
 
             <?php endwhile; // End of the loop. ?>
 
+        <?php do_action ( 'anp_network_main_site_main_top' );?>
+
+        <?php do_action ( 'anp_network_main_buddypress_site_main_bottom' );?>
+
         </main><!-- #main -->
     </div><!-- #primary -->
 
-<?php if ( is_active_sidebar( 'sidebar-buddypress' ) ) : ?>
-    <div id="secondary" class="widget-area sidebar" role="complementary">
-        <?php dynamic_sidebar( 'sidebar-buddypress' ); ?>
-    </div><!-- #secondary -->
-<?php endif; ?>
+<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

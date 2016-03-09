@@ -22,6 +22,8 @@ if ( post_password_required() ) {
 
 	<?php // You can start editing here -- including this comment! ?>
 
+	<?php do_action ( 'anp_network_main_comments_top' );?>
+
 	<?php if ( have_comments() ) : ?>
 
 		<?php get_template_part( 'components/comment-title/comment-title' ); ?>
@@ -42,5 +44,7 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
+
+	<?php do_action ( 'anp_network_main_comments_bottom' );?>
 
 </div><!-- #comments -->

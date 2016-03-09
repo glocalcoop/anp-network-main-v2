@@ -41,6 +41,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Load hooked functions.
+ */
+require get_template_directory() . '/inc/hooks.php';
+
+/**
  * Load custom theme functions.
  */
 require get_template_directory() . '/inc/theme.php';

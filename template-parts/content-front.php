@@ -9,18 +9,31 @@
 <?php $home_post_class = ($post->post_content) ? 'intro-content' : 'empty' ; ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class($home_post_class); ?>>
 
+	<?php do_action ( 'anp_network_main_entry_content_before' );?>
+
 	<div class="entry-content">
+
+		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'anp-network-main' ),
-				'after'  => '</div>',
-			) );
-		?>
+
+		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+
 	</div><!-- .entry-content -->
 
+	<?php do_action ( 'anp_network_main_entry_content_after' );?>
+
 	<footer class="entry-footer">
+
+		<?php do_action ( 'anp_network_main_entry_footer_top' );?>
+
 		<?php edit_post_link( esc_html__( 'Edit', 'anp-network-main' ), '<span class="edit-link">', '</span>' ); ?>
+
+		<?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+
 	</footer><!-- .entry-footer -->
+
+	<?php do_action ( 'anp_network_main_entry_footer_after' );?>
+	
 </article><!-- #post-## -->
 
