@@ -4,10 +4,10 @@
 
 		if ( ! empty( $header_image ) ) { ?>
 			<div id="header-image" class="custom-header">
-				<div class="header-wrapper">
+				<div class="header-wrapper custom-header-container">
 					<?php get_template_part( 'components/site-branding/site-branding' ); ?>
+					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 				</div><!-- .header-wrapper -->
-				<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 			</div><!-- #header-image .custom-header -->
 		<?php } else { ?>
 			<?php get_template_part( 'components/site-branding/site-branding' ); ?>

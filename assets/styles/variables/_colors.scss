@@ -30,12 +30,12 @@ $black: $color__black;
 $color__default: $color__mid-grey;
 
 $color__background-body: transparent;
+$color__background-header: $color__primary;
+$color__background-content: transparent;
+$color__background-footer: $color__tertiary;
 $color__background-hr: $color__lightest-grey;
 $color__background-hr-alt: rgba($color__black,.2);
-$color__background-content: transparent;
-$color__background-header: $color__primary;
 $color__background-panel: $color__lightest-grey;
-$color__background-footer: $color__tertiary;
 $color__background-pre: $color__light-grey;
 $color__background-ins: $color__light-grey;
 $color__background-screen: $color__light-grey;
@@ -46,8 +46,9 @@ $color__text-screen: $color__primary;
 $color__text-header: rgba($color__white,.7);
 
 $color__link: $color__primary;
-$color__link-visited: darken($color__link, 20%);
+$color__link-visited: $color__link;
 $color__link-hover: darken($color__link, 20%);
+$color__link-active: darken($color__link, 20%);
 $color__text-main: $color__dark-grey;
 $color__text-light: $color__mid-grey;
 $color__text-inverted: $color__white;

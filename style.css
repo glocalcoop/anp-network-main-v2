@@ -8309,6 +8309,17 @@ button.close {
   display: table;
   clear: both; }
 
+.header-widget-container,
+.custom-header-container,
+.menu-toggle-button-container,
+.main-navigation-container,
+.site-content-container,
+.footer-menu-container,
+.site-info-container,
+.footer-widget-container {
+  margin: 0 auto;
+  width: 90%; }
+
 .archive-meeting .content-filter li,
 .archive-agenda .content-filter li,
 .archive-summary .content-filter li,
@@ -10948,6 +10959,8 @@ a {
   a:hover, a:focus {
     color: #090d14; }
   a:visited {
+    color: #293B5A; }
+  a.active, a.current {
     color: #090d14; }
 
 hr {
@@ -11479,7 +11492,16 @@ body {
 
 .site {
   margin: 0 auto;
-  width: 90%; }
+  width: 100%; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+  .site-footer .footer-widgets:after,
+  .site-footer .copyright:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .content-area {
   float: none;
@@ -11509,15 +11531,6 @@ body {
 
 .content-widgets {
   margin-top: 1em; }
-
-.site-footer {
-  clear: both;
-  width: 100%; }
-  .site-footer .footer-widgets:after,
-  .site-footer .copyright:after {
-    content: "";
-    display: table;
-    clear: both; }
 
 .layout-2c-r #primary,
 .layout-2c-l #primary {
@@ -11649,8 +11662,6 @@ body {
 
 #colophon {
   margin-top: 1em; }
-  #colophon .copyright {
-    padding: .5em .5em .5em 1em; }
 
 .widget, article.handbook .table-of-contents {
   /* Make sure select elements fit in widgets. */ }
@@ -11995,7 +12006,7 @@ body.blog .site-main .entry {
 a {
   color: #293B5A; }
   a:visited {
-    color: #090d14; }
+    color: #293B5A; }
   a:hover, a:focus, a:active {
     color: #090d14; }
   a:focus {
@@ -12550,6 +12561,21 @@ a {
   .dropdown-toggle,
   .menu-toggle {
     display: none; } }
+
+.footer-menu ul,
+.bottom-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .footer-menu ul li,
+  .bottom-navigation ul li {
+    display: inline-block; }
+  .footer-menu ul li:not(:last-child),
+  .bottom-navigation ul li:not(:last-child) {
+    margin-right: 1em; }
+  .footer-menu ul .current-menu-item,
+  .bottom-navigation ul .current-menu-item {
+    font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Media

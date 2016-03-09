@@ -25,6 +25,12 @@
   }
 }
 
+%container {
+  margin: 0 auto;
+  width: $size__container-width;
+}
+
+
 // VISUALLY HIDE
 %visuallyhidden {
   margin: -1px;

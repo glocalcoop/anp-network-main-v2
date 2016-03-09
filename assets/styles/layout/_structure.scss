@@ -3,9 +3,30 @@ body {
 	overflow-x: hidden;
 }
 
-.site{
+.site {
 	margin: 0 auto;
 	width: $size__site-width;
+}
+
+.header-widget-container,
+.custom-header-container,
+.menu-toggle-button-container,
+.main-navigation-container,
+.site-content-container,
+.footer-menu-container,
+.site-info-container,
+.footer-widget-container, {
+	@extend %container;
+}
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+
+	.footer-widgets,
+	.copyright {
+		@include clearfix;
+	}
 }
 
 .content-area {
@@ -41,12 +62,3 @@ body {
 	margin-top: 1em;
 }
 
-.site-footer {
-	clear: both;
-	width: $size__site-main;
-
-	.footer-widgets,
-	.copyright {
-		@include clearfix;
-	}
-}

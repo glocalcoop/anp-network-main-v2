@@ -460,3 +460,17 @@ a {
 	}
 
 }
+
+.footer-menu,
+.bottom-navigation {
+    ul {
+       @include inline-list;
+
+       li:not(:last-child) {
+        margin-right: 1em;
+       }
+       .current-menu-item {
+            font-weight: bold;
+       }
+    }
+}
