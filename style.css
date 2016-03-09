@@ -11128,6 +11128,7 @@ h3.widget-title {
     margin: 0;
     line-height: 1.3;
     display: block;
+    padding: .5em .25em;
     color: #666666;
     /* deep nesting */ }
     .widget li ul, article.handbook .table-of-contents li ul {
@@ -11154,7 +11155,8 @@ h3.widget-title {
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 300;
-    font-style: italic; }
+    font-style: italic;
+    border: none; }
     .widget .entry-meta .meta-label, article.handbook .table-of-contents .entry-meta .meta-label,
     .widget .activity .meta-label, article.handbook .table-of-contents .activity .meta-label {
       clip: rect(1px, 1px, 1px, 1px);
@@ -11167,6 +11169,9 @@ h3.widget-title {
       .widget .entry-meta .meta-label:after, article.handbook .table-of-contents .entry-meta .meta-label:after,
       .widget .activity .meta-label:after, article.handbook .table-of-contents .activity .meta-label:after {
         content: ': '; }
+    .widget .entry-meta:empty, article.handbook .table-of-contents .entry-meta:empty,
+    .widget .activity:empty, article.handbook .table-of-contents .activity:empty {
+      display: none; }
   .widget .entry-content, article.handbook .table-of-contents .entry-content {
     line-height: 1.5; }
 
@@ -11207,6 +11212,7 @@ h3.widget-title {
   #secondary .widget ul, #secondary article.handbook .table-of-contents ul, article.handbook #secondary .table-of-contents ul {
     border-bottom: 1px solid rgba(17, 17, 17, 0.5); }
   #secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
+    color: #fff;
     border-top: 1px solid rgba(17, 17, 17, 0.5);
     /* deep nesting */ }
     #secondary .widget li li, #secondary article.handbook .table-of-contents li li, article.handbook #secondary .table-of-contents li li {

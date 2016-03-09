@@ -64,6 +64,7 @@ h3.widget-title {
         margin: 0;
         line-height: 1.3;
         display: block;
+        padding: .5em .25em;
         color: $color__text-widget-alt;
         
         /* deep nesting */
@@ -102,11 +103,15 @@ h3.widget-title {
         @include font-size($small);
         font-weight: 300;
         font-style: italic;
+        border: none;
         .meta-label {
             &:after {
                 content: ': ';
             }
             @include screen-reader-text;
+        }
+        &:empty {
+            display: none;
         }
     }
 
@@ -129,7 +134,7 @@ h3.widget-title {
     .widget {
         background-color: $color__background-widget;
         border-radius: $element__widget-radius;
-        color: $color__white;
+        color: $color__text-widget;
 
         h3.widgettitle,
         h3.widget-title {
@@ -157,6 +162,7 @@ h3.widget-title {
             border-bottom: 1px solid $color__border-widget;
         }
         li {
+            color: $color__text-widget;
             border-top: 1px solid $color__border-widget;
             
             /* deep nesting */
