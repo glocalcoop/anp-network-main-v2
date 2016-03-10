@@ -726,10 +726,12 @@ $flag-icon-css-path: 'dist/vendor/flag-icon-css/flags';
 @import "../../vendor/flag-icon-css/sass/variables";
 @import "../../vendor/flag-icon-css/sass/flag-icon-base";
 
-a[hreflang="en-US"] {
+a[hreflang="en-US"],
+.lang-item-en a {
     @include flag-icon(us);
 }
-a[hreflang="es-ES"] {
+a[hreflang="es-ES"],
+.lang-item-es a {
     @include flag-icon(es);
 }
 
