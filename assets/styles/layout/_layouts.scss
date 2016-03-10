@@ -2,47 +2,55 @@
 .layout-2c-r,
 .layout-2c-l {
 
+	&:not(.page-template-template-front) {
+		#primary {
+			@include make-md-column(9);
+		}
+		#secondary {
+			@include make-md-column(3);
+		}
 
-	#primary {
-		@include make-md-column(9);
-	}
-	#secondary {
-		@include make-md-column(3);
-	}
-
-	#primary,
-	#secondary {
-		padding-right: 0;
-		padding-left: 0;
+		#primary,
+		#secondary {
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 }
 
 .layout-2c-r {
-	#primary {}
-	#secondary {}
-	@include breakpoint(md) {
-		#primary {
-			padding-right: .5em;
-		}
-		#secondary {
-			padding-left: .5em;
+
+	&:not(.page-template-template-front) {
+		#primary {}
+		#secondary {}
+		@include breakpoint(md) {
+			#primary {
+				padding-right: .5em;
+			}
+			#secondary {
+				padding-left: .5em;
+			}
 		}
 	}
 }
 
 .layout-2c-l {
-	#primary {
-		@include make-md-column-push(3);
-	}
-	#secondary {
-		@include make-md-column-pull(9);
-	}	
-	@include breakpoint(md) {
+
+	&:not(.page-template-template-front) {
+		
 		#primary {
-			padding-left: .5em;
+			@include make-md-column-push(3);
 		}
 		#secondary {
-			padding-right: .5em;
+			@include make-md-column-pull(9);
+		}	
+		@include breakpoint(md) {
+			#primary {
+				padding-left: .5em;
+			}
+			#secondary {
+				padding-right: .5em;
+			}
 		}
 	}
 }

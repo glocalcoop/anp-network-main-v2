@@ -11104,6 +11104,10 @@ time.updated {
   padding: 0;
   list-style: none; }
 
+h1.entry-title,
+h1.page-title {
+  margin-top: 0; }
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -11373,55 +11377,55 @@ body {
 .content-widgets {
   margin-top: 1em; }
 
-.layout-2c-r #primary,
-.layout-2c-l #primary {
+.layout-2c-r:not(.page-template-template-front) #primary,
+.layout-2c-l:not(.page-template-template-front) #primary {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
   @media (min-width: 768px) {
-    .layout-2c-r #primary,
-    .layout-2c-l #primary {
+    .layout-2c-r:not(.page-template-template-front) #primary,
+    .layout-2c-l:not(.page-template-template-front) #primary {
       float: left;
       width: 75%; } }
 
-.layout-2c-r #secondary,
-.layout-2c-l #secondary {
+.layout-2c-r:not(.page-template-template-front) #secondary,
+.layout-2c-l:not(.page-template-template-front) #secondary {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
   @media (min-width: 768px) {
-    .layout-2c-r #secondary,
-    .layout-2c-l #secondary {
+    .layout-2c-r:not(.page-template-template-front) #secondary,
+    .layout-2c-l:not(.page-template-template-front) #secondary {
       float: left;
       width: 25%; } }
 
-.layout-2c-r #primary,
-.layout-2c-r #secondary,
-.layout-2c-l #primary,
-.layout-2c-l #secondary {
+.layout-2c-r:not(.page-template-template-front) #primary,
+.layout-2c-r:not(.page-template-template-front) #secondary,
+.layout-2c-l:not(.page-template-template-front) #primary,
+.layout-2c-l:not(.page-template-template-front) #secondary {
   padding-right: 0;
   padding-left: 0; }
 
 @media screen and (min-width: 768px) {
-  .layout-2c-r #primary {
+  .layout-2c-r:not(.page-template-template-front) #primary {
     padding-right: .5em; }
-  .layout-2c-r #secondary {
+  .layout-2c-r:not(.page-template-template-front) #secondary {
     padding-left: .5em; } }
 
 @media (min-width: 768px) {
-  .layout-2c-l #primary {
+  .layout-2c-l:not(.page-template-template-front) #primary {
     left: 25%; } }
 
 @media (min-width: 768px) {
-  .layout-2c-l #secondary {
+  .layout-2c-l:not(.page-template-template-front) #secondary {
     right: 75%; } }
 
 @media screen and (min-width: 768px) {
-  .layout-2c-l #primary {
+  .layout-2c-l:not(.page-template-template-front) #primary {
     padding-left: .5em; }
-  .layout-2c-l #secondary {
+  .layout-2c-l:not(.page-template-template-front) #secondary {
     padding-right: .5em; } }
 
 #masthead .custom-header img {
@@ -15174,6 +15178,20 @@ NETWORK CONTENT
 /******************************************************************
  THEME - Default colors
 ******************************************************************/
+/**
+ * Customizer support
+ Site Background Color
+ Branding Background .site-branding
+ Branding Color #masthead .site-branding .site-title a, #masthead .site-branding .site-description, #masthead .social-links
+ Navigation Background Color
+ #masthead .main-navigation &.toggled, #masthead .main-navigation ul ul
+ Navigation Color
+ #secondary .wrap, #colophon .copyright, a, &:visited, &:hover, &:focus, &:active,  #buddypress .item-list-tabs ul li:selected
+ Primary Color
+ Secondary Background Color
+ #buddypress .item-list-tabs ul li, #colophon .bottom-navigation
+ Secondary Color
+ */
 body {
   background-color: transparent;
   color: #444444; }
@@ -15313,42 +15331,44 @@ body {
 #secondary .wrap {
   background-color: #16516B;
   border-color: rgba(17, 17, 17, 0.5);
-  border-radius: 0; }
-
-#secondary .widget, #secondary article.handbook .table-of-contents, article.handbook #secondary .table-of-contents {
-  background-color: #16516B;
   border-radius: 0;
   color: #fff; }
-  #secondary .widget h3.widgettitle, article.handbook .table-of-contents #secondary .widget h3, #secondary article.handbook .table-of-contents h3, article.handbook #secondary .table-of-contents h3,
-  #secondary .widget h3.widget-title,
-  #secondary article.handbook .table-of-contents h3.widget-title, article.handbook
-  #secondary .table-of-contents h3.widget-title {
-    color: rgba(255, 255, 255, 0.5); }
-  #secondary .widget .entry-meta, #secondary article.handbook .table-of-contents .entry-meta, article.handbook #secondary .table-of-contents .entry-meta {
-    color: rgba(255, 255, 255, 0.5); }
-  #secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a,
-  #secondary .widget a:visited,
-  #secondary article.handbook .table-of-contents a:visited, article.handbook
-  #secondary .table-of-contents a:visited {
+
+#secondary .widget h3.widgettitle, article.handbook .table-of-contents #secondary .widget h3, #secondary article.handbook .table-of-contents h3, article.handbook #secondary .table-of-contents h3,
+#secondary .widget h3.widget-title,
+#secondary article.handbook .table-of-contents h3.widget-title, article.handbook
+#secondary .table-of-contents h3.widget-title {
+  color: rgba(255, 255, 255, 0.5); }
+
+#secondary .widget .entry-meta, #secondary article.handbook .table-of-contents .entry-meta, article.handbook #secondary .table-of-contents .entry-meta {
+  color: rgba(255, 255, 255, 0.5); }
+
+#secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a,
+#secondary .widget a:visited,
+#secondary article.handbook .table-of-contents a:visited, article.handbook
+#secondary .table-of-contents a:visited {
+  color: #fff; }
+  #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus,
+  #secondary .widget a:visited:hover,
+  #secondary article.handbook .table-of-contents a:visited:hover, article.handbook
+  #secondary .table-of-contents a:visited:hover,
+  #secondary .widget a:visited:focus,
+  #secondary article.handbook .table-of-contents a:visited:focus, article.handbook
+  #secondary .table-of-contents a:visited:focus {
     color: #fff; }
-    #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus,
-    #secondary .widget a:visited:hover,
-    #secondary article.handbook .table-of-contents a:visited:hover, article.handbook
-    #secondary .table-of-contents a:visited:hover,
-    #secondary .widget a:visited:focus,
-    #secondary article.handbook .table-of-contents a:visited:focus, article.handbook
-    #secondary .table-of-contents a:visited:focus {
-      color: #fff; }
-  #secondary .widget .entry-content, #secondary article.handbook .table-of-contents .entry-content, article.handbook #secondary .table-of-contents .entry-content {
+
+#secondary .widget .entry-content, #secondary article.handbook .table-of-contents .entry-content, article.handbook #secondary .table-of-contents .entry-content {
+  color: #fff; }
+
+#secondary .widget ul, #secondary article.handbook .table-of-contents ul, article.handbook #secondary .table-of-contents ul {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.5); }
+
+#secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
+  color: #fff;
+  border-top: 1px solid rgba(17, 17, 17, 0.5);
+  /* deep nesting */ }
+  #secondary .widget li li, #secondary article.handbook .table-of-contents li li, article.handbook #secondary .table-of-contents li li {
     color: #fff; }
-  #secondary .widget ul, #secondary article.handbook .table-of-contents ul, article.handbook #secondary .table-of-contents ul {
-    border-bottom: 1px solid rgba(17, 17, 17, 0.5); }
-  #secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
-    color: #fff;
-    border-top: 1px solid rgba(17, 17, 17, 0.5);
-    /* deep nesting */ }
-    #secondary .widget li li, #secondary article.handbook .table-of-contents li li, article.handbook #secondary .table-of-contents li li {
-      color: #fff; }
 
 /**
  * Secondary Widget Styles

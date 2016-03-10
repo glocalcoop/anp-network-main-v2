@@ -139,3 +139,7 @@ time.updated {
 	@include no-bullets;
 }
 
+h1.entry-title,
+h1.page-title {
+	margin-top: 0;
+}

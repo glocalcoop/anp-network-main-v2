@@ -2,6 +2,21 @@
  THEME - Default colors
 ******************************************************************/
 
+/**
+ * Customizer support
+ Site Background Color
+ Branding Background .site-branding
+ Branding Color #masthead .site-branding .site-title a, #masthead .site-branding .site-description, #masthead .social-links
+ Navigation Background Color
+ #masthead .main-navigation &.toggled, #masthead .main-navigation ul ul
+ Navigation Color
+ #secondary .wrap, #colophon .copyright, a, &:visited, &:hover, &:focus, &:active,  #buddypress .item-list-tabs ul li:selected
+ Primary Color
+ Secondary Background Color
+ #buddypress .item-list-tabs ul li, #colophon .bottom-navigation
+ Secondary Color
+ */
+
 body {
     background-color: $color__background-body;
     color: $color__text-main;
@@ -216,13 +231,10 @@ body {
         background-color: $color__background-widget;
         border-color: $color__border-widget;
         border-radius: $element__widget-radius;
+        color: $color__text-widget;
     }
 
     .widget {
-        background-color: $color__background-widget;
-        border-radius: $element__widget-radius;
-        color: $color__text-widget;
-
         h3.widgettitle,
         h3.widget-title {
             color: $color__text-widget-header;
