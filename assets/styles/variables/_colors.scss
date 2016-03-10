@@ -61,11 +61,11 @@ $color__border-frame-inverted: 5px solid $color__white;
 
 $color__background-nav: $color__white;
 $color__background-nav-active: rgba($color__black,.2);
-$color__background-nav-hover: rgba($color__black,.2);
+$color__background-nav-hover: rgba($color__black,.1);
 $color__text-nav: $color__text-main;
 $color__text-nav-active: $color__link-active;
 $color__text-nav-hover: $color__text-nav-active;
-$color__border-nav: rgba($color__black,.1);
+$color__border-nav: rgba($color__black,.2);
 
 $color__background-nav-inverted: $color__primary;
 $color__background-nav-active-inverted: rgba($color__black,.2);

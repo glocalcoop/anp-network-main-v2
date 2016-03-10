@@ -309,11 +309,13 @@
 
 	.main-navigation {
 		margin: 0;
+
 		.nav-menu {
-			border: 0;
+            text-align: center;
+			border: none;
 			> li {
-				border: 0;
-				float: left;
+				border: none;
+                display: inline-block;
 			}
 		}
 		a {
@@ -333,6 +335,7 @@
 		}
 		ul {
 			ul {
+                text-align: left;
 				display: block;
 				left: -999em;
 				top: 2.25em;

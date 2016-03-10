@@ -58,8 +58,10 @@ body {
         }
 
         ul {
+            border-top: 1px solid $color__border-nav;
+            
             li {
-                border-top: 1px solid $color__border-nav;
+                
                 border-radius: $element__border-radius-base;
             }
 
