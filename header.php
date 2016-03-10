@@ -33,15 +33,20 @@
 
         <?php if ( is_active_sidebar( 'sidebar-header' ) ) : ?>
         <?php $widget_class = anp_network_main_count_widgets( 'sidebar-header' ); ?>
-        <div class="header-widget-container">
+        <div class="widgets-header">
 
-            <?php do_action ( 'anp_network_main_header_widgets_top' );?>
+            <div class="header-widget-container">
 
-            <div class="header-widgets <?php echo $widget_class; ?>">
-                <?php dynamic_sidebar( 'sidebar-header' ); ?>
+                <?php do_action ( 'anp_network_main_header_widgets_top' );?>
+
+                <div class="header-widgets <?php echo $widget_class; ?>">
+                    <?php dynamic_sidebar( 'sidebar-header' ); ?>
+                </div>
+
+                <?php do_action ( 'anp_network_main_header_widgets_bottom' );?>
+                
             </div>
 
-            <?php do_action ( 'anp_network_main_header_widgets_bottom' );?>
 
         </div>
         <?php endif; ?>
