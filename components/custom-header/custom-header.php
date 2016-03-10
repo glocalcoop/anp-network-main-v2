@@ -2,9 +2,9 @@
 		// You can upload a custom header and it'll output in a smaller logo size.
 		$header_image = get_header_image(); ?>
 
-		<?php get_template_part( 'components/site-branding/site-branding' ); ?>
 
 		<?php if ( ! empty( $header_image ) ) { ?>
+			<?php get_template_part( 'components/site-branding/site-branding' ); ?>
 			<div id="header-image" class="custom-header">
 				<div class="header-wrapper custom-header-container">
 					
