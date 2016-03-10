@@ -10950,14 +10950,18 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
   .flag-icon.flag-icon-squared {
     width: 1em; }
 
-a[hreflang="en-US"] .flag-icon-us {
+a[hreflang="en-US"] .flag-icon-us,
+.lang-item-en a .flag-icon-us {
   background-image: url(dist/vendor/flag-icon-css/flags/4x3/us.svg); }
-  a[hreflang="en-US"] .flag-icon-us.flag-icon-squared {
+  a[hreflang="en-US"] .flag-icon-us.flag-icon-squared,
+  .lang-item-en a .flag-icon-us.flag-icon-squared {
     background-image: url(dist/vendor/flag-icon-css/flags/1x1/us.svg); }
 
-a[hreflang="es-ES"] .flag-icon-es {
+a[hreflang="es-ES"] .flag-icon-es,
+.lang-item-es a .flag-icon-es {
   background-image: url(dist/vendor/flag-icon-css/flags/4x3/es.svg); }
-  a[hreflang="es-ES"] .flag-icon-es.flag-icon-squared {
+  a[hreflang="es-ES"] .flag-icon-es.flag-icon-squared,
+  .lang-item-es a .flag-icon-es.flag-icon-squared {
     background-image: url(dist/vendor/flag-icon-css/flags/1x1/es.svg); }
 
 /*--------------------------------------------------------------
