@@ -66,9 +66,14 @@
 
     }
 
-   .header-widgets ul.menu {
-        text-align: right;
-   }
+    .header-widgets {
+        .align-center ul {
+            text-align: center;
+        }
+        .align-right ul {
+            text-align: right;
+        }
+    }
 
     .site-title,
     .site-title a,

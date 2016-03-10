@@ -11133,7 +11133,7 @@ SIDEBARS & ASIDES
     margin: 0;
     line-height: 1.3;
     display: block;
-    padding: .5em .25em;
+    padding: .25em;
     color: #666666;
     /* deep nesting */ }
     .widget li ul, article.handbook .table-of-contents li ul {
@@ -11431,7 +11431,10 @@ body {
           padding-right: .5em;
           padding-left: .5em; } }
 
-#masthead .header-widgets ul.menu {
+#masthead .header-widgets .align-center ul {
+  text-align: center; }
+
+#masthead .header-widgets .align-right ul {
   text-align: right; }
 
 #masthead .site-title {
