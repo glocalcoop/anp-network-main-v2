@@ -15239,21 +15239,28 @@ body {
 /**
  * Footer elements color
  */
-#colophon {
+#colophon .footer-widgets {
+  background-color: #888888; }
+
+#colophon .bottom-navigation,
+#colophon .copyright {
   color: #fff; }
-  #colophon a {
+  #colophon .bottom-navigation a,
+  #colophon .copyright a {
     color: #fff; }
-  #colophon a:hover,
-  #colophon a:focus {
+  #colophon .bottom-navigation a:hover,
+  #colophon .bottom-navigation a:focus,
+  #colophon .copyright a:hover,
+  #colophon .copyright a:focus {
     color: #fff; }
-  #colophon .footer-widgets {
-    background-color: #888888; }
-  #colophon .bottom-navigation {
-    background-color: #008EB0;
-    color: #fff; }
-  #colophon .copyright {
-    background-color: #16516B;
-    color: #fff; }
+
+#colophon .bottom-navigation {
+  background-color: #008EB0;
+  color: #fff; }
+
+#colophon .copyright {
+  background-color: #16516B;
+  color: #fff; }
 
 .entry {
   border-bottom: 1px solid #f8f8f8;

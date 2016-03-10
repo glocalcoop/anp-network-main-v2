@@ -59,7 +59,7 @@ body {
 
         ul {
             border-top: 1px solid $color__border-nav;
-            
+
             li {
                 
                 border-radius: $element__border-radius-base;
@@ -171,19 +171,24 @@ body {
  * Footer elements color
  */
 #colophon {
-    color: $color__text-inverted;
-    a {
-        color: $color__text-inverted;
-    }
-
-    a:hover,
-    a:focus {
-        color: $color__text-inverted;
-    }
 
     .footer-widgets {
         background-color: $color__highlight;
     }
+
+    .bottom-navigation,
+    .copyright {
+        color: $color__text-inverted;
+        a {
+            color: $color__text-inverted;
+        }
+
+        a:hover,
+        a:focus {
+            color: $color__text-inverted;
+        } 
+    }
+
     .bottom-navigation {
         background-color: $color__secondary;
         color: $color__text-inverted;
