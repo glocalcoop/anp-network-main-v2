@@ -2967,7 +2967,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #293B5A; }
+  background-color: #16516B; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #888888; }
@@ -4083,7 +4083,7 @@ input[type="submit"],
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #293B5A; }
+    background-color: #16516B; }
 
 .nav-stacked > li {
   float: none; }
@@ -4428,14 +4428,14 @@ input[type="submit"],
   background-color: #fff;
   border-color: #eeeeee; }
   .navbar-default .navbar-brand {
-    color: #293B5A; }
+    color: #16516B; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #192437;
+      color: #0d3141;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #444444; }
   .navbar-default .navbar-nav > li > a {
-    color: #293B5A; }
+    color: #16516B; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: rgba(17, 17, 17, 0.2);
       background-color: transparent; }
@@ -4459,7 +4459,7 @@ input[type="submit"],
     color: rgba(17, 17, 17, 0.2); }
   @media (max-width: 543px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #293B5A; }
+      color: #16516B; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: rgba(17, 17, 17, 0.2);
         background-color: transparent; }
@@ -4470,11 +4470,11 @@ input[type="submit"],
       color: #666666;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #293B5A; }
+    color: #16516B; }
     .navbar-default .navbar-link:hover {
       color: rgba(17, 17, 17, 0.2); }
   .navbar-default .btn-link {
-    color: #293B5A; }
+    color: #16516B; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
       color: rgba(17, 17, 17, 0.2); }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
@@ -5863,8 +5863,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #293B5A;
-  border-color: #293B5A; }
+  background-color: #16516B;
+  border-color: #16516B; }
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
   .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
@@ -5874,7 +5874,7 @@ button.list-group-item {
   .list-group-item.active:focus .list-group-item-heading > .small {
     color: inherit; }
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-    color: #879fc8; }
+    color: #6cbde1; }
 
 .list-group-item-success {
   color: #AFBB87;
@@ -8311,6 +8311,7 @@ button.close {
 
 .header-widget-container,
 .custom-header-container,
+.site-branding-container,
 .menu-toggle-button-container,
 .main-navigation-container,
 .site-content-container,
@@ -8603,7 +8604,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444444;
+  color: #16516B;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
@@ -10955,13 +10956,13 @@ blockquote, q {
     content: ""; }
 
 a {
-  color: #293B5A; }
+  color: #16516B; }
   a:hover, a:focus {
-    color: #090d14; }
+    color: #051116; }
   a:visited {
-    color: #293B5A; }
+    color: #16516B; }
   a.active, a.current {
-    color: #090d14; }
+    color: #16516B; }
 
 hr {
   background-color: #f8f8f8;
@@ -11092,26 +11093,30 @@ SIDEBARS & ASIDES
 /**
  * General Widget Styles
  */
-h3.widgettitle, article.handbook .table-of-contents h3,
-h3.widget-title {
-  margin: -5px 0 0.5em;
-  font-size: 16px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  padding-bottom: .5em; }
-
 .widget, article.handbook .table-of-contents {
   margin: 0 0 12px;
-  border-radius: 0; }
-  .widget .wrap:after, article.handbook .table-of-contents .wrap:after {
-    content: "";
-    display: table;
-    clear: both; }
+  border-radius: 0;
+  color: #666666; }
+  .widget .wrap, article.handbook .table-of-contents .wrap {
+    padding: 1.5em; }
+    .widget .wrap:after, article.handbook .table-of-contents .wrap:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .widget h3.widgettitle, article.handbook .table-of-contents h3,
+  .widget h3.widget-title, article.handbook .table-of-contents h3.widget-title {
+    margin: .25em 0;
+    padding-bottom: .5em;
+    font-size: 16px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #16516B; }
   .widget a, article.handbook .table-of-contents a,
   .widget a:visited, article.handbook .table-of-contents a:visited {
     display: block;
-    padding: 0.5em 0; }
+    padding: 0.5em 0;
+    color: #666666; }
     .widget a:hover, article.handbook .table-of-contents a:hover, .widget a:focus, article.handbook .table-of-contents a:focus,
     .widget a:visited:hover, article.handbook .table-of-contents a:visited:hover,
     .widget a:visited:focus, article.handbook .table-of-contents a:visited:focus {
@@ -11176,221 +11181,6 @@ h3.widget-title {
     line-height: 1.5; }
 
 /**
- * Primary Sidebar Styles
- */
-#secondary .wrap {
-  background-color: #293B5A;
-  border-radius: 0;
-  padding: 1.5em; }
-
-#secondary .widget, #secondary article.handbook .table-of-contents, article.handbook #secondary .table-of-contents {
-  background-color: #293B5A;
-  border-radius: 0;
-  color: #fff; }
-  #secondary .widget h3.widgettitle, article.handbook .table-of-contents #secondary .widget h3, #secondary article.handbook .table-of-contents h3, article.handbook #secondary .table-of-contents h3,
-  #secondary .widget h3.widget-title,
-  #secondary article.handbook .table-of-contents h3.widget-title, article.handbook
-  #secondary .table-of-contents h3.widget-title {
-    color: rgba(255, 255, 255, 0.5); }
-  #secondary .widget .entry-meta, #secondary article.handbook .table-of-contents .entry-meta, article.handbook #secondary .table-of-contents .entry-meta {
-    color: rgba(255, 255, 255, 0.5); }
-  #secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a,
-  #secondary .widget a:visited,
-  #secondary article.handbook .table-of-contents a:visited, article.handbook
-  #secondary .table-of-contents a:visited {
-    color: #fff; }
-    #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus,
-    #secondary .widget a:visited:hover,
-    #secondary article.handbook .table-of-contents a:visited:hover, article.handbook
-    #secondary .table-of-contents a:visited:hover,
-    #secondary .widget a:visited:focus,
-    #secondary article.handbook .table-of-contents a:visited:focus, article.handbook
-    #secondary .table-of-contents a:visited:focus {
-      color: #fff; }
-  #secondary .widget .entry-content, #secondary article.handbook .table-of-contents .entry-content, article.handbook #secondary .table-of-contents .entry-content {
-    color: #fff; }
-  #secondary .widget ul, #secondary article.handbook .table-of-contents ul, article.handbook #secondary .table-of-contents ul {
-    border-bottom: 1px solid rgba(17, 17, 17, 0.5); }
-  #secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
-    color: #fff;
-    border-top: 1px solid rgba(17, 17, 17, 0.5);
-    /* deep nesting */ }
-    #secondary .widget li li, #secondary article.handbook .table-of-contents li li, article.handbook #secondary .table-of-contents li li {
-      color: #fff; }
-
-/**
- * Secondary Sidebar Styles
- */
-.header-widgets .wrap,
-.footer-widgets .wrap,
-.content-widgets .wrap,
-.home-widgets .wrap {
-  padding: 1.5em;
-  background-color: #f8f8f8;
-  border-radius: 0; }
-
-.header-widgets .widget, .header-widgets article.handbook .table-of-contents, article.handbook .header-widgets .table-of-contents,
-.footer-widgets .widget,
-.footer-widgets article.handbook .table-of-contents, article.handbook
-.footer-widgets .table-of-contents,
-.content-widgets .widget,
-.content-widgets article.handbook .table-of-contents, article.handbook
-.content-widgets .table-of-contents,
-.home-widgets .widget,
-.home-widgets article.handbook .table-of-contents, article.handbook
-.home-widgets .table-of-contents {
-  color: #666666; }
-  .header-widgets .widget h3.widgettitle, article.handbook .table-of-contents .header-widgets .widget h3, .header-widgets article.handbook .table-of-contents h3, article.handbook .header-widgets .table-of-contents h3,
-  .header-widgets .widget h3.widget-title,
-  .header-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
-  .header-widgets .table-of-contents h3.widget-title,
-  .footer-widgets .widget h3.widgettitle, article.handbook .table-of-contents
-  .footer-widgets .widget h3,
-  .footer-widgets article.handbook .table-of-contents h3, article.handbook
-  .footer-widgets .table-of-contents h3,
-  .footer-widgets .widget h3.widget-title,
-  .footer-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
-  .footer-widgets .table-of-contents h3.widget-title,
-  .content-widgets .widget h3.widgettitle, article.handbook .table-of-contents
-  .content-widgets .widget h3,
-  .content-widgets article.handbook .table-of-contents h3, article.handbook
-  .content-widgets .table-of-contents h3,
-  .content-widgets .widget h3.widget-title,
-  .content-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
-  .content-widgets .table-of-contents h3.widget-title,
-  .home-widgets .widget h3.widgettitle, article.handbook .table-of-contents
-  .home-widgets .widget h3,
-  .home-widgets article.handbook .table-of-contents h3, article.handbook
-  .home-widgets .table-of-contents h3,
-  .home-widgets .widget h3.widget-title,
-  .home-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
-  .home-widgets .table-of-contents h3.widget-title {
-    color: #293B5A; }
-  .header-widgets .widget .entry-meta, .header-widgets article.handbook .table-of-contents .entry-meta, article.handbook .header-widgets .table-of-contents .entry-meta,
-  .footer-widgets .widget .entry-meta,
-  .footer-widgets article.handbook .table-of-contents .entry-meta, article.handbook
-  .footer-widgets .table-of-contents .entry-meta,
-  .content-widgets .widget .entry-meta,
-  .content-widgets article.handbook .table-of-contents .entry-meta, article.handbook
-  .content-widgets .table-of-contents .entry-meta,
-  .home-widgets .widget .entry-meta,
-  .home-widgets article.handbook .table-of-contents .entry-meta, article.handbook
-  .home-widgets .table-of-contents .entry-meta {
-    color: #666666; }
-  .header-widgets .widget a, .header-widgets article.handbook .table-of-contents a, article.handbook .header-widgets .table-of-contents a,
-  .header-widgets .widget a:visited,
-  .header-widgets article.handbook .table-of-contents a:visited, article.handbook
-  .header-widgets .table-of-contents a:visited,
-  .footer-widgets .widget a,
-  .footer-widgets article.handbook .table-of-contents a, article.handbook
-  .footer-widgets .table-of-contents a,
-  .footer-widgets .widget a:visited,
-  .footer-widgets article.handbook .table-of-contents a:visited, article.handbook
-  .footer-widgets .table-of-contents a:visited,
-  .content-widgets .widget a,
-  .content-widgets article.handbook .table-of-contents a, article.handbook
-  .content-widgets .table-of-contents a,
-  .content-widgets .widget a:visited,
-  .content-widgets article.handbook .table-of-contents a:visited, article.handbook
-  .content-widgets .table-of-contents a:visited,
-  .home-widgets .widget a,
-  .home-widgets article.handbook .table-of-contents a, article.handbook
-  .home-widgets .table-of-contents a,
-  .home-widgets .widget a:visited,
-  .home-widgets article.handbook .table-of-contents a:visited, article.handbook
-  .home-widgets .table-of-contents a:visited {
-    color: #293B5A; }
-    .header-widgets .widget a:hover, .header-widgets article.handbook .table-of-contents a:hover, article.handbook .header-widgets .table-of-contents a:hover, .header-widgets .widget a:focus, .header-widgets article.handbook .table-of-contents a:focus, article.handbook .header-widgets .table-of-contents a:focus,
-    .header-widgets .widget a:visited:hover,
-    .header-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
-    .header-widgets .table-of-contents a:visited:hover,
-    .header-widgets .widget a:visited:focus,
-    .header-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
-    .header-widgets .table-of-contents a:visited:focus,
-    .footer-widgets .widget a:hover,
-    .footer-widgets article.handbook .table-of-contents a:hover, article.handbook
-    .footer-widgets .table-of-contents a:hover,
-    .footer-widgets .widget a:focus,
-    .footer-widgets article.handbook .table-of-contents a:focus, article.handbook
-    .footer-widgets .table-of-contents a:focus,
-    .footer-widgets .widget a:visited:hover,
-    .footer-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
-    .footer-widgets .table-of-contents a:visited:hover,
-    .footer-widgets .widget a:visited:focus,
-    .footer-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
-    .footer-widgets .table-of-contents a:visited:focus,
-    .content-widgets .widget a:hover,
-    .content-widgets article.handbook .table-of-contents a:hover, article.handbook
-    .content-widgets .table-of-contents a:hover,
-    .content-widgets .widget a:focus,
-    .content-widgets article.handbook .table-of-contents a:focus, article.handbook
-    .content-widgets .table-of-contents a:focus,
-    .content-widgets .widget a:visited:hover,
-    .content-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
-    .content-widgets .table-of-contents a:visited:hover,
-    .content-widgets .widget a:visited:focus,
-    .content-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
-    .content-widgets .table-of-contents a:visited:focus,
-    .home-widgets .widget a:hover,
-    .home-widgets article.handbook .table-of-contents a:hover, article.handbook
-    .home-widgets .table-of-contents a:hover,
-    .home-widgets .widget a:focus,
-    .home-widgets article.handbook .table-of-contents a:focus, article.handbook
-    .home-widgets .table-of-contents a:focus,
-    .home-widgets .widget a:visited:hover,
-    .home-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
-    .home-widgets .table-of-contents a:visited:hover,
-    .home-widgets .widget a:visited:focus,
-    .home-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
-    .home-widgets .table-of-contents a:visited:focus {
-      color: #090d14; }
-  .header-widgets .widget .entry-content, .header-widgets article.handbook .table-of-contents .entry-content, article.handbook .header-widgets .table-of-contents .entry-content,
-  .footer-widgets .widget .entry-content,
-  .footer-widgets article.handbook .table-of-contents .entry-content, article.handbook
-  .footer-widgets .table-of-contents .entry-content,
-  .content-widgets .widget .entry-content,
-  .content-widgets article.handbook .table-of-contents .entry-content, article.handbook
-  .content-widgets .table-of-contents .entry-content,
-  .home-widgets .widget .entry-content,
-  .home-widgets article.handbook .table-of-contents .entry-content, article.handbook
-  .home-widgets .table-of-contents .entry-content {
-    color: #666666; }
-  .header-widgets .widget ul, .header-widgets article.handbook .table-of-contents ul, article.handbook .header-widgets .table-of-contents ul,
-  .footer-widgets .widget ul,
-  .footer-widgets article.handbook .table-of-contents ul, article.handbook
-  .footer-widgets .table-of-contents ul,
-  .content-widgets .widget ul,
-  .content-widgets article.handbook .table-of-contents ul, article.handbook
-  .content-widgets .table-of-contents ul,
-  .home-widgets .widget ul,
-  .home-widgets article.handbook .table-of-contents ul, article.handbook
-  .home-widgets .table-of-contents ul {
-    border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
-  .header-widgets .widget li, .header-widgets article.handbook .table-of-contents li, article.handbook .header-widgets .table-of-contents li,
-  .footer-widgets .widget li,
-  .footer-widgets article.handbook .table-of-contents li, article.handbook
-  .footer-widgets .table-of-contents li,
-  .content-widgets .widget li,
-  .content-widgets article.handbook .table-of-contents li, article.handbook
-  .content-widgets .table-of-contents li,
-  .home-widgets .widget li,
-  .home-widgets article.handbook .table-of-contents li, article.handbook
-  .home-widgets .table-of-contents li {
-    border-top: 1px solid rgba(17, 17, 17, 0.2);
-    /* deep nesting */ }
-    .header-widgets .widget li li, .header-widgets article.handbook .table-of-contents li li, article.handbook .header-widgets .table-of-contents li li,
-    .footer-widgets .widget li li,
-    .footer-widgets article.handbook .table-of-contents li li, article.handbook
-    .footer-widgets .table-of-contents li li,
-    .content-widgets .widget li li,
-    .content-widgets article.handbook .table-of-contents li li, article.handbook
-    .content-widgets .table-of-contents li li,
-    .home-widgets .widget li li,
-    .home-widgets article.handbook .table-of-contents li li, article.handbook
-    .home-widgets .table-of-contents li li {
-      color: #666666; }
-
-/**
  * Header
  */
 .header-widgets .widget_nav_menu ul {
@@ -11426,7 +11216,7 @@ h3.widget-title {
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #293B5A;
+    color: #16516B;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -11499,6 +11289,19 @@ body {
 .site {
   margin: 0 auto;
   width: 100%; }
+
+.header-widget-container:after,
+.custom-header-container:after,
+.site-branding-container:after,
+.menu-toggle-button-container:after,
+.main-navigation-container:after,
+.site-content-container:after,
+.footer-menu-container:after,
+.site-info-container:after,
+.footer-widget-container:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .site-footer {
   clear: both;
@@ -11596,9 +11399,6 @@ body {
 #masthead .site-branding {
   clear: both;
   padding: 1em;
-  background-color: #293B5A;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
   text-align: center; }
   #masthead .site-branding:after {
     content: "";
@@ -11618,22 +11418,21 @@ body {
       display: table-cell; }
   @media screen and (min-width: 768px) {
     #masthead .site-branding {
-      display: table;
       width: 100%; }
-      #masthead .site-branding .site-logo-link,
-      #masthead .site-branding .site-description,
-      #masthead .site-branding .social-links {
-        display: table-cell;
-        text-align: left;
-        vertical-align: middle; }
-      #masthead .site-branding .site-description {
-        padding-right: .5em;
-        padding-left: .5em; } }
+      #masthead .site-branding .site-branding-container {
+        display: table; }
+        #masthead .site-branding .site-branding-container .site-logo-link,
+        #masthead .site-branding .site-branding-container .site-description,
+        #masthead .site-branding .site-branding-container .social-links {
+          display: table-cell;
+          text-align: left;
+          vertical-align: middle; }
+        #masthead .site-branding .site-branding-container .site-description {
+          padding-right: .5em;
+          padding-left: .5em; } }
 
-#masthead .site-title,
-#masthead .site-title a,
-#masthead .site-description {
-  color: rgba(255, 255, 255, 0.7); }
+#masthead .header-widgets ul.menu {
+  text-align: right; }
 
 #masthead .site-title {
   font-size: 16px;
@@ -11668,6 +11467,16 @@ body {
 
 #colophon {
   margin-top: 1em; }
+  #colophon .footer-widgets,
+  #colophon .bottom-navigation,
+  #colophon .copyright {
+    padding: 1em 0; }
+    #colophon .footer-widgets:after,
+    #colophon .bottom-navigation:after,
+    #colophon .copyright:after {
+      content: "";
+      display: table;
+      clear: both; }
 
 .widget, article.handbook .table-of-contents {
   /* Make sure select elements fit in widgets. */ }
@@ -11981,15 +11790,6 @@ body {
 .home .entry.empty {
   display: none; }
 
-body.archive .site-main .entry,
-body.blog .site-main .entry {
-  border-bottom: 1px solid #f8f8f8;
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em; }
-  body.archive .site-main .entry .entry-meta,
-  body.blog .site-main .entry .entry-meta {
-    padding-bottom: .25em; }
-
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -12009,17 +11809,6 @@ body.blog .site-main .entry {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-  color: #293B5A; }
-  a:visited {
-    color: #293B5A; }
-  a:hover, a:focus, a:active {
-    color: #090d14; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 .nav-links .nav-previous:before {
   margin-right: .5em;
   display: inline-block;
@@ -12133,9 +11922,6 @@ a {
       display: table;
       clear: both; }
     .social-links ul a {
-      border: 1px solid #fff;
-      border-radius: 50%;
-      color: #fff;
       display: block;
       height: 35px;
       width: 35px;
@@ -12145,8 +11931,7 @@ a {
       overflow: hidden;
       text-indent: 70px; }
       .social-links ul a:hover, .social-links ul a:focus {
-        padding: inherit;
-        background-color: #111; }
+        padding: inherit; }
       .social-links ul a:before {
         margin-right: .5em;
         display: inline-block;
@@ -12163,8 +11948,6 @@ a {
         text-align: center;
         text-indent: 0;
         float: left; }
-      .social-links ul a:hover:before, .social-links ul a:focus:before {
-        color: #fff; }
     .social-links ul li {
       display: table-cell;
       padding-right: .25em;
@@ -12378,46 +12161,27 @@ a {
 /**
  * Main Nav
  */
-.main-navigation.toggled {
-  background-color: #fff; }
-
-@media screen and (min-width: 768px) {
-  .main-navigation {
-    background-color: #fff; } }
-
 .main-navigation ul {
   list-style: none;
   margin: 0; }
   .main-navigation ul ul {
     display: none;
     margin-left: 0;
-    background-color: #fff;
     top: 3em;
     z-index: 99999; }
     .main-navigation ul ul li a {
       padding-left: .5em; }
-    .main-navigation ul ul li:hover a, .main-navigation ul ul li:focus a {
-      background-color: rgba(17, 17, 17, 0.2);
-      color: #444444; }
   .main-navigation ul .toggled-on {
     display: block; }
 
 .main-navigation li {
-  border-top: 1px solid rgba(17, 17, 17, 0.1);
   position: relative; }
 
 .main-navigation a {
-  color: #444444;
   display: block;
   line-height: 1.3125;
   outline-offset: -1px;
   padding: 0.84375em 0 0.84375em .5em; }
-  .main-navigation a:hover, .main-navigation a:focus {
-    background-color: rgba(17, 17, 17, 0.2);
-    color: #444444; }
-
-.main-navigation .nav-menu {
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1); }
 
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
@@ -12440,7 +12204,6 @@ a {
   background-color: transparent;
   border: 0;
   border-radius: 0;
-  color: #444444;
   content: "";
   height: 48px;
   padding: 0;
@@ -12450,7 +12213,6 @@ a {
   top: 0;
   width: 48px; }
   .dropdown-toggle:after {
-    border: 0 solid rgba(17, 17, 17, 0.1);
     border-left-width: 1px;
     font-size: 22px;
     font-size: 1.375rem;
@@ -12463,14 +12225,9 @@ a {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-  .dropdown-toggle:hover, .dropdown-toggle:focus {
-    background-color: transparent;
-    color: #444444; }
   .dropdown-toggle:focus {
     outline: thin dotted;
     outline-offset: -1px; }
-    .dropdown-toggle:focus:after {
-      border-color: transparent; }
   .dropdown-toggle.toggled-on:after {
     display: inline-block;
     font: normal normal normal 14px / 1 FontAwesome;
@@ -12507,18 +12264,10 @@ a {
       outline-offset: -8px;
       padding: 0.65625em 0.875em;
       white-space: nowrap; }
-    .main-navigation li:hover > a {
-      color: #444444; }
-    .main-navigation li:hover > ul {
-      left: auto;
-      right: 0; }
-    .main-navigation li.focus > a {
-      color: #444444; }
-    .main-navigation li.focus > ul {
+    .main-navigation li:hover > ul, .main-navigation li.focus > ul {
       left: auto;
       right: 0; }
     .main-navigation ul ul {
-      border-bottom: 1px solid rgba(17, 17, 17, 0.1);
       display: block;
       left: -999em;
       top: 2.25em;
@@ -12529,15 +12278,11 @@ a {
         top: -1px; }
         .main-navigation ul ul ul:before, .main-navigation ul ul ul:after {
           border: 0; }
-      .main-navigation ul ul li {
-        background-color: #fff;
-        border: 1px solid rgba(17, 17, 17, 0.1);
-        border-bottom-width: 0; }
-        .main-navigation ul ul li:hover > ul,
-        .main-navigation ul ul li:focus > ul,
-        .main-navigation ul ul li.focus > ul {
-          left: auto;
-          right: 100%; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li:focus > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: auto;
+        right: 100%; }
       .main-navigation ul ul a {
         white-space: normal;
         width: 12.6875em; }
@@ -13041,7 +12786,7 @@ body.buddypress h1 {
     #buddypress .item-list-tabs ul li,
     #bbpress-forums .item-list-tabs ul li {
       padding: .5em .125em;
-      background-color: #879fc8;
+      background-color: #008EB0;
       color: #fff;
       text-align: center; }
       #buddypress .item-list-tabs ul li.active, #buddypress .item-list-tabs ul li.selected, #buddypress .item-list-tabs ul li:hover, #buddypress .item-list-tabs ul li:focus,
@@ -13049,7 +12794,7 @@ body.buddypress h1 {
       #bbpress-forums .item-list-tabs ul li.selected,
       #bbpress-forums .item-list-tabs ul li:hover,
       #bbpress-forums .item-list-tabs ul li:focus {
-        background-color: #293B5A;
+        background-color: #16516B;
         color: #fff; }
       #buddypress .item-list-tabs ul li:not(:last-child),
       #bbpress-forums .item-list-tabs ul li:not(:last-child) {
@@ -13101,6 +12846,16 @@ body.buddypress h1 {
       #buddypress .item-list-tabs#subnav li#activity-filter-select,
       #bbpress-forums .item-list-tabs#subnav li#activity-filter-select {
         text-align: center; }
+  #buddypress .item-list-tabs#group-create-tabs ul li,
+  #bbpress-forums .item-list-tabs#group-create-tabs ul li {
+    background-color: #008EB0; }
+    #buddypress .item-list-tabs#group-create-tabs ul li.current,
+    #bbpress-forums .item-list-tabs#group-create-tabs ul li.current {
+      background-color: #16516B; }
+
+#buddypress .item-body,
+#bbpress-forums .item-body {
+  margin-top: .5em; }
 
 #buddypress .item-list .activity-comments ul,
 #bbpress-forums .item-list .activity-comments ul {
@@ -13135,7 +12890,7 @@ body.buddypress h1 {
     color: #666666; }
   #buddypress .item-list li li,
   #bbpress-forums .item-list li li {
-    background-color: rgba(41, 59, 90, 0.05);
+    background-color: rgba(22, 81, 107, 0.05);
     padding: .25em; }
 
 #buddypress .item-list > li:not(:first-child),
@@ -13292,7 +13047,7 @@ body.buddypress h1 {
       #bbpress-forums #members-dir-list .item-header-content table tr td.activity {
         display: block;
         border: none;
-        background-color: #879fc8;
+        background-color: #6cbde1;
         font-size: 16px;
         font-size: 1rem;
         color: #fff;
@@ -14646,7 +14401,7 @@ ul.event-categories {
   -webkit-transition: background 0.25s ease;
   -o-transition: background 0.25s ease;
   transition: background 0.25s ease;
-  background: #293B5A;
+  background: #16516B;
   color: #fff;
   max-height: 100px;
   overflow: hidden;
@@ -14753,7 +14508,7 @@ article.handbook a.anchor {
   width: 0; }
   article.handbook a.anchor:before {
     opacity: 1;
-    color: #293B5A; }
+    color: #16516B; }
   article.handbook a.anchor:hover, article.handbook a.anchor:focus {
     color: transparent;
     border-bottom: none;
@@ -14765,7 +14520,7 @@ article.handbook .toc-jump a {
   width: 0; }
   article.handbook .toc-jump a:before {
     opacity: 1;
-    color: #293B5A;
+    color: #16516B;
     font-size: 2.75em; }
   article.handbook .toc-jump a:hover, article.handbook .toc-jump a:focus {
     color: transparent;
@@ -15168,16 +14923,16 @@ article.handbook .so-panel.table-of-contents {
   font-weight: 300; }
 
 .so-widget-sow-post-carousel .sow-carousel-thumbnail {
-  background-color: #111; }
+  background-color: #008EB0; }
 
 .so-widget-sow-post-carousel a.sow-carousel-next,
 .so-widget-sow-post-carousel a.sow-carousel-previous {
-  background-color: #293B5A;
+  background-color: #16516B;
   border-radius: 0; }
   .so-widget-sow-post-carousel a.sow-carousel-next:hover, .so-widget-sow-post-carousel a.sow-carousel-next:focus,
   .so-widget-sow-post-carousel a.sow-carousel-previous:hover,
   .so-widget-sow-post-carousel a.sow-carousel-previous:focus {
-    background-color: #090d14; }
+    background-color: #051116; }
 
 .so-widget-sow-headline h1,
 .so-widget-sow-headline h2 {
@@ -15203,7 +14958,7 @@ article.handbook .so-panel.table-of-contents {
     color: #666666 !important; }
 
 #secondary .sow-cta-base {
-  background-color: #293B5A !important;
+  background-color: #16516B !important;
   border-color: rgba(17, 17, 17, 0.5) !important;
   color: #fff !important; }
   #secondary .sow-cta-base h4 {
@@ -15227,7 +14982,7 @@ article.handbook .so-panel.table-of-contents {
   background-position: top; }
 
 .so-widget-sow-slider .sow-slide-nav a {
-  color: #293B5A !important; }
+  color: #16516B !important; }
 
 .so-widget-sow-hero .sow-slider-image-wrapper {
   padding: 1em; }
@@ -15378,6 +15133,311 @@ NETWORK CONTENT
 /*--------------------------------------------------------------
 # Theme
 --------------------------------------------------------------*/
+/******************************************************************
+ THEME - Default colors
+******************************************************************/
+body {
+  background-color: transparent;
+  color: #444444; }
+  body a {
+    color: #16516B; }
+    body a:visited {
+      color: #16516B; }
+    body a:hover, body a:focus, body a:active {
+      color: #051116; }
+    body a:focus {
+      outline: thin dotted; }
+    body a:hover, body a:active {
+      outline: 0; }
+
+/**
+ * Header elements color
+ */
+#masthead .site-branding {
+  background-color: transparent;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  color: #444444; }
+  #masthead .site-branding .site-title,
+  #masthead .site-branding .site-title a,
+  #masthead .site-branding .site-description {
+    color: #444444; }
+
+#masthead .custom-header {
+  background-color: #f8f8f8;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  color: #fff; }
+
+#masthead .main-navigation.toggled {
+  background-color: #fff; }
+
+#masthead .main-navigation ul li {
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0; }
+
+#masthead .main-navigation ul ul {
+  background-color: #fff; }
+  #masthead .main-navigation ul ul li:hover a, #masthead .main-navigation ul ul li:focus a {
+    background-color: rgba(17, 17, 17, 0.2);
+    color: #16516B; }
+
+#masthead .main-navigation ul a {
+  border-radius: 0;
+  color: #444444; }
+  #masthead .main-navigation ul a:hover, #masthead .main-navigation ul a:focus {
+    background-color: rgba(17, 17, 17, 0.2);
+    color: #16516B; }
+
+#masthead .main-navigation ul .current-menu-item > a,
+#masthead .main-navigation ul .current-menu-ancestor > a {
+  color: #16516B; }
+
+#masthead .main-navigation ul .nav-menu {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1); }
+
+@media screen and (min-width: 768px) {
+  #masthead .main-navigation {
+    background-color: #fff;
+    border-radius: 0; }
+    #masthead .main-navigation li:hover > a,
+    #masthead .main-navigation li:focus > a {
+      color: #16516B; }
+    #masthead .main-navigation ul ul {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.1); }
+      #masthead .main-navigation ul ul li {
+        background-color: #fff;
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-bottom-width: 0;
+        border-radius: 0; } }
+
+#masthead .dropdown-toggle {
+  color: #444444; }
+  #masthead .dropdown-toggle:after {
+    border: 0 solid rgba(17, 17, 17, 0.1); }
+  #masthead .dropdown-toggle:hover, #masthead .dropdown-toggle:focus {
+    background-color: transparent;
+    color: #16516B; }
+  #masthead .dropdown-toggle:focus:after {
+    border-color: transparent; }
+
+#masthead .social-links a {
+  border: 1px solid #008EB0;
+  border-radius: 50%;
+  color: #16516B; }
+  #masthead .social-links a:hover, #masthead .social-links a:focus {
+    background-color: #16516B; }
+    #masthead .social-links a:hover:before, #masthead .social-links a:hover:before, #masthead .social-links a:focus:before, #masthead .social-links a:focus:before {
+      color: #fff; }
+
+/**
+ * Content elements color
+ */
+#content .content-area {
+  background-color: transparent;
+  color: #444444; }
+
+/**
+ * Footer elements color
+ */
+#colophon {
+  color: #fff; }
+  #colophon a {
+    color: #fff; }
+  #colophon a:hover,
+  #colophon a:focus {
+    color: #fff; }
+  #colophon .footer-widgets {
+    background-color: #888888; }
+  #colophon .bottom-navigation {
+    background-color: #008EB0;
+    color: #fff; }
+  #colophon .copyright {
+    background-color: #16516B;
+    color: #fff; }
+
+.entry {
+  border-bottom: 1px solid #f8f8f8;
+  margin-bottom: 1em;
+  padding-bottom: 1em; }
+  .entry .entry-footer {
+    border-top: 1px solid #f8f8f8;
+    margin-top: 1em;
+    padding-top: 1em; }
+
+/**
+ * Primary Sidebar Styles
+ */
+#secondary .wrap {
+  background-color: #16516B;
+  border-color: rgba(17, 17, 17, 0.5);
+  border-radius: 0; }
+
+#secondary .widget, #secondary article.handbook .table-of-contents, article.handbook #secondary .table-of-contents {
+  background-color: #16516B;
+  border-radius: 0;
+  color: #fff; }
+  #secondary .widget h3.widgettitle, article.handbook .table-of-contents #secondary .widget h3, #secondary article.handbook .table-of-contents h3, article.handbook #secondary .table-of-contents h3,
+  #secondary .widget h3.widget-title,
+  #secondary article.handbook .table-of-contents h3.widget-title, article.handbook
+  #secondary .table-of-contents h3.widget-title {
+    color: rgba(255, 255, 255, 0.5); }
+  #secondary .widget .entry-meta, #secondary article.handbook .table-of-contents .entry-meta, article.handbook #secondary .table-of-contents .entry-meta {
+    color: rgba(255, 255, 255, 0.5); }
+  #secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a,
+  #secondary .widget a:visited,
+  #secondary article.handbook .table-of-contents a:visited, article.handbook
+  #secondary .table-of-contents a:visited {
+    color: #fff; }
+    #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus,
+    #secondary .widget a:visited:hover,
+    #secondary article.handbook .table-of-contents a:visited:hover, article.handbook
+    #secondary .table-of-contents a:visited:hover,
+    #secondary .widget a:visited:focus,
+    #secondary article.handbook .table-of-contents a:visited:focus, article.handbook
+    #secondary .table-of-contents a:visited:focus {
+      color: #fff; }
+  #secondary .widget .entry-content, #secondary article.handbook .table-of-contents .entry-content, article.handbook #secondary .table-of-contents .entry-content {
+    color: #fff; }
+  #secondary .widget ul, #secondary article.handbook .table-of-contents ul, article.handbook #secondary .table-of-contents ul {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.5); }
+  #secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
+    color: #fff;
+    border-top: 1px solid rgba(17, 17, 17, 0.5);
+    /* deep nesting */ }
+    #secondary .widget li li, #secondary article.handbook .table-of-contents li li, article.handbook #secondary .table-of-contents li li {
+      color: #fff; }
+
+/**
+ * Secondary Widget Styles
+ */
+.content-widgets .wrap,
+.home-widgets .wrap {
+  background-color: #f8f8f8;
+  border-color: rgba(17, 17, 17, 0.2);
+  border-radius: 0; }
+
+.content-widgets .widget, .content-widgets article.handbook .table-of-contents, article.handbook .content-widgets .table-of-contents,
+.home-widgets .widget,
+.home-widgets article.handbook .table-of-contents, article.handbook
+.home-widgets .table-of-contents {
+  color: #666666; }
+  .content-widgets .widget h3.widgettitle, article.handbook .table-of-contents .content-widgets .widget h3, .content-widgets article.handbook .table-of-contents h3, article.handbook .content-widgets .table-of-contents h3,
+  .content-widgets .widget h3.widget-title,
+  .content-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
+  .content-widgets .table-of-contents h3.widget-title,
+  .home-widgets .widget h3.widgettitle, article.handbook .table-of-contents
+  .home-widgets .widget h3,
+  .home-widgets article.handbook .table-of-contents h3, article.handbook
+  .home-widgets .table-of-contents h3,
+  .home-widgets .widget h3.widget-title,
+  .home-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
+  .home-widgets .table-of-contents h3.widget-title {
+    color: #16516B; }
+  .content-widgets .widget .entry-meta, .content-widgets article.handbook .table-of-contents .entry-meta, article.handbook .content-widgets .table-of-contents .entry-meta,
+  .home-widgets .widget .entry-meta,
+  .home-widgets article.handbook .table-of-contents .entry-meta, article.handbook
+  .home-widgets .table-of-contents .entry-meta {
+    color: #666666; }
+  .content-widgets .widget a, .content-widgets article.handbook .table-of-contents a, article.handbook .content-widgets .table-of-contents a,
+  .content-widgets .widget a:visited,
+  .content-widgets article.handbook .table-of-contents a:visited, article.handbook
+  .content-widgets .table-of-contents a:visited,
+  .home-widgets .widget a,
+  .home-widgets article.handbook .table-of-contents a, article.handbook
+  .home-widgets .table-of-contents a,
+  .home-widgets .widget a:visited,
+  .home-widgets article.handbook .table-of-contents a:visited, article.handbook
+  .home-widgets .table-of-contents a:visited {
+    color: #16516B; }
+    .content-widgets .widget a:hover, .content-widgets article.handbook .table-of-contents a:hover, article.handbook .content-widgets .table-of-contents a:hover, .content-widgets .widget a:focus, .content-widgets article.handbook .table-of-contents a:focus, article.handbook .content-widgets .table-of-contents a:focus,
+    .content-widgets .widget a:visited:hover,
+    .content-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
+    .content-widgets .table-of-contents a:visited:hover,
+    .content-widgets .widget a:visited:focus,
+    .content-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
+    .content-widgets .table-of-contents a:visited:focus,
+    .home-widgets .widget a:hover,
+    .home-widgets article.handbook .table-of-contents a:hover, article.handbook
+    .home-widgets .table-of-contents a:hover,
+    .home-widgets .widget a:focus,
+    .home-widgets article.handbook .table-of-contents a:focus, article.handbook
+    .home-widgets .table-of-contents a:focus,
+    .home-widgets .widget a:visited:hover,
+    .home-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
+    .home-widgets .table-of-contents a:visited:hover,
+    .home-widgets .widget a:visited:focus,
+    .home-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
+    .home-widgets .table-of-contents a:visited:focus {
+      color: #051116; }
+  .content-widgets .widget .entry-content, .content-widgets article.handbook .table-of-contents .entry-content, article.handbook .content-widgets .table-of-contents .entry-content,
+  .home-widgets .widget .entry-content,
+  .home-widgets article.handbook .table-of-contents .entry-content, article.handbook
+  .home-widgets .table-of-contents .entry-content {
+    color: #666666; }
+  .content-widgets .widget ul, .content-widgets article.handbook .table-of-contents ul, article.handbook .content-widgets .table-of-contents ul,
+  .home-widgets .widget ul,
+  .home-widgets article.handbook .table-of-contents ul, article.handbook
+  .home-widgets .table-of-contents ul {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
+  .content-widgets .widget li, .content-widgets article.handbook .table-of-contents li, article.handbook .content-widgets .table-of-contents li,
+  .home-widgets .widget li,
+  .home-widgets article.handbook .table-of-contents li, article.handbook
+  .home-widgets .table-of-contents li {
+    border-top: 1px solid rgba(17, 17, 17, 0.2);
+    /* deep nesting */ }
+    .content-widgets .widget li li, .content-widgets article.handbook .table-of-contents li li, article.handbook .content-widgets .table-of-contents li li,
+    .home-widgets .widget li li,
+    .home-widgets article.handbook .table-of-contents li li, article.handbook
+    .home-widgets .table-of-contents li li {
+      color: #666666; }
+
+/**
+ * Footer Widgets
+ */
+.footer-widgets .wrap {
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0; }
+
+span:empty {
+  display: none; }
+
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
 /*--------------------------------------------------------------
 # Hacks
 --------------------------------------------------------------*/

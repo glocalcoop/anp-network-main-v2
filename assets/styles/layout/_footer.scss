@@ -1,5 +1,14 @@
 #colophon {
     margin-top: 1em;
+
+    .footer-widgets,
+    .bottom-navigation,
+    .copyright {
+        padding: 1em 0;
+        @include clearfix;
+    }
+
     .footer-widgets {}
+    .bottom-navigation {}
     .copyright {}
 }

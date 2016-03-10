@@ -1,21 +1,324 @@
 /******************************************************************
- THEME - Default
+ THEME - Default colors
 ******************************************************************/
 
+body {
+    background-color: $color__background-body;
+    color: $color__text-main;
 
-.post {
-    border-top: 1px solid $color__background-hr;
-    border-bottom: 1px solid $color__background-hr;
+    a {
+        color: $color__link;
+
+        &:visited {
+            color: $color__link-visited;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color__link-hover;
+        }
+        &:focus {
+            outline: thin dotted;
+        }
+        &:hover,
+        &:active {
+            outline: 0;
+        }
+    }
 }
 
-.meta {
-    * {
-        @include font-size($h6);
-        color: $color__text-light;
+/**
+ * Header elements color
+ */
+#masthead {
+    .widgets-header {}
+    .site-branding {
+        background-color: $color__background-body;
+        border-top-right-radius: $element__border-radius-base;
+        border-top-left-radius: $element__border-radius-base;
+        color: $color__text-main;
+            .site-title,
+            .site-title a,
+            .site-description {
+                color: $color__text-main;
+            }
     }
-    span:empty {
-        display: none;
+
+    .custom-header {
+        background-color: $color__lightest-grey;
+        border-top-right-radius: $element__border-radius-base;
+        border-top-left-radius: $element__border-radius-base;
+        color: $color__text-inverted;
+        img {}
     }
+
+    .main-navigation {
+        &.toggled {
+            background-color: $color__background-nav;
+        }
+
+        ul {
+            li {
+                border-top: 1px solid $color__border-nav;
+                border-radius: $element__border-radius-base;
+            }
+
+            ul {
+                background-color: $color__background-nav;
+                li {
+                    &:hover,
+                    &:focus {
+                        a {
+                            background-color: $color__background-nav-hover;
+                            color: $color__text-nav-hover;
+                        }
+                    }
+                }
+            }
+
+            a {
+                border-radius: $element__border-radius-base;
+                color: $color__text-nav;
+                &:hover,
+                &:focus {
+                    background-color: $color__background-nav-hover;
+                    color: $color__text-nav-hover;
+                }
+            }
+
+            .current-menu-item > a,
+            .current-menu-ancestor > a {
+                color: $color__text-nav-active;
+            }
+
+            .nav-menu {
+                border-bottom: 1px solid $color__border-nav;
+            }
+        }
+
+        @include breakpoint(md) {
+            background-color: $color__background-nav;
+            border-radius: $element__border-radius-base;
+
+            li:hover > a,
+            li:focus > a {
+                color: $color__text-nav-hover;
+            }
+
+            ul ul {
+                border-bottom: 1px solid $color__border-nav;
+
+                li {
+                    background-color: $color__background-nav;
+                    border: 1px solid $color__border-nav;
+                    border-bottom-width: 0;
+                    border-radius: $element__border-radius-base;
+                }
+            }
+        }
+
+    }
+    
+    .dropdown-toggle {
+        color: $color__text-nav;
+        &:after {
+            border: 0 solid $color__border-nav;
+        }
+        &:hover,
+        &:focus {
+            background-color: $color__background-body;
+            color: $color__text-nav-hover;
+        }
+        &:focus:after {
+            border-color: $color__background-body;
+        }
+    }
+
+    .social-links {
+        a {
+            border: 1px solid $color__secondary;
+            border-radius: 50%;
+            color: $color__primary;
+
+            &:hover,
+            &:focus {
+                background-color: $color__primary;
+
+                &:before,
+                &:before {
+                    color: $color__text-inverted;
+                }
+
+            }
+
+        }
+    }
+}
+
+/**
+ * Content elements color
+ */
+#content {
+    .content-area {
+        background-color: $color__background-content;
+        color: $color__text-main;
+    }
+}
+
+/**
+ * Footer elements color
+ */
+#colophon {
+    color: $color__text-inverted;
+    a {
+        color: $color__text-inverted;
+    }
+
+    a:hover,
+    a:focus {
+        color: $color__text-inverted;
+    }
+
+    .footer-widgets {
+        background-color: $color__highlight;
+    }
+    .bottom-navigation {
+        background-color: $color__secondary;
+        color: $color__text-inverted;
+    }
+    .copyright {
+        background-color: $color__primary;
+        color: $color__text-inverted;
+    }
+}
+
+.entry {
+    @include border(bottom, 1em);
+
+    .entry-footer {
+        @include border(top, 1em);
+    }
+}
+
+/**
+ * Primary Sidebar Styles
+ */
+#secondary {
+
+    .wrap {
+        background-color: $color__background-widget;
+        border-color: $color__border-widget;
+        border-radius: $element__widget-radius;
+    }
+
+    .widget {
+        background-color: $color__background-widget;
+        border-radius: $element__widget-radius;
+        color: $color__text-widget;
+
+        h3.widgettitle,
+        h3.widget-title {
+            color: $color__text-widget-header;
+        }
+
+        .entry-meta {
+            color: $color__text-widget-header;
+        }
+
+        a, 
+        a:visited {
+            color: $color__text-widget;
+            &:hover,
+            &:focus {
+                color: $color__text-widget;
+            }
+        }
+
+        .entry-content {
+            color: $color__text-widget;
+        }
+
+        ul {
+            border-bottom: 1px solid $color__border-widget;
+        }
+        li {
+            color: $color__text-widget;
+            border-top: 1px solid $color__border-widget;
+            
+            /* deep nesting */
+            li {
+                color: $color__text-widget;
+            }
+        }
+
+    } 
+}
+
+
+/**
+ * Secondary Widget Styles
+ */
+.content-widgets,
+.home-widgets {
+
+    .wrap {
+        background-color: $color__background-widget-alt;
+        border-color: $color__border-widget-alt;
+        border-radius: $element__widget-radius;
+    }
+
+    .widget {
+        color: $color__text-widget-alt;
+
+        h3.widgettitle,
+        h3.widget-title {
+            color: $color__text-widget-header-alt;
+        }
+
+        .entry-meta {
+            color: $color__text-light;
+        }
+
+        a, 
+        a:visited {
+            color: $color__link;
+            &:hover,
+            &:focus {
+                color: $color__link-hover
+            }
+        }
+
+        .entry-content {
+            color: $color__text-widget-alt;
+        }
+
+        ul {
+            border-bottom: 1px solid $color__border-widget-alt;
+        }
+        li {
+            border-top: 1px solid $color__border-widget-alt;
+            
+            /* deep nesting */
+            li {
+                color: $color__text-widget-alt;
+            }
+        }
+    }
+}
+
+/**
+ * Footer Widgets
+ */
+.footer-widgets {
+    .wrap {
+        background-color: $color__white;
+        border-color: $color__border-widget-plain;
+        border-radius: $element__widget-radius;
+    }
+}
+
+span:empty {
+    display: none;
 }
 
 .page-title {}
@@ -58,57 +361,5 @@
     .paged-1 {}                     /* individual paged (i.e. body.paged-3) */
 
 
-// Widget colors
-#secondary.sidebar .widget {
 
-    padding: 1.5em;
-
-    &:first-child {
-        background-color: $color__primary;
-    }
-    &:nth-child(2) {
-        background-color: $color__secondary;
-    }
-    &:nth-child(3) {
-        background-color: $color__tertiary;
-    }
-    &:nth-child(4) {
-        background-color: $color__tertiary2;
-    }
-}
-
-
-
-.content-widgets,
-.footer-widgets {
-    .widget {
-        color: $color__text-light;
-        
-        a,
-        a:hover,
-        a:focus {
-            color: $color__text-light;
-        }
-        
-        .widget-title {
-            color: $color__primary;
-        }
-
-        .wrap {
-           background-color: $color__background-panel;
-        }
-    }
-}
-
-.header-widget-wrap {
-    @include fullwidth;
-}
-
-.footer-widgets {
-    @include fullwidth;
-}
-
-.copyright {
-    @include fullwidth($color__primary, .7);
-}
 

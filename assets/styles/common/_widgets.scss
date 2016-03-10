@@ -21,28 +21,31 @@ SIDEBARS & ASIDES
 /**
  * General Widget Styles
  */
-h3.widgettitle,
-h3.widget-title {
-    margin: -5px 0 0.5em;
-    @include font-size($h6);
-    text-transform: uppercase;
-    font-weight: 300;
-    padding-bottom: .5em;
-}
-
-
 .widget {
     margin: 0 0 $space-half;
     border-radius: $element__widget-radius;
+    color: $color__text-widget-plain;
 
     .wrap {
         @include clearfix;
+        padding: 1.5em;
+    }
+
+    h3.widgettitle,
+    h3.widget-title {
+        margin: .25em 0;
+        padding-bottom: .5em;
+        @include font-size($h6);
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $color__text-widget-header-plain;
     }
 
     a, 
     a:visited {
         display: block;
         padding: 0.5em 0;
+        color: $color__text-widget-plain;
         &:hover,
         &:focus {
             text-decoration: none;
@@ -65,7 +68,7 @@ h3.widget-title {
         line-height: 1.3;
         display: block;
         padding: .5em .25em;
-        color: $color__text-widget-alt;
+        color: $color__text-widget-plain;
         
         /* deep nesting */
         ul {
@@ -120,113 +123,6 @@ h3.widget-title {
     }
 }
 
-/**
- * Primary Sidebar Styles
- */
-#secondary {
-
-    .wrap {
-        background-color: $color__background-widget;
-        border-radius: $element__widget-radius;
-        padding: 1.5em;
-    }
-
-    .widget {
-        background-color: $color__background-widget;
-        border-radius: $element__widget-radius;
-        color: $color__text-widget;
-
-        h3.widgettitle,
-        h3.widget-title {
-            color: $color__text-widget-header;
-        }
-
-        .entry-meta {
-            color: $color__text-widget-header;
-        }
-
-        a, 
-        a:visited {
-            color: $color__text-widget;
-            &:hover,
-            &:focus {
-                color: $color__text-widget;
-            }
-        }
-
-        .entry-content {
-            color: $color__text-widget;
-        }
-
-        ul {
-            border-bottom: 1px solid $color__border-widget;
-        }
-        li {
-            color: $color__text-widget;
-            border-top: 1px solid $color__border-widget;
-            
-            /* deep nesting */
-            li {
-                color: $color__text-widget;
-            }
-        }
-
-    } 
-}
-
-/**
- * Secondary Sidebar Styles
- */
-.header-widgets,
-.footer-widgets,
-.content-widgets,
-.home-widgets {
-
-    .wrap {
-        padding: 1.5em;
-        background-color: $color__background-widget-alt;
-        border-radius: $element__widget-radius;
-    }
-
-    .widget {
-        color: $color__text-widget-alt;
-
-        h3.widgettitle,
-        h3.widget-title {
-            color: $color__text-widget-alt-header;
-        }
-
-        .entry-meta {
-            color: $color__text-light;
-        }
-
-        a, 
-        a:visited {
-            color: $color__link;
-            &:hover,
-            &:focus {
-                color: $color__link-hover
-            }
-        }
-
-        .entry-content {
-            color: $color__text-widget-alt;
-        }
-
-        ul {
-            border-bottom: 1px solid $color__border-widget-alt;
-        }
-        li {
-            border-top: 1px solid $color__border-widget-alt;
-            
-            /* deep nesting */
-            li {
-                color: $color__text-widget-alt;
-            }
-        }
-    }
-
-}
 
 /**
  * Header

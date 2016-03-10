@@ -11,11 +11,6 @@
         clear: both;
         @include clearfix;
         padding: 1em;
-
-
-        background-color: $color__background-header;
-        border-top-right-radius: $element__border-radius-base;
-        border-top-left-radius: $element__border-radius-base;
         text-align: center;
 
         .site-logo-link,
@@ -45,31 +40,39 @@
 
 
         @include breakpoint(md) {
-            display: table;
+
             width: 100%;
 
-            .site-logo-link,
-            .site-description,
-            .social-links {
-                display: table-cell;
-                text-align: left;
-                vertical-align: middle;
-            }
+            .site-branding-container {
 
-            .site-description {
-                padding-right: .5em;
-                padding-left: .5em;
+                display: table;
+
+                .site-logo-link,
+                .site-description,
+                .social-links {
+                    display: table-cell;
+                    text-align: left;
+                    vertical-align: middle;
+                }
+
+                .site-description {
+                    padding-right: .5em;
+                    padding-left: .5em;
+                }
+
             }
         }
 
 
     }
 
+   .header-widgets ul.menu {
+        text-align: right;
+   }
+
     .site-title,
     .site-title a,
-    .site-description {
-        color: $color__text-header;
-    }
+    .site-description {}
 
     .site-title {
         @include font-size($h6);

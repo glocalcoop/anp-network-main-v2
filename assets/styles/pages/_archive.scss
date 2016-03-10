@@ -2,13 +2,6 @@ body.archive,
 body.blog {
 
     .site-main {
-        .entry {
-            @include border(bottom, 1.5em);
-            &:not(:first-child) {}
-
-            .entry-meta {
-                padding-bottom: .25em;
-            }
-        } 
+        .entry {} 
     }
 }

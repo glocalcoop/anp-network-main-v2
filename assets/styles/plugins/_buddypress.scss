@@ -38,7 +38,6 @@ body.buddypress {
     }
 
     .item-list-tabs {
-
         width: 100%;
 
         ul {
@@ -46,7 +45,7 @@ body.buddypress {
 
             li {
                 padding: .5em .125em;
-                background-color: lighten($color__background-nav-alt, 40%);
+                background-color: $color__secondary;
                 color: $color__text-nav-alt;
                 text-align: center;
 
@@ -100,7 +99,6 @@ body.buddypress {
             }
         }
 
-
         &#subnav {
             border-bottom: 1px solid $color__border-nav-alt;
 
@@ -129,7 +127,19 @@ body.buddypress {
             }
         }
 
+        &#group-create-tabs {
+            ul li {
+                background-color: $color__secondary;
 
+                &.current {
+                    background-color: $color__background-nav-inverted;
+                }
+            }
+        }
+    }
+
+    .item-body {
+        margin-top: .5em;
     }
 
     // Lists

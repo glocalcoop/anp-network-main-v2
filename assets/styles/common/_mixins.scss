@@ -97,16 +97,17 @@
 /**
  * Navigation
  */
-@mixin tab-nav($color: $white, $color__background-body: $color__default, $active-color: $white, $active-bg-color: $color__primary, $border-color: rgba(0,0,0,.1)) {
+@mixin tab-nav($color: $color__text-nav, $color__background-body: $color__background-nav, $active-color: $color__text-nav-active, $active-bg-color: $color__background-nav-active, $border-color: $color__border-nav, $border-radius: $element__border-radius-base) {
   ul {
     @include inline-list();
     width: 100%;
+    border-radius: $border-radius;
 
     li {
       a {
         display: block;
         padding: .25em .5em;
-        background-color: $color__background-body;
+        border-radius: $border-radius;
         color: $color;
         &:hover,
         &:focus {
