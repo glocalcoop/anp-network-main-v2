@@ -1,4 +1,4 @@
-=== Activist NetworkTheme v2 ===
+=== Activist Network Theme v2 ===
 
 Contributors: automattic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
@@ -34,5 +34,5 @@ Activist NetworkTheme v2 includes support for Jetpack's Infinite Scroll and Site
 
 == Credits ==
 
-* Based on Activist NetworkTheme v2 http://components.underscores.me/, (C) 2015-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Based on Activist Network Theme v2 http://components.underscores.me/, (C) 2015-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
