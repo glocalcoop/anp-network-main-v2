@@ -14115,6 +14115,7 @@ body.buddypress h1 {
     padding: 2px;
     margin-right: .25em;
     margin-left: .25em;
+    background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.2); }
   .widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
     text-weight: 300; }
