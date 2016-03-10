@@ -8315,6 +8315,7 @@ button.close {
 .menu-toggle-button-container,
 .main-navigation-container,
 .site-content-container,
+.footer-menu,
 .footer-menu-container,
 .site-info-container,
 .footer-widget-container {
@@ -11326,6 +11327,7 @@ body {
 .menu-toggle-button-container:after,
 .main-navigation-container:after,
 .site-content-container:after,
+.footer-menu:after,
 .footer-menu-container:after,
 .site-info-container:after,
 .footer-widget-container:after {
