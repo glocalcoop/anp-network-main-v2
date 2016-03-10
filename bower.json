@@ -8,7 +8,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
-    "font-awesome": "^4.5.0"
+    "font-awesome": "^4.5.0",
+    "flag-icon-css": "^1.4.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -34,8 +35,5 @@
       ],
       "font-awesome": []
     }
-  },
-  "devDependencies": {
-    "typographic": "^2.9.3"
   }
 }

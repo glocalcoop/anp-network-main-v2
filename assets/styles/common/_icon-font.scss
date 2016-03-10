@@ -716,3 +716,20 @@ $fa-css-prefix:       icon;
 %#{$fa-css-prefix}-bluetooth-b { content: $fa-var-bluetooth-b; }
 %#{$fa-css-prefix}-percent { content: $fa-var-percent; }
 
+/**
+ * Font Icon Flags
+ */
+$flag-icon-css-path: 'dist/vendor/flag-icon-css/flags';
+// $flag-icon-rect-path: '/4x3' !default;
+// $flag-icon-square-path: '/1x1' !default;
+
+@import "../../vendor/flag-icon-css/sass/variables";
+@import "../../vendor/flag-icon-css/sass/flag-icon-base";
+
+a[hreflang="en-US"] {
+    @include flag-icon(us);
+}
+a[hreflang="es-ES"] {
+    @include flag-icon(es);
+}
+
