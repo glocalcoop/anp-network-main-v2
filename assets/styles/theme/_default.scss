@@ -6,15 +6,19 @@
  * Customizer support
  Site Background Color
  Branding Background .site-branding
- Branding Color #masthead .site-branding .site-title a, #masthead .site-branding .site-description, #masthead .social-links
+ Header Text Color (header_textcolor) #masthead .site-branding .site-title a, #masthead .site-branding .site-description, #masthead .social-links
  Navigation Background Color
  #masthead .main-navigation &.toggled, #masthead .main-navigation ul ul
- Navigation Color
- #secondary .wrap, #colophon .copyright, a, &:visited, &:hover, &:focus, &:active,  #buddypress .item-list-tabs ul li:selected
+ Navigation Text Color
+ #masthead .main-navigation a,  #masthead .main-navigation a &:hover, &:focus, #masthead .main-navigation ul ul li:hover &:focus a, #masthead .main-navigation ul .current-menu-item > a, #masthead .main-navigation ul .current-menu-ancestor > a
  Primary Color
+ #secondary .wrap, #colophon .copyright, a, &:visited, &:hover, &:focus, &:active,  #buddypress .item-list-tabs ul li:selected
  Secondary Background Color
- #buddypress .item-list-tabs ul li, #colophon .bottom-navigation
+ #buddypress .item-list-tabs ul li, #colophon .bottom-navigation,
  Secondary Color
+ Content Background Color
+ #content .content-area
+ Content Text Color
  */
 
 body {
