@@ -6,7 +6,7 @@ $color__black: #111;
 $color__white: #fff;
 $color__light-black: lighten($color__black, 13.5%);
 $color__darkest-grey: $color__black;
-$color__dark-grey: lighten($color__black, 20%);
+$color__dark-grey: lighten($color__black, 20%); //#444444
 $color__mid-grey: lighten($color__black, 33.5%);
 $color__light-grey: lighten($color__black, 46.7%);
 $color__lightest-grey: lighten($color__black, 90.5%);
