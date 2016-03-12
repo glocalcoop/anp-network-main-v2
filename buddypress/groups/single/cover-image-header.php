@@ -14,7 +14,7 @@
 do_action( 'bp_before_group_header' ); ?>
 
 <div id="cover-image-container">
-	<a id="header-cover-image" href="<?php bp_group_permalink(); ?>"></a>
+	<a id="header-cover-image" href="<?php bp_group_permalink(); ?>" role="banner"><?php bp_group_name(); ?></a>
 
 	<div id="item-header-cover-image">
 		<?php if ( ! bp_disable_group_avatar_uploads() ) : ?>

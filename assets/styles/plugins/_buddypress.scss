@@ -477,6 +477,7 @@ body.buddypress {
 
     #bp-create-doc-button {
         @include button-text(plus-circle);
+        color: $color__link;
     }
 
     #members-list,
