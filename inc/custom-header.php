@@ -22,7 +22,7 @@
 function anp_network_main_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'anp_network_main_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
+		'default-text-color'     => '444444',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
@@ -53,8 +53,8 @@ function anp_network_main_header_style() {
 		// Has the text been hidden?
 		if ( 'blank' == $header_text_color ) :
 	?>
-		.site-title,
-		.site-description {
+		#masthead .site-branding .site-title,
+		#masthead .site-branding .site-description {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
@@ -62,10 +62,24 @@ function anp_network_main_header_style() {
 		// If the user has set a custom color for the text use that.
 		else :
 	?>
-		.site-title a,
-		.site-description {
+		#masthead .site-branding .site-title a,
+		#masthead .site-branding .site-description,
+		#masthead .social-links a,
+		#masthead .social-links a:hover:before,
+		#masthead .social-links a:focus:before {
 			color: #<?php echo esc_attr( $header_text_color ); ?>;
 		}
+
+		#masthead .social-links a {
+			border: 1px solid #<?php echo esc_attr( $header_text_color ) ?>;
+		}
+
+		#masthead .social-links a:hover,
+		#masthead .social-links a:focus {
+			background-color: transparent;
+			background-color: rgba(0,0,0,.1);
+		}
+
 	<?php endif; ?>
 	</style>
 	<?php

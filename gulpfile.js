@@ -29,7 +29,7 @@ var dest = './dist/';
 var paths = {
     /* Source paths */
     styles: src + 'styles/**/*.scss',
-    scripts: src + 'scripts/',
+    scripts: src + 'scripts/**/*',
     images: src + 'images/**/*',
     sprites: src + 'images/sprites/',
     fonts: src + 'fonts/*',
@@ -93,14 +93,9 @@ gulp.task( 'buddypress', function() {
 });
 
 gulp.task('scripts', function(){
-  var basePath = paths.scripts;
-  var files = ['app.js', 'navigation.js', 'skip-link-focus.js'];
-  var scripts = files.map(f => basePath + f);
-  return gulp.src(scripts)
-      .pipe(concat('main.js'))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest(paths.scriptsOutput))
-      .pipe( notify( { message: 'Script task complete' } ) );
+    return gulp.src(paths.scripts)
+        .pipe(gulp.dest(paths.scriptsOutput))
+        .pipe( notify( { message: 'Script task complete' } ) );
 });
 
 gulp.task('images', function(){
@@ -122,7 +117,6 @@ gulp.task('sprites', function () {
   })
   .pipe(gulpif('*.png', gulp.dest(paths.spritesOutput), gulp.dest('./assets/styles/components')))
 });
-
 
 gulp.task('fonts', function(){
   return gulp.src(paths.fonts)
