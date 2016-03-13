@@ -235,15 +235,14 @@ body.buddypress {
     // Sections
     .forums {
         @include no-bullets;
-        @extend .panel;
-        @extend .panel-default;
 
-        .bbp-header {
-            @extend .panel-heading;
-        }
+        .bbp-header {}
 
         .bbp-body {
-            @extend .panel-body;
+
+            .entry {
+                @extend %clearfix;
+            }
 
             .bbp-admin-links {
                 @extend .pull-right;
@@ -256,11 +255,12 @@ body.buddypress {
             .bbp-reply-author {
                 @include make-sm-column(2);
 
-                @media screen and (min-width: $sm-screen) {
+                @include breakpoint(sm) {
                     padding-left: 0;
                 }
             }
-            .entry {
+            .bbp-reply-content {
+                margin-left: 0;
                 @include make-sm-column(10);
                 margin-top: .25em;
             }
@@ -475,6 +475,22 @@ body.buddypress {
             }
         }
     }
+
+    #favorite-toggle {
+        a {
+            @include icon-font(heart-o, before);
+            color: $color__text-light;
+
+        }
+        .is-favorite {
+            a {
+                @include icon-font(heart, before);
+                color: $color__secondary-light;
+            }
+        }
+    }
+
+    
 
     #bp-create-doc-button {
         @include button-text(plus-circle);
