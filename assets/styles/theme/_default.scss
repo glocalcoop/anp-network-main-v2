@@ -82,10 +82,15 @@ body {
             li {
                 
                 border-radius: $element__border-radius-base;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color__border-nav;
+                }
             }
 
             ul {
                 background-color: $color__background-nav;
+                border: none;
                 li {
                     &:hover,
                     &:focus {
@@ -112,9 +117,7 @@ body {
                 color: $color__text-nav-active;
             }
 
-            .nav-menu {
-                border-bottom: 1px solid $color__border-nav;
-            }
+            .nav-menu {}
         }
 
         @include breakpoint(md) {
@@ -126,35 +129,26 @@ body {
                 color: $color__text-nav-hover;
             }
 
-            ul ul {
-                border-bottom: 1px solid $color__border-nav;
-
-                li {
-                    background-color: $color__background-nav;
-                    border: 1px solid $color__border-nav;
+            ul {
+                li:not(:last-child) {
                     border-bottom-width: 0;
-                    border-radius: $element__border-radius-base;
+                }
+
+                ul {
+                    border-bottom: 1px solid $color__border-nav;
+                    box-shadow: 2px 2px 2px $color__border-nav;
+
+                    li {
+                        background-color: $color__background-nav;
+                        border-bottom-width: 0;
+                        border-radius: $element__border-radius-base;
+                    }
                 }
             }
         }
 
     }
     
-    .dropdown-toggle {
-        color: $color__text-nav;
-        &:after {
-            border: 0 solid $color__border-nav;
-        }
-        &:hover,
-        &:focus {
-            background-color: $color__background-body;
-            color: $color__text-nav-hover;
-        }
-        &:focus:after {
-            border-color: $color__background-body;
-        }
-    }
-
     .social-links {
         a {
             border: 1px solid $color__secondary;

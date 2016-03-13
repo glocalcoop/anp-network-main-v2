@@ -265,7 +265,7 @@ ul.event-categories {
 .home-modules {
     .events-list ul { 
         li {
-            @include transition(background 0.25s ease);
+            // @include transition(background 0.25s ease);
             background: $color__primary;
             color: $color__white;
             max-height: 100px; 
