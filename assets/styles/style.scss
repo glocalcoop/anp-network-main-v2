@@ -50,12 +50,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "variables/variables";
 @import "variables/variable-overrides";
-@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "libs/bootstrap";
+@import "libs/font-awesome";
 
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-//@import "variables/variables";
 @import "common/mixins";
 @import "common/extends";
 
@@ -68,11 +68,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 --------------------------------------------------------------*/
 @import "common/typography";
-
-/*--------------------------------------------------------------
-# Icons
---------------------------------------------------------------*/
-@import "common/icon-font";
 
 /*--------------------------------------------------------------
 # Elements
@@ -149,6 +144,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "plugins/meetings";
 @import "plugins/siteorigin";
 @import "plugins/anp-network-content";
+//@import "plugins/twentysixteen";
 
 /*--------------------------------------------------------------
 # Theme
