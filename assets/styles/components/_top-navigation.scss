@@ -1,0 +1,79 @@
+/**
+ * Main Navigation Styles
+ * Colors are set in theme file
+ */
+.main-navigation {
+
+    ul {
+       @include no-bullets;
+
+        li {
+            
+            a {
+                display: block;
+                padding: .5em .75em;
+            }
+
+            ul {
+            	display: none;
+            	overflow: hidden;
+            }
+
+            &:hover,
+            &:focus {
+            	ul {
+            		display: block;
+            	}
+            }
+        }
+
+        ul {
+            padding-left: .75em;
+        }
+
+        .menu-item-has-children > a {
+            @include icon-font(angle-down , after);
+        }
+    }
+
+}
+
+/**
+ * Main Navigation States
+ * 
+ */
+.main-navigation {
+
+    ul[data-state=closed] {
+        display: none;
+    }
+    ul[data-state=open] {
+        display: inherit;
+    }
+
+    @include breakpoint(md) {
+        ul[data-state=closed] {
+            display: inherit;
+        }
+
+        ul {
+            li {
+                position: relative;
+                display: inline-block;
+            }
+
+            ul {
+                position: absolute;
+                display: block;
+                padding-left: 0;
+                z-index: 5;
+                min-width: 200px;
+                
+                li {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

@@ -4,8 +4,18 @@
  * Handles toggling the navigation menu for small screens and enables tab
  * support for dropdown menus.
  */
+
+
 ( function() {
 	var container, button, menu, links, subMenus;
+
+	/**
+	 * Function sets data-state of element
+	 * @link {https://toddmotto.com/stop-toggling-classes-with-js-use-behaviour-driven-dom-manipulation-with-data-states/}
+	 */
+	var toggleState = function ( elem, one, two ) {
+		elem.setAttribute( 'data-state', elem.getAttribute( 'data-state' ) === one ? two : one );
+	};
 
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
@@ -26,11 +36,15 @@
 	}
 
 	menu.setAttribute( 'aria-expanded', 'false' );
+	menu.setAttribute( 'data-state', 'closed' );
 	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
 		menu.className += ' nav-menu';
 	}
 
 	button.onclick = function() {
+
+		toggleState(menu, 'closed', 'open');
+
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
