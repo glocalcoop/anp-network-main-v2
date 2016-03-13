@@ -176,9 +176,14 @@ add_action( 'widgets_init', 'anp_network_main_widgets_init' );
 function anp_network_main_scripts() {
   wp_enqueue_style( 'anp-network-main-style', get_stylesheet_uri() );
 
-  wp_enqueue_script( 'anp-network-main', get_template_directory_uri() . '/dist/scripts/main.js', array('jquery'), '', true );
+  wp_enqueue_script( 'anp-network-main', get_template_directory_uri() . '/dist/scripts/app.js', array('jquery'), '', true );
 
-  wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/dist/vendor/bootstrap-sass/assets/javascripts/bootstrap.js', array('jquery'), '', true );
+  wp_enqueue_script( 'navigation', get_template_directory_uri() . '/dist/scripts/navigation.js', array('jquery'), '', true );
+
+  wp_enqueue_script( 'skip-link-focus', get_template_directory_uri() . '/dist/scripts/skip-link-focus-fix.js', array('jquery'), '', true );
+
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/vendor/bootstrap-sass/assets/javascripts/bootstrap.js', array('jquery'), '', true );
+
 
   // Dequeue BuddyPress styles
   wp_dequeue_style( 'bp-groupblog-screen' );
