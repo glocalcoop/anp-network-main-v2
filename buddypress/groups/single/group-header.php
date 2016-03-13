@@ -19,10 +19,15 @@ do_action( 'bp_before_group_header' );
 
 	<?php if ( bp_group_is_visible() ) : ?>
 
-		<h3><?php _e( 'Group Admins', 'anp-network-main' ); ?></h3>
+		<div class="group-members">
 
-		<?php bp_group_list_admins();
+			<h3><?php _e( 'Group Admins', 'anp-network-main' ); ?></h3>
 
+			<?php bp_group_list_admins(); ?>
+
+		</div>
+
+		<?php
 		/**
 		 * Fires after the display of the group's administrators.
 		 *
@@ -39,10 +44,15 @@ do_action( 'bp_before_group_header' );
 			 */
 			do_action( 'bp_before_group_menu_mods' ); ?>
 
-			<h3><?php _e( 'Group Mods' , 'anp-network-main' ); ?></h3>
+			<div class="group-members">
 
-			<?php bp_group_list_mods();
+				<h3><?php _e( 'Group Mods' , 'anp-network-main' ); ?></h3>
 
+				<?php bp_group_list_mods(); ?>
+				
+			</div>
+
+			<?php
 			/**
 			 * Fires after the display of the group's moderators, if there are any.
 			 *
