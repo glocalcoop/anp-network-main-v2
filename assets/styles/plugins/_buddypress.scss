@@ -240,7 +240,6 @@ body.buddypress {
 
         .bbp-header {
             @extend .panel-heading;
-
         }
 
         .bbp-body {
@@ -287,7 +286,6 @@ body.buddypress {
             #item-header-avatar,
             #item-header-content,
             #item-actions {
-                text-align: left;
                 @include font-size($h6);
             }
         }
@@ -295,23 +293,26 @@ body.buddypress {
         #item-header-avatar {}
         #item-header-content {}
         #item-actions {
-            @extend .panel;
-            @extend .panel-primary;
+
+            .group-members {
+                @include make-md-column(6);
+            }
 
             h3 {
                 margin-top: 0;
-                @extend .panel-heading;
                 @include font-size($small);
 
                 @include breakpoint(md) {  
                     @include font-size($h6);
                 }
+
             }
             ul {
                 @include inline-list;
                 li {
                     padding: .25em;
                 }
+
             }
         }
 
