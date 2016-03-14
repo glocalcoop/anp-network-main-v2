@@ -31,9 +31,9 @@ function anp_network_main_hybrid_setup() {
 
     //http://themehybrid.com/docs/theme-layouts
     add_theme_support( 'theme-layouts', array( 
-      'default'       => '2c-l',
+      'default'       => '2c-r',
+      'left-sidebar'  => '2c-l',
       'full'          => '1c',
-      'right-sidebar' => '2c-r',
       'grid'          => 'grid'
     ) );
 
