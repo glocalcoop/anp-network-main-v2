@@ -445,56 +445,58 @@ body.buddypress {
     .activity-meta,
     .acomment-options {
         a {
-            @include button-text();
-
-            color: $color__text-light;
+            @include button-icon($color: $color__text-light, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey);
 
             &[href$="document-title/"] {
-                @include button-text($icon: eye);
+                @include button-icon($color: $color__light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey);
             }
             &[href$="edit/"] {
-                @include button-text($icon: pencil);
+                @include button-icon($color: $color__light-grey, $icon: pencil, $font-size: $small, $border-color: $color__light-grey);
             }
             &[href$="history"] {
-                @include button-text($icon: history);
+                @include button-icon($color: $color__light-grey, $icon: history, $font-size: $small, $border-color: $color__light-grey);
             }
             &.leave-group {
-                @include button-text($icon: sign-out);
+                @include button-icon($color: $color__light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey);
             }
             &.acomment-reply {
-                @include button-text($icon: reply);
+                @include button-icon($color: $color__light-grey, $icon: reply, $font-size: $small, $border-color: $color__light-grey);
             }
             &.fav {
-                @include button-text($icon: heart);
+                @include button-icon($color: $color__light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey);
             }
-            &.delete-activity {
-                @include button-text($icon: trash);
+            &.unfav {
+                @include button-icon($color: $color__alert, $icon: heart, $font-size: $small, $border-color: $color__light-grey);
+            }
+            &.delete-activity,
+            &.acomment-delete {
+                @include button-icon($color: $color__light-grey, $icon: trash, $font-size: $small, $border-color: $color__light-grey);
             }
             &.unlink-from-group {
-                @include button-text($icon: chain-broken);
+                @include button-icon($color: $color__light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__light-grey);
+            }
+
+            // Comment Badge
+            span {
+                @include font-size($smaller);
             }
         }
     }
 
     #favorite-toggle {
         a {
-            @include icon-font(heart-o, before);
-            color: $color__text-light;
+            @include icon-font(heart-o, before, $color__text-light);
 
         }
         .is-favorite {
             a {
-                @include icon-font(heart, before);
-                color: $color__secondary-light;
+                @include icon-font(heart, before, $color__alert);
             }
         }
     }
 
-    
-
     #bp-create-doc-button {
-        @include button-text(plus-circle);
-        color: $color__link;
+        @include button-icon($icon: plus, $font-size: $small, $border-color: transparent);
     }
 
     #members-list,
@@ -503,16 +505,16 @@ body.buddypress {
             display: block;
             &> a {
                 &.member-ban {
-                    @include button-text($icon: ban);
+                    @include button-icon($color: $color__light-grey, $icon: ban, $font-size: $small, $border-color: $color__light-grey);
                 }
                 &.member-promote-to-mod {
-                    @include button-text($icon: level-up);
+                    @include button-icon($color: $color__light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey);
                 }
                 &.member-promote-to-admin {
-                     @include button-text($icon: level-up);
+                     @include button-icon($color: $color__light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey);
                 }
                 &.confirm {
-                    @include button-text($icon: times);
+                    @include button-icon($color: $color__light-grey, $icon: times, $font-size: $small, $border-color: $color__light-grey);
                 }
             }
         }
@@ -542,6 +544,10 @@ body.buddypress {
                 @extend .label-info;
             }
         }
+    }
+
+    #item-buttons {
+        margin-top: .25em;
     }
 
     // Alerts

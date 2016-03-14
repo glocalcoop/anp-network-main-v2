@@ -163,25 +163,6 @@
 /**
  * Modules
  */
-@mixin card($background: transparent, $border: rgba(0,0,0,.1), $color: $color__text-main) {
-  border: 1px solid $border;
-  padding: 0.4em 1.2em;
-  background-color: $background;
-
-  h3 {
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    text-transform: uppercase;
-    color: $color;
-    @include font-size($smaller);
-    margin-bottom: .35em;
-
-    @include breakpoint(md) {
-      @include font-size($small);
-      margin-bottom: .5em;
-    }
-
-  }
-}
 
 /**
  * Buttons
@@ -190,13 +171,8 @@
 
   @include transition(all 0.25s ease);
   @include font-size($font-size);
-  text-transform: uppercase; 
-  line-height: 1.2;
-  font-weight: 700;
-  padding: .75em 3em;
   text-align: center;
-  border: 0;
-  background: $color__background-body;
+  background-color: $bg-color;
   color: $color !important;
   display: inline-block;
   border-radius: $border-radius-base;
@@ -206,17 +182,18 @@
   }
   &:hover,
   &:focus {
-    background: lighten($color__background-body, 10);
+    background: lighten($bg-color, 10%);
     color: $color !important;
   }
 }
 
-@mixin icon-font($icon: cog, $position: none) {
+@mixin icon-font($icon: cog, $position: none, $color: $color__light-grey) {
   @if $position == "after" {
     &:after {
       margin-left: .5em;
       @include fa-icon;
       @extend %icon-#{$icon};
+      color: $color;
     }
   }
   @elseif $position == "before" {
@@ -224,30 +201,27 @@
       margin-right: .5em;
       @include fa-icon;
       @extend %icon-#{$icon};
+      color: $color;
     }
   }
   @else {
     @include fa-icon;
     @extend %icon-#{$icon};
+    color: $color;
   }
 }
 
-@mixin button-text($color: $color__text-main, $icon: cog, $icon-color: $color__default) {
+@mixin button-text($color: $color__text-main, $font-size: $h6) {
+  display: inline-block;
+  padding: 0 .5em 0 0;
+  background-color: transparent;
   font-weight: normal;
   color: $color;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 0;
-  background-color: transparent;
-  text-transform: none;
-  letter-spacing: normal;
-  line-height: inherit;
-  padding: 0 .5em 0 0;
   border: none;
-  @include font-size($small);
+  @include font-size($font-size - 1);
 
   @include breakpoint(md) {
-    @include font-size($h6);
+    @include font-size($font-size);
   }
 
   &:link,
@@ -256,22 +230,26 @@
   }
   &:hover,
   &:focus  {
-    color: rgba(0,0,0,.2);
-  }
-
-  &:before {
-    @include icon-font($icon);
-    margin-right: 4px;
-    color: $icon-color;
+    color: darken($color__primary, 20%);
   }
 }
 
 
-@mixin button-icon($icon: cog, $color: $white, $background-color: $color__default) {
-  @include button($color: $color, $color__background-body: $background-color);
+@mixin button-icon($icon: cog, $font-size: $h6, $color: $color__text-main, $background-color: $color__background-body, $border-color: $color__text-main) {
+  @include button($font-size: $font-size, $color: $color, $bg-color: $background-color);
+
+  border: 1px solid $border-color;
+  padding: .25em;
+
+  &:hover,
+  &:focus {
+      background-color: $color__background-body;
+  }
+
+  @include icon-font($icon, before, $color);
   
   &:before {
-    @include icon-font($icon);
+    margin-right: 4px;
   }
 }
 
