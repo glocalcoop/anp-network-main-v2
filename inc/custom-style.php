@@ -247,6 +247,31 @@ if ( class_exists( 'Kirki' ) ) {
 	) );
 
 	Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_content_textcolor',
+		'label'       => esc_attr__( 'Content Color', 'activist-network-main' ),
+		'description' => esc_attr__( 'Content Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of text in main content area.', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_default'],
+		'priority'    => 55,
+		'output'      => array(
+			array(
+				'element'  => '.content-area, .content-area p, .content-area li',
+				'property' => 'color',
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.content-area, .content-area p, .content-area li',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'color',
 		'settings'    => 'color_nav_background',
 		'label'       => esc_attr__( 'Navigation Background', 'activist-network-main' ),
