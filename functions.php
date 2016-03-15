@@ -13,7 +13,12 @@ require get_template_directory() . '/inc/setup.php';
 /**
  * Include Hybrid Core framework
  */
-include_once( trailingslashit( get_template_directory() ) . 'inc/hybrid.php' );
+include_once( get_template_directory() . '/inc/hybrid.php' );
+
+/**
+ * Include Kirki Customizer framework
+ */
+include_once( dirname( __FILE__ ) . '/inc/kirki/kirki.php' );
 
 /**
  * Implement the Custom Header feature.
@@ -21,9 +26,19 @@ include_once( trailingslashit( get_template_directory() ) . 'inc/hybrid.php' );
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Implement the Custom Colors.
+ */
+require get_template_directory() . '/inc/custom-style.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Custom shortcodes.
+ */
+require get_template_directory() . '/inc/shortcodes.php';
 
 /**
  * Custom functions that act independently of the theme templates.
@@ -33,7 +48,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+//require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
