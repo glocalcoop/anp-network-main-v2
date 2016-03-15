@@ -8412,7 +8412,7 @@ body.buddypress h1 {
   background-color: transparent;
   color: #aaaaaa !important;
   display: inline-block;
-  border-radius: 0;
+  border-radius: 0.125em;
   border: 1px solid #aaaaaa;
   padding: .25em; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
@@ -8490,7 +8490,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
@@ -8568,7 +8568,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
@@ -8646,7 +8646,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
@@ -8724,7 +8724,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
@@ -8802,7 +8802,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
@@ -8880,7 +8880,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
@@ -8958,7 +8958,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #eb6361 !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
@@ -9043,7 +9043,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
@@ -9163,7 +9163,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
@@ -9312,7 +9312,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
@@ -9362,7 +9362,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
@@ -9412,7 +9412,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
@@ -9462,7 +9462,7 @@ body.buddypress h1 {
     background-color: transparent;
     color: #aaaaaa !important;
     display: inline-block;
-    border-radius: 0;
+    border-radius: 0.125em;
     border: 1px solid #aaaaaa;
     padding: .25em; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
@@ -10706,10 +10706,10 @@ body {
   border: 1px solid #008Eb0;
   border-radius: 50%;
   color: #16516b; }
+  #masthead .social-links a:before {
+    color: #16516b; }
   #masthead .social-links a:hover, #masthead .social-links a:focus {
     background-color: rbga(0, 0, 0, 0.2); }
-    #masthead .social-links a:hover:before, #masthead .social-links a:hover:before, #masthead .social-links a:focus:before, #masthead .social-links a:focus:before {
-      color: #fff; }
 
 #masthead .menu-toggle {
   background-color: #008Eb0; }

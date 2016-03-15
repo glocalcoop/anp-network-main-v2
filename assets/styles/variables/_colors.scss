@@ -52,7 +52,8 @@ $color__text-header: $color__primary;
 $color__link: $color__primary;
 $color__link-visited: $color__link;
 $color__link-hover: darken($color__link, 20%);
-$color__link-active: $color__primary;
+$color__link-active: $color__link;
+
 $color__text-main: $color__dark-grey;
 $color__text-light: $color__light-grey;
 $color__text-inverted: $color__white;

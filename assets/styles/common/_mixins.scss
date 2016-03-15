@@ -167,7 +167,7 @@
 /**
  * Buttons
  */
-@mixin button($font-size: $small, $color: $white, $bg-color: $color__default) {
+@mixin button($font-size: $small, $color: $white, $bg-color: $color__default, $border-radius: $element__border-radius-base) {
 
   @include transition(all 0.25s ease);
   @include font-size($font-size);
@@ -175,7 +175,7 @@
   background-color: $bg-color;
   color: $color !important;
   display: inline-block;
-  border-radius: $border-radius-base;
+  border-radius: $border-radius;
 
   &:hover,
   &:focus {
@@ -232,8 +232,8 @@
 }
 
 
-@mixin button-icon($icon: cog, $font-size: $h6, $color: $color__text-main, $background-color: $color__background-body, $border-color: $color__text-main) {
-  @include button($font-size: $font-size, $color: $color, $bg-color: $background-color);
+@mixin button-icon($icon: cog, $font-size: $h6, $color: $color__text-main, $background-color: $color__background-body, $border-color: $color__text-main, $border-radius: $element__border-radius-base) {
+  @include button($font-size: $font-size, $color: $color, $bg-color: $background-color, $border-radius: $border-radius);
 
   border: 1px solid $border-color;
   padding: .25em;

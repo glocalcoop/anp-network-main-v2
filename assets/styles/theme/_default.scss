@@ -177,16 +177,13 @@ body {
             border: 1px solid $color__secondary;
             border-radius: 50%;
             color: $color__primary;
+            &:before {
+                color: $color__primary;
+            }
 
             &:hover,
             &:focus {
-                background-color: rbga(0,0,0,.2);
-
-                &:before,
-                &:before {
-                    color: $color__text-inverted;
-                }
-
+                background-color: rbga(0, 0, 0, .2);
             }
 
         }
@@ -325,7 +322,7 @@ body {
 
         a {
             color: $color__link;
-            
+
             &:hover,
             &:focus {
                 color: $color__link-hover
