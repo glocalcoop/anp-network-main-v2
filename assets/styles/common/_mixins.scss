@@ -176,10 +176,7 @@
   color: $color !important;
   display: inline-block;
   border-radius: $border-radius-base;
-  &:link,
-  &:visited {
-    color: $color !important;
-  }
+
   &:hover,
   &:focus {
     background: lighten($bg-color, 10%);

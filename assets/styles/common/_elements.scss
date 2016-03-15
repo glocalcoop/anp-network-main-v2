@@ -29,10 +29,6 @@ a {
 		color: $color__link-hover;
 	}
 
-	&:visited {
-		color: $color__link-visited;
-	}
-
 	&.active,
 	&.current {
 		color: $color__link-active;

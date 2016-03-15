@@ -55,9 +55,6 @@ body {
     a {
         color: $color__link;
 
-        &:visited {
-            color: $color__link-visited;
-        }
         &:hover,
         &:focus,
         &:active {
@@ -272,9 +269,9 @@ body {
             color: $color__text-widget-header;
         }
 
-        a, 
-        a:visited {
+        a {
             color: $color__text-widget;
+
             &:hover,
             &:focus {
                 color: $color__text-widget;
@@ -326,9 +323,9 @@ body {
             color: $color__text-light;
         }
 
-        a, 
-        a:visited {
+        a {
             color: $color__link;
+            
             &:hover,
             &:focus {
                 color: $color__link-hover

@@ -83,6 +83,12 @@ if ( class_exists( 'Kirki' ) ) {
 				'property' => 'background-color',
 			),
 			array(
+				'element'  => '.content-area a,
+					.content-area a:hover,
+					.content-area a:focus',
+				'property' => 'color',
+			),
+			array(
 				'element'  => 'h1, h2, h3, h4, h5',
 				'property' => 'color',
 			),
@@ -118,6 +124,13 @@ if ( class_exists( 'Kirki' ) ) {
 					#bbpress-forums .item-list-tabs ul li:focus',
 				'function' => 'css',
 				'property' => 'background-color',
+			),
+			array(
+				'element'  => '.content-area a,
+					.content-area a:hover,
+					.content-area a:focus',
+				'function' => 'css',
+				'property' => 'color',
 			),
 			array(
 				'element'  => 'h1, h2, h3, h4, h5',

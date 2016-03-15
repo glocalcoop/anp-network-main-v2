@@ -2546,7 +2546,8 @@ input[type="button"].btn-block {
 
 .label, .tags a,
 .category a,
-.cat-links a, #buddypress #item-header-cover-image #item-meta .activity,
+.cat-links a,
+a.tag, #buddypress #item-header-cover-image #item-meta .activity,
 #bbpress-forums #item-header-cover-image #item-meta .activity, #buddypress .highlight,
 #bbpress-forums .highlight, #buddypress .bbp-topic-tags a,
 #bbpress-forums .bbp-topic-tags a, #buddypress .tags-cell a,
@@ -2569,7 +2570,8 @@ input[type="button"].btn-block {
   border-radius: .25em; }
   .label:empty, .tags a:empty,
   .category a:empty,
-  .cat-links a:empty, #buddypress #item-header-cover-image #item-meta .activity:empty,
+  .cat-links a:empty,
+  a.tag:empty, #buddypress #item-header-cover-image #item-meta .activity:empty,
   #bbpress-forums #item-header-cover-image #item-meta .activity:empty, #buddypress .highlight:empty,
   #bbpress-forums .highlight:empty, #buddypress .bbp-topic-tags a:empty,
   #bbpress-forums .bbp-topic-tags a:empty, #buddypress .tags-cell a:empty,
@@ -2657,7 +2659,23 @@ input[type="button"].btn-block {
   .cat-links a,
   .cat-links .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   .cat-links a,
-  .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta button .activity,
+  .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn
+  a.tag, .home .entry.intro-content button
+  a.tag, button
+  a.tag,
+  .button:not(.wpb_button_a)
+  a.tag,
+  input[type="button"]
+  a.tag,
+  input[type="reset"]
+  a.tag,
+  input[type="submit"]
+  a.tag, input[type="reset"]
+  a.tag, .wpb_button
+  a.tag, .ow-button-base a
+  a.tag, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  a.tag, #secondary .sow-cta-base .ow-button-base a
+  a.tag, .btn #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta button .activity,
   .button:not(.wpb_button_a) #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
   .button:not(.wpb_button_a) .activity,
   input[type="button"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
@@ -3031,7 +3049,8 @@ input[type="button"].btn-block {
 
 a.label:hover, .tags a:hover,
 .category a:hover,
-.cat-links a:hover, #buddypress #item-header-cover-image #item-meta a.activity:hover,
+.cat-links a:hover,
+a.tag:hover, #buddypress #item-header-cover-image #item-meta a.activity:hover,
 #bbpress-forums #item-header-cover-image #item-meta a.activity:hover, #buddypress a.highlight:hover,
 #bbpress-forums a.highlight:hover, #buddypress .bbp-topic-tags a:hover,
 #bbpress-forums .bbp-topic-tags a:hover, #buddypress .tags-cell a:hover,
@@ -3041,7 +3060,8 @@ a.label:hover, .tags a:hover,
 #bbpress-forums #members-list .item-header-content a.activity:hover,
 #bbpress-forums #members-dir-list .item-header-content a.activity:hover, a.label:focus, .tags a:focus,
 .category a:focus,
-.cat-links a:focus, #buddypress #item-header-cover-image #item-meta a.activity:focus,
+.cat-links a:focus,
+a.tag:focus, #buddypress #item-header-cover-image #item-meta a.activity:focus,
 #bbpress-forums #item-header-cover-image #item-meta a.activity:focus, #buddypress a.highlight:focus,
 #bbpress-forums a.highlight:focus, #buddypress .bbp-topic-tags a:focus,
 #bbpress-forums .bbp-topic-tags a:focus, #buddypress .tags-cell a:focus,
@@ -3056,7 +3076,8 @@ a.label:hover, .tags a:hover,
 
 .label-default, .tags a,
 .category a,
-.cat-links a, #buddypress #item-header-cover-image #item-meta .activity,
+.cat-links a,
+a.tag, #buddypress #item-header-cover-image #item-meta .activity,
 #bbpress-forums #item-header-cover-image #item-meta .activity, #buddypress .bbp-topic-tags a,
 #bbpress-forums .bbp-topic-tags a, #buddypress .tags-cell a,
 #bbpress-forums .tags-cell a, #buddypress .bbp-reply-permalink,
@@ -3069,7 +3090,8 @@ a.label:hover, .tags a:hover,
   background-color: #aaaaaa; }
   .label-default[href]:hover, .tags a[href]:hover,
   .category a[href]:hover,
-  .cat-links a[href]:hover, #buddypress #item-header-cover-image #item-meta [href].activity:hover,
+  .cat-links a[href]:hover,
+  a[href].tag:hover, #buddypress #item-header-cover-image #item-meta [href].activity:hover,
   #bbpress-forums #item-header-cover-image #item-meta [href].activity:hover, #buddypress .bbp-topic-tags a[href]:hover,
   #bbpress-forums .bbp-topic-tags a[href]:hover, #buddypress .tags-cell a[href]:hover,
   #bbpress-forums .tags-cell a[href]:hover, #buddypress [href].bbp-reply-permalink:hover,
@@ -3080,7 +3102,8 @@ a.label:hover, .tags a:hover,
   #bbpress-forums #members-list .item-header-content [href].activity:hover,
   #bbpress-forums #members-dir-list .item-header-content [href].activity:hover, .label-default[href]:focus, .tags a[href]:focus,
   .category a[href]:focus,
-  .cat-links a[href]:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus,
+  .cat-links a[href]:focus,
+  a[href].tag:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus,
   #bbpress-forums #item-header-cover-image #item-meta [href].activity:focus, #buddypress .bbp-topic-tags a[href]:focus,
   #bbpress-forums .bbp-topic-tags a[href]:focus, #buddypress .tags-cell a[href]:focus,
   #bbpress-forums .tags-cell a[href]:focus, #buddypress [href].bbp-reply-permalink:focus,
@@ -5924,20 +5947,6 @@ a[hreflang="es-ES"] .flag-icon-es,
   color: #fff !important;
   display: inline-block;
   border-radius: 0; }
-  .archive-meeting .content-filter li:link,
-  .archive-agenda .content-filter li:link,
-  .archive-summary .content-filter li:link,
-  .archive-proposal .content-filter li:link,
-  .taxonomy-meeting_type .content-filter li:link,
-  .taxonomy-meeting_tag .content-filter li:link,
-  .taxonomy-proposal_status .content-filter li:link, .archive-meeting .content-filter li:visited,
-  .archive-agenda .content-filter li:visited,
-  .archive-summary .content-filter li:visited,
-  .archive-proposal .content-filter li:visited,
-  .taxonomy-meeting_type .content-filter li:visited,
-  .taxonomy-meeting_tag .content-filter li:visited,
-  .taxonomy-proposal_status .content-filter li:visited {
-    color: #fff !important; }
   .archive-meeting .content-filter li:hover,
   .archive-agenda .content-filter li:hover,
   .archive-summary .content-filter li:hover,
@@ -6330,8 +6339,6 @@ a {
   color: #16516b; }
   a:hover, a:focus {
     color: #051116; }
-  a:visited {
-    color: #16516b; }
   a.active, a.current {
     color: #16516b; }
 
@@ -6458,11 +6465,11 @@ SIDEBARS & ASIDES
   font-size: 1rem; }
 
 .sidebar .menu a,
-.sidebar .menu a:visited,
 .sidebar .menu a:hover,
+.sidebar .menu a:focus,
 .widget-area .menu a,
-.widget-area .menu a:visited,
-.widget-area .menu a:hover {
+.widget-area .menu a:hover,
+.widget-area .menu a:focus {
   color: #fff; }
 
 /**
@@ -6487,14 +6494,11 @@ SIDEBARS & ASIDES
     text-transform: uppercase;
     font-weight: 300;
     color: #16516b; }
-  .widget a, article.handbook .table-of-contents a,
-  .widget a:visited, article.handbook .table-of-contents a:visited {
+  .widget a, article.handbook .table-of-contents a {
     display: block;
     padding: 0.5em 0;
     color: #aaaaaa; }
-    .widget a:hover, article.handbook .table-of-contents a:hover, .widget a:focus, article.handbook .table-of-contents a:focus,
-    .widget a:visited:hover, article.handbook .table-of-contents a:visited:hover,
-    .widget a:visited:focus, article.handbook .table-of-contents a:visited:focus {
+    .widget a:hover, article.handbook .table-of-contents a:hover, .widget a:focus, article.handbook .table-of-contents a:focus {
       text-decoration: none; }
   .widget ul, article.handbook .table-of-contents ul {
     margin: 0;
@@ -8002,15 +8006,16 @@ textarea {
 --------------------------------------------------------------*/
 .tags a,
 .category a,
-.cat-links a {
-  color: #fff; }
-  .tags a:hover, .tags a:focus, .tags a:visited,
+.cat-links a,
+a.tag {
+  color: #fff !important; }
+  .tags a:hover, .tags a:focus,
   .category a:hover,
   .category a:focus,
-  .category a:visited,
   .cat-links a:hover,
   .cat-links a:focus,
-  .cat-links a:visited {
+  a.tag:hover,
+  a.tag:focus {
     color: #fff; }
 
 a[href*="=edit"] {
@@ -8131,9 +8136,6 @@ body.buddypress h1 {
       #buddypress .item-list-tabs#subnav li a,
       #bbpress-forums .item-list-tabs#subnav li a {
         color: #444444; }
-        #buddypress .item-list-tabs#subnav li a:visited,
-        #bbpress-forums .item-list-tabs#subnav li a:visited {
-          color: #444444; }
       #buddypress .item-list-tabs#subnav li#activity-filter-select,
       #bbpress-forums .item-list-tabs#subnav li#activity-filter-select {
         text-align: center; }
@@ -8413,22 +8415,6 @@ body.buddypress h1 {
   border-radius: 0;
   border: 1px solid #aaaaaa;
   padding: .25em; }
-  #buddypress .row-actions a:link, #buddypress .row-actions a:visited,
-  #buddypress .group-button a:link,
-  #buddypress .group-button a:visited,
-  #buddypress .activity-meta a:link,
-  #buddypress .activity-meta a:visited,
-  #buddypress .acomment-options a:link,
-  #buddypress .acomment-options a:visited,
-  #bbpress-forums .row-actions a:link,
-  #bbpress-forums .row-actions a:visited,
-  #bbpress-forums .group-button a:link,
-  #bbpress-forums .group-button a:visited,
-  #bbpress-forums .activity-meta a:link,
-  #bbpress-forums .activity-meta a:visited,
-  #bbpress-forums .acomment-options a:link,
-  #bbpress-forums .acomment-options a:visited {
-    color: #aaaaaa !important; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .group-button a:hover,
   #buddypress .group-button a:focus,
@@ -8507,22 +8493,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a[href$="document-title/"]:link, #buddypress .row-actions a[href$="document-title/"]:visited,
-    #buddypress .group-button a[href$="document-title/"]:link,
-    #buddypress .group-button a[href$="document-title/"]:visited,
-    #buddypress .activity-meta a[href$="document-title/"]:link,
-    #buddypress .activity-meta a[href$="document-title/"]:visited,
-    #buddypress .acomment-options a[href$="document-title/"]:link,
-    #buddypress .acomment-options a[href$="document-title/"]:visited,
-    #bbpress-forums .row-actions a[href$="document-title/"]:link,
-    #bbpress-forums .row-actions a[href$="document-title/"]:visited,
-    #bbpress-forums .group-button a[href$="document-title/"]:link,
-    #bbpress-forums .group-button a[href$="document-title/"]:visited,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:link,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:visited,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:link,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .group-button a[href$="document-title/"]:hover,
     #buddypress .group-button a[href$="document-title/"]:focus,
@@ -8601,22 +8571,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a[href$="edit/"]:link, #buddypress .row-actions a[href$="edit/"]:visited,
-    #buddypress .group-button a[href$="edit/"]:link,
-    #buddypress .group-button a[href$="edit/"]:visited,
-    #buddypress .activity-meta a[href$="edit/"]:link,
-    #buddypress .activity-meta a[href$="edit/"]:visited,
-    #buddypress .acomment-options a[href$="edit/"]:link,
-    #buddypress .acomment-options a[href$="edit/"]:visited,
-    #bbpress-forums .row-actions a[href$="edit/"]:link,
-    #bbpress-forums .row-actions a[href$="edit/"]:visited,
-    #bbpress-forums .group-button a[href$="edit/"]:link,
-    #bbpress-forums .group-button a[href$="edit/"]:visited,
-    #bbpress-forums .activity-meta a[href$="edit/"]:link,
-    #bbpress-forums .activity-meta a[href$="edit/"]:visited,
-    #bbpress-forums .acomment-options a[href$="edit/"]:link,
-    #bbpress-forums .acomment-options a[href$="edit/"]:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .group-button a[href$="edit/"]:hover,
     #buddypress .group-button a[href$="edit/"]:focus,
@@ -8695,22 +8649,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a[href$="history"]:link, #buddypress .row-actions a[href$="history"]:visited,
-    #buddypress .group-button a[href$="history"]:link,
-    #buddypress .group-button a[href$="history"]:visited,
-    #buddypress .activity-meta a[href$="history"]:link,
-    #buddypress .activity-meta a[href$="history"]:visited,
-    #buddypress .acomment-options a[href$="history"]:link,
-    #buddypress .acomment-options a[href$="history"]:visited,
-    #bbpress-forums .row-actions a[href$="history"]:link,
-    #bbpress-forums .row-actions a[href$="history"]:visited,
-    #bbpress-forums .group-button a[href$="history"]:link,
-    #bbpress-forums .group-button a[href$="history"]:visited,
-    #bbpress-forums .activity-meta a[href$="history"]:link,
-    #bbpress-forums .activity-meta a[href$="history"]:visited,
-    #bbpress-forums .acomment-options a[href$="history"]:link,
-    #bbpress-forums .acomment-options a[href$="history"]:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .group-button a[href$="history"]:hover,
     #buddypress .group-button a[href$="history"]:focus,
@@ -8789,22 +8727,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a.leave-group:link, #buddypress .row-actions a.leave-group:visited,
-    #buddypress .group-button a.leave-group:link,
-    #buddypress .group-button a.leave-group:visited,
-    #buddypress .activity-meta a.leave-group:link,
-    #buddypress .activity-meta a.leave-group:visited,
-    #buddypress .acomment-options a.leave-group:link,
-    #buddypress .acomment-options a.leave-group:visited,
-    #bbpress-forums .row-actions a.leave-group:link,
-    #bbpress-forums .row-actions a.leave-group:visited,
-    #bbpress-forums .group-button a.leave-group:link,
-    #bbpress-forums .group-button a.leave-group:visited,
-    #bbpress-forums .activity-meta a.leave-group:link,
-    #bbpress-forums .activity-meta a.leave-group:visited,
-    #bbpress-forums .acomment-options a.leave-group:link,
-    #bbpress-forums .acomment-options a.leave-group:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .group-button a.leave-group:hover,
     #buddypress .group-button a.leave-group:focus,
@@ -8883,22 +8805,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a.acomment-reply:link, #buddypress .row-actions a.acomment-reply:visited,
-    #buddypress .group-button a.acomment-reply:link,
-    #buddypress .group-button a.acomment-reply:visited,
-    #buddypress .activity-meta a.acomment-reply:link,
-    #buddypress .activity-meta a.acomment-reply:visited,
-    #buddypress .acomment-options a.acomment-reply:link,
-    #buddypress .acomment-options a.acomment-reply:visited,
-    #bbpress-forums .row-actions a.acomment-reply:link,
-    #bbpress-forums .row-actions a.acomment-reply:visited,
-    #bbpress-forums .group-button a.acomment-reply:link,
-    #bbpress-forums .group-button a.acomment-reply:visited,
-    #bbpress-forums .activity-meta a.acomment-reply:link,
-    #bbpress-forums .activity-meta a.acomment-reply:visited,
-    #bbpress-forums .acomment-options a.acomment-reply:link,
-    #bbpress-forums .acomment-options a.acomment-reply:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .group-button a.acomment-reply:hover,
     #buddypress .group-button a.acomment-reply:focus,
@@ -8977,22 +8883,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a.fav:link, #buddypress .row-actions a.fav:visited,
-    #buddypress .group-button a.fav:link,
-    #buddypress .group-button a.fav:visited,
-    #buddypress .activity-meta a.fav:link,
-    #buddypress .activity-meta a.fav:visited,
-    #buddypress .acomment-options a.fav:link,
-    #buddypress .acomment-options a.fav:visited,
-    #bbpress-forums .row-actions a.fav:link,
-    #bbpress-forums .row-actions a.fav:visited,
-    #bbpress-forums .group-button a.fav:link,
-    #bbpress-forums .group-button a.fav:visited,
-    #bbpress-forums .activity-meta a.fav:link,
-    #bbpress-forums .activity-meta a.fav:visited,
-    #bbpress-forums .acomment-options a.fav:link,
-    #bbpress-forums .acomment-options a.fav:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .group-button a.fav:hover,
     #buddypress .group-button a.fav:focus,
@@ -9071,22 +8961,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a.unfav:link, #buddypress .row-actions a.unfav:visited,
-    #buddypress .group-button a.unfav:link,
-    #buddypress .group-button a.unfav:visited,
-    #buddypress .activity-meta a.unfav:link,
-    #buddypress .activity-meta a.unfav:visited,
-    #buddypress .acomment-options a.unfav:link,
-    #buddypress .acomment-options a.unfav:visited,
-    #bbpress-forums .row-actions a.unfav:link,
-    #bbpress-forums .row-actions a.unfav:visited,
-    #bbpress-forums .group-button a.unfav:link,
-    #bbpress-forums .group-button a.unfav:visited,
-    #bbpress-forums .activity-meta a.unfav:link,
-    #bbpress-forums .activity-meta a.unfav:visited,
-    #bbpress-forums .acomment-options a.unfav:link,
-    #bbpress-forums .acomment-options a.unfav:visited {
-      color: #eb6361 !important; }
     #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
     #buddypress .group-button a.unfav:hover,
     #buddypress .group-button a.unfav:focus,
@@ -9172,36 +9046,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a.delete-activity:link, #buddypress .row-actions a.delete-activity:visited, #buddypress .row-actions a.acomment-delete:link, #buddypress .row-actions a.acomment-delete:visited,
-    #buddypress .group-button a.delete-activity:link,
-    #buddypress .group-button a.delete-activity:visited,
-    #buddypress .group-button a.acomment-delete:link,
-    #buddypress .group-button a.acomment-delete:visited,
-    #buddypress .activity-meta a.delete-activity:link,
-    #buddypress .activity-meta a.delete-activity:visited,
-    #buddypress .activity-meta a.acomment-delete:link,
-    #buddypress .activity-meta a.acomment-delete:visited,
-    #buddypress .acomment-options a.delete-activity:link,
-    #buddypress .acomment-options a.delete-activity:visited,
-    #buddypress .acomment-options a.acomment-delete:link,
-    #buddypress .acomment-options a.acomment-delete:visited,
-    #bbpress-forums .row-actions a.delete-activity:link,
-    #bbpress-forums .row-actions a.delete-activity:visited,
-    #bbpress-forums .row-actions a.acomment-delete:link,
-    #bbpress-forums .row-actions a.acomment-delete:visited,
-    #bbpress-forums .group-button a.delete-activity:link,
-    #bbpress-forums .group-button a.delete-activity:visited,
-    #bbpress-forums .group-button a.acomment-delete:link,
-    #bbpress-forums .group-button a.acomment-delete:visited,
-    #bbpress-forums .activity-meta a.delete-activity:link,
-    #bbpress-forums .activity-meta a.delete-activity:visited,
-    #bbpress-forums .activity-meta a.acomment-delete:link,
-    #bbpress-forums .activity-meta a.acomment-delete:visited,
-    #bbpress-forums .acomment-options a.delete-activity:link,
-    #bbpress-forums .acomment-options a.delete-activity:visited,
-    #bbpress-forums .acomment-options a.acomment-delete:link,
-    #bbpress-forums .acomment-options a.acomment-delete:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .group-button a.delete-activity:hover,
     #buddypress .group-button a.delete-activity:focus,
@@ -9322,22 +9166,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress .row-actions a.unlink-from-group:link, #buddypress .row-actions a.unlink-from-group:visited,
-    #buddypress .group-button a.unlink-from-group:link,
-    #buddypress .group-button a.unlink-from-group:visited,
-    #buddypress .activity-meta a.unlink-from-group:link,
-    #buddypress .activity-meta a.unlink-from-group:visited,
-    #buddypress .acomment-options a.unlink-from-group:link,
-    #buddypress .acomment-options a.unlink-from-group:visited,
-    #bbpress-forums .row-actions a.unlink-from-group:link,
-    #bbpress-forums .row-actions a.unlink-from-group:visited,
-    #bbpress-forums .group-button a.unlink-from-group:link,
-    #bbpress-forums .group-button a.unlink-from-group:visited,
-    #bbpress-forums .activity-meta a.unlink-from-group:link,
-    #bbpress-forums .activity-meta a.unlink-from-group:visited,
-    #bbpress-forums .acomment-options a.unlink-from-group:link,
-    #bbpress-forums .acomment-options a.unlink-from-group:visited {
-      color: #aaaaaa !important; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .group-button a.unlink-from-group:hover,
     #buddypress .group-button a.unlink-from-group:focus,
@@ -9443,10 +9271,6 @@ body.buddypress h1 {
   border-radius: 0;
   border: 1px solid transparent;
   padding: .25em; }
-  #buddypress #bp-create-doc-button:link, #buddypress #bp-create-doc-button:visited,
-  #bbpress-forums #bp-create-doc-button:link,
-  #bbpress-forums #bp-create-doc-button:visited {
-    color: #444444 !important; }
   #buddypress #bp-create-doc-button:hover, #buddypress #bp-create-doc-button:focus,
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
@@ -9491,14 +9315,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress #members-list .small > a.member-ban:link, #buddypress #members-list .small > a.member-ban:visited,
-    #buddypress #members-dir-list .small > a.member-ban:link,
-    #buddypress #members-dir-list .small > a.member-ban:visited,
-    #bbpress-forums #members-list .small > a.member-ban:link,
-    #bbpress-forums #members-list .small > a.member-ban:visited,
-    #bbpress-forums #members-dir-list .small > a.member-ban:link,
-    #bbpress-forums #members-dir-list .small > a.member-ban:visited {
-      color: #aaaaaa !important; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
     #buddypress #members-dir-list .small > a.member-ban:hover,
     #buddypress #members-dir-list .small > a.member-ban:focus,
@@ -9549,14 +9365,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress #members-list .small > a.member-promote-to-mod:link, #buddypress #members-list .small > a.member-promote-to-mod:visited,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:link,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:visited,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:link,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:visited,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:link,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:visited {
-      color: #aaaaaa !important; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
@@ -9607,14 +9415,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress #members-list .small > a.member-promote-to-admin:link, #buddypress #members-list .small > a.member-promote-to-admin:visited,
-    #buddypress #members-dir-list .small > a.member-promote-to-admin:link,
-    #buddypress #members-dir-list .small > a.member-promote-to-admin:visited,
-    #bbpress-forums #members-list .small > a.member-promote-to-admin:link,
-    #bbpress-forums #members-list .small > a.member-promote-to-admin:visited,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:link,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:visited {
-      color: #aaaaaa !important; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:focus,
@@ -9665,14 +9465,6 @@ body.buddypress h1 {
     border-radius: 0;
     border: 1px solid #aaaaaa;
     padding: .25em; }
-    #buddypress #members-list .small > a.confirm:link, #buddypress #members-list .small > a.confirm:visited,
-    #buddypress #members-dir-list .small > a.confirm:link,
-    #buddypress #members-dir-list .small > a.confirm:visited,
-    #bbpress-forums #members-list .small > a.confirm:link,
-    #bbpress-forums #members-list .small > a.confirm:visited,
-    #bbpress-forums #members-dir-list .small > a.confirm:link,
-    #bbpress-forums #members-dir-list .small > a.confirm:visited {
-      color: #aaaaaa !important; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
     #buddypress #members-dir-list .small > a.confirm:hover,
     #buddypress #members-dir-list .small > a.confirm:focus,
@@ -10843,8 +10635,6 @@ body {
   color: #444444; }
   body a {
     color: #16516b; }
-    body a:visited {
-      color: #16516b; }
     body a:hover, body a:focus, body a:active {
       color: #051116; }
     body a:focus {
@@ -10984,18 +10774,9 @@ body {
 #secondary .widget .entry-meta, #secondary article.handbook .table-of-contents .entry-meta, article.handbook #secondary .table-of-contents .entry-meta {
   color: rgba(255, 255, 255, 0.5); }
 
-#secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a,
-#secondary .widget a:visited,
-#secondary article.handbook .table-of-contents a:visited, article.handbook
-#secondary .table-of-contents a:visited {
+#secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a {
   color: #fff; }
-  #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus,
-  #secondary .widget a:visited:hover,
-  #secondary article.handbook .table-of-contents a:visited:hover, article.handbook
-  #secondary .table-of-contents a:visited:hover,
-  #secondary .widget a:visited:focus,
-  #secondary article.handbook .table-of-contents a:visited:focus, article.handbook
-  #secondary .table-of-contents a:visited:focus {
+  #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus {
     color: #fff; }
 
 #secondary .widget .entry-content, #secondary article.handbook .table-of-contents .entry-content, article.handbook #secondary .table-of-contents .entry-content {
@@ -11043,35 +10824,17 @@ body {
   .home-widgets .table-of-contents .entry-meta {
     color: #aaaaaa; }
   .content-widgets .widget a, .content-widgets article.handbook .table-of-contents a, article.handbook .content-widgets .table-of-contents a,
-  .content-widgets .widget a:visited,
-  .content-widgets article.handbook .table-of-contents a:visited, article.handbook
-  .content-widgets .table-of-contents a:visited,
   .home-widgets .widget a,
   .home-widgets article.handbook .table-of-contents a, article.handbook
-  .home-widgets .table-of-contents a,
-  .home-widgets .widget a:visited,
-  .home-widgets article.handbook .table-of-contents a:visited, article.handbook
-  .home-widgets .table-of-contents a:visited {
+  .home-widgets .table-of-contents a {
     color: #16516b; }
     .content-widgets .widget a:hover, .content-widgets article.handbook .table-of-contents a:hover, article.handbook .content-widgets .table-of-contents a:hover, .content-widgets .widget a:focus, .content-widgets article.handbook .table-of-contents a:focus, article.handbook .content-widgets .table-of-contents a:focus,
-    .content-widgets .widget a:visited:hover,
-    .content-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
-    .content-widgets .table-of-contents a:visited:hover,
-    .content-widgets .widget a:visited:focus,
-    .content-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
-    .content-widgets .table-of-contents a:visited:focus,
     .home-widgets .widget a:hover,
     .home-widgets article.handbook .table-of-contents a:hover, article.handbook
     .home-widgets .table-of-contents a:hover,
     .home-widgets .widget a:focus,
     .home-widgets article.handbook .table-of-contents a:focus, article.handbook
-    .home-widgets .table-of-contents a:focus,
-    .home-widgets .widget a:visited:hover,
-    .home-widgets article.handbook .table-of-contents a:visited:hover, article.handbook
-    .home-widgets .table-of-contents a:visited:hover,
-    .home-widgets .widget a:visited:focus,
-    .home-widgets article.handbook .table-of-contents a:visited:focus, article.handbook
-    .home-widgets .table-of-contents a:visited:focus {
+    .home-widgets .table-of-contents a:focus {
       color: #051116; }
   .content-widgets .widget .entry-content, .content-widgets article.handbook .table-of-contents .entry-content, article.handbook .content-widgets .table-of-contents .entry-content,
   .home-widgets .widget .entry-content,

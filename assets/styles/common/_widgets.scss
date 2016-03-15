@@ -11,8 +11,8 @@ SIDEBARS & ASIDES
       @include font-size($h6);
     }
     .menu a, 
-    .menu a:visited,
-    .menu a:hover {
+    .menu a:hover,
+    .menu a:focus {
         color: $color__white;
     }
 
@@ -41,8 +41,7 @@ SIDEBARS & ASIDES
         color: $color__text-widget-header-plain;
     }
 
-    a, 
-    a:visited {
+    a {
         display: block;
         padding: 0.5em 0;
         color: $color__text-widget-plain;

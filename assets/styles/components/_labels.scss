@@ -1,13 +1,13 @@
 .tags a,
 .category a,
-.cat-links a {
+.cat-links a,
+a.tag {
     @extend .label;
     @extend .label-default;
-    color: $color__text-button;
+    color: $color__text-button !important;
     
     &:hover,
-    &:focus,
-    &:visited {
+    &:focus {
         color: $color__text-button;
     }
 }
