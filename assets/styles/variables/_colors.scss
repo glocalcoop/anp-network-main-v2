@@ -12,21 +12,21 @@ $color__mid-light-grey: lighten($color__black, 50%);
 $color__light-grey: lighten($color__black, 60%);
 $color__lightest-grey: lighten($color__black, 90%);
 
-$color__primary: #16516B;
-$color__secondary: #008EB0;
+$color__primary: #16516b;
+$color__secondary: #008Eb0;
 $color__tertiary: $color__mid-grey;
 $color__tertiary2: $color__dark-grey;
 $color__highlight: $color__light-grey;
 
-$color__success: #509EA3;
-$color__alert: #E53634;
-$color__warning: #AFBB87;
-$color__info: #EAE0CC;
+$color__success: #509ea3;
+$color__alert: #e53634;
+$color__warning: #afbb87;
+$color__info: #eae0cc;
 
 $color__primary-light: lighten($color__primary, 20%);
-$color__alert: #EB6361;
-$color__tertiary-light: #293B5A;
-$color__hightlight-light: #EAE0CC;
+$color__alert: #eb6361;
+$color__tertiary-light: #293b5a;
+$color__hightlight-light: #eae0cc;
 
 
 $white: $color__white;
@@ -67,8 +67,8 @@ $color__background-nav: $color__white;
 $color__background-nav-active: rgba($color__black,.2);
 $color__background-nav-hover: rgba($color__black,.1);
 $color__text-nav: $color__text-main;
-$color__text-nav-active: $color__link-active;
-$color__text-nav-hover: $color__text-nav-active;
+$color__text-nav-active: $color__text-nav;
+$color__text-nav-hover: rgba($color__black,.6);
 $color__border-nav: rgba($color__black,.2);
 
 $color__background-nav-inverted: $color__primary;

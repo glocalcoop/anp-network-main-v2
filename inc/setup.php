@@ -90,6 +90,10 @@ function anp_network_main_setup() {
     'default-color' => 'ffffff',
     'default-image' => '',
   ) ) );
+
+  add_theme_support( 'custom-header', array(
+    'header-text' => false
+  ) );
 }
 endif; // anp_network_main_setup
 add_action( 'after_setup_theme', 'anp_network_main_setup' );

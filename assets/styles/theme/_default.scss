@@ -5,15 +5,18 @@
 /**
  * Customizer support
  *  Branding Background 
- *  .site-branding
+ *  #masthead .site-branding
  * 
  *  Header Text Color (header_textcolor) 
  *  #masthead .site-branding .site-title a, 
  *  #masthead .site-branding .site-description, 
- *  #masthead .social-links
+ *  #masthead .social-links a
+ *      color, border-color
+ *           a:before
+ *               color
  * 
  *  Navigation Background Color
- *  #masthead .main-navigation &.toggled, 
+ *  #masthead .main-navigation, 
  *  #masthead .main-navigation ul ul
  * 
  *  Navigation Text Color
@@ -38,6 +41,7 @@
  * #colophon .bottom-navigation
  *
  * Secondary Color
+ *
  * Content Background Color
  * #content .content-area
 
@@ -162,7 +166,6 @@ body {
                     box-shadow: 2px 2px 2px $color__border-nav;
 
                     li {
-                        background-color: $color__background-nav;
                         border-bottom-width: 0;
                         border-radius: $element__border-radius-base;
                     }
@@ -180,7 +183,7 @@ body {
 
             &:hover,
             &:focus {
-                background-color: $color__primary;
+                background-color: rbga(0,0,0,.2);
 
                 &:before,
                 &:before {
@@ -190,6 +193,10 @@ body {
             }
 
         }
+    }
+
+    .menu-toggle {
+        background-color: $color__secondary;
     }
 }
 

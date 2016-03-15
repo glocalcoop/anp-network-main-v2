@@ -46,6 +46,10 @@ body {
 	@include clearfix;
 }
 
+.entry-footer {
+	clear: both;
+}
+
 .site-main {
 	margin: 0;
 }
