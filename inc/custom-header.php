@@ -58,29 +58,10 @@ function anp_network_main_header_style() {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
-	<?php
-		// If the user has set a custom color for the text use that.
-		else :
-	?>
-		#masthead .site-branding .site-title a,
-		#masthead .site-branding .site-description,
-		#masthead .social-links a,
-		#masthead .social-links a:hover:before,
-		#masthead .social-links a:focus:before {
-			color: #<?php echo esc_attr( $header_text_color ); ?>;
-		}
-
-		#masthead .social-links a {
-			border: 1px solid #<?php echo esc_attr( $header_text_color ) ?>;
-		}
-
-		#masthead .social-links a:hover,
-		#masthead .social-links a:focus {
-			background-color: transparent;
-			background-color: rgba(0,0,0,.1);
-		}
 
 	<?php endif; ?>
+
+
 	</style>
 	<?php
 }
