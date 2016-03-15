@@ -88,10 +88,10 @@ body {
     }
 
     .custom-header {
-        background-color: $color__lightest-grey;
+        background-color: $color__background-body;
         border-top-right-radius: $element__border-radius-base;
         border-top-left-radius: $element__border-radius-base;
-        color: $color__text-inverted;
+        color: $color__text-main;
         img {}
     }
 

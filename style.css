@@ -10657,10 +10657,10 @@ body {
     color: #444444; }
 
 #masthead .custom-header {
-  background-color: #f7f7f7;
+  background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #fff; }
+  color: #444444; }
 
 #masthead .main-navigation.toggled {
   background-color: #fff; }
