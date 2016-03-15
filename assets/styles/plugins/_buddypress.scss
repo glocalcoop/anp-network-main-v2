@@ -74,6 +74,10 @@ body.buddypress {
                         @extend .badge;
                     }
                 }
+
+                input {
+                    @include font-size($small);
+                }
             }
 
         }
