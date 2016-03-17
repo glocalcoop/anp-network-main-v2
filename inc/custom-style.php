@@ -37,9 +37,9 @@ if ( class_exists( 'Kirki' ) ) {
 
 	$defaults = array(
 		'copyright'			=> date('Y') . ' ' . get_bloginfo( 'name' ),
-		'color_primary'		=> '#16516b',
+		'color_primary'		=> '#2C3E50',
 		'color_accent'		=> '#008Eb0',
-		'color_default'		=> '#444444',
+		'color_default'		=> '#54595C',
 		'screen_md'			=> '768px'
 	);
 
@@ -117,10 +117,6 @@ if ( class_exists( 'Kirki' ) ) {
 				'property' => 'color',
 			),
 			array(
-				'element'  => 'h1, h2, h3, h4, h5',
-				'property' => 'color',
-			),
-			array(
 				'element'	=> '.home-widgets .widget h3.widget-title,
 					.home-widgets .widget a,
 					.home-widgets .widget a:hover,
@@ -159,11 +155,6 @@ if ( class_exists( 'Kirki' ) ) {
 					.content-area a:focus',
 				'function' => 'css',
 				'property' => 'color',
-			),
-			array(
-				'element'  => 'h1, h2, h3, h4, h5',
-				'function' => 'css',
-				'property' => 'background-color',
 			),
 		),
 	) );
@@ -257,7 +248,17 @@ if ( class_exists( 'Kirki' ) ) {
 		'priority'    => 55,
 		'output'      => array(
 			array(
-				'element'  => '.content-area, .content-area p, .content-area li',
+				'element'  => '.content-area, 
+					.content-area p, 
+					.content-area li',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.content-area h1,
+					.content-area h2, 
+					.content-area h3, 
+					.content-area h4,
+					.content-area h5',
 				'property' => 'color',
 			),
 		),
@@ -265,6 +266,15 @@ if ( class_exists( 'Kirki' ) ) {
 		'js_vars'     => array(
 			array(
 				'element'  => '.content-area, .content-area p, .content-area li',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.content-area h1,
+					.content-area h2, 
+					.content-area h3, 
+					.content-area h4,
+					.content-area h5',
 				'function' => 'css',
 				'property' => 'color',
 			),
