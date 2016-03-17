@@ -58,7 +58,7 @@ body.buddypress {
                 }
 
                 &:not(:last-child) {
-                    border-bottom: 1px solid rgba(0,0,0,.2);
+                    border-bottom: 1px solid rgba($color__black,.2);
                 }
 
                 a {
@@ -97,7 +97,7 @@ body.buddypress {
 
                     &:not(:last-child) {
                         border-bottom: none;
-                        border-right: 1px solid rgba(0,0,0,.2);
+                        border-right: 1px solid rgba($color__black,.2);
                     }
                 }
             }
@@ -114,7 +114,7 @@ body.buddypress {
                 &.selected,
                 &:hover,
                 &:focus {
-                    background-color: rgba(0,0,0,.2);
+                    background-color: rgba($color__black,.2);
                     color: $color__text-nav-hover-alt;
                 }
 
@@ -468,7 +468,7 @@ body.buddypress {
                 @include button-icon($color: $color__light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.unfav {
-                @include button-icon($color: $color__alert, $icon: heart, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.delete-activity,
             &.acomment-delete {
@@ -492,7 +492,7 @@ body.buddypress {
         }
         .is-favorite {
             a {
-                @include icon-font(heart, before, $color__alert);
+                @include icon-font(heart, before, $color__danger);
             }
         }
     }
@@ -574,6 +574,8 @@ body.buddypress {
         }
     }
 }
+
+.buddypress-attribution a {}
 
 
 // Widgets

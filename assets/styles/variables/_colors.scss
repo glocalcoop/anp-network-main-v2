@@ -1,37 +1,45 @@
 /**
  * Uncomment and change as desired.
  */
-
 $color__black: #111;
 $color__white: #fff;
 $color__light-black: lighten($color__black, 15%);
 $color__darkest-grey: $color__black;
-$color__dark-grey: lighten($color__black, 20%); //#444444
-$color__mid-grey: lighten($color__black, 40%);
-$color__mid-light-grey: lighten($color__black, 50%);
-$color__light-grey: lighten($color__black, 60%);
-$color__lightest-grey: lighten($color__black, 90%);
+$color__dark-grey: #54595C; //rgb(52,61,70)
+$color__mid-grey: #7B8083; //rgb(79,91,102)
+$color__mid-light-grey: #A1A6A9; //rgb(101,115,126)
+$color__light-grey: #C7CCCF; //rgb(167,173,186)
+$color__lightest-grey: #EDF2F5; //rgb(230,235,244)
 
-$color__primary: #16516b;
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+$color__primary: #2C3E50; //rgb(44, 62, 80);
 $color__secondary: #008Eb0;
 $color__tertiary: $color__mid-grey;
 $color__tertiary2: $color__dark-grey;
 $color__highlight: $color__light-grey;
 
 $color__success: #509ea3;
-$color__alert: #e53634;
-$color__warning: #afbb87;
-$color__info: #eae0cc;
+$color__info: rgb(52, 152, 219);
+$color__warning: rgb(243, 156, 18);
+$color__danger: #eb6361;
+$color__default: $color__mid-grey;
 
 $color__primary-light: lighten($color__primary, 20%);
-$color__alert: #eb6361;
-$color__tertiary-light: #293b5a;
-$color__hightlight-light: #eae0cc;
+$color__tertiary-light: lighten($color__tertiary, 20%);
+$color__hightlight-light: lighten($color__highlight, 20%);
 
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+$color__facebook: #3B5998;
+$color__twitter: #00aced;
+$color__linkedin: #007bb6;
+$color__google-plus: #dd4b39;
+$color__youtube: #bb0000;
 
 $white: $color__white;
 $black: $color__black;
-$color__default: $color__mid-grey;
 
 $color__background-body: transparent;
 $color__background-header: $color__primary;
@@ -95,12 +103,12 @@ $color__text-widget-header: rgba($color__white,.5);
 
 $color__background-widget-alt: $color__lightest-grey;
 $color__border-widget-alt: $color__background-hr-alt;
-$color__text-widget-alt: $color__text-light;
+$color__text-widget-alt: $color__mid-light-grey;
 $color__text-widget-header-alt: $color__primary;
 
 $color__background-widget-plain: transparent;
 $color__border-widget-plain: transparent;
-$color__text-widget-plain: $color__text-light;
+$color__text-widget-plain: $color__mid-light-grey;
 $color__text-widget-header-plain: $color__primary;
 
 $color__background-button: $color__mid-grey;

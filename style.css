@@ -51,6 +51,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  * Uncomment and change as desired.
  */
 /**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+/**
  * Elements
  */
 /**/
@@ -73,7 +78,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
-  color: #444444;
+  color: #54595C;
   background-color: transparent; }
 
 input,
@@ -113,7 +118,7 @@ img {
   padding: 4px;
   line-height: 1.42857;
   background-color: transparent;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #C7CCCF;
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -130,7 +135,7 @@ hr {
   margin-top: 22px;
   margin-bottom: 22px;
   border: 0;
-  border-top: 1px solid #f7f7f7; }
+  border-top: 1px solid #EDF2F5; }
 
 .sr-only {
   position: absolute;
@@ -679,7 +684,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #aaaaaa;
+  color: #C7CCCF;
   text-align: left; }
 
 th {
@@ -705,11 +710,11 @@ th {
     padding: 8px;
     line-height: 1.42857;
     vertical-align: top;
-    border-top: 1px solid #f7f7f7; }
+    border-top: 1px solid #EDF2F5; }
   .table > thead > tr > th, #buddypress table > thead > tr > th,
   #bbpress-forums table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #f7f7f7; }
+    border-bottom: 2px solid #EDF2F5; }
   .table > caption + thead > tr:first-child > th, #buddypress table > caption + thead > tr:first-child > th,
   #bbpress-forums table > caption + thead > tr:first-child > th,
   .table > caption + thead > tr:first-child > td, #buddypress table > caption + thead > tr:first-child > td,
@@ -725,7 +730,7 @@ th {
     border-top: 0; }
   .table > tbody + tbody, #buddypress table > tbody + tbody,
   #bbpress-forums table > tbody + tbody {
-    border-top: 2px solid #f7f7f7; }
+    border-top: 2px solid #EDF2F5; }
   .table .table, #buddypress table .table,
   #bbpress-forums table .table, .table #buddypress table, #buddypress .table table, #buddypress table table, .table
   #bbpress-forums table,
@@ -742,25 +747,25 @@ th {
   padding: 5px; }
 
 .table-bordered {
-  border: 1px solid #f7f7f7; }
+  border: 1px solid #EDF2F5; }
   .table-bordered > thead > tr > th,
   .table-bordered > thead > tr > td,
   .table-bordered > tbody > tr > th,
   .table-bordered > tbody > tr > td,
   .table-bordered > tfoot > tr > th,
   .table-bordered > tfoot > tr > td {
-    border: 1px solid #f7f7f7; }
+    border: 1px solid #EDF2F5; }
   .table-bordered > thead > tr > th,
   .table-bordered > thead > tr > td {
     border-bottom-width: 2px; }
 
 .table-striped > tbody > tr:nth-of-type(odd), #buddypress table > tbody > tr:nth-of-type(odd),
 #bbpress-forums table > tbody > tr:nth-of-type(odd) {
-  background-color: #f7f7f7; }
+  background-color: #EDF2F5; }
 
 .table-hover > tbody > tr:hover, #buddypress table > tbody > tr:hover,
 #bbpress-forums table > tbody > tr:hover {
-  background-color: #f7f7f7; }
+  background-color: #EDF2F5; }
 
 table col[class*="col-"] {
   position: static;
@@ -797,7 +802,7 @@ table th[class*="col-"] {
 #bbpress-forums table > tfoot > tr.active > td,
 .table > tfoot > tr.active > th, #buddypress table > tfoot > tr.active > th,
 #bbpress-forums table > tfoot > tr.active > th {
-  background-color: #f7f7f7; }
+  background-color: #EDF2F5; }
 
 .table-hover > tbody > tr > td.active:hover, #buddypress table > tbody > tr > td.active:hover,
 #bbpress-forums table > tbody > tr > td.active:hover,
@@ -809,7 +814,7 @@ table th[class*="col-"] {
 #bbpress-forums table > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th, #buddypress table > tbody > tr.active:hover > th,
 #bbpress-forums table > tbody > tr.active:hover > th {
-  background-color: #eaeaea; }
+  background-color: #dde6ec; }
 
 .table > thead > tr > td.success, #buddypress table > thead > tr > td.success,
 #bbpress-forums table > thead > tr > td.success,
@@ -972,7 +977,7 @@ table th[class*="col-"] {
       margin-bottom: 16.5px;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
-      border: 1px solid #f7f7f7; }
+      border: 1px solid #EDF2F5; }
       .table-responsive > .table, #buddypress .table-responsive > table,
       #bbpress-forums .table-responsive > table {
         margin-bottom: 0; }
@@ -1034,9 +1039,9 @@ legend {
   margin-bottom: 22px;
   font-size: 24px;
   line-height: inherit;
-  color: #444444;
+  color: #54595C;
   border: 0;
-  border-bottom: 1px solid #777777; }
+  border-bottom: 1px solid #7B8083; }
 
 label {
   display: inline-block;
@@ -1078,7 +1083,7 @@ output {
   padding-top: 7px;
   font-size: 16px;
   line-height: 1.42857;
-  color: #777777; }
+  color: #7B8083; }
 
 .form-control {
   display: block;
@@ -1087,10 +1092,10 @@ output {
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857;
-  color: #777777;
+  color: #7B8083;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #777777;
+  border: 1px solid #7B8083;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1103,18 +1108,18 @@ output {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(55, 55, 55, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(55, 55, 55, 0.6); }
   .form-control::-moz-placeholder {
-    color: #777777;
+    color: #7B8083;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #777777; }
+    color: #7B8083; }
   .form-control::-webkit-input-placeholder {
-    color: #777777; }
+    color: #7B8083; }
   .form-control::-ms-expand {
     border: 0;
     background-color: transparent; }
   .form-control[disabled], .form-control[readonly],
   fieldset[disabled] .form-control {
-    background-color: #f7f7f7;
+    background-color: #EDF2F5;
     opacity: 1; }
   .form-control[disabled],
   fieldset[disabled] .form-control {
@@ -1434,7 +1439,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #848484; }
+  color: #93999c; }
 
 @media (min-width: 544px) {
   .form-inline .form-group {
@@ -1629,24 +1634,24 @@ fieldset[disabled] a {
 
 .btn-default, .wpb_btn-default, .ow-button-base a, .so-widget-sow-cta .sow-cta-base .ow-button-base a, #secondary .sow-cta-base .ow-button-base a {
   color: #fff;
-  background-color: #777777;
-  border-color: rgba(119, 119, 119, 0.2); }
+  background-color: #7B8083;
+  border-color: rgba(123, 128, 131, 0.2); }
   .btn-default:focus, .wpb_btn-default:focus, .ow-button-base a:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn-default.focus, .focus.wpb_btn-default, .ow-button-base a.focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus {
     color: #fff;
-    background-color: #5e5e5e;
-    border-color: rgba(55, 55, 55, 0.2); }
+    background-color: #626669;
+    border-color: rgba(61, 64, 65, 0.2); }
   .btn-default:hover, .wpb_btn-default:hover, .ow-button-base a:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover {
     color: #fff;
-    background-color: #5e5e5e;
-    border-color: rgba(88, 88, 88, 0.2); }
+    background-color: #626669;
+    border-color: rgba(93, 97, 99, 0.2); }
   .btn-default:active, .wpb_btn-default:active, .ow-button-base a:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn-default.active, .active.wpb_btn-default, .ow-button-base a.active, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active,
   .open > .btn-default.dropdown-toggle,
   .open > .dropdown-toggle.wpb_btn-default, .ow-button-base
   .open > a.dropdown-toggle, #secondary .sow-cta-base .ow-button-base
   .open > a.dropdown-toggle {
     color: #fff;
-    background-color: #5e5e5e;
-    border-color: rgba(88, 88, 88, 0.2); }
+    background-color: #626669;
+    border-color: rgba(93, 97, 99, 0.2); }
     .btn-default:active:hover, .wpb_btn-default:active:hover, .ow-button-base a:active:hover, #secondary .sow-cta-base .ow-button-base a:active:hover, .btn-default:active:focus, .wpb_btn-default:active:focus, .ow-button-base a:active:focus, #secondary .sow-cta-base .ow-button-base a:active:focus, .btn-default:active.focus, .wpb_btn-default:active.focus, .ow-button-base a:active.focus, #secondary .sow-cta-base .ow-button-base a:active.focus, .btn-default.active:hover, .active.wpb_btn-default:hover, .ow-button-base a.active:hover, #secondary .sow-cta-base .ow-button-base a.active:hover, .btn-default.active:focus, .active.wpb_btn-default:focus, .ow-button-base a.active:focus, #secondary .sow-cta-base .ow-button-base a.active:focus, .btn-default.active.focus, .active.focus.wpb_btn-default, .ow-button-base a.active.focus, #secondary .sow-cta-base .ow-button-base a.active.focus,
     .open > .btn-default.dropdown-toggle:hover,
     .open > .dropdown-toggle.wpb_btn-default:hover, .ow-button-base
@@ -1661,8 +1666,8 @@ fieldset[disabled] a {
     .open > a.dropdown-toggle.focus, #secondary .sow-cta-base .ow-button-base
     .open > a.dropdown-toggle.focus {
       color: #fff;
-      background-color: #4c4c4c;
-      border-color: rgba(55, 55, 55, 0.2); }
+      background-color: #515456;
+      border-color: rgba(61, 64, 65, 0.2); }
   .btn-default:active, .wpb_btn-default:active, .ow-button-base a:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn-default.active, .active.wpb_btn-default, .ow-button-base a.active, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active,
   .open > .btn-default.dropdown-toggle,
   .open > .dropdown-toggle.wpb_btn-default, .ow-button-base
@@ -1688,8 +1693,8 @@ fieldset[disabled] a {
   fieldset[disabled] a.focus,
   fieldset[disabled] #secondary .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base
   fieldset[disabled] a.focus {
-    background-color: #777777;
-    border-color: rgba(119, 119, 119, 0.2); }
+    background-color: #7B8083;
+    border-color: rgba(123, 128, 131, 0.2); }
   .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge, .btn-default #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-default span, .wpb_btn-default #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-default span, .ow-button-base #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li .ow-button-base a span, .btn-default
   #bbpress-forums .item-list-tabs ul li a span,
   #bbpress-forums .item-list-tabs ul li a .btn-default span, .wpb_btn-default
@@ -1705,7 +1710,7 @@ fieldset[disabled] a {
   #bbpress-forums .ow-button-base a span, #secondary .sow-cta-base .ow-button-base
   #bbpress-forums a span,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base a span {
-    color: #777777;
+    color: #7B8083;
     background-color: #fff; }
 
 .btn-primary {
@@ -1992,7 +1997,7 @@ fieldset[disabled] a {
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
   fieldset[disabled] .btn-link:focus {
-    color: #aaaaaa;
+    color: #C7CCCF;
     text-decoration: none; }
 
 .btn-lg, .home .entry.intro-content button, .wpb_btn-large {
@@ -2043,16 +2048,16 @@ input[type="button"].btn-block {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #f7f7f7; }
+        background-color: #EDF2F5; }
     .nav > li.disabled > a {
-      color: #aaaaaa; }
+      color: #C7CCCF; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-        color: #aaaaaa;
+        color: #C7CCCF;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #f7f7f7;
+    background-color: #EDF2F5;
     border-color: #509EA3; }
   .nav .nav-divider {
     height: 1px;
@@ -2063,7 +2068,7 @@ input[type="button"].btn-block {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid #f7f7f7; }
+  border-bottom: 1px solid #EDF2F5; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -2073,11 +2078,11 @@ input[type="button"].btn-block {
       border: 1px solid transparent;
       border-radius: 0 0 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #f7f7f7 #f7f7f7 #f7f7f7; }
+        border-color: #EDF2F5 #EDF2F5 #EDF2F5; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: #777777;
+      color: #7B8083;
       background-color: transparent;
-      border: 1px solid #aaaaaa;
+      border: 1px solid #C7CCCF;
       border-bottom-color: transparent;
       cursor: default; }
 
@@ -2089,7 +2094,7 @@ input[type="button"].btn-block {
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #16516b; }
+    background-color: #2C3E50; }
 
 .nav-stacked > li {
   float: none; }
@@ -2122,10 +2127,10 @@ input[type="button"].btn-block {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border: 1px solid #aaaaaa; }
+    border: 1px solid #C7CCCF; }
   @media (min-width: 544px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
-      border-bottom: 1px solid #aaaaaa;
+      border-bottom: 1px solid #C7CCCF;
       border-radius: 0 0 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
@@ -2428,14 +2433,14 @@ input[type="button"].btn-block {
   background-color: #fff;
   border-color: #eeeeee; }
   .navbar-default .navbar-brand {
-    color: #16516b; }
+    color: #2C3E50; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #0d3141;
+      color: #1a252f;
       background-color: transparent; }
   .navbar-default .navbar-text {
-    color: #444444; }
+    color: #54595C; }
   .navbar-default .navbar-nav > li > a {
-    color: #16516b; }
+    color: #2C3E50; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: rgba(17, 17, 17, 0.1);
       background-color: transparent; }
@@ -2443,14 +2448,14 @@ input[type="button"].btn-block {
     color: rgba(17, 17, 17, 0.2);
     background-color: rgba(17, 17, 17, 0.1); }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
-    color: #777777;
+    color: #7B8083;
     background-color: transparent; }
   .navbar-default .navbar-toggle {
-    border-color: #777777; }
+    border-color: #7B8083; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #777777; }
+      background-color: #7B8083; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #444444; }
+      background-color: #54595C; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #eeeeee; }
@@ -2459,7 +2464,7 @@ input[type="button"].btn-block {
     color: rgba(17, 17, 17, 0.2); }
   @media (max-width: 543px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #16516b; }
+      color: #2C3E50; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: rgba(17, 17, 17, 0.1);
         background-color: transparent; }
@@ -2467,20 +2472,20 @@ input[type="button"].btn-block {
       color: rgba(17, 17, 17, 0.2);
       background-color: rgba(17, 17, 17, 0.1); }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-      color: #777777;
+      color: #7B8083;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #16516b; }
+    color: #2C3E50; }
     .navbar-default .navbar-link:hover {
       color: rgba(17, 17, 17, 0.1); }
   .navbar-default .btn-link {
-    color: #16516b; }
+    color: #2C3E50; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
       color: rgba(17, 17, 17, 0.1); }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
     fieldset[disabled] .navbar-default .btn-link:hover,
     fieldset[disabled] .navbar-default .btn-link:focus {
-      color: #777777; }
+      color: #7B8083; }
 
 .navbar-inverse {
   background-color: #509EA3;
@@ -2501,12 +2506,12 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #3f7d81; }
   .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
-    color: #f7f7f7;
+    color: #EDF2F5;
     background-color: transparent; }
   .navbar-inverse .navbar-toggle {
-    border-color: #444444; }
+    border-color: #54595C; }
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-      background-color: #444444; }
+      background-color: #54595C; }
     .navbar-inverse .navbar-toggle .icon-bar {
       background-color: #fff; }
   .navbar-inverse .navbar-collapse,
@@ -2529,7 +2534,7 @@ input[type="button"].btn-block {
       color: #fff;
       background-color: #3f7d81; }
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-      color: #f7f7f7;
+      color: #EDF2F5;
       background-color: transparent; } }
   .navbar-inverse .navbar-link {
     color: #fff; }
@@ -2542,7 +2547,7 @@ input[type="button"].btn-block {
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus,
     fieldset[disabled] .navbar-inverse .btn-link:hover,
     fieldset[disabled] .navbar-inverse .btn-link:focus {
-      color: #f7f7f7; }
+      color: #EDF2F5; }
 
 .label, .tags a,
 .category a,
@@ -3087,7 +3092,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
 #buddypress #members-dir-list .item-header-content .activity,
 #bbpress-forums #members-list .item-header-content .activity,
 #bbpress-forums #members-dir-list .item-header-content .activity {
-  background-color: #aaaaaa; }
+  background-color: #C7CCCF; }
   .label-default[href]:hover, .tags a[href]:hover,
   .category a[href]:hover,
   .cat-links a[href]:hover,
@@ -3113,7 +3118,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #buddypress #members-dir-list .item-header-content [href].activity:focus,
   #bbpress-forums #members-list .item-header-content [href].activity:focus,
   #bbpress-forums #members-dir-list .item-header-content [href].activity:focus {
-    background-color: #919191; }
+    background-color: #acb3b7; }
 
 .label-primary {
   background-color: #509EA3; }
@@ -3174,7 +3179,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: #aaaaaa;
+  background-color: #C7CCCF;
   border-radius: 10px; }
   .badge:empty, #buddypress .item-list-tabs ul li a span:empty,
   #bbpress-forums .item-list-tabs ul li a span:empty, #buddypress a span:empty,
@@ -3408,7 +3413,7 @@ a.badge:hover, a.badge:focus {
   margin-bottom: 22px;
   line-height: 1.42857;
   background-color: transparent;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #C7CCCF;
   border-radius: 0;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
@@ -3422,7 +3427,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #444444; }
+    color: #54595C; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5943,7 +5948,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   font-size: 14px;
   font-size: 0.875rem;
   text-align: center;
-  background-color: #777777;
+  background-color: #7B8083;
   color: #fff !important;
   display: inline-block;
   border-radius: 0; }
@@ -5960,7 +5965,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .taxonomy-meeting_type .content-filter li:focus,
   .taxonomy-meeting_tag .content-filter li:focus,
   .taxonomy-proposal_status .content-filter li:focus {
-    background: #919191;
+    background: #95999c;
     color: #fff !important; }
 
 .entry-content blockquote.alignleft, .entry-content blockquote.alignright,
@@ -6034,7 +6039,7 @@ h1 {
   margin: 0.67em 0; }
 
 mark {
-  background: #aaaaaa;
+  background: #C7CCCF;
   color: #fff; }
 
 small {
@@ -6164,7 +6169,7 @@ input,
 select,
 textarea,
 li {
-  color: #444444;
+  color: #54595C;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14.4px;
   font-size: 0.9rem;
@@ -6194,7 +6199,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #16516b;
+  color: #2C3E50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
@@ -6282,7 +6287,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #aaaaaa;
+  background: #C7CCCF;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -6302,7 +6307,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #aaaaaa;
+  background: #C7CCCF;
   text-decoration: none; }
 
 big {
@@ -6336,14 +6341,14 @@ blockquote, q {
     content: ""; }
 
 a {
-  color: #16516b; }
+  color: #2C3E50; }
   a:hover, a:focus {
-    color: #051116; }
+    color: #080b0e; }
   a.active, a.current {
-    color: #16516b; }
+    color: #2C3E50; }
 
 hr {
-  background-color: #f7f7f7;
+  background-color: #EDF2F5;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -6381,7 +6386,7 @@ table {
 .entry-meta,
 .meta,
 .pagination {
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 time.updated {
   clip: rect(1px, 1px, 1px, 1px);
@@ -6439,10 +6444,10 @@ time.updated {
 .comment-content .entry-meta,
 .comment-content .meta,
 .comment-content .pagination {
-  border-top: 1px solid #f7f7f7;
+  border-top: 1px solid #EDF2F5;
   margin-top: 0.25em;
   padding-top: 0.25em;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #EDF2F5;
   margin-bottom: 0.25em;
   padding-bottom: 0.25em; }
 
@@ -6478,7 +6483,7 @@ SIDEBARS & ASIDES
 .widget, article.handbook .table-of-contents {
   margin: 0 0 12px;
   border-radius: 0;
-  color: #aaaaaa; }
+  color: #A1A6A9; }
   .widget .wrap, article.handbook .table-of-contents .wrap {
     padding: 1.5em; }
     .widget .wrap:after, article.handbook .table-of-contents .wrap:after {
@@ -6493,11 +6498,11 @@ SIDEBARS & ASIDES
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 300;
-    color: #16516b; }
+    color: #2C3E50; }
   .widget a, article.handbook .table-of-contents a {
     display: block;
     padding: 0.5em 0;
-    color: #aaaaaa; }
+    color: #A1A6A9; }
     .widget a:hover, article.handbook .table-of-contents a:hover, .widget a:focus, article.handbook .table-of-contents a:focus {
       text-decoration: none; }
   .widget ul, article.handbook .table-of-contents ul {
@@ -6513,7 +6518,7 @@ SIDEBARS & ASIDES
     line-height: 1.3;
     display: block;
     padding: .25em;
-    color: #aaaaaa;
+    color: #A1A6A9;
     /* deep nesting */ }
     .widget li ul, article.handbook .table-of-contents li ul {
       margin: 0;
@@ -6591,11 +6596,11 @@ SIDEBARS & ASIDES
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-    background-color: #aaaaaa;
+    background-color: #C7CCCF;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #16516b;
+    color: #2C3E50;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -7128,33 +7133,33 @@ body {
   padding: 1.5em;
   border-top: 5px solid rgba(17, 17, 17, 0.2);
   border-bottom: 5px solid rgba(17, 17, 17, 0.2);
-  background-color: #f7f7f7;
+  background-color: #EDF2F5;
   border-radius: 0;
   text-align: center; }
   .home .entry.intro-content button {
     color: #fff;
-    background-color: #777777;
-    border-color: rgba(119, 119, 119, 0.2); }
+    background-color: #7B8083;
+    border-color: rgba(123, 128, 131, 0.2); }
     .home .entry.intro-content button:focus, .home .entry.intro-content button.focus {
       color: #fff;
-      background-color: #5e5e5e;
-      border-color: rgba(55, 55, 55, 0.2); }
+      background-color: #626669;
+      border-color: rgba(61, 64, 65, 0.2); }
     .home .entry.intro-content button:hover {
       color: #fff;
-      background-color: #5e5e5e;
-      border-color: rgba(88, 88, 88, 0.2); }
+      background-color: #626669;
+      border-color: rgba(93, 97, 99, 0.2); }
     .home .entry.intro-content button:active, .home .entry.intro-content button.active,
     .open > .home .entry.intro-content button.dropdown-toggle {
       color: #fff;
-      background-color: #5e5e5e;
-      border-color: rgba(88, 88, 88, 0.2); }
+      background-color: #626669;
+      border-color: rgba(93, 97, 99, 0.2); }
       .home .entry.intro-content button:active:hover, .home .entry.intro-content button:active:focus, .home .entry.intro-content button:active.focus, .home .entry.intro-content button.active:hover, .home .entry.intro-content button.active:focus, .home .entry.intro-content button.active.focus,
       .open > .home .entry.intro-content button.dropdown-toggle:hover,
       .open > .home .entry.intro-content button.dropdown-toggle:focus,
       .open > .home .entry.intro-content button.dropdown-toggle.focus {
         color: #fff;
-        background-color: #4c4c4c;
-        border-color: rgba(55, 55, 55, 0.2); }
+        background-color: #515456;
+        border-color: rgba(61, 64, 65, 0.2); }
     .home .entry.intro-content button:active, .home .entry.intro-content button.active,
     .open > .home .entry.intro-content button.dropdown-toggle {
       background-image: none; }
@@ -7162,12 +7167,12 @@ body {
     fieldset[disabled] .home .entry.intro-content button:hover,
     fieldset[disabled] .home .entry.intro-content button:focus,
     fieldset[disabled] .home .entry.intro-content button.focus {
-      background-color: #777777;
-      border-color: rgba(119, 119, 119, 0.2); }
+      background-color: #7B8083;
+      border-color: rgba(123, 128, 131, 0.2); }
     .home .entry.intro-content button .badge, .home .entry.intro-content button #buddypress a span, #buddypress a .home .entry.intro-content button span, .home .entry.intro-content button
     #bbpress-forums a span,
     #bbpress-forums a .home .entry.intro-content button span {
-      color: #777777;
+      color: #7B8083;
       background-color: #fff; }
   @media screen and (min-width: 768px) {
     .home .entry.intro-content {
@@ -7205,7 +7210,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 .nav-links .nav-next:after {
   margin-left: .5em;
@@ -7215,7 +7220,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 /*--------------------------------------------------------------
 ## Menus
@@ -7279,7 +7284,7 @@ body {
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #aaaaaa; }
+        color: #C7CCCF; }
       .social-links ul a:before {
         margin-top: 8px;
         height: 33px;
@@ -7300,7 +7305,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="codepen.io"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7308,7 +7313,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="digg.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7316,7 +7321,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="dribbble.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7324,7 +7329,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="dropbox.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7332,7 +7337,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="facebook.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7340,7 +7345,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="flickr.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7348,7 +7353,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="foursquare.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7356,7 +7361,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="plus.google.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7364,7 +7369,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="github.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7372,7 +7377,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="instagram.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7380,7 +7385,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="linkedin.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7388,7 +7393,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="pinterest.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7396,7 +7401,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="getpocket.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7404,7 +7409,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="reddit.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7412,7 +7417,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="skype.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7420,7 +7425,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="stumbleupon.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7428,7 +7433,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="tumblr.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7436,7 +7441,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="twitter.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7444,7 +7449,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="vimeo.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7452,7 +7457,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="wordpress.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7460,7 +7465,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="wordpress.org"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7468,7 +7473,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="youtube.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7476,7 +7481,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href^="mailto:"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7484,7 +7489,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="spotify.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7492,7 +7497,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href*="twitch.tv"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7500,7 +7505,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .social-links ul a[href$="/feed/"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7508,7 +7513,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
 
 /**
  * Main Navigation Styles
@@ -7536,7 +7541,7 @@ body {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #aaaaaa; }
+    color: #C7CCCF; }
 
 /**
  * Main Navigation States
@@ -7586,7 +7591,7 @@ body {
 .comment-navigation {
   border-top: 1px solid rgba(17, 17, 17, 0.2);
   border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 .site-header-menu {
   display: none;
@@ -7706,8 +7711,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   color: #fff;
-  background-color: #777777;
-  border-color: rgba(119, 119, 119, 0.2); }
+  background-color: #7B8083;
+  border-color: rgba(123, 128, 131, 0.2); }
   button:focus, button.focus,
   .button:not(.wpb_button_a):focus,
   .button:not(.wpb_button_a).focus,
@@ -7718,16 +7723,16 @@ input[type="submit"] {
   input[type="submit"]:focus,
   input[type="submit"].focus {
     color: #fff;
-    background-color: #5e5e5e;
-    border-color: rgba(55, 55, 55, 0.2); }
+    background-color: #626669;
+    border-color: rgba(61, 64, 65, 0.2); }
   button:hover,
   .button:not(.wpb_button_a):hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     color: #fff;
-    background-color: #5e5e5e;
-    border-color: rgba(88, 88, 88, 0.2); }
+    background-color: #626669;
+    border-color: rgba(93, 97, 99, 0.2); }
   button:active, button.active,
   .open > button.dropdown-toggle,
   .button:not(.wpb_button_a):active,
@@ -7747,8 +7752,8 @@ input[type="submit"] {
   .open >
   input[type="submit"].dropdown-toggle {
     color: #fff;
-    background-color: #5e5e5e;
-    border-color: rgba(88, 88, 88, 0.2); }
+    background-color: #626669;
+    border-color: rgba(93, 97, 99, 0.2); }
     button:active:hover, button:active:focus, button:active.focus, button.active:hover, button.active:focus, button.active.focus,
     .open > button.dropdown-toggle:hover,
     .open > button.dropdown-toggle:focus,
@@ -7802,8 +7807,8 @@ input[type="submit"] {
     .open >
     input[type="submit"].dropdown-toggle.focus {
       color: #fff;
-      background-color: #4c4c4c;
-      border-color: rgba(55, 55, 55, 0.2); }
+      background-color: #515456;
+      border-color: rgba(61, 64, 65, 0.2); }
   button:active, button.active,
   .open > button.dropdown-toggle,
   .button:not(.wpb_button_a):active,
@@ -7875,8 +7880,8 @@ input[type="submit"] {
   input[type="submit"]:focus,
   fieldset[disabled]
   input[type="submit"].focus {
-    background-color: #777777;
-    border-color: rgba(119, 119, 119, 0.2); }
+    background-color: #7B8083;
+    border-color: rgba(123, 128, 131, 0.2); }
   button .badge, button #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a button span, button
   #bbpress-forums .item-list-tabs ul li a span,
   #bbpress-forums .item-list-tabs ul li a button span, button #buddypress a span, #buddypress a button span, button
@@ -7928,7 +7933,7 @@ input[type="submit"] {
   #bbpress-forums a span,
   #bbpress-forums a
   input[type="submit"] span {
-    color: #777777;
+    color: #7B8083;
     background-color: #fff; }
 
 input[type="reset"] {
@@ -7979,7 +7984,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #373737;
-  border: 1px solid #777777;
+  border: 1px solid #7B8083;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -8029,7 +8034,7 @@ a[href*="=edit"] {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #aaaaaa; }
+    color: #C7CCCF; }
 
 /*--------------------------------------------------------------
 # Plugins
@@ -8049,7 +8054,7 @@ body.buddypress h1 {
 
 #buddypress form,
 #bbpress-forums form {
-  background-color: #f7f7f7;
+  background-color: #EDF2F5;
   padding: .5em; }
 
 #buddypress ul,
@@ -8086,11 +8091,11 @@ body.buddypress h1 {
       #bbpress-forums .item-list-tabs ul li.selected,
       #bbpress-forums .item-list-tabs ul li:hover,
       #bbpress-forums .item-list-tabs ul li:focus {
-        background-color: #16516b;
+        background-color: #2C3E50;
         color: #fff; }
       #buddypress .item-list-tabs ul li:not(:last-child),
       #bbpress-forums .item-list-tabs ul li:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
       #buddypress .item-list-tabs ul li a,
       #bbpress-forums .item-list-tabs ul li a {
         display: block;
@@ -8118,24 +8123,24 @@ body.buddypress h1 {
         #buddypress .item-list-tabs ul li:not(:last-child),
         #bbpress-forums .item-list-tabs ul li:not(:last-child) {
           border-bottom: none;
-          border-right: 1px solid rgba(0, 0, 0, 0.2); } }
+          border-right: 1px solid rgba(17, 17, 17, 0.2); } }
   #buddypress .item-list-tabs#subnav,
   #bbpress-forums .item-list-tabs#subnav {
     border-bottom: 1px solid rgba(17, 17, 17, 0.1); }
     #buddypress .item-list-tabs#subnav li,
     #bbpress-forums .item-list-tabs#subnav li {
-      background-color: #f7f7f7;
-      color: #444444; }
+      background-color: #EDF2F5;
+      color: #54595C; }
       #buddypress .item-list-tabs#subnav li.active, #buddypress .item-list-tabs#subnav li.selected, #buddypress .item-list-tabs#subnav li:hover, #buddypress .item-list-tabs#subnav li:focus,
       #bbpress-forums .item-list-tabs#subnav li.active,
       #bbpress-forums .item-list-tabs#subnav li.selected,
       #bbpress-forums .item-list-tabs#subnav li:hover,
       #bbpress-forums .item-list-tabs#subnav li:focus {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(17, 17, 17, 0.2);
         color: #fff; }
       #buddypress .item-list-tabs#subnav li a,
       #bbpress-forums .item-list-tabs#subnav li a {
-        color: #444444; }
+        color: #54595C; }
       #buddypress .item-list-tabs#subnav li#activity-filter-select,
       #bbpress-forums .item-list-tabs#subnav li#activity-filter-select {
         text-align: center; }
@@ -8144,7 +8149,7 @@ body.buddypress h1 {
     background-color: #008Eb0; }
     #buddypress .item-list-tabs#group-create-tabs ul li.current,
     #bbpress-forums .item-list-tabs#group-create-tabs ul li.current {
-      background-color: #16516b; }
+      background-color: #2C3E50; }
 
 #buddypress .item-body,
 #bbpress-forums .item-body {
@@ -8180,10 +8185,10 @@ body.buddypress h1 {
     font-weight: 500; }
   #buddypress .item-list li .activity,
   #bbpress-forums .item-list li .activity {
-    color: #aaaaaa; }
+    color: #C7CCCF; }
   #buddypress .item-list li li,
   #bbpress-forums .item-list li li {
-    background-color: rgba(22, 81, 107, 0.05);
+    background-color: rgba(44, 62, 80, 0.05);
     padding: .25em; }
 
 #buddypress .item-list > li:not(:first-child),
@@ -8233,7 +8238,7 @@ body.buddypress h1 {
   list-style: none; }
   #buddypress .forums .bbp-body .bbp-reply-header,
   #bbpress-forums .forums .bbp-body .bbp-reply-header {
-    background-color: #f7f7f7;
+    background-color: #EDF2F5;
     padding: .5em .25em; }
   #buddypress .forums .bbp-body .bbp-reply-author,
   #bbpress-forums .forums .bbp-body .bbp-reply-author {
@@ -8352,7 +8357,7 @@ body.buddypress h1 {
       #bbpress-forums #members-dir-list .item-header-content table tr td.activity {
         display: block;
         border: none;
-        background-color: #6cbde1;
+        background-color: #8aa4be;
         font-size: 16px;
         font-size: 1rem;
         color: #fff;
@@ -8411,10 +8416,10 @@ body.buddypress h1 {
   font-size: 0.875rem;
   text-align: center;
   background-color: transparent;
-  color: #aaaaaa !important;
+  color: #C7CCCF !important;
   display: inline-block;
   border-radius: 0.125em;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #C7CCCF;
   padding: .25em; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .group-button a:hover,
@@ -8432,7 +8437,7 @@ body.buddypress h1 {
   #bbpress-forums .acomment-options a:hover,
   #bbpress-forums .acomment-options a:focus {
     background: rgba(26, 26, 26, 0);
-    color: #aaaaaa !important; }
+    color: #C7CCCF !important; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .group-button a:hover,
   #buddypress .group-button a:focus,
@@ -8464,7 +8469,7 @@ body.buddypress h1 {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #aaaaaa; }
+    color: #C7CCCF; }
   #buddypress .row-actions a:before,
   #buddypress .group-button a:before,
   #buddypress .activity-meta a:before,
@@ -8489,10 +8494,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .group-button a[href$="document-title/"]:hover,
@@ -8510,7 +8515,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
     #bbpress-forums .acomment-options a[href$="document-title/"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .group-button a[href$="document-title/"]:hover,
     #buddypress .group-button a[href$="document-title/"]:focus,
@@ -8542,7 +8547,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a[href$="document-title/"]:before,
     #buddypress .group-button a[href$="document-title/"]:before,
     #buddypress .activity-meta a[href$="document-title/"]:before,
@@ -8567,10 +8572,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .group-button a[href$="edit/"]:hover,
@@ -8588,7 +8593,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="edit/"]:hover,
     #bbpress-forums .acomment-options a[href$="edit/"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .group-button a[href$="edit/"]:hover,
     #buddypress .group-button a[href$="edit/"]:focus,
@@ -8620,7 +8625,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a[href$="edit/"]:before,
     #buddypress .group-button a[href$="edit/"]:before,
     #buddypress .activity-meta a[href$="edit/"]:before,
@@ -8645,10 +8650,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .group-button a[href$="history"]:hover,
@@ -8666,7 +8671,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="history"]:hover,
     #bbpress-forums .acomment-options a[href$="history"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .group-button a[href$="history"]:hover,
     #buddypress .group-button a[href$="history"]:focus,
@@ -8698,7 +8703,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a[href$="history"]:before,
     #buddypress .group-button a[href$="history"]:before,
     #buddypress .activity-meta a[href$="history"]:before,
@@ -8723,10 +8728,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .group-button a.leave-group:hover,
@@ -8744,7 +8749,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:hover,
     #bbpress-forums .acomment-options a.leave-group:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .group-button a.leave-group:hover,
     #buddypress .group-button a.leave-group:focus,
@@ -8776,7 +8781,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .group-button a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
@@ -8801,10 +8806,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .group-button a.acomment-reply:hover,
@@ -8822,7 +8827,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-reply:hover,
     #bbpress-forums .acomment-options a.acomment-reply:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .group-button a.acomment-reply:hover,
     #buddypress .group-button a.acomment-reply:focus,
@@ -8854,7 +8859,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a.acomment-reply:before,
     #buddypress .group-button a.acomment-reply:before,
     #buddypress .activity-meta a.acomment-reply:before,
@@ -8879,10 +8884,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .group-button a.fav:hover,
@@ -8900,7 +8905,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.fav:hover,
     #bbpress-forums .acomment-options a.fav:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .group-button a.fav:hover,
     #buddypress .group-button a.fav:focus,
@@ -8932,7 +8937,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a.fav:before,
     #buddypress .group-button a.fav:before,
     #buddypress .activity-meta a.fav:before,
@@ -8960,7 +8965,7 @@ body.buddypress h1 {
     color: #eb6361 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
     #buddypress .group-button a.unfav:hover,
@@ -9042,10 +9047,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .group-button a.delete-activity:hover,
@@ -9077,7 +9082,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-delete:hover,
     #bbpress-forums .acomment-options a.acomment-delete:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .group-button a.delete-activity:hover,
     #buddypress .group-button a.delete-activity:focus,
@@ -9130,7 +9135,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
     #buddypress .group-button a.delete-activity:before,
     #buddypress .group-button a.acomment-delete:before,
@@ -9162,10 +9167,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .group-button a.unlink-from-group:hover,
@@ -9183,7 +9188,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unlink-from-group:hover,
     #bbpress-forums .acomment-options a.unlink-from-group:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .group-button a.unlink-from-group:hover,
     #buddypress .group-button a.unlink-from-group:focus,
@@ -9215,7 +9220,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress .row-actions a.unlink-from-group:before,
     #buddypress .group-button a.unlink-from-group:before,
     #buddypress .activity-meta a.unlink-from-group:before,
@@ -9245,7 +9250,7 @@ body.buddypress h1 {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 #buddypress #favorite-toggle .is-favorite a:before,
 #bbpress-forums #favorite-toggle .is-favorite a:before {
@@ -9267,7 +9272,7 @@ body.buddypress h1 {
   font-size: 0.875rem;
   text-align: center;
   background-color: transparent;
-  color: #444444 !important;
+  color: #54595C !important;
   display: inline-block;
   border-radius: 0;
   border: 1px solid transparent;
@@ -9276,7 +9281,7 @@ body.buddypress h1 {
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
     background: rgba(26, 26, 26, 0);
-    color: #444444 !important; }
+    color: #54595C !important; }
   #buddypress #bp-create-doc-button:hover, #buddypress #bp-create-doc-button:focus,
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
@@ -9290,7 +9295,7 @@ body.buddypress h1 {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #444444; }
+    color: #54595C; }
   #buddypress #bp-create-doc-button:before,
   #bbpress-forums #bp-create-doc-button:before {
     margin-right: 4px; }
@@ -9311,10 +9316,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
     #buddypress #members-dir-list .small > a.member-ban:hover,
@@ -9324,7 +9329,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-ban:hover,
     #bbpress-forums #members-dir-list .small > a.member-ban:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
     #buddypress #members-dir-list .small > a.member-ban:hover,
     #buddypress #members-dir-list .small > a.member-ban:focus,
@@ -9344,7 +9349,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress #members-list .small > a.member-ban:before,
     #buddypress #members-dir-list .small > a.member-ban:before,
     #bbpress-forums #members-list .small > a.member-ban:before,
@@ -9361,10 +9366,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
@@ -9374,7 +9379,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
@@ -9394,7 +9399,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress #members-list .small > a.member-promote-to-mod:before,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
     #bbpress-forums #members-list .small > a.member-promote-to-mod:before,
@@ -9411,10 +9416,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
@@ -9424,7 +9429,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:focus,
@@ -9444,7 +9449,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress #members-list .small > a.member-promote-to-admin:before,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:before,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:before,
@@ -9461,10 +9466,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #aaaaaa !important;
+    color: #C7CCCF !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #C7CCCF;
     padding: .25em; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
     #buddypress #members-dir-list .small > a.confirm:hover,
@@ -9474,7 +9479,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.confirm:hover,
     #bbpress-forums #members-dir-list .small > a.confirm:focus {
       background: rgba(26, 26, 26, 0);
-      color: #aaaaaa !important; }
+      color: #C7CCCF !important; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
     #buddypress #members-dir-list .small > a.confirm:hover,
     #buddypress #members-dir-list .small > a.confirm:focus,
@@ -9494,7 +9499,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     #buddypress #members-list .small > a.confirm:before,
     #buddypress #members-dir-list .small > a.confirm:before,
     #bbpress-forums #members-list .small > a.confirm:before,
@@ -9540,7 +9545,7 @@ body.buddypress h1 {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 .widget.buddypress, article.handbook .buddypress.table-of-contents {
   text-align: center; }
@@ -9657,7 +9662,7 @@ EVENT ORGANISER
 .event-list .event-location {
   font-size: 16px;
   font-size: 1rem;
-  color: #777777;
+  color: #7B8083;
   margin-bottom: 1em; }
   .event-list .event-location span {
     display: block; }
@@ -9779,7 +9784,7 @@ EVENT ORGANISER
 
 .single-event .meta-label,
 .singular-event .meta-label {
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 .single-event .event-map,
 .singular-event .event-map {
@@ -9840,7 +9845,7 @@ ul.event-categories {
   content: ' - '; }
 
 .home-modules .events-list ul li {
-  background: #16516b;
+  background: #2C3E50;
   color: #fff;
   max-height: 100px;
   overflow: hidden;
@@ -9860,7 +9865,7 @@ ul.event-categories {
       float: left;
       width: 50%; } }
   .home-modules .events-list ul li:hover {
-    background: #777777;
+    background: #7B8083;
     cursor: pointer; }
 
 .home-modules .events-list ul .event-promo,
@@ -9947,7 +9952,7 @@ article.handbook a.anchor {
   width: 0; }
   article.handbook a.anchor:before {
     opacity: 1;
-    color: #16516b; }
+    color: #2C3E50; }
   article.handbook a.anchor:hover, article.handbook a.anchor:focus {
     color: transparent;
     border-bottom: none;
@@ -9959,7 +9964,7 @@ article.handbook .toc-jump a {
   width: 0; }
   article.handbook .toc-jump a:before {
     opacity: 1;
-    color: #16516b;
+    color: #2C3E50;
     font-size: 2.75em; }
   article.handbook .toc-jump a:hover, article.handbook .toc-jump a:focus {
     color: transparent;
@@ -9978,7 +9983,7 @@ article.handbook .table-of-contents {
   article.handbook .table-of-contents a:hover {
     padding-left: 15px;
     padding-right: 5px;
-    background: #444444;
+    background: #54595C;
     background: rgba(0, 0, 0, 0.1); }
 
 /*********************
@@ -10073,7 +10078,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .archive-meeting .entry .connected-content li.summary-link:before, .archive-meeting .entry .connected-content li.meeting-link:before,
     .archive-agenda .entry .connected-content li.summary-link:before,
     .archive-agenda .entry .connected-content li.meeting-link:before,
@@ -10094,7 +10099,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
     .archive-meeting .entry .connected-content li.proposal-link:before,
     .archive-agenda .entry .connected-content li.proposal-link:before,
     .archive-summary .entry .connected-content li.proposal-link:before,
@@ -10109,7 +10114,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #aaaaaa; }
+      color: #C7CCCF; }
 
 .archive-meeting .entry .tags:before,
 .archive-agenda .entry .tags:before,
@@ -10125,7 +10130,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #aaaaaa; }
+  color: #C7CCCF; }
 
 .archive-meeting .entry .article-footer,
 .archive-agenda .entry .article-footer,
@@ -10251,7 +10256,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article .entry-content .connected-content li::before,
     .single-summary article .entry-content .connected-content li::before {
       margin-right: .125em;
-      color: #777777;
+      color: #7B8083;
       font-weight: normal; }
   .single-meeting article .entry-content .post-content h2,
   .single-proposal article .entry-content .post-content h2,
@@ -10276,7 +10281,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .single-summary article .post-footer {
   margin: 1em 0 .5em 0;
   padding: .5em 0;
-  border-bottom: 1px solid #aaaaaa; }
+  border-bottom: 1px solid #C7CCCF; }
   .single-meeting article .post-footer .meta,
   .single-proposal article .post-footer .meta,
   .single-agenda article .post-footer .meta,
@@ -10285,8 +10290,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
     padding-top: .75em;
     margin-bottom: .5em;
     padding-bottom: .75em;
-    border-top: 1px solid #aaaaaa;
-    border-bottom: 1px solid #aaaaaa; }
+    border-top: 1px solid #C7CCCF;
+    border-bottom: 1px solid #C7CCCF; }
   .single-meeting article .post-footer h3,
   .single-proposal article .post-footer h3,
   .single-agenda article .post-footer h3,
@@ -10362,7 +10367,7 @@ article.handbook .so-panel.table-of-contents {
     background-color: transparent; }
 
 .so-widget-sow-post-carousel h3 a {
-  color: #444444;
+  color: #54595C;
   font-weight: 300; }
 
 .so-widget-sow-post-carousel .sow-carousel-thumbnail {
@@ -10370,16 +10375,16 @@ article.handbook .so-panel.table-of-contents {
 
 .so-widget-sow-post-carousel a.sow-carousel-next,
 .so-widget-sow-post-carousel a.sow-carousel-previous {
-  background-color: #16516b;
+  background-color: #2C3E50;
   border-radius: 0; }
   .so-widget-sow-post-carousel a.sow-carousel-next:hover, .so-widget-sow-post-carousel a.sow-carousel-next:focus,
   .so-widget-sow-post-carousel a.sow-carousel-previous:hover,
   .so-widget-sow-post-carousel a.sow-carousel-previous:focus {
-    background-color: #051116; }
+    background-color: #080b0e; }
 
 .so-widget-sow-headline h1,
 .so-widget-sow-headline h2 {
-  color: #aaaaaa !important; }
+  color: #A1A6A9 !important; }
 
 #secondary .so-widget-sow-headline {
   color: #fff !important; }
@@ -10389,19 +10394,19 @@ article.handbook .so-panel.table-of-contents {
     color: #fff !important; }
 
 .so-widget-sow-cta .sow-cta-base {
-  background-color: #f7f7f7 !important;
+  background-color: #EDF2F5 !important;
   border-color: rgba(17, 17, 17, 0.2) !important; }
   .so-widget-sow-cta .sow-cta-base h4 {
     font-size: 36px;
     font-size: 2.25rem;
-    color: #aaaaaa !important; }
+    color: #A1A6A9 !important; }
   .so-widget-sow-cta .sow-cta-base h5 {
-    color: #aaaaaa !important; }
+    color: #A1A6A9 !important; }
   .so-widget-sow-cta .sow-cta-base .ow-button-base a .sow-icon-fontawesome {
-    color: #aaaaaa !important; }
+    color: #A1A6A9 !important; }
 
 #secondary .sow-cta-base {
-  background-color: #16516b !important;
+  background-color: #2C3E50 !important;
   border-color: rgba(17, 17, 17, 0.5) !important;
   color: #fff !important; }
   #secondary .sow-cta-base h4 {
@@ -10425,7 +10430,7 @@ article.handbook .so-panel.table-of-contents {
   background-position: top; }
 
 .so-widget-sow-slider .sow-slide-nav a {
-  color: #16516b !important; }
+  color: #2C3E50 !important; }
 
 .so-widget-sow-hero .sow-slider-image-wrapper {
   padding: 1em; }
@@ -10633,11 +10638,11 @@ NETWORK CONTENT
  */
 body {
   background-color: transparent;
-  color: #444444; }
+  color: #54595C; }
   body a {
-    color: #16516b; }
+    color: #2C3E50; }
     body a:hover, body a:focus, body a:active {
-      color: #051116; }
+      color: #080b0e; }
     body a:focus {
       outline: thin dotted; }
     body a:hover, body a:active {
@@ -10650,17 +10655,17 @@ body {
   background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #444444; }
+  color: #54595C; }
   #masthead .site-branding .site-title,
   #masthead .site-branding .site-title a,
   #masthead .site-branding .site-description {
-    color: #444444; }
+    color: #54595C; }
 
 #masthead .custom-header {
   background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #444444; }
+  color: #54595C; }
 
 #masthead .main-navigation.toggled {
   background-color: #fff; }
@@ -10679,13 +10684,13 @@ body {
       color: rgba(17, 17, 17, 0.6); }
   #masthead .main-navigation ul a {
     border-radius: 0;
-    color: #444444; }
+    color: #54595C; }
     #masthead .main-navigation ul a:hover, #masthead .main-navigation ul a:focus {
       background-color: rgba(17, 17, 17, 0.1);
       color: rgba(17, 17, 17, 0.6); }
   #masthead .main-navigation ul .current-menu-item > a,
   #masthead .main-navigation ul .current-menu-ancestor > a {
-    color: #444444; }
+    color: #54595C; }
 
 @media screen and (min-width: 768px) {
   #masthead .main-navigation {
@@ -10706,9 +10711,9 @@ body {
 #masthead .social-links a {
   border: 1px solid #008Eb0;
   border-radius: 50%;
-  color: #16516b; }
+  color: #2C3E50; }
   #masthead .social-links a:before {
-    color: #16516b; }
+    color: #2C3E50; }
   #masthead .social-links a:hover, #masthead .social-links a:focus {
     background-color: rbga(0, 0, 0, 0.2); }
 
@@ -10720,13 +10725,13 @@ body {
  */
 #content .content-area {
   background-color: transparent;
-  color: #444444; }
+  color: #54595C; }
 
 /**
  * Footer elements color
  */
 #colophon .footer-widgets {
-  background-color: #aaaaaa; }
+  background-color: #C7CCCF; }
 
 #colophon .bottom-navigation,
 #colophon .copyright {
@@ -10745,15 +10750,15 @@ body {
   color: #fff; }
 
 #colophon .copyright {
-  background-color: #16516b;
+  background-color: #2C3E50;
   color: #fff; }
 
 .entry {
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #EDF2F5;
   margin-bottom: 1em;
   padding-bottom: 1em; }
   .entry .entry-footer {
-    border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #EDF2F5;
     margin-top: 1em;
     padding-top: 1em; }
 
@@ -10761,7 +10766,7 @@ body {
  * Primary Sidebar Styles
  */
 #secondary .wrap {
-  background-color: #16516b;
+  background-color: #2C3E50;
   border-color: rgba(17, 17, 17, 0.5);
   border-radius: 0;
   color: #fff; }
@@ -10798,7 +10803,7 @@ body {
  */
 .content-widgets .wrap,
 .home-widgets .wrap {
-  background-color: #f7f7f7;
+  background-color: #EDF2F5;
   border-color: rgba(17, 17, 17, 0.2);
   border-radius: 0; }
 
@@ -10806,7 +10811,7 @@ body {
 .home-widgets .widget,
 .home-widgets article.handbook .table-of-contents, article.handbook
 .home-widgets .table-of-contents {
-  color: #aaaaaa; }
+  color: #A1A6A9; }
   .content-widgets .widget h3.widgettitle, article.handbook .table-of-contents .content-widgets .widget h3, .content-widgets article.handbook .table-of-contents h3, article.handbook .content-widgets .table-of-contents h3,
   .content-widgets .widget h3.widget-title,
   .content-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
@@ -10818,17 +10823,17 @@ body {
   .home-widgets .widget h3.widget-title,
   .home-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
   .home-widgets .table-of-contents h3.widget-title {
-    color: #16516b; }
+    color: #2C3E50; }
   .content-widgets .widget .entry-meta, .content-widgets article.handbook .table-of-contents .entry-meta, article.handbook .content-widgets .table-of-contents .entry-meta,
   .home-widgets .widget .entry-meta,
   .home-widgets article.handbook .table-of-contents .entry-meta, article.handbook
   .home-widgets .table-of-contents .entry-meta {
-    color: #aaaaaa; }
+    color: #C7CCCF; }
   .content-widgets .widget a, .content-widgets article.handbook .table-of-contents a, article.handbook .content-widgets .table-of-contents a,
   .home-widgets .widget a,
   .home-widgets article.handbook .table-of-contents a, article.handbook
   .home-widgets .table-of-contents a {
-    color: #16516b; }
+    color: #2C3E50; }
     .content-widgets .widget a:hover, .content-widgets article.handbook .table-of-contents a:hover, article.handbook .content-widgets .table-of-contents a:hover, .content-widgets .widget a:focus, .content-widgets article.handbook .table-of-contents a:focus, article.handbook .content-widgets .table-of-contents a:focus,
     .home-widgets .widget a:hover,
     .home-widgets article.handbook .table-of-contents a:hover, article.handbook
@@ -10836,12 +10841,12 @@ body {
     .home-widgets .widget a:focus,
     .home-widgets article.handbook .table-of-contents a:focus, article.handbook
     .home-widgets .table-of-contents a:focus {
-      color: #051116; }
+      color: #080b0e; }
   .content-widgets .widget .entry-content, .content-widgets article.handbook .table-of-contents .entry-content, article.handbook .content-widgets .table-of-contents .entry-content,
   .home-widgets .widget .entry-content,
   .home-widgets article.handbook .table-of-contents .entry-content, article.handbook
   .home-widgets .table-of-contents .entry-content {
-    color: #aaaaaa; }
+    color: #A1A6A9; }
   .content-widgets .widget ul, .content-widgets article.handbook .table-of-contents ul, article.handbook .content-widgets .table-of-contents ul,
   .home-widgets .widget ul,
   .home-widgets article.handbook .table-of-contents ul, article.handbook
@@ -10857,7 +10862,7 @@ body {
     .home-widgets .widget li li,
     .home-widgets article.handbook .table-of-contents li li, article.handbook
     .home-widgets .table-of-contents li li {
-      color: #aaaaaa; }
+      color: #A1A6A9; }
 
 /**
  * Footer Widgets
