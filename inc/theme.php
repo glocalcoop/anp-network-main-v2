@@ -206,3 +206,20 @@ if( function_exists( 'bp_core_get_userlink' ) ) {
   add_action( 'eventorganiser_additional_event_meta', 'anp_event_author' );
 
 }
+
+/**
+ * Display BuddyPress Attribution
+ */
+if( !function_exists( 'anp_buddypress_attribution' ) ) {
+
+  function anp_buddypress_attribution() {
+
+
+    echo '<div class="buddypress-attribution"><a href="https://buddypress.org/" target="_blank" rel="author">Powered By BuddyPress</a></div>';
+
+  }
+
+  add_action( 'anp_buddypress_main_bottom', 'anp_buddypress_attribution' );
+
+}
+

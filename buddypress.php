@@ -19,13 +19,17 @@ get_header(); ?>
 
         <?php do_action ( 'anp_network_main_site_main_top' );?>
 
+        <?php do_action ( 'anp_buddypress_main_top' );?>
+
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <?php get_template_part( 'template-parts/content', 'buddypress' ); ?>
 
             <?php endwhile; // End of the loop. ?>
 
-        <?php do_action ( 'anp_network_main_site_main_top' );?>
+        <?php do_action ( 'anp_buddypress_main_bottom' );?>
+
+        <?php do_action ( 'anp_network_main_site_main_bottom' );?>
 
         <?php do_action ( 'anp_network_main_buddypress_site_main_bottom' );?>
 
