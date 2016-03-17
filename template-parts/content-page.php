@@ -15,8 +15,7 @@
 
 		<?php do_action ( 'anp_network_main_entry_header_top' );?>
 
-		<?php the_title( '<h1 class="en
-		try-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
 
