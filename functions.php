@@ -16,9 +16,14 @@ require get_template_directory() . '/inc/setup.php';
 include_once( get_template_directory() . '/inc/hybrid.php' );
 
 /**
- * Include Kirki Customizer framework
+ * Recommend the Kirki plugin
  */
-include_once( dirname( __FILE__ ) . '/inc/kirki/kirki.php' );
+require get_template_directory() . '/inc/include-kirki.php';
+
+/**
+ * Load the Kirki Fallback class
+ */
+require get_template_directory() . '/inc/kirki-fallback.php';
 
 /**
  * Implement the Custom Header feature.

@@ -45,16 +45,16 @@ body.buddypress {
 
             li {
                 padding: .5em .125em;
-                background-color: $color__secondary;
-                color: $color__text-nav-alt;
+                background-color: rgba($color__black,.2);
+                color: text-color( rgba($color__black,.2) );
                 text-align: center;
 
                 &.active,
                 &.selected,
                 &:hover,
                 &:focus {
-                    background-color: $color__background-nav-alt;
-                    color: $color__text-nav-hover-alt;
+                    background-color: $color__secondary;
+                    color: text-color( $color__secondary );
                 }
 
                 &:not(:last-child) {
@@ -71,7 +71,7 @@ body.buddypress {
                     }
 
                     span {
-                        @extend .badge;
+                        @include badge;
                     }
                 }
 
@@ -143,6 +143,10 @@ body.buddypress {
         margin-top: .5em;
     }
 
+    .item-meta {
+        color: $color__text-meta;
+    }
+
     // Lists
     .item-list {
         @extend .media-list;
@@ -186,9 +190,7 @@ body.buddypress {
                 font-weight: 500;
             }
 
-            .activity {
-                color: $color__text-light;
-            }
+            .activity {}
 
             li {
                 background-color: rgba($color__primary, .05);
@@ -249,7 +251,6 @@ body.buddypress {
                 @extend .pull-right;
             }
             .bbp-reply-header {
-                background-color: $color__background-panel;
                 padding: .5em .25em;
             }
 
@@ -436,7 +437,7 @@ body.buddypress {
     // Badges
     a {
         span {
-            @extend .badge;
+            @include badge;
 
         }
     }
@@ -450,37 +451,37 @@ body.buddypress {
             @include button-icon($color: $color__text-light, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
 
             &[href$="document-title/"] {
-                @include button-icon($color: $color__light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &[href$="edit/"] {
-                @include button-icon($color: $color__light-grey, $icon: pencil, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &[href$="history"] {
-                @include button-icon($color: $color__light-grey, $icon: history, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: history, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.leave-group {
-                @include button-icon($color: $color__light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.acomment-reply {
-                @include button-icon($color: $color__light-grey, $icon: reply, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: reply, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.fav {
-                @include button-icon($color: $color__light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.unfav {
                 @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.delete-activity,
             &.acomment-delete {
-                @include button-icon($color: $color__light-grey, $icon: trash, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: trash, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
             &.unlink-from-group {
-                @include button-icon($color: $color__light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
             }
 
             // Comment Badge
             span {
-                @include font-size($smaller);
+                @include badge;
             }
         }
     }
@@ -507,16 +508,16 @@ body.buddypress {
             display: block;
             &> a {
                 &.member-ban {
-                    @include button-icon($color: $color__light-grey, $icon: ban, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: ban, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
                 &.member-promote-to-mod {
-                    @include button-icon($color: $color__light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
                 &.member-promote-to-admin {
-                     @include button-icon($color: $color__light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                     @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
                 &.confirm {
-                    @include button-icon($color: $color__light-grey, $icon: times, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: times, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
             }
         }
@@ -621,8 +622,3 @@ body.buddypress {
     }
 }
 
-#secondary {
-    .widget.buddypress {
-        color: rgba($color__text-inverted, .4);
-    }
-}

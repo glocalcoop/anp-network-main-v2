@@ -4,71 +4,49 @@
 
 /**
  * Customizer support
- *  Branding Background 
- *  #masthead .site-branding
- * 
- *  Header Text Color (header_textcolor) 
- *  #masthead .site-branding .site-title a, 
- *  #masthead .site-branding .site-description, 
- *  #masthead .social-links a
- *      color, border-color
- *           a:before
- *               color
- * 
- *  Navigation Background Color
- *  #masthead .main-navigation, 
- *  #masthead .main-navigation ul ul
- * 
- *  Navigation Text Color
- *  #masthead .main-navigation a,  
- *  #masthead .main-navigation a &:hover, &:focus, 
- *  #masthead .main-navigation ul ul li:hover &:focus a, 
- *  #masthead .main-navigation ul .current-menu-item > a, 
- *  #masthead .main-navigation ul .current-menu-ancestor > a
- *
- *  Primary Color
- *  #secondary .wrap, 
- *  #colophon .copyright,
- *  #buddypress .item-list-tabs ul li:selected
- *
- * Primary Color Text
- * #colophon .copyright a,
- * a &:hover, &:focus, &:active, &:visited
- * #buddypress .item-list-tabs ul li:selected a
- *
- * Secondary Background Color
- * #buddypress .item-list-tabs ul li, 
- * #colophon .bottom-navigation
- *
- * Secondary Color
- *
- * Content Background Color
- * #content .content-area
-
- * Content Text Color
  */
+span:empty {
+    display: none;
+}
+
+.page-title {}
+
+.entry {
+    @include border(bottom, 1em);
+
+    .entry-footer {
+        @include border(top, 1em);
+    }
+}
+
+.entry-meta,
+.meta,
+.pagination {
+    color: $color__text-meta;
+}
+
 
 body {
     background-color: $color__background-body;
     color: $color__text-main;
+}
 
-    a {
+a {
+    color: $color__link;
+
+    &:visited {
         color: $color__link;
+    }
 
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color__link-hover;
-        }
-        &:focus {
-            outline: thin dotted;
-        }
-        &:hover,
-        &:active {
-            outline: 0;
-        }
+    &:hover,
+    &:focus {
+        color: $color__link-hover;
+    }
+    &:focus {
+        outline: thin dotted;
     }
 }
+
 
 /**
  * Header elements color
@@ -92,16 +70,17 @@ body {
         border-top-right-radius: $element__border-radius-base;
         border-top-left-radius: $element__border-radius-base;
         color: $color__text-main;
+
         img {}
     }
 
     .main-navigation {
-        &.toggled {
-            background-color: $color__background-nav;
-        }
+
+        border-top: 1px solid $color__border-nav;
+
+        &.toggled {}
 
         ul {
-            border-top: 1px solid $color__border-nav;
 
             li {
                 
@@ -110,48 +89,45 @@ body {
                 &:not(:last-child) {
                     border-bottom: 1px solid $color__border-nav;
                 }
+
+                &:hover,
+                &:focus {
+                    a {}
+                }
             }
 
             ul {
-                background-color: $color__background-nav;
                 border: none;
+
                 li {
                     &:hover,
                     &:focus {
-                        a {
-                            background-color: $color__background-nav-hover;
-                            color: $color__text-nav-hover;
-                        }
+                        a {}
                     }
                 }
             }
 
             a {
                 border-radius: $element__border-radius-base;
-                color: $color__text-nav;
                 &:hover,
                 &:focus {
                     background-color: $color__background-nav-hover;
-                    color: $color__text-nav-hover;
                 }
             }
 
             .current-menu-item > a,
             .current-menu-ancestor > a {
-                color: $color__text-nav-active;
+                font-weight: bold;
             }
 
             .nav-menu {}
         }
 
         @include breakpoint(md) {
-            background-color: $color__background-nav;
             border-radius: $element__border-radius-base;
 
             li:hover > a,
-            li:focus > a {
-                color: $color__text-nav-hover;
-            }
+            li:focus > a {}
 
             ul {
                 li:not(:last-child) {
@@ -159,6 +135,7 @@ body {
                 }
 
                 ul {
+                    background-color: $color__background-nav;
                     border-bottom: 1px solid $color__border-nav;
                     box-shadow: 2px 2px 2px $color__border-nav;
 
@@ -177,15 +154,10 @@ body {
             border: 1px solid $color__secondary;
             border-radius: 50%;
             color: $color__primary;
+
             &:before {
                 color: $color__primary;
             }
-
-            &:hover,
-            &:focus {
-                background-color: rbga(0, 0, 0, .2);
-            }
-
         }
     }
 
@@ -200,8 +172,39 @@ body {
 #content {
     .content-area {
         background-color: $color__background-content;
-        color: $color__text-main;
     }
+}
+
+/**
+ * Primary Sidebar Styles
+ */
+#secondary {
+
+    .wrap {
+        border-top: 2px solid $color__link;
+        border-bottom: 2px solid $color__link;
+    }
+
+    .widget {
+        h3.widgettitle,
+        h3.widget-title {}
+
+        .entry-meta {}
+
+        a {
+
+            &:hover,
+            &:focus {}
+        }
+
+        ul {}
+        li {
+            
+            /* deep nesting */
+            li {}
+        }
+
+    } 
 }
 
 /**
@@ -210,7 +213,13 @@ body {
 #colophon {
 
     .footer-widgets {
-        background-color: $color__highlight;
+        background-color: $color__background-body;
+
+        .wrap {
+            border-top-width: 0;
+            border-bottom-width: 0;
+            background-color: rgba($color__white, .5);
+        }
     }
 
     .bottom-navigation,
@@ -236,63 +245,11 @@ body {
     }
 }
 
-.entry {
-    @include border(bottom, 1em);
-
-    .entry-footer {
-        @include border(top, 1em);
-    }
-}
-
-/**
- * Primary Sidebar Styles
- */
-#secondary {
-
-    .wrap {
-        background-color: $color__background-widget;
-        border-color: $color__border-widget;
-        border-radius: $element__widget-radius;
-        color: $color__text-widget;
-    }
-
-    .widget {
-        h3.widgettitle,
-        h3.widget-title {
-            color: $color__text-widget-header;
-        }
-
-        .entry-meta {
-            color: $color__text-widget-header;
-        }
-
-        a {
-            color: $color__text-widget;
-
-            &:hover,
-            &:focus {
-                color: $color__text-widget;
-            }
-        }
-
-        .entry-content {
-            color: $color__text-widget;
-        }
-
-        ul {
-            border-bottom: 1px solid $color__border-widget;
-        }
-        li {
-            color: $color__text-widget;
-            border-top: 1px solid $color__border-widget;
-            
-            /* deep nesting */
-            li {
-                color: $color__text-widget;
-            }
-        }
-
-    } 
+.home .entry.intro-content {
+        border-top: 5px solid $color__primary;
+        border-bottom: 5px solid $color__primary;
+        background-color: $color__background-body;
+        border-radius: $element__border-radius-base;
 }
 
 
@@ -302,47 +259,23 @@ body {
 .content-widgets,
 .home-widgets {
 
-    .wrap {
-        background-color: $color__background-widget-alt;
-        border-color: $color__border-widget-alt;
-        border-radius: $element__widget-radius;
-    }
+    .wrap {}
 
     .widget {
-        color: $color__text-widget-alt;
 
         h3.widgettitle,
-        h3.widget-title {
-            color: $color__text-widget-header-alt;
-        }
-
-        .entry-meta {
-            color: $color__text-light;
-        }
+        h3.widget-title {}
 
         a {
-            color: $color__link;
 
             &:hover,
-            &:focus {
-                color: $color__link-hover
-            }
+            &:focus {}
         }
 
-        .entry-content {
-            color: $color__text-widget-alt;
-        }
-
-        ul {
-            border-bottom: 1px solid $color__border-widget-alt;
-        }
-        li {
-            border-top: 1px solid $color__border-widget-alt;
-            
+        ul {}
+        li {            
             /* deep nesting */
-            li {
-                color: $color__text-widget-alt;
-            }
+            li {}
         }
     }
 }
@@ -351,18 +284,8 @@ body {
  * Footer Widgets
  */
 .footer-widgets {
-    .wrap {
-        background-color: $color__white;
-        border-color: $color__border-widget-plain;
-        border-radius: $element__widget-radius;
-    }
+    .wrap {}
 }
-
-span:empty {
-    display: none;
-}
-
-.page-title {}
 
 
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */

@@ -2,8 +2,19 @@
  * Gray Color Palette
  * http://www.color-hex.com/color-palette/2280
  */
-$color__primary: #343d46; //rgb(52,61,70)
-$color__secondary: #4f5b66; //rgb(79,91,102)
-$color__tertiary: #65737e; //rgb(101,115,126)
-$color__tertiary2: #a7adba; //rgb(167,173,186)
-$color__highlight: #c0c5ce; //rgb(192,197,206)
+
+$colors__theme: (
+  'primary': #343d46, 
+  'accent': #65737e,
+  'secondary':  #4f5b66,
+  'foreground': #000,
+  'background': #fff,
+);
+
+$color__primary: color($colors__theme, 'primary');
+$color__secondary: color($colors__theme, 'secondary');
+$color__tertiary: color($colors__theme, 'accent');
+$color__accent: color($colors__theme, 'accent');
+$color__highlight: color($colors__theme, 'accent');
+$color__background: transparent;
+$color__foreground: color($colors__theme, 'foreground');

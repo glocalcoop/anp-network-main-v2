@@ -16,11 +16,14 @@ function anp_custom_style_scripts() {
 add_action( 'wp_enqueue_scripts', 'anp_custom_style_scripts' );
 
 
-if ( class_exists( 'Kirki' ) ) {
+if ( class_exists( 'ANP_Kirki' ) ) {
 
-	Kirki::add_section( 'fonts', array(
-		'title'          => esc_attr__( 'Text', 'kirki-demo' ),
-		'priority'       => 50,
+	/**
+	 * Add Section
+	 */
+	ANP_Kirki::add_section( 'fonts', array(
+		'title'          => esc_attr__( 'Typography', 'activist-network-main' ),
+		'priority'       => 40,
 		'capability'     => 'edit_theme_options',
 	) );
 
@@ -30,394 +33,465 @@ if ( class_exists( 'Kirki' ) ) {
 	 * This way all the fields using the 'anp_custom_style' ID
 	 * will inherit these options
 	 */
-	Kirki::add_config( 'anp_custom_style', array(
+	ANP_Kirki::add_config( 'anp_custom_style', array(
 		'capability'    => 'edit_theme_options',
 		'option_type'   => 'theme_mod',
 	) );
 
 	$defaults = array(
 		'copyright'			=> date('Y') . ' ' . get_bloginfo( 'name' ),
-		'color_primary'		=> '#2C3E50',
+		'color_primary'		=> '#16506B',
 		'color_accent'		=> '#008Eb0',
+		'color_background'	=> 'rgba(255,255,255,0)',
+		'color_foreground'	=> '#54595C',
 		'color_default'		=> '#54595C',
+		'color_transparent'	=> 'rgba(255,255,255,0)',
 		'screen_md'			=> '768px'
 	);
-
-	Kirki::add_field( 'anp_custom_style', array(
-		'type'        => 'textarea',
-		'settings'    => 'textarea_footer_copyright',
-		'label'       => esc_attr__( 'Copyright', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Enter content for the copyright area that appears in the footer', 'activist-network-main' ),
-		'default'     => esc_attr__( $defaults['copyright'], 'activist-network-main' ),
-		'section'     => 'title_tagline',
-		'priority'    => 500,
-	) );
-
-	Kirki::add_field( 'anp_custom_style', array(
-		'type'        => 'color-alpha',
-		'settings'    => 'color_body_textcolor',
-		'label'       => esc_attr__( 'Body Text Color', 'activist-network-main' ),
-		'description' => esc_attr__( 'Body Text Color', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Color of the main text', 'activist-network-main' ),
+	/**
+	 * Palette
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'radio-buttonset',
+		'settings'    => 'theme_palette',
+		'label'       => __( 'Palette', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => $defaults['color_default'],
+		'default'     => 'light',
 		'priority'    => 10,
-		'output'      => array(
-			array(
-				'element'  => 'body, p, li, 
-					.header-widgets li a, 
-					.header-widgets li a:hover,
-					.header-widgets li a:focus',
-				'property' => 'color',
-			),
-		),
-		'transport'   => 'postMessage',
-		'js_vars'     => array(
-			array(
-				'element'  => 'body, p, li',
-				'function' => 'css',
-				'property' => 'color',
-			),
+		'choices'     => array(
+			'monochrome'   => esc_attr__( 'Monochrome', 'activist-network-main' ),
+			'colored' => esc_attr__( 'Multi-color', 'activist-network-main' ),
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
-		'type'        => 'color',
-		'settings'    => 'color_primary',
-		'label'       => esc_attr__( 'Primary Color', 'activist-network-main' ),
-		'description' => esc_attr__( 'The primary theme color.', 'activist-network-main' ),
-		'help'        => esc_attr__( 'The primary theme color used for footer and main sidebar background, and link and header text', 'activist-network-main' ),
+	/**
+	 * Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'custom-background',
+		'label'       => esc_attr__( 'Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Site background color', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => $defaults['color_primary'],
-		'priority'    => 40,
+		'default'     => $defaults['color_background'],
+		'priority'    => 15,
 		'output'      => array(
 			array(
-				'element'  => '#secondary .wrap',
+				'element'  => 'body,
+				#colophon .bottom-navigation',
 				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
 			),
 			array(
-				'element'  => '#colophon .copyright',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.active, 
-					#buddypress .item-list-tabs ul li.selected, 
-					#buddypress .item-list-tabs ul li:hover, 
-					#buddypress .item-list-tabs ul li:focus, 
-					#bbpress-forums .item-list-tabs ul li.active, 
-					#bbpress-forums .item-list-tabs ul li.selected, 
-					#bbpress-forums .item-list-tabs ul li:hover, 
-					#bbpress-forums .item-list-tabs ul li:focus',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '.content-area a,
-					.content-area a:hover,
-					.content-area a:focus',
+				'element'  => '#colophon .bottom-navigation',
 				'property' => 'color',
-			),
-			array(
-				'element'	=> '.home-widgets .widget h3.widget-title,
-					.home-widgets .widget a,
-					.home-widgets .widget a:hover,
-					.home-widgets .widget a:focus,
-					.home-widgets .widget a:visited',
-				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_foreground'],
+	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#secondary .wrap',
+				'element'  => 'body,
+				#colophon .bottom-navigation',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '#colophon .copyright',
-				'function' => 'css',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.active, 
-					#buddypress .item-list-tabs ul li.selected, 
-					#buddypress .item-list-tabs ul li:hover, 
-					#buddypress .item-list-tabs ul li:focus, 
-					#bbpress-forums .item-list-tabs ul li.active, 
-					#bbpress-forums .item-list-tabs ul li.selected, 
-					#bbpress-forums .item-list-tabs ul li:hover, 
-					#bbpress-forums .item-list-tabs ul li:focus',
-				'function' => 'css',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '.content-area a,
-					.content-area a:hover,
-					.content-area a:focus',
+				'element'  => '#colophon .bottom-navigation',
 				'function' => 'css',
 				'property' => 'color',
 			),
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
-		'type'        => 'color',
+	/**
+	 * Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_textcolor',
+		'label'       => esc_attr__( 'Text Color', 'activist-network-main' ),
+		'description' => esc_attr__( 'Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of text.', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 20,
+		'output'      => array(
+			array(
+				'element'  => 'body, body li,
+				#colophon .bottom-navigation,
+				#buddypress .item-list-tabs ul li a,
+				#bbpress-forums .item-list-tabs ul li a',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_foreground'],
+	            ),
+			),
+			array(
+				'element'  => '#colophon .copyright',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	                $defaults['color_foreground']
+	            ),
+			),
+			array(
+				'element'  => '.home .entry.intro-content,
+				#secondary .wrap',
+				'property' => 'border-top-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+			array(
+				'element'  => '.home .entry.intro-content,
+				#secondary .wrap',
+				'property' => 'border-bottom-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => 'body, 
+				body li,
+				#colophon .bottom-navigation,
+				#buddypress .item-list-tabs ul li a,
+				#bbpress-forums .item-list-tabs ul li a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '#colophon .copyright',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+			array(
+				'element'  => '.home .entry.intro-content,
+				#secondary .wrap',
+				'function' => 'css',
+				'property' => 'border-top-color',
+			),
+			array(
+				'element'  => '.home .entry.intro-content,
+				#secondary .wrap',
+				'function' => 'css',
+				'property' => 'border-bottom-color',
+			),
+		),
+	) );
+
+	/**
+	 * Accent
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
 		'settings'    => 'color_accent',
 		'label'       => esc_attr__( 'Accent Color', 'activist-network-main' ),
 		'description' => esc_attr__( 'The accent theme color.', 'activist-network-main' ),
-		'help'        => esc_attr__( 'The accent theme color used for secondary footer', 'activist-network-main' ),
+		'help'        => esc_attr__( 'The accent theme color used for links and accent elements', 'activist-network-main' ),
 		'section'     => 'colors',
 		'default'     => $defaults['color_accent'],
-		'priority'    => 40,
+		'priority'    => 30,
 		'output'      => array(
 			array(
-				'element'  => '#colophon .bottom-navigation',
-				'property' => 'background-color',
+				'element'  => 'a,
+				a:hover,
+				a:focus,
+				a:visited,
+				#masthead .social-links a,
+				#masthead .social-links a:before,
+				#masthead .site-branding .site-description,
+				.widget h3',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
 			),
 			array(
-				'element'  => '#buddypress .item-list-tabs ul li',
-				'property' => 'background-color',
+				'element'	=> '#masthead .social-links a',
+				'property' => 'border-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
 			),
 			array(
-				'element'  => '#masthead .menu-toggle',
+				'element'  => '#masthead .menu-toggle,
+				#colophon .copyright',
 				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary']
+	            ),
+			),
+			array(
+				'element'  => '#buddypress .item-list-tabs ul li.current,
+				#bbpress-forums .item-list-tabs ul li.current,
+				#buddypress .item-list-tabs ul li.selected,
+				#bbpress-forums .item-list-tabs ul li.selected',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary']
+	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#colophon .bottom-navigation',
+				'element'  => 'a,
+				a:hover,
+				a:focus,
+				a:visited,
+				#masthead .social-links a,
+				#masthead .social-links a:before,
+				#masthead .site-branding .site-description,
+				.widget h3',
 				'function' => 'css',
-				'property' => 'background-color',
+				'property' => 'color',
 			),
 			array(
-				'element'  => '#buddypress .item-list-tabs ul li',
+				'element'  => '.home .entry.intro-content',
 				'function' => 'css',
-				'property' => 'background-color',
+				'property' => 'border-top-color',
 			),
 			array(
-				'element'  => '#buddypress .item-list-tabs ul li:selected',
+				'element'  => '.home .entry.intro-content',
 				'function' => 'css',
-				'property' => 'background-color',
+				'property' => 'border-bottom-color',
 			),
 			array(
-				'element'  => '#buddypress .item-list-tabs ul li:current',
-				'function' => 'css',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#masthead .menu-toggle',
+				'element'  => '#masthead .menu-toggle,
+				#colophon .copyright,
+				#buddypress .item-list-tabs ul li.current,
+				#bbpress-forums .item-list-tabs ul li.current,
+				#buddypress .item-list-tabs ul li.selected,
+				#bbpress-forums .item-list-tabs ul li.selected',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
-		'type'        => 'color-alpha',
-		'settings'    => 'color_content_background',
-		'label'       => esc_attr__( 'Content Background', 'activist-network-main' ),
-		'description' => esc_attr__( 'Content Area Background Color', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Color of the main content area, which is useful when there is a dark page background', 'activist-network-main' ),
-		'section'     => 'colors',
-		'default'     => '#ffffff',
-		'priority'    => 50,
-		'output'      => array(
-			array(
-				'element'  => '#content .content-area',
-				'property' => 'background-color',
-			),
-		),
-		'transport'   => 'postMessage',
-		'js_vars'     => array(
-			array(
-				'element'  => '#content .content-area',
-				'function' => 'css',
-				'property' => 'background-color',
-			),
-		),
-	) );
-
-	Kirki::add_field( 'anp_custom_style', array(
-		'type'        => 'color-alpha',
-		'settings'    => 'color_content_textcolor',
-		'label'       => esc_attr__( 'Content Color', 'activist-network-main' ),
-		'description' => esc_attr__( 'Content Text Color', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Color of text in main content area.', 'activist-network-main' ),
-		'section'     => 'colors',
-		'default'     => $defaults['color_default'],
-		'priority'    => 55,
-		'output'      => array(
-			array(
-				'element'  => '.content-area, 
-					.content-area p, 
-					.content-area li',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '.content-area h1,
-					.content-area h2, 
-					.content-area h3, 
-					.content-area h4,
-					.content-area h5',
-				'property' => 'color',
-			),
-		),
-		'transport'   => 'postMessage',
-		'js_vars'     => array(
-			array(
-				'element'  => '.content-area, .content-area p, .content-area li',
-				'function' => 'css',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '.content-area h1,
-					.content-area h2, 
-					.content-area h3, 
-					.content-area h4,
-					.content-area h5',
-				'function' => 'css',
-				'property' => 'color',
-			),
-		),
-	) );
-
-	Kirki::add_field( 'anp_custom_style', array(
+	/**
+	 * Nav Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'color',
 		'settings'    => 'color_nav_background',
 		'label'       => esc_attr__( 'Navigation Background', 'activist-network-main' ),
 		'description' => esc_attr__( 'Navigation Background Color', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Background color of the main navigation', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Background color of the main navigation and footer navigation', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => '#ffffff',
+		'default'     => $defaults['color_background'],
 		'priority'    => 60,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
 		'output'      => array(
 			array(
-				'element'  		=> '#masthead .main-navigation',
+				'element'  		=> '#masthead .main-navigation,
+				#masthead .main-navigation ul ul,
+				#colophon .bottom-navigation',
 				'media_query'	=> '@media only screen and (min-width: 768px)',
 				'property' 		=> 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
 			),
 			array(
-				'element'  => '#masthead .main-navigation-container',
+				'element'  => '#masthead .main-navigation-container,
+				#buddypress .item-list-tabs ul li,
+				#bbpress-forums .item-list-tabs ul li',
 				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#masthead .main-navigation ul ul',
-				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .main-navigation',
+				'element'  => '#masthead .main-navigation,
+				#masthead .main-navigation ul ul,
+				#colophon .bottom-navigation',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '#masthead .main-navigation-container',
+				'element'  => '#masthead .main-navigation-container,
+				#buddypress .item-list-tabs ul li,
+				#bbpress-forums .item-list-tabs ul li',
 				'function' => 'css',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#masthead .main-navigation ul ul',
 				'property' => 'background-color',
 			),
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
+	/**
+	 * Nav Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'color_nav_text',
 		'label'       => esc_attr__( 'Navigation Text', 'activist-network-main' ),
 		'description' => esc_attr__( 'Navigation Text Color', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Text color of the main navigation', 'activist-network-main', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Text color of the main navigation and footer navigation', 'activist-network-main', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => $defaults['color_default'],
+		'default'     => $defaults['color_foreground'],
 		'priority'    => 70,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .main-navigation ul a',
+				'element'  => '#masthead .main-navigation ul a,
+				#colophon .bottom-navigation a,
+				#buddypress .item-list-tabs ul li a,
+				#bbpress-forums .item-list-tabs ul li a',
 				'property' => 'color',
-			),
-			array(
-				'element'  => '#masthead .main-navigation ul .current-menu-item > a',
-				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_foreground'],
+	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .main-navigation ul a',
-				'function' => 'css',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '#masthead .main-navigation ul .current-menu-item > a',
+				'element'  => '#masthead .main-navigation ul a,
+				#colophon .bottom-navigation a,
+				#buddypress .item-list-tabs ul li a,
+				#bbpress-forums .item-list-tabs ul li a',
 				'function' => 'css',
 				'property' => 'color',
 			),
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
+	/**
+	 * Branding Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'color_branding_background',
 		'label'       => esc_attr__( 'Branding Background', 'activist-network-main' ),
 		'description' => esc_attr__( 'Branding Background Color', 'activist-network-main' ),
 		'help'        => esc_attr__( 'Color of the branding area background', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => '#ffffff',
-		'priority'    => 80,
+		'default'     => $defaults['color_background'],
+		'priority'    => 75,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding',
+				'element'  => '#masthead .site-branding,
+				#colophon .bottom-navigation',
 				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding',
+				'element'  => '#masthead .site-branding,
+				#colophon .bottom-navigation',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
+	/**
+	 * Branding Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'color-alpha',
-		'settings'    => 'color_branding_textcolor',
+		'settings'    => 'color_branding_text',
 		'label'       => esc_attr__( 'Branding Text Color', 'activist-network-main' ),
-		'description' => esc_attr__( 'Branding Text Color', 'activist-network-main' ),
 		'help'        => esc_attr__( 'Color of the branding area text', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => $defaults['color_primary'],
-		'priority'    => 90,
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 80,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a',
+				'element'  => '#masthead .site-branding .site-title a,
+				#colophon .bottom-navigation a',
 				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
 			),
 			array(
 				'element'  => '#masthead .site-branding .site-description',
 				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
 			),
 			array(
 				'element'  => '#masthead .social-links ul a',
 				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
 			),
 			array(
 				'element'  => '#masthead .social-links a',
 				'property' => 'border-color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
 			),
 			array(
 				'element'  => '#masthead .social-links ul a:before',
 				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a',
+				'element'  => '#masthead .site-branding .site-title a,
+				#colophon .bottom-navigation a',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -444,7 +518,173 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
+	/**
+	 * Widget Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_widget_background',
+		'label'       => esc_attr__( 'Widget Background', 'activist-network-main' ),
+		'description' => esc_attr__( 'Widget Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the widget area background', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_background'],
+		'priority'    => 90,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '#colophon .footer-widgets,
+				.content-widgets .wrap,
+				.home-widgets .wrap',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+			array(
+				'element'  => '.home .entry.intro-content',
+				'property' => 'border-top-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_foreground'],
+	            ),
+			),
+			array(
+				'element'  => '.home .entry.intro-content',
+				'property' => 'border-bottom-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_foreground'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '#colophon .footer-widgets,
+				.content-widgets .wrap,
+				.home-widgets .wrap',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+			array(
+				'element'  => '.home .entry.intro-content',
+				'function' => 'css',
+				'property' => 'border-top-color',
+			),
+			array(
+				'element'  => '.home .entry.intro-content',
+				'function' => 'css',
+				'property' => 'border-bottom-color',
+			),
+		),
+	) );
+
+	/**
+	 * Widget Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_widget_text',
+		'label'       => esc_attr__( 'Widget Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the widget area text', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 100,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '.content-widgets .wrap,
+				.content-widgets .wrap a,
+				.home-widgets .wrap,
+				.home-widgets .wrap a,
+				.home-widgets .widget h3,
+				.home-widgets .widget-title,
+				.content-widgets h3,
+				.content-widgets .widget-title,
+				.footer-widgets .wrap,
+				.footer-widgets .wrap a,
+				.footer-widgets .widget h3,
+				.footer-widgets .widget-title',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground']
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.content-widgets .wrap,
+				.content-widgets .wrap a,
+				.home-widgets .wrap,
+				.home-widgets .wrap a,
+				.home-widgets .widget h3,
+				.home-widgets .widget-title,
+				.content-widgets h3,
+				.content-widgets .widget-title,
+				.footer-widgets .wrap,
+				.footer-widgets .wrap a,
+				.footer-widgets .widget h3,
+				.footer-widgets .widget-title',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Typography - Branding Fonts
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'typography',
+		'settings'    => 'fonts_branding',
+		'label'       => esc_attr__( 'Branding Fonts', 'activist-network-main' ),
+		'section'     => 'fonts',
+		'default'     => array(
+			'font-family'    => 'Helvetica,Arial,sans-serif',
+			'variant'        => '300',
+			'subset'		 => 'latin-ext',
+		),
+		'priority'    => 10,
+		'output'      => array(
+			array(
+				'element'  => '#masthead .site-branding .site-title a,
+				#masthead .site-branding .site-description',
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '#masthead .site-branding .site-title a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '#masthead .site-branding .site-description',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Headings
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'typography',
 		'settings'    => 'fonts_headings',
 		'label'       => esc_attr__( 'Headings', 'activist-network-main' ),
@@ -452,9 +692,9 @@ if ( class_exists( 'Kirki' ) ) {
 		'default'     => array(
 			'font-family'    => 'Helvetica,Arial,sans-serif',
 			'variant'        => '300',
-			'subset'		 => 'latin-ext'
+			'subset'		 => 'latin-ext',
 		),
-		'priority'    => 10,
+		'priority'    => 20,
 		'output'      => array(
 			array(
 				'element' => 'h1, h2, h3, h4, h5',
@@ -462,7 +702,10 @@ if ( class_exists( 'Kirki' ) ) {
 		),
 	) );
 
-	Kirki::add_field( 'anp_custom_style', array(
+	/**
+	 * Body Text
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'typography',
 		'settings'    => 'fonts_body',
 		'label'       => esc_attr__( 'Body Text', 'activist-network-main' ),
@@ -471,12 +714,25 @@ if ( class_exists( 'Kirki' ) ) {
 			'font-family'    => 'Helvetica,Arial,sans-serif',
 			'variant'        => '400',
 		),
-		'priority'    => 20,
+		'priority'    => 30,
 		'output'      => array(
 			array(
 				'element' => 'body, p, li',
 			),
 		),
+	) );
+
+	/**
+	 * Footer - Copyright Text
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'textarea',
+		'settings'    => 'textarea_footer_copyright',
+		'label'       => esc_attr__( 'Copyright', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Enter content for the copyright area that appears in the footer', 'activist-network-main' ),
+		'default'     => esc_attr__( $defaults['copyright'], 'activist-network-main' ),
+		'section'     => 'title_tagline',
+		'priority'    => 500,
 	) );
 
 }

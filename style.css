@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.0
+Version: 2.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -78,7 +78,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
-  color: #54595C;
+  color: #313334;
   background-color: transparent; }
 
 input,
@@ -118,7 +118,7 @@ img {
   padding: 4px;
   line-height: 1.42857;
   background-color: transparent;
-  border: 1px solid #C7CCCF;
+  border: 1px solid #cacccd;
   border-radius: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -135,7 +135,7 @@ hr {
   margin-top: 22px;
   margin-bottom: 22px;
   border: 0;
-  border-top: 1px solid #EDF2F5; }
+  border-top: 1px solid #f2f2f3; }
 
 .sr-only {
   position: absolute;
@@ -684,7 +684,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #C7CCCF;
+  color: #cacccd;
   text-align: left; }
 
 th {
@@ -710,11 +710,11 @@ th {
     padding: 8px;
     line-height: 1.42857;
     vertical-align: top;
-    border-top: 1px solid #EDF2F5; }
+    border-top: 1px solid #f2f2f3; }
   .table > thead > tr > th, #buddypress table > thead > tr > th,
   #bbpress-forums table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #EDF2F5; }
+    border-bottom: 2px solid #f2f2f3; }
   .table > caption + thead > tr:first-child > th, #buddypress table > caption + thead > tr:first-child > th,
   #bbpress-forums table > caption + thead > tr:first-child > th,
   .table > caption + thead > tr:first-child > td, #buddypress table > caption + thead > tr:first-child > td,
@@ -730,7 +730,7 @@ th {
     border-top: 0; }
   .table > tbody + tbody, #buddypress table > tbody + tbody,
   #bbpress-forums table > tbody + tbody {
-    border-top: 2px solid #EDF2F5; }
+    border-top: 2px solid #f2f2f3; }
   .table .table, #buddypress table .table,
   #bbpress-forums table .table, .table #buddypress table, #buddypress .table table, #buddypress table table, .table
   #bbpress-forums table,
@@ -747,25 +747,25 @@ th {
   padding: 5px; }
 
 .table-bordered {
-  border: 1px solid #EDF2F5; }
+  border: 1px solid #f2f2f3; }
   .table-bordered > thead > tr > th,
   .table-bordered > thead > tr > td,
   .table-bordered > tbody > tr > th,
   .table-bordered > tbody > tr > td,
   .table-bordered > tfoot > tr > th,
   .table-bordered > tfoot > tr > td {
-    border: 1px solid #EDF2F5; }
+    border: 1px solid #f2f2f3; }
   .table-bordered > thead > tr > th,
   .table-bordered > thead > tr > td {
     border-bottom-width: 2px; }
 
 .table-striped > tbody > tr:nth-of-type(odd), #buddypress table > tbody > tr:nth-of-type(odd),
 #bbpress-forums table > tbody > tr:nth-of-type(odd) {
-  background-color: #EDF2F5; }
+  background-color: #f2f2f3; }
 
 .table-hover > tbody > tr:hover, #buddypress table > tbody > tr:hover,
 #bbpress-forums table > tbody > tr:hover {
-  background-color: #EDF2F5; }
+  background-color: #f2f2f3; }
 
 table col[class*="col-"] {
   position: static;
@@ -802,7 +802,7 @@ table th[class*="col-"] {
 #bbpress-forums table > tfoot > tr.active > td,
 .table > tfoot > tr.active > th, #buddypress table > tfoot > tr.active > th,
 #bbpress-forums table > tfoot > tr.active > th {
-  background-color: #EDF2F5; }
+  background-color: #f2f2f3; }
 
 .table-hover > tbody > tr > td.active:hover, #buddypress table > tbody > tr > td.active:hover,
 #bbpress-forums table > tbody > tr > td.active:hover,
@@ -814,7 +814,7 @@ table th[class*="col-"] {
 #bbpress-forums table > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th, #buddypress table > tbody > tr.active:hover > th,
 #bbpress-forums table > tbody > tr.active:hover > th {
-  background-color: #dde6ec; }
+  background-color: #e5e5e7; }
 
 .table > thead > tr > td.success, #buddypress table > thead > tr > td.success,
 #bbpress-forums table > thead > tr > td.success,
@@ -977,7 +977,7 @@ table th[class*="col-"] {
       margin-bottom: 16.5px;
       overflow-y: hidden;
       -ms-overflow-style: -ms-autohiding-scrollbar;
-      border: 1px solid #EDF2F5; }
+      border: 1px solid #f2f2f3; }
       .table-responsive > .table, #buddypress .table-responsive > table,
       #bbpress-forums .table-responsive > table {
         margin-bottom: 0; }
@@ -1039,7 +1039,7 @@ legend {
   margin-bottom: 22px;
   font-size: 24px;
   line-height: inherit;
-  color: #54595C;
+  color: #313334;
   border: 0;
   border-bottom: 1px solid #7B8083; }
 
@@ -1119,7 +1119,7 @@ output {
     background-color: transparent; }
   .form-control[disabled], .form-control[readonly],
   fieldset[disabled] .form-control {
-    background-color: #EDF2F5;
+    background-color: #f2f2f3;
     opacity: 1; }
   .form-control[disabled],
   fieldset[disabled] .form-control {
@@ -1439,7 +1439,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #93999c; }
+  color: #6f7376; }
 
 @media (min-width: 544px) {
   .form-inline .form-group {
@@ -1695,21 +1695,7 @@ fieldset[disabled] a {
   fieldset[disabled] a.focus {
     background-color: #7B8083;
     border-color: rgba(123, 128, 131, 0.2); }
-  .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge, .btn-default #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-default span, .wpb_btn-default #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-default span, .ow-button-base #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li .ow-button-base a span, .btn-default
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-default span, .wpb_btn-default
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_btn-default span, .ow-button-base
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li .ow-button-base a span, .btn-default #buddypress a span, #buddypress a .btn-default span, .wpb_btn-default #buddypress a span, #buddypress a .wpb_btn-default span, .ow-button-base #buddypress a span, #buddypress .ow-button-base a span, #secondary .sow-cta-base .ow-button-base #buddypress a span, #buddypress #secondary .sow-cta-base .ow-button-base a span, .btn-default
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-default span, .wpb_btn-default
-  #bbpress-forums a span,
-  #bbpress-forums a .wpb_btn-default span, .ow-button-base
-  #bbpress-forums a span,
-  #bbpress-forums .ow-button-base a span, #secondary .sow-cta-base .ow-button-base
-  #bbpress-forums a span,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a span {
+  .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
     color: #7B8083;
     background-color: #fff; }
 
@@ -1746,11 +1732,7 @@ fieldset[disabled] a {
   fieldset[disabled] .btn-primary.focus {
     background-color: #509EA3;
     border-color: #488d92; }
-  .btn-primary .badge, .btn-primary #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-primary span, .btn-primary
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-primary span, .btn-primary #buddypress a span, #buddypress a .btn-primary span, .btn-primary
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-primary span {
+  .btn-primary .badge {
     color: #509EA3;
     background-color: #fff; }
 
@@ -1795,15 +1777,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-success {
     background-color: #AFBB87;
     border-color: #a4b277; }
-  .btn-success .badge, .wpb_btn-success .badge, .btn-success #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-success span, .wpb_btn-success #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-success span, .btn-success
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-success span, .wpb_btn-success
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_btn-success span, .btn-success #buddypress a span, #buddypress a .btn-success span, .wpb_btn-success #buddypress a span, #buddypress a .wpb_btn-success span, .btn-success
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-success span, .wpb_btn-success
-  #bbpress-forums a span,
-  #bbpress-forums a .wpb_btn-success span {
+  .btn-success .badge, .wpb_btn-success .badge {
     color: #AFBB87;
     background-color: #fff; }
 
@@ -1848,15 +1822,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-info {
     background-color: #1C2A42;
     border-color: #141f30; }
-  .btn-info .badge, .wpb_btn-info .badge, .btn-info #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-info span, .wpb_btn-info #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-info span, .btn-info
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-info span, .wpb_btn-info
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_btn-info span, .btn-info #buddypress a span, #buddypress a .btn-info span, .wpb_btn-info #buddypress a span, #buddypress a .wpb_btn-info span, .btn-info
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-info span, .wpb_btn-info
-  #bbpress-forums a span,
-  #bbpress-forums a .wpb_btn-info span {
+  .btn-info .badge, .wpb_btn-info .badge {
     color: #1C2A42;
     background-color: #fff; }
 
@@ -1901,15 +1867,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-warning {
     background-color: #EFE4A6;
     border-color: #ebdd90; }
-  .btn-warning .badge, .wpb_btn-warning .badge, .btn-warning #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-warning span, .wpb_btn-warning #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-warning span, .btn-warning
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-warning span, .wpb_btn-warning
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_btn-warning span, .btn-warning #buddypress a span, #buddypress a .btn-warning span, .wpb_btn-warning #buddypress a span, #buddypress a .wpb_btn-warning span, .btn-warning
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-warning span, .wpb_btn-warning
-  #bbpress-forums a span,
-  #bbpress-forums a .wpb_btn-warning span {
+  .btn-warning .badge, .wpb_btn-warning .badge {
     color: #EFE4A6;
     background-color: #fff; }
 
@@ -1965,17 +1923,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-danger {
     background-color: #E53634;
     border-color: #e2201d; }
-  .btn-danger .badge, .home .entry.intro-content button .badge, .wpb_btn-danger .badge, .btn-danger #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-danger span, .wpb_btn-danger #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_btn-danger span, .btn-danger
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-danger span, .wpb_btn-danger
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_btn-danger span, .btn-danger #buddypress a span, #buddypress a .btn-danger span, .home .entry.intro-content button #buddypress a span, #buddypress a .home .entry.intro-content button span, .wpb_btn-danger #buddypress a span, #buddypress a .wpb_btn-danger span, .btn-danger
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-danger span, .home .entry.intro-content button
-  #bbpress-forums a span,
-  #bbpress-forums a .home .entry.intro-content button span, .wpb_btn-danger
-  #bbpress-forums a span,
-  #bbpress-forums a .wpb_btn-danger span {
+  .btn-danger .badge, .home .entry.intro-content button .badge, .wpb_btn-danger .badge {
     color: #E53634;
     background-color: #fff; }
 
@@ -1997,7 +1945,7 @@ fieldset[disabled] a {
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
   fieldset[disabled] .btn-link:focus {
-    color: #C7CCCF;
+    color: #cacccd;
     text-decoration: none; }
 
 .btn-lg, .home .entry.intro-content button, .wpb_btn-large {
@@ -2048,16 +1996,16 @@ input[type="button"].btn-block {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #EDF2F5; }
+        background-color: #f2f2f3; }
     .nav > li.disabled > a {
-      color: #C7CCCF; }
+      color: #cacccd; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-        color: #C7CCCF;
+        color: #cacccd;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #EDF2F5;
+    background-color: #f2f2f3;
     border-color: #509EA3; }
   .nav .nav-divider {
     height: 1px;
@@ -2068,7 +2016,7 @@ input[type="button"].btn-block {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid #EDF2F5; }
+  border-bottom: 1px solid #f2f2f3; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -2078,11 +2026,11 @@ input[type="button"].btn-block {
       border: 1px solid transparent;
       border-radius: 0 0 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #EDF2F5 #EDF2F5 #EDF2F5; }
+        border-color: #f2f2f3 #f2f2f3 #f2f2f3; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #7B8083;
       background-color: transparent;
-      border: 1px solid #C7CCCF;
+      border: 1px solid #cacccd;
       border-bottom-color: transparent;
       cursor: default; }
 
@@ -2094,7 +2042,7 @@ input[type="button"].btn-block {
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #2C3E50; }
+    background-color: #16506B; }
 
 .nav-stacked > li {
   float: none; }
@@ -2127,10 +2075,10 @@ input[type="button"].btn-block {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border: 1px solid #C7CCCF; }
+    border: 1px solid #cacccd; }
   @media (min-width: 544px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
-      border-bottom: 1px solid #C7CCCF;
+      border-bottom: 1px solid #cacccd;
       border-radius: 0 0 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
@@ -2433,19 +2381,19 @@ input[type="button"].btn-block {
   background-color: #fff;
   border-color: #eeeeee; }
   .navbar-default .navbar-brand {
-    color: #2C3E50; }
+    color: #008Eb0; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #1a252f;
+      color: #00657d;
       background-color: transparent; }
   .navbar-default .navbar-text {
-    color: #54595C; }
+    color: #111; }
   .navbar-default .navbar-nav > li > a {
-    color: #2C3E50; }
+    color: #008Eb0; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: rgba(17, 17, 17, 0.1);
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: rgba(17, 17, 17, 0.2);
+    color: rgba(17, 17, 17, 0.1);
     background-color: rgba(17, 17, 17, 0.1); }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #7B8083;
@@ -2455,31 +2403,31 @@ input[type="button"].btn-block {
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
       background-color: #7B8083; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #54595C; }
+      background-color: #313334; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #eeeeee; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: rgba(17, 17, 17, 0.1);
-    color: rgba(17, 17, 17, 0.2); }
+    color: rgba(17, 17, 17, 0.1); }
   @media (max-width: 543px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #2C3E50; }
+      color: #008Eb0; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: rgba(17, 17, 17, 0.1);
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: rgba(17, 17, 17, 0.2);
+      color: rgba(17, 17, 17, 0.1);
       background-color: rgba(17, 17, 17, 0.1); }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #7B8083;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #2C3E50; }
+    color: #008Eb0; }
     .navbar-default .navbar-link:hover {
       color: rgba(17, 17, 17, 0.1); }
   .navbar-default .btn-link {
-    color: #2C3E50; }
+    color: #008Eb0; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
       color: rgba(17, 17, 17, 0.1); }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
@@ -2506,12 +2454,12 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #3f7d81; }
   .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
-    color: #EDF2F5;
+    color: #f2f2f3;
     background-color: transparent; }
   .navbar-inverse .navbar-toggle {
-    border-color: #54595C; }
+    border-color: #313334; }
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-      background-color: #54595C; }
+      background-color: #313334; }
     .navbar-inverse .navbar-toggle .icon-bar {
       background-color: #fff; }
   .navbar-inverse .navbar-collapse,
@@ -2534,7 +2482,7 @@ input[type="button"].btn-block {
       color: #fff;
       background-color: #3f7d81; }
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-      color: #EDF2F5;
+      color: #f2f2f3;
       background-color: transparent; } }
   .navbar-inverse .navbar-link {
     color: #fff; }
@@ -2547,7 +2495,7 @@ input[type="button"].btn-block {
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus,
     fieldset[disabled] .navbar-inverse .btn-link:hover,
     fieldset[disabled] .navbar-inverse .btn-link:focus {
-      color: #EDF2F5; }
+      color: #f2f2f3; }
 
 .label, .tags a,
 .category a,
@@ -3092,7 +3040,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
 #buddypress #members-dir-list .item-header-content .activity,
 #bbpress-forums #members-list .item-header-content .activity,
 #bbpress-forums #members-dir-list .item-header-content .activity {
-  background-color: #C7CCCF; }
+  background-color: #cacccd; }
   .label-default[href]:hover, .tags a[href]:hover,
   .category a[href]:hover,
   .cat-links a[href]:hover,
@@ -3118,7 +3066,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #buddypress #members-dir-list .item-header-content [href].activity:focus,
   #bbpress-forums #members-list .item-header-content [href].activity:focus,
   #bbpress-forums #members-dir-list .item-header-content [href].activity:focus {
-    background-color: #acb3b7; }
+    background-color: #b0b3b4; }
 
 .label-primary {
   background-color: #509EA3; }
@@ -3166,9 +3114,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   .label-danger[href]:hover, .label-danger[href]:focus {
     background-color: #cc1c1a; }
 
-.badge, #buddypress .item-list-tabs ul li a span,
-#bbpress-forums .item-list-tabs ul li a span, #buddypress a span,
-#bbpress-forums a span {
+.badge {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -3179,75 +3125,17 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: #C7CCCF;
+  background-color: #cacccd;
   border-radius: 10px; }
-  .badge:empty, #buddypress .item-list-tabs ul li a span:empty,
-  #bbpress-forums .item-list-tabs ul li a span:empty, #buddypress a span:empty,
-  #bbpress-forums a span:empty {
+  .badge:empty {
     display: none; }
   .btn .badge, .home .entry.intro-content button .badge, button .badge,
   .button:not(.wpb_button_a) .badge,
   input[type="button"] .badge,
-  input[type="submit"] .badge, input[type="reset"] .badge, .wpb_button .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge, .btn #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn span, button #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a button span,
-  input[type="button"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a
-  input[type="button"] span,
-  input[type="submit"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a
-  input[type="submit"] span, input[type="reset"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a input[type="reset"] span, .wpb_button #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .wpb_button span, .ow-button-base #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li .ow-button-base a span, .btn
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn span, button
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a button span,
-  input[type="button"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a
-  input[type="button"] span,
-  input[type="submit"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a
-  input[type="submit"] span, input[type="reset"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a input[type="reset"] span, .wpb_button
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .wpb_button span, .ow-button-base
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li .ow-button-base a span, .btn #buddypress a span, #buddypress a .btn span, button #buddypress a span, #buddypress a button span,
-  .button:not(.wpb_button_a) #buddypress a span, #buddypress a
-  .button:not(.wpb_button_a) span,
-  input[type="button"] #buddypress a span, #buddypress a
-  input[type="button"] span,
-  input[type="submit"] #buddypress a span, #buddypress a
-  input[type="submit"] span, input[type="reset"] #buddypress a span, #buddypress a input[type="reset"] span, .wpb_button #buddypress a span, #buddypress a .wpb_button span, .ow-button-base #buddypress a span, #buddypress .ow-button-base a span, #secondary .sow-cta-base .ow-button-base #buddypress a span, #buddypress #secondary .sow-cta-base .ow-button-base a span, .btn
-  #bbpress-forums a span,
-  #bbpress-forums a .btn span, button
-  #bbpress-forums a span,
-  #bbpress-forums a button span,
-  .button:not(.wpb_button_a)
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .button:not(.wpb_button_a) span,
-  input[type="button"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  input[type="button"] span,
-  input[type="submit"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  input[type="submit"] span, input[type="reset"]
-  #bbpress-forums a span,
-  #bbpress-forums a input[type="reset"] span, .wpb_button
-  #bbpress-forums a span,
-  #bbpress-forums a .wpb_button span, .ow-button-base
-  #bbpress-forums a span,
-  #bbpress-forums .ow-button-base a span, #secondary .sow-cta-base .ow-button-base
-  #bbpress-forums a span,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a span {
+  input[type="submit"] .badge, input[type="reset"] .badge, .wpb_button .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
     position: relative;
     top: -1px; }
-  .btn-xs .badge, .btn-xs #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a .btn-xs span, .btn-xs
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a .btn-xs span, .btn-xs #buddypress a span, #buddypress a .btn-xs span, .btn-xs
-  #bbpress-forums a span,
-  #bbpress-forums a .btn-xs span,
+  .btn-xs .badge,
   .btn-group-xs > .btn .badge, .home .entry.intro-content
   .btn-group-xs > button .badge,
   .btn-group-xs > button .badge,
@@ -3260,108 +3148,18 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   .btn-group-xs > input[type="reset"] .badge,
   .btn-group-xs > .wpb_button .badge, .ow-button-base
   .btn-group-xs > a .badge, #secondary .sow-cta-base .ow-button-base
-  .btn-group-xs > a .badge,
-  .btn-group-xs > button #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a
-  .btn-group-xs > button span, .ow-button-base #buddypress .item-list-tabs ul li
-  .btn-group-xs > a span,
-  .btn-group-xs > button
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a
-  .btn-group-xs > button span, .ow-button-base
-  #bbpress-forums .item-list-tabs ul li
-  .btn-group-xs > a span,
-  .btn-group-xs > .btn #buddypress a span, #buddypress a
-  .btn-group-xs > .btn span, .home .entry.intro-content
-  .btn-group-xs > button #buddypress a span, #buddypress a .home .entry.intro-content
-  .btn-group-xs > button span,
-  .btn-group-xs > button #buddypress a span, #buddypress a
-  .btn-group-xs > button span,
-  .btn-group-xs >
-  .button:not(.wpb_button_a) #buddypress a span, #buddypress a
-  .btn-group-xs >
-  .button:not(.wpb_button_a) span,
-  .btn-group-xs >
-  input[type="button"] #buddypress a span, #buddypress a
-  .btn-group-xs >
-  input[type="button"] span,
-  .btn-group-xs >
-  input[type="submit"] #buddypress a span, #buddypress a
-  .btn-group-xs >
-  input[type="submit"] span,
-  .btn-group-xs > input[type="reset"] #buddypress a span, #buddypress a
-  .btn-group-xs > input[type="reset"] span,
-  .btn-group-xs > .wpb_button #buddypress a span, #buddypress a
-  .btn-group-xs > .wpb_button span, .ow-button-base #buddypress
-  .btn-group-xs > a span, #buddypress .ow-button-base
-  .btn-group-xs > a span,
-  .btn-group-xs > .btn
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs > .btn span, .home .entry.intro-content
-  .btn-group-xs > button
-  #bbpress-forums a span,
-  #bbpress-forums a .home .entry.intro-content
-  .btn-group-xs > button span,
-  .btn-group-xs > button
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs > button span,
-  .btn-group-xs >
-  .button:not(.wpb_button_a)
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs >
-  .button:not(.wpb_button_a) span,
-  .btn-group-xs >
-  input[type="button"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs >
-  input[type="button"] span,
-  .btn-group-xs >
-  input[type="submit"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs >
-  input[type="submit"] span,
-  .btn-group-xs > input[type="reset"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs > input[type="reset"] span,
-  .btn-group-xs > .wpb_button
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .btn-group-xs > .wpb_button span, .ow-button-base
-  #bbpress-forums
-  .btn-group-xs > a span,
-  #bbpress-forums .ow-button-base
-  .btn-group-xs > a span {
+  .btn-group-xs > a .badge {
     top: 0;
     padding: 1px 5px; }
-  .list-group-item.active > .badge, #buddypress a .list-group-item.active > span,
-  #bbpress-forums a .list-group-item.active > span,
-  .nav-pills > .active > a > .badge, #buddypress .item-list-tabs ul li
-  .nav-pills > .active > a > span,
-  #bbpress-forums .item-list-tabs ul li
-  .nav-pills > .active > a > span, #buddypress
-  .nav-pills > .active > a > span,
-  #bbpress-forums
-  .nav-pills > .active > a > span {
+  .list-group-item.active > .badge,
+  .nav-pills > .active > a > .badge {
     color: #509EA3;
     background-color: #fff; }
-  .list-group-item > .badge, #buddypress .item-list-tabs ul li a .list-group-item > span,
-  #bbpress-forums .item-list-tabs ul li a .list-group-item > span, #buddypress a .list-group-item > span,
-  #bbpress-forums a .list-group-item > span {
+  .list-group-item > .badge {
     float: right; }
-  .list-group-item > .badge + .badge, #buddypress a .list-group-item > span + .badge,
-  #bbpress-forums a .list-group-item > span + .badge, #buddypress a .list-group-item > .badge + span, #buddypress .item-list-tabs ul li a .list-group-item > span + span, #buddypress a .list-group-item > span + span,
-  #bbpress-forums a .list-group-item > .badge + span,
-  #bbpress-forums .item-list-tabs ul li a .list-group-item > span + span,
-  #bbpress-forums a .list-group-item > span + span {
+  .list-group-item > .badge + .badge {
     margin-right: 5px; }
-  .nav-pills > li > a > .badge, #buddypress .item-list-tabs ul .nav-pills > li > a > span,
-  #bbpress-forums .item-list-tabs ul .nav-pills > li > a > span, #buddypress .nav-pills > li > a > span,
-  #bbpress-forums .nav-pills > li > a > span {
+  .nav-pills > li > a > .badge {
     margin-left: 3px; }
 
 a.badge:hover, a.badge:focus {
@@ -3413,7 +3211,7 @@ a.badge:hover, a.badge:focus {
   margin-bottom: 22px;
   line-height: 1.42857;
   background-color: transparent;
-  border: 1px solid #C7CCCF;
+  border: 1px solid #cacccd;
   border-radius: 0;
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
@@ -3427,7 +3225,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #54595C; }
+    color: #313334; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -6039,7 +5837,7 @@ h1 {
   margin: 0.67em 0; }
 
 mark {
-  background: #C7CCCF;
+  background: #7B8083;
   color: #fff; }
 
 small {
@@ -6169,7 +5967,7 @@ input,
 select,
 textarea,
 li {
-  color: #54595C;
+  color: #313334;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14.4px;
   font-size: 0.9rem;
@@ -6199,7 +5997,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2C3E50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2; }
 
@@ -6287,7 +6084,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #C7CCCF;
+  background: #cacccd;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -6307,7 +6104,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #C7CCCF;
+  background: #cacccd;
   text-decoration: none; }
 
 big {
@@ -6341,14 +6138,12 @@ blockquote, q {
     content: ""; }
 
 a {
-  color: #2C3E50; }
-  a:hover, a:focus {
-    color: #080b0e; }
+  color: #008Eb0; }
   a.active, a.current {
-    color: #2C3E50; }
+    font-weight: bold; }
 
 hr {
-  background-color: #EDF2F5;
+  background-color: #f2f2f3;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -6382,11 +6177,6 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
-
-.entry-meta,
-.meta,
-.pagination {
-  color: #C7CCCF; }
 
 time.updated {
   clip: rect(1px, 1px, 1px, 1px);
@@ -6444,10 +6234,10 @@ time.updated {
 .comment-content .entry-meta,
 .comment-content .meta,
 .comment-content .pagination {
-  border-top: 1px solid #EDF2F5;
+  border-top: 1px solid #f2f2f3;
   margin-top: 0.25em;
   padding-top: 0.25em;
-  border-bottom: 1px solid #EDF2F5;
+  border-bottom: 1px solid #f2f2f3;
   margin-bottom: 0.25em;
   padding-bottom: 0.25em; }
 
@@ -6463,106 +6253,89 @@ h1.page-title {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.sidebar p,
-.widget-area p {
-  line-height: 1.3;
-  font-size: 16px;
-  font-size: 1rem; }
-
-.sidebar .menu a,
-.sidebar .menu a:hover,
-.sidebar .menu a:focus,
-.widget-area .menu a,
-.widget-area .menu a:hover,
-.widget-area .menu a:focus {
-  color: #fff; }
-
 /**
  * General Widget Styles
  */
-.widget, article.handbook .table-of-contents {
-  margin: 0 0 12px;
+.widget .wrap, article.handbook .table-of-contents .wrap {
+  background-color: transparent;
   border-radius: 0;
-  color: #A1A6A9; }
-  .widget .wrap, article.handbook .table-of-contents .wrap {
-    padding: 1.5em; }
-    .widget .wrap:after, article.handbook .table-of-contents .wrap:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .widget h3.widgettitle, article.handbook .table-of-contents h3,
-  .widget h3.widget-title, article.handbook .table-of-contents h3.widget-title {
-    margin: .25em 0;
-    padding-bottom: .5em;
-    font-size: 16px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    color: #2C3E50; }
-  .widget a, article.handbook .table-of-contents a {
-    display: block;
-    padding: 0.5em 0;
-    color: #A1A6A9; }
-    .widget a:hover, article.handbook .table-of-contents a:hover, .widget a:focus, article.handbook .table-of-contents a:focus {
-      text-decoration: none; }
-  .widget ul, article.handbook .table-of-contents ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    width: 100%; }
-    .widget ul > li:hover, article.handbook .table-of-contents ul > li:hover, .widget ul > li:focus, article.handbook .table-of-contents ul > li:focus {
-      background-color: rgba(17, 17, 17, 0.1); }
-  .widget li, article.handbook .table-of-contents li {
+  padding: 1.5em; }
+
+.widget ul, article.handbook .table-of-contents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  width: 100%; }
+  .widget ul li, article.handbook .table-of-contents ul li {
     margin: 0;
     line-height: 1.3;
     display: block;
-    padding: .25em;
-    color: #A1A6A9;
-    /* deep nesting */ }
-    .widget li ul, article.handbook .table-of-contents li ul {
-      margin: 0;
-      padding-left: 20px;
+    padding: .25em; }
+    .widget ul li:not(:last-child), article.handbook .table-of-contents ul li:not(:last-child) {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
+    .widget ul li a, article.handbook .table-of-contents ul li a {
+      display: block;
+      padding: 0.5em 0; }
+    .widget ul li ul, article.handbook .table-of-contents ul li ul,
+    .widget ul li li, article.handbook .table-of-contents ul li li,
+    .widget ul li li a, article.handbook .table-of-contents ul li li a {
       border: 0; }
-    .widget li li, article.handbook .table-of-contents li li {
-      border: 0;
-      padding: 0; }
-    .widget li a, article.handbook .table-of-contents li a {
-      border: 0; }
-  .widget form, article.handbook .table-of-contents form {
-    background: transparent; }
-  .widget label, article.handbook .table-of-contents label {
-    margin-bottom: 0; }
-  .widget input[type="text"], article.handbook .table-of-contents input[type="text"],
-  .widget input[type="password"], article.handbook .table-of-contents input[type="password"],
-  .widget input[type='email'], article.handbook .table-of-contents input[type='email'] {
-    padding: 2px 5px; }
-  .widget .entry-title a, article.handbook .table-of-contents .entry-title a {
-    font-weight: normal; }
-  .widget .entry-meta, article.handbook .table-of-contents .entry-meta,
-  .widget .activity, article.handbook .table-of-contents .activity {
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: 300;
-    font-style: italic;
-    border: none; }
-    .widget .entry-meta .meta-label, article.handbook .table-of-contents .entry-meta .meta-label,
-    .widget .activity .meta-label, article.handbook .table-of-contents .activity .meta-label {
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      overflow: hidden;
-      position: absolute !important;
-      width: 1px;
-      /* many screen reader and browser combinations announce broken words as they would appear visually */
-      word-wrap: normal !important; }
-      .widget .entry-meta .meta-label:after, article.handbook .table-of-contents .entry-meta .meta-label:after,
-      .widget .activity .meta-label:after, article.handbook .table-of-contents .activity .meta-label:after {
-        content: ': '; }
-    .widget .entry-meta:empty, article.handbook .table-of-contents .entry-meta:empty,
-    .widget .activity:empty, article.handbook .table-of-contents .activity:empty {
-      display: none; }
-  .widget .entry-content, article.handbook .table-of-contents .entry-content {
-    line-height: 1.5; }
+
+.widget > ul, article.handbook .table-of-contents > ul {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em; }
+
+.widget h3.widgettitle, article.handbook .table-of-contents h3,
+.widget h3.widget-title, article.handbook .table-of-contents h3.widget-title {
+  margin: .25em 0;
+  padding-bottom: .5em;
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.widget form, article.handbook .table-of-contents form {
+  background: transparent; }
+
+.widget label, article.handbook .table-of-contents label {
+  margin-bottom: 0; }
+
+.widget input[type="text"], article.handbook .table-of-contents input[type="text"],
+.widget input[type="password"], article.handbook .table-of-contents input[type="password"],
+.widget input[type='email'], article.handbook .table-of-contents input[type='email'] {
+  padding: 2px 5px; }
+
+.widget .entry-title a, article.handbook .table-of-contents .entry-title a {
+  font-weight: normal; }
+
+.widget .entry-meta, article.handbook .table-of-contents .entry-meta,
+.widget .activity, article.handbook .table-of-contents .activity {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-style: italic;
+  border: none; }
+  .widget .entry-meta .meta-label, article.handbook .table-of-contents .entry-meta .meta-label,
+  .widget .activity .meta-label, article.handbook .table-of-contents .activity .meta-label {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    /* many screen reader and browser combinations announce broken words as they would appear visually */
+    word-wrap: normal !important; }
+    .widget .entry-meta .meta-label:after, article.handbook .table-of-contents .entry-meta .meta-label:after,
+    .widget .activity .meta-label:after, article.handbook .table-of-contents .activity .meta-label:after {
+      content: ': '; }
+  .widget .entry-meta:empty, article.handbook .table-of-contents .entry-meta:empty,
+  .widget .activity:empty, article.handbook .table-of-contents .activity:empty {
+    display: none; }
+
+.widget .entry-content, article.handbook .table-of-contents .entry-content {
+  line-height: 1.5; }
 
 /**
  * Header
@@ -6596,11 +6369,11 @@ SIDEBARS & ASIDES
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-    background-color: #C7CCCF;
+    background-color: #cacccd;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #2C3E50;
+    color: #16506B;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -7131,10 +6904,6 @@ body {
 
 .home .entry.intro-content {
   padding: 1.5em;
-  border-top: 5px solid rgba(17, 17, 17, 0.2);
-  border-bottom: 5px solid rgba(17, 17, 17, 0.2);
-  background-color: #EDF2F5;
-  border-radius: 0;
   text-align: center; }
   .home .entry.intro-content button {
     color: #fff;
@@ -7169,9 +6938,7 @@ body {
     fieldset[disabled] .home .entry.intro-content button.focus {
       background-color: #7B8083;
       border-color: rgba(123, 128, 131, 0.2); }
-    .home .entry.intro-content button .badge, .home .entry.intro-content button #buddypress a span, #buddypress a .home .entry.intro-content button span, .home .entry.intro-content button
-    #bbpress-forums a span,
-    #bbpress-forums a .home .entry.intro-content button span {
+    .home .entry.intro-content button .badge {
       color: #7B8083;
       background-color: #fff; }
   @media screen and (min-width: 768px) {
@@ -7210,7 +6977,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 .nav-links .nav-next:after {
   margin-left: .5em;
@@ -7220,7 +6987,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 /*--------------------------------------------------------------
 ## Menus
@@ -7284,7 +7051,7 @@ body {
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #C7CCCF; }
+        color: #cacccd; }
       .social-links ul a:before {
         margin-top: 8px;
         height: 33px;
@@ -7305,7 +7072,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="codepen.io"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7313,7 +7080,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="digg.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7321,7 +7088,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="dribbble.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7329,7 +7096,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="dropbox.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7337,7 +7104,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="facebook.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7345,7 +7112,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="flickr.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7353,7 +7120,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="foursquare.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7361,7 +7128,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="plus.google.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7369,7 +7136,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="github.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7377,7 +7144,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="instagram.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7385,7 +7152,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="linkedin.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7393,7 +7160,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="pinterest.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7401,7 +7168,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="getpocket.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7409,7 +7176,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="reddit.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7417,7 +7184,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="skype.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7425,7 +7192,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="stumbleupon.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7433,7 +7200,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="tumblr.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7441,7 +7208,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="twitter.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7449,7 +7216,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="vimeo.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7457,7 +7224,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="wordpress.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7465,7 +7232,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="wordpress.org"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7473,7 +7240,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="youtube.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7481,7 +7248,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href^="mailto:"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7489,7 +7256,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="spotify.com"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7497,7 +7264,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href*="twitch.tv"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7505,7 +7272,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .social-links ul a[href$="/feed/"]:before {
       display: inline-block;
       font: normal normal normal 14px / 1 FontAwesome;
@@ -7513,7 +7280,7 @@ body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
 
 /**
  * Main Navigation Styles
@@ -7541,7 +7308,7 @@ body {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #C7CCCF; }
+    color: #cacccd; }
 
 /**
  * Main Navigation States
@@ -7591,7 +7358,7 @@ body {
 .comment-navigation {
   border-top: 1px solid rgba(17, 17, 17, 0.2);
   border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 .site-header-menu {
   display: none;
@@ -7882,57 +7649,11 @@ input[type="submit"] {
   input[type="submit"].focus {
     background-color: #7B8083;
     border-color: rgba(123, 128, 131, 0.2); }
-  button .badge, button #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a button span, button
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a button span, button #buddypress a span, #buddypress a button span, button
-  #bbpress-forums a span,
-  #bbpress-forums a button span,
+  button .badge,
   .button:not(.wpb_button_a) .badge,
-  .button:not(.wpb_button_a) #buddypress a span, #buddypress a
-  .button:not(.wpb_button_a) span,
-  .button:not(.wpb_button_a)
-  #bbpress-forums a span,
-  #bbpress-forums a
-  .button:not(.wpb_button_a) span,
   input[type="button"] .badge,
-  input[type="button"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a
-  input[type="button"] span,
-  input[type="button"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a
-  input[type="button"] span,
-  input[type="button"] #buddypress a span, #buddypress a
-  input[type="button"] span,
-  input[type="button"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  input[type="button"] span,
   input[type="reset"] .badge,
-  input[type="reset"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a
-  input[type="reset"] span,
-  input[type="reset"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a
-  input[type="reset"] span,
-  input[type="reset"] #buddypress a span, #buddypress a
-  input[type="reset"] span,
-  input[type="reset"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  input[type="reset"] span,
-  input[type="submit"] .badge,
-  input[type="submit"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a
-  input[type="submit"] span,
-  input[type="submit"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a
-  input[type="submit"] span,
-  input[type="submit"] #buddypress a span, #buddypress a
-  input[type="submit"] span,
-  input[type="submit"]
-  #bbpress-forums a span,
-  #bbpress-forums a
-  input[type="submit"] span {
+  input[type="submit"] .badge {
     color: #7B8083;
     background-color: #fff; }
 
@@ -7969,11 +7690,7 @@ input[type="reset"] {
   fieldset[disabled] input[type="reset"].focus {
     background-color: #E53634;
     border-color: #E53634; }
-  input[type="reset"] .badge, input[type="reset"] #buddypress .item-list-tabs ul li a span, #buddypress .item-list-tabs ul li a input[type="reset"] span, input[type="reset"]
-  #bbpress-forums .item-list-tabs ul li a span,
-  #bbpress-forums .item-list-tabs ul li a input[type="reset"] span, input[type="reset"] #buddypress a span, #buddypress a input[type="reset"] span, input[type="reset"]
-  #bbpress-forums a span,
-  #bbpress-forums a input[type="reset"] span {
+  input[type="reset"] .badge {
     color: #E53634;
     background-color: #fff; }
 
@@ -8034,7 +7751,7 @@ a[href*="=edit"] {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #C7CCCF; }
+    color: #cacccd; }
 
 /*--------------------------------------------------------------
 # Plugins
@@ -8054,7 +7771,7 @@ body.buddypress h1 {
 
 #buddypress form,
 #bbpress-forums form {
-  background-color: #EDF2F5;
+  background-color: #f2f2f3;
   padding: .5em; }
 
 #buddypress ul,
@@ -8083,7 +7800,7 @@ body.buddypress h1 {
     #buddypress .item-list-tabs ul li,
     #bbpress-forums .item-list-tabs ul li {
       padding: .5em .125em;
-      background-color: #008Eb0;
+      background-color: rgba(17, 17, 17, 0.2);
       color: #fff;
       text-align: center; }
       #buddypress .item-list-tabs ul li.active, #buddypress .item-list-tabs ul li.selected, #buddypress .item-list-tabs ul li:hover, #buddypress .item-list-tabs ul li:focus,
@@ -8091,7 +7808,7 @@ body.buddypress h1 {
       #bbpress-forums .item-list-tabs ul li.selected,
       #bbpress-forums .item-list-tabs ul li:hover,
       #bbpress-forums .item-list-tabs ul li:focus {
-        background-color: #2C3E50;
+        background-color: #008Eb0;
         color: #fff; }
       #buddypress .item-list-tabs ul li:not(:last-child),
       #bbpress-forums .item-list-tabs ul li:not(:last-child) {
@@ -8104,6 +7821,17 @@ body.buddypress h1 {
         #bbpress-forums .item-list-tabs ul li a:hover,
         #bbpress-forums .item-list-tabs ul li a:focus {
           color: #fff; }
+        #buddypress .item-list-tabs ul li a span,
+        #bbpress-forums .item-list-tabs ul li a span {
+          font-size: 11px;
+          font-size: 0.6875rem;
+          background-color: #7B8083;
+          border-radius: 10px;
+          color: #fff;
+          display: inline-block;
+          line-height: 1;
+          min-width: 10px;
+          padding: 3px 7px; }
       #buddypress .item-list-tabs ul li input,
       #bbpress-forums .item-list-tabs ul li input {
         font-size: 14px;
@@ -8129,8 +7857,8 @@ body.buddypress h1 {
     border-bottom: 1px solid rgba(17, 17, 17, 0.1); }
     #buddypress .item-list-tabs#subnav li,
     #bbpress-forums .item-list-tabs#subnav li {
-      background-color: #EDF2F5;
-      color: #54595C; }
+      background-color: #f2f2f3;
+      color: #111; }
       #buddypress .item-list-tabs#subnav li.active, #buddypress .item-list-tabs#subnav li.selected, #buddypress .item-list-tabs#subnav li:hover, #buddypress .item-list-tabs#subnav li:focus,
       #bbpress-forums .item-list-tabs#subnav li.active,
       #bbpress-forums .item-list-tabs#subnav li.selected,
@@ -8140,7 +7868,7 @@ body.buddypress h1 {
         color: #fff; }
       #buddypress .item-list-tabs#subnav li a,
       #bbpress-forums .item-list-tabs#subnav li a {
-        color: #54595C; }
+        color: #111; }
       #buddypress .item-list-tabs#subnav li#activity-filter-select,
       #bbpress-forums .item-list-tabs#subnav li#activity-filter-select {
         text-align: center; }
@@ -8149,11 +7877,15 @@ body.buddypress h1 {
     background-color: #008Eb0; }
     #buddypress .item-list-tabs#group-create-tabs ul li.current,
     #bbpress-forums .item-list-tabs#group-create-tabs ul li.current {
-      background-color: #2C3E50; }
+      background-color: #16506B; }
 
 #buddypress .item-body,
 #bbpress-forums .item-body {
   margin-top: .5em; }
+
+#buddypress .item-meta,
+#bbpress-forums .item-meta {
+  color: #6f7071; }
 
 #buddypress .item-list .activity-comments ul,
 #bbpress-forums .item-list .activity-comments ul {
@@ -8183,12 +7915,9 @@ body.buddypress h1 {
   #buddypress .item-list li .item-title a,
   #bbpress-forums .item-list li .item-title a {
     font-weight: 500; }
-  #buddypress .item-list li .activity,
-  #bbpress-forums .item-list li .activity {
-    color: #C7CCCF; }
   #buddypress .item-list li li,
   #bbpress-forums .item-list li li {
-    background-color: rgba(44, 62, 80, 0.05);
+    background-color: rgba(22, 80, 107, 0.05);
     padding: .25em; }
 
 #buddypress .item-list > li:not(:first-child),
@@ -8238,7 +7967,6 @@ body.buddypress h1 {
   list-style: none; }
   #buddypress .forums .bbp-body .bbp-reply-header,
   #bbpress-forums .forums .bbp-body .bbp-reply-header {
-    background-color: #EDF2F5;
     padding: .5em .25em; }
   #buddypress .forums .bbp-body .bbp-reply-author,
   #bbpress-forums .forums .bbp-body .bbp-reply-author {
@@ -8357,7 +8085,7 @@ body.buddypress h1 {
       #bbpress-forums #members-dir-list .item-header-content table tr td.activity {
         display: block;
         border: none;
-        background-color: #8aa4be;
+        background-color: #6cbce1;
         font-size: 16px;
         font-size: 1rem;
         color: #fff;
@@ -8401,6 +8129,18 @@ body.buddypress h1 {
     float: left;
     margin-right: .5em; } }
 
+#buddypress a span,
+#bbpress-forums a span {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  background-color: #7B8083;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  min-width: 10px;
+  padding: 3px 7px; }
+
 #buddypress .row-actions a,
 #buddypress .group-button a,
 #buddypress .activity-meta a,
@@ -8416,10 +8156,10 @@ body.buddypress h1 {
   font-size: 0.875rem;
   text-align: center;
   background-color: transparent;
-  color: #C7CCCF !important;
+  color: #cacccd !important;
   display: inline-block;
   border-radius: 0.125em;
-  border: 1px solid #C7CCCF;
+  border: 1px solid #cacccd;
   padding: .25em; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .group-button a:hover,
@@ -8437,7 +8177,7 @@ body.buddypress h1 {
   #bbpress-forums .acomment-options a:hover,
   #bbpress-forums .acomment-options a:focus {
     background: rgba(26, 26, 26, 0);
-    color: #C7CCCF !important; }
+    color: #cacccd !important; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .group-button a:hover,
   #buddypress .group-button a:focus,
@@ -8469,7 +8209,7 @@ body.buddypress h1 {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #C7CCCF; }
+    color: #cacccd; }
   #buddypress .row-actions a:before,
   #buddypress .group-button a:before,
   #buddypress .activity-meta a:before,
@@ -8494,10 +8234,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .group-button a[href$="document-title/"]:hover,
@@ -8515,7 +8255,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
     #bbpress-forums .acomment-options a[href$="document-title/"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .group-button a[href$="document-title/"]:hover,
     #buddypress .group-button a[href$="document-title/"]:focus,
@@ -8547,7 +8287,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a[href$="document-title/"]:before,
     #buddypress .group-button a[href$="document-title/"]:before,
     #buddypress .activity-meta a[href$="document-title/"]:before,
@@ -8572,10 +8312,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .group-button a[href$="edit/"]:hover,
@@ -8593,7 +8333,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="edit/"]:hover,
     #bbpress-forums .acomment-options a[href$="edit/"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .group-button a[href$="edit/"]:hover,
     #buddypress .group-button a[href$="edit/"]:focus,
@@ -8625,7 +8365,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a[href$="edit/"]:before,
     #buddypress .group-button a[href$="edit/"]:before,
     #buddypress .activity-meta a[href$="edit/"]:before,
@@ -8650,10 +8390,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .group-button a[href$="history"]:hover,
@@ -8671,7 +8411,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="history"]:hover,
     #bbpress-forums .acomment-options a[href$="history"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .group-button a[href$="history"]:hover,
     #buddypress .group-button a[href$="history"]:focus,
@@ -8703,7 +8443,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a[href$="history"]:before,
     #buddypress .group-button a[href$="history"]:before,
     #buddypress .activity-meta a[href$="history"]:before,
@@ -8728,10 +8468,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .group-button a.leave-group:hover,
@@ -8749,7 +8489,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:hover,
     #bbpress-forums .acomment-options a.leave-group:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .group-button a.leave-group:hover,
     #buddypress .group-button a.leave-group:focus,
@@ -8781,7 +8521,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .group-button a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
@@ -8806,10 +8546,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .group-button a.acomment-reply:hover,
@@ -8827,7 +8567,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-reply:hover,
     #bbpress-forums .acomment-options a.acomment-reply:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .group-button a.acomment-reply:hover,
     #buddypress .group-button a.acomment-reply:focus,
@@ -8859,7 +8599,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a.acomment-reply:before,
     #buddypress .group-button a.acomment-reply:before,
     #buddypress .activity-meta a.acomment-reply:before,
@@ -8884,10 +8624,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .group-button a.fav:hover,
@@ -8905,7 +8645,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.fav:hover,
     #bbpress-forums .acomment-options a.fav:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .group-button a.fav:hover,
     #buddypress .group-button a.fav:focus,
@@ -8937,7 +8677,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a.fav:before,
     #buddypress .group-button a.fav:before,
     #buddypress .activity-meta a.fav:before,
@@ -8965,7 +8705,7 @@ body.buddypress h1 {
     color: #eb6361 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
     #buddypress .group-button a.unfav:hover,
@@ -9047,10 +8787,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .group-button a.delete-activity:hover,
@@ -9082,7 +8822,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-delete:hover,
     #bbpress-forums .acomment-options a.acomment-delete:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .group-button a.delete-activity:hover,
     #buddypress .group-button a.delete-activity:focus,
@@ -9135,7 +8875,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
     #buddypress .group-button a.delete-activity:before,
     #buddypress .group-button a.acomment-delete:before,
@@ -9167,10 +8907,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .group-button a.unlink-from-group:hover,
@@ -9188,7 +8928,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unlink-from-group:hover,
     #bbpress-forums .acomment-options a.unlink-from-group:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .group-button a.unlink-from-group:hover,
     #buddypress .group-button a.unlink-from-group:focus,
@@ -9220,7 +8960,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress .row-actions a.unlink-from-group:before,
     #buddypress .group-button a.unlink-from-group:before,
     #buddypress .activity-meta a.unlink-from-group:before,
@@ -9238,8 +8978,15 @@ body.buddypress h1 {
   #bbpress-forums .group-button a span,
   #bbpress-forums .activity-meta a span,
   #bbpress-forums .acomment-options a span {
-    font-size: 12px;
-    font-size: 0.75rem; }
+    font-size: 11px;
+    font-size: 0.6875rem;
+    background-color: #7B8083;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    min-width: 10px;
+    padding: 3px 7px; }
 
 #buddypress #favorite-toggle a:before,
 #bbpress-forums #favorite-toggle a:before {
@@ -9250,7 +8997,7 @@ body.buddypress h1 {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 #buddypress #favorite-toggle .is-favorite a:before,
 #bbpress-forums #favorite-toggle .is-favorite a:before {
@@ -9272,7 +9019,7 @@ body.buddypress h1 {
   font-size: 0.875rem;
   text-align: center;
   background-color: transparent;
-  color: #54595C !important;
+  color: #313334 !important;
   display: inline-block;
   border-radius: 0;
   border: 1px solid transparent;
@@ -9281,7 +9028,7 @@ body.buddypress h1 {
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
     background: rgba(26, 26, 26, 0);
-    color: #54595C !important; }
+    color: #313334 !important; }
   #buddypress #bp-create-doc-button:hover, #buddypress #bp-create-doc-button:focus,
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
@@ -9295,7 +9042,7 @@ body.buddypress h1 {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #54595C; }
+    color: #313334; }
   #buddypress #bp-create-doc-button:before,
   #bbpress-forums #bp-create-doc-button:before {
     margin-right: 4px; }
@@ -9316,10 +9063,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
     #buddypress #members-dir-list .small > a.member-ban:hover,
@@ -9329,7 +9076,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-ban:hover,
     #bbpress-forums #members-dir-list .small > a.member-ban:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
     #buddypress #members-dir-list .small > a.member-ban:hover,
     #buddypress #members-dir-list .small > a.member-ban:focus,
@@ -9349,7 +9096,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress #members-list .small > a.member-ban:before,
     #buddypress #members-dir-list .small > a.member-ban:before,
     #bbpress-forums #members-list .small > a.member-ban:before,
@@ -9366,10 +9113,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
@@ -9379,7 +9126,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
@@ -9399,7 +9146,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress #members-list .small > a.member-promote-to-mod:before,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
     #bbpress-forums #members-list .small > a.member-promote-to-mod:before,
@@ -9416,10 +9163,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
@@ -9429,7 +9176,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:focus,
@@ -9449,7 +9196,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress #members-list .small > a.member-promote-to-admin:before,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:before,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:before,
@@ -9466,10 +9213,10 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #C7CCCF !important;
+    color: #a3a6a8 !important;
     display: inline-block;
     border-radius: 0.125em;
-    border: 1px solid #C7CCCF;
+    border: 1px solid #cacccd;
     padding: .25em; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
     #buddypress #members-dir-list .small > a.confirm:hover,
@@ -9479,7 +9226,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.confirm:hover,
     #bbpress-forums #members-dir-list .small > a.confirm:focus {
       background: rgba(26, 26, 26, 0);
-      color: #C7CCCF !important; }
+      color: #a3a6a8 !important; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
     #buddypress #members-dir-list .small > a.confirm:hover,
     #buddypress #members-dir-list .small > a.confirm:focus,
@@ -9499,7 +9246,7 @@ body.buddypress h1 {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #a3a6a8; }
     #buddypress #members-list .small > a.confirm:before,
     #buddypress #members-dir-list .small > a.confirm:before,
     #bbpress-forums #members-list .small > a.confirm:before,
@@ -9545,7 +9292,7 @@ body.buddypress h1 {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 .widget.buddypress, article.handbook .buddypress.table-of-contents {
   text-align: center; }
@@ -9572,9 +9319,6 @@ body.buddypress h1 {
         clear: both; }
       .widget.buddypress .item-avatar, article.handbook .buddypress.table-of-contents .item-avatar {
         float: left; } }
-
-#secondary .widget.buddypress, #secondary article.handbook .buddypress.table-of-contents, article.handbook #secondary .buddypress.table-of-contents {
-  color: rgba(255, 255, 255, 0.4); }
 
 /*********************
 EVENT ORGANISER
@@ -9784,7 +9528,7 @@ EVENT ORGANISER
 
 .single-event .meta-label,
 .singular-event .meta-label {
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 .single-event .event-map,
 .singular-event .event-map {
@@ -9845,7 +9589,7 @@ ul.event-categories {
   content: ' - '; }
 
 .home-modules .events-list ul li {
-  background: #2C3E50;
+  background: #16506B;
   color: #fff;
   max-height: 100px;
   overflow: hidden;
@@ -9952,7 +9696,7 @@ article.handbook a.anchor {
   width: 0; }
   article.handbook a.anchor:before {
     opacity: 1;
-    color: #2C3E50; }
+    color: #008Eb0; }
   article.handbook a.anchor:hover, article.handbook a.anchor:focus {
     color: transparent;
     border-bottom: none;
@@ -9964,7 +9708,7 @@ article.handbook .toc-jump a {
   width: 0; }
   article.handbook .toc-jump a:before {
     opacity: 1;
-    color: #2C3E50;
+    color: #008Eb0;
     font-size: 2.75em; }
   article.handbook .toc-jump a:hover, article.handbook .toc-jump a:focus {
     color: transparent;
@@ -9983,7 +9727,7 @@ article.handbook .table-of-contents {
   article.handbook .table-of-contents a:hover {
     padding-left: 15px;
     padding-right: 5px;
-    background: #54595C;
+    background: #313334;
     background: rgba(0, 0, 0, 0.1); }
 
 /*********************
@@ -10078,7 +9822,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .archive-meeting .entry .connected-content li.summary-link:before, .archive-meeting .entry .connected-content li.meeting-link:before,
     .archive-agenda .entry .connected-content li.summary-link:before,
     .archive-agenda .entry .connected-content li.meeting-link:before,
@@ -10099,7 +9843,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
     .archive-meeting .entry .connected-content li.proposal-link:before,
     .archive-agenda .entry .connected-content li.proposal-link:before,
     .archive-summary .entry .connected-content li.proposal-link:before,
@@ -10114,7 +9858,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #C7CCCF; }
+      color: #cacccd; }
 
 .archive-meeting .entry .tags:before,
 .archive-agenda .entry .tags:before,
@@ -10130,7 +9874,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #C7CCCF; }
+  color: #cacccd; }
 
 .archive-meeting .entry .article-footer,
 .archive-agenda .entry .article-footer,
@@ -10281,7 +10025,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .single-summary article .post-footer {
   margin: 1em 0 .5em 0;
   padding: .5em 0;
-  border-bottom: 1px solid #C7CCCF; }
+  border-bottom: 1px solid #cacccd; }
   .single-meeting article .post-footer .meta,
   .single-proposal article .post-footer .meta,
   .single-agenda article .post-footer .meta,
@@ -10290,8 +10034,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
     padding-top: .75em;
     margin-bottom: .5em;
     padding-bottom: .75em;
-    border-top: 1px solid #C7CCCF;
-    border-bottom: 1px solid #C7CCCF; }
+    border-top: 1px solid #cacccd;
+    border-bottom: 1px solid #cacccd; }
   .single-meeting article .post-footer h3,
   .single-proposal article .post-footer h3,
   .single-agenda article .post-footer h3,
@@ -10367,7 +10111,7 @@ article.handbook .so-panel.table-of-contents {
     background-color: transparent; }
 
 .so-widget-sow-post-carousel h3 a {
-  color: #54595C;
+  color: #313334;
   font-weight: 300; }
 
 .so-widget-sow-post-carousel .sow-carousel-thumbnail {
@@ -10375,16 +10119,16 @@ article.handbook .so-panel.table-of-contents {
 
 .so-widget-sow-post-carousel a.sow-carousel-next,
 .so-widget-sow-post-carousel a.sow-carousel-previous {
-  background-color: #2C3E50;
+  background-color: #008Eb0;
   border-radius: 0; }
   .so-widget-sow-post-carousel a.sow-carousel-next:hover, .so-widget-sow-post-carousel a.sow-carousel-next:focus,
   .so-widget-sow-post-carousel a.sow-carousel-previous:hover,
   .so-widget-sow-post-carousel a.sow-carousel-previous:focus {
-    background-color: #080b0e; }
+    background-color: #00657d; }
 
 .so-widget-sow-headline h1,
 .so-widget-sow-headline h2 {
-  color: #A1A6A9 !important; }
+  color: #111 !important; }
 
 #secondary .so-widget-sow-headline {
   color: #fff !important; }
@@ -10394,20 +10138,20 @@ article.handbook .so-panel.table-of-contents {
     color: #fff !important; }
 
 .so-widget-sow-cta .sow-cta-base {
-  background-color: #EDF2F5 !important;
+  background-color: #f2f2f3 !important;
   border-color: rgba(17, 17, 17, 0.2) !important; }
   .so-widget-sow-cta .sow-cta-base h4 {
     font-size: 36px;
     font-size: 2.25rem;
-    color: #A1A6A9 !important; }
+    color: #111 !important; }
   .so-widget-sow-cta .sow-cta-base h5 {
-    color: #A1A6A9 !important; }
+    color: #111 !important; }
   .so-widget-sow-cta .sow-cta-base .ow-button-base a .sow-icon-fontawesome {
-    color: #A1A6A9 !important; }
+    color: #111 !important; }
 
 #secondary .sow-cta-base {
-  background-color: #2C3E50 !important;
-  border-color: rgba(17, 17, 17, 0.5) !important;
+  background-color: #16506B !important;
+  border-color: rgba(17, 17, 17, 0.2) !important;
   color: #fff !important; }
   #secondary .sow-cta-base h4 {
     font-size: 36px;
@@ -10430,7 +10174,7 @@ article.handbook .so-panel.table-of-contents {
   background-position: top; }
 
 .so-widget-sow-slider .sow-slide-nav a {
-  color: #2C3E50 !important; }
+  color: #008Eb0 !important; }
 
 .so-widget-sow-hero .sow-slider-image-wrapper {
   padding: 1em; }
@@ -10522,7 +10266,7 @@ NETWORK CONTENT
   #secondary .widget__anp-network-events.widget .entry-meta,
   #secondary article.handbook .widget__anp-network-events.table-of-contents .entry-meta, article.handbook
   #secondary .widget__anp-network-events.table-of-contents .entry-meta {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.2); }
     #secondary .widget__anp-network-posts.widget .entry-meta time, #secondary article.handbook .widget__anp-network-posts.table-of-contents .entry-meta time, article.handbook #secondary .widget__anp-network-posts.table-of-contents .entry-meta time,
     #secondary .widget__anp-network-posts.widget .entry-meta .category,
     #secondary article.handbook .widget__anp-network-posts.table-of-contents .entry-meta .category, article.handbook
@@ -10548,7 +10292,7 @@ NETWORK CONTENT
     #secondary .widget__anp-network-events.widget .entry-meta a,
     #secondary article.handbook .widget__anp-network-events.table-of-contents .entry-meta a, article.handbook
     #secondary .widget__anp-network-events.table-of-contents .entry-meta a {
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(255, 255, 255, 0.2); }
 
 @media screen and (min-width: 768px) {
   .widget-count-3 .widget__anp-network-posts .entry-meta .site-name,
@@ -10593,60 +10337,36 @@ NETWORK CONTENT
 ******************************************************************/
 /**
  * Customizer support
- *  Branding Background 
- *  #masthead .site-branding
- * 
- *  Header Text Color (header_textcolor) 
- *  #masthead .site-branding .site-title a, 
- *  #masthead .site-branding .site-description, 
- *  #masthead .social-links a
- *      color, border-color
- *           a:before
- *               color
- * 
- *  Navigation Background Color
- *  #masthead .main-navigation, 
- *  #masthead .main-navigation ul ul
- * 
- *  Navigation Text Color
- *  #masthead .main-navigation a,  
- *  #masthead .main-navigation a &:hover, &:focus, 
- *  #masthead .main-navigation ul ul li:hover &:focus a, 
- *  #masthead .main-navigation ul .current-menu-item > a, 
- *  #masthead .main-navigation ul .current-menu-ancestor > a
- *
- *  Primary Color
- *  #secondary .wrap, 
- *  #colophon .copyright,
- *  #buddypress .item-list-tabs ul li:selected
- *
- * Primary Color Text
- * #colophon .copyright a,
- * a &:hover, &:focus, &:active, &:visited
- * #buddypress .item-list-tabs ul li:selected a
- *
- * Secondary Background Color
- * #buddypress .item-list-tabs ul li, 
- * #colophon .bottom-navigation
- *
- * Secondary Color
- *
- * Content Background Color
- * #content .content-area
-
- * Content Text Color
  */
+span:empty {
+  display: none; }
+
+.entry {
+  border-bottom: 1px solid #f2f2f3;
+  margin-bottom: 1em;
+  padding-bottom: 1em; }
+  .entry .entry-footer {
+    border-top: 1px solid #f2f2f3;
+    margin-top: 1em;
+    padding-top: 1em; }
+
+.entry-meta,
+.meta,
+.pagination {
+  color: #6f7071; }
+
 body {
   background-color: transparent;
-  color: #54595C; }
-  body a {
-    color: #2C3E50; }
-    body a:hover, body a:focus, body a:active {
-      color: #080b0e; }
-    body a:focus {
-      outline: thin dotted; }
-    body a:hover, body a:active {
-      outline: 0; }
+  color: #313334; }
+
+a {
+  color: #008Eb0; }
+  a:visited {
+    color: #008Eb0; }
+  a:hover, a:focus {
+    color: #00657d; }
+  a:focus {
+    outline: thin dotted; }
 
 /**
  * Header elements color
@@ -10655,67 +10375,52 @@ body {
   background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #54595C; }
+  color: #313334; }
   #masthead .site-branding .site-title,
   #masthead .site-branding .site-title a,
   #masthead .site-branding .site-description {
-    color: #54595C; }
+    color: #313334; }
 
 #masthead .custom-header {
   background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #54595C; }
+  color: #313334; }
 
-#masthead .main-navigation.toggled {
-  background-color: #fff; }
-
-#masthead .main-navigation ul {
+#masthead .main-navigation {
   border-top: 1px solid rgba(17, 17, 17, 0.2); }
   #masthead .main-navigation ul li {
     border-radius: 0; }
     #masthead .main-navigation ul li:not(:last-child) {
       border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
   #masthead .main-navigation ul ul {
-    background-color: #fff;
     border: none; }
-    #masthead .main-navigation ul ul li:hover a, #masthead .main-navigation ul ul li:focus a {
-      background-color: rgba(17, 17, 17, 0.1);
-      color: rgba(17, 17, 17, 0.6); }
   #masthead .main-navigation ul a {
-    border-radius: 0;
-    color: #54595C; }
+    border-radius: 0; }
     #masthead .main-navigation ul a:hover, #masthead .main-navigation ul a:focus {
-      background-color: rgba(17, 17, 17, 0.1);
-      color: rgba(17, 17, 17, 0.6); }
+      background-color: rgba(17, 17, 17, 0.1); }
   #masthead .main-navigation ul .current-menu-item > a,
   #masthead .main-navigation ul .current-menu-ancestor > a {
-    color: #54595C; }
-
-@media screen and (min-width: 768px) {
-  #masthead .main-navigation {
-    background-color: #fff;
-    border-radius: 0; }
-    #masthead .main-navigation li:hover > a,
-    #masthead .main-navigation li:focus > a {
-      color: rgba(17, 17, 17, 0.6); }
-    #masthead .main-navigation ul li:not(:last-child) {
-      border-bottom-width: 0; }
-    #masthead .main-navigation ul ul {
-      border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-      box-shadow: 2px 2px 2px rgba(17, 17, 17, 0.2); }
-      #masthead .main-navigation ul ul li {
-        border-bottom-width: 0;
-        border-radius: 0; } }
+    font-weight: bold; }
+  @media screen and (min-width: 768px) {
+    #masthead .main-navigation {
+      border-radius: 0; }
+      #masthead .main-navigation ul li:not(:last-child) {
+        border-bottom-width: 0; }
+      #masthead .main-navigation ul ul {
+        background-color: #fff;
+        border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+        box-shadow: 2px 2px 2px rgba(17, 17, 17, 0.2); }
+        #masthead .main-navigation ul ul li {
+          border-bottom-width: 0;
+          border-radius: 0; } }
 
 #masthead .social-links a {
   border: 1px solid #008Eb0;
   border-radius: 50%;
-  color: #2C3E50; }
+  color: #16506B; }
   #masthead .social-links a:before {
-    color: #2C3E50; }
-  #masthead .social-links a:hover, #masthead .social-links a:focus {
-    background-color: rbga(0, 0, 0, 0.2); }
+    color: #16506B; }
 
 #masthead .menu-toggle {
   background-color: #008Eb0; }
@@ -10724,14 +10429,27 @@ body {
  * Content elements color
  */
 #content .content-area {
-  background-color: transparent;
-  color: #54595C; }
+  background-color: transparent; }
+
+/**
+ * Primary Sidebar Styles
+ */
+#secondary .wrap {
+  border-top: 2px solid #008Eb0;
+  border-bottom: 2px solid #008Eb0; }
+
+#secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
+  /* deep nesting */ }
 
 /**
  * Footer elements color
  */
 #colophon .footer-widgets {
-  background-color: #C7CCCF; }
+  background-color: transparent; }
+  #colophon .footer-widgets .wrap {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: rgba(255, 255, 255, 0.5); }
 
 #colophon .bottom-navigation,
 #colophon .copyright {
@@ -10750,131 +10468,27 @@ body {
   color: #fff; }
 
 #colophon .copyright {
-  background-color: #2C3E50;
+  background-color: #16506B;
   color: #fff; }
 
-.entry {
-  border-bottom: 1px solid #EDF2F5;
-  margin-bottom: 1em;
-  padding-bottom: 1em; }
-  .entry .entry-footer {
-    border-top: 1px solid #EDF2F5;
-    margin-top: 1em;
-    padding-top: 1em; }
-
-/**
- * Primary Sidebar Styles
- */
-#secondary .wrap {
-  background-color: #2C3E50;
-  border-color: rgba(17, 17, 17, 0.5);
-  border-radius: 0;
-  color: #fff; }
-
-#secondary .widget h3.widgettitle, article.handbook .table-of-contents #secondary .widget h3, #secondary article.handbook .table-of-contents h3, article.handbook #secondary .table-of-contents h3,
-#secondary .widget h3.widget-title,
-#secondary article.handbook .table-of-contents h3.widget-title, article.handbook
-#secondary .table-of-contents h3.widget-title {
-  color: rgba(255, 255, 255, 0.5); }
-
-#secondary .widget .entry-meta, #secondary article.handbook .table-of-contents .entry-meta, article.handbook #secondary .table-of-contents .entry-meta {
-  color: rgba(255, 255, 255, 0.5); }
-
-#secondary .widget a, #secondary article.handbook .table-of-contents a, article.handbook #secondary .table-of-contents a {
-  color: #fff; }
-  #secondary .widget a:hover, #secondary article.handbook .table-of-contents a:hover, article.handbook #secondary .table-of-contents a:hover, #secondary .widget a:focus, #secondary article.handbook .table-of-contents a:focus, article.handbook #secondary .table-of-contents a:focus {
-    color: #fff; }
-
-#secondary .widget .entry-content, #secondary article.handbook .table-of-contents .entry-content, article.handbook #secondary .table-of-contents .entry-content {
-  color: #fff; }
-
-#secondary .widget ul, #secondary article.handbook .table-of-contents ul, article.handbook #secondary .table-of-contents ul {
-  border-bottom: 1px solid rgba(17, 17, 17, 0.5); }
-
-#secondary .widget li, #secondary article.handbook .table-of-contents li, article.handbook #secondary .table-of-contents li {
-  color: #fff;
-  border-top: 1px solid rgba(17, 17, 17, 0.5);
-  /* deep nesting */ }
-  #secondary .widget li li, #secondary article.handbook .table-of-contents li li, article.handbook #secondary .table-of-contents li li {
-    color: #fff; }
+.home .entry.intro-content {
+  border-top: 5px solid #16506B;
+  border-bottom: 5px solid #16506B;
+  background-color: transparent;
+  border-radius: 0; }
 
 /**
  * Secondary Widget Styles
  */
-.content-widgets .wrap,
-.home-widgets .wrap {
-  background-color: #EDF2F5;
-  border-color: rgba(17, 17, 17, 0.2);
-  border-radius: 0; }
-
-.content-widgets .widget, .content-widgets article.handbook .table-of-contents, article.handbook .content-widgets .table-of-contents,
-.home-widgets .widget,
-.home-widgets article.handbook .table-of-contents, article.handbook
-.home-widgets .table-of-contents {
-  color: #A1A6A9; }
-  .content-widgets .widget h3.widgettitle, article.handbook .table-of-contents .content-widgets .widget h3, .content-widgets article.handbook .table-of-contents h3, article.handbook .content-widgets .table-of-contents h3,
-  .content-widgets .widget h3.widget-title,
-  .content-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
-  .content-widgets .table-of-contents h3.widget-title,
-  .home-widgets .widget h3.widgettitle, article.handbook .table-of-contents
-  .home-widgets .widget h3,
-  .home-widgets article.handbook .table-of-contents h3, article.handbook
-  .home-widgets .table-of-contents h3,
-  .home-widgets .widget h3.widget-title,
-  .home-widgets article.handbook .table-of-contents h3.widget-title, article.handbook
-  .home-widgets .table-of-contents h3.widget-title {
-    color: #2C3E50; }
-  .content-widgets .widget .entry-meta, .content-widgets article.handbook .table-of-contents .entry-meta, article.handbook .content-widgets .table-of-contents .entry-meta,
-  .home-widgets .widget .entry-meta,
-  .home-widgets article.handbook .table-of-contents .entry-meta, article.handbook
-  .home-widgets .table-of-contents .entry-meta {
-    color: #C7CCCF; }
-  .content-widgets .widget a, .content-widgets article.handbook .table-of-contents a, article.handbook .content-widgets .table-of-contents a,
-  .home-widgets .widget a,
-  .home-widgets article.handbook .table-of-contents a, article.handbook
-  .home-widgets .table-of-contents a {
-    color: #2C3E50; }
-    .content-widgets .widget a:hover, .content-widgets article.handbook .table-of-contents a:hover, article.handbook .content-widgets .table-of-contents a:hover, .content-widgets .widget a:focus, .content-widgets article.handbook .table-of-contents a:focus, article.handbook .content-widgets .table-of-contents a:focus,
-    .home-widgets .widget a:hover,
-    .home-widgets article.handbook .table-of-contents a:hover, article.handbook
-    .home-widgets .table-of-contents a:hover,
-    .home-widgets .widget a:focus,
-    .home-widgets article.handbook .table-of-contents a:focus, article.handbook
-    .home-widgets .table-of-contents a:focus {
-      color: #080b0e; }
-  .content-widgets .widget .entry-content, .content-widgets article.handbook .table-of-contents .entry-content, article.handbook .content-widgets .table-of-contents .entry-content,
-  .home-widgets .widget .entry-content,
-  .home-widgets article.handbook .table-of-contents .entry-content, article.handbook
-  .home-widgets .table-of-contents .entry-content {
-    color: #A1A6A9; }
-  .content-widgets .widget ul, .content-widgets article.handbook .table-of-contents ul, article.handbook .content-widgets .table-of-contents ul,
-  .home-widgets .widget ul,
-  .home-widgets article.handbook .table-of-contents ul, article.handbook
-  .home-widgets .table-of-contents ul {
-    border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
-  .content-widgets .widget li, .content-widgets article.handbook .table-of-contents li, article.handbook .content-widgets .table-of-contents li,
-  .home-widgets .widget li,
-  .home-widgets article.handbook .table-of-contents li, article.handbook
-  .home-widgets .table-of-contents li {
-    border-top: 1px solid rgba(17, 17, 17, 0.2);
-    /* deep nesting */ }
-    .content-widgets .widget li li, .content-widgets article.handbook .table-of-contents li li, article.handbook .content-widgets .table-of-contents li li,
-    .home-widgets .widget li li,
-    .home-widgets article.handbook .table-of-contents li li, article.handbook
-    .home-widgets .table-of-contents li li {
-      color: #A1A6A9; }
+.content-widgets .widget li, .content-widgets article.handbook .table-of-contents li, article.handbook .content-widgets .table-of-contents li,
+.home-widgets .widget li,
+.home-widgets article.handbook .table-of-contents li, article.handbook
+.home-widgets .table-of-contents li {
+  /* deep nesting */ }
 
 /**
  * Footer Widgets
  */
-.footer-widgets .wrap {
-  background-color: #fff;
-  border-color: transparent;
-  border-radius: 0; }
-
-span:empty {
-  display: none; }
-
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */
 /* blog template page */

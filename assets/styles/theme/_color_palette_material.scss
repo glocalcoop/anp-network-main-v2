@@ -2,8 +2,18 @@
  * Material Color Palette
  * http://www.color-hex.com/color-palette/3714
  */
-$color__primary: #9e9e9e; //rgb(158,158,158)
-$color__secondary: #ff5722; //rgb(255,87,34)
-$color__tertiary: #607d8b; //rgb(101,115,126)
-$color__tertiary2: #ffffff; //rgb(255,255,255)
-$color__highlight: #000000; //rgb(0,0,0)
+$colors__theme: (
+  'primary': #9e9e9e, 
+  'accent': #607d8b,
+  'secondary':  #ff5722,
+  'foreground': #000,
+  'background': #fff,
+);
+
+$color__primary: color($colors__theme, 'primary');
+$color__secondary: color($colors__theme, 'secondary');
+$color__tertiary: color($colors__theme, 'accent');
+$color__accent: color($colors__theme, 'accent');
+$color__highlight: color($colors__theme, 'accent');
+$color__background: transparent;
+$color__foreground: color($colors__theme, 'foreground');
