@@ -49,12 +49,13 @@ body.buddypress {
                 color: text-color( rgba($color__black,.2) );
                 text-align: center;
 
-                &.active,
-                &.selected,
                 &:hover,
-                &:focus {
-                    background-color: $color__secondary;
-                    color: text-color( $color__secondary );
+                &:focus,
+                &.active,
+                &.current,
+                &.selected {
+                    background-color: rgba($color__black,.4);
+                    color: text-color( rgba($color__black,.4) );
                 }
 
                 &:not(:last-child) {
@@ -320,8 +321,8 @@ body.buddypress {
 
         #item-meta {
             .activity {
-                @extend .label;
-                @extend .label-default;
+                @extend %label;
+                @extend %label-default;
             }
 
             .activity + p {
@@ -410,28 +411,28 @@ body.buddypress {
 
     // Labels
     .highlight {
-        @extend .label;
-        @extend .label-info;
+        @extend %label;
+        @extend %label-info;
     }
 
     .bbp-topic-tags {
         a {
-            @extend .label;
-            @extend .label-default;
+            @extend %label;
+            @extend %label-default;
         }
     }
 
     .tags-cell {
         a {
-            @extend .label;
-            @extend .label-default;
+            @extend %label;
+            @extend %label-default;
         }
     }
 
     .bbp-reply-permalink,
     span.time-since {
-        @extend .label;
-        @extend .label-default;
+        @extend %label;
+        @extend %label-default;
     }
 
     // Badges
@@ -535,16 +536,16 @@ body.buddypress {
 
             .activity {
                 display: inline-block;
-                @extend .label;
-                @extend .label-default;
+                @extend %label;
+                @extend %label-default;
 
             }
 
             .is-online .activity {
-                @extend .label-warning;
+                @extend %label-warning;
             }
             .is-current-user .activity {
-                @extend .label-info;
+                @extend %label-info;
             }
         }
     }
