@@ -8,10 +8,6 @@
 
     .entry.intro-content {
         padding: 1.5em;
-        border-top: $color__border-frame;
-        border-bottom: $color__border-frame;
-        background-color: $color__background-panel;
-        border-radius: $element__border-radius-base;
         text-align: center;
 
         @extend .jumbotron;

@@ -47,21 +47,6 @@ function anp_network_main_setup() {
   ) );
 
   /*
-   * Enable support for site logo
-   *
-   * @link https://make.wordpress.org/core/2016/02/24/theme-logo-support/
-   */
-  add_image_size( 'site-logo', 0, 100 );
-  add_theme_support( 'site-logo', array(
-      'header-text' => array(
-          'site-title',
-          'site-description'
-      ),
-      'size' => 'site-logo',
-  )); 
-
-
-  /*
    * Switch default core markup for search form, comment form, and comments
    * to output valid HTML5.
    */
@@ -85,11 +70,29 @@ function anp_network_main_setup() {
     'link',
   ) );
 
-  // Set up the WordPress core custom background feature.
-  add_theme_support( 'custom-background', apply_filters( 'anp_network_main_custom_background_args', array(
-    'default-color' => 'ffffff',
-    'default-image' => '',
-  ) ) );
+  /*
+   * Enable support for site logo
+   *
+   * @link https://make.wordpress.org/core/2016/02/24/theme-logo-support/
+   */
+  add_image_size( 'site-logo', 0, 100 );
+  add_theme_support( 'site-logo', array(
+      'header-text' => array(
+          'site-title',
+          'site-description'
+      ),
+      'size' => 'site-logo',
+  )); 
+
+  /*
+   * Set up the WordPress core custom background feature.
+   *
+   * @link https://codex.wordpress.org/Custom_Backgrounds
+   */
+  // add_theme_support( 'custom-background', apply_filters( 'anp_network_main_custom_background_args', array(
+  //   'default-color' => 'ffffff',
+  //   'default-image' => '',
+  // ) ) );
 
   add_theme_support( 'custom-header', array(
     'header-text' => false

@@ -25,13 +25,11 @@ a {
 	color: $color__link;
 
 	&:hover,
-	&:focus {
-		color: $color__link-hover;
-	}
+	&:focus {}
 
 	&.active,
 	&.current {
-		color: $color__link-active;
+		font-weight: bold;
 	}
 }
 
@@ -76,12 +74,6 @@ img {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
-}
-
-.entry-meta,
-.meta,
-.pagination {
-	color: $color__text-light;
 }
 
 time.updated {

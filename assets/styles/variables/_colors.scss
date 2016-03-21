@@ -1,47 +1,106 @@
 /**
  * Uncomment and change as desired.
  */
+
 $color__black: #111;
 $color__white: #fff;
 $color__light-black: lighten($color__black, 15%);
-$color__darkest-grey: $color__black;
-$color__dark-grey: #54595C; //rgb(52,61,70)
-$color__mid-grey: #7B8083; //rgb(79,91,102)
-$color__mid-light-grey: #A1A6A9; //rgb(101,115,126)
-$color__light-grey: #C7CCCF; //rgb(167,173,186)
-$color__lightest-grey: #EDF2F5; //rgb(230,235,244)
+$color__base-grey: #7B8083;
+
+
+@function color($map: $colors__theme, $key: 'primary') {
+  @return map-get($map, $key);
+}
+
+@function text-color( $bgcolor ) {
+  @if (lightness( $bgcolor ) > 40) {
+    @return $color__black;
+  }
+  @else {
+    @return $color__white;
+  } 
+}
+
+$colors__grey: (
+    'lightest-grey': mix(white, $color__base-grey, 90%),
+    'light-grey': mix(white, $color__base-grey, 60%),
+    'mid-light-grey': mix(white, $color__base-grey, 30%),
+    'mid-grey': $color__base-grey,
+    'mid-dark-grey': mix(black, $color__base-grey, 30%),
+    'dark-grey': mix(black, $color__base-grey, 60%),
+    'darkest-grey': mix(black, $color__base-grey, 90%),
+);
+
+$color__lightest-grey: color($colors__grey, 'lightest-grey');
+$color__light-grey: color($colors__grey, 'light-grey');
+$color__mid-light-grey: color($colors__grey, 'mid-light-grey');
+$color__mid-grey: color($colors__grey, 'mid-grey');
+$color__mid-dark-grey: color($colors__grey, 'mid-dark-grey');
+$color__dark-grey: color($colors__grey, 'dark-grey');
+$color__darkest-grey: color($colors__grey, 'darkest-grey');
+
 
 /**
  * Can be replaced with another color palette
  * See: theme directory for sample palettes
  */
-$color__primary: #2C3E50; //rgb(44, 62, 80);
-$color__secondary: #008Eb0;
-$color__tertiary: $color__mid-grey;
-$color__tertiary2: $color__dark-grey;
-$color__highlight: $color__light-grey;
+$colors__theme: (
+  'primary': #16506B, 
+  'accent': $color__mid-grey,
+  'secondary':  #008Eb0,
+  'foreground': $color__dark-grey,
+  'background': $color__white
+);
 
-$color__success: #509ea3;
-$color__info: rgb(52, 152, 219);
-$color__warning: rgb(243, 156, 18);
-$color__danger: #eb6361;
-$color__default: $color__mid-grey;
+$color__primary: color($colors__theme, 'primary') !default;
+$color__secondary: color($colors__theme, 'secondary') !default;
+$color__tertiary: color($colors__theme, 'accent') !default;
+$color__accent: color($colors__theme, 'accent') !default;
+$color__highlight: color($colors__theme, 'accent') !default;
+$color__background: transparent !default;
+$color__foreground: color($colors__theme, 'foreground') !default;
 
-$color__primary-light: lighten($color__primary, 20%);
-$color__tertiary-light: lighten($color__tertiary, 20%);
-$color__hightlight-light: lighten($color__highlight, 20%);
+$color__primary-tinted: mix(white, $color__primary, 10%);
+$color__primary-shaded: mix(black, $color__primary, 10%);
+$color__foreground-tinted: mix(white, $color__foreground, 10%);
+$color__foreground-shaded: mix(black, $color__foreground, 10%);
+$color__background-shaded: mix(black, color($colors__theme, 'background'), 5%);
+
+$colors__buttons: (
+    'success': #509ea3,
+    'info': #3498db,
+    'warning': #f39c12,
+    'danger': #eb6361,
+    'default': $color__mid-grey
+);
+
+$color__success: color($colors__buttons, 'success');
+$color__info: color($colors__buttons, 'info');
+$color__warning: color($colors__buttons, 'warning');
+$color__danger: color($colors__buttons, 'danger');
+$color__default: color($colors__buttons, 'default');
+
+$color__primary-light:  mix(white, $color__primary, 20%);
+$color__tertiary-light:  mix(white, $color__tertiary, 20%);
+$color__hightlight-light: mix(white, $color__highlight, 20%);
 
 /* Social Media - http://www.paulund.co.uk/social-media-colours */
-$color__facebook: #3B5998;
-$color__twitter: #00aced;
-$color__linkedin: #007bb6;
-$color__google-plus: #dd4b39;
-$color__youtube: #bb0000;
+$colors__social: (
+    'facebook': #3B5998,
+    'twitter': #00aced,
+    'linkedin': #007bb6,
+    'google-plus': #dd4b39,
+    'youtube': #bb0000
+);
 
-$white: $color__white;
-$black: $color__black;
+$color__facebook: color($colors__social, 'facebook');
+$color__twitter: color($colors__social, 'twitter');
+$color__linkedin: color($colors__social, 'linkedin');
+$color__google-plus: color($colors__social, 'google-plus');
+$color__youtube: color($colors__social, 'youtube');
 
-$color__background-body: transparent;
+
+$color__background-body: $color__background;
 $color__background-header: $color__primary;
 $color__background-content: transparent;
 $color__background-footer: $color__tertiary;
@@ -57,12 +116,13 @@ $color__text-input-focus: $color__black;
 $color__text-screen: $color__primary;
 $color__text-header: $color__primary;
 
-$color__link: $color__primary;
+$color__link: $color__secondary;
 $color__link-visited: $color__link;
-$color__link-hover: darken($color__link, 20%);
+$color__link-hover: darken($color__link, 10%);
 $color__link-active: $color__link;
 
-$color__text-main: $color__dark-grey;
+$color__text-main: $color__foreground;
+$color__text-meta: mix(white, $color__foreground, 30%);
 $color__text-light: $color__light-grey;
 $color__text-inverted: $color__white;
 
@@ -73,17 +133,17 @@ $color__border-frame: 5px solid $color__background-hr-alt;
 $color__border-frame-inverted: 5px solid $color__white;
 
 $color__background-nav: $color__white;
-$color__background-nav-active: rgba($color__black,.2);
+$color__background-nav-active: rgba($color__black,.1);
 $color__background-nav-hover: rgba($color__black,.1);
-$color__text-nav: $color__text-main;
+$color__text-nav: text-color( $color__background-nav );
 $color__text-nav-active: $color__text-nav;
-$color__text-nav-hover: rgba($color__black,.6);
-$color__border-nav: rgba($color__black,.2);
+$color__text-nav-hover: $color__text-nav-active;
+$color__border-nav: rgba($color__text-nav,.2);
 
 $color__background-nav-inverted: $color__primary;
 $color__background-nav-active-inverted: rgba($color__black,.2);
 $color__background-nav-hover-inverted: rgba($color__black,.2);
-$color__text-nav-inverted: $color__text-inverted;
+$color__text-nav-inverted: text-color( $color__background-nav-inverted);
 $color__text-nav-hover-inverted: $color__text-nav-inverted;
 $color__text-nav-active-inverted:$color__text-nav-hover-inverted;
 $color__border-nav-inverted: rgba($color__black,.1);
@@ -91,19 +151,19 @@ $color__border-nav-inverted: rgba($color__black,.1);
 $color__background-nav-alt: $color__primary;
 $color__background-nav-active-alt: rgba($color__background-nav-alt,.5);
 $color__background-nav-hover-alt: $color__background-nav-active-alt;
-$color__text-nav-alt: $color__white;
+$color__text-nav-alt: text-color( $color__background-nav-alt );
 $color__text-nav-hover-alt: $color__text-nav-alt;
 $color__text-nav-active-alt: $color__text-nav-hover-alt;
 $color__border-nav-alt: $color__background-nav-hover;
 
 $color__background-widget: $color__primary;
-$color__border-widget: rgba($color__black,.5);
-$color__text-widget: $color__white;
-$color__text-widget-header: rgba($color__white,.5);
+$color__border-widget: rgba($color__black,.2);
+$color__text-widget: text-color( $color__background-widget );
+$color__text-widget-header: rgba( $color__text-widget,.2 );
 
 $color__background-widget-alt: $color__lightest-grey;
 $color__border-widget-alt: $color__background-hr-alt;
-$color__text-widget-alt: $color__mid-light-grey;
+$color__text-widget-alt: text-color( $color__background-widget-alt );
 $color__text-widget-header-alt: $color__primary;
 
 $color__background-widget-plain: transparent;
