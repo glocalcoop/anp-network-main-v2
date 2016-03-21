@@ -234,17 +234,6 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	                $defaults['color_primary']
 	            ),
 			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.current,
-				#bbpress-forums .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected,
-				#bbpress-forums .item-list-tabs ul li.selected',
-				'property' => 'background-color',
-				'exclude'  => array(
-	                $defaults['color_accent'],
-	                $defaults['color_primary']
-	            ),
-			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
@@ -272,11 +261,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 			),
 			array(
 				'element'  => '#masthead .menu-toggle,
-				#colophon .copyright,
-				#buddypress .item-list-tabs ul li.current,
-				#bbpress-forums .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected,
-				#bbpress-forums .item-list-tabs ul li.selected',
+				#colophon .copyright',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -314,9 +299,17 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'  => '#masthead .main-navigation-container,
-				#buddypress .item-list-tabs ul li,
-				#bbpress-forums .item-list-tabs ul li',
+				'element'  => '#masthead .main-navigation-container',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+			array(
+				'element'  => '#buddypress .item-list-tabs ul li.current,
+				#buddypress .item-list-tabs ul li.selected,
+				#bbpress-forums .item-list-tabs ul li.current,
+				#bbpress-forums .item-list-tabs ul li.selected',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_background'],
@@ -333,9 +326,15 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '#masthead .main-navigation-container,
-				#buddypress .item-list-tabs ul li,
-				#bbpress-forums .item-list-tabs ul li',
+				'element'  => '#masthead .main-navigation-container',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+			array(
+				'element'  => '#buddypress .item-list-tabs ul li.current,
+				#buddypress .item-list-tabs ul li.selected,
+				#bbpress-forums .item-list-tabs ul li.current,
+				#bbpress-forums .item-list-tabs ul li.selected',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -364,9 +363,17 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'output'      => array(
 			array(
 				'element'  => '#masthead .main-navigation ul a,
-				#colophon .bottom-navigation a,
-				#buddypress .item-list-tabs ul li a,
-				#bbpress-forums .item-list-tabs ul li a',
+				#colophon .bottom-navigation a',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_foreground'],
+	            ),
+			),
+			array(
+				'element'  => '#buddypress .item-list-tabs ul li.current,
+				#buddypress .item-list-tabs ul li.selected,
+				#bbpress-forums .item-list-tabs ul li.current,
+				#bbpress-forums .item-list-tabs ul li.selected',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_foreground'],
@@ -377,9 +384,15 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'js_vars'     => array(
 			array(
 				'element'  => '#masthead .main-navigation ul a,
-				#colophon .bottom-navigation a,
-				#buddypress .item-list-tabs ul li a,
-				#bbpress-forums .item-list-tabs ul li a',
+				#colophon .bottom-navigation a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '#buddypress .item-list-tabs ul li.current,
+				#buddypress .item-list-tabs ul li.selected,
+				#bbpress-forums .item-list-tabs ul li.current,
+				#bbpress-forums .item-list-tabs ul li.selected',
 				'function' => 'css',
 				'property' => 'color',
 			),

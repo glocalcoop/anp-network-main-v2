@@ -2497,623 +2497,6 @@ input[type="button"].btn-block {
     fieldset[disabled] .navbar-inverse .btn-link:focus {
       color: #f2f2f3; }
 
-.label, .tags a,
-.category a,
-.cat-links a,
-a.tag, #buddypress #item-header-cover-image #item-meta .activity,
-#bbpress-forums #item-header-cover-image #item-meta .activity, #buddypress .highlight,
-#bbpress-forums .highlight, #buddypress .bbp-topic-tags a,
-#bbpress-forums .bbp-topic-tags a, #buddypress .tags-cell a,
-#bbpress-forums .tags-cell a, #buddypress .bbp-reply-permalink,
-#buddypress span.time-since,
-#bbpress-forums .bbp-reply-permalink,
-#bbpress-forums span.time-since, #buddypress #members-list .item-header-content .activity,
-#buddypress #members-dir-list .item-header-content .activity,
-#bbpress-forums #members-list .item-header-content .activity,
-#bbpress-forums #members-dir-list .item-header-content .activity {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em; }
-  .label:empty, .tags a:empty,
-  .category a:empty,
-  .cat-links a:empty,
-  a.tag:empty, #buddypress #item-header-cover-image #item-meta .activity:empty,
-  #bbpress-forums #item-header-cover-image #item-meta .activity:empty, #buddypress .highlight:empty,
-  #bbpress-forums .highlight:empty, #buddypress .bbp-topic-tags a:empty,
-  #bbpress-forums .bbp-topic-tags a:empty, #buddypress .tags-cell a:empty,
-  #bbpress-forums .tags-cell a:empty, #buddypress .bbp-reply-permalink:empty,
-  #buddypress span.time-since:empty,
-  #bbpress-forums .bbp-reply-permalink:empty,
-  #bbpress-forums span.time-since:empty, #buddypress #members-list .item-header-content .activity:empty,
-  #buddypress #members-dir-list .item-header-content .activity:empty,
-  #bbpress-forums #members-list .item-header-content .activity:empty,
-  #bbpress-forums #members-dir-list .item-header-content .activity:empty {
-    display: none; }
-  .btn .label, .home .entry.intro-content button .label, button .label,
-  .button:not(.wpb_button_a) .label,
-  input[type="button"] .label,
-  input[type="reset"] .label,
-  input[type="submit"] .label, input[type="reset"] .label, .wpb_button .label, .ow-button-base a .label, .so-widget-sow-cta .sow-cta-base .ow-button-base a .label, #secondary .sow-cta-base .ow-button-base a .label, .btn .tags a, .tags .btn a, .home .entry.intro-content button .tags a, .tags .home .entry.intro-content button a, button .tags a, .tags button a,
-  .button:not(.wpb_button_a) .tags a, .tags
-  .button:not(.wpb_button_a) a,
-  input[type="button"] .tags a, .tags
-  input[type="button"] a,
-  input[type="reset"] .tags a, .tags
-  input[type="reset"] a,
-  input[type="submit"] .tags a, .tags
-  input[type="submit"] a, input[type="reset"] .tags a, .tags input[type="reset"] a, .wpb_button .tags a, .tags .wpb_button a, .ow-button-base a .tags a, .tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a .tags a, .tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a .tags a, .tags #secondary .sow-cta-base .ow-button-base a a, .btn
-  .category a,
-  .category .btn a, .home .entry.intro-content button
-  .category a,
-  .category .home .entry.intro-content button a, button
-  .category a,
-  .category button a,
-  .button:not(.wpb_button_a)
-  .category a,
-  .category
-  .button:not(.wpb_button_a) a,
-  input[type="button"]
-  .category a,
-  .category
-  input[type="button"] a,
-  input[type="reset"]
-  .category a,
-  .category
-  input[type="reset"] a,
-  input[type="submit"]
-  .category a,
-  .category
-  input[type="submit"] a, input[type="reset"]
-  .category a,
-  .category input[type="reset"] a, .wpb_button
-  .category a,
-  .category .wpb_button a, .ow-button-base a
-  .category a,
-  .category .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  .category a,
-  .category .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
-  .category a,
-  .category #secondary .sow-cta-base .ow-button-base a a, .btn
-  .cat-links a,
-  .cat-links .btn a, .home .entry.intro-content button
-  .cat-links a,
-  .cat-links .home .entry.intro-content button a, button
-  .cat-links a,
-  .cat-links button a,
-  .button:not(.wpb_button_a)
-  .cat-links a,
-  .cat-links
-  .button:not(.wpb_button_a) a,
-  input[type="button"]
-  .cat-links a,
-  .cat-links
-  input[type="button"] a,
-  input[type="reset"]
-  .cat-links a,
-  .cat-links
-  input[type="reset"] a,
-  input[type="submit"]
-  .cat-links a,
-  .cat-links
-  input[type="submit"] a, input[type="reset"]
-  .cat-links a,
-  .cat-links input[type="reset"] a, .wpb_button
-  .cat-links a,
-  .cat-links .wpb_button a, .ow-button-base a
-  .cat-links a,
-  .cat-links .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  .cat-links a,
-  .cat-links .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
-  .cat-links a,
-  .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn
-  a.tag, .home .entry.intro-content button
-  a.tag, button
-  a.tag,
-  .button:not(.wpb_button_a)
-  a.tag,
-  input[type="button"]
-  a.tag,
-  input[type="reset"]
-  a.tag,
-  input[type="submit"]
-  a.tag, input[type="reset"]
-  a.tag, .wpb_button
-  a.tag, .ow-button-base a
-  a.tag, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  a.tag, #secondary .sow-cta-base .ow-button-base a
-  a.tag, .btn #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta button .activity,
-  .button:not(.wpb_button_a) #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
-  .button:not(.wpb_button_a) .activity,
-  input[type="button"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
-  input[type="button"] .activity,
-  input[type="reset"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
-  input[type="reset"] .activity,
-  input[type="submit"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
-  input[type="submit"] .activity, input[type="reset"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta input[type="reset"] .activity, .wpb_button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta button .activity,
-  .button:not(.wpb_button_a)
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta
-  .button:not(.wpb_button_a) .activity,
-  input[type="button"]
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta
-  input[type="button"] .activity,
-  input[type="reset"]
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta
-  input[type="reset"] .activity,
-  input[type="submit"]
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta
-  input[type="submit"] .activity, input[type="reset"]
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta input[type="reset"] .activity, .wpb_button
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn #buddypress .highlight, #buddypress .btn .highlight, .home .entry.intro-content button #buddypress .highlight, #buddypress .home .entry.intro-content button .highlight, button #buddypress .highlight, #buddypress button .highlight,
-  .button:not(.wpb_button_a) #buddypress .highlight, #buddypress
-  .button:not(.wpb_button_a) .highlight,
-  input[type="button"] #buddypress .highlight, #buddypress
-  input[type="button"] .highlight,
-  input[type="reset"] #buddypress .highlight, #buddypress
-  input[type="reset"] .highlight,
-  input[type="submit"] #buddypress .highlight, #buddypress
-  input[type="submit"] .highlight, input[type="reset"] #buddypress .highlight, #buddypress input[type="reset"] .highlight, .wpb_button #buddypress .highlight, #buddypress .wpb_button .highlight, .ow-button-base a #buddypress .highlight, #buddypress .ow-button-base a .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .highlight, #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a #buddypress .highlight, #buddypress #secondary .sow-cta-base .ow-button-base a .highlight, .btn
-  #bbpress-forums .highlight,
-  #bbpress-forums .btn .highlight, .home .entry.intro-content button
-  #bbpress-forums .highlight,
-  #bbpress-forums .home .entry.intro-content button .highlight, button
-  #bbpress-forums .highlight,
-  #bbpress-forums button .highlight,
-  .button:not(.wpb_button_a)
-  #bbpress-forums .highlight,
-  #bbpress-forums
-  .button:not(.wpb_button_a) .highlight,
-  input[type="button"]
-  #bbpress-forums .highlight,
-  #bbpress-forums
-  input[type="button"] .highlight,
-  input[type="reset"]
-  #bbpress-forums .highlight,
-  #bbpress-forums
-  input[type="reset"] .highlight,
-  input[type="submit"]
-  #bbpress-forums .highlight,
-  #bbpress-forums
-  input[type="submit"] .highlight, input[type="reset"]
-  #bbpress-forums .highlight,
-  #bbpress-forums input[type="reset"] .highlight, .wpb_button
-  #bbpress-forums .highlight,
-  #bbpress-forums .wpb_button .highlight, .ow-button-base a
-  #bbpress-forums .highlight,
-  #bbpress-forums .ow-button-base a .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .highlight,
-  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums .highlight,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a .highlight, .btn #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .btn a, .home .entry.intro-content button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .home .entry.intro-content button a, button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags button a,
-  .button:not(.wpb_button_a) #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
-  .button:not(.wpb_button_a) a,
-  input[type="button"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
-  input[type="button"] a,
-  input[type="reset"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
-  input[type="reset"] a,
-  input[type="submit"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
-  input[type="submit"] a, input[type="reset"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags input[type="reset"] a, .wpb_button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .wpb_button a, .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .btn a, .home .entry.intro-content button
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .home .entry.intro-content button a, button
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags button a,
-  .button:not(.wpb_button_a)
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags
-  .button:not(.wpb_button_a) a,
-  input[type="button"]
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags
-  input[type="button"] a,
-  input[type="reset"]
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags
-  input[type="reset"] a,
-  input[type="submit"]
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags
-  input[type="submit"] a, input[type="reset"]
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags input[type="reset"] a, .wpb_button
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .wpb_button a, .ow-button-base a
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .tags-cell a, #buddypress .tags-cell .btn a, .home .entry.intro-content button #buddypress .tags-cell a, #buddypress .tags-cell .home .entry.intro-content button a, button #buddypress .tags-cell a, #buddypress .tags-cell button a,
-  .button:not(.wpb_button_a) #buddypress .tags-cell a, #buddypress .tags-cell
-  .button:not(.wpb_button_a) a,
-  input[type="button"] #buddypress .tags-cell a, #buddypress .tags-cell
-  input[type="button"] a,
-  input[type="reset"] #buddypress .tags-cell a, #buddypress .tags-cell
-  input[type="reset"] a,
-  input[type="submit"] #buddypress .tags-cell a, #buddypress .tags-cell
-  input[type="submit"] a, input[type="reset"] #buddypress .tags-cell a, #buddypress .tags-cell input[type="reset"] a, .wpb_button #buddypress .tags-cell a, #buddypress .tags-cell .wpb_button a, .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .btn a, .home .entry.intro-content button
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .home .entry.intro-content button a, button
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell button a,
-  .button:not(.wpb_button_a)
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell
-  .button:not(.wpb_button_a) a,
-  input[type="button"]
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell
-  input[type="button"] a,
-  input[type="reset"]
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell
-  input[type="reset"] a,
-  input[type="submit"]
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell
-  input[type="submit"] a, input[type="reset"]
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell input[type="reset"] a, .wpb_button
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .wpb_button a, .ow-button-base a
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .bbp-reply-permalink, #buddypress .btn .bbp-reply-permalink, .home .entry.intro-content button #buddypress .bbp-reply-permalink, #buddypress .home .entry.intro-content button .bbp-reply-permalink, button #buddypress .bbp-reply-permalink, #buddypress button .bbp-reply-permalink,
-  .button:not(.wpb_button_a) #buddypress .bbp-reply-permalink, #buddypress
-  .button:not(.wpb_button_a) .bbp-reply-permalink,
-  input[type="button"] #buddypress .bbp-reply-permalink, #buddypress
-  input[type="button"] .bbp-reply-permalink,
-  input[type="reset"] #buddypress .bbp-reply-permalink, #buddypress
-  input[type="reset"] .bbp-reply-permalink,
-  input[type="submit"] #buddypress .bbp-reply-permalink, #buddypress
-  input[type="submit"] .bbp-reply-permalink, input[type="reset"] #buddypress .bbp-reply-permalink, #buddypress input[type="reset"] .bbp-reply-permalink, .wpb_button #buddypress .bbp-reply-permalink, #buddypress .wpb_button .bbp-reply-permalink, .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress .ow-button-base a .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
-  #buddypress span.time-since,
-  #buddypress .btn span.time-since, .home .entry.intro-content button
-  #buddypress span.time-since,
-  #buddypress .home .entry.intro-content button span.time-since, button
-  #buddypress span.time-since,
-  #buddypress button span.time-since,
-  .button:not(.wpb_button_a)
-  #buddypress span.time-since,
-  #buddypress
-  .button:not(.wpb_button_a) span.time-since,
-  input[type="button"]
-  #buddypress span.time-since,
-  #buddypress
-  input[type="button"] span.time-since,
-  input[type="reset"]
-  #buddypress span.time-since,
-  #buddypress
-  input[type="reset"] span.time-since,
-  input[type="submit"]
-  #buddypress span.time-since,
-  #buddypress
-  input[type="submit"] span.time-since, input[type="reset"]
-  #buddypress span.time-since,
-  #buddypress input[type="reset"] span.time-since, .wpb_button
-  #buddypress span.time-since,
-  #buddypress .wpb_button span.time-since, .ow-button-base a
-  #buddypress span.time-since,
-  #buddypress .ow-button-base a span.time-since, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #buddypress span.time-since,
-  #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
-  #buddypress span.time-since,
-  #buddypress #secondary .sow-cta-base .ow-button-base a span.time-since, .btn
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .btn .bbp-reply-permalink, .home .entry.intro-content button
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .home .entry.intro-content button .bbp-reply-permalink, button
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums button .bbp-reply-permalink,
-  .button:not(.wpb_button_a)
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums
-  .button:not(.wpb_button_a) .bbp-reply-permalink,
-  input[type="button"]
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums
-  input[type="button"] .bbp-reply-permalink,
-  input[type="reset"]
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums
-  input[type="reset"] .bbp-reply-permalink,
-  input[type="submit"]
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums
-  input[type="submit"] .bbp-reply-permalink, input[type="reset"]
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums input[type="reset"] .bbp-reply-permalink, .wpb_button
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .wpb_button .bbp-reply-permalink, .ow-button-base a
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .ow-button-base a .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
-  #bbpress-forums span.time-since,
-  #bbpress-forums .btn span.time-since, .home .entry.intro-content button
-  #bbpress-forums span.time-since,
-  #bbpress-forums .home .entry.intro-content button span.time-since, button
-  #bbpress-forums span.time-since,
-  #bbpress-forums button span.time-since,
-  .button:not(.wpb_button_a)
-  #bbpress-forums span.time-since,
-  #bbpress-forums
-  .button:not(.wpb_button_a) span.time-since,
-  input[type="button"]
-  #bbpress-forums span.time-since,
-  #bbpress-forums
-  input[type="button"] span.time-since,
-  input[type="reset"]
-  #bbpress-forums span.time-since,
-  #bbpress-forums
-  input[type="reset"] span.time-since,
-  input[type="submit"]
-  #bbpress-forums span.time-since,
-  #bbpress-forums
-  input[type="submit"] span.time-since, input[type="reset"]
-  #bbpress-forums span.time-since,
-  #bbpress-forums input[type="reset"] span.time-since, .wpb_button
-  #bbpress-forums span.time-since,
-  #bbpress-forums .wpb_button span.time-since, .ow-button-base a
-  #bbpress-forums span.time-since,
-  #bbpress-forums .ow-button-base a span.time-since, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums span.time-since,
-  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums span.time-since,
-  #bbpress-forums #secondary .sow-cta-base .ow-button-base a span.time-since, .btn #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .btn .activity, .home .entry.intro-content button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .home .entry.intro-content button .activity, button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content button .activity,
-  .button:not(.wpb_button_a) #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
-  .button:not(.wpb_button_a) .activity,
-  input[type="button"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
-  input[type="button"] .activity,
-  input[type="reset"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
-  input[type="reset"] .activity,
-  input[type="submit"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
-  input[type="submit"] .activity, input[type="reset"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content input[type="reset"] .activity, .wpb_button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .wpb_button .activity, .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .home .entry.intro-content button .activity, button
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content button .activity,
-  .button:not(.wpb_button_a)
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content
-  .button:not(.wpb_button_a) .activity,
-  input[type="button"]
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content
-  input[type="button"] .activity,
-  input[type="reset"]
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content
-  input[type="reset"] .activity,
-  input[type="submit"]
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content
-  input[type="submit"] .activity, input[type="reset"]
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content input[type="reset"] .activity, .wpb_button
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .wpb_button .activity, .ow-button-base a
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
-  #buddypress #members-dir-list .item-header-content .activity,
-  #buddypress #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .btn .activity, .home .entry.intro-content button
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .home .entry.intro-content button .activity, button
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content button .activity,
-  .button:not(.wpb_button_a)
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content
-  .button:not(.wpb_button_a) .activity,
-  input[type="button"]
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content
-  input[type="button"] .activity,
-  input[type="reset"]
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content
-  input[type="reset"] .activity,
-  input[type="submit"]
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content
-  input[type="submit"] .activity, input[type="reset"]
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content input[type="reset"] .activity, .wpb_button
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .wpb_button .activity, .ow-button-base a
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .home .entry.intro-content button .activity, button
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content button .activity,
-  .button:not(.wpb_button_a)
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content
-  .button:not(.wpb_button_a) .activity,
-  input[type="button"]
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content
-  input[type="button"] .activity,
-  input[type="reset"]
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content
-  input[type="reset"] .activity,
-  input[type="submit"]
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content
-  input[type="submit"] .activity, input[type="reset"]
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content input[type="reset"] .activity, .wpb_button
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .wpb_button .activity, .ow-button-base a
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity {
-    position: relative;
-    top: -1px; }
-
-a.label:hover, .tags a:hover,
-.category a:hover,
-.cat-links a:hover,
-a.tag:hover, #buddypress #item-header-cover-image #item-meta a.activity:hover,
-#bbpress-forums #item-header-cover-image #item-meta a.activity:hover, #buddypress a.highlight:hover,
-#bbpress-forums a.highlight:hover, #buddypress .bbp-topic-tags a:hover,
-#bbpress-forums .bbp-topic-tags a:hover, #buddypress .tags-cell a:hover,
-#bbpress-forums .tags-cell a:hover, #buddypress a.bbp-reply-permalink:hover,
-#bbpress-forums a.bbp-reply-permalink:hover, #buddypress #members-list .item-header-content a.activity:hover,
-#buddypress #members-dir-list .item-header-content a.activity:hover,
-#bbpress-forums #members-list .item-header-content a.activity:hover,
-#bbpress-forums #members-dir-list .item-header-content a.activity:hover, a.label:focus, .tags a:focus,
-.category a:focus,
-.cat-links a:focus,
-a.tag:focus, #buddypress #item-header-cover-image #item-meta a.activity:focus,
-#bbpress-forums #item-header-cover-image #item-meta a.activity:focus, #buddypress a.highlight:focus,
-#bbpress-forums a.highlight:focus, #buddypress .bbp-topic-tags a:focus,
-#bbpress-forums .bbp-topic-tags a:focus, #buddypress .tags-cell a:focus,
-#bbpress-forums .tags-cell a:focus, #buddypress a.bbp-reply-permalink:focus,
-#bbpress-forums a.bbp-reply-permalink:focus, #buddypress #members-list .item-header-content a.activity:focus,
-#buddypress #members-dir-list .item-header-content a.activity:focus,
-#bbpress-forums #members-list .item-header-content a.activity:focus,
-#bbpress-forums #members-dir-list .item-header-content a.activity:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer; }
-
-.label-default, .tags a,
-.category a,
-.cat-links a,
-a.tag, #buddypress #item-header-cover-image #item-meta .activity,
-#bbpress-forums #item-header-cover-image #item-meta .activity, #buddypress .bbp-topic-tags a,
-#bbpress-forums .bbp-topic-tags a, #buddypress .tags-cell a,
-#bbpress-forums .tags-cell a, #buddypress .bbp-reply-permalink,
-#buddypress span.time-since,
-#bbpress-forums .bbp-reply-permalink,
-#bbpress-forums span.time-since, #buddypress #members-list .item-header-content .activity,
-#buddypress #members-dir-list .item-header-content .activity,
-#bbpress-forums #members-list .item-header-content .activity,
-#bbpress-forums #members-dir-list .item-header-content .activity {
-  background-color: #cacccd; }
-  .label-default[href]:hover, .tags a[href]:hover,
-  .category a[href]:hover,
-  .cat-links a[href]:hover,
-  a[href].tag:hover, #buddypress #item-header-cover-image #item-meta [href].activity:hover,
-  #bbpress-forums #item-header-cover-image #item-meta [href].activity:hover, #buddypress .bbp-topic-tags a[href]:hover,
-  #bbpress-forums .bbp-topic-tags a[href]:hover, #buddypress .tags-cell a[href]:hover,
-  #bbpress-forums .tags-cell a[href]:hover, #buddypress [href].bbp-reply-permalink:hover,
-  #buddypress span[href].time-since:hover,
-  #bbpress-forums [href].bbp-reply-permalink:hover,
-  #bbpress-forums span[href].time-since:hover, #buddypress #members-list .item-header-content [href].activity:hover,
-  #buddypress #members-dir-list .item-header-content [href].activity:hover,
-  #bbpress-forums #members-list .item-header-content [href].activity:hover,
-  #bbpress-forums #members-dir-list .item-header-content [href].activity:hover, .label-default[href]:focus, .tags a[href]:focus,
-  .category a[href]:focus,
-  .cat-links a[href]:focus,
-  a[href].tag:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus,
-  #bbpress-forums #item-header-cover-image #item-meta [href].activity:focus, #buddypress .bbp-topic-tags a[href]:focus,
-  #bbpress-forums .bbp-topic-tags a[href]:focus, #buddypress .tags-cell a[href]:focus,
-  #bbpress-forums .tags-cell a[href]:focus, #buddypress [href].bbp-reply-permalink:focus,
-  #buddypress span[href].time-since:focus,
-  #bbpress-forums [href].bbp-reply-permalink:focus,
-  #bbpress-forums span[href].time-since:focus, #buddypress #members-list .item-header-content [href].activity:focus,
-  #buddypress #members-dir-list .item-header-content [href].activity:focus,
-  #bbpress-forums #members-list .item-header-content [href].activity:focus,
-  #bbpress-forums #members-dir-list .item-header-content [href].activity:focus {
-    background-color: #b0b3b4; }
-
-.label-primary {
-  background-color: #509EA3; }
-  .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #3f7d81; }
-
-.label-success {
-  background-color: #AFBB87; }
-  .label-success[href]:hover, .label-success[href]:focus {
-    background-color: #99a966; }
-
-.label-info, #buddypress .highlight,
-#bbpress-forums .highlight, #buddypress #members-list .item-header-content .is-current-user .activity,
-#buddypress #members-dir-list .item-header-content .is-current-user .activity,
-#bbpress-forums #members-list .item-header-content .is-current-user .activity,
-#bbpress-forums #members-dir-list .item-header-content .is-current-user .activity {
-  background-color: #1C2A42; }
-  .label-info[href]:hover, #buddypress [href].highlight:hover,
-  #bbpress-forums [href].highlight:hover, #buddypress #members-list .item-header-content .is-current-user [href].activity:hover,
-  #buddypress #members-dir-list .item-header-content .is-current-user [href].activity:hover,
-  #bbpress-forums #members-list .item-header-content .is-current-user [href].activity:hover,
-  #bbpress-forums #members-dir-list .item-header-content .is-current-user [href].activity:hover, .label-info[href]:focus, #buddypress [href].highlight:focus,
-  #bbpress-forums [href].highlight:focus, #buddypress #members-list .item-header-content .is-current-user [href].activity:focus,
-  #buddypress #members-dir-list .item-header-content .is-current-user [href].activity:focus,
-  #bbpress-forums #members-list .item-header-content .is-current-user [href].activity:focus,
-  #bbpress-forums #members-dir-list .item-header-content .is-current-user [href].activity:focus {
-    background-color: #0d131e; }
-
-.label-warning, #buddypress #members-list .item-header-content .is-online .activity,
-#buddypress #members-dir-list .item-header-content .is-online .activity,
-#bbpress-forums #members-list .item-header-content .is-online .activity,
-#bbpress-forums #members-dir-list .item-header-content .is-online .activity {
-  background-color: #EFE4A6; }
-  .label-warning[href]:hover, #buddypress #members-list .item-header-content .is-online [href].activity:hover,
-  #buddypress #members-dir-list .item-header-content .is-online [href].activity:hover,
-  #bbpress-forums #members-list .item-header-content .is-online [href].activity:hover,
-  #bbpress-forums #members-dir-list .item-header-content .is-online [href].activity:hover, .label-warning[href]:focus, #buddypress #members-list .item-header-content .is-online [href].activity:focus,
-  #buddypress #members-dir-list .item-header-content .is-online [href].activity:focus,
-  #bbpress-forums #members-list .item-header-content .is-online [href].activity:focus,
-  #bbpress-forums #members-dir-list .item-header-content .is-online [href].activity:focus {
-    background-color: #e7d77b; }
-
-.label-danger {
-  background-color: #E53634; }
-  .label-danger[href]:hover, .label-danger[href]:focus {
-    background-color: #cc1c1a; }
-
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -7729,8 +7112,579 @@ textarea {
 .tags a,
 .category a,
 .cat-links a,
+a.tag, #buddypress #item-header-cover-image #item-meta .activity,
+#bbpress-forums #item-header-cover-image #item-meta .activity, #buddypress .highlight,
+#bbpress-forums .highlight, #buddypress .bbp-topic-tags a,
+#bbpress-forums .bbp-topic-tags a, #buddypress .tags-cell a,
+#bbpress-forums .tags-cell a, #buddypress .bbp-reply-permalink,
+#buddypress span.time-since,
+#bbpress-forums .bbp-reply-permalink,
+#bbpress-forums span.time-since, #buddypress #members-list .item-header-content .activity,
+#buddypress #members-dir-list .item-header-content .activity,
+#bbpress-forums #members-list .item-header-content .activity,
+#bbpress-forums #members-dir-list .item-header-content .activity {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em; }
+  .tags a:empty,
+  .category a:empty,
+  .cat-links a:empty,
+  a.tag:empty, #buddypress #item-header-cover-image #item-meta .activity:empty,
+  #bbpress-forums #item-header-cover-image #item-meta .activity:empty, #buddypress .highlight:empty,
+  #bbpress-forums .highlight:empty, #buddypress .bbp-topic-tags a:empty,
+  #bbpress-forums .bbp-topic-tags a:empty, #buddypress .tags-cell a:empty,
+  #bbpress-forums .tags-cell a:empty, #buddypress .bbp-reply-permalink:empty,
+  #buddypress span.time-since:empty,
+  #bbpress-forums .bbp-reply-permalink:empty,
+  #bbpress-forums span.time-since:empty, #buddypress #members-list .item-header-content .activity:empty,
+  #buddypress #members-dir-list .item-header-content .activity:empty,
+  #bbpress-forums #members-list .item-header-content .activity:empty,
+  #bbpress-forums #members-dir-list .item-header-content .activity:empty {
+    display: none; }
+  .btn .tags a, .tags .btn a, .home .entry.intro-content button .tags a, .tags .home .entry.intro-content button a, button .tags a, .tags button a,
+  .button:not(.wpb_button_a) .tags a, .tags
+  .button:not(.wpb_button_a) a,
+  input[type="button"] .tags a, .tags
+  input[type="button"] a,
+  input[type="reset"] .tags a, .tags
+  input[type="reset"] a,
+  input[type="submit"] .tags a, .tags
+  input[type="submit"] a, input[type="reset"] .tags a, .tags input[type="reset"] a, .wpb_button .tags a, .tags .wpb_button a, .ow-button-base a .tags a, .tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a .tags a, .tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a .tags a, .tags #secondary .sow-cta-base .ow-button-base a a, .btn
+  .category a,
+  .category .btn a, .home .entry.intro-content button
+  .category a,
+  .category .home .entry.intro-content button a, button
+  .category a,
+  .category button a,
+  .button:not(.wpb_button_a)
+  .category a,
+  .category
+  .button:not(.wpb_button_a) a,
+  input[type="button"]
+  .category a,
+  .category
+  input[type="button"] a,
+  input[type="reset"]
+  .category a,
+  .category
+  input[type="reset"] a,
+  input[type="submit"]
+  .category a,
+  .category
+  input[type="submit"] a, input[type="reset"]
+  .category a,
+  .category input[type="reset"] a, .wpb_button
+  .category a,
+  .category .wpb_button a, .ow-button-base a
+  .category a,
+  .category .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  .category a,
+  .category .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  .category a,
+  .category #secondary .sow-cta-base .ow-button-base a a, .btn
+  .cat-links a,
+  .cat-links .btn a, .home .entry.intro-content button
+  .cat-links a,
+  .cat-links .home .entry.intro-content button a, button
+  .cat-links a,
+  .cat-links button a,
+  .button:not(.wpb_button_a)
+  .cat-links a,
+  .cat-links
+  .button:not(.wpb_button_a) a,
+  input[type="button"]
+  .cat-links a,
+  .cat-links
+  input[type="button"] a,
+  input[type="reset"]
+  .cat-links a,
+  .cat-links
+  input[type="reset"] a,
+  input[type="submit"]
+  .cat-links a,
+  .cat-links
+  input[type="submit"] a, input[type="reset"]
+  .cat-links a,
+  .cat-links input[type="reset"] a, .wpb_button
+  .cat-links a,
+  .cat-links .wpb_button a, .ow-button-base a
+  .cat-links a,
+  .cat-links .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  .cat-links a,
+  .cat-links .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  .cat-links a,
+  .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn
+  a.tag, .home .entry.intro-content button
+  a.tag, button
+  a.tag,
+  .button:not(.wpb_button_a)
+  a.tag,
+  input[type="button"]
+  a.tag,
+  input[type="reset"]
+  a.tag,
+  input[type="submit"]
+  a.tag, input[type="reset"]
+  a.tag, .wpb_button
+  a.tag, .ow-button-base a
+  a.tag, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  a.tag, #secondary .sow-cta-base .ow-button-base a
+  a.tag, .btn #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta button .activity,
+  .button:not(.wpb_button_a) #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
+  .button:not(.wpb_button_a) .activity,
+  input[type="button"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
+  input[type="button"] .activity,
+  input[type="reset"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
+  input[type="reset"] .activity,
+  input[type="submit"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta
+  input[type="submit"] .activity, input[type="reset"] #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta input[type="reset"] .activity, .wpb_button #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #item-header-cover-image #item-meta .activity, #buddypress #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta button .activity,
+  .button:not(.wpb_button_a)
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta
+  .button:not(.wpb_button_a) .activity,
+  input[type="button"]
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta
+  input[type="button"] .activity,
+  input[type="reset"]
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta
+  input[type="reset"] .activity,
+  input[type="submit"]
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta
+  input[type="submit"] .activity, input[type="reset"]
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta input[type="reset"] .activity, .wpb_button
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums #item-header-cover-image #item-meta .activity,
+  #bbpress-forums #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn #buddypress .highlight, #buddypress .btn .highlight, .home .entry.intro-content button #buddypress .highlight, #buddypress .home .entry.intro-content button .highlight, button #buddypress .highlight, #buddypress button .highlight,
+  .button:not(.wpb_button_a) #buddypress .highlight, #buddypress
+  .button:not(.wpb_button_a) .highlight,
+  input[type="button"] #buddypress .highlight, #buddypress
+  input[type="button"] .highlight,
+  input[type="reset"] #buddypress .highlight, #buddypress
+  input[type="reset"] .highlight,
+  input[type="submit"] #buddypress .highlight, #buddypress
+  input[type="submit"] .highlight, input[type="reset"] #buddypress .highlight, #buddypress input[type="reset"] .highlight, .wpb_button #buddypress .highlight, #buddypress .wpb_button .highlight, .ow-button-base a #buddypress .highlight, #buddypress .ow-button-base a .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .highlight, #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a #buddypress .highlight, #buddypress #secondary .sow-cta-base .ow-button-base a .highlight, .btn
+  #bbpress-forums .highlight,
+  #bbpress-forums .btn .highlight, .home .entry.intro-content button
+  #bbpress-forums .highlight,
+  #bbpress-forums .home .entry.intro-content button .highlight, button
+  #bbpress-forums .highlight,
+  #bbpress-forums button .highlight,
+  .button:not(.wpb_button_a)
+  #bbpress-forums .highlight,
+  #bbpress-forums
+  .button:not(.wpb_button_a) .highlight,
+  input[type="button"]
+  #bbpress-forums .highlight,
+  #bbpress-forums
+  input[type="button"] .highlight,
+  input[type="reset"]
+  #bbpress-forums .highlight,
+  #bbpress-forums
+  input[type="reset"] .highlight,
+  input[type="submit"]
+  #bbpress-forums .highlight,
+  #bbpress-forums
+  input[type="submit"] .highlight, input[type="reset"]
+  #bbpress-forums .highlight,
+  #bbpress-forums input[type="reset"] .highlight, .wpb_button
+  #bbpress-forums .highlight,
+  #bbpress-forums .wpb_button .highlight, .ow-button-base a
+  #bbpress-forums .highlight,
+  #bbpress-forums .ow-button-base a .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums .highlight,
+  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .highlight,
+  #bbpress-forums #secondary .sow-cta-base .ow-button-base a .highlight, .btn #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .btn a, .home .entry.intro-content button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .home .entry.intro-content button a, button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags button a,
+  .button:not(.wpb_button_a) #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
+  .button:not(.wpb_button_a) a,
+  input[type="button"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
+  input[type="button"] a,
+  input[type="reset"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
+  input[type="reset"] a,
+  input[type="submit"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags
+  input[type="submit"] a, input[type="reset"] #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags input[type="reset"] a, .wpb_button #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .wpb_button a, .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a #buddypress .bbp-topic-tags a, #buddypress .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags .btn a, .home .entry.intro-content button
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags .home .entry.intro-content button a, button
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags button a,
+  .button:not(.wpb_button_a)
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags
+  .button:not(.wpb_button_a) a,
+  input[type="button"]
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags
+  input[type="button"] a,
+  input[type="reset"]
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags
+  input[type="reset"] a,
+  input[type="submit"]
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags
+  input[type="submit"] a, input[type="reset"]
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags input[type="reset"] a, .wpb_button
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags .wpb_button a, .ow-button-base a
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .bbp-topic-tags a,
+  #bbpress-forums .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .tags-cell a, #buddypress .tags-cell .btn a, .home .entry.intro-content button #buddypress .tags-cell a, #buddypress .tags-cell .home .entry.intro-content button a, button #buddypress .tags-cell a, #buddypress .tags-cell button a,
+  .button:not(.wpb_button_a) #buddypress .tags-cell a, #buddypress .tags-cell
+  .button:not(.wpb_button_a) a,
+  input[type="button"] #buddypress .tags-cell a, #buddypress .tags-cell
+  input[type="button"] a,
+  input[type="reset"] #buddypress .tags-cell a, #buddypress .tags-cell
+  input[type="reset"] a,
+  input[type="submit"] #buddypress .tags-cell a, #buddypress .tags-cell
+  input[type="submit"] a, input[type="reset"] #buddypress .tags-cell a, #buddypress .tags-cell input[type="reset"] a, .wpb_button #buddypress .tags-cell a, #buddypress .tags-cell .wpb_button a, .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a #buddypress .tags-cell a, #buddypress .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell .btn a, .home .entry.intro-content button
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell .home .entry.intro-content button a, button
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell button a,
+  .button:not(.wpb_button_a)
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell
+  .button:not(.wpb_button_a) a,
+  input[type="button"]
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell
+  input[type="button"] a,
+  input[type="reset"]
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell
+  input[type="reset"] a,
+  input[type="submit"]
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell
+  input[type="submit"] a, input[type="reset"]
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell input[type="reset"] a, .wpb_button
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell .wpb_button a, .ow-button-base a
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .tags-cell a,
+  #bbpress-forums .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn #buddypress .bbp-reply-permalink, #buddypress .btn .bbp-reply-permalink, .home .entry.intro-content button #buddypress .bbp-reply-permalink, #buddypress .home .entry.intro-content button .bbp-reply-permalink, button #buddypress .bbp-reply-permalink, #buddypress button .bbp-reply-permalink,
+  .button:not(.wpb_button_a) #buddypress .bbp-reply-permalink, #buddypress
+  .button:not(.wpb_button_a) .bbp-reply-permalink,
+  input[type="button"] #buddypress .bbp-reply-permalink, #buddypress
+  input[type="button"] .bbp-reply-permalink,
+  input[type="reset"] #buddypress .bbp-reply-permalink, #buddypress
+  input[type="reset"] .bbp-reply-permalink,
+  input[type="submit"] #buddypress .bbp-reply-permalink, #buddypress
+  input[type="submit"] .bbp-reply-permalink, input[type="reset"] #buddypress .bbp-reply-permalink, #buddypress input[type="reset"] .bbp-reply-permalink, .wpb_button #buddypress .bbp-reply-permalink, #buddypress .wpb_button .bbp-reply-permalink, .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress .ow-button-base a .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a #buddypress .bbp-reply-permalink, #buddypress #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
+  #buddypress span.time-since,
+  #buddypress .btn span.time-since, .home .entry.intro-content button
+  #buddypress span.time-since,
+  #buddypress .home .entry.intro-content button span.time-since, button
+  #buddypress span.time-since,
+  #buddypress button span.time-since,
+  .button:not(.wpb_button_a)
+  #buddypress span.time-since,
+  #buddypress
+  .button:not(.wpb_button_a) span.time-since,
+  input[type="button"]
+  #buddypress span.time-since,
+  #buddypress
+  input[type="button"] span.time-since,
+  input[type="reset"]
+  #buddypress span.time-since,
+  #buddypress
+  input[type="reset"] span.time-since,
+  input[type="submit"]
+  #buddypress span.time-since,
+  #buddypress
+  input[type="submit"] span.time-since, input[type="reset"]
+  #buddypress span.time-since,
+  #buddypress input[type="reset"] span.time-since, .wpb_button
+  #buddypress span.time-since,
+  #buddypress .wpb_button span.time-since, .ow-button-base a
+  #buddypress span.time-since,
+  #buddypress .ow-button-base a span.time-since, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #buddypress span.time-since,
+  #buddypress .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
+  #buddypress span.time-since,
+  #buddypress #secondary .sow-cta-base .ow-button-base a span.time-since, .btn
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums .btn .bbp-reply-permalink, .home .entry.intro-content button
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums .home .entry.intro-content button .bbp-reply-permalink, button
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums button .bbp-reply-permalink,
+  .button:not(.wpb_button_a)
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums
+  .button:not(.wpb_button_a) .bbp-reply-permalink,
+  input[type="button"]
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums
+  input[type="button"] .bbp-reply-permalink,
+  input[type="reset"]
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums
+  input[type="reset"] .bbp-reply-permalink,
+  input[type="submit"]
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums
+  input[type="submit"] .bbp-reply-permalink, input[type="reset"]
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums input[type="reset"] .bbp-reply-permalink, .wpb_button
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums .wpb_button .bbp-reply-permalink, .ow-button-base a
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums .ow-button-base a .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .bbp-reply-permalink,
+  #bbpress-forums #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
+  #bbpress-forums span.time-since,
+  #bbpress-forums .btn span.time-since, .home .entry.intro-content button
+  #bbpress-forums span.time-since,
+  #bbpress-forums .home .entry.intro-content button span.time-since, button
+  #bbpress-forums span.time-since,
+  #bbpress-forums button span.time-since,
+  .button:not(.wpb_button_a)
+  #bbpress-forums span.time-since,
+  #bbpress-forums
+  .button:not(.wpb_button_a) span.time-since,
+  input[type="button"]
+  #bbpress-forums span.time-since,
+  #bbpress-forums
+  input[type="button"] span.time-since,
+  input[type="reset"]
+  #bbpress-forums span.time-since,
+  #bbpress-forums
+  input[type="reset"] span.time-since,
+  input[type="submit"]
+  #bbpress-forums span.time-since,
+  #bbpress-forums
+  input[type="submit"] span.time-since, input[type="reset"]
+  #bbpress-forums span.time-since,
+  #bbpress-forums input[type="reset"] span.time-since, .wpb_button
+  #bbpress-forums span.time-since,
+  #bbpress-forums .wpb_button span.time-since, .ow-button-base a
+  #bbpress-forums span.time-since,
+  #bbpress-forums .ow-button-base a span.time-since, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums span.time-since,
+  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums span.time-since,
+  #bbpress-forums #secondary .sow-cta-base .ow-button-base a span.time-since, .btn #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .btn .activity, .home .entry.intro-content button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .home .entry.intro-content button .activity, button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content button .activity,
+  .button:not(.wpb_button_a) #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
+  .button:not(.wpb_button_a) .activity,
+  input[type="button"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
+  input[type="button"] .activity,
+  input[type="reset"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
+  input[type="reset"] .activity,
+  input[type="submit"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content
+  input[type="submit"] .activity, input[type="reset"] #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content input[type="reset"] .activity, .wpb_button #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .wpb_button .activity, .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #members-list .item-header-content .activity, #buddypress #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content .home .entry.intro-content button .activity, button
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content button .activity,
+  .button:not(.wpb_button_a)
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content
+  .button:not(.wpb_button_a) .activity,
+  input[type="button"]
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content
+  input[type="button"] .activity,
+  input[type="reset"]
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content
+  input[type="reset"] .activity,
+  input[type="submit"]
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content
+  input[type="submit"] .activity, input[type="reset"]
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content input[type="reset"] .activity, .wpb_button
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content .wpb_button .activity, .ow-button-base a
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #buddypress #members-dir-list .item-header-content .activity,
+  #buddypress #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content .btn .activity, .home .entry.intro-content button
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content .home .entry.intro-content button .activity, button
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content button .activity,
+  .button:not(.wpb_button_a)
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content
+  .button:not(.wpb_button_a) .activity,
+  input[type="button"]
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content
+  input[type="button"] .activity,
+  input[type="reset"]
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content
+  input[type="reset"] .activity,
+  input[type="submit"]
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content
+  input[type="submit"] .activity, input[type="reset"]
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content input[type="reset"] .activity, .wpb_button
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content .wpb_button .activity, .ow-button-base a
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums #members-list .item-header-content .activity,
+  #bbpress-forums #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content .home .entry.intro-content button .activity, button
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content button .activity,
+  .button:not(.wpb_button_a)
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content
+  .button:not(.wpb_button_a) .activity,
+  input[type="button"]
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content
+  input[type="button"] .activity,
+  input[type="reset"]
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content
+  input[type="reset"] .activity,
+  input[type="submit"]
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content
+  input[type="submit"] .activity, input[type="reset"]
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content input[type="reset"] .activity, .wpb_button
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content .wpb_button .activity, .ow-button-base a
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums #members-dir-list .item-header-content .activity,
+  #bbpress-forums #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity {
+    position: relative;
+    top: -1px; }
+
+.tags a,
+.category a,
+.cat-links a,
+a.tag, #buddypress #item-header-cover-image #item-meta .activity,
+#bbpress-forums #item-header-cover-image #item-meta .activity, #buddypress .bbp-topic-tags a,
+#bbpress-forums .bbp-topic-tags a, #buddypress .tags-cell a,
+#bbpress-forums .tags-cell a, #buddypress .bbp-reply-permalink,
+#buddypress span.time-since,
+#bbpress-forums .bbp-reply-permalink,
+#bbpress-forums span.time-since, #buddypress #members-list .item-header-content .activity,
+#buddypress #members-dir-list .item-header-content .activity,
+#bbpress-forums #members-list .item-header-content .activity,
+#bbpress-forums #members-dir-list .item-header-content .activity {
+  background-color: #cacccd; }
+  .tags a[href]:hover,
+  .category a[href]:hover,
+  .cat-links a[href]:hover,
+  a[href].tag:hover, #buddypress #item-header-cover-image #item-meta [href].activity:hover,
+  #bbpress-forums #item-header-cover-image #item-meta [href].activity:hover, #buddypress .bbp-topic-tags a[href]:hover,
+  #bbpress-forums .bbp-topic-tags a[href]:hover, #buddypress .tags-cell a[href]:hover,
+  #bbpress-forums .tags-cell a[href]:hover, #buddypress [href].bbp-reply-permalink:hover,
+  #buddypress span[href].time-since:hover,
+  #bbpress-forums [href].bbp-reply-permalink:hover,
+  #bbpress-forums span[href].time-since:hover, #buddypress #members-list .item-header-content [href].activity:hover,
+  #buddypress #members-dir-list .item-header-content [href].activity:hover,
+  #bbpress-forums #members-list .item-header-content [href].activity:hover,
+  #bbpress-forums #members-dir-list .item-header-content [href].activity:hover, .tags a[href]:focus,
+  .category a[href]:focus,
+  .cat-links a[href]:focus,
+  a[href].tag:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus,
+  #bbpress-forums #item-header-cover-image #item-meta [href].activity:focus, #buddypress .bbp-topic-tags a[href]:focus,
+  #bbpress-forums .bbp-topic-tags a[href]:focus, #buddypress .tags-cell a[href]:focus,
+  #bbpress-forums .tags-cell a[href]:focus, #buddypress [href].bbp-reply-permalink:focus,
+  #buddypress span[href].time-since:focus,
+  #bbpress-forums [href].bbp-reply-permalink:focus,
+  #bbpress-forums span[href].time-since:focus, #buddypress #members-list .item-header-content [href].activity:focus,
+  #buddypress #members-dir-list .item-header-content [href].activity:focus,
+  #bbpress-forums #members-list .item-header-content [href].activity:focus,
+  #bbpress-forums #members-dir-list .item-header-content [href].activity:focus {
+    background-color: #b0b3b4; }
+
+#buddypress .highlight,
+#bbpress-forums .highlight, #buddypress #members-list .item-header-content .is-current-user .activity,
+#buddypress #members-dir-list .item-header-content .is-current-user .activity,
+#bbpress-forums #members-list .item-header-content .is-current-user .activity,
+#bbpress-forums #members-dir-list .item-header-content .is-current-user .activity {
+  background-color: #1C2A42; }
+  #buddypress [href].highlight:hover,
+  #bbpress-forums [href].highlight:hover, #buddypress #members-list .item-header-content .is-current-user [href].activity:hover,
+  #buddypress #members-dir-list .item-header-content .is-current-user [href].activity:hover,
+  #bbpress-forums #members-list .item-header-content .is-current-user [href].activity:hover,
+  #bbpress-forums #members-dir-list .item-header-content .is-current-user [href].activity:hover, #buddypress [href].highlight:focus,
+  #bbpress-forums [href].highlight:focus, #buddypress #members-list .item-header-content .is-current-user [href].activity:focus,
+  #buddypress #members-dir-list .item-header-content .is-current-user [href].activity:focus,
+  #bbpress-forums #members-list .item-header-content .is-current-user [href].activity:focus,
+  #bbpress-forums #members-dir-list .item-header-content .is-current-user [href].activity:focus {
+    background-color: #0d131e; }
+
+#buddypress #members-list .item-header-content .is-online .activity,
+#buddypress #members-dir-list .item-header-content .is-online .activity,
+#bbpress-forums #members-list .item-header-content .is-online .activity,
+#bbpress-forums #members-dir-list .item-header-content .is-online .activity {
+  background-color: #EFE4A6; }
+  #buddypress #members-list .item-header-content .is-online [href].activity:hover,
+  #buddypress #members-dir-list .item-header-content .is-online [href].activity:hover,
+  #bbpress-forums #members-list .item-header-content .is-online [href].activity:hover,
+  #bbpress-forums #members-dir-list .item-header-content .is-online [href].activity:hover, #buddypress #members-list .item-header-content .is-online [href].activity:focus,
+  #buddypress #members-dir-list .item-header-content .is-online [href].activity:focus,
+  #bbpress-forums #members-list .item-header-content .is-online [href].activity:focus,
+  #bbpress-forums #members-dir-list .item-header-content .is-online [href].activity:focus {
+    background-color: #e7d77b; }
+
+.tags a,
+.category a,
+.cat-links a,
 a.tag {
-  color: #fff !important; }
+  color: #fff; }
   .tags a:hover, .tags a:focus,
   .category a:hover,
   .category a:focus,
@@ -7738,7 +7692,9 @@ a.tag {
   .cat-links a:focus,
   a.tag:hover,
   a.tag:focus {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }
 
 a[href*="=edit"] {
   margin-right: .25em;
@@ -7803,12 +7759,13 @@ body.buddypress h1 {
       background-color: rgba(17, 17, 17, 0.2);
       color: #fff;
       text-align: center; }
-      #buddypress .item-list-tabs ul li.active, #buddypress .item-list-tabs ul li.selected, #buddypress .item-list-tabs ul li:hover, #buddypress .item-list-tabs ul li:focus,
-      #bbpress-forums .item-list-tabs ul li.active,
-      #bbpress-forums .item-list-tabs ul li.selected,
+      #buddypress .item-list-tabs ul li:hover, #buddypress .item-list-tabs ul li:focus, #buddypress .item-list-tabs ul li.active, #buddypress .item-list-tabs ul li.current, #buddypress .item-list-tabs ul li.selected,
       #bbpress-forums .item-list-tabs ul li:hover,
-      #bbpress-forums .item-list-tabs ul li:focus {
-        background-color: #008Eb0;
+      #bbpress-forums .item-list-tabs ul li:focus,
+      #bbpress-forums .item-list-tabs ul li.active,
+      #bbpress-forums .item-list-tabs ul li.current,
+      #bbpress-forums .item-list-tabs ul li.selected {
+        background-color: rgba(17, 17, 17, 0.4);
         color: #fff; }
       #buddypress .item-list-tabs ul li:not(:last-child),
       #bbpress-forums .item-list-tabs ul li:not(:last-child) {
@@ -8064,25 +8021,8 @@ body.buddypress h1 {
     #buddypress table tr td,
     #bbpress-forums table tr td {
       border: none; }
-      #buddypress table tr td.label, #buddypress table tr #item-header-cover-image #item-meta td.activity, #buddypress #item-header-cover-image #item-meta table tr td.activity,
-      #bbpress-forums #item-header-cover-image #item-meta #buddypress table tr td.activity, #buddypress table tr td.highlight, #buddypress table tr td.bbp-reply-permalink, #buddypress table tr #members-list .item-header-content td.activity, #buddypress #members-list .item-header-content table tr td.activity,
-      #buddypress table tr #members-dir-list .item-header-content td.activity,
-      #buddypress #members-dir-list .item-header-content table tr td.activity,
-      #bbpress-forums #members-list .item-header-content #buddypress table tr td.activity,
-      #bbpress-forums #members-dir-list .item-header-content #buddypress table tr td.activity,
-      #bbpress-forums table tr td.label, #buddypress #item-header-cover-image #item-meta
-      #bbpress-forums table tr td.activity,
-      #bbpress-forums table tr #item-header-cover-image #item-meta td.activity,
-      #bbpress-forums #item-header-cover-image #item-meta table tr td.activity,
-      #bbpress-forums table tr td.highlight,
-      #bbpress-forums table tr td.bbp-reply-permalink, #buddypress #members-list .item-header-content
-      #bbpress-forums table tr td.activity,
-      #buddypress #members-dir-list .item-header-content
-      #bbpress-forums table tr td.activity,
-      #bbpress-forums table tr #members-list .item-header-content td.activity,
-      #bbpress-forums #members-list .item-header-content table tr td.activity,
-      #bbpress-forums table tr #members-dir-list .item-header-content td.activity,
-      #bbpress-forums #members-dir-list .item-header-content table tr td.activity {
+      #buddypress table tr td.label,
+      #bbpress-forums table tr td.label {
         display: block;
         border: none;
         background-color: #6cbce1;
