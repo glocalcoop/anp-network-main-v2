@@ -16,7 +16,9 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php get_template_part( 'components/archive-header/archive-header' ); ?>
+			<?php get_template_part( 'template-parts/archive-header' ); ?>
+
+			<div class="entries-list">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -32,6 +34,8 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
+
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

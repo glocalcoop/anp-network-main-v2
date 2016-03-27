@@ -5130,7 +5130,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   font-size: 0.875rem;
   text-align: center;
   background-color: #7B8083;
-  color: #fff !important;
+  color: #111 !important;
   display: inline-block;
   border-radius: 0; }
   .archive-meeting .content-filter li:hover,
@@ -5147,7 +5147,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .taxonomy-meeting_tag .content-filter li:focus,
   .taxonomy-proposal_status .content-filter li:focus {
     background: #95999c;
-    color: #fff !important; }
+    color: #111 !important; }
 
 .entry-content blockquote.alignleft, .entry-content blockquote.alignright,
 .entry-summary blockquote.alignleft,
@@ -5608,15 +5608,15 @@ time.updated {
 .comment-content blockquote blockquote:not(.alignleft):not(.alignright) {
   margin-left: 0; }
 
-.entry-content .entry-meta,
-.entry-content .meta,
-.entry-content .pagination,
-.entry-summary .entry-meta,
-.entry-summary .meta,
-.entry-summary .pagination,
-.comment-content .entry-meta,
-.comment-content .meta,
-.comment-content .pagination {
+.entry-content .entry-meta:not(:empty),
+.entry-content .meta:not(:empty),
+.entry-content .pagination:not(:empty),
+.entry-summary .entry-meta:not(:empty),
+.entry-summary .meta:not(:empty),
+.entry-summary .pagination:not(:empty),
+.comment-content .entry-meta:not(:empty),
+.comment-content .meta:not(:empty),
+.comment-content .pagination:not(:empty) {
   border-top: 1px solid #f2f2f3;
   margin-top: 0.25em;
   padding-top: 0.25em;
@@ -6695,7 +6695,6 @@ body {
 
 /**
  * Main Navigation States
- * 
  */
 .main-navigation ul[data-state=closed] {
   display: none; }
@@ -6773,85 +6772,18 @@ body {
   .bottom-navigation ul .current-menu-item {
     font-weight: bold; }
 
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
+.taxonomy-filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 1em; }
+  .taxonomy-filters li {
+    display: inline-block; }
+  .taxonomy-filters a {
+    padding: .25em .5em;
+    margin-right: .25em;
+    margin-bottom: .25em; }
 
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/*--------------------------------------------------------------
-## Header Image
---------------------------------------------------------------*/
-.header-image,
-#header-image {
-  clear: both; }
-  .header-image:hover img,
-  .header-image:focus img,
-  #header-image:hover img,
-  #header-image:focus img {
-    opacity: 0.85; }
-
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
 form {
   border-radius: 0; }
 
@@ -7106,9 +7038,34 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
 .tags a,
 .category a,
 .cat-links a,
@@ -7709,6 +7666,79 @@ a[href*="=edit"] {
     -moz-osx-font-smoothing: grayscale;
     color: #cacccd; }
 
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+## Header Image
+--------------------------------------------------------------*/
+.header-image,
+#header-image {
+  clear: both; }
+  .header-image:hover img,
+  .header-image:focus img,
+  #header-image:hover img,
+  #header-image:focus img {
+    opacity: 0.85; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
@@ -8096,7 +8126,7 @@ body.buddypress h1 {
   font-size: 0.875rem;
   text-align: center;
   background-color: transparent;
-  color: #cacccd !important;
+  color: #fff !important;
   display: inline-block;
   border-radius: 0.125em;
   border: 1px solid #cacccd;
@@ -8117,7 +8147,7 @@ body.buddypress h1 {
   #bbpress-forums .acomment-options a:hover,
   #bbpress-forums .acomment-options a:focus {
     background: rgba(26, 26, 26, 0);
-    color: #cacccd !important; }
+    color: #fff !important; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .group-button a:hover,
   #buddypress .group-button a:focus,
@@ -8174,7 +8204,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8195,7 +8225,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
     #bbpress-forums .acomment-options a[href$="document-title/"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .group-button a[href$="document-title/"]:hover,
     #buddypress .group-button a[href$="document-title/"]:focus,
@@ -8252,7 +8282,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8273,7 +8303,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="edit/"]:hover,
     #bbpress-forums .acomment-options a[href$="edit/"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .group-button a[href$="edit/"]:hover,
     #buddypress .group-button a[href$="edit/"]:focus,
@@ -8330,7 +8360,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8351,7 +8381,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="history"]:hover,
     #bbpress-forums .acomment-options a[href$="history"]:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .group-button a[href$="history"]:hover,
     #buddypress .group-button a[href$="history"]:focus,
@@ -8408,7 +8438,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8429,7 +8459,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:hover,
     #bbpress-forums .acomment-options a.leave-group:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .group-button a.leave-group:hover,
     #buddypress .group-button a.leave-group:focus,
@@ -8486,7 +8516,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8507,7 +8537,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-reply:hover,
     #bbpress-forums .acomment-options a.acomment-reply:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .group-button a.acomment-reply:hover,
     #buddypress .group-button a.acomment-reply:focus,
@@ -8564,7 +8594,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8585,7 +8615,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.fav:hover,
     #bbpress-forums .acomment-options a.fav:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .group-button a.fav:hover,
     #buddypress .group-button a.fav:focus,
@@ -8642,7 +8672,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #eb6361 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8663,7 +8693,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unfav:hover,
     #bbpress-forums .acomment-options a.unfav:focus {
       background: rgba(26, 26, 26, 0);
-      color: #eb6361 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
     #buddypress .group-button a.unfav:hover,
     #buddypress .group-button a.unfav:focus,
@@ -8727,7 +8757,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8762,7 +8792,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-delete:hover,
     #bbpress-forums .acomment-options a.acomment-delete:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .group-button a.delete-activity:hover,
     #buddypress .group-button a.delete-activity:focus,
@@ -8847,7 +8877,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -8868,7 +8898,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unlink-from-group:hover,
     #bbpress-forums .acomment-options a.unlink-from-group:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .group-button a.unlink-from-group:hover,
     #buddypress .group-button a.unlink-from-group:focus,
@@ -8959,7 +8989,7 @@ body.buddypress h1 {
   font-size: 0.875rem;
   text-align: center;
   background-color: transparent;
-  color: #313334 !important;
+  color: #fff !important;
   display: inline-block;
   border-radius: 0;
   border: 1px solid transparent;
@@ -8968,7 +8998,7 @@ body.buddypress h1 {
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
     background: rgba(26, 26, 26, 0);
-    color: #313334 !important; }
+    color: #fff !important; }
   #buddypress #bp-create-doc-button:hover, #buddypress #bp-create-doc-button:focus,
   #bbpress-forums #bp-create-doc-button:hover,
   #bbpress-forums #bp-create-doc-button:focus {
@@ -9003,7 +9033,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -9016,7 +9046,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-ban:hover,
     #bbpress-forums #members-dir-list .small > a.member-ban:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress #members-list .small > a.member-ban:hover, #buddypress #members-list .small > a.member-ban:focus,
     #buddypress #members-dir-list .small > a.member-ban:hover,
     #buddypress #members-dir-list .small > a.member-ban:focus,
@@ -9053,7 +9083,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -9066,7 +9096,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
@@ -9103,7 +9133,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -9116,7 +9146,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:focus,
@@ -9153,7 +9183,7 @@ body.buddypress h1 {
     font-size: 0.875rem;
     text-align: center;
     background-color: transparent;
-    color: #a3a6a8 !important;
+    color: #fff !important;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -9166,7 +9196,7 @@ body.buddypress h1 {
     #bbpress-forums #members-dir-list .small > a.confirm:hover,
     #bbpress-forums #members-dir-list .small > a.confirm:focus {
       background: rgba(26, 26, 26, 0);
-      color: #a3a6a8 !important; }
+      color: #fff !important; }
     #buddypress #members-list .small > a.confirm:hover, #buddypress #members-list .small > a.confirm:focus,
     #buddypress #members-dir-list .small > a.confirm:hover,
     #buddypress #members-dir-list .small > a.confirm:focus,
@@ -10285,7 +10315,7 @@ span:empty {
   border-bottom: 1px solid #f2f2f3;
   margin-bottom: 1em;
   padding-bottom: 1em; }
-  .entry .entry-footer {
+  .entry .entry-footer:not(:empty) {
     border-top: 1px solid #f2f2f3;
     margin-top: 1em;
     padding-top: 1em; }
@@ -10429,6 +10459,39 @@ a {
 /**
  * Footer Widgets
  */
+/**
+ * Taxonomy Filters
+ */
+.taxonomy-filters a {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111 !important;
+  display: inline-block;
+  border-radius: 0;
+  border: 1px solid #cacccd; }
+  .taxonomy-filters a:hover, .taxonomy-filters a:focus {
+    background: white;
+    color: #111 !important; }
+  .taxonomy-filters a.active {
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-align: center;
+    background-color: #cacccd;
+    color: #111 !important;
+    display: inline-block;
+    border-radius: 0; }
+    .taxonomy-filters a.active:hover, .taxonomy-filters a.active:focus {
+      background: #e4e5e6;
+      color: #111 !important; }
+
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */
 /* blog template page */

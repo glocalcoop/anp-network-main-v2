@@ -1,0 +1,12 @@
+.taxonomy-filters {
+	@include inline-list;
+	margin-bottom: 1em;
+
+	a {
+		padding: .25em .5em;
+		margin-right: .25em;
+		margin-bottom: .25em;
+
+		&.active {}
+	}
+}

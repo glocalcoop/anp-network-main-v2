@@ -14,7 +14,7 @@ span:empty {
 .entry {
     @include border(bottom, 1em);
 
-    .entry-footer {
+    .entry-footer:not(:empty) {
         @include border(top, 1em);
     }
 }
@@ -285,6 +285,20 @@ a {
  */
 .footer-widgets {
     .wrap {}
+}
+
+/**
+ * Taxonomy Filters
+ */
+.taxonomy-filters {
+    a {
+        @include button($bg-color: $color__white);
+        border: 1px solid $color__light-grey;
+
+        &.active {
+            @include button($bg-color: $color__light-grey);
+        }
+    }
 }
 
 

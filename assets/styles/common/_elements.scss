@@ -115,9 +115,9 @@ time.updated {
 		}
 	}
 
-	.entry-meta,
-	.meta,
-	.pagination {
+	.entry-meta:not(:empty),
+	.meta:not(:empty),
+	.pagination:not(:empty) {
 		@include border(top);
 		@include border(bottom);
 	}

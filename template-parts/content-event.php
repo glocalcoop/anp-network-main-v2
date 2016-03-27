@@ -13,7 +13,7 @@
     $date_format = get_option( 'date_format' );
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'event-list' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry event' ); ?>>
 
     <?php do_action ( 'anp_network_main_entry_header_before' );?>
 

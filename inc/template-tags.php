@@ -169,40 +169,116 @@ endif;
  * @return bool
  */
 function anp_network_main_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'anp_network_main_categories' ) ) ) {
-		// Create an array of all the categories that are attached to posts.
-		$all_the_cool_cats = get_categories( array(
-			'fields'     => 'ids',
-			'hide_empty' => 1,
+  if ( false === ( $all_the_cool_cats = get_transient( 'anp_network_main_categories' ) ) ) {
+    // Create an array of all the categories that are attached to posts.
+    $all_the_cool_cats = get_categories( array(
+      'fields'     => 'ids',
+      'hide_empty' => 1,
 
-			// We only need to know if there is more than one category.
-			'number'     => 2,
-		) );
+      // We only need to know if there is more than one category.
+      'number'     => 2,
+    ) );
 
-		// Count the number of categories that are attached to the posts.
-		$all_the_cool_cats = count( $all_the_cool_cats );
+    // Count the number of categories that are attached to the posts.
+    $all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'anp_network_main_categories', $all_the_cool_cats );
-	}
+    set_transient( 'anp_network_main_categories', $all_the_cool_cats );
+  }
 
-	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so anp_network_main_categorized_blog should return true.
-		return true;
-	} else {
-		// This blog has only 1 category so anp_network_main_categorized_blog should return false.
-		return false;
-	}
+  if ( $all_the_cool_cats > 1 ) {
+    // This blog has more than 1 category so anp_network_main_categorized_blog should return true.
+    return true;
+  } else {
+    // This blog has only 1 category so anp_network_main_categorized_blog should return false.
+    return false;
+  }
 }
 
 /**
  * Flush out the transients used in anp_network_main_categorized_blog.
  */
 function anp_network_main_category_transient_flusher() {
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-		return;
-	}
-	// Like, beat it. Dig?
-	delete_transient( 'anp_network_main_categories' );
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+    return;
+  }
+  // Like, beat it. Dig?
+  delete_transient( 'anp_network_main_categories' );
 }
 add_action( 'edit_category', 'anp_network_main_category_transient_flusher' );
 add_action( 'save_post',     'anp_network_main_category_transient_flusher' );
+
+
+/**
+ * Add Taxonomy Filter
+ */
+function anp_taxonomy_filter( $taxonomy = 'category' ) {
+    $taxonomy = $taxonomy;
+    $terms = get_terms( $taxonomy );
+
+    $count = count( $terms );
+ 
+    if ( $count > 0 ): ?>
+        <ul class="taxonomy-filters">
+        <?php
+        foreach ( $terms as $term ) {
+            $term_link = get_term_link( $term, $taxonomy );
+            echo '<li><a href="' . $term_link . '" class="taxonomy-filter" title="' . $term->slug . '" data-taxonomy="' . $taxonomy . '" data-term="' . $term->slug . '" data-posttype="' . get_post_type() . '">' . $term->name . '</a></li>';
+        } ?>
+        </ul>
+    <?php endif;
+}
+
+/**
+ * AJAX Get Posts Filter
+ */
+function anp_filter_get_posts( $term, $taxonomy, $post_type ) {
+ 
+  // Verify nonce
+  if( !isset( $_POST['anp_filter_nonce'] ) || !wp_verify_nonce( $_POST['anp_filter_nonce'], 'anp_filter_nonce' ) )
+    die( 'Permission denied' );
+ 
+  $term = $_POST['term'];
+  $taxonomy = $_POST['taxonomy'];
+  $post_type = $_POST['post_type'];
+ 
+  // WP Query
+  $args = array(
+    'post_type' => $post_type,
+    'tax_query' => array(
+      array(
+      'taxonomy' => $taxonomy,
+      'field'    => 'slug',
+      'terms'    => $term,
+      ),
+    ),
+  );
+
+ 
+  // If taxonomy is not set, remove key from array and get all posts
+  if( !$term ) {
+    unset( $args['tax_query'] );
+  }
+ 
+  $query = new WP_Query( $args );
+ 
+  if ( $query->have_posts() ) : ?>
+
+    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+    <?php get_template_part( 'template-parts/content', $post_type ); ?>
+
+    <?php endwhile; ?>
+
+  <?php else : ?>
+
+      Why not?
+
+    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+ 
+  <?php endif;
+ 
+  die();
+}
+ 
+add_action( 'wp_ajax_filter_posts', 'anp_filter_get_posts' );
+add_action( 'wp_ajax_nopriv_filter_posts', 'anp_filter_get_posts' );

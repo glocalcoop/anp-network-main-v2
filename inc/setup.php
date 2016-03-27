@@ -25,6 +25,7 @@ function anp_network_main_setup() {
    * By adding theme support, we declare that this theme does not use a
    * hard-coded <title> tag in the document head, and expect WordPress to
    * provide it for us.
+   * @link https://codex.wordpress.org/Title_Tag
    */
   add_theme_support( 'title-tag' );
 
@@ -184,6 +185,13 @@ function anp_network_main_scripts() {
   wp_enqueue_style( 'anp-network-main-style', get_stylesheet_uri() );
 
   wp_enqueue_script( 'anp-network-main', get_template_directory_uri() . '/dist/scripts/app.js', array('jquery'), '', true );
+
+  wp_localize_script( 'anp-network-main', 'anp_filter_vars', array(
+      'anp_filter_nonce' => wp_create_nonce( 'anp_filter_nonce' ), // Create nonce which we later will use to verify AJAX request
+      'anp_filter_ajax_url' => admin_url( 'admin-ajax.php' ),
+      'anp_post_type'       => get_post_type(),
+    )
+  );
 
   wp_enqueue_script( 'navigation', get_template_directory_uri() . '/dist/scripts/navigation.js', array('jquery'), '', true );
 

@@ -121,12 +121,14 @@ add_filter( 'bp_before_groups_cover_image_settings_parse_args', 'anp_buddypress_
 remove_theme_support( 'jetpack-testimonial' );
 
 
+/**
+ * Event Organiser Modifications
+ */
 remove_action( 'eventorganiser_additional_event_meta', 'bpeo_add_ical_link_to_eventmeta', 50 );
 
 remove_action( 'eventorganiser_additional_event_meta', 'bpeo_list_connected_groups' );
 
 remove_action( 'eventorganiser_additional_event_meta', 'bpeo_list_author' );
-
 
 if( function_exists( 'bpeo_get_the_ical_link' ) ) {
 
@@ -214,7 +216,6 @@ if( !function_exists( 'anp_buddypress_attribution' ) ) {
 
   function anp_buddypress_attribution() {
 
-
     echo '<div class="buddypress-attribution"><a href="https://buddypress.org/" target="_blank" rel="author">Powered By BuddyPress</a></div>';
 
   }
@@ -223,3 +224,48 @@ if( !function_exists( 'anp_buddypress_attribution' ) ) {
 
 }
 
+/**
+ * Display Post Filter on Archive Pages
+ * Remove action in order to not display on archive pages
+ * @link https://codex.wordpress.org/Function_Reference/remove_action
+ * Redeclare `anp_archive_post_filter()` {function} in child theme in order to modify
+ */
+if( !function_exists( 'anp_archive_post_filter' ) ) {
+
+  function anp_archive_post_filter() {
+
+    if(! is_archive() && ! is_home() ) {
+
+      return;
+
+    } 
+
+    if( is_home() ) {
+
+      anp_taxonomy_filter();
+
+    } elseif( is_post_type_archive( 'event' ) ) {
+
+      anp_taxonomy_filter( 'event-category' );
+
+    } elseif( is_post_type_archive( 'meeting' ) ) {
+
+      anp_taxonomy_filter( 'meeting_type' );
+
+      anp_taxonomy_filter( 'meeting_tag' );
+
+    } elseif( is_post_type_archive( 'network_directory' ) ) {
+      
+      anp_taxonomy_filter( 'subsite_category' );
+      
+    } else {
+
+      return;
+      
+    }
+
+  }
+
+  add_action( 'anp_network_main_page_header_bottom', 'anp_archive_post_filter' );
+
+}
