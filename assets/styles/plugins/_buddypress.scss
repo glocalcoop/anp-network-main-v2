@@ -449,7 +449,7 @@ body.buddypress {
     .activity-meta,
     .acomment-options {
         a {
-            @include button-icon($color: $color__text-light, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+            @include button-icon($color: $color__mid-light-grey, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
 
             &[href$="document-title/"] {
                 @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
@@ -574,6 +574,13 @@ body.buddypress {
                 @include icon-font(calendar, before);
             }
         }
+    }
+}
+
+#send-invite-form {
+    .submit {
+        float: left;
+        margin-left: 4%;
     }
 }
 

@@ -173,14 +173,14 @@
   @include font-size($font-size);
   text-align: center;
   background-color: $bg-color;
-  color: text-color( $bg-color ) !important;
+  color: text-color( $bg-color );
   display: inline-block;
   border-radius: $border-radius;
 
   &:hover,
   &:focus {
     background: lighten($bg-color, 10%);
-    color: text-color( $bg-color ) !important;
+    color: text-color( $bg-color );
   }
 }
 
@@ -237,10 +237,12 @@
 
   border: 1px solid $border-color;
   padding: .25em;
+  color: $color;
 
   &:hover,
   &:focus {
-      background-color: $color__background-body;
+      background-color: $background-color;
+      color: darken($color, 10%);
   }
 
   @include icon-font($icon, before, $color);
