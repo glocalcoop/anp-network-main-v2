@@ -269,3 +269,32 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
   add_action( 'anp_network_main_page_header_bottom', 'anp_archive_post_filter' );
 
 }
+
+/**
+ * Change Template Location for WP-Knowledge Base
+ * 
+ */
+if( !function_exists( 'anp_kbe_template_path_override' ) ) {
+
+  function anp_kbe_template_path_override() {
+    return 'plugins/kbe/';
+  }
+  
+}
+
+add_filter( 'kbe_template_path', 'anp_kbe_template_path_override' );
+
+
+function anp_kbe_template( $template ) {
+
+  if( is_post_type_archive( 'kbe_knowledgebase' ) ) {
+
+    return get_template_directory() . '/plugins/kbe/kbe_knowledgebase.php';
+
+  }
+
+  return $template;
+  
+}
+
+//add_filter( 'template_include', 'anp_kbe_template' );
