@@ -20,6 +20,8 @@
             </div><!-- #secondary -->
         <?php endif; ?>
 
+
+
     <?php else : ?>
 
         <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
