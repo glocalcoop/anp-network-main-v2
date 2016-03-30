@@ -7,7 +7,5 @@
     </h1>
 
     <?php do_action ( 'anp_network_main_page_header_bottom' );?>
-
-    <?php anp_taxonomy_filter( $taxonomy = 'subsite_category' ); ?>
     
 </header><!-- .page-header -->
