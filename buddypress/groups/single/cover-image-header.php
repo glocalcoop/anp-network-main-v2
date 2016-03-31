@@ -13,11 +13,15 @@
  */
 do_action( 'bp_before_group_header' ); ?>
 
-<div id="cover-image-container">
-	<a id="header-cover-image" href="<?php bp_group_permalink(); ?>" role="banner"><?php bp_group_name(); ?></a>
+<header class="group-header">
 
-	<div id="item-header-cover-image">
+	<div id="cover-image-container">
+
+		<a id="header-cover-image" href="<?php bp_group_permalink(); ?>" role="banner">
+		</a>
+
 		<?php if ( ! bp_disable_group_avatar_uploads() ) : ?>
+
 			<div id="item-header-avatar">
 				<a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
 
@@ -25,100 +29,106 @@ do_action( 'bp_before_group_header' ); ?>
 
 				</a>
 			</div><!-- #item-header-avatar -->
+
 		<?php endif; ?>
 
-		<div id="item-header-content">
+	</div><!-- #cover-image-container -->
 
-			<div id="item-buttons"><?php
+	<div id="item-buttons" role="navigation"><?php
 
-				/**
-				 * Fires in the group header actions section.
-				 *
-				 * @since 1.2.6
-				 */
-				do_action( 'bp_group_header_actions' ); ?></div><!-- #item-buttons -->
+		/**
+		 * Fires in the group header actions section.
+		 *
+		 * @since 1.2.6
+		 */
+		do_action( 'bp_group_header_actions' ); ?>
+	</div><!-- #item-buttons -->
+
+	<h2 class="entry-title"><a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>"><?php bp_group_name(); ?></a></h2>
+
+	<div id="item-header-content">
+
+		<?php
+
+		/**
+		 * Fires before the display of the group's header meta.
+		 *
+		 * @since 1.2.0
+		 */
+		do_action( 'bp_before_group_header_meta' ); ?>
+
+		<div id="item-meta">
 
 			<?php
 
 			/**
-			 * Fires before the display of the group's header meta.
+			 * Fires after the group header actions section.
 			 *
 			 * @since 1.2.0
 			 */
-			do_action( 'bp_before_group_header_meta' ); ?>
+			do_action( 'bp_group_header_meta' ); ?>
 
-			<div id="item-meta">
+			<span class="highlight"><?php bp_group_type(); ?></span>
+			<span class="activity"><?php printf( __( 'active %s', 'anp-network-main' ), bp_get_group_last_active() ); ?></span>
 
-				<?php
+			<?php bp_group_description(); ?>
 
-				/**
-				 * Fires after the group header actions section.
-				 *
-				 * @since 1.2.0
-				 */
-				do_action( 'bp_group_header_meta' ); ?>
+		</div><!-- #item-meta -->
 
-				<span class="highlight"><?php bp_group_type(); ?></span>
-				<span class="activity"><?php printf( __( 'active %s', 'anp-network-main' ), bp_get_group_last_active() ); ?></span>
+	</div><!-- #item-header-content -->
 
-				<?php bp_group_description(); ?>
+	<div id="item-actions">
+
+		<?php if ( bp_group_is_visible() ) : ?>
+
+			<div class="group-members">
+
+				<h3><?php _e( 'Administrators', 'anp-network-main' ); ?></h3>
+
+				<?php bp_group_list_admins(); ?>
 
 			</div>
-		</div><!-- #item-header-content -->
+			
+			<?php
+			/**
+			 * Fires after the display of the group's administrators.
+			 *
+			 * @since 1.1.0
+			 */
+			do_action( 'bp_after_group_menu_admins' );
 
-		<div id="item-actions">
+			if ( bp_group_has_moderators() ) :
 
-			<?php if ( bp_group_is_visible() ) : ?>
-
-				<div class="group-members">
-
-					<h3><?php _e( 'Group Admins', 'anp-network-main' ); ?></h3>
-
-					<?php bp_group_list_admins(); ?>
-
-				</div>
-				
-				<?php
 				/**
-				 * Fires after the display of the group's administrators.
+				 * Fires before the display of the group's moderators, if there are any.
 				 *
 				 * @since 1.1.0
 				 */
-				do_action( 'bp_after_group_menu_admins' );
+				do_action( 'bp_before_group_menu_mods' ); ?>
 
-				if ( bp_group_has_moderators() ) :
+				<div class="group-members">
 
-					/**
-					 * Fires before the display of the group's moderators, if there are any.
-					 *
-					 * @since 1.1.0
-					 */
-					do_action( 'bp_before_group_menu_mods' ); ?>
+					<h3><?php _e( 'Moderators' , 'anp-network-main' ); ?></h3>
 
-					<div class="group-members">
+					<?php bp_group_list_mods(); ?>
 
-						<h3><?php _e( 'Group Mods' , 'anp-network-main' ); ?></h3>
+				</div>
 
-						<?php bp_group_list_mods(); ?>
+				<?php
+				/**
+				 * Fires after the display of the group's moderators, if there are any.
+				 *
+				 * @since 1.1.0
+				 */
+				do_action( 'bp_after_group_menu_mods' );
 
-					</div>
+			endif;
 
-					<?php
-					/**
-					 * Fires after the display of the group's moderators, if there are any.
-					 *
-					 * @since 1.1.0
-					 */
-					do_action( 'bp_after_group_menu_mods' );
+		endif; ?>
 
-				endif;
-
-			endif; ?>
-
-		</div><!-- #item-actions -->
-
-	</div><!-- #item-header-cover-image -->
-</div><!-- #cover-image-container -->
+	</div><!-- #item-actions -->
+	
+</header><!-- .group-header -->
 
 <?php
 
