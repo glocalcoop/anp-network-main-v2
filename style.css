@@ -4989,12 +4989,12 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
 #bbpress-forums .action a.unlink-from-group:before {
   content: ""; }
 
-#buddypress #members-list .small > a.member-promote-to-mod:before,
+#buddypress #members-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
 #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
-#bbpress-forums #members-list .small > a.member-promote-to-mod:before,
-#bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
 #buddypress #members-dir-list .small > a.member-promote-to-admin:before,
+#bbpress-forums #members-list .small > a.member-promote-to-mod:before,
 #bbpress-forums #members-list .small > a.member-promote-to-admin:before,
+#bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before,
 #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:before {
   content: ""; }
 
@@ -7321,12 +7321,12 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
 #bbpress-forums .action a.unlink-from-group:before {
   content: ""; }
 
-#buddypress #members-list .small > a.member-promote-to-mod:before,
+#buddypress #members-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
 #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
-#bbpress-forums #members-list .small > a.member-promote-to-mod:before,
-#bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
 #buddypress #members-dir-list .small > a.member-promote-to-admin:before,
+#bbpress-forums #members-list .small > a.member-promote-to-mod:before,
 #bbpress-forums #members-list .small > a.member-promote-to-admin:before,
+#bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before,
 #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:before {
   content: ""; }
 
@@ -10555,8 +10555,8 @@ body.buddypress h1 {
   font-size: 14px;
   font-size: 0.875rem;
   text-align: center;
-  background-color: transparent;
-  color: #fff;
+  background-color: #fff;
+  color: #111;
   display: inline-block;
   border-radius: 0.125em;
   border: 1px solid #cacccd;
@@ -10577,8 +10577,8 @@ body.buddypress h1 {
   #bbpress-forums .acomment-options a:focus,
   #bbpress-forums .action a:hover,
   #bbpress-forums .action a:focus {
-    background: rgba(26, 26, 26, 0);
-    color: #fff; }
+    background: white;
+    color: #111; }
   #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
   #buddypress .activity-meta a:hover,
   #buddypress .activity-meta a:focus,
@@ -10594,7 +10594,7 @@ body.buddypress h1 {
   #bbpress-forums .acomment-options a:focus,
   #bbpress-forums .action a:hover,
   #bbpress-forums .action a:focus {
-    background-color: transparent;
+    background-color: #fff;
     color: #898d8f; }
   #buddypress .row-actions a:before,
   #buddypress .activity-meta a:before,
@@ -10635,8 +10635,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -10657,8 +10657,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="document-title/"]:focus,
     #bbpress-forums .action a[href$="document-title/"]:hover,
     #bbpress-forums .action a[href$="document-title/"]:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
     #buddypress .activity-meta a[href$="document-title/"]:hover,
     #buddypress .activity-meta a[href$="document-title/"]:focus,
@@ -10674,7 +10674,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="document-title/"]:focus,
     #bbpress-forums .action a[href$="document-title/"]:hover,
     #bbpress-forums .action a[href$="document-title/"]:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a[href$="document-title/"]:before,
     #buddypress .activity-meta a[href$="document-title/"]:before,
@@ -10715,8 +10715,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -10737,8 +10737,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="edit/"]:focus,
     #bbpress-forums .action a[href$="edit/"]:hover,
     #bbpress-forums .action a[href$="edit/"]:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
     #buddypress .activity-meta a[href$="edit/"]:hover,
     #buddypress .activity-meta a[href$="edit/"]:focus,
@@ -10754,7 +10754,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="edit/"]:focus,
     #bbpress-forums .action a[href$="edit/"]:hover,
     #bbpress-forums .action a[href$="edit/"]:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a[href$="edit/"]:before,
     #buddypress .activity-meta a[href$="edit/"]:before,
@@ -10795,8 +10795,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -10817,8 +10817,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="history"]:focus,
     #bbpress-forums .action a[href$="history"]:hover,
     #bbpress-forums .action a[href$="history"]:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
     #buddypress .activity-meta a[href$="history"]:hover,
     #buddypress .activity-meta a[href$="history"]:focus,
@@ -10834,7 +10834,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a[href$="history"]:focus,
     #bbpress-forums .action a[href$="history"]:hover,
     #bbpress-forums .action a[href$="history"]:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a[href$="history"]:before,
     #buddypress .activity-meta a[href$="history"]:before,
@@ -10875,8 +10875,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -10897,8 +10897,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:focus,
     #bbpress-forums .action a.leave-group:hover,
     #bbpress-forums .action a.leave-group:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .activity-meta a.leave-group:hover,
     #buddypress .activity-meta a.leave-group:focus,
@@ -10914,7 +10914,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:focus,
     #bbpress-forums .action a.leave-group:hover,
     #bbpress-forums .action a.leave-group:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
@@ -10955,8 +10955,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -10977,8 +10977,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-reply:focus,
     #bbpress-forums .action a.acomment-reply:hover,
     #bbpress-forums .action a.acomment-reply:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
     #buddypress .activity-meta a.acomment-reply:hover,
     #buddypress .activity-meta a.acomment-reply:focus,
@@ -10994,7 +10994,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.acomment-reply:focus,
     #bbpress-forums .action a.acomment-reply:hover,
     #bbpress-forums .action a.acomment-reply:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a.acomment-reply:before,
     #buddypress .activity-meta a.acomment-reply:before,
@@ -11035,8 +11035,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -11057,8 +11057,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.fav:focus,
     #bbpress-forums .action a.fav:hover,
     #bbpress-forums .action a.fav:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
     #buddypress .activity-meta a.fav:hover,
     #buddypress .activity-meta a.fav:focus,
@@ -11074,7 +11074,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.fav:focus,
     #bbpress-forums .action a.fav:hover,
     #bbpress-forums .action a.fav:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a.fav:before,
     #buddypress .activity-meta a.fav:before,
@@ -11115,8 +11115,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -11137,8 +11137,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unfav:focus,
     #bbpress-forums .action a.unfav:hover,
     #bbpress-forums .action a.unfav:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
     #buddypress .activity-meta a.unfav:hover,
     #buddypress .activity-meta a.unfav:focus,
@@ -11154,7 +11154,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unfav:focus,
     #bbpress-forums .action a.unfav:hover,
     #bbpress-forums .action a.unfav:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #e53634; }
     #buddypress .row-actions a.unfav:before,
     #buddypress .activity-meta a.unfav:before,
@@ -11202,8 +11202,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -11238,8 +11238,8 @@ body.buddypress h1 {
     #bbpress-forums .action a.delete-activity:focus,
     #bbpress-forums .action a.acomment-delete:hover,
     #bbpress-forums .action a.acomment-delete:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
     #buddypress .activity-meta a.delete-activity:hover,
     #buddypress .activity-meta a.delete-activity:focus,
@@ -11269,7 +11269,7 @@ body.buddypress h1 {
     #bbpress-forums .action a.delete-activity:focus,
     #bbpress-forums .action a.acomment-delete:hover,
     #bbpress-forums .action a.acomment-delete:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
     #buddypress .activity-meta a.delete-activity:before,
@@ -11324,8 +11324,8 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
@@ -11346,8 +11346,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unlink-from-group:focus,
     #bbpress-forums .action a.unlink-from-group:hover,
     #bbpress-forums .action a.unlink-from-group:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
     #buddypress .activity-meta a.unlink-from-group:hover,
     #buddypress .activity-meta a.unlink-from-group:focus,
@@ -11363,7 +11363,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.unlink-from-group:focus,
     #bbpress-forums .action a.unlink-from-group:hover,
     #bbpress-forums .action a.unlink-from-group:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a.unlink-from-group:before,
     #buddypress .activity-meta a.unlink-from-group:before,
@@ -11404,14 +11404,13 @@ body.buddypress h1 {
     font-size: 14px;
     font-size: 0.875rem;
     text-align: center;
-    background-color: transparent;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     display: inline-block;
     border-radius: 0.125em;
     border: 1px solid #cacccd;
     padding: .25em;
-    color: #a3a6a8;
-    background-color: #fff; }
+    color: #a3a6a8; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .activity-meta a.leave-group:hover,
     #buddypress .activity-meta a.leave-group:focus,
@@ -11427,8 +11426,8 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:focus,
     #bbpress-forums .action a.leave-group:hover,
     #bbpress-forums .action a.leave-group:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
+      background: white;
+      color: #111; }
     #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
     #buddypress .activity-meta a.leave-group:hover,
     #buddypress .activity-meta a.leave-group:focus,
@@ -11444,7 +11443,7 @@ body.buddypress h1 {
     #bbpress-forums .acomment-options a.leave-group:focus,
     #bbpress-forums .action a.leave-group:hover,
     #bbpress-forums .action a.leave-group:focus {
-      background-color: transparent;
+      background-color: #fff;
       color: #898d8f; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
@@ -12248,61 +12247,12 @@ body.buddypress h1 {
     #bbpress-forums #members-list .small > a.member-ban:before,
     #bbpress-forums #members-dir-list .small > a.member-ban:before {
       margin-right: 4px; }
-  #buddypress #members-list .small > a.member-promote-to-mod,
+  #buddypress #members-list .small > a.member-promote-to-mod, #buddypress #members-list .small > a.member-promote-to-admin,
   #buddypress #members-dir-list .small > a.member-promote-to-mod,
-  #bbpress-forums #members-list .small > a.member-promote-to-mod,
-  #bbpress-forums #members-dir-list .small > a.member-promote-to-mod {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
-    background-color: transparent;
-    color: #fff;
-    display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
-    color: #a3a6a8; }
-    #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:hover,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:focus,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus {
-      background: rgba(26, 26, 26, 0);
-      color: #fff; }
-    #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:hover,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:focus,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus {
-      background-color: transparent;
-      color: #898d8f; }
-    #buddypress #members-list .small > a.member-promote-to-mod:before,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:before,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress #members-list .small > a.member-promote-to-mod:before,
-    #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
-    #bbpress-forums #members-list .small > a.member-promote-to-mod:before,
-    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before {
-      margin-right: 4px; }
-  #buddypress #members-list .small > a.member-promote-to-admin,
   #buddypress #members-dir-list .small > a.member-promote-to-admin,
+  #bbpress-forums #members-list .small > a.member-promote-to-mod,
   #bbpress-forums #members-list .small > a.member-promote-to-admin,
+  #bbpress-forums #members-dir-list .small > a.member-promote-to-mod,
   #bbpress-forums #members-dir-list .small > a.member-promote-to-admin {
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -12317,27 +12267,42 @@ body.buddypress h1 {
     border: 1px solid #cacccd;
     padding: .25em;
     color: #a3a6a8; }
-    #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
+    #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus, #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
+    #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
+    #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:focus,
+    #bbpress-forums #members-list .small > a.member-promote-to-mod:hover,
+    #bbpress-forums #members-list .small > a.member-promote-to-mod:focus,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:focus,
+    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
+    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:focus {
       background: rgba(26, 26, 26, 0);
       color: #fff; }
-    #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
+    #buddypress #members-list .small > a.member-promote-to-mod:hover, #buddypress #members-list .small > a.member-promote-to-mod:focus, #buddypress #members-list .small > a.member-promote-to-admin:hover, #buddypress #members-list .small > a.member-promote-to-admin:focus,
+    #buddypress #members-dir-list .small > a.member-promote-to-mod:hover,
+    #buddypress #members-dir-list .small > a.member-promote-to-mod:focus,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:hover,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:focus,
+    #bbpress-forums #members-list .small > a.member-promote-to-mod:hover,
+    #bbpress-forums #members-list .small > a.member-promote-to-mod:focus,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:focus,
+    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:hover,
+    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:focus,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:hover,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:focus {
       background-color: transparent;
       color: #898d8f; }
-    #buddypress #members-list .small > a.member-promote-to-admin:before,
+    #buddypress #members-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
+    #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:before,
+    #bbpress-forums #members-list .small > a.member-promote-to-mod:before,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:before,
+    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:before {
       margin-right: .5em;
       display: inline-block;
@@ -12347,9 +12312,12 @@ body.buddypress h1 {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #a3a6a8; }
-    #buddypress #members-list .small > a.member-promote-to-admin:before,
+    #buddypress #members-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
+    #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:before,
+    #bbpress-forums #members-list .small > a.member-promote-to-mod:before,
     #bbpress-forums #members-list .small > a.member-promote-to-admin:before,
+    #bbpress-forums #members-dir-list .small > a.member-promote-to-mod:before,
     #bbpress-forums #members-dir-list .small > a.member-promote-to-admin:before {
       margin-right: 4px; }
   #buddypress #members-list .small > a.confirm,

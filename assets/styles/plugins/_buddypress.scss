@@ -462,7 +462,7 @@ body.buddypress {
     .acomment-options,
     .action {
         a {
-            @include button-icon($color: $color__mid-light-grey, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            @include button-icon($color: $color__mid-light-grey, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
 
             &[href$="document-title/"] {
                 @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
@@ -554,15 +554,14 @@ body.buddypress {
                 &.member-ban {
                     @include button-icon($color: $color__mid-light-grey, $icon: ban, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
-                &.member-promote-to-mod {
-                    @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
-                }
+                &.member-promote-to-mod,
                 &.member-promote-to-admin {
-                     @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
                 &.confirm {
                     @include button-icon($color: $color__mid-light-grey, $icon: times, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
                 }
+                
             }
         }
 
