@@ -10,156 +10,203 @@
 .bp-user #buddypress,
 .groups #buddypress {
 
-    #cover-image-container {
+    #item-header
+    #item-header header {
+        @extend %clearfix;
+    }
 
-        // Cover Image
-        #header-cover-image {
-            display: block;
-            max-height: 100px;
-            width: 100%;
-            background-color: $color__primary;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: $element__widget-radius;
+    #header-cover-image {
+        background-size: cover;
+        background-position: center top;
+        background-color: $color__primary;
+    }
+
+    #cover-image-container,
+    #header-cover-image {
+        height: 100px;
+    }
+
+    #cover-image-container {
+        position: relative;
+    }
+
+    #header-cover-image {
+        display: block;
+    }
+
+    #item-header-avatar {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -50px;
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .entry-title {
+        text-align: center;
+    }
+
+    #item-meta {
+        text-align: center;
+    }
+
+    #item-buttons {
+        width: 100%;
+        border-top: 1px solid $color__light-grey;
+        border-bottom: 1px solid $color__light-grey;
+        text-align: center;
+        @include font-size($smaller);
+
+        & > div {
+            display: inline-block;
+            padding: .35em .5em;
         }
 
-        #item-header-avatar {
-            margin-top: -15%;
-            text-align: center;
-            img {
-                width: 30%;
-                max-width: 150px;
+        .leave-group {
+            @include icon-font($icon: sign-out, $position: before);
+        }
+        .join-group {
+            @include icon-font($icon: sign-in, $position: before);
+        }
+        .group-subscription-options-link {
+            @include icon-font($icon: envelope, $position: before);
+        }
+        .friendship-button {
+            &.add {
+                @include icon-font($icon: user-plus, $position: before); 
+            }
+            &.requested {
+                @include icon-font($icon: hourglass-o, $position: before); 
+            }
+            &.remove {
+                @include icon-font($icon: user-times, $position: before); 
             }
         }
-
-        #item-header-content {
-            text-align: center;
-            width: 100%;
-            clear: both;
-
+        #user_switching_switch_to a {
+            @include icon-font($icon: random, $position: before); 
+        }
+        .mention {
+            @include icon-font($icon: bullhorn, $position: before); 
+        }
+        .send-message {
+            @include icon-font($icon: comment, $position: before);
         }
 
     }
 
-}
+    #item-actions {
+        text-align: center;
 
-.bp-user #buddypress {
+        h3 {
+            margin-top: .5em;
+            margin-bottom: .25em;
+            text-transform: uppercase;
+            @include font-size($h6);
+        }
 
-    #item-header {
-        @include clearfix;
+        li {
+            display: inline-block;
+        }
+
+        .group-members {
+
+            &:first-child h3 {
+                margin-top: 0;
+            }
+
+        }
     }
 
     @include breakpoint(md) {
+
+        #cover-image-container,
+        #header-cover-image {
+            height: 225px;
+        }
 
         #cover-image-container {
             position: relative;
-            margin-bottom: 50px;
-            clear: both;
+        }
 
-            // Cover Image
-            #header-cover-image {
-                width: 100%;
-                max-height: 225px;
-                z-index: 1;
+        #header-cover-image {
+            display: block;
+        }
+
+        #item-header-avatar {
+            position: absolute;
+            top: auto;
+            right: auto;
+            bottom: -50px;
+            left: 0;
+            margin-left: 0;
+            img {
+                width: 150px;
+                height: auto;
             }
+        }
 
-            // The avatar and user info
-            #item-header-cover-image {
-                position: absolute;
-                width: 100%;
-                z-index: 2;
-                bottom: -45px;
+        #item-buttons {
+            margin-top: 0;
+            float: right;
+        }
 
-                #item-header-avatar,
-                #item-header-content {
-                    clear: none;
-                    display: block;
-                    float: left;
+        .entry-title {
+            margin-top: 50px;
+            padding-top: .25em;
+            margin-bottom: 0;
+        }
+
+        .entry-title,
+        #item-header-content {
+            float: left;
+            width: 70%;
+        }
+
+        .entry-title,
+        #item-meta {
+            text-align: left;
+        }
+
+        #item-buttons {
+            text-align: right;
+            @include font-size($small);
+
+            & > div {
+                &:last-child {
+                    padding-right: 0;
                 }
-
-                #item-header-avatar {
-                    margin-top: 0;
-                    width: 20%;
-                    padding-right: .5em;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                #item-header-content {
-                      width: 75%;
-                      text-align: left;
-
-                    h2 {
-                        color: $color__text-inverted;
-                        text-shadow: 4px 4px 2px rgba(255, 255, 255, .2),  -3px -4px 2px rgba(0, 0, 0, 0.2);
-                    }
-                }
-
             }
+        }
 
+        #item-actions {
+            width: 30%;
+            float: right;
+            margin-top: -40px;
+            margin-right: 0;
+            margin-left: auto;
         }
 
     }
-
-    @include breakpoint(lg) {
-
-        #cover-image-container {
-
-            margin-bottom: 85px;
-            
-            // Cover Image
-            #header-cover-image {}
-
-            // The avatar and user info
-            #item-header-cover-image {
-
-                bottom: -80px;
-
-                #item-header-avatar {}
-
-                #item-header-content {}
-
-            }
-
-        }
-   }
 
 }
 
-.groups:not(.bp-user) #buddypress {
+.single-item .group-subscription-div {
+    padding-top: 0 !important;
+}
 
-    @include breakpoint(md) {
-
-        #cover-image-container {
-            // Cover Image
-            #header-cover-image {
-                max-height: 225px;
-            }
-
-            // The avatar and user info
-            #item-header-cover-image {
-
-                #item-header-avatar,
-                #item-header-content {}
-
-                #item-header-avatar {
-                    margin-top: -8%;
-                    img {}
-                }
-
-                #item-header-content {
-                    h2 {}
-                }
-
-            }
-
-        }
-
+.group-subscription-options {
+    background-color: $color__white !important;
+    text-align: left;
+    -webkit-box-shadow: 2px 2px 2px rgba(17,17,17,0.2);
+    -moz-box-shadow: 2px 2px 2px rgba(17,17,17,0.2);
+    box-shadow: 2px 2px 2px rgba(17,17,17,0.2);
+    li {
+        
     }
-
 }
                         
 

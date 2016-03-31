@@ -48,6 +48,7 @@ body.buddypress {
                 background-color: rgba($color__black,.2);
                 color: text-color( rgba($color__black,.2) );
                 text-align: center;
+                @include font-size($small);
 
                 &:hover,
                 &:focus,
@@ -83,11 +84,23 @@ body.buddypress {
 
         }
 
+        li {
+            @include font-size($smaller);
+        }
+
+        @include breakpoint(sm) {
+
+            li {
+                @include font-size($small);
+            }
+        }
+
         @include breakpoint(md) {
 
             ul {
                 display: flex;
                 flex-direction: row;
+                max-width: 100%;
                 margin: 0;
                 padding: 0;
 
@@ -101,6 +114,10 @@ body.buddypress {
                         border-right: 1px solid rgba($color__black,.2);
                     }
                 }
+            }
+
+            li {
+                @include font-size($h6);
             }
         }
 
@@ -125,16 +142,6 @@ body.buddypress {
 
                 &#activity-filter-select {
                     text-align: center;
-                }
-            }
-        }
-
-        &#group-create-tabs {
-            ul li {
-                background-color: $color__secondary;
-
-                &.current {
-                    background-color: $color__background-nav-inverted;
                 }
             }
         }
@@ -170,7 +177,8 @@ body.buddypress {
             }
             .item,
             .activity-content,
-            .activity-comment-content {
+            .activity-comment-content,
+            .acomment-entry {
                 @extend .media-body;
             }
             .action {
@@ -189,6 +197,11 @@ body.buddypress {
 
             .item-title a {
                 font-weight: 500;
+            }
+
+            .acomment-entry {
+                padding-top: .25em;
+                padding-bottom: .25em;
             }
 
             .activity {}
@@ -445,7 +458,6 @@ body.buddypress {
 
     // Buttons
     .row-actions,
-    .group-button,
     .activity-meta,
     .acomment-options {
         a {
@@ -548,10 +560,6 @@ body.buddypress {
                 @extend %label-info;
             }
         }
-    }
-
-    #item-buttons {
-        margin-top: .25em;
     }
 
     // Alerts
