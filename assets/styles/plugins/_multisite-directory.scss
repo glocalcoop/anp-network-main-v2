@@ -7,25 +7,7 @@
     .entries-list {
         @include clearfix;
 
-        article {
-            // @include make-sm-column(6);
-            // @include make-md-column(4);
-        }
-
-        // @include breakpoint(sm) {
-        //     article:nth-child(2n+3) {
-        //         clear: both;
-        //     }
-        // }
-
-        // @include breakpoint(md) {
-        //     article:nth-child(2n+3) {
-        //         clear: none;
-        //     }
-        //     article:nth-child(3n+4) {
-        //         clear: both;
-        //     }
-        // }
+        article {}
     }
 
 
