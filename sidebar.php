@@ -20,7 +20,13 @@
             </div><!-- #secondary -->
         <?php endif; ?>
 
+    <?php elseif( 'forum' == get_post_type() || 'topic' == get_post_type() || 'reply' == get_post_type() || is_post_type_archive( array( 'forum', 'topic', 'reply' ) ) || is_tax( 'topic-tag' ) ) : ?>
 
+            <?php if ( is_active_sidebar( 'sidebar-buddypress' ) ) : ?>
+                <div id="secondary" class="widget-area sidebar buddypress" role="complementary">
+                    <?php dynamic_sidebar( 'sidebar-buddypress' ); ?>
+                </div><!-- #secondary -->
+            <?php endif; ?>
 
     <?php else : ?>
 
