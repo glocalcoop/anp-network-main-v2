@@ -459,43 +459,74 @@ body.buddypress {
     // Buttons
     .row-actions,
     .activity-meta,
-    .acomment-options {
+    .acomment-options,
+    .action {
         a {
-            @include button-icon($color: $color__mid-light-grey, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+            @include button-icon($color: $color__mid-light-grey, $font-size: $small, $background-color: $color__background-body, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
 
             &[href$="document-title/"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &[href$="edit/"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &[href$="history"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: history, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: history, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.leave-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.acomment-reply {
-                @include button-icon($color: $color__mid-light-grey, $icon: reply, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: reply, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.fav {
-                @include button-icon($color: $color__mid-light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.unfav {
-                @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.delete-activity,
             &.acomment-delete {
-                @include button-icon($color: $color__mid-light-grey, $icon: trash, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: trash, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.unlink-from-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                @include button-icon($color: $color__mid-light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            }
+            &.leave-group {
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            }
+            &.join-group {
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-in, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            }
+            &.group-subscription-options-link {
+                @include button-icon($color: $color__mid-light-grey, $icon: envelope, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            }
+            &.friendship-button {
+                &.add {
+                    @include button-icon($color: $color__mid-light-grey, $icon: user-plus, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                }
+                &.requested {
+                    @include button-icon($color: $color__mid-light-grey, $icon: hourglass-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+                }
+                &.remove {
+                    @include button-icon($color: $color__mid-light-grey, $icon: user-times, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+                }
+            }
+            &.mention {
+                @include button-icon($color: $color__mid-light-grey, $icon: bullhorn, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+            }
+            &.send-message {
+                @include button-icon($color: $color__mid-light-grey, $icon: comment, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
 
             // Comment Badge
             span {
                 @include badge;
             }
+        }
+
+        #user_switching_switch_to a {
+            @include button-icon($color: $color__mid-light-grey, $icon: random, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
         }
     }
 
