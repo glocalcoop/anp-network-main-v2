@@ -462,7 +462,6 @@ body.buddypress {
     .acomment-options,
     .action {
         a {
-            @include button-icon($color: $color__mid-light-grey, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
 
             &[href$="document-title/"] {
                 @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
@@ -597,6 +596,20 @@ body.buddypress {
         @extend .alert;
         @extend .alert-info;
     }
+
+    .item-list {
+
+        .group-subscription-options {
+            li {
+                background-color: $color__background;
+            }
+
+            button a {
+                color: $color__white;
+            }
+        }
+    }
+
 }
 
 .bp-user {

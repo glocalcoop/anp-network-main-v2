@@ -4776,15 +4776,7 @@ a.thumbnail.active {
   content: ""; }
 
 
-.social-links ul a:before,
-#buddypress .row-actions a:before,
-#buddypress .activity-meta a:before,
-#buddypress .acomment-options a:before,
-#buddypress .action a:before,
-#bbpress-forums .row-actions a:before,
-#bbpress-forums .activity-meta a:before,
-#bbpress-forums .acomment-options a:before,
-#bbpress-forums .action a:before {
+.social-links ul a:before {
   content: ""; }
 
 .archive-meeting .entry .tags:before,
@@ -4957,6 +4949,9 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
 .taxonomy-proposal_status .entry .connected-content li.summary-link:before,
 .taxonomy-proposal_status .entry .connected-content li.meeting-link:before {
   content: ""; }
+
+.knowledge-base-list .post-list > li a:before {
+  content: ""; }
 
 .nav-links .nav-previous:before {
   content: ""; }
@@ -7108,15 +7103,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   content: ""; }
 
 
-.social-links ul a:before,
-#buddypress .row-actions a:before,
-#buddypress .activity-meta a:before,
-#buddypress .acomment-options a:before,
-#buddypress .action a:before,
-#bbpress-forums .row-actions a:before,
-#bbpress-forums .activity-meta a:before,
-#bbpress-forums .acomment-options a:before,
-#bbpress-forums .action a:before {
+.social-links ul a:before {
   content: ""; }
 
 .archive-meeting .entry .tags:before,
@@ -7289,6 +7276,9 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
 .taxonomy-proposal_status .entry .connected-content li.summary-link:before,
 .taxonomy-proposal_status .entry .connected-content li.meeting-link:before {
   content: ""; }
+
+.knowledge-base-list .post-list > li a:before {
+  content: ""; }
 
 .nav-links .nav-previous:before {
   content: ""; }
@@ -7490,7 +7480,7 @@ a[hreflang="es-ES"] .flag-icon-es,
 .archive-proposal .content-filter:after,
 .taxonomy-meeting_type .content-filter:after,
 .taxonomy-meeting_tag .content-filter:after,
-.taxonomy-proposal_status .content-filter:after {
+.taxonomy-proposal_status .content-filter:after, .knowledge-base-list:after {
   content: " ";
   display: table;
   clear: both; }
@@ -7510,7 +7500,7 @@ a[hreflang="es-ES"] .flag-icon-es,
 .archive-proposal .content-filter:after,
 .taxonomy-meeting_type .content-filter:after,
 .taxonomy-meeting_tag .content-filter:after,
-.taxonomy-proposal_status .content-filter:after {
+.taxonomy-proposal_status .content-filter:after, .knowledge-base-list:after {
   content: "";
   display: table;
   clear: both; }
@@ -9495,7 +9485,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
 #bbpress-forums span.time-since, #buddypress #members-list .item-header-content .activity,
 #buddypress #members-dir-list .item-header-content .activity,
 #bbpress-forums #members-list .item-header-content .activity,
-#bbpress-forums #members-dir-list .item-header-content .activity {
+#bbpress-forums #members-dir-list .item-header-content .activity, .knowledge-base-list .count {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -9519,7 +9509,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #bbpress-forums span.time-since:empty, #buddypress #members-list .item-header-content .activity:empty,
   #buddypress #members-dir-list .item-header-content .activity:empty,
   #bbpress-forums #members-list .item-header-content .activity:empty,
-  #bbpress-forums #members-dir-list .item-header-content .activity:empty {
+  #bbpress-forums #members-dir-list .item-header-content .activity:empty, .knowledge-base-list .count:empty {
     display: none; }
   .btn .tags a, .tags .btn a, .home .entry.intro-content button .tags a, .tags .home .entry.intro-content button a, button .tags a, .tags button a,
   .button:not(.wpb_button_a) .tags a, .tags
@@ -9977,7 +9967,15 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #bbpress-forums #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity {
+  #bbpress-forums #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn .knowledge-base-list .count, .knowledge-base-list .btn .count, .home .entry.intro-content button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content button .count, button .knowledge-base-list .count, .knowledge-base-list button .count,
+  .button:not(.wpb_button_a) .knowledge-base-list .count, .knowledge-base-list
+  .button:not(.wpb_button_a) .count,
+  input[type="button"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="button"] .count,
+  input[type="reset"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="reset"] .count,
+  input[type="submit"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="submit"] .count, input[type="reset"] .knowledge-base-list .count, .knowledge-base-list input[type="reset"] .count, .wpb_button .knowledge-base-list .count, .knowledge-base-list .wpb_button .count, .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .ow-button-base a .count, .so-widget-sow-cta .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .so-widget-sow-cta .sow-cta-base .ow-button-base a .count, #secondary .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base a .count {
     position: relative;
     top: -1px; }
 
@@ -9993,8 +9991,8 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
 #bbpress-forums span.time-since, #buddypress #members-list .item-header-content .activity,
 #buddypress #members-dir-list .item-header-content .activity,
 #bbpress-forums #members-list .item-header-content .activity,
-#bbpress-forums #members-dir-list .item-header-content .activity {
-  background-color: #cacccd; }
+#bbpress-forums #members-dir-list .item-header-content .activity, .knowledge-base-list .count {
+  background-color: #7B8083; }
   .tags a[href]:hover,
   .category a[href]:hover,
   .cat-links a[href]:hover,
@@ -10007,7 +10005,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #bbpress-forums span[href].time-since:hover, #buddypress #members-list .item-header-content [href].activity:hover,
   #buddypress #members-dir-list .item-header-content [href].activity:hover,
   #bbpress-forums #members-list .item-header-content [href].activity:hover,
-  #bbpress-forums #members-dir-list .item-header-content [href].activity:hover, .tags a[href]:focus,
+  #bbpress-forums #members-dir-list .item-header-content [href].activity:hover, .knowledge-base-list [href].count:hover, .tags a[href]:focus,
   .category a[href]:focus,
   .cat-links a[href]:focus,
   a[href].tag:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus,
@@ -10019,15 +10017,15 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #bbpress-forums span[href].time-since:focus, #buddypress #members-list .item-header-content [href].activity:focus,
   #buddypress #members-dir-list .item-header-content [href].activity:focus,
   #bbpress-forums #members-list .item-header-content [href].activity:focus,
-  #bbpress-forums #members-dir-list .item-header-content [href].activity:focus {
-    background-color: #b0b3b4; }
+  #bbpress-forums #members-dir-list .item-header-content [href].activity:focus, .knowledge-base-list [href].count:focus {
+    background-color: #626669; }
 
 #buddypress .highlight,
 #bbpress-forums .highlight, #buddypress #members-list .item-header-content .is-current-user .activity,
 #buddypress #members-dir-list .item-header-content .is-current-user .activity,
 #bbpress-forums #members-list .item-header-content .is-current-user .activity,
 #bbpress-forums #members-dir-list .item-header-content .is-current-user .activity {
-  background-color: #1C2A42; }
+  background-color: #3498db; }
   #buddypress [href].highlight:hover,
   #bbpress-forums [href].highlight:hover, #buddypress #members-list .item-header-content .is-current-user [href].activity:hover,
   #buddypress #members-dir-list .item-header-content .is-current-user [href].activity:hover,
@@ -10037,13 +10035,13 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #buddypress #members-dir-list .item-header-content .is-current-user [href].activity:focus,
   #bbpress-forums #members-list .item-header-content .is-current-user [href].activity:focus,
   #bbpress-forums #members-dir-list .item-header-content .is-current-user [href].activity:focus {
-    background-color: #0d131e; }
+    background-color: #217dbb; }
 
 #buddypress #members-list .item-header-content .is-online .activity,
 #buddypress #members-dir-list .item-header-content .is-online .activity,
 #bbpress-forums #members-list .item-header-content .is-online .activity,
 #bbpress-forums #members-dir-list .item-header-content .is-online .activity {
-  background-color: #EFE4A6; }
+  background-color: #f39c12; }
   #buddypress #members-list .item-header-content .is-online [href].activity:hover,
   #buddypress #members-dir-list .item-header-content .is-online [href].activity:hover,
   #bbpress-forums #members-list .item-header-content .is-online [href].activity:hover,
@@ -10051,7 +10049,7 @@ a.tag, #buddypress #item-header-cover-image #item-meta .activity,
   #buddypress #members-dir-list .item-header-content .is-online [href].activity:focus,
   #bbpress-forums #members-list .item-header-content .is-online [href].activity:focus,
   #bbpress-forums #members-dir-list .item-header-content .is-online [href].activity:focus {
-    background-color: #e7d77b; }
+    background-color: #c87f0a; }
 
 .tags a,
 .category a,
@@ -10541,14 +10539,14 @@ body.buddypress h1 {
   min-width: 10px;
   padding: 3px 7px; }
 
-#buddypress .row-actions a,
-#buddypress .activity-meta a,
-#buddypress .acomment-options a,
-#buddypress .action a,
-#bbpress-forums .row-actions a,
-#bbpress-forums .activity-meta a,
-#bbpress-forums .acomment-options a,
-#bbpress-forums .action a {
+#buddypress .row-actions a[href$="document-title/"],
+#buddypress .activity-meta a[href$="document-title/"],
+#buddypress .acomment-options a[href$="document-title/"],
+#buddypress .action a[href$="document-title/"],
+#bbpress-forums .row-actions a[href$="document-title/"],
+#bbpress-forums .activity-meta a[href$="document-title/"],
+#bbpress-forums .acomment-options a[href$="document-title/"],
+#bbpress-forums .action a[href$="document-title/"] {
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -10562,48 +10560,48 @@ body.buddypress h1 {
   border: 1px solid #cacccd;
   padding: .25em;
   color: #a3a6a8; }
-  #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
-  #buddypress .activity-meta a:hover,
-  #buddypress .activity-meta a:focus,
-  #buddypress .acomment-options a:hover,
-  #buddypress .acomment-options a:focus,
-  #buddypress .action a:hover,
-  #buddypress .action a:focus,
-  #bbpress-forums .row-actions a:hover,
-  #bbpress-forums .row-actions a:focus,
-  #bbpress-forums .activity-meta a:hover,
-  #bbpress-forums .activity-meta a:focus,
-  #bbpress-forums .acomment-options a:hover,
-  #bbpress-forums .acomment-options a:focus,
-  #bbpress-forums .action a:hover,
-  #bbpress-forums .action a:focus {
+  #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
+  #buddypress .activity-meta a[href$="document-title/"]:hover,
+  #buddypress .activity-meta a[href$="document-title/"]:focus,
+  #buddypress .acomment-options a[href$="document-title/"]:hover,
+  #buddypress .acomment-options a[href$="document-title/"]:focus,
+  #buddypress .action a[href$="document-title/"]:hover,
+  #buddypress .action a[href$="document-title/"]:focus,
+  #bbpress-forums .row-actions a[href$="document-title/"]:hover,
+  #bbpress-forums .row-actions a[href$="document-title/"]:focus,
+  #bbpress-forums .activity-meta a[href$="document-title/"]:hover,
+  #bbpress-forums .activity-meta a[href$="document-title/"]:focus,
+  #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
+  #bbpress-forums .acomment-options a[href$="document-title/"]:focus,
+  #bbpress-forums .action a[href$="document-title/"]:hover,
+  #bbpress-forums .action a[href$="document-title/"]:focus {
     background: white;
     color: #111; }
-  #buddypress .row-actions a:hover, #buddypress .row-actions a:focus,
-  #buddypress .activity-meta a:hover,
-  #buddypress .activity-meta a:focus,
-  #buddypress .acomment-options a:hover,
-  #buddypress .acomment-options a:focus,
-  #buddypress .action a:hover,
-  #buddypress .action a:focus,
-  #bbpress-forums .row-actions a:hover,
-  #bbpress-forums .row-actions a:focus,
-  #bbpress-forums .activity-meta a:hover,
-  #bbpress-forums .activity-meta a:focus,
-  #bbpress-forums .acomment-options a:hover,
-  #bbpress-forums .acomment-options a:focus,
-  #bbpress-forums .action a:hover,
-  #bbpress-forums .action a:focus {
+  #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
+  #buddypress .activity-meta a[href$="document-title/"]:hover,
+  #buddypress .activity-meta a[href$="document-title/"]:focus,
+  #buddypress .acomment-options a[href$="document-title/"]:hover,
+  #buddypress .acomment-options a[href$="document-title/"]:focus,
+  #buddypress .action a[href$="document-title/"]:hover,
+  #buddypress .action a[href$="document-title/"]:focus,
+  #bbpress-forums .row-actions a[href$="document-title/"]:hover,
+  #bbpress-forums .row-actions a[href$="document-title/"]:focus,
+  #bbpress-forums .activity-meta a[href$="document-title/"]:hover,
+  #bbpress-forums .activity-meta a[href$="document-title/"]:focus,
+  #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
+  #bbpress-forums .acomment-options a[href$="document-title/"]:focus,
+  #bbpress-forums .action a[href$="document-title/"]:hover,
+  #bbpress-forums .action a[href$="document-title/"]:focus {
     background-color: #fff;
     color: #898d8f; }
-  #buddypress .row-actions a:before,
-  #buddypress .activity-meta a:before,
-  #buddypress .acomment-options a:before,
-  #buddypress .action a:before,
-  #bbpress-forums .row-actions a:before,
-  #bbpress-forums .activity-meta a:before,
-  #bbpress-forums .acomment-options a:before,
-  #bbpress-forums .action a:before {
+  #buddypress .row-actions a[href$="document-title/"]:before,
+  #buddypress .activity-meta a[href$="document-title/"]:before,
+  #buddypress .acomment-options a[href$="document-title/"]:before,
+  #buddypress .action a[href$="document-title/"]:before,
+  #bbpress-forums .row-actions a[href$="document-title/"]:before,
+  #bbpress-forums .activity-meta a[href$="document-title/"]:before,
+  #bbpress-forums .acomment-options a[href$="document-title/"]:before,
+  #bbpress-forums .action a[href$="document-title/"]:before {
     margin-right: .5em;
     display: inline-block;
     font: normal normal normal 14px / 1 FontAwesome;
@@ -10612,1441 +10610,1378 @@ body.buddypress h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-  #buddypress .row-actions a:before,
-  #buddypress .activity-meta a:before,
-  #buddypress .acomment-options a:before,
-  #buddypress .action a:before,
-  #bbpress-forums .row-actions a:before,
-  #bbpress-forums .activity-meta a:before,
-  #bbpress-forums .acomment-options a:before,
-  #bbpress-forums .action a:before {
+  #buddypress .row-actions a[href$="document-title/"]:before,
+  #buddypress .activity-meta a[href$="document-title/"]:before,
+  #buddypress .acomment-options a[href$="document-title/"]:before,
+  #buddypress .action a[href$="document-title/"]:before,
+  #bbpress-forums .row-actions a[href$="document-title/"]:before,
+  #bbpress-forums .activity-meta a[href$="document-title/"]:before,
+  #bbpress-forums .acomment-options a[href$="document-title/"]:before,
+  #bbpress-forums .action a[href$="document-title/"]:before {
     margin-right: 4px; }
-  #buddypress .row-actions a[href$="document-title/"],
-  #buddypress .activity-meta a[href$="document-title/"],
-  #buddypress .acomment-options a[href$="document-title/"],
-  #buddypress .action a[href$="document-title/"],
-  #bbpress-forums .row-actions a[href$="document-title/"],
-  #bbpress-forums .activity-meta a[href$="document-title/"],
-  #bbpress-forums .acomment-options a[href$="document-title/"],
-  #bbpress-forums .action a[href$="document-title/"] {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+
+#buddypress .row-actions a[href$="edit/"],
+#buddypress .activity-meta a[href$="edit/"],
+#buddypress .acomment-options a[href$="edit/"],
+#buddypress .action a[href$="edit/"],
+#bbpress-forums .row-actions a[href$="edit/"],
+#bbpress-forums .activity-meta a[href$="edit/"],
+#bbpress-forums .acomment-options a[href$="edit/"],
+#bbpress-forums .action a[href$="edit/"] {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
+  #buddypress .activity-meta a[href$="edit/"]:hover,
+  #buddypress .activity-meta a[href$="edit/"]:focus,
+  #buddypress .acomment-options a[href$="edit/"]:hover,
+  #buddypress .acomment-options a[href$="edit/"]:focus,
+  #buddypress .action a[href$="edit/"]:hover,
+  #buddypress .action a[href$="edit/"]:focus,
+  #bbpress-forums .row-actions a[href$="edit/"]:hover,
+  #bbpress-forums .row-actions a[href$="edit/"]:focus,
+  #bbpress-forums .activity-meta a[href$="edit/"]:hover,
+  #bbpress-forums .activity-meta a[href$="edit/"]:focus,
+  #bbpress-forums .acomment-options a[href$="edit/"]:hover,
+  #bbpress-forums .acomment-options a[href$="edit/"]:focus,
+  #bbpress-forums .action a[href$="edit/"]:hover,
+  #bbpress-forums .action a[href$="edit/"]:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
+  #buddypress .activity-meta a[href$="edit/"]:hover,
+  #buddypress .activity-meta a[href$="edit/"]:focus,
+  #buddypress .acomment-options a[href$="edit/"]:hover,
+  #buddypress .acomment-options a[href$="edit/"]:focus,
+  #buddypress .action a[href$="edit/"]:hover,
+  #buddypress .action a[href$="edit/"]:focus,
+  #bbpress-forums .row-actions a[href$="edit/"]:hover,
+  #bbpress-forums .row-actions a[href$="edit/"]:focus,
+  #bbpress-forums .activity-meta a[href$="edit/"]:hover,
+  #bbpress-forums .activity-meta a[href$="edit/"]:focus,
+  #bbpress-forums .acomment-options a[href$="edit/"]:hover,
+  #bbpress-forums .acomment-options a[href$="edit/"]:focus,
+  #bbpress-forums .action a[href$="edit/"]:hover,
+  #bbpress-forums .action a[href$="edit/"]:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a[href$="edit/"]:before,
+  #buddypress .activity-meta a[href$="edit/"]:before,
+  #buddypress .acomment-options a[href$="edit/"]:before,
+  #buddypress .action a[href$="edit/"]:before,
+  #bbpress-forums .row-actions a[href$="edit/"]:before,
+  #bbpress-forums .activity-meta a[href$="edit/"]:before,
+  #bbpress-forums .acomment-options a[href$="edit/"]:before,
+  #bbpress-forums .action a[href$="edit/"]:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
-    #buddypress .activity-meta a[href$="document-title/"]:hover,
-    #buddypress .activity-meta a[href$="document-title/"]:focus,
-    #buddypress .acomment-options a[href$="document-title/"]:hover,
-    #buddypress .acomment-options a[href$="document-title/"]:focus,
-    #buddypress .action a[href$="document-title/"]:hover,
-    #buddypress .action a[href$="document-title/"]:focus,
-    #bbpress-forums .row-actions a[href$="document-title/"]:hover,
-    #bbpress-forums .row-actions a[href$="document-title/"]:focus,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:hover,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:focus,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:focus,
-    #bbpress-forums .action a[href$="document-title/"]:hover,
-    #bbpress-forums .action a[href$="document-title/"]:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a[href$="document-title/"]:hover, #buddypress .row-actions a[href$="document-title/"]:focus,
-    #buddypress .activity-meta a[href$="document-title/"]:hover,
-    #buddypress .activity-meta a[href$="document-title/"]:focus,
-    #buddypress .acomment-options a[href$="document-title/"]:hover,
-    #buddypress .acomment-options a[href$="document-title/"]:focus,
-    #buddypress .action a[href$="document-title/"]:hover,
-    #buddypress .action a[href$="document-title/"]:focus,
-    #bbpress-forums .row-actions a[href$="document-title/"]:hover,
-    #bbpress-forums .row-actions a[href$="document-title/"]:focus,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:hover,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:focus,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:hover,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:focus,
-    #bbpress-forums .action a[href$="document-title/"]:hover,
-    #bbpress-forums .action a[href$="document-title/"]:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a[href$="document-title/"]:before,
-    #buddypress .activity-meta a[href$="document-title/"]:before,
-    #buddypress .acomment-options a[href$="document-title/"]:before,
-    #buddypress .action a[href$="document-title/"]:before,
-    #bbpress-forums .row-actions a[href$="document-title/"]:before,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:before,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:before,
-    #bbpress-forums .action a[href$="document-title/"]:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a[href$="document-title/"]:before,
-    #buddypress .activity-meta a[href$="document-title/"]:before,
-    #buddypress .acomment-options a[href$="document-title/"]:before,
-    #buddypress .action a[href$="document-title/"]:before,
-    #bbpress-forums .row-actions a[href$="document-title/"]:before,
-    #bbpress-forums .activity-meta a[href$="document-title/"]:before,
-    #bbpress-forums .acomment-options a[href$="document-title/"]:before,
-    #bbpress-forums .action a[href$="document-title/"]:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a[href$="edit/"],
-  #buddypress .activity-meta a[href$="edit/"],
-  #buddypress .acomment-options a[href$="edit/"],
-  #buddypress .action a[href$="edit/"],
-  #bbpress-forums .row-actions a[href$="edit/"],
-  #bbpress-forums .activity-meta a[href$="edit/"],
-  #bbpress-forums .acomment-options a[href$="edit/"],
-  #bbpress-forums .action a[href$="edit/"] {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a[href$="edit/"]:before,
+  #buddypress .activity-meta a[href$="edit/"]:before,
+  #buddypress .acomment-options a[href$="edit/"]:before,
+  #buddypress .action a[href$="edit/"]:before,
+  #bbpress-forums .row-actions a[href$="edit/"]:before,
+  #bbpress-forums .activity-meta a[href$="edit/"]:before,
+  #bbpress-forums .acomment-options a[href$="edit/"]:before,
+  #bbpress-forums .action a[href$="edit/"]:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a[href$="history"],
+#buddypress .activity-meta a[href$="history"],
+#buddypress .acomment-options a[href$="history"],
+#buddypress .action a[href$="history"],
+#bbpress-forums .row-actions a[href$="history"],
+#bbpress-forums .activity-meta a[href$="history"],
+#bbpress-forums .acomment-options a[href$="history"],
+#bbpress-forums .action a[href$="history"] {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
+  #buddypress .activity-meta a[href$="history"]:hover,
+  #buddypress .activity-meta a[href$="history"]:focus,
+  #buddypress .acomment-options a[href$="history"]:hover,
+  #buddypress .acomment-options a[href$="history"]:focus,
+  #buddypress .action a[href$="history"]:hover,
+  #buddypress .action a[href$="history"]:focus,
+  #bbpress-forums .row-actions a[href$="history"]:hover,
+  #bbpress-forums .row-actions a[href$="history"]:focus,
+  #bbpress-forums .activity-meta a[href$="history"]:hover,
+  #bbpress-forums .activity-meta a[href$="history"]:focus,
+  #bbpress-forums .acomment-options a[href$="history"]:hover,
+  #bbpress-forums .acomment-options a[href$="history"]:focus,
+  #bbpress-forums .action a[href$="history"]:hover,
+  #bbpress-forums .action a[href$="history"]:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
+  #buddypress .activity-meta a[href$="history"]:hover,
+  #buddypress .activity-meta a[href$="history"]:focus,
+  #buddypress .acomment-options a[href$="history"]:hover,
+  #buddypress .acomment-options a[href$="history"]:focus,
+  #buddypress .action a[href$="history"]:hover,
+  #buddypress .action a[href$="history"]:focus,
+  #bbpress-forums .row-actions a[href$="history"]:hover,
+  #bbpress-forums .row-actions a[href$="history"]:focus,
+  #bbpress-forums .activity-meta a[href$="history"]:hover,
+  #bbpress-forums .activity-meta a[href$="history"]:focus,
+  #bbpress-forums .acomment-options a[href$="history"]:hover,
+  #bbpress-forums .acomment-options a[href$="history"]:focus,
+  #bbpress-forums .action a[href$="history"]:hover,
+  #bbpress-forums .action a[href$="history"]:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a[href$="history"]:before,
+  #buddypress .activity-meta a[href$="history"]:before,
+  #buddypress .acomment-options a[href$="history"]:before,
+  #buddypress .action a[href$="history"]:before,
+  #bbpress-forums .row-actions a[href$="history"]:before,
+  #bbpress-forums .activity-meta a[href$="history"]:before,
+  #bbpress-forums .acomment-options a[href$="history"]:before,
+  #bbpress-forums .action a[href$="history"]:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
-    #buddypress .activity-meta a[href$="edit/"]:hover,
-    #buddypress .activity-meta a[href$="edit/"]:focus,
-    #buddypress .acomment-options a[href$="edit/"]:hover,
-    #buddypress .acomment-options a[href$="edit/"]:focus,
-    #buddypress .action a[href$="edit/"]:hover,
-    #buddypress .action a[href$="edit/"]:focus,
-    #bbpress-forums .row-actions a[href$="edit/"]:hover,
-    #bbpress-forums .row-actions a[href$="edit/"]:focus,
-    #bbpress-forums .activity-meta a[href$="edit/"]:hover,
-    #bbpress-forums .activity-meta a[href$="edit/"]:focus,
-    #bbpress-forums .acomment-options a[href$="edit/"]:hover,
-    #bbpress-forums .acomment-options a[href$="edit/"]:focus,
-    #bbpress-forums .action a[href$="edit/"]:hover,
-    #bbpress-forums .action a[href$="edit/"]:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a[href$="edit/"]:hover, #buddypress .row-actions a[href$="edit/"]:focus,
-    #buddypress .activity-meta a[href$="edit/"]:hover,
-    #buddypress .activity-meta a[href$="edit/"]:focus,
-    #buddypress .acomment-options a[href$="edit/"]:hover,
-    #buddypress .acomment-options a[href$="edit/"]:focus,
-    #buddypress .action a[href$="edit/"]:hover,
-    #buddypress .action a[href$="edit/"]:focus,
-    #bbpress-forums .row-actions a[href$="edit/"]:hover,
-    #bbpress-forums .row-actions a[href$="edit/"]:focus,
-    #bbpress-forums .activity-meta a[href$="edit/"]:hover,
-    #bbpress-forums .activity-meta a[href$="edit/"]:focus,
-    #bbpress-forums .acomment-options a[href$="edit/"]:hover,
-    #bbpress-forums .acomment-options a[href$="edit/"]:focus,
-    #bbpress-forums .action a[href$="edit/"]:hover,
-    #bbpress-forums .action a[href$="edit/"]:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a[href$="edit/"]:before,
-    #buddypress .activity-meta a[href$="edit/"]:before,
-    #buddypress .acomment-options a[href$="edit/"]:before,
-    #buddypress .action a[href$="edit/"]:before,
-    #bbpress-forums .row-actions a[href$="edit/"]:before,
-    #bbpress-forums .activity-meta a[href$="edit/"]:before,
-    #bbpress-forums .acomment-options a[href$="edit/"]:before,
-    #bbpress-forums .action a[href$="edit/"]:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a[href$="edit/"]:before,
-    #buddypress .activity-meta a[href$="edit/"]:before,
-    #buddypress .acomment-options a[href$="edit/"]:before,
-    #buddypress .action a[href$="edit/"]:before,
-    #bbpress-forums .row-actions a[href$="edit/"]:before,
-    #bbpress-forums .activity-meta a[href$="edit/"]:before,
-    #bbpress-forums .acomment-options a[href$="edit/"]:before,
-    #bbpress-forums .action a[href$="edit/"]:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a[href$="history"],
-  #buddypress .activity-meta a[href$="history"],
-  #buddypress .acomment-options a[href$="history"],
-  #buddypress .action a[href$="history"],
-  #bbpress-forums .row-actions a[href$="history"],
-  #bbpress-forums .activity-meta a[href$="history"],
-  #bbpress-forums .acomment-options a[href$="history"],
-  #bbpress-forums .action a[href$="history"] {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a[href$="history"]:before,
+  #buddypress .activity-meta a[href$="history"]:before,
+  #buddypress .acomment-options a[href$="history"]:before,
+  #buddypress .action a[href$="history"]:before,
+  #bbpress-forums .row-actions a[href$="history"]:before,
+  #bbpress-forums .activity-meta a[href$="history"]:before,
+  #bbpress-forums .acomment-options a[href$="history"]:before,
+  #bbpress-forums .action a[href$="history"]:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.leave-group,
+#buddypress .activity-meta a.leave-group,
+#buddypress .acomment-options a.leave-group,
+#buddypress .action a.leave-group,
+#bbpress-forums .row-actions a.leave-group,
+#bbpress-forums .activity-meta a.leave-group,
+#bbpress-forums .acomment-options a.leave-group,
+#bbpress-forums .action a.leave-group {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
+  #buddypress .activity-meta a.leave-group:hover,
+  #buddypress .activity-meta a.leave-group:focus,
+  #buddypress .acomment-options a.leave-group:hover,
+  #buddypress .acomment-options a.leave-group:focus,
+  #buddypress .action a.leave-group:hover,
+  #buddypress .action a.leave-group:focus,
+  #bbpress-forums .row-actions a.leave-group:hover,
+  #bbpress-forums .row-actions a.leave-group:focus,
+  #bbpress-forums .activity-meta a.leave-group:hover,
+  #bbpress-forums .activity-meta a.leave-group:focus,
+  #bbpress-forums .acomment-options a.leave-group:hover,
+  #bbpress-forums .acomment-options a.leave-group:focus,
+  #bbpress-forums .action a.leave-group:hover,
+  #bbpress-forums .action a.leave-group:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
+  #buddypress .activity-meta a.leave-group:hover,
+  #buddypress .activity-meta a.leave-group:focus,
+  #buddypress .acomment-options a.leave-group:hover,
+  #buddypress .acomment-options a.leave-group:focus,
+  #buddypress .action a.leave-group:hover,
+  #buddypress .action a.leave-group:focus,
+  #bbpress-forums .row-actions a.leave-group:hover,
+  #bbpress-forums .row-actions a.leave-group:focus,
+  #bbpress-forums .activity-meta a.leave-group:hover,
+  #bbpress-forums .activity-meta a.leave-group:focus,
+  #bbpress-forums .acomment-options a.leave-group:hover,
+  #bbpress-forums .acomment-options a.leave-group:focus,
+  #bbpress-forums .action a.leave-group:hover,
+  #bbpress-forums .action a.leave-group:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.leave-group:before,
+  #buddypress .activity-meta a.leave-group:before,
+  #buddypress .acomment-options a.leave-group:before,
+  #buddypress .action a.leave-group:before,
+  #bbpress-forums .row-actions a.leave-group:before,
+  #bbpress-forums .activity-meta a.leave-group:before,
+  #bbpress-forums .acomment-options a.leave-group:before,
+  #bbpress-forums .action a.leave-group:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
-    #buddypress .activity-meta a[href$="history"]:hover,
-    #buddypress .activity-meta a[href$="history"]:focus,
-    #buddypress .acomment-options a[href$="history"]:hover,
-    #buddypress .acomment-options a[href$="history"]:focus,
-    #buddypress .action a[href$="history"]:hover,
-    #buddypress .action a[href$="history"]:focus,
-    #bbpress-forums .row-actions a[href$="history"]:hover,
-    #bbpress-forums .row-actions a[href$="history"]:focus,
-    #bbpress-forums .activity-meta a[href$="history"]:hover,
-    #bbpress-forums .activity-meta a[href$="history"]:focus,
-    #bbpress-forums .acomment-options a[href$="history"]:hover,
-    #bbpress-forums .acomment-options a[href$="history"]:focus,
-    #bbpress-forums .action a[href$="history"]:hover,
-    #bbpress-forums .action a[href$="history"]:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a[href$="history"]:hover, #buddypress .row-actions a[href$="history"]:focus,
-    #buddypress .activity-meta a[href$="history"]:hover,
-    #buddypress .activity-meta a[href$="history"]:focus,
-    #buddypress .acomment-options a[href$="history"]:hover,
-    #buddypress .acomment-options a[href$="history"]:focus,
-    #buddypress .action a[href$="history"]:hover,
-    #buddypress .action a[href$="history"]:focus,
-    #bbpress-forums .row-actions a[href$="history"]:hover,
-    #bbpress-forums .row-actions a[href$="history"]:focus,
-    #bbpress-forums .activity-meta a[href$="history"]:hover,
-    #bbpress-forums .activity-meta a[href$="history"]:focus,
-    #bbpress-forums .acomment-options a[href$="history"]:hover,
-    #bbpress-forums .acomment-options a[href$="history"]:focus,
-    #bbpress-forums .action a[href$="history"]:hover,
-    #bbpress-forums .action a[href$="history"]:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a[href$="history"]:before,
-    #buddypress .activity-meta a[href$="history"]:before,
-    #buddypress .acomment-options a[href$="history"]:before,
-    #buddypress .action a[href$="history"]:before,
-    #bbpress-forums .row-actions a[href$="history"]:before,
-    #bbpress-forums .activity-meta a[href$="history"]:before,
-    #bbpress-forums .acomment-options a[href$="history"]:before,
-    #bbpress-forums .action a[href$="history"]:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a[href$="history"]:before,
-    #buddypress .activity-meta a[href$="history"]:before,
-    #buddypress .acomment-options a[href$="history"]:before,
-    #buddypress .action a[href$="history"]:before,
-    #bbpress-forums .row-actions a[href$="history"]:before,
-    #bbpress-forums .activity-meta a[href$="history"]:before,
-    #bbpress-forums .acomment-options a[href$="history"]:before,
-    #bbpress-forums .action a[href$="history"]:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.leave-group,
-  #buddypress .activity-meta a.leave-group,
-  #buddypress .acomment-options a.leave-group,
-  #buddypress .action a.leave-group,
-  #bbpress-forums .row-actions a.leave-group,
-  #bbpress-forums .activity-meta a.leave-group,
-  #bbpress-forums .acomment-options a.leave-group,
-  #bbpress-forums .action a.leave-group {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.leave-group:before,
+  #buddypress .activity-meta a.leave-group:before,
+  #buddypress .acomment-options a.leave-group:before,
+  #buddypress .action a.leave-group:before,
+  #bbpress-forums .row-actions a.leave-group:before,
+  #bbpress-forums .activity-meta a.leave-group:before,
+  #bbpress-forums .acomment-options a.leave-group:before,
+  #bbpress-forums .action a.leave-group:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.acomment-reply,
+#buddypress .activity-meta a.acomment-reply,
+#buddypress .acomment-options a.acomment-reply,
+#buddypress .action a.acomment-reply,
+#bbpress-forums .row-actions a.acomment-reply,
+#bbpress-forums .activity-meta a.acomment-reply,
+#bbpress-forums .acomment-options a.acomment-reply,
+#bbpress-forums .action a.acomment-reply {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
+  #buddypress .activity-meta a.acomment-reply:hover,
+  #buddypress .activity-meta a.acomment-reply:focus,
+  #buddypress .acomment-options a.acomment-reply:hover,
+  #buddypress .acomment-options a.acomment-reply:focus,
+  #buddypress .action a.acomment-reply:hover,
+  #buddypress .action a.acomment-reply:focus,
+  #bbpress-forums .row-actions a.acomment-reply:hover,
+  #bbpress-forums .row-actions a.acomment-reply:focus,
+  #bbpress-forums .activity-meta a.acomment-reply:hover,
+  #bbpress-forums .activity-meta a.acomment-reply:focus,
+  #bbpress-forums .acomment-options a.acomment-reply:hover,
+  #bbpress-forums .acomment-options a.acomment-reply:focus,
+  #bbpress-forums .action a.acomment-reply:hover,
+  #bbpress-forums .action a.acomment-reply:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
+  #buddypress .activity-meta a.acomment-reply:hover,
+  #buddypress .activity-meta a.acomment-reply:focus,
+  #buddypress .acomment-options a.acomment-reply:hover,
+  #buddypress .acomment-options a.acomment-reply:focus,
+  #buddypress .action a.acomment-reply:hover,
+  #buddypress .action a.acomment-reply:focus,
+  #bbpress-forums .row-actions a.acomment-reply:hover,
+  #bbpress-forums .row-actions a.acomment-reply:focus,
+  #bbpress-forums .activity-meta a.acomment-reply:hover,
+  #bbpress-forums .activity-meta a.acomment-reply:focus,
+  #bbpress-forums .acomment-options a.acomment-reply:hover,
+  #bbpress-forums .acomment-options a.acomment-reply:focus,
+  #bbpress-forums .action a.acomment-reply:hover,
+  #bbpress-forums .action a.acomment-reply:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.acomment-reply:before,
+  #buddypress .activity-meta a.acomment-reply:before,
+  #buddypress .acomment-options a.acomment-reply:before,
+  #buddypress .action a.acomment-reply:before,
+  #bbpress-forums .row-actions a.acomment-reply:before,
+  #bbpress-forums .activity-meta a.acomment-reply:before,
+  #bbpress-forums .acomment-options a.acomment-reply:before,
+  #bbpress-forums .action a.acomment-reply:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
-    #buddypress .activity-meta a.leave-group:hover,
-    #buddypress .activity-meta a.leave-group:focus,
-    #buddypress .acomment-options a.leave-group:hover,
-    #buddypress .acomment-options a.leave-group:focus,
-    #buddypress .action a.leave-group:hover,
-    #buddypress .action a.leave-group:focus,
-    #bbpress-forums .row-actions a.leave-group:hover,
-    #bbpress-forums .row-actions a.leave-group:focus,
-    #bbpress-forums .activity-meta a.leave-group:hover,
-    #bbpress-forums .activity-meta a.leave-group:focus,
-    #bbpress-forums .acomment-options a.leave-group:hover,
-    #bbpress-forums .acomment-options a.leave-group:focus,
-    #bbpress-forums .action a.leave-group:hover,
-    #bbpress-forums .action a.leave-group:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
-    #buddypress .activity-meta a.leave-group:hover,
-    #buddypress .activity-meta a.leave-group:focus,
-    #buddypress .acomment-options a.leave-group:hover,
-    #buddypress .acomment-options a.leave-group:focus,
-    #buddypress .action a.leave-group:hover,
-    #buddypress .action a.leave-group:focus,
-    #bbpress-forums .row-actions a.leave-group:hover,
-    #bbpress-forums .row-actions a.leave-group:focus,
-    #bbpress-forums .activity-meta a.leave-group:hover,
-    #bbpress-forums .activity-meta a.leave-group:focus,
-    #bbpress-forums .acomment-options a.leave-group:hover,
-    #bbpress-forums .acomment-options a.leave-group:focus,
-    #bbpress-forums .action a.leave-group:hover,
-    #bbpress-forums .action a.leave-group:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.leave-group:before,
-    #buddypress .activity-meta a.leave-group:before,
-    #buddypress .acomment-options a.leave-group:before,
-    #buddypress .action a.leave-group:before,
-    #bbpress-forums .row-actions a.leave-group:before,
-    #bbpress-forums .activity-meta a.leave-group:before,
-    #bbpress-forums .acomment-options a.leave-group:before,
-    #bbpress-forums .action a.leave-group:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.leave-group:before,
-    #buddypress .activity-meta a.leave-group:before,
-    #buddypress .acomment-options a.leave-group:before,
-    #buddypress .action a.leave-group:before,
-    #bbpress-forums .row-actions a.leave-group:before,
-    #bbpress-forums .activity-meta a.leave-group:before,
-    #bbpress-forums .acomment-options a.leave-group:before,
-    #bbpress-forums .action a.leave-group:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.acomment-reply,
-  #buddypress .activity-meta a.acomment-reply,
-  #buddypress .acomment-options a.acomment-reply,
-  #buddypress .action a.acomment-reply,
-  #bbpress-forums .row-actions a.acomment-reply,
-  #bbpress-forums .activity-meta a.acomment-reply,
-  #bbpress-forums .acomment-options a.acomment-reply,
-  #bbpress-forums .action a.acomment-reply {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.acomment-reply:before,
+  #buddypress .activity-meta a.acomment-reply:before,
+  #buddypress .acomment-options a.acomment-reply:before,
+  #buddypress .action a.acomment-reply:before,
+  #bbpress-forums .row-actions a.acomment-reply:before,
+  #bbpress-forums .activity-meta a.acomment-reply:before,
+  #bbpress-forums .acomment-options a.acomment-reply:before,
+  #bbpress-forums .action a.acomment-reply:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.fav,
+#buddypress .activity-meta a.fav,
+#buddypress .acomment-options a.fav,
+#buddypress .action a.fav,
+#bbpress-forums .row-actions a.fav,
+#bbpress-forums .activity-meta a.fav,
+#bbpress-forums .acomment-options a.fav,
+#bbpress-forums .action a.fav {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
+  #buddypress .activity-meta a.fav:hover,
+  #buddypress .activity-meta a.fav:focus,
+  #buddypress .acomment-options a.fav:hover,
+  #buddypress .acomment-options a.fav:focus,
+  #buddypress .action a.fav:hover,
+  #buddypress .action a.fav:focus,
+  #bbpress-forums .row-actions a.fav:hover,
+  #bbpress-forums .row-actions a.fav:focus,
+  #bbpress-forums .activity-meta a.fav:hover,
+  #bbpress-forums .activity-meta a.fav:focus,
+  #bbpress-forums .acomment-options a.fav:hover,
+  #bbpress-forums .acomment-options a.fav:focus,
+  #bbpress-forums .action a.fav:hover,
+  #bbpress-forums .action a.fav:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
+  #buddypress .activity-meta a.fav:hover,
+  #buddypress .activity-meta a.fav:focus,
+  #buddypress .acomment-options a.fav:hover,
+  #buddypress .acomment-options a.fav:focus,
+  #buddypress .action a.fav:hover,
+  #buddypress .action a.fav:focus,
+  #bbpress-forums .row-actions a.fav:hover,
+  #bbpress-forums .row-actions a.fav:focus,
+  #bbpress-forums .activity-meta a.fav:hover,
+  #bbpress-forums .activity-meta a.fav:focus,
+  #bbpress-forums .acomment-options a.fav:hover,
+  #bbpress-forums .acomment-options a.fav:focus,
+  #bbpress-forums .action a.fav:hover,
+  #bbpress-forums .action a.fav:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.fav:before,
+  #buddypress .activity-meta a.fav:before,
+  #buddypress .acomment-options a.fav:before,
+  #buddypress .action a.fav:before,
+  #bbpress-forums .row-actions a.fav:before,
+  #bbpress-forums .activity-meta a.fav:before,
+  #bbpress-forums .acomment-options a.fav:before,
+  #bbpress-forums .action a.fav:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
-    #buddypress .activity-meta a.acomment-reply:hover,
-    #buddypress .activity-meta a.acomment-reply:focus,
-    #buddypress .acomment-options a.acomment-reply:hover,
-    #buddypress .acomment-options a.acomment-reply:focus,
-    #buddypress .action a.acomment-reply:hover,
-    #buddypress .action a.acomment-reply:focus,
-    #bbpress-forums .row-actions a.acomment-reply:hover,
-    #bbpress-forums .row-actions a.acomment-reply:focus,
-    #bbpress-forums .activity-meta a.acomment-reply:hover,
-    #bbpress-forums .activity-meta a.acomment-reply:focus,
-    #bbpress-forums .acomment-options a.acomment-reply:hover,
-    #bbpress-forums .acomment-options a.acomment-reply:focus,
-    #bbpress-forums .action a.acomment-reply:hover,
-    #bbpress-forums .action a.acomment-reply:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.acomment-reply:hover, #buddypress .row-actions a.acomment-reply:focus,
-    #buddypress .activity-meta a.acomment-reply:hover,
-    #buddypress .activity-meta a.acomment-reply:focus,
-    #buddypress .acomment-options a.acomment-reply:hover,
-    #buddypress .acomment-options a.acomment-reply:focus,
-    #buddypress .action a.acomment-reply:hover,
-    #buddypress .action a.acomment-reply:focus,
-    #bbpress-forums .row-actions a.acomment-reply:hover,
-    #bbpress-forums .row-actions a.acomment-reply:focus,
-    #bbpress-forums .activity-meta a.acomment-reply:hover,
-    #bbpress-forums .activity-meta a.acomment-reply:focus,
-    #bbpress-forums .acomment-options a.acomment-reply:hover,
-    #bbpress-forums .acomment-options a.acomment-reply:focus,
-    #bbpress-forums .action a.acomment-reply:hover,
-    #bbpress-forums .action a.acomment-reply:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.acomment-reply:before,
-    #buddypress .activity-meta a.acomment-reply:before,
-    #buddypress .acomment-options a.acomment-reply:before,
-    #buddypress .action a.acomment-reply:before,
-    #bbpress-forums .row-actions a.acomment-reply:before,
-    #bbpress-forums .activity-meta a.acomment-reply:before,
-    #bbpress-forums .acomment-options a.acomment-reply:before,
-    #bbpress-forums .action a.acomment-reply:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.acomment-reply:before,
-    #buddypress .activity-meta a.acomment-reply:before,
-    #buddypress .acomment-options a.acomment-reply:before,
-    #buddypress .action a.acomment-reply:before,
-    #bbpress-forums .row-actions a.acomment-reply:before,
-    #bbpress-forums .activity-meta a.acomment-reply:before,
-    #bbpress-forums .acomment-options a.acomment-reply:before,
-    #bbpress-forums .action a.acomment-reply:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.fav,
-  #buddypress .activity-meta a.fav,
-  #buddypress .acomment-options a.fav,
-  #buddypress .action a.fav,
-  #bbpress-forums .row-actions a.fav,
-  #bbpress-forums .activity-meta a.fav,
-  #bbpress-forums .acomment-options a.fav,
-  #bbpress-forums .action a.fav {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.fav:before,
+  #buddypress .activity-meta a.fav:before,
+  #buddypress .acomment-options a.fav:before,
+  #buddypress .action a.fav:before,
+  #bbpress-forums .row-actions a.fav:before,
+  #bbpress-forums .activity-meta a.fav:before,
+  #bbpress-forums .acomment-options a.fav:before,
+  #bbpress-forums .action a.fav:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.unfav,
+#buddypress .activity-meta a.unfav,
+#buddypress .acomment-options a.unfav,
+#buddypress .action a.unfav,
+#bbpress-forums .row-actions a.unfav,
+#bbpress-forums .activity-meta a.unfav,
+#bbpress-forums .acomment-options a.unfav,
+#bbpress-forums .action a.unfav {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #eb6361; }
+  #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
+  #buddypress .activity-meta a.unfav:hover,
+  #buddypress .activity-meta a.unfav:focus,
+  #buddypress .acomment-options a.unfav:hover,
+  #buddypress .acomment-options a.unfav:focus,
+  #buddypress .action a.unfav:hover,
+  #buddypress .action a.unfav:focus,
+  #bbpress-forums .row-actions a.unfav:hover,
+  #bbpress-forums .row-actions a.unfav:focus,
+  #bbpress-forums .activity-meta a.unfav:hover,
+  #bbpress-forums .activity-meta a.unfav:focus,
+  #bbpress-forums .acomment-options a.unfav:hover,
+  #bbpress-forums .acomment-options a.unfav:focus,
+  #bbpress-forums .action a.unfav:hover,
+  #bbpress-forums .action a.unfav:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
+  #buddypress .activity-meta a.unfav:hover,
+  #buddypress .activity-meta a.unfav:focus,
+  #buddypress .acomment-options a.unfav:hover,
+  #buddypress .acomment-options a.unfav:focus,
+  #buddypress .action a.unfav:hover,
+  #buddypress .action a.unfav:focus,
+  #bbpress-forums .row-actions a.unfav:hover,
+  #bbpress-forums .row-actions a.unfav:focus,
+  #bbpress-forums .activity-meta a.unfav:hover,
+  #bbpress-forums .activity-meta a.unfav:focus,
+  #bbpress-forums .acomment-options a.unfav:hover,
+  #bbpress-forums .acomment-options a.unfav:focus,
+  #bbpress-forums .action a.unfav:hover,
+  #bbpress-forums .action a.unfav:focus {
     background-color: #fff;
-    color: #111;
+    color: #e53634; }
+  #buddypress .row-actions a.unfav:before,
+  #buddypress .activity-meta a.unfav:before,
+  #buddypress .acomment-options a.unfav:before,
+  #buddypress .action a.unfav:before,
+  #bbpress-forums .row-actions a.unfav:before,
+  #bbpress-forums .activity-meta a.unfav:before,
+  #bbpress-forums .acomment-options a.unfav:before,
+  #bbpress-forums .action a.unfav:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
-    color: #a3a6a8; }
-    #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
-    #buddypress .activity-meta a.fav:hover,
-    #buddypress .activity-meta a.fav:focus,
-    #buddypress .acomment-options a.fav:hover,
-    #buddypress .acomment-options a.fav:focus,
-    #buddypress .action a.fav:hover,
-    #buddypress .action a.fav:focus,
-    #bbpress-forums .row-actions a.fav:hover,
-    #bbpress-forums .row-actions a.fav:focus,
-    #bbpress-forums .activity-meta a.fav:hover,
-    #bbpress-forums .activity-meta a.fav:focus,
-    #bbpress-forums .acomment-options a.fav:hover,
-    #bbpress-forums .acomment-options a.fav:focus,
-    #bbpress-forums .action a.fav:hover,
-    #bbpress-forums .action a.fav:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.fav:hover, #buddypress .row-actions a.fav:focus,
-    #buddypress .activity-meta a.fav:hover,
-    #buddypress .activity-meta a.fav:focus,
-    #buddypress .acomment-options a.fav:hover,
-    #buddypress .acomment-options a.fav:focus,
-    #buddypress .action a.fav:hover,
-    #buddypress .action a.fav:focus,
-    #bbpress-forums .row-actions a.fav:hover,
-    #bbpress-forums .row-actions a.fav:focus,
-    #bbpress-forums .activity-meta a.fav:hover,
-    #bbpress-forums .activity-meta a.fav:focus,
-    #bbpress-forums .acomment-options a.fav:hover,
-    #bbpress-forums .acomment-options a.fav:focus,
-    #bbpress-forums .action a.fav:hover,
-    #bbpress-forums .action a.fav:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.fav:before,
-    #buddypress .activity-meta a.fav:before,
-    #buddypress .acomment-options a.fav:before,
-    #buddypress .action a.fav:before,
-    #bbpress-forums .row-actions a.fav:before,
-    #bbpress-forums .activity-meta a.fav:before,
-    #bbpress-forums .acomment-options a.fav:before,
-    #bbpress-forums .action a.fav:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.fav:before,
-    #buddypress .activity-meta a.fav:before,
-    #buddypress .acomment-options a.fav:before,
-    #buddypress .action a.fav:before,
-    #bbpress-forums .row-actions a.fav:before,
-    #bbpress-forums .activity-meta a.fav:before,
-    #bbpress-forums .acomment-options a.fav:before,
-    #bbpress-forums .action a.fav:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.unfav,
-  #buddypress .activity-meta a.unfav,
-  #buddypress .acomment-options a.unfav,
-  #buddypress .action a.unfav,
-  #bbpress-forums .row-actions a.unfav,
-  #bbpress-forums .activity-meta a.unfav,
-  #bbpress-forums .acomment-options a.unfav,
-  #bbpress-forums .action a.unfav {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
-    background-color: #fff;
-    color: #111;
-    display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #eb6361; }
-    #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
-    #buddypress .activity-meta a.unfav:hover,
-    #buddypress .activity-meta a.unfav:focus,
-    #buddypress .acomment-options a.unfav:hover,
-    #buddypress .acomment-options a.unfav:focus,
-    #buddypress .action a.unfav:hover,
-    #buddypress .action a.unfav:focus,
-    #bbpress-forums .row-actions a.unfav:hover,
-    #bbpress-forums .row-actions a.unfav:focus,
-    #bbpress-forums .activity-meta a.unfav:hover,
-    #bbpress-forums .activity-meta a.unfav:focus,
-    #bbpress-forums .acomment-options a.unfav:hover,
-    #bbpress-forums .acomment-options a.unfav:focus,
-    #bbpress-forums .action a.unfav:hover,
-    #bbpress-forums .action a.unfav:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.unfav:hover, #buddypress .row-actions a.unfav:focus,
-    #buddypress .activity-meta a.unfav:hover,
-    #buddypress .activity-meta a.unfav:focus,
-    #buddypress .acomment-options a.unfav:hover,
-    #buddypress .acomment-options a.unfav:focus,
-    #buddypress .action a.unfav:hover,
-    #buddypress .action a.unfav:focus,
-    #bbpress-forums .row-actions a.unfav:hover,
-    #bbpress-forums .row-actions a.unfav:focus,
-    #bbpress-forums .activity-meta a.unfav:hover,
-    #bbpress-forums .activity-meta a.unfav:focus,
-    #bbpress-forums .acomment-options a.unfav:hover,
-    #bbpress-forums .acomment-options a.unfav:focus,
-    #bbpress-forums .action a.unfav:hover,
-    #bbpress-forums .action a.unfav:focus {
-      background-color: #fff;
-      color: #e53634; }
-    #buddypress .row-actions a.unfav:before,
-    #buddypress .activity-meta a.unfav:before,
-    #buddypress .acomment-options a.unfav:before,
-    #buddypress .action a.unfav:before,
-    #bbpress-forums .row-actions a.unfav:before,
-    #bbpress-forums .activity-meta a.unfav:before,
-    #bbpress-forums .acomment-options a.unfav:before,
-    #bbpress-forums .action a.unfav:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #eb6361; }
-    #buddypress .row-actions a.unfav:before,
-    #buddypress .activity-meta a.unfav:before,
-    #buddypress .acomment-options a.unfav:before,
-    #buddypress .action a.unfav:before,
-    #bbpress-forums .row-actions a.unfav:before,
-    #bbpress-forums .activity-meta a.unfav:before,
-    #bbpress-forums .acomment-options a.unfav:before,
-    #bbpress-forums .action a.unfav:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.delete-activity, #buddypress .row-actions a.acomment-delete,
-  #buddypress .activity-meta a.delete-activity,
-  #buddypress .activity-meta a.acomment-delete,
-  #buddypress .acomment-options a.delete-activity,
-  #buddypress .acomment-options a.acomment-delete,
-  #buddypress .action a.delete-activity,
-  #buddypress .action a.acomment-delete,
-  #bbpress-forums .row-actions a.delete-activity,
-  #bbpress-forums .row-actions a.acomment-delete,
-  #bbpress-forums .activity-meta a.delete-activity,
-  #bbpress-forums .activity-meta a.acomment-delete,
-  #bbpress-forums .acomment-options a.delete-activity,
-  #bbpress-forums .acomment-options a.acomment-delete,
-  #bbpress-forums .action a.delete-activity,
-  #bbpress-forums .action a.acomment-delete {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.unfav:before,
+  #buddypress .activity-meta a.unfav:before,
+  #buddypress .acomment-options a.unfav:before,
+  #buddypress .action a.unfav:before,
+  #bbpress-forums .row-actions a.unfav:before,
+  #bbpress-forums .activity-meta a.unfav:before,
+  #bbpress-forums .acomment-options a.unfav:before,
+  #bbpress-forums .action a.unfav:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.delete-activity, #buddypress .row-actions a.acomment-delete,
+#buddypress .activity-meta a.delete-activity,
+#buddypress .activity-meta a.acomment-delete,
+#buddypress .acomment-options a.delete-activity,
+#buddypress .acomment-options a.acomment-delete,
+#buddypress .action a.delete-activity,
+#buddypress .action a.acomment-delete,
+#bbpress-forums .row-actions a.delete-activity,
+#bbpress-forums .row-actions a.acomment-delete,
+#bbpress-forums .activity-meta a.delete-activity,
+#bbpress-forums .activity-meta a.acomment-delete,
+#bbpress-forums .acomment-options a.delete-activity,
+#bbpress-forums .acomment-options a.acomment-delete,
+#bbpress-forums .action a.delete-activity,
+#bbpress-forums .action a.acomment-delete {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
+  #buddypress .activity-meta a.delete-activity:hover,
+  #buddypress .activity-meta a.delete-activity:focus,
+  #buddypress .activity-meta a.acomment-delete:hover,
+  #buddypress .activity-meta a.acomment-delete:focus,
+  #buddypress .acomment-options a.delete-activity:hover,
+  #buddypress .acomment-options a.delete-activity:focus,
+  #buddypress .acomment-options a.acomment-delete:hover,
+  #buddypress .acomment-options a.acomment-delete:focus,
+  #buddypress .action a.delete-activity:hover,
+  #buddypress .action a.delete-activity:focus,
+  #buddypress .action a.acomment-delete:hover,
+  #buddypress .action a.acomment-delete:focus,
+  #bbpress-forums .row-actions a.delete-activity:hover,
+  #bbpress-forums .row-actions a.delete-activity:focus,
+  #bbpress-forums .row-actions a.acomment-delete:hover,
+  #bbpress-forums .row-actions a.acomment-delete:focus,
+  #bbpress-forums .activity-meta a.delete-activity:hover,
+  #bbpress-forums .activity-meta a.delete-activity:focus,
+  #bbpress-forums .activity-meta a.acomment-delete:hover,
+  #bbpress-forums .activity-meta a.acomment-delete:focus,
+  #bbpress-forums .acomment-options a.delete-activity:hover,
+  #bbpress-forums .acomment-options a.delete-activity:focus,
+  #bbpress-forums .acomment-options a.acomment-delete:hover,
+  #bbpress-forums .acomment-options a.acomment-delete:focus,
+  #bbpress-forums .action a.delete-activity:hover,
+  #bbpress-forums .action a.delete-activity:focus,
+  #bbpress-forums .action a.acomment-delete:hover,
+  #bbpress-forums .action a.acomment-delete:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
+  #buddypress .activity-meta a.delete-activity:hover,
+  #buddypress .activity-meta a.delete-activity:focus,
+  #buddypress .activity-meta a.acomment-delete:hover,
+  #buddypress .activity-meta a.acomment-delete:focus,
+  #buddypress .acomment-options a.delete-activity:hover,
+  #buddypress .acomment-options a.delete-activity:focus,
+  #buddypress .acomment-options a.acomment-delete:hover,
+  #buddypress .acomment-options a.acomment-delete:focus,
+  #buddypress .action a.delete-activity:hover,
+  #buddypress .action a.delete-activity:focus,
+  #buddypress .action a.acomment-delete:hover,
+  #buddypress .action a.acomment-delete:focus,
+  #bbpress-forums .row-actions a.delete-activity:hover,
+  #bbpress-forums .row-actions a.delete-activity:focus,
+  #bbpress-forums .row-actions a.acomment-delete:hover,
+  #bbpress-forums .row-actions a.acomment-delete:focus,
+  #bbpress-forums .activity-meta a.delete-activity:hover,
+  #bbpress-forums .activity-meta a.delete-activity:focus,
+  #bbpress-forums .activity-meta a.acomment-delete:hover,
+  #bbpress-forums .activity-meta a.acomment-delete:focus,
+  #bbpress-forums .acomment-options a.delete-activity:hover,
+  #bbpress-forums .acomment-options a.delete-activity:focus,
+  #bbpress-forums .acomment-options a.acomment-delete:hover,
+  #bbpress-forums .acomment-options a.acomment-delete:focus,
+  #bbpress-forums .action a.delete-activity:hover,
+  #bbpress-forums .action a.delete-activity:focus,
+  #bbpress-forums .action a.acomment-delete:hover,
+  #bbpress-forums .action a.acomment-delete:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
+  #buddypress .activity-meta a.delete-activity:before,
+  #buddypress .activity-meta a.acomment-delete:before,
+  #buddypress .acomment-options a.delete-activity:before,
+  #buddypress .acomment-options a.acomment-delete:before,
+  #buddypress .action a.delete-activity:before,
+  #buddypress .action a.acomment-delete:before,
+  #bbpress-forums .row-actions a.delete-activity:before,
+  #bbpress-forums .row-actions a.acomment-delete:before,
+  #bbpress-forums .activity-meta a.delete-activity:before,
+  #bbpress-forums .activity-meta a.acomment-delete:before,
+  #bbpress-forums .acomment-options a.delete-activity:before,
+  #bbpress-forums .acomment-options a.acomment-delete:before,
+  #bbpress-forums .action a.delete-activity:before,
+  #bbpress-forums .action a.acomment-delete:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
-    #buddypress .activity-meta a.delete-activity:hover,
-    #buddypress .activity-meta a.delete-activity:focus,
-    #buddypress .activity-meta a.acomment-delete:hover,
-    #buddypress .activity-meta a.acomment-delete:focus,
-    #buddypress .acomment-options a.delete-activity:hover,
-    #buddypress .acomment-options a.delete-activity:focus,
-    #buddypress .acomment-options a.acomment-delete:hover,
-    #buddypress .acomment-options a.acomment-delete:focus,
-    #buddypress .action a.delete-activity:hover,
-    #buddypress .action a.delete-activity:focus,
-    #buddypress .action a.acomment-delete:hover,
-    #buddypress .action a.acomment-delete:focus,
-    #bbpress-forums .row-actions a.delete-activity:hover,
-    #bbpress-forums .row-actions a.delete-activity:focus,
-    #bbpress-forums .row-actions a.acomment-delete:hover,
-    #bbpress-forums .row-actions a.acomment-delete:focus,
-    #bbpress-forums .activity-meta a.delete-activity:hover,
-    #bbpress-forums .activity-meta a.delete-activity:focus,
-    #bbpress-forums .activity-meta a.acomment-delete:hover,
-    #bbpress-forums .activity-meta a.acomment-delete:focus,
-    #bbpress-forums .acomment-options a.delete-activity:hover,
-    #bbpress-forums .acomment-options a.delete-activity:focus,
-    #bbpress-forums .acomment-options a.acomment-delete:hover,
-    #bbpress-forums .acomment-options a.acomment-delete:focus,
-    #bbpress-forums .action a.delete-activity:hover,
-    #bbpress-forums .action a.delete-activity:focus,
-    #bbpress-forums .action a.acomment-delete:hover,
-    #bbpress-forums .action a.acomment-delete:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.delete-activity:hover, #buddypress .row-actions a.delete-activity:focus, #buddypress .row-actions a.acomment-delete:hover, #buddypress .row-actions a.acomment-delete:focus,
-    #buddypress .activity-meta a.delete-activity:hover,
-    #buddypress .activity-meta a.delete-activity:focus,
-    #buddypress .activity-meta a.acomment-delete:hover,
-    #buddypress .activity-meta a.acomment-delete:focus,
-    #buddypress .acomment-options a.delete-activity:hover,
-    #buddypress .acomment-options a.delete-activity:focus,
-    #buddypress .acomment-options a.acomment-delete:hover,
-    #buddypress .acomment-options a.acomment-delete:focus,
-    #buddypress .action a.delete-activity:hover,
-    #buddypress .action a.delete-activity:focus,
-    #buddypress .action a.acomment-delete:hover,
-    #buddypress .action a.acomment-delete:focus,
-    #bbpress-forums .row-actions a.delete-activity:hover,
-    #bbpress-forums .row-actions a.delete-activity:focus,
-    #bbpress-forums .row-actions a.acomment-delete:hover,
-    #bbpress-forums .row-actions a.acomment-delete:focus,
-    #bbpress-forums .activity-meta a.delete-activity:hover,
-    #bbpress-forums .activity-meta a.delete-activity:focus,
-    #bbpress-forums .activity-meta a.acomment-delete:hover,
-    #bbpress-forums .activity-meta a.acomment-delete:focus,
-    #bbpress-forums .acomment-options a.delete-activity:hover,
-    #bbpress-forums .acomment-options a.delete-activity:focus,
-    #bbpress-forums .acomment-options a.acomment-delete:hover,
-    #bbpress-forums .acomment-options a.acomment-delete:focus,
-    #bbpress-forums .action a.delete-activity:hover,
-    #bbpress-forums .action a.delete-activity:focus,
-    #bbpress-forums .action a.acomment-delete:hover,
-    #bbpress-forums .action a.acomment-delete:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
-    #buddypress .activity-meta a.delete-activity:before,
-    #buddypress .activity-meta a.acomment-delete:before,
-    #buddypress .acomment-options a.delete-activity:before,
-    #buddypress .acomment-options a.acomment-delete:before,
-    #buddypress .action a.delete-activity:before,
-    #buddypress .action a.acomment-delete:before,
-    #bbpress-forums .row-actions a.delete-activity:before,
-    #bbpress-forums .row-actions a.acomment-delete:before,
-    #bbpress-forums .activity-meta a.delete-activity:before,
-    #bbpress-forums .activity-meta a.acomment-delete:before,
-    #bbpress-forums .acomment-options a.delete-activity:before,
-    #bbpress-forums .acomment-options a.acomment-delete:before,
-    #bbpress-forums .action a.delete-activity:before,
-    #bbpress-forums .action a.acomment-delete:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
-    #buddypress .activity-meta a.delete-activity:before,
-    #buddypress .activity-meta a.acomment-delete:before,
-    #buddypress .acomment-options a.delete-activity:before,
-    #buddypress .acomment-options a.acomment-delete:before,
-    #buddypress .action a.delete-activity:before,
-    #buddypress .action a.acomment-delete:before,
-    #bbpress-forums .row-actions a.delete-activity:before,
-    #bbpress-forums .row-actions a.acomment-delete:before,
-    #bbpress-forums .activity-meta a.delete-activity:before,
-    #bbpress-forums .activity-meta a.acomment-delete:before,
-    #bbpress-forums .acomment-options a.delete-activity:before,
-    #bbpress-forums .acomment-options a.acomment-delete:before,
-    #bbpress-forums .action a.delete-activity:before,
-    #bbpress-forums .action a.acomment-delete:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.unlink-from-group,
-  #buddypress .activity-meta a.unlink-from-group,
-  #buddypress .acomment-options a.unlink-from-group,
-  #buddypress .action a.unlink-from-group,
-  #bbpress-forums .row-actions a.unlink-from-group,
-  #bbpress-forums .activity-meta a.unlink-from-group,
-  #bbpress-forums .acomment-options a.unlink-from-group,
-  #bbpress-forums .action a.unlink-from-group {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
+  #buddypress .activity-meta a.delete-activity:before,
+  #buddypress .activity-meta a.acomment-delete:before,
+  #buddypress .acomment-options a.delete-activity:before,
+  #buddypress .acomment-options a.acomment-delete:before,
+  #buddypress .action a.delete-activity:before,
+  #buddypress .action a.acomment-delete:before,
+  #bbpress-forums .row-actions a.delete-activity:before,
+  #bbpress-forums .row-actions a.acomment-delete:before,
+  #bbpress-forums .activity-meta a.delete-activity:before,
+  #bbpress-forums .activity-meta a.acomment-delete:before,
+  #bbpress-forums .acomment-options a.delete-activity:before,
+  #bbpress-forums .acomment-options a.acomment-delete:before,
+  #bbpress-forums .action a.delete-activity:before,
+  #bbpress-forums .action a.acomment-delete:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.unlink-from-group,
+#buddypress .activity-meta a.unlink-from-group,
+#buddypress .acomment-options a.unlink-from-group,
+#buddypress .action a.unlink-from-group,
+#bbpress-forums .row-actions a.unlink-from-group,
+#bbpress-forums .activity-meta a.unlink-from-group,
+#bbpress-forums .acomment-options a.unlink-from-group,
+#bbpress-forums .action a.unlink-from-group {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
+  #buddypress .activity-meta a.unlink-from-group:hover,
+  #buddypress .activity-meta a.unlink-from-group:focus,
+  #buddypress .acomment-options a.unlink-from-group:hover,
+  #buddypress .acomment-options a.unlink-from-group:focus,
+  #buddypress .action a.unlink-from-group:hover,
+  #buddypress .action a.unlink-from-group:focus,
+  #bbpress-forums .row-actions a.unlink-from-group:hover,
+  #bbpress-forums .row-actions a.unlink-from-group:focus,
+  #bbpress-forums .activity-meta a.unlink-from-group:hover,
+  #bbpress-forums .activity-meta a.unlink-from-group:focus,
+  #bbpress-forums .acomment-options a.unlink-from-group:hover,
+  #bbpress-forums .acomment-options a.unlink-from-group:focus,
+  #bbpress-forums .action a.unlink-from-group:hover,
+  #bbpress-forums .action a.unlink-from-group:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
+  #buddypress .activity-meta a.unlink-from-group:hover,
+  #buddypress .activity-meta a.unlink-from-group:focus,
+  #buddypress .acomment-options a.unlink-from-group:hover,
+  #buddypress .acomment-options a.unlink-from-group:focus,
+  #buddypress .action a.unlink-from-group:hover,
+  #buddypress .action a.unlink-from-group:focus,
+  #bbpress-forums .row-actions a.unlink-from-group:hover,
+  #bbpress-forums .row-actions a.unlink-from-group:focus,
+  #bbpress-forums .activity-meta a.unlink-from-group:hover,
+  #bbpress-forums .activity-meta a.unlink-from-group:focus,
+  #bbpress-forums .acomment-options a.unlink-from-group:hover,
+  #bbpress-forums .acomment-options a.unlink-from-group:focus,
+  #bbpress-forums .action a.unlink-from-group:hover,
+  #bbpress-forums .action a.unlink-from-group:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.unlink-from-group:before,
+  #buddypress .activity-meta a.unlink-from-group:before,
+  #buddypress .acomment-options a.unlink-from-group:before,
+  #buddypress .action a.unlink-from-group:before,
+  #bbpress-forums .row-actions a.unlink-from-group:before,
+  #bbpress-forums .activity-meta a.unlink-from-group:before,
+  #bbpress-forums .acomment-options a.unlink-from-group:before,
+  #bbpress-forums .action a.unlink-from-group:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
-    #buddypress .activity-meta a.unlink-from-group:hover,
-    #buddypress .activity-meta a.unlink-from-group:focus,
-    #buddypress .acomment-options a.unlink-from-group:hover,
-    #buddypress .acomment-options a.unlink-from-group:focus,
-    #buddypress .action a.unlink-from-group:hover,
-    #buddypress .action a.unlink-from-group:focus,
-    #bbpress-forums .row-actions a.unlink-from-group:hover,
-    #bbpress-forums .row-actions a.unlink-from-group:focus,
-    #bbpress-forums .activity-meta a.unlink-from-group:hover,
-    #bbpress-forums .activity-meta a.unlink-from-group:focus,
-    #bbpress-forums .acomment-options a.unlink-from-group:hover,
-    #bbpress-forums .acomment-options a.unlink-from-group:focus,
-    #bbpress-forums .action a.unlink-from-group:hover,
-    #bbpress-forums .action a.unlink-from-group:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.unlink-from-group:hover, #buddypress .row-actions a.unlink-from-group:focus,
-    #buddypress .activity-meta a.unlink-from-group:hover,
-    #buddypress .activity-meta a.unlink-from-group:focus,
-    #buddypress .acomment-options a.unlink-from-group:hover,
-    #buddypress .acomment-options a.unlink-from-group:focus,
-    #buddypress .action a.unlink-from-group:hover,
-    #buddypress .action a.unlink-from-group:focus,
-    #bbpress-forums .row-actions a.unlink-from-group:hover,
-    #bbpress-forums .row-actions a.unlink-from-group:focus,
-    #bbpress-forums .activity-meta a.unlink-from-group:hover,
-    #bbpress-forums .activity-meta a.unlink-from-group:focus,
-    #bbpress-forums .acomment-options a.unlink-from-group:hover,
-    #bbpress-forums .acomment-options a.unlink-from-group:focus,
-    #bbpress-forums .action a.unlink-from-group:hover,
-    #bbpress-forums .action a.unlink-from-group:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.unlink-from-group:before,
-    #buddypress .activity-meta a.unlink-from-group:before,
-    #buddypress .acomment-options a.unlink-from-group:before,
-    #buddypress .action a.unlink-from-group:before,
-    #bbpress-forums .row-actions a.unlink-from-group:before,
-    #bbpress-forums .activity-meta a.unlink-from-group:before,
-    #bbpress-forums .acomment-options a.unlink-from-group:before,
-    #bbpress-forums .action a.unlink-from-group:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.unlink-from-group:before,
-    #buddypress .activity-meta a.unlink-from-group:before,
-    #buddypress .acomment-options a.unlink-from-group:before,
-    #buddypress .action a.unlink-from-group:before,
-    #bbpress-forums .row-actions a.unlink-from-group:before,
-    #bbpress-forums .activity-meta a.unlink-from-group:before,
-    #bbpress-forums .acomment-options a.unlink-from-group:before,
-    #bbpress-forums .action a.unlink-from-group:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.leave-group,
-  #buddypress .activity-meta a.leave-group,
-  #buddypress .acomment-options a.leave-group,
-  #buddypress .action a.leave-group,
-  #bbpress-forums .row-actions a.leave-group,
-  #bbpress-forums .activity-meta a.leave-group,
-  #bbpress-forums .acomment-options a.leave-group,
-  #bbpress-forums .action a.leave-group {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.unlink-from-group:before,
+  #buddypress .activity-meta a.unlink-from-group:before,
+  #buddypress .acomment-options a.unlink-from-group:before,
+  #buddypress .action a.unlink-from-group:before,
+  #bbpress-forums .row-actions a.unlink-from-group:before,
+  #bbpress-forums .activity-meta a.unlink-from-group:before,
+  #bbpress-forums .acomment-options a.unlink-from-group:before,
+  #bbpress-forums .action a.unlink-from-group:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.leave-group,
+#buddypress .activity-meta a.leave-group,
+#buddypress .acomment-options a.leave-group,
+#buddypress .action a.leave-group,
+#bbpress-forums .row-actions a.leave-group,
+#bbpress-forums .activity-meta a.leave-group,
+#bbpress-forums .acomment-options a.leave-group,
+#bbpress-forums .action a.leave-group {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
+  #buddypress .activity-meta a.leave-group:hover,
+  #buddypress .activity-meta a.leave-group:focus,
+  #buddypress .acomment-options a.leave-group:hover,
+  #buddypress .acomment-options a.leave-group:focus,
+  #buddypress .action a.leave-group:hover,
+  #buddypress .action a.leave-group:focus,
+  #bbpress-forums .row-actions a.leave-group:hover,
+  #bbpress-forums .row-actions a.leave-group:focus,
+  #bbpress-forums .activity-meta a.leave-group:hover,
+  #bbpress-forums .activity-meta a.leave-group:focus,
+  #bbpress-forums .acomment-options a.leave-group:hover,
+  #bbpress-forums .acomment-options a.leave-group:focus,
+  #bbpress-forums .action a.leave-group:hover,
+  #bbpress-forums .action a.leave-group:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
+  #buddypress .activity-meta a.leave-group:hover,
+  #buddypress .activity-meta a.leave-group:focus,
+  #buddypress .acomment-options a.leave-group:hover,
+  #buddypress .acomment-options a.leave-group:focus,
+  #buddypress .action a.leave-group:hover,
+  #buddypress .action a.leave-group:focus,
+  #bbpress-forums .row-actions a.leave-group:hover,
+  #bbpress-forums .row-actions a.leave-group:focus,
+  #bbpress-forums .activity-meta a.leave-group:hover,
+  #bbpress-forums .activity-meta a.leave-group:focus,
+  #bbpress-forums .acomment-options a.leave-group:hover,
+  #bbpress-forums .acomment-options a.leave-group:focus,
+  #bbpress-forums .action a.leave-group:hover,
+  #bbpress-forums .action a.leave-group:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.leave-group:before,
+  #buddypress .activity-meta a.leave-group:before,
+  #buddypress .acomment-options a.leave-group:before,
+  #buddypress .action a.leave-group:before,
+  #bbpress-forums .row-actions a.leave-group:before,
+  #bbpress-forums .activity-meta a.leave-group:before,
+  #bbpress-forums .acomment-options a.leave-group:before,
+  #bbpress-forums .action a.leave-group:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
-    #buddypress .activity-meta a.leave-group:hover,
-    #buddypress .activity-meta a.leave-group:focus,
-    #buddypress .acomment-options a.leave-group:hover,
-    #buddypress .acomment-options a.leave-group:focus,
-    #buddypress .action a.leave-group:hover,
-    #buddypress .action a.leave-group:focus,
-    #bbpress-forums .row-actions a.leave-group:hover,
-    #bbpress-forums .row-actions a.leave-group:focus,
-    #bbpress-forums .activity-meta a.leave-group:hover,
-    #bbpress-forums .activity-meta a.leave-group:focus,
-    #bbpress-forums .acomment-options a.leave-group:hover,
-    #bbpress-forums .acomment-options a.leave-group:focus,
-    #bbpress-forums .action a.leave-group:hover,
-    #bbpress-forums .action a.leave-group:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.leave-group:hover, #buddypress .row-actions a.leave-group:focus,
-    #buddypress .activity-meta a.leave-group:hover,
-    #buddypress .activity-meta a.leave-group:focus,
-    #buddypress .acomment-options a.leave-group:hover,
-    #buddypress .acomment-options a.leave-group:focus,
-    #buddypress .action a.leave-group:hover,
-    #buddypress .action a.leave-group:focus,
-    #bbpress-forums .row-actions a.leave-group:hover,
-    #bbpress-forums .row-actions a.leave-group:focus,
-    #bbpress-forums .activity-meta a.leave-group:hover,
-    #bbpress-forums .activity-meta a.leave-group:focus,
-    #bbpress-forums .acomment-options a.leave-group:hover,
-    #bbpress-forums .acomment-options a.leave-group:focus,
-    #bbpress-forums .action a.leave-group:hover,
-    #bbpress-forums .action a.leave-group:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.leave-group:before,
-    #buddypress .activity-meta a.leave-group:before,
-    #buddypress .acomment-options a.leave-group:before,
-    #buddypress .action a.leave-group:before,
-    #bbpress-forums .row-actions a.leave-group:before,
-    #bbpress-forums .activity-meta a.leave-group:before,
-    #bbpress-forums .acomment-options a.leave-group:before,
-    #bbpress-forums .action a.leave-group:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.leave-group:before,
-    #buddypress .activity-meta a.leave-group:before,
-    #buddypress .acomment-options a.leave-group:before,
-    #buddypress .action a.leave-group:before,
-    #bbpress-forums .row-actions a.leave-group:before,
-    #bbpress-forums .activity-meta a.leave-group:before,
-    #bbpress-forums .acomment-options a.leave-group:before,
-    #bbpress-forums .action a.leave-group:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.join-group,
-  #buddypress .activity-meta a.join-group,
-  #buddypress .acomment-options a.join-group,
-  #buddypress .action a.join-group,
-  #bbpress-forums .row-actions a.join-group,
-  #bbpress-forums .activity-meta a.join-group,
-  #bbpress-forums .acomment-options a.join-group,
-  #bbpress-forums .action a.join-group {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.leave-group:before,
+  #buddypress .activity-meta a.leave-group:before,
+  #buddypress .acomment-options a.leave-group:before,
+  #buddypress .action a.leave-group:before,
+  #bbpress-forums .row-actions a.leave-group:before,
+  #bbpress-forums .activity-meta a.leave-group:before,
+  #bbpress-forums .acomment-options a.leave-group:before,
+  #bbpress-forums .action a.leave-group:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.join-group,
+#buddypress .activity-meta a.join-group,
+#buddypress .acomment-options a.join-group,
+#buddypress .action a.join-group,
+#bbpress-forums .row-actions a.join-group,
+#bbpress-forums .activity-meta a.join-group,
+#bbpress-forums .acomment-options a.join-group,
+#bbpress-forums .action a.join-group {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.join-group:hover, #buddypress .row-actions a.join-group:focus,
+  #buddypress .activity-meta a.join-group:hover,
+  #buddypress .activity-meta a.join-group:focus,
+  #buddypress .acomment-options a.join-group:hover,
+  #buddypress .acomment-options a.join-group:focus,
+  #buddypress .action a.join-group:hover,
+  #buddypress .action a.join-group:focus,
+  #bbpress-forums .row-actions a.join-group:hover,
+  #bbpress-forums .row-actions a.join-group:focus,
+  #bbpress-forums .activity-meta a.join-group:hover,
+  #bbpress-forums .activity-meta a.join-group:focus,
+  #bbpress-forums .acomment-options a.join-group:hover,
+  #bbpress-forums .acomment-options a.join-group:focus,
+  #bbpress-forums .action a.join-group:hover,
+  #bbpress-forums .action a.join-group:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.join-group:hover, #buddypress .row-actions a.join-group:focus,
+  #buddypress .activity-meta a.join-group:hover,
+  #buddypress .activity-meta a.join-group:focus,
+  #buddypress .acomment-options a.join-group:hover,
+  #buddypress .acomment-options a.join-group:focus,
+  #buddypress .action a.join-group:hover,
+  #buddypress .action a.join-group:focus,
+  #bbpress-forums .row-actions a.join-group:hover,
+  #bbpress-forums .row-actions a.join-group:focus,
+  #bbpress-forums .activity-meta a.join-group:hover,
+  #bbpress-forums .activity-meta a.join-group:focus,
+  #bbpress-forums .acomment-options a.join-group:hover,
+  #bbpress-forums .acomment-options a.join-group:focus,
+  #bbpress-forums .action a.join-group:hover,
+  #bbpress-forums .action a.join-group:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.join-group:before,
+  #buddypress .activity-meta a.join-group:before,
+  #buddypress .acomment-options a.join-group:before,
+  #buddypress .action a.join-group:before,
+  #bbpress-forums .row-actions a.join-group:before,
+  #bbpress-forums .activity-meta a.join-group:before,
+  #bbpress-forums .acomment-options a.join-group:before,
+  #bbpress-forums .action a.join-group:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.join-group:hover, #buddypress .row-actions a.join-group:focus,
-    #buddypress .activity-meta a.join-group:hover,
-    #buddypress .activity-meta a.join-group:focus,
-    #buddypress .acomment-options a.join-group:hover,
-    #buddypress .acomment-options a.join-group:focus,
-    #buddypress .action a.join-group:hover,
-    #buddypress .action a.join-group:focus,
-    #bbpress-forums .row-actions a.join-group:hover,
-    #bbpress-forums .row-actions a.join-group:focus,
-    #bbpress-forums .activity-meta a.join-group:hover,
-    #bbpress-forums .activity-meta a.join-group:focus,
-    #bbpress-forums .acomment-options a.join-group:hover,
-    #bbpress-forums .acomment-options a.join-group:focus,
-    #bbpress-forums .action a.join-group:hover,
-    #bbpress-forums .action a.join-group:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.join-group:hover, #buddypress .row-actions a.join-group:focus,
-    #buddypress .activity-meta a.join-group:hover,
-    #buddypress .activity-meta a.join-group:focus,
-    #buddypress .acomment-options a.join-group:hover,
-    #buddypress .acomment-options a.join-group:focus,
-    #buddypress .action a.join-group:hover,
-    #buddypress .action a.join-group:focus,
-    #bbpress-forums .row-actions a.join-group:hover,
-    #bbpress-forums .row-actions a.join-group:focus,
-    #bbpress-forums .activity-meta a.join-group:hover,
-    #bbpress-forums .activity-meta a.join-group:focus,
-    #bbpress-forums .acomment-options a.join-group:hover,
-    #bbpress-forums .acomment-options a.join-group:focus,
-    #bbpress-forums .action a.join-group:hover,
-    #bbpress-forums .action a.join-group:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.join-group:before,
-    #buddypress .activity-meta a.join-group:before,
-    #buddypress .acomment-options a.join-group:before,
-    #buddypress .action a.join-group:before,
-    #bbpress-forums .row-actions a.join-group:before,
-    #bbpress-forums .activity-meta a.join-group:before,
-    #bbpress-forums .acomment-options a.join-group:before,
-    #bbpress-forums .action a.join-group:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.join-group:before,
-    #buddypress .activity-meta a.join-group:before,
-    #buddypress .acomment-options a.join-group:before,
-    #buddypress .action a.join-group:before,
-    #bbpress-forums .row-actions a.join-group:before,
-    #bbpress-forums .activity-meta a.join-group:before,
-    #bbpress-forums .acomment-options a.join-group:before,
-    #bbpress-forums .action a.join-group:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.group-subscription-options-link,
-  #buddypress .activity-meta a.group-subscription-options-link,
-  #buddypress .acomment-options a.group-subscription-options-link,
-  #buddypress .action a.group-subscription-options-link,
-  #bbpress-forums .row-actions a.group-subscription-options-link,
-  #bbpress-forums .activity-meta a.group-subscription-options-link,
-  #bbpress-forums .acomment-options a.group-subscription-options-link,
-  #bbpress-forums .action a.group-subscription-options-link {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.join-group:before,
+  #buddypress .activity-meta a.join-group:before,
+  #buddypress .acomment-options a.join-group:before,
+  #buddypress .action a.join-group:before,
+  #bbpress-forums .row-actions a.join-group:before,
+  #bbpress-forums .activity-meta a.join-group:before,
+  #bbpress-forums .acomment-options a.join-group:before,
+  #bbpress-forums .action a.join-group:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.group-subscription-options-link,
+#buddypress .activity-meta a.group-subscription-options-link,
+#buddypress .acomment-options a.group-subscription-options-link,
+#buddypress .action a.group-subscription-options-link,
+#bbpress-forums .row-actions a.group-subscription-options-link,
+#bbpress-forums .activity-meta a.group-subscription-options-link,
+#bbpress-forums .acomment-options a.group-subscription-options-link,
+#bbpress-forums .action a.group-subscription-options-link {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.group-subscription-options-link:hover, #buddypress .row-actions a.group-subscription-options-link:focus,
+  #buddypress .activity-meta a.group-subscription-options-link:hover,
+  #buddypress .activity-meta a.group-subscription-options-link:focus,
+  #buddypress .acomment-options a.group-subscription-options-link:hover,
+  #buddypress .acomment-options a.group-subscription-options-link:focus,
+  #buddypress .action a.group-subscription-options-link:hover,
+  #buddypress .action a.group-subscription-options-link:focus,
+  #bbpress-forums .row-actions a.group-subscription-options-link:hover,
+  #bbpress-forums .row-actions a.group-subscription-options-link:focus,
+  #bbpress-forums .activity-meta a.group-subscription-options-link:hover,
+  #bbpress-forums .activity-meta a.group-subscription-options-link:focus,
+  #bbpress-forums .acomment-options a.group-subscription-options-link:hover,
+  #bbpress-forums .acomment-options a.group-subscription-options-link:focus,
+  #bbpress-forums .action a.group-subscription-options-link:hover,
+  #bbpress-forums .action a.group-subscription-options-link:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.group-subscription-options-link:hover, #buddypress .row-actions a.group-subscription-options-link:focus,
+  #buddypress .activity-meta a.group-subscription-options-link:hover,
+  #buddypress .activity-meta a.group-subscription-options-link:focus,
+  #buddypress .acomment-options a.group-subscription-options-link:hover,
+  #buddypress .acomment-options a.group-subscription-options-link:focus,
+  #buddypress .action a.group-subscription-options-link:hover,
+  #buddypress .action a.group-subscription-options-link:focus,
+  #bbpress-forums .row-actions a.group-subscription-options-link:hover,
+  #bbpress-forums .row-actions a.group-subscription-options-link:focus,
+  #bbpress-forums .activity-meta a.group-subscription-options-link:hover,
+  #bbpress-forums .activity-meta a.group-subscription-options-link:focus,
+  #bbpress-forums .acomment-options a.group-subscription-options-link:hover,
+  #bbpress-forums .acomment-options a.group-subscription-options-link:focus,
+  #bbpress-forums .action a.group-subscription-options-link:hover,
+  #bbpress-forums .action a.group-subscription-options-link:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.group-subscription-options-link:before,
+  #buddypress .activity-meta a.group-subscription-options-link:before,
+  #buddypress .acomment-options a.group-subscription-options-link:before,
+  #buddypress .action a.group-subscription-options-link:before,
+  #bbpress-forums .row-actions a.group-subscription-options-link:before,
+  #bbpress-forums .activity-meta a.group-subscription-options-link:before,
+  #bbpress-forums .acomment-options a.group-subscription-options-link:before,
+  #bbpress-forums .action a.group-subscription-options-link:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.group-subscription-options-link:hover, #buddypress .row-actions a.group-subscription-options-link:focus,
-    #buddypress .activity-meta a.group-subscription-options-link:hover,
-    #buddypress .activity-meta a.group-subscription-options-link:focus,
-    #buddypress .acomment-options a.group-subscription-options-link:hover,
-    #buddypress .acomment-options a.group-subscription-options-link:focus,
-    #buddypress .action a.group-subscription-options-link:hover,
-    #buddypress .action a.group-subscription-options-link:focus,
-    #bbpress-forums .row-actions a.group-subscription-options-link:hover,
-    #bbpress-forums .row-actions a.group-subscription-options-link:focus,
-    #bbpress-forums .activity-meta a.group-subscription-options-link:hover,
-    #bbpress-forums .activity-meta a.group-subscription-options-link:focus,
-    #bbpress-forums .acomment-options a.group-subscription-options-link:hover,
-    #bbpress-forums .acomment-options a.group-subscription-options-link:focus,
-    #bbpress-forums .action a.group-subscription-options-link:hover,
-    #bbpress-forums .action a.group-subscription-options-link:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.group-subscription-options-link:hover, #buddypress .row-actions a.group-subscription-options-link:focus,
-    #buddypress .activity-meta a.group-subscription-options-link:hover,
-    #buddypress .activity-meta a.group-subscription-options-link:focus,
-    #buddypress .acomment-options a.group-subscription-options-link:hover,
-    #buddypress .acomment-options a.group-subscription-options-link:focus,
-    #buddypress .action a.group-subscription-options-link:hover,
-    #buddypress .action a.group-subscription-options-link:focus,
-    #bbpress-forums .row-actions a.group-subscription-options-link:hover,
-    #bbpress-forums .row-actions a.group-subscription-options-link:focus,
-    #bbpress-forums .activity-meta a.group-subscription-options-link:hover,
-    #bbpress-forums .activity-meta a.group-subscription-options-link:focus,
-    #bbpress-forums .acomment-options a.group-subscription-options-link:hover,
-    #bbpress-forums .acomment-options a.group-subscription-options-link:focus,
-    #bbpress-forums .action a.group-subscription-options-link:hover,
-    #bbpress-forums .action a.group-subscription-options-link:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.group-subscription-options-link:before,
-    #buddypress .activity-meta a.group-subscription-options-link:before,
-    #buddypress .acomment-options a.group-subscription-options-link:before,
-    #buddypress .action a.group-subscription-options-link:before,
-    #bbpress-forums .row-actions a.group-subscription-options-link:before,
-    #bbpress-forums .activity-meta a.group-subscription-options-link:before,
-    #bbpress-forums .acomment-options a.group-subscription-options-link:before,
-    #bbpress-forums .action a.group-subscription-options-link:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.group-subscription-options-link:before,
-    #buddypress .activity-meta a.group-subscription-options-link:before,
-    #buddypress .acomment-options a.group-subscription-options-link:before,
-    #buddypress .action a.group-subscription-options-link:before,
-    #bbpress-forums .row-actions a.group-subscription-options-link:before,
-    #bbpress-forums .activity-meta a.group-subscription-options-link:before,
-    #bbpress-forums .acomment-options a.group-subscription-options-link:before,
-    #bbpress-forums .action a.group-subscription-options-link:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.friendship-button.add,
-  #buddypress .activity-meta a.friendship-button.add,
-  #buddypress .acomment-options a.friendship-button.add,
-  #buddypress .action a.friendship-button.add,
-  #bbpress-forums .row-actions a.friendship-button.add,
-  #bbpress-forums .activity-meta a.friendship-button.add,
-  #bbpress-forums .acomment-options a.friendship-button.add,
-  #bbpress-forums .action a.friendship-button.add {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.group-subscription-options-link:before,
+  #buddypress .activity-meta a.group-subscription-options-link:before,
+  #buddypress .acomment-options a.group-subscription-options-link:before,
+  #buddypress .action a.group-subscription-options-link:before,
+  #bbpress-forums .row-actions a.group-subscription-options-link:before,
+  #bbpress-forums .activity-meta a.group-subscription-options-link:before,
+  #bbpress-forums .acomment-options a.group-subscription-options-link:before,
+  #bbpress-forums .action a.group-subscription-options-link:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.friendship-button.add,
+#buddypress .activity-meta a.friendship-button.add,
+#buddypress .acomment-options a.friendship-button.add,
+#buddypress .action a.friendship-button.add,
+#bbpress-forums .row-actions a.friendship-button.add,
+#bbpress-forums .activity-meta a.friendship-button.add,
+#bbpress-forums .acomment-options a.friendship-button.add,
+#bbpress-forums .action a.friendship-button.add {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.friendship-button.add:hover, #buddypress .row-actions a.friendship-button.add:focus,
+  #buddypress .activity-meta a.friendship-button.add:hover,
+  #buddypress .activity-meta a.friendship-button.add:focus,
+  #buddypress .acomment-options a.friendship-button.add:hover,
+  #buddypress .acomment-options a.friendship-button.add:focus,
+  #buddypress .action a.friendship-button.add:hover,
+  #buddypress .action a.friendship-button.add:focus,
+  #bbpress-forums .row-actions a.friendship-button.add:hover,
+  #bbpress-forums .row-actions a.friendship-button.add:focus,
+  #bbpress-forums .activity-meta a.friendship-button.add:hover,
+  #bbpress-forums .activity-meta a.friendship-button.add:focus,
+  #bbpress-forums .acomment-options a.friendship-button.add:hover,
+  #bbpress-forums .acomment-options a.friendship-button.add:focus,
+  #bbpress-forums .action a.friendship-button.add:hover,
+  #bbpress-forums .action a.friendship-button.add:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.friendship-button.add:hover, #buddypress .row-actions a.friendship-button.add:focus,
+  #buddypress .activity-meta a.friendship-button.add:hover,
+  #buddypress .activity-meta a.friendship-button.add:focus,
+  #buddypress .acomment-options a.friendship-button.add:hover,
+  #buddypress .acomment-options a.friendship-button.add:focus,
+  #buddypress .action a.friendship-button.add:hover,
+  #buddypress .action a.friendship-button.add:focus,
+  #bbpress-forums .row-actions a.friendship-button.add:hover,
+  #bbpress-forums .row-actions a.friendship-button.add:focus,
+  #bbpress-forums .activity-meta a.friendship-button.add:hover,
+  #bbpress-forums .activity-meta a.friendship-button.add:focus,
+  #bbpress-forums .acomment-options a.friendship-button.add:hover,
+  #bbpress-forums .acomment-options a.friendship-button.add:focus,
+  #bbpress-forums .action a.friendship-button.add:hover,
+  #bbpress-forums .action a.friendship-button.add:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.friendship-button.add:before,
+  #buddypress .activity-meta a.friendship-button.add:before,
+  #buddypress .acomment-options a.friendship-button.add:before,
+  #buddypress .action a.friendship-button.add:before,
+  #bbpress-forums .row-actions a.friendship-button.add:before,
+  #bbpress-forums .activity-meta a.friendship-button.add:before,
+  #bbpress-forums .acomment-options a.friendship-button.add:before,
+  #bbpress-forums .action a.friendship-button.add:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.friendship-button.add:hover, #buddypress .row-actions a.friendship-button.add:focus,
-    #buddypress .activity-meta a.friendship-button.add:hover,
-    #buddypress .activity-meta a.friendship-button.add:focus,
-    #buddypress .acomment-options a.friendship-button.add:hover,
-    #buddypress .acomment-options a.friendship-button.add:focus,
-    #buddypress .action a.friendship-button.add:hover,
-    #buddypress .action a.friendship-button.add:focus,
-    #bbpress-forums .row-actions a.friendship-button.add:hover,
-    #bbpress-forums .row-actions a.friendship-button.add:focus,
-    #bbpress-forums .activity-meta a.friendship-button.add:hover,
-    #bbpress-forums .activity-meta a.friendship-button.add:focus,
-    #bbpress-forums .acomment-options a.friendship-button.add:hover,
-    #bbpress-forums .acomment-options a.friendship-button.add:focus,
-    #bbpress-forums .action a.friendship-button.add:hover,
-    #bbpress-forums .action a.friendship-button.add:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.friendship-button.add:hover, #buddypress .row-actions a.friendship-button.add:focus,
-    #buddypress .activity-meta a.friendship-button.add:hover,
-    #buddypress .activity-meta a.friendship-button.add:focus,
-    #buddypress .acomment-options a.friendship-button.add:hover,
-    #buddypress .acomment-options a.friendship-button.add:focus,
-    #buddypress .action a.friendship-button.add:hover,
-    #buddypress .action a.friendship-button.add:focus,
-    #bbpress-forums .row-actions a.friendship-button.add:hover,
-    #bbpress-forums .row-actions a.friendship-button.add:focus,
-    #bbpress-forums .activity-meta a.friendship-button.add:hover,
-    #bbpress-forums .activity-meta a.friendship-button.add:focus,
-    #bbpress-forums .acomment-options a.friendship-button.add:hover,
-    #bbpress-forums .acomment-options a.friendship-button.add:focus,
-    #bbpress-forums .action a.friendship-button.add:hover,
-    #bbpress-forums .action a.friendship-button.add:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.friendship-button.add:before,
-    #buddypress .activity-meta a.friendship-button.add:before,
-    #buddypress .acomment-options a.friendship-button.add:before,
-    #buddypress .action a.friendship-button.add:before,
-    #bbpress-forums .row-actions a.friendship-button.add:before,
-    #bbpress-forums .activity-meta a.friendship-button.add:before,
-    #bbpress-forums .acomment-options a.friendship-button.add:before,
-    #bbpress-forums .action a.friendship-button.add:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.friendship-button.add:before,
-    #buddypress .activity-meta a.friendship-button.add:before,
-    #buddypress .acomment-options a.friendship-button.add:before,
-    #buddypress .action a.friendship-button.add:before,
-    #bbpress-forums .row-actions a.friendship-button.add:before,
-    #bbpress-forums .activity-meta a.friendship-button.add:before,
-    #bbpress-forums .acomment-options a.friendship-button.add:before,
-    #bbpress-forums .action a.friendship-button.add:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.friendship-button.requested,
-  #buddypress .activity-meta a.friendship-button.requested,
-  #buddypress .acomment-options a.friendship-button.requested,
-  #buddypress .action a.friendship-button.requested,
-  #bbpress-forums .row-actions a.friendship-button.requested,
-  #bbpress-forums .activity-meta a.friendship-button.requested,
-  #bbpress-forums .acomment-options a.friendship-button.requested,
-  #bbpress-forums .action a.friendship-button.requested {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.friendship-button.add:before,
+  #buddypress .activity-meta a.friendship-button.add:before,
+  #buddypress .acomment-options a.friendship-button.add:before,
+  #buddypress .action a.friendship-button.add:before,
+  #bbpress-forums .row-actions a.friendship-button.add:before,
+  #bbpress-forums .activity-meta a.friendship-button.add:before,
+  #bbpress-forums .acomment-options a.friendship-button.add:before,
+  #bbpress-forums .action a.friendship-button.add:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.friendship-button.requested,
+#buddypress .activity-meta a.friendship-button.requested,
+#buddypress .acomment-options a.friendship-button.requested,
+#buddypress .action a.friendship-button.requested,
+#bbpress-forums .row-actions a.friendship-button.requested,
+#bbpress-forums .activity-meta a.friendship-button.requested,
+#bbpress-forums .acomment-options a.friendship-button.requested,
+#bbpress-forums .action a.friendship-button.requested {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.friendship-button.requested:hover, #buddypress .row-actions a.friendship-button.requested:focus,
+  #buddypress .activity-meta a.friendship-button.requested:hover,
+  #buddypress .activity-meta a.friendship-button.requested:focus,
+  #buddypress .acomment-options a.friendship-button.requested:hover,
+  #buddypress .acomment-options a.friendship-button.requested:focus,
+  #buddypress .action a.friendship-button.requested:hover,
+  #buddypress .action a.friendship-button.requested:focus,
+  #bbpress-forums .row-actions a.friendship-button.requested:hover,
+  #bbpress-forums .row-actions a.friendship-button.requested:focus,
+  #bbpress-forums .activity-meta a.friendship-button.requested:hover,
+  #bbpress-forums .activity-meta a.friendship-button.requested:focus,
+  #bbpress-forums .acomment-options a.friendship-button.requested:hover,
+  #bbpress-forums .acomment-options a.friendship-button.requested:focus,
+  #bbpress-forums .action a.friendship-button.requested:hover,
+  #bbpress-forums .action a.friendship-button.requested:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.friendship-button.requested:hover, #buddypress .row-actions a.friendship-button.requested:focus,
+  #buddypress .activity-meta a.friendship-button.requested:hover,
+  #buddypress .activity-meta a.friendship-button.requested:focus,
+  #buddypress .acomment-options a.friendship-button.requested:hover,
+  #buddypress .acomment-options a.friendship-button.requested:focus,
+  #buddypress .action a.friendship-button.requested:hover,
+  #buddypress .action a.friendship-button.requested:focus,
+  #bbpress-forums .row-actions a.friendship-button.requested:hover,
+  #bbpress-forums .row-actions a.friendship-button.requested:focus,
+  #bbpress-forums .activity-meta a.friendship-button.requested:hover,
+  #bbpress-forums .activity-meta a.friendship-button.requested:focus,
+  #bbpress-forums .acomment-options a.friendship-button.requested:hover,
+  #bbpress-forums .acomment-options a.friendship-button.requested:focus,
+  #bbpress-forums .action a.friendship-button.requested:hover,
+  #bbpress-forums .action a.friendship-button.requested:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.friendship-button.requested:before,
+  #buddypress .activity-meta a.friendship-button.requested:before,
+  #buddypress .acomment-options a.friendship-button.requested:before,
+  #buddypress .action a.friendship-button.requested:before,
+  #bbpress-forums .row-actions a.friendship-button.requested:before,
+  #bbpress-forums .activity-meta a.friendship-button.requested:before,
+  #bbpress-forums .acomment-options a.friendship-button.requested:before,
+  #bbpress-forums .action a.friendship-button.requested:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.friendship-button.requested:hover, #buddypress .row-actions a.friendship-button.requested:focus,
-    #buddypress .activity-meta a.friendship-button.requested:hover,
-    #buddypress .activity-meta a.friendship-button.requested:focus,
-    #buddypress .acomment-options a.friendship-button.requested:hover,
-    #buddypress .acomment-options a.friendship-button.requested:focus,
-    #buddypress .action a.friendship-button.requested:hover,
-    #buddypress .action a.friendship-button.requested:focus,
-    #bbpress-forums .row-actions a.friendship-button.requested:hover,
-    #bbpress-forums .row-actions a.friendship-button.requested:focus,
-    #bbpress-forums .activity-meta a.friendship-button.requested:hover,
-    #bbpress-forums .activity-meta a.friendship-button.requested:focus,
-    #bbpress-forums .acomment-options a.friendship-button.requested:hover,
-    #bbpress-forums .acomment-options a.friendship-button.requested:focus,
-    #bbpress-forums .action a.friendship-button.requested:hover,
-    #bbpress-forums .action a.friendship-button.requested:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.friendship-button.requested:hover, #buddypress .row-actions a.friendship-button.requested:focus,
-    #buddypress .activity-meta a.friendship-button.requested:hover,
-    #buddypress .activity-meta a.friendship-button.requested:focus,
-    #buddypress .acomment-options a.friendship-button.requested:hover,
-    #buddypress .acomment-options a.friendship-button.requested:focus,
-    #buddypress .action a.friendship-button.requested:hover,
-    #buddypress .action a.friendship-button.requested:focus,
-    #bbpress-forums .row-actions a.friendship-button.requested:hover,
-    #bbpress-forums .row-actions a.friendship-button.requested:focus,
-    #bbpress-forums .activity-meta a.friendship-button.requested:hover,
-    #bbpress-forums .activity-meta a.friendship-button.requested:focus,
-    #bbpress-forums .acomment-options a.friendship-button.requested:hover,
-    #bbpress-forums .acomment-options a.friendship-button.requested:focus,
-    #bbpress-forums .action a.friendship-button.requested:hover,
-    #bbpress-forums .action a.friendship-button.requested:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.friendship-button.requested:before,
-    #buddypress .activity-meta a.friendship-button.requested:before,
-    #buddypress .acomment-options a.friendship-button.requested:before,
-    #buddypress .action a.friendship-button.requested:before,
-    #bbpress-forums .row-actions a.friendship-button.requested:before,
-    #bbpress-forums .activity-meta a.friendship-button.requested:before,
-    #bbpress-forums .acomment-options a.friendship-button.requested:before,
-    #bbpress-forums .action a.friendship-button.requested:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.friendship-button.requested:before,
-    #buddypress .activity-meta a.friendship-button.requested:before,
-    #buddypress .acomment-options a.friendship-button.requested:before,
-    #buddypress .action a.friendship-button.requested:before,
-    #bbpress-forums .row-actions a.friendship-button.requested:before,
-    #bbpress-forums .activity-meta a.friendship-button.requested:before,
-    #bbpress-forums .acomment-options a.friendship-button.requested:before,
-    #bbpress-forums .action a.friendship-button.requested:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.friendship-button.remove,
-  #buddypress .activity-meta a.friendship-button.remove,
-  #buddypress .acomment-options a.friendship-button.remove,
-  #buddypress .action a.friendship-button.remove,
-  #bbpress-forums .row-actions a.friendship-button.remove,
-  #bbpress-forums .activity-meta a.friendship-button.remove,
-  #bbpress-forums .acomment-options a.friendship-button.remove,
-  #bbpress-forums .action a.friendship-button.remove {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.friendship-button.requested:before,
+  #buddypress .activity-meta a.friendship-button.requested:before,
+  #buddypress .acomment-options a.friendship-button.requested:before,
+  #buddypress .action a.friendship-button.requested:before,
+  #bbpress-forums .row-actions a.friendship-button.requested:before,
+  #bbpress-forums .activity-meta a.friendship-button.requested:before,
+  #bbpress-forums .acomment-options a.friendship-button.requested:before,
+  #bbpress-forums .action a.friendship-button.requested:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.friendship-button.remove,
+#buddypress .activity-meta a.friendship-button.remove,
+#buddypress .acomment-options a.friendship-button.remove,
+#buddypress .action a.friendship-button.remove,
+#bbpress-forums .row-actions a.friendship-button.remove,
+#bbpress-forums .activity-meta a.friendship-button.remove,
+#bbpress-forums .acomment-options a.friendship-button.remove,
+#bbpress-forums .action a.friendship-button.remove {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.friendship-button.remove:hover, #buddypress .row-actions a.friendship-button.remove:focus,
+  #buddypress .activity-meta a.friendship-button.remove:hover,
+  #buddypress .activity-meta a.friendship-button.remove:focus,
+  #buddypress .acomment-options a.friendship-button.remove:hover,
+  #buddypress .acomment-options a.friendship-button.remove:focus,
+  #buddypress .action a.friendship-button.remove:hover,
+  #buddypress .action a.friendship-button.remove:focus,
+  #bbpress-forums .row-actions a.friendship-button.remove:hover,
+  #bbpress-forums .row-actions a.friendship-button.remove:focus,
+  #bbpress-forums .activity-meta a.friendship-button.remove:hover,
+  #bbpress-forums .activity-meta a.friendship-button.remove:focus,
+  #bbpress-forums .acomment-options a.friendship-button.remove:hover,
+  #bbpress-forums .acomment-options a.friendship-button.remove:focus,
+  #bbpress-forums .action a.friendship-button.remove:hover,
+  #bbpress-forums .action a.friendship-button.remove:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.friendship-button.remove:hover, #buddypress .row-actions a.friendship-button.remove:focus,
+  #buddypress .activity-meta a.friendship-button.remove:hover,
+  #buddypress .activity-meta a.friendship-button.remove:focus,
+  #buddypress .acomment-options a.friendship-button.remove:hover,
+  #buddypress .acomment-options a.friendship-button.remove:focus,
+  #buddypress .action a.friendship-button.remove:hover,
+  #buddypress .action a.friendship-button.remove:focus,
+  #bbpress-forums .row-actions a.friendship-button.remove:hover,
+  #bbpress-forums .row-actions a.friendship-button.remove:focus,
+  #bbpress-forums .activity-meta a.friendship-button.remove:hover,
+  #bbpress-forums .activity-meta a.friendship-button.remove:focus,
+  #bbpress-forums .acomment-options a.friendship-button.remove:hover,
+  #bbpress-forums .acomment-options a.friendship-button.remove:focus,
+  #bbpress-forums .action a.friendship-button.remove:hover,
+  #bbpress-forums .action a.friendship-button.remove:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.friendship-button.remove:before,
+  #buddypress .activity-meta a.friendship-button.remove:before,
+  #buddypress .acomment-options a.friendship-button.remove:before,
+  #buddypress .action a.friendship-button.remove:before,
+  #bbpress-forums .row-actions a.friendship-button.remove:before,
+  #bbpress-forums .activity-meta a.friendship-button.remove:before,
+  #bbpress-forums .acomment-options a.friendship-button.remove:before,
+  #bbpress-forums .action a.friendship-button.remove:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.friendship-button.remove:hover, #buddypress .row-actions a.friendship-button.remove:focus,
-    #buddypress .activity-meta a.friendship-button.remove:hover,
-    #buddypress .activity-meta a.friendship-button.remove:focus,
-    #buddypress .acomment-options a.friendship-button.remove:hover,
-    #buddypress .acomment-options a.friendship-button.remove:focus,
-    #buddypress .action a.friendship-button.remove:hover,
-    #buddypress .action a.friendship-button.remove:focus,
-    #bbpress-forums .row-actions a.friendship-button.remove:hover,
-    #bbpress-forums .row-actions a.friendship-button.remove:focus,
-    #bbpress-forums .activity-meta a.friendship-button.remove:hover,
-    #bbpress-forums .activity-meta a.friendship-button.remove:focus,
-    #bbpress-forums .acomment-options a.friendship-button.remove:hover,
-    #bbpress-forums .acomment-options a.friendship-button.remove:focus,
-    #bbpress-forums .action a.friendship-button.remove:hover,
-    #bbpress-forums .action a.friendship-button.remove:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.friendship-button.remove:hover, #buddypress .row-actions a.friendship-button.remove:focus,
-    #buddypress .activity-meta a.friendship-button.remove:hover,
-    #buddypress .activity-meta a.friendship-button.remove:focus,
-    #buddypress .acomment-options a.friendship-button.remove:hover,
-    #buddypress .acomment-options a.friendship-button.remove:focus,
-    #buddypress .action a.friendship-button.remove:hover,
-    #buddypress .action a.friendship-button.remove:focus,
-    #bbpress-forums .row-actions a.friendship-button.remove:hover,
-    #bbpress-forums .row-actions a.friendship-button.remove:focus,
-    #bbpress-forums .activity-meta a.friendship-button.remove:hover,
-    #bbpress-forums .activity-meta a.friendship-button.remove:focus,
-    #bbpress-forums .acomment-options a.friendship-button.remove:hover,
-    #bbpress-forums .acomment-options a.friendship-button.remove:focus,
-    #bbpress-forums .action a.friendship-button.remove:hover,
-    #bbpress-forums .action a.friendship-button.remove:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.friendship-button.remove:before,
-    #buddypress .activity-meta a.friendship-button.remove:before,
-    #buddypress .acomment-options a.friendship-button.remove:before,
-    #buddypress .action a.friendship-button.remove:before,
-    #bbpress-forums .row-actions a.friendship-button.remove:before,
-    #bbpress-forums .activity-meta a.friendship-button.remove:before,
-    #bbpress-forums .acomment-options a.friendship-button.remove:before,
-    #bbpress-forums .action a.friendship-button.remove:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.friendship-button.remove:before,
-    #buddypress .activity-meta a.friendship-button.remove:before,
-    #buddypress .acomment-options a.friendship-button.remove:before,
-    #buddypress .action a.friendship-button.remove:before,
-    #bbpress-forums .row-actions a.friendship-button.remove:before,
-    #bbpress-forums .activity-meta a.friendship-button.remove:before,
-    #bbpress-forums .acomment-options a.friendship-button.remove:before,
-    #bbpress-forums .action a.friendship-button.remove:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.mention,
-  #buddypress .activity-meta a.mention,
-  #buddypress .acomment-options a.mention,
-  #buddypress .action a.mention,
-  #bbpress-forums .row-actions a.mention,
-  #bbpress-forums .activity-meta a.mention,
-  #bbpress-forums .acomment-options a.mention,
-  #bbpress-forums .action a.mention {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.friendship-button.remove:before,
+  #buddypress .activity-meta a.friendship-button.remove:before,
+  #buddypress .acomment-options a.friendship-button.remove:before,
+  #buddypress .action a.friendship-button.remove:before,
+  #bbpress-forums .row-actions a.friendship-button.remove:before,
+  #bbpress-forums .activity-meta a.friendship-button.remove:before,
+  #bbpress-forums .acomment-options a.friendship-button.remove:before,
+  #bbpress-forums .action a.friendship-button.remove:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.mention,
+#buddypress .activity-meta a.mention,
+#buddypress .acomment-options a.mention,
+#buddypress .action a.mention,
+#bbpress-forums .row-actions a.mention,
+#bbpress-forums .activity-meta a.mention,
+#bbpress-forums .acomment-options a.mention,
+#bbpress-forums .action a.mention {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.mention:hover, #buddypress .row-actions a.mention:focus,
+  #buddypress .activity-meta a.mention:hover,
+  #buddypress .activity-meta a.mention:focus,
+  #buddypress .acomment-options a.mention:hover,
+  #buddypress .acomment-options a.mention:focus,
+  #buddypress .action a.mention:hover,
+  #buddypress .action a.mention:focus,
+  #bbpress-forums .row-actions a.mention:hover,
+  #bbpress-forums .row-actions a.mention:focus,
+  #bbpress-forums .activity-meta a.mention:hover,
+  #bbpress-forums .activity-meta a.mention:focus,
+  #bbpress-forums .acomment-options a.mention:hover,
+  #bbpress-forums .acomment-options a.mention:focus,
+  #bbpress-forums .action a.mention:hover,
+  #bbpress-forums .action a.mention:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.mention:hover, #buddypress .row-actions a.mention:focus,
+  #buddypress .activity-meta a.mention:hover,
+  #buddypress .activity-meta a.mention:focus,
+  #buddypress .acomment-options a.mention:hover,
+  #buddypress .acomment-options a.mention:focus,
+  #buddypress .action a.mention:hover,
+  #buddypress .action a.mention:focus,
+  #bbpress-forums .row-actions a.mention:hover,
+  #bbpress-forums .row-actions a.mention:focus,
+  #bbpress-forums .activity-meta a.mention:hover,
+  #bbpress-forums .activity-meta a.mention:focus,
+  #bbpress-forums .acomment-options a.mention:hover,
+  #bbpress-forums .acomment-options a.mention:focus,
+  #bbpress-forums .action a.mention:hover,
+  #bbpress-forums .action a.mention:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.mention:before,
+  #buddypress .activity-meta a.mention:before,
+  #buddypress .acomment-options a.mention:before,
+  #buddypress .action a.mention:before,
+  #bbpress-forums .row-actions a.mention:before,
+  #bbpress-forums .activity-meta a.mention:before,
+  #bbpress-forums .acomment-options a.mention:before,
+  #bbpress-forums .action a.mention:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.mention:hover, #buddypress .row-actions a.mention:focus,
-    #buddypress .activity-meta a.mention:hover,
-    #buddypress .activity-meta a.mention:focus,
-    #buddypress .acomment-options a.mention:hover,
-    #buddypress .acomment-options a.mention:focus,
-    #buddypress .action a.mention:hover,
-    #buddypress .action a.mention:focus,
-    #bbpress-forums .row-actions a.mention:hover,
-    #bbpress-forums .row-actions a.mention:focus,
-    #bbpress-forums .activity-meta a.mention:hover,
-    #bbpress-forums .activity-meta a.mention:focus,
-    #bbpress-forums .acomment-options a.mention:hover,
-    #bbpress-forums .acomment-options a.mention:focus,
-    #bbpress-forums .action a.mention:hover,
-    #bbpress-forums .action a.mention:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.mention:hover, #buddypress .row-actions a.mention:focus,
-    #buddypress .activity-meta a.mention:hover,
-    #buddypress .activity-meta a.mention:focus,
-    #buddypress .acomment-options a.mention:hover,
-    #buddypress .acomment-options a.mention:focus,
-    #buddypress .action a.mention:hover,
-    #buddypress .action a.mention:focus,
-    #bbpress-forums .row-actions a.mention:hover,
-    #bbpress-forums .row-actions a.mention:focus,
-    #bbpress-forums .activity-meta a.mention:hover,
-    #bbpress-forums .activity-meta a.mention:focus,
-    #bbpress-forums .acomment-options a.mention:hover,
-    #bbpress-forums .acomment-options a.mention:focus,
-    #bbpress-forums .action a.mention:hover,
-    #bbpress-forums .action a.mention:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.mention:before,
-    #buddypress .activity-meta a.mention:before,
-    #buddypress .acomment-options a.mention:before,
-    #buddypress .action a.mention:before,
-    #bbpress-forums .row-actions a.mention:before,
-    #bbpress-forums .activity-meta a.mention:before,
-    #bbpress-forums .acomment-options a.mention:before,
-    #bbpress-forums .action a.mention:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.mention:before,
-    #buddypress .activity-meta a.mention:before,
-    #buddypress .acomment-options a.mention:before,
-    #buddypress .action a.mention:before,
-    #bbpress-forums .row-actions a.mention:before,
-    #bbpress-forums .activity-meta a.mention:before,
-    #bbpress-forums .acomment-options a.mention:before,
-    #bbpress-forums .action a.mention:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a.send-message,
-  #buddypress .activity-meta a.send-message,
-  #buddypress .acomment-options a.send-message,
-  #buddypress .action a.send-message,
-  #bbpress-forums .row-actions a.send-message,
-  #bbpress-forums .activity-meta a.send-message,
-  #bbpress-forums .acomment-options a.send-message,
-  #bbpress-forums .action a.send-message {
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    font-size: 14px;
-    font-size: 0.875rem;
-    text-align: center;
+  #buddypress .row-actions a.mention:before,
+  #buddypress .activity-meta a.mention:before,
+  #buddypress .acomment-options a.mention:before,
+  #buddypress .action a.mention:before,
+  #bbpress-forums .row-actions a.mention:before,
+  #bbpress-forums .activity-meta a.mention:before,
+  #bbpress-forums .acomment-options a.mention:before,
+  #bbpress-forums .action a.mention:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a.send-message,
+#buddypress .activity-meta a.send-message,
+#buddypress .acomment-options a.send-message,
+#buddypress .action a.send-message,
+#bbpress-forums .row-actions a.send-message,
+#bbpress-forums .activity-meta a.send-message,
+#bbpress-forums .acomment-options a.send-message,
+#bbpress-forums .action a.send-message {
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+  display: inline-block;
+  border-radius: 0.125em;
+  border: 1px solid #cacccd;
+  padding: .25em;
+  color: #a3a6a8; }
+  #buddypress .row-actions a.send-message:hover, #buddypress .row-actions a.send-message:focus,
+  #buddypress .activity-meta a.send-message:hover,
+  #buddypress .activity-meta a.send-message:focus,
+  #buddypress .acomment-options a.send-message:hover,
+  #buddypress .acomment-options a.send-message:focus,
+  #buddypress .action a.send-message:hover,
+  #buddypress .action a.send-message:focus,
+  #bbpress-forums .row-actions a.send-message:hover,
+  #bbpress-forums .row-actions a.send-message:focus,
+  #bbpress-forums .activity-meta a.send-message:hover,
+  #bbpress-forums .activity-meta a.send-message:focus,
+  #bbpress-forums .acomment-options a.send-message:hover,
+  #bbpress-forums .acomment-options a.send-message:focus,
+  #bbpress-forums .action a.send-message:hover,
+  #bbpress-forums .action a.send-message:focus {
+    background: white;
+    color: #111; }
+  #buddypress .row-actions a.send-message:hover, #buddypress .row-actions a.send-message:focus,
+  #buddypress .activity-meta a.send-message:hover,
+  #buddypress .activity-meta a.send-message:focus,
+  #buddypress .acomment-options a.send-message:hover,
+  #buddypress .acomment-options a.send-message:focus,
+  #buddypress .action a.send-message:hover,
+  #buddypress .action a.send-message:focus,
+  #bbpress-forums .row-actions a.send-message:hover,
+  #bbpress-forums .row-actions a.send-message:focus,
+  #bbpress-forums .activity-meta a.send-message:hover,
+  #bbpress-forums .activity-meta a.send-message:focus,
+  #bbpress-forums .acomment-options a.send-message:hover,
+  #bbpress-forums .acomment-options a.send-message:focus,
+  #bbpress-forums .action a.send-message:hover,
+  #bbpress-forums .action a.send-message:focus {
     background-color: #fff;
-    color: #111;
+    color: #898d8f; }
+  #buddypress .row-actions a.send-message:before,
+  #buddypress .activity-meta a.send-message:before,
+  #buddypress .acomment-options a.send-message:before,
+  #buddypress .action a.send-message:before,
+  #bbpress-forums .row-actions a.send-message:before,
+  #bbpress-forums .activity-meta a.send-message:before,
+  #bbpress-forums .acomment-options a.send-message:before,
+  #bbpress-forums .action a.send-message:before {
+    margin-right: .5em;
     display: inline-block;
-    border-radius: 0.125em;
-    border: 1px solid #cacccd;
-    padding: .25em;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #a3a6a8; }
-    #buddypress .row-actions a.send-message:hover, #buddypress .row-actions a.send-message:focus,
-    #buddypress .activity-meta a.send-message:hover,
-    #buddypress .activity-meta a.send-message:focus,
-    #buddypress .acomment-options a.send-message:hover,
-    #buddypress .acomment-options a.send-message:focus,
-    #buddypress .action a.send-message:hover,
-    #buddypress .action a.send-message:focus,
-    #bbpress-forums .row-actions a.send-message:hover,
-    #bbpress-forums .row-actions a.send-message:focus,
-    #bbpress-forums .activity-meta a.send-message:hover,
-    #bbpress-forums .activity-meta a.send-message:focus,
-    #bbpress-forums .acomment-options a.send-message:hover,
-    #bbpress-forums .acomment-options a.send-message:focus,
-    #bbpress-forums .action a.send-message:hover,
-    #bbpress-forums .action a.send-message:focus {
-      background: white;
-      color: #111; }
-    #buddypress .row-actions a.send-message:hover, #buddypress .row-actions a.send-message:focus,
-    #buddypress .activity-meta a.send-message:hover,
-    #buddypress .activity-meta a.send-message:focus,
-    #buddypress .acomment-options a.send-message:hover,
-    #buddypress .acomment-options a.send-message:focus,
-    #buddypress .action a.send-message:hover,
-    #buddypress .action a.send-message:focus,
-    #bbpress-forums .row-actions a.send-message:hover,
-    #bbpress-forums .row-actions a.send-message:focus,
-    #bbpress-forums .activity-meta a.send-message:hover,
-    #bbpress-forums .activity-meta a.send-message:focus,
-    #bbpress-forums .acomment-options a.send-message:hover,
-    #bbpress-forums .acomment-options a.send-message:focus,
-    #bbpress-forums .action a.send-message:hover,
-    #bbpress-forums .action a.send-message:focus {
-      background-color: #fff;
-      color: #898d8f; }
-    #buddypress .row-actions a.send-message:before,
-    #buddypress .activity-meta a.send-message:before,
-    #buddypress .acomment-options a.send-message:before,
-    #buddypress .action a.send-message:before,
-    #bbpress-forums .row-actions a.send-message:before,
-    #bbpress-forums .activity-meta a.send-message:before,
-    #bbpress-forums .acomment-options a.send-message:before,
-    #bbpress-forums .action a.send-message:before {
-      margin-right: .5em;
-      display: inline-block;
-      font: normal normal normal 14px / 1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
-    #buddypress .row-actions a.send-message:before,
-    #buddypress .activity-meta a.send-message:before,
-    #buddypress .acomment-options a.send-message:before,
-    #buddypress .action a.send-message:before,
-    #bbpress-forums .row-actions a.send-message:before,
-    #bbpress-forums .activity-meta a.send-message:before,
-    #bbpress-forums .acomment-options a.send-message:before,
-    #bbpress-forums .action a.send-message:before {
-      margin-right: 4px; }
-  #buddypress .row-actions a span,
-  #buddypress .activity-meta a span,
-  #buddypress .acomment-options a span,
-  #buddypress .action a span,
-  #bbpress-forums .row-actions a span,
-  #bbpress-forums .activity-meta a span,
-  #bbpress-forums .acomment-options a span,
-  #bbpress-forums .action a span {
-    font-size: 11px;
-    font-size: 0.6875rem;
-    background-color: #7B8083;
-    border-radius: 10px;
-    color: #fff;
-    display: inline-block;
-    line-height: 1;
-    min-width: 10px;
-    padding: 3px 7px; }
+  #buddypress .row-actions a.send-message:before,
+  #buddypress .activity-meta a.send-message:before,
+  #buddypress .acomment-options a.send-message:before,
+  #buddypress .action a.send-message:before,
+  #bbpress-forums .row-actions a.send-message:before,
+  #bbpress-forums .activity-meta a.send-message:before,
+  #bbpress-forums .acomment-options a.send-message:before,
+  #bbpress-forums .action a.send-message:before {
+    margin-right: 4px; }
+
+#buddypress .row-actions a span,
+#buddypress .activity-meta a span,
+#buddypress .acomment-options a span,
+#buddypress .action a span,
+#bbpress-forums .row-actions a span,
+#bbpress-forums .activity-meta a span,
+#bbpress-forums .acomment-options a span,
+#bbpress-forums .action a span {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  background-color: #7B8083;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  min-width: 10px;
+  padding: 3px 7px; }
 
 #buddypress .row-actions #user_switching_switch_to a,
 #buddypress .activity-meta #user_switching_switch_to a,
@@ -12395,6 +12330,14 @@ body.buddypress h1 {
   #bbpress-forums #members-dir-list .item-header-content .activity {
     display: inline-block; }
 
+#buddypress .item-list .group-subscription-options li,
+#bbpress-forums .item-list .group-subscription-options li {
+  background-color: transparent; }
+
+#buddypress .item-list .group-subscription-options button a,
+#bbpress-forums .item-list .group-subscription-options button a {
+  color: #fff; }
+
 .bp-user.events .bpeo-ical-download ul {
   margin: 0;
   padding: 0;
@@ -12440,6 +12383,9 @@ body.buddypress h1 {
       .widget.buddypress .item-avatar, article.handbook .buddypress.table-of-contents .item-avatar {
         float: left; } }
 
+/**
+ * BBPress Styles
+ */
 /*********************
 EVENT ORGANISER
 *********************/
@@ -13307,6 +13253,74 @@ article.handbook .so-panel.table-of-contents {
   .so-widget-sow-hero .sow-slider-base li {
     min-height: 250px; }
 
+/**
+ * Uncomment and change as desired.
+ */
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+/**
+ * Elements
+ */
+#crm-container .content {
+  padding: 0; }
+
+#crm-container .crm-section {
+  padding: .5em 0; }
+
+#crm-container #printer-friendly {
+  display: none; }
+
+#crm-container label {
+  font-weight: 300; }
+
+#crm-container .label label {
+  font-weight: bold; }
+
+#crm-container input,
+#crm-container textarea {
+  margin-bottom: 0; }
+
+#crm-container input[type='checkbox'],
+#crm-container input[type='radio'] {
+  margin-right: .25em; }
+
+#crm-container input[type='submit'],
+#crm-container input[type='button'],
+#crm-container .button,
+#crm-container .cancel {
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  -webkit-appearance: button;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background: #373737;
+  color: #fff;
+  line-height: 42px;
+  height: 42px;
+  white-space: inherit;
+  margin: 0;
+  padding: 0 1em;
+  font-weight: normal;
+  font-size: 1.125rem; }
+  #crm-container input[type='submit']:hover, #crm-container input[type='submit']:focus,
+  #crm-container input[type='button']:hover,
+  #crm-container input[type='button']:focus,
+  #crm-container .button:hover,
+  #crm-container .button:focus,
+  #crm-container .cancel:hover,
+  #crm-container .cancel:focus {
+    background: transparent;
+    color: #373737 !important; }
+
+#crm-container .crm-public-footer {
+  float: right; }
+  #crm-container .crm-public-footer .empowered-by-logo {
+    display: inline; }
+
 /*********************
 NETWORK CONTENT
 *********************/
@@ -13442,12 +13456,67 @@ NETWORK CONTENT
     .widget-count-3 .widget__anp-network-events .entry-meta .entry-author:after {
       content: none; } }
 
+/**
+ * NETWORK CONTENT
+ */
+.archive-network_directory .entries-list:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /*********************
 NETWORK CONTENT
 *********************/
 .js #page .menu {
   overflow: auto;
   max-height: none; }
+
+/*********************
+Knowledge Base
+*********************/
+.knowledge-base-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .knowledge-base-list > li {
+    font-size: 28px;
+    font-size: 1.75rem;
+    border-top: 2px solid #313334;
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+    border-bottom: 2px solid #313334;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em; }
+  .knowledge-base-list li > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 0; }
+    .knowledge-base-list li > ul .tax-item {
+      margin-top: .25em;
+      font-size: 22px;
+      font-size: 1.375rem; }
+  .knowledge-base-list .children {
+    margin-top: .25em;
+    margin-left: 1.25em; }
+  .knowledge-base-list .post-list > li a:before {
+    margin-right: .5em;
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #313334; }
+  .knowledge-base-list .count {
+    float: right; }
+  @media screen and (min-width: 768px) {
+    .knowledge-base-list {
+      display: flex; }
+      .knowledge-base-list > li {
+        flex: 1 1 50%;
+        margin: .5em;
+        box-sizing: border-box; } }
 
 /*--------------------------------------------------------------
 # Theme

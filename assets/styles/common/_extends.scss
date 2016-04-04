@@ -1,5 +1,5 @@
 %clearfix {
-    &:after {
+  &:after {
     content: " ";
     display: table;
     clear: both;
@@ -63,7 +63,6 @@
 }
 
 // button sizes
-
 %button-large {
     @include font-size($h4);
     padding: 1em 3em;

@@ -1,0 +1,62 @@
+/*********************
+Knowledge Base
+*********************/
+
+.knowledge-base-list {
+    @include no-bullets;
+    @extend %clearfix;
+
+    &> li {
+
+        @include font-size($h3);
+        @include border($position: top, $weight: 2px, $color:  $color__foreground);
+        @include border($weight: 2px, $color: $color__foreground);
+    }
+
+    li > ul {
+        @include no-bullets; 
+        margin-left: 0;
+
+
+        .tax-item {
+            margin-top: .25em;
+            @include font-size($h4);
+        }
+    }
+
+    .children {
+        margin-top: .25em;
+        margin-left: 1.25em;
+    }
+
+    .post-list {
+
+        li {
+            // &:not(:last-child) {
+            //     @include border($weight: 1px);
+            // }
+        }
+
+        &> li {
+            a {
+                @include icon-font($icon: file-text-o, $position: before, $color: $color__foreground);
+            }
+        }
+    }
+
+    .count {
+        @extend %label;
+        @extend %label-default;
+        float: right;
+    }
+
+    @include breakpoint(md) {
+        display: flex;
+
+        &> li {
+            flex: 1 1 50%;
+            margin: .5em;
+            box-sizing: border-box;
+        }
+    }
+}
