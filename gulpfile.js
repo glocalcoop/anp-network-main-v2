@@ -141,4 +141,4 @@ gulp.task( 'watch', function() {
     gulp.watch( paths.buddypress, [ 'buddypress' ] );
 } );
 
-gulp.task( 'default', [ 'watch', 'styles', 'scripts', 'images', 'fonts', 'libs', 'buddypress'], function() {});
+gulp.task( 'default', [ 'watch', 'styles', 'scripts', 'images', 'fonts', 'buddypress'], function() {});
