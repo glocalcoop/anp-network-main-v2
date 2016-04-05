@@ -271,3 +271,36 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
 }
 
 
+/**
+ * Change Default Group Icon
+ * @link https://premium.wpmudev.org/blog/how-to-add-a-custom-default-avatar-for-buddypress-members-and-groups/
+ * @link https://codex.buddypress.org/themes/guides/customizing-buddypress-avatars/
+ */
+if( !function_exists( 'anp_buddypress_group_icon' ) ) {
+
+  if( function_exists( 'bp_core_avatar_default' ) ) {
+
+    function anp_buddypress_group_icon( $avatar ) {
+      global $bp, $groups_template;
+
+      if( strpos( $avatar,'group-avatars' ) ) {
+        return $avatar;
+      }
+      else {
+        $custom_avatar = get_template_directory_uri() .'/dist/images/buddypress-group.png';
+
+        if( $bp->current_action == "" ) {
+          return '<img class="avatar" alt="' . attribute_escape( $groups_template->group->name ) . '" src="' . $custom_avatar . '" width="'. BP_AVATAR_THUMB_WIDTH .'" height="'.BP_AVATAR_THUMB_HEIGHT .'" />';
+        }
+        else {
+          return '<img class="avatar" alt="' . attribute_escape( $groups_template->group->name ) . '" src="' . $custom_avatar . '" width="'. BP_AVATAR_FULL_WIDTH .'" height="'. BP_AVATAR_FULL_HEIGHT . '" />';
+        }
+      }
+    }
+    add_filter( 'bp_get_group_avatar', 'anp_buddypress_group_icon' );
+
+
+  }
+
+}
+
