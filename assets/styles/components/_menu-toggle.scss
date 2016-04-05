@@ -13,15 +13,13 @@
     .main-navigation.toggled ul ul {
         display: none;
     }
+
     .menu-toggle {
         font-size: 16px;
-        font-size: 1.0rem;
+        // font-size: 1.0rem;
         @include font-size($h6);
         margin: 1.3125em 0;
         padding: 0.8125em 0.875em 0.6875em;
-    }
-    .main-navigation ul {
-        display: block;
     }
 
 }
