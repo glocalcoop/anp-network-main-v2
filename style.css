@@ -12400,6 +12400,9 @@ body.buddypress h1 {
 .item-meta, article.handbook .buddypress.table-of-contents .item-title
 .item-meta {
     display: block; }
+  .widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
+    width: 50px;
+    height: 50px; }
   .widget.buddypress img.avatar, article.handbook .buddypress.table-of-contents img.avatar {
     padding: 2px;
     margin-right: .25em;
