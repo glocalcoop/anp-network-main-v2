@@ -31,11 +31,7 @@ Knowledge Base
 
     .post-list {
 
-        li {
-            // &:not(:last-child) {
-            //     @include border($weight: 1px);
-            // }
-        }
+        li {}
 
         &> li {
             a {
@@ -51,12 +47,23 @@ Knowledge Base
     }
 
     @include breakpoint(md) {
+        display: -ms-flex;
+        display: -webkit-flex;
         display: flex;
+        flex-wrap: wrap;
 
         &> li {
-            flex: 1 1 50%;
-            margin: .5em;
+            flex: 0 0 calc(50% - #{$gutter__column});
+            text-indent: 10px;
             box-sizing: border-box;
+
+            &:nth-child(odd){
+                margin-right: $gutter__column;
+            }
+
+            &:nth-child(even){
+                margin-left: $gutter__column;
+            }
         }
     }
 }

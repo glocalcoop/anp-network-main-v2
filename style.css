@@ -13550,11 +13550,18 @@ Knowledge Base
     float: right; }
   @media screen and (min-width: 768px) {
     .knowledge-base-list {
-      display: flex; }
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap; }
       .knowledge-base-list > li {
-        flex: 1 1 50%;
-        margin: .5em;
-        box-sizing: border-box; } }
+        flex: 0 0 calc(50% - 15px);
+        text-indent: 10px;
+        box-sizing: border-box; }
+        .knowledge-base-list > li:nth-child(odd) {
+          margin-right: 15px; }
+        .knowledge-base-list > li:nth-child(even) {
+          margin-left: 15px; } }
 
 /*--------------------------------------------------------------
 # Theme
