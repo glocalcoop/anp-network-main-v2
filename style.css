@@ -8788,13 +8788,15 @@ body {
  */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: block;
+  visibility: visible; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle,
   .main-navigation ul,
   .main-navigation.toggled ul ul {
-    display: none; }
+    display: none;
+    visibility: hidden; }
   .menu-toggle {
     font-size: 16px;
     font-size: 16px;
@@ -9082,9 +9084,11 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none; }
+  display: none;
+  visibility: hidden; }
   .main-navigation ul ul {
-    margin-left: 2em; }
+    margin-left: 2em;
+    visibility: visible; }
 
 .main-navigation .menu-item-has-children > a:after {
   margin-left: .5em;
@@ -9099,6 +9103,7 @@ body {
 @media screen and (min-width: 768px) {
   .main-navigation ul {
     display: block;
+    visibility: visible;
     padding: 0;
     margin: 0;
     float: left; }
@@ -9126,23 +9131,28 @@ body {
   .main-navigation li {
     float: left;
     display: block;
+    visibility: visible;
     position: relative; }
     .main-navigation li:hover > ul,
     .main-navigation li:focus > ul {
-      display: block; } }
+      display: block;
+      visibility: visible; } }
 
 /**
  * Main Navigation States
  */
 .main-navigation ul[data-state=closed] {
-  display: none; }
+  display: none;
+  visibility: hidden; }
 
 .main-navigation ul[data-state=open] {
-  display: inherit; }
+  display: inherit;
+  visibility: visible; }
 
 @media screen and (min-width: 768px) {
   .main-navigation ul[data-state=closed] {
-    display: inherit; } }
+    display: inherit;
+    visibility: visible; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main

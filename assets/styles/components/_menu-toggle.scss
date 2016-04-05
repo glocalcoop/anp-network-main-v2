@@ -4,6 +4,7 @@
 .menu-toggle,
 .main-navigation.toggled ul {
     display: block;
+    visibility: visible;
 }
 
 @include breakpoint(md) {
@@ -12,6 +13,7 @@
     .main-navigation ul,
     .main-navigation.toggled ul ul {
         display: none;
+        visibility: hidden;
     }
 
     .menu-toggle {
