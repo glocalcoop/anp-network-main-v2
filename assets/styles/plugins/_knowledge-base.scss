@@ -7,10 +7,7 @@ Knowledge Base
     @extend %clearfix;
 
     &> li {
-
-        @include font-size($h3);
-        @include border($position: top, $weight: 2px, $color:  $color__foreground);
-        @include border($weight: 2px, $color: $color__foreground);
+        @include border($weight: 1px, $color: $color__border-nav-alt);
     }
 
     li > ul {
@@ -54,8 +51,10 @@ Knowledge Base
 
         &> li {
             flex: 0 0 calc(50% - #{$gutter__column});
-            text-indent: 10px;
+            // text-indent: 10px;
             box-sizing: border-box;
+            border: 1px solid $color__border-nav-alt;
+            padding: .5em;
 
             &:nth-child(odd){
                 margin-right: $gutter__column;
@@ -64,6 +63,10 @@ Knowledge Base
             &:nth-child(even){
                 margin-left: $gutter__column;
             }
+        }
+
+        .tax-item {
+            @include font-size($h3);
         }
     }
 }

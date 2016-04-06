@@ -163,7 +163,7 @@ body.buddypress .site-main,
             padding: .25em;
         }
 
-        .item-title {
+        .item-title a {
             font-weight: bold;
         }
 
@@ -735,12 +735,13 @@ body.buddypress #members-list {
 // Widgets
 .widget.buddypress {
 
-    text-align: center;
+    .item-options {
+        text-align: center;
+    }
 
     .item-title
     .item-meta {
         display: block;
-
     }
 
     .item-avatar img {
@@ -793,10 +794,7 @@ body.buddypress #members-list {
 
         }
 
-
     }
-    
-
 
 }
 

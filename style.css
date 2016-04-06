@@ -10289,8 +10289,8 @@ body.buddypress .site-main .item-list,
   #bbpress-forums .item-list li {
     text-align: center;
     padding: .25em; }
-  body.buddypress .site-main .item-list .item-title,
-  #bbpress-forums .item-list .item-title {
+  body.buddypress .site-main .item-list .item-title a,
+  #bbpress-forums .item-list .item-title a {
     font-weight: bold; }
   body.buddypress .site-main .item-list .item-avatar,
   body.buddypress .site-main .item-list .item,
@@ -12407,41 +12407,45 @@ body.buddypress #members-list .action {
         flex: 0 0 calc(100% - 110px);
         margin-left: 110px; } }
 
-.widget.buddypress, article.handbook .buddypress.table-of-contents {
+.widget.buddypress .item-options, article.handbook .buddypress.table-of-contents .item-options {
   text-align: center; }
-  .widget.buddypress .item-title
+
+.widget.buddypress .item-title
 .item-meta, article.handbook .buddypress.table-of-contents .item-title
 .item-meta {
-    display: block; }
-  .widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
-    width: 100px;
-    height: auto;
-    padding: 2px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fff;
-    border: 1px solid rgba(17, 17, 17, 0.2); }
-  .widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
-    text-weight: 300; }
-  @media screen and (min-width: 768px) {
-    .widget.buddypress .item-options a, article.handbook .buddypress.table-of-contents .item-options a {
-      display: inline-block; }
-    .widget.buddypress .item-list, article.handbook .buddypress.table-of-contents .item-list {
-      width: 100%; }
-    .widget.buddypress .item-list > li, article.handbook .buddypress.table-of-contents .item-list > li {
-      display: table;
-      width: 100%; }
-      .widget.buddypress .item-list > li .item-avatar, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar,
-      .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
-        display: table-cell;
-        text-align: left;
-        vertical-align: top; }
-      .widget.buddypress .item-list > li .item-avatar img, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar img {
-        width: 50px;
-        height: auto;
-        margin-right: .25em; }
-      .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
-        width: 75%; } }
+  display: block; }
+
+.widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
+  width: 100px;
+  height: auto;
+  padding: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.2); }
+
+.widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
+  text-weight: 300; }
+
+@media screen and (min-width: 768px) {
+  .widget.buddypress .item-options a, article.handbook .buddypress.table-of-contents .item-options a {
+    display: inline-block; }
+  .widget.buddypress .item-list, article.handbook .buddypress.table-of-contents .item-list {
+    width: 100%; }
+  .widget.buddypress .item-list > li, article.handbook .buddypress.table-of-contents .item-list > li {
+    display: table;
+    width: 100%; }
+    .widget.buddypress .item-list > li .item-avatar, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar,
+    .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
+      display: table-cell;
+      text-align: left;
+      vertical-align: top; }
+    .widget.buddypress .item-list > li .item-avatar img, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar img {
+      width: 50px;
+      height: auto;
+      margin-right: .25em; }
+    .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
+      width: 75%; } }
 
 /**
  * BBPress Styles
@@ -13538,12 +13542,7 @@ Knowledge Base
   padding: 0;
   list-style: none; }
   .knowledge-base-list > li {
-    font-size: 28px;
-    font-size: 1.75rem;
-    border-top: 2px solid #313334;
-    margin-top: 0.25em;
-    padding-top: 0.25em;
-    border-bottom: 2px solid #313334;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
     margin-bottom: 0.25em;
     padding-bottom: 0.25em; }
   .knowledge-base-list li > ul {
@@ -13577,12 +13576,16 @@ Knowledge Base
       flex-wrap: wrap; }
       .knowledge-base-list > li {
         flex: 0 0 calc(50% - 15px);
-        text-indent: 10px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        padding: .5em; }
         .knowledge-base-list > li:nth-child(odd) {
           margin-right: 15px; }
         .knowledge-base-list > li:nth-child(even) {
-          margin-left: 15px; } }
+          margin-left: 15px; }
+      .knowledge-base-list .tax-item {
+        font-size: 28px;
+        font-size: 1.75rem; } }
 
 /*--------------------------------------------------------------
 # Theme
