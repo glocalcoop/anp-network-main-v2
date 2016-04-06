@@ -123,7 +123,7 @@ function anp_network_main_widgets_init() {
   register_sidebar( array(
     'name'          => esc_html__( 'Sidebar', 'anp-network-main' ),
     'id'            => 'sidebar-1',
-    'description'   => '',
+    'description'   => esc_html__( 'The default sidebar.', 'anp-network-main' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="wrap">',
     'after_widget'  => '</div></aside>',
     'before_title'  => '<h3 class="widget-title">',
@@ -165,18 +165,53 @@ function anp_network_main_widgets_init() {
     'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ) );
-  register_sidebar( array(
-    'name'          => esc_html__( 'Community', 'anp-network-main' ),
-    'id'            => 'sidebar-buddypress',
-    'description'   => '',
-    'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="wrap">',
-    'after_widget'  => '</div></aside>',
-    'before_title'  => '<h3 class="widget-title">',
-    'after_title'   => '</h3>',
-  ) );
+  
+  if( class_exists( 'BuddyPress' ) ) :
+    register_sidebar( array(
+      'name'          => esc_html__( 'Community', 'anp-network-main' ),
+      'id'            => 'sidebar-buddypress',
+      'description'   => esc_html__( 'Appears on Community and Discussion pages when populated. Otherwise, the default sidebar will appear.', 'anp-network-main' ),
+      'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="wrap">',
+      'after_widget'  => '</div></aside>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ) );
+  endif;
+
+  if( class_exists( 'Knowledge_Base' ) ) :
+    register_sidebar( array(
+      'name'          => esc_html__( 'Knowledge Base', 'anp-network-main' ),
+      'id'            => 'sidebar-knowledge-base',
+      'description'   => esc_html__( 'Appears on Knowledge Base pages when populated. Otherwise, the default sidebar will appear.', 'anp-network-main' ),
+      'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="wrap">',
+      'after_widget'  => '</div></aside>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ) );
+  endif;
+
+  if( class_exists( 'WPorg_Handbook_Init' ) ) :
+    register_sidebar( array(
+      'name'          => esc_html__( 'Handbook', 'anp-network-main' ),
+      'id'            => 'sidebar-handbook',
+      'description'   => esc_html__( 'Appears on Handbook and Glossary pages when populated. Otherwise, the default sidebar will appear.', 'anp-network-main' ),
+      'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="wrap">',
+      'after_widget'  => '</div></aside>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ) );
+  endif;
 
 }
 add_action( 'widgets_init', 'anp_network_main_widgets_init' );
+
+/**
+ * Remove unwanted sidebars
+ */
+function anp_network_main_remove_sidebars() {
+  unregister_sidebar( 'handbook' );
+}
+add_action( 'widgets_init', 'anp_network_main_remove_sidebars', 100 );
 
 /**
  * Enqueue scripts and styles.

@@ -128,7 +128,7 @@ img {
   height: auto; }
 
 .img-circle, body.buddypress .site-main img.avatar,
-#bbpress-forums img.avatar, .widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
+#bbpress-forums img.avatar, .widget-buddypress .item-avatar img {
   border-radius: 50%; }
 
 hr {
@@ -12459,13 +12459,12 @@ body.buddypress #members-list .action {
         flex: 0 0 calc(100% - 110px);
         margin-left: 110px; } }
 
-.widget.buddypress, article.handbook .buddypress.table-of-contents {
+.widget-buddypress {
   text-align: center; }
-  .widget.buddypress .item-title
-.item-meta, article.handbook .buddypress.table-of-contents .item-title
+  .widget-buddypress .item-title
 .item-meta {
     display: block; }
-  .widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
+  .widget-buddypress .item-avatar img {
     width: 100px;
     height: auto;
     padding: 2px;
@@ -12473,28 +12472,28 @@ body.buddypress #members-list .action {
     margin-left: auto;
     background-color: #fff;
     border: 1px solid rgba(17, 17, 17, 0.2); }
-  .widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
+  .widget-buddypress .item-meta {
     text-weight: 300; }
   @media screen and (min-width: 768px) {
-    .widget.buddypress, article.handbook .buddypress.table-of-contents {
+    .widget-buddypress {
       text-align: left; }
-      .widget.buddypress .item-options, article.handbook .buddypress.table-of-contents .item-options {
+      .widget-buddypress .item-options {
         text-align: center; }
-      .widget.buddypress .item-list, article.handbook .buddypress.table-of-contents .item-list {
+      .widget-buddypress .item-list {
         width: 100%; }
-      .widget.buddypress .item-list > li, article.handbook .buddypress.table-of-contents .item-list > li {
+      .widget-buddypress .item-list > li {
         display: table;
         width: 100%; }
-        .widget.buddypress .item-list > li .item-avatar, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar,
-        .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
+        .widget-buddypress .item-list > li .item-avatar,
+        .widget-buddypress .item-list > li .item {
           display: table-cell;
           text-align: left;
           vertical-align: top; }
-        .widget.buddypress .item-list > li .item-avatar img, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar img {
+        .widget-buddypress .item-list > li .item-avatar img {
           width: 50px;
           height: auto;
           margin-right: .25em; }
-        .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
+        .widget-buddypress .item-list > li .item {
           width: 75%; } }
 
 /**
