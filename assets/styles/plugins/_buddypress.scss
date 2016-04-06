@@ -20,11 +20,10 @@ body.buddypress {
 
 }
 
-#buddypress,
+body.buddypress .site-main,
 #bbpress-forums {
 
     form {
-        background-color: $color__background-panel;
         padding: .5em;
     }
 
@@ -157,96 +156,123 @@ body.buddypress {
 
     // Lists
     .item-list {
-        @extend .media-list;
-
-        .activity-comments {
-            ul {
-               padding-left: 1.5em; 
-            }
-        }
+        @include no-bullets;
 
         li {
-            @extend .media;
-            padding-top: .5em;
+            text-align: center;
+            padding: .25em;
+        }
 
-            .item-avatar,
-            .activity-avatar,
-            .acomment-avatar  {
-                @extend .media-left;
-                min-width: 50px;
-            }
-            .item,
-            .activity-content,
-            .activity-comment-content,
-            .acomment-entry {
-                @extend .media-body;
-            }
-            .action {
-                @extend .media-right;
-                min-width: 20%;
-            }
+        .item-title {
+            font-weight: bold;
+        }
 
-            .activity-comments > ul {
-                margin-top: .5em;
-            }
+        .item-avatar,
+        .item,
+        .action {
+            display: block;
+        }
 
-            .activity-avatar,
-            .acomment-avatar {
-                min-width: 50px;
-            }
-
-            .item-title a {
-                font-weight: 500;
-            }
-
-            .acomment-entry {
-                padding-top: .25em;
-                padding-bottom: .25em;
-            }
-
-            .activity {}
-
-            li {
-                background-color: rgba($color__primary, .05);
-                padding: .25em;
+       .item-avatar {
+            text-align: center;
+            img {
+                display: inline-block;
+                width: 100px;
+                height: auto;
+                margin: 0;
             }
         }
+
+        .action {
+            display: block;
+            padding-left: 0;
+
+            .generic-button,
+            .group-subscription-div {
+                display: inline-block;
+                margin-right: .25em;
+            }
+        }
+
+        @include breakpoint(md) {
+
+            /**
+             * Member List and Friends List Layout
+             * @link https://plan.glocal.coop/issues/1308
+             * @link https://plan.glocal.coop/issues/1309
+             *
+             */
+            li {
+                text-align: left;
+            }
+
+            &> li {
+
+                // Nested Flex
+                display: -ms-flex;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+
+                .item-avatar {
+                    flex: 0 0 110px;
+                    text-align: left;
+                    img {
+                        text-align: left;
+                    }
+                }
+
+                .item {
+                    flex: 0 0 calc(100% - 310px);
+                    padding: .25em;
+                }
+
+                .action {
+                    flex: 0 0 200px;
+                }
+
+                .activity-comments {
+                    flex: 0 0 calc(100% - 50px);
+                    margin-left: 50px;
+
+                    ul {
+                        background-color: rgba(0,0,0,.05);
+                        display: block;
+                        width: 100%;
+                        margin-left: .5em;
+                        margin-top: .25em;
+
+                        li {
+                            
+                            // Nested Flex
+                            display: -ms-flex;
+                            display: -webkit-flex;
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+
+                            .acomment-avatar {
+                                flex: 0 0 60px;
+                            }
+                            .acomment-entry {
+                                flex: 0 0 calc(100% - 60px);
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+            
+        }
+
 
         &> li:not(:first-child) {
             border-top: 1px solid $color__border-nav-alt;
         }
 
-        @media screen and (max-width: $sm-screen) {
-            li {
-                display: block;
 
-                .item-avatar,
-                .activity-avatar,
-                .acomment-avatar,
-                .item,
-                .activity-content,
-                .activity-comment-content,
-                .action  {
-                    display: block;
-                    width: 100%;
-                }
-
-                .item-avatar,
-                .activity-avatar,
-                .acomment-avatar {
-                    text-align: center;
-                }
-
-                @include breakpoint(md) {
-                    .item-avatar,
-                    .activity-avatar,
-                    .acomment-avatar {
-                        text-align: left;
-                    }
-                }
-
-            }
-        }
     }
 
     // Sections
@@ -387,7 +413,6 @@ body.buddypress {
         display: block;
     }
 
-
     // Images
     img {
         &.avatar {
@@ -399,7 +424,6 @@ body.buddypress {
             background-color: $color__white;
         }
     }
-
 
     #whats-new-avatar,
     .activity-greeting {
@@ -637,34 +661,95 @@ body.buddypress {
 
 .buddypress-attribution a {}
 
+/**
+ * Member List and Friends List Layout
+ * @link https://plan.glocal.coop/issues/1308
+ * @link https://plan.glocal.coop/issues/1309
+ *
+ */
+body.buddypress #members-list {
+
+    .action {
+        display: block;
+        .generic-button {
+            display: inline-block;
+        }
+    }
+
+    @include breakpoint(md) {
+
+        /**
+         * Member List and Friends List Layout
+         * @link https://plan.glocal.coop/issues/1308
+         * @link https://plan.glocal.coop/issues/1309
+         *
+         */
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+            &> li {
+                flex: 0 0 calc(50% - #{$gutter__column});
+                margin-top: .5em;
+                box-sizing: border-box;
+                border: 1px solid $color__border-nav-alt;
+
+                // Nested Flex
+                display: -ms-flex;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+
+                &:nth-child(odd){
+                    margin-right: $gutter__column;
+                }
+
+                &:nth-child(even){
+                    margin-left: $gutter__column;
+                }
+
+                .item-avatar {
+                    flex: 0 0 110px;
+                    text-align: left;
+                    img {
+                        text-align: left;
+                    }
+                }
+
+                .item {
+                    flex: 0 0 calc(100% - 110px);
+                }
+
+                .action {
+                    flex: 0 0 calc(100% - 110px);
+                    margin-left: 110px;
+                }
+
+            }
+        
+    }
+
+}
 
 // Widgets
-
 .widget.buddypress {
 
     text-align: center;
-    
-    .item-options a {
-        display: inline-block;
-    }
 
     .item-title
     .item-meta {
         display: block;
+
     }
 
-    .item-avatar {
-        img {
-            width: 50px;
-            height: 50px;
-        }
-    }
-
-    img.avatar {
+    .item-avatar img {
         @extend .img-circle;
+        width: 100px;
+        height: auto;
         padding: 2px;
-        margin-right: .25em;
-        margin-left: .25em;
+        margin-right: auto;
+        margin-left: auto;
         background-color: $color__white;
         border: 1px solid $color__background-hr-alt;
     }
@@ -675,17 +760,44 @@ body.buddypress {
 
     @include breakpoint(md) {
 
-        text-align: left;
-
-        li {
-            @include clearfix;
+        .item-options a {
+            display: inline-block;
         }
 
-        .item-avatar {
-            float: left;
+        .item-list {
+            width: 100%;
         }
-        
+
+        .item-list > li {
+            display: table;
+            width: 100%;
+
+            .item-avatar,
+            .item {
+                display: table-cell;
+                text-align: left; 
+                vertical-align: top;
+            }
+
+            .item-avatar {
+                img {
+                    width: 50px;
+                    height: auto;
+                    margin-right: .25em;
+                }
+            }
+
+            .item {
+                width: 75%;
+            }
+
+        }
+
+
     }
+    
+
+
 }
 
 
