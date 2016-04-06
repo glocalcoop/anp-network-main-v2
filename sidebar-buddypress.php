@@ -13,7 +13,7 @@
     <?php do_action ( 'anp_network_main_sidebar_before' );?>
 
     <?php if ( is_active_sidebar( 'sidebar-buddypress' ) ) : ?>
-        <div id="secondary" class="widget-area sidebar buddypress" role="complementary">
+        <div id="secondary" class="widget-area sidebar widget-buddypress" role="complementary">
             <?php dynamic_sidebar( 'sidebar-buddypress' ); ?>
         </div><!-- #secondary -->
     <?php endif; ?>
