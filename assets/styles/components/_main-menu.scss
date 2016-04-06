@@ -20,6 +20,19 @@
         }
     }
 
+    li {
+        ul {
+            display: none;
+            visibility: hidden;
+        }
+
+        &:hover > ul,
+        &:focus > ul {
+            display: block;
+            visibility: visible;
+        }
+    }
+
     .menu-item-has-children > a {
         @include icon-font(angle-down, after);
     }
@@ -39,6 +52,7 @@
                 top: 100%;
                 left: 0;
                 display: none;
+                visibility: hidden;
                 z-index: 5;
 
                 ul {
@@ -58,15 +72,13 @@
         
         li {
             float: left;
-            display: block;
-            visibility: visible;
             position: relative;
 
-            &:hover > ul,
-            &:focus > ul {
-                display: block;
-                visibility: visible;
-            }
+            // &:hover > ul,
+            // &:focus > ul {
+            //     display: block;
+            //     visibility: visible;
+            // }
 
         }
   
@@ -80,19 +92,19 @@
  */
  .main-navigation {
 
-    ul[data-state=closed] {
-        display: none;
-        visibility: hidden;
-    }
-    ul[data-state=open] {
-        display: inherit;
-        visibility: visible;
-    }
+    // ul[data-state=closed] {
+    //     display: none;
+    //     visibility: hidden;
+    // }
+    // ul[data-state=open] {
+    //     display: inherit;
+    //     visibility: visible;
+    // }
 
-    @include breakpoint(md) {
-        ul[data-state=closed] {
-            display: inherit;
-            visibility: visible;
-        }
-    }
+    // @include breakpoint(md) {
+    //     ul[data-state=closed] {
+    //         display: inherit;
+    //         visibility: visible;
+    //     }
+    // }
 }

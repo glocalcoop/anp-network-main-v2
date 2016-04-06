@@ -9047,6 +9047,15 @@ body {
     margin-left: 2em;
     visibility: visible; }
 
+.main-navigation li ul {
+  display: none;
+  visibility: hidden; }
+
+.main-navigation li:hover > ul,
+.main-navigation li:focus > ul {
+  display: block;
+  visibility: visible; }
+
 .main-navigation .menu-item-has-children > a:after {
   margin-left: .5em;
   display: inline-block;
@@ -9070,6 +9079,7 @@ body {
       top: 100%;
       left: 0;
       display: none;
+      visibility: hidden;
       z-index: 5; }
       .main-navigation ul ul ul {
         top: 0;
@@ -9087,30 +9097,11 @@ body {
         color: #cacccd; }
   .main-navigation li {
     float: left;
-    display: block;
-    visibility: visible;
-    position: relative; }
-    .main-navigation li:hover > ul,
-    .main-navigation li:focus > ul {
-      display: block;
-      visibility: visible; } }
+    position: relative; } }
 
 /**
  * Main Navigation States
  */
-.main-navigation ul[data-state=closed] {
-  display: none;
-  visibility: hidden; }
-
-.main-navigation ul[data-state=open] {
-  display: inherit;
-  visibility: visible; }
-
-@media screen and (min-width: 768px) {
-  .main-navigation ul[data-state=closed] {
-    display: inherit;
-    visibility: visible; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -13537,7 +13528,6 @@ NETWORK CONTENT
 NETWORK CONTENT
 *********************/
 .js #page .menu {
-  overflow: auto;
   max-height: none; }
 
 /*********************
