@@ -173,12 +173,15 @@ body.buddypress .site-main,
             display: block;
         }
 
-       .item-avatar {
+        .activity-avatar,
+        .item-avatar,
+        .acomment-avatar {
             text-align: center;
             img {
                 display: inline-block;
-                width: 100px;
+                width: 75px;
                 height: auto;
+                text-align: left;
                 margin: 0;
             }
         }
@@ -214,21 +217,20 @@ body.buddypress .site-main,
                 display: flex;
                 flex-wrap: wrap;
 
-                .item-avatar {
-                    flex: 0 0 110px;
-                    text-align: left;
-                    img {
-                        text-align: left;
-                    }
-                }
-
                 .item {
-                    flex: 0 0 calc(100% - 310px);
+                    flex: 0 0 calc(100% - 285px);
                     padding: .25em;
                 }
 
                 .action {
                     flex: 0 0 200px;
+                }
+
+                .activity-avatar,
+                .item-avatar,
+                .acomment-avatar {
+                    flex: 0 0 85px;
+                    text-align: left;
                 }
 
                 .activity-comments {
@@ -251,11 +253,8 @@ body.buddypress .site-main,
                             flex-wrap: wrap;
                             width: 100%;
 
-                            .acomment-avatar {
-                                flex: 0 0 60px;
-                            }
                             .acomment-entry {
-                                flex: 0 0 calc(100% - 60px);
+                                flex: 0 0 calc(100% - 85px);
                             }
 
                         }
@@ -422,6 +421,13 @@ body.buddypress .site-main,
             margin-left: .25em;
             border: 1px solid $color__background-hr-alt;
             background-color: $color__white;
+        }
+    }
+
+    .group-members {
+        .avatar {
+            width: 50px;
+            height: auto;
         }
     }
 
@@ -603,7 +609,6 @@ body.buddypress .site-main,
                 display: inline-block;
                 @extend %label;
                 @extend %label-default;
-
             }
 
             .is-online .activity {
@@ -735,9 +740,7 @@ body.buddypress #members-list {
 // Widgets
 .widget.buddypress {
 
-    .item-options {
-        text-align: center;
-    }
+    text-align: center;
 
     .item-title
     .item-meta {
@@ -761,8 +764,11 @@ body.buddypress #members-list {
 
     @include breakpoint(md) {
 
-        .item-options a {
-            display: inline-block;
+        text-align: left;
+
+        .item-options {
+            // display: inline-block;
+            text-align: center;
         }
 
         .item-list {

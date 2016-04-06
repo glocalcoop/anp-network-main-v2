@@ -2,22 +2,29 @@
 Knowledge Base
 *********************/
 
+
 .knowledge-base-list {
     @include no-bullets;
     @extend %clearfix;
 
     &> li {
         @include border($weight: 1px, $color: $color__border-nav-alt);
+
+        &:first-child {
+            @include border($weight: 1px, $position: top, $color: $color__border-nav-alt);
+        }
     }
 
     li > ul {
         @include no-bullets; 
         margin-left: 0;
 
+    }
 
-        .tax-item {
-            margin-top: .25em;
-            @include font-size($h4);
+    .tax-item {
+        @include font-size($h4);
+        .children .tax-item {
+            @include font-size($h5);
         }
     }
 
@@ -56,6 +63,11 @@ Knowledge Base
             border: 1px solid $color__border-nav-alt;
             padding: .5em;
 
+            &:first-child {
+                margin-top: 0;
+                padding-top: .5em;
+            }
+
             &:nth-child(odd){
                 margin-right: $gutter__column;
             }
@@ -67,6 +79,18 @@ Knowledge Base
 
         .tax-item {
             @include font-size($h3);
+            .children .tax-item {
+                @include font-size($h4);
+            }
         }
+
+        .children {
+            li {
+                &:not(:last-child) {
+                    @include border($weight: 1px, $color: $color__border-nav-alt);
+                }
+            }
+        }
+
     }
 }

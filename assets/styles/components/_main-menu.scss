@@ -53,7 +53,8 @@
                 left: 0;
                 display: none;
                 visibility: hidden;
-                z-index: 5;
+                // Increase z-index to compensate for Page Builder widgets set to z-index 100
+                z-index: 105;
 
                 ul {
                     top: 0;
@@ -73,13 +74,6 @@
         li {
             float: left;
             position: relative;
-
-            // &:hover > ul,
-            // &:focus > ul {
-            //     display: block;
-            //     visibility: visible;
-            // }
-
         }
   
     }
@@ -92,19 +86,4 @@
  */
  .main-navigation {
 
-    // ul[data-state=closed] {
-    //     display: none;
-    //     visibility: hidden;
-    // }
-    // ul[data-state=open] {
-    //     display: inherit;
-    //     visibility: visible;
-    // }
-
-    // @include breakpoint(md) {
-    //     ul[data-state=closed] {
-    //         display: inherit;
-    //         visibility: visible;
-    //     }
-    // }
 }

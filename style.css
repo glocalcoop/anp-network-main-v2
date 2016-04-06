@@ -9080,7 +9080,7 @@ body {
       left: 0;
       display: none;
       visibility: hidden;
-      z-index: 5; }
+      z-index: 105; }
       .main-navigation ul ul ul {
         top: 0;
         left: 100%; }
@@ -10299,14 +10299,23 @@ body.buddypress .site-main .item-list,
   #bbpress-forums .item-list .item,
   #bbpress-forums .item-list .action {
     display: block; }
+  body.buddypress .site-main .item-list .activity-avatar,
   body.buddypress .site-main .item-list .item-avatar,
-  #bbpress-forums .item-list .item-avatar {
+  body.buddypress .site-main .item-list .acomment-avatar,
+  #bbpress-forums .item-list .activity-avatar,
+  #bbpress-forums .item-list .item-avatar,
+  #bbpress-forums .item-list .acomment-avatar {
     text-align: center; }
+    body.buddypress .site-main .item-list .activity-avatar img,
     body.buddypress .site-main .item-list .item-avatar img,
-    #bbpress-forums .item-list .item-avatar img {
+    body.buddypress .site-main .item-list .acomment-avatar img,
+    #bbpress-forums .item-list .activity-avatar img,
+    #bbpress-forums .item-list .item-avatar img,
+    #bbpress-forums .item-list .acomment-avatar img {
       display: inline-block;
-      width: 100px;
+      width: 75px;
       height: auto;
+      text-align: left;
       margin: 0; }
   body.buddypress .site-main .item-list .action,
   #bbpress-forums .item-list .action {
@@ -10336,20 +10345,21 @@ body.buddypress .site-main .item-list,
         display: -webkit-flex;
         display: flex;
         flex-wrap: wrap; }
-        body.buddypress .site-main .item-list > li .item-avatar,
-        #bbpress-forums .item-list > li .item-avatar {
-          flex: 0 0 110px;
-          text-align: left; }
-          body.buddypress .site-main .item-list > li .item-avatar img,
-          #bbpress-forums .item-list > li .item-avatar img {
-            text-align: left; }
         body.buddypress .site-main .item-list > li .item,
         #bbpress-forums .item-list > li .item {
-          flex: 0 0 calc(100% - 310px);
+          flex: 0 0 calc(100% - 285px);
           padding: .25em; }
         body.buddypress .site-main .item-list > li .action,
         #bbpress-forums .item-list > li .action {
           flex: 0 0 200px; }
+        body.buddypress .site-main .item-list > li .activity-avatar,
+        body.buddypress .site-main .item-list > li .item-avatar,
+        body.buddypress .site-main .item-list > li .acomment-avatar,
+        #bbpress-forums .item-list > li .activity-avatar,
+        #bbpress-forums .item-list > li .item-avatar,
+        #bbpress-forums .item-list > li .acomment-avatar {
+          flex: 0 0 85px;
+          text-align: left; }
         body.buddypress .site-main .item-list > li .activity-comments,
         #bbpress-forums .item-list > li .activity-comments {
           flex: 0 0 calc(100% - 50px);
@@ -10368,12 +10378,9 @@ body.buddypress .site-main .item-list,
               display: flex;
               flex-wrap: wrap;
               width: 100%; }
-              body.buddypress .site-main .item-list > li .activity-comments ul li .acomment-avatar,
-              #bbpress-forums .item-list > li .activity-comments ul li .acomment-avatar {
-                flex: 0 0 60px; }
               body.buddypress .site-main .item-list > li .activity-comments ul li .acomment-entry,
               #bbpress-forums .item-list > li .activity-comments ul li .acomment-entry {
-                flex: 0 0 calc(100% - 60px); } }
+                flex: 0 0 calc(100% - 85px); } }
   body.buddypress .site-main .item-list > li:not(:first-child),
   #bbpress-forums .item-list > li:not(:first-child) {
     border-top: 1px solid rgba(17, 17, 17, 0.1); }
@@ -10510,6 +10517,11 @@ body.buddypress .site-main img.avatar,
   margin-left: .25em;
   border: 1px solid rgba(17, 17, 17, 0.2);
   background-color: #fff; }
+
+body.buddypress .site-main .group-members .avatar,
+#bbpress-forums .group-members .avatar {
+  width: 50px;
+  height: auto; }
 
 body.buddypress .site-main #whats-new-avatar,
 body.buddypress .site-main .activity-greeting,
@@ -12407,45 +12419,43 @@ body.buddypress #members-list .action {
         flex: 0 0 calc(100% - 110px);
         margin-left: 110px; } }
 
-.widget.buddypress .item-options, article.handbook .buddypress.table-of-contents .item-options {
+.widget.buddypress, article.handbook .buddypress.table-of-contents {
   text-align: center; }
-
-.widget.buddypress .item-title
+  .widget.buddypress .item-title
 .item-meta, article.handbook .buddypress.table-of-contents .item-title
 .item-meta {
-  display: block; }
-
-.widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
-  width: 100px;
-  height: auto;
-  padding: 2px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #fff;
-  border: 1px solid rgba(17, 17, 17, 0.2); }
-
-.widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
-  text-weight: 300; }
-
-@media screen and (min-width: 768px) {
-  .widget.buddypress .item-options a, article.handbook .buddypress.table-of-contents .item-options a {
-    display: inline-block; }
-  .widget.buddypress .item-list, article.handbook .buddypress.table-of-contents .item-list {
-    width: 100%; }
-  .widget.buddypress .item-list > li, article.handbook .buddypress.table-of-contents .item-list > li {
-    display: table;
-    width: 100%; }
-    .widget.buddypress .item-list > li .item-avatar, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar,
-    .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
-      display: table-cell;
-      text-align: left;
-      vertical-align: top; }
-    .widget.buddypress .item-list > li .item-avatar img, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar img {
-      width: 50px;
-      height: auto;
-      margin-right: .25em; }
-    .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
-      width: 75%; } }
+    display: block; }
+  .widget.buddypress .item-avatar img, article.handbook .buddypress.table-of-contents .item-avatar img {
+    width: 100px;
+    height: auto;
+    padding: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    border: 1px solid rgba(17, 17, 17, 0.2); }
+  .widget.buddypress .item-meta, article.handbook .buddypress.table-of-contents .item-meta {
+    text-weight: 300; }
+  @media screen and (min-width: 768px) {
+    .widget.buddypress, article.handbook .buddypress.table-of-contents {
+      text-align: left; }
+      .widget.buddypress .item-options, article.handbook .buddypress.table-of-contents .item-options {
+        text-align: center; }
+      .widget.buddypress .item-list, article.handbook .buddypress.table-of-contents .item-list {
+        width: 100%; }
+      .widget.buddypress .item-list > li, article.handbook .buddypress.table-of-contents .item-list > li {
+        display: table;
+        width: 100%; }
+        .widget.buddypress .item-list > li .item-avatar, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar,
+        .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
+          display: table-cell;
+          text-align: left;
+          vertical-align: top; }
+        .widget.buddypress .item-list > li .item-avatar img, article.handbook .buddypress.table-of-contents .item-list > li .item-avatar img {
+          width: 50px;
+          height: auto;
+          margin-right: .25em; }
+        .widget.buddypress .item-list > li .item, article.handbook .buddypress.table-of-contents .item-list > li .item {
+          width: 75%; } }
 
 /**
  * BBPress Styles
@@ -13545,15 +13555,21 @@ Knowledge Base
     border-bottom: 1px solid rgba(17, 17, 17, 0.1);
     margin-bottom: 0.25em;
     padding-bottom: 0.25em; }
+    .knowledge-base-list > li:first-child {
+      border-top: 1px solid rgba(17, 17, 17, 0.1);
+      margin-top: 0.25em;
+      padding-top: 0.25em; }
   .knowledge-base-list li > ul {
     margin: 0;
     padding: 0;
     list-style: none;
     margin-left: 0; }
-    .knowledge-base-list li > ul .tax-item {
-      margin-top: .25em;
-      font-size: 22px;
-      font-size: 1.375rem; }
+  .knowledge-base-list .tax-item {
+    font-size: 22px;
+    font-size: 1.375rem; }
+    .knowledge-base-list .tax-item .children .tax-item {
+      font-size: 18px;
+      font-size: 1.125rem; }
   .knowledge-base-list .children {
     margin-top: .25em;
     margin-left: 1.25em; }
@@ -13579,13 +13595,23 @@ Knowledge Base
         box-sizing: border-box;
         border: 1px solid rgba(17, 17, 17, 0.1);
         padding: .5em; }
+        .knowledge-base-list > li:first-child {
+          margin-top: 0;
+          padding-top: .5em; }
         .knowledge-base-list > li:nth-child(odd) {
           margin-right: 15px; }
         .knowledge-base-list > li:nth-child(even) {
           margin-left: 15px; }
       .knowledge-base-list .tax-item {
         font-size: 28px;
-        font-size: 1.75rem; } }
+        font-size: 1.75rem; }
+        .knowledge-base-list .tax-item .children .tax-item {
+          font-size: 22px;
+          font-size: 1.375rem; }
+      .knowledge-base-list .children li:not(:last-child) {
+        border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+        margin-bottom: 0.25em;
+        padding-bottom: 0.25em; } }
 
 /*--------------------------------------------------------------
 # Theme
