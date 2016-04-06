@@ -299,6 +299,14 @@ if( !function_exists( 'anp_buddypress_group_icon' ) ) {
     }
     add_filter( 'bp_get_group_avatar', 'anp_buddypress_group_icon' );
 
+    /**
+     * Change the BuddyPress Avatar size to 100 x 100
+     *
+     * @link https://codex.buddypress.org/themes/guides/customizing-buddypress-avatars/
+     */
+    define ( 'BP_AVATAR_THUMB_WIDTH', 100 );
+    define ( 'BP_AVATAR_THUMB_HEIGHT', 100 );
+
 
   }
 
