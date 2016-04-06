@@ -14,6 +14,10 @@
   vertical-align: baseline;
   border-radius: .25em;
 
+  &:visited {
+    color: $color__white;
+  }
+
   // [converter] extracted a& to a%label
 
   // Empty labels collapse automatically (not available in IE8)
