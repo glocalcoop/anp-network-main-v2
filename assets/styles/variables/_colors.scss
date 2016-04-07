@@ -105,7 +105,7 @@ $color__background-header: $color__primary;
 $color__background-content: transparent;
 $color__background-footer: $color__tertiary;
 $color__background-hr: $color__lightest-grey;
-$color__background-hr-alt: rgba($color__black,.2);
+$color__background-hr-alt: rgba($color__black,.3);
 $color__background-panel: $color__lightest-grey;
 $color__background-pre: $color__light-grey;
 $color__background-ins: $color__light-grey;
@@ -133,16 +133,16 @@ $color__border-frame: 5px solid $color__background-hr-alt;
 $color__border-frame-inverted: 5px solid $color__white;
 
 $color__background-nav: $color__white;
-$color__background-nav-active: rgba($color__black,.1);
-$color__background-nav-hover: rgba($color__black,.1);
+$color__background-nav-active: $color__background-hr-alt;
+$color__background-nav-hover: $color__background-hr-alt;
 $color__text-nav: text-color( $color__background-nav );
 $color__text-nav-active: $color__text-nav;
 $color__text-nav-hover: $color__text-nav-active;
 $color__border-nav: rgba($color__text-nav,.2);
 
 $color__background-nav-inverted: $color__primary;
-$color__background-nav-active-inverted: rgba($color__black,.2);
-$color__background-nav-hover-inverted: rgba($color__black,.2);
+$color__background-nav-active-inverted: $color__background-hr-alt;
+$color__background-nav-hover-inverted: $color__background-hr-alt;
 $color__text-nav-inverted: text-color( $color__background-nav-inverted);
 $color__text-nav-hover-inverted: $color__text-nav-inverted;
 $color__text-nav-active-inverted:$color__text-nav-hover-inverted;
@@ -154,10 +154,10 @@ $color__background-nav-hover-alt: $color__background-nav-active-alt;
 $color__text-nav-alt: text-color( $color__background-nav-alt );
 $color__text-nav-hover-alt: $color__text-nav-alt;
 $color__text-nav-active-alt: $color__text-nav-hover-alt;
-$color__border-nav-alt: $color__background-nav-hover;
+$color__border-nav-alt: $color__background-hr-alt;
 
 $color__background-widget: $color__primary;
-$color__border-widget: rgba($color__black,.2);
+$color__border-widget: $color__background-hr-alt;
 $color__text-widget: text-color( $color__background-widget );
 $color__text-widget-header: rgba( $color__text-widget,.2 );
 

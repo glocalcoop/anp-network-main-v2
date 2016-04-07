@@ -127,8 +127,7 @@ img {
   max-width: 100%;
   height: auto; }
 
-.img-circle, body.buddypress .site-main img.avatar,
-#bbpress-forums img.avatar, .widget-buddypress .item-avatar img {
+.img-circle {
   border-radius: 50%; }
 
 hr {
@@ -2391,11 +2390,11 @@ input[type="button"].btn-block {
   .navbar-default .navbar-nav > li > a {
     color: #008Eb0; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: rgba(17, 17, 17, 0.1);
+      color: rgba(17, 17, 17, 0.3);
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: rgba(17, 17, 17, 0.1);
-    background-color: rgba(17, 17, 17, 0.1); }
+    color: rgba(17, 17, 17, 0.3);
+    background-color: rgba(17, 17, 17, 0.3); }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #7B8083;
     background-color: transparent; }
@@ -2409,28 +2408,28 @@ input[type="button"].btn-block {
   .navbar-default .navbar-form {
     border-color: #eeeeee; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: rgba(17, 17, 17, 0.1);
-    color: rgba(17, 17, 17, 0.1); }
+    background-color: rgba(17, 17, 17, 0.3);
+    color: rgba(17, 17, 17, 0.3); }
   @media (max-width: 543px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #008Eb0; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: rgba(17, 17, 17, 0.1);
+        color: rgba(17, 17, 17, 0.3);
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: rgba(17, 17, 17, 0.1);
-      background-color: rgba(17, 17, 17, 0.1); }
+      color: rgba(17, 17, 17, 0.3);
+      background-color: rgba(17, 17, 17, 0.3); }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #7B8083;
       background-color: transparent; } }
   .navbar-default .navbar-link {
     color: #008Eb0; }
     .navbar-default .navbar-link:hover {
-      color: rgba(17, 17, 17, 0.1); }
+      color: rgba(17, 17, 17, 0.3); }
   .navbar-default .btn-link {
     color: #008Eb0; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-      color: rgba(17, 17, 17, 0.1); }
+      color: rgba(17, 17, 17, 0.3); }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
     fieldset[disabled] .navbar-default .btn-link:hover,
     fieldset[disabled] .navbar-default .btn-link:focus {
@@ -7514,6 +7513,15 @@ body.buddypress .site-main .forums .bbp-body .entry:after,
     background: #95999c;
     color: #111; }
 
+body.buddypress .site-main img.avatar,
+#bbpress-forums img.avatar, .widget-buddypress .item-avatar img, .archive-network_directory .entry-avatar img {
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.3); }
+
 .entry-content blockquote.alignleft, .entry-content blockquote.alignright,
 .entry-summary blockquote.alignleft,
 .entry-summary blockquote.alignright,
@@ -7982,10 +7990,10 @@ time.updated {
 .comment-content .entry-meta:not(:empty),
 .comment-content .meta:not(:empty),
 .comment-content .pagination:not(:empty) {
-  border-top: 1px solid #f2f2f3;
+  border-top: 1px solid rgba(17, 17, 17, 0.3);
   margin-top: 0.25em;
   padding-top: 0.25em;
-  border-bottom: 1px solid #f2f2f3;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.3);
   margin-bottom: 0.25em;
   padding-bottom: 0.25em; }
 
@@ -8046,7 +8054,7 @@ SIDEBARS & ASIDES
     display: block;
     padding: .25em; }
     .widget ul li:not(:last-child), article.handbook .table-of-contents ul li:not(:last-child) {
-      border-bottom: 1px solid rgba(17, 17, 17, 0.2); }
+      border-bottom: 1px solid rgba(17, 17, 17, 0.3); }
     .widget ul li a, article.handbook .table-of-contents ul li a {
       display: block;
       padding: 0.5em 0; }
@@ -9483,7 +9491,8 @@ textarea {
 .tags a,
 .category a,
 .cat-links a,
-a.tag, body.buddypress .site-main #item-header-cover-image #item-meta .activity,
+a.tag,
+.entry-terms a, body.buddypress .site-main #item-header-cover-image #item-meta .activity,
 #bbpress-forums #item-header-cover-image #item-meta .activity, body.buddypress .site-main .highlight,
 #bbpress-forums .highlight, body.buddypress .site-main .bbp-topic-tags a,
 #bbpress-forums .bbp-topic-tags a, body.buddypress .site-main .tags-cell a,
@@ -9507,7 +9516,8 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   .tags a:visited,
   .category a:visited,
   .cat-links a:visited,
-  a.tag:visited, body.buddypress .site-main #item-header-cover-image #item-meta .activity:visited,
+  a.tag:visited,
+  .entry-terms a:visited, body.buddypress .site-main #item-header-cover-image #item-meta .activity:visited,
   #bbpress-forums #item-header-cover-image #item-meta .activity:visited, body.buddypress .site-main .highlight:visited,
   #bbpress-forums .highlight:visited, body.buddypress .site-main .bbp-topic-tags a:visited,
   #bbpress-forums .bbp-topic-tags a:visited, body.buddypress .site-main .tags-cell a:visited,
@@ -9522,7 +9532,8 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   .tags a:empty,
   .category a:empty,
   .cat-links a:empty,
-  a.tag:empty, body.buddypress .site-main #item-header-cover-image #item-meta .activity:empty,
+  a.tag:empty,
+  .entry-terms a:empty, body.buddypress .site-main #item-header-cover-image #item-meta .activity:empty,
   #bbpress-forums #item-header-cover-image #item-meta .activity:empty, body.buddypress .site-main .highlight:empty,
   #bbpress-forums .highlight:empty, body.buddypress .site-main .bbp-topic-tags a:empty,
   #bbpress-forums .bbp-topic-tags a:empty, body.buddypress .site-main .tags-cell a:empty,
@@ -9622,7 +9633,39 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   a.tag, .ow-button-base a
   a.tag, .so-widget-sow-cta .sow-cta-base .ow-button-base a
   a.tag, #secondary .sow-cta-base .ow-button-base a
-  a.tag, .btn body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta button .activity,
+  a.tag, .btn
+  .entry-terms a,
+  .entry-terms .btn a, .home .entry.intro-content button
+  .entry-terms a,
+  .entry-terms .home .entry.intro-content button a, button
+  .entry-terms a,
+  .entry-terms button a,
+  .button:not(.wpb_button_a)
+  .entry-terms a,
+  .entry-terms
+  .button:not(.wpb_button_a) a,
+  input[type="button"]
+  .entry-terms a,
+  .entry-terms
+  input[type="button"] a,
+  input[type="reset"]
+  .entry-terms a,
+  .entry-terms
+  input[type="reset"] a,
+  input[type="submit"]
+  .entry-terms a,
+  .entry-terms
+  input[type="submit"] a, input[type="reset"]
+  .entry-terms a,
+  .entry-terms input[type="reset"] a, .wpb_button
+  .entry-terms a,
+  .entry-terms .wpb_button a, .ow-button-base a
+  .entry-terms a,
+  .entry-terms .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
+  .entry-terms a,
+  .entry-terms .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  .entry-terms a,
+  .entry-terms #secondary .sow-cta-base .ow-button-base a a, .btn body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta button .activity,
   .button:not(.wpb_button_a) body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta
   .button:not(.wpb_button_a) .activity,
   input[type="button"] body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta
@@ -10005,7 +10048,8 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
 .tags a,
 .category a,
 .cat-links a,
-a.tag, body.buddypress .site-main #item-header-cover-image #item-meta .activity,
+a.tag,
+.entry-terms a, body.buddypress .site-main #item-header-cover-image #item-meta .activity,
 #bbpress-forums #item-header-cover-image #item-meta .activity, body.buddypress .site-main .bbp-topic-tags a,
 #bbpress-forums .bbp-topic-tags a, body.buddypress .site-main .tags-cell a,
 #bbpress-forums .tags-cell a, body.buddypress .site-main .bbp-reply-permalink,
@@ -10019,7 +10063,8 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   .tags a[href]:hover,
   .category a[href]:hover,
   .cat-links a[href]:hover,
-  a[href].tag:hover, body.buddypress .site-main #item-header-cover-image #item-meta [href].activity:hover,
+  a[href].tag:hover,
+  .entry-terms a[href]:hover, body.buddypress .site-main #item-header-cover-image #item-meta [href].activity:hover,
   #bbpress-forums #item-header-cover-image #item-meta [href].activity:hover, body.buddypress .site-main .bbp-topic-tags a[href]:hover,
   #bbpress-forums .bbp-topic-tags a[href]:hover, body.buddypress .site-main .tags-cell a[href]:hover,
   #bbpress-forums .tags-cell a[href]:hover, body.buddypress .site-main [href].bbp-reply-permalink:hover,
@@ -10031,7 +10076,8 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-dir-list .item-header-content [href].activity:hover, .knowledge-base-list [href].count:hover, .tags a[href]:focus,
   .category a[href]:focus,
   .cat-links a[href]:focus,
-  a[href].tag:focus, body.buddypress .site-main #item-header-cover-image #item-meta [href].activity:focus,
+  a[href].tag:focus,
+  .entry-terms a[href]:focus, body.buddypress .site-main #item-header-cover-image #item-meta [href].activity:focus,
   #bbpress-forums #item-header-cover-image #item-meta [href].activity:focus, body.buddypress .site-main .bbp-topic-tags a[href]:focus,
   #bbpress-forums .bbp-topic-tags a[href]:focus, body.buddypress .site-main .tags-cell a[href]:focus,
   #bbpress-forums .tags-cell a[href]:focus, body.buddypress .site-main [href].bbp-reply-permalink:focus,
@@ -10077,7 +10123,8 @@ body.buddypress .site-main #members-dir-list .item-header-content .is-online .ac
 .tags a,
 .category a,
 .cat-links a,
-a.tag {
+a.tag,
+.entry-terms a {
   color: #fff; }
   .tags a:hover, .tags a:focus,
   .category a:hover,
@@ -10085,7 +10132,9 @@ a.tag {
   .cat-links a:hover,
   .cat-links a:focus,
   a.tag:hover,
-  a.tag:focus {
+  a.tag:focus,
+  .entry-terms a:hover,
+  .entry-terms a:focus {
     color: #fff;
     text-decoration: none;
     cursor: pointer; }
@@ -10293,7 +10342,7 @@ body.buddypress .site-main .item-list-tabs,
       font-size: 1rem; } }
   body.buddypress .site-main .item-list-tabs#subnav,
   #bbpress-forums .item-list-tabs#subnav {
-    border-bottom: 1px solid rgba(17, 17, 17, 0.1); }
+    border-bottom: 1px solid rgba(17, 17, 17, 0.3); }
     body.buddypress .site-main .item-list-tabs#subnav li,
     #bbpress-forums .item-list-tabs#subnav li {
       background-color: #f2f2f3;
@@ -10423,7 +10472,7 @@ body.buddypress .site-main .item-list,
                 flex: 0 0 calc(100% - 85px); } }
   body.buddypress .site-main .item-list > li:not(:first-child),
   #bbpress-forums .item-list > li:not(:first-child) {
-    border-top: 1px solid rgba(17, 17, 17, 0.1); }
+    border-top: 1px solid rgba(17, 17, 17, 0.3); }
 
 body.buddypress .site-main .forums,
 #bbpress-forums .forums {
@@ -10552,11 +10601,8 @@ body.buddypress .site-main .pagination,
 
 body.buddypress .site-main img.avatar,
 #bbpress-forums img.avatar {
-  padding: 2px;
   margin-right: .25em;
-  margin-left: .25em;
-  border: 1px solid rgba(17, 17, 17, 0.2);
-  background-color: #fff; }
+  margin-left: .25em; }
 
 body.buddypress .site-main .group-members .avatar,
 #bbpress-forums .group-members .avatar {
@@ -12439,7 +12485,7 @@ body.buddypress #members-list .action {
       flex: 0 0 calc(50% - 15px);
       margin-top: .5em;
       box-sizing: border-box;
-      border: 1px solid rgba(17, 17, 17, 0.1);
+      border: 1px solid rgba(17, 17, 17, 0.3);
       display: -ms-flex;
       display: -webkit-flex;
       display: flex;
@@ -12466,12 +12512,7 @@ body.buddypress #members-list .action {
     display: block; }
   .widget-buddypress .item-avatar img {
     width: 100px;
-    height: auto;
-    padding: 2px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fff;
-    border: 1px solid rgba(17, 17, 17, 0.2); }
+    height: auto; }
   .widget-buddypress .item-meta {
     text-weight: 300; }
   @media screen and (min-width: 768px) {
@@ -12543,7 +12584,7 @@ EVENT ORGANISER
       width: 75%; } }
 
 .event-list .event-image {
-  border: 5px solid rgba(17, 17, 17, 0.2);
+  border: 5px solid rgba(17, 17, 17, 0.3);
   max-height: 150px;
   overflow: hidden; }
   .event-list .event-image img {
@@ -12611,7 +12652,7 @@ EVENT ORGANISER
 
 .single-event .event-image,
 .singular-event .event-image {
-  border: 5px solid rgba(17, 17, 17, 0.2);
+  border: 5px solid rgba(17, 17, 17, 0.3);
   max-height: 150px;
   overflow: hidden;
   margin-bottom: 1.5em; }
@@ -12711,7 +12752,7 @@ EVENT ORGANISER
 
 .single-event .event-map,
 .singular-event .event-map {
-  border: 5px solid rgba(17, 17, 17, 0.2);
+  border: 5px solid rgba(17, 17, 17, 0.3);
   margin: 1.5em 0;
   width: 100%;
   height: 220px;
@@ -13318,7 +13359,7 @@ article.handbook .so-panel.table-of-contents {
 
 .so-widget-sow-cta .sow-cta-base {
   background-color: #f2f2f3 !important;
-  border-color: rgba(17, 17, 17, 0.2) !important; }
+  border-color: rgba(17, 17, 17, 0.3) !important; }
   .so-widget-sow-cta .sow-cta-base h4 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -13330,7 +13371,7 @@ article.handbook .so-panel.table-of-contents {
 
 #secondary .sow-cta-base {
   background-color: #16506B !important;
-  border-color: rgba(17, 17, 17, 0.2) !important;
+  border-color: rgba(17, 17, 17, 0.3) !important;
   color: #fff !important; }
   #secondary .sow-cta-base h4 {
     font-size: 36px;
@@ -13342,7 +13383,7 @@ article.handbook .so-panel.table-of-contents {
     color: #fff !important; }
 
 .so-widget-sow-slider .sow-slider-base {
-  border: 5px solid rgba(17, 17, 17, 0.2); }
+  border: 5px solid rgba(17, 17, 17, 0.3); }
 
 .so-widget-sow-slider .sow-slider-images li {
   max-height: 500px;
@@ -13359,7 +13400,7 @@ article.handbook .so-panel.table-of-contents {
   padding: 1em; }
 
 .so-widget-sow-hero .sow-slider-base {
-  border: 5px solid rgba(17, 17, 17, 0.2); }
+  border: 5px solid rgba(17, 17, 17, 0.3); }
   .so-widget-sow-hero .sow-slider-base h2 {
     font-size: 2.25rem !important;
     color: #fff; }
@@ -13577,6 +13618,57 @@ NETWORK CONTENT
   display: table;
   clear: both; }
 
+.archive-network_directory article {
+  text-align: center; }
+
+.archive-network_directory .entry-title {
+  margin-top: .5em;
+  margin-bottom: .25em; }
+
+.archive-network_directory .entry-content:empty {
+  display: none; }
+
+.archive-network_directory .entry .entry-footer:not(:empty),
+.archive-network_directory .entry-footer {
+  padding-top: 0;
+  border-top: none; }
+
+@media screen and (min-width: 768px) {
+  .archive-network_directory .entries-list {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap; }
+  .archive-network_directory article {
+    flex: 0 0 calc(50% - 15px);
+    margin-top: .5em;
+    padding: .5em;
+    box-sizing: border-box;
+    border: 1px solid rgba(17, 17, 17, 0.3);
+    text-align: left; }
+    .archive-network_directory article:nth-child(odd) {
+      margin-right: 15px; }
+    .archive-network_directory article:nth-child(even) {
+      margin-left: 15px; }
+  .archive-network_directory .entry-title {
+    font-size: 28px;
+    font-size: 1.75rem; }
+  .archive-network_directory .has-post-thumbnail .entry-header {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap; }
+  .archive-network_directory .has-post-thumbnail .entry-avatar {
+    flex: 0 0 85px;
+    padding-right: .5em; }
+    .archive-network_directory .has-post-thumbnail .entry-avatar img {
+      text-align: left;
+      width: 100%;
+      height: auto; }
+  .archive-network_directory .has-post-thumbnail .entry-title {
+    flex: 0 0 calc(100% - 85px);
+    justify-content: flex-end; } }
+
 /*********************
 NETWORK CONTENT
 *********************/
@@ -13591,11 +13683,11 @@ Knowledge Base
   padding: 0;
   list-style: none; }
   .knowledge-base-list > li {
-    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.3);
     margin-bottom: 0.25em;
     padding-bottom: 0.25em; }
     .knowledge-base-list > li:first-child {
-      border-top: 1px solid rgba(17, 17, 17, 0.1);
+      border-top: 1px solid rgba(17, 17, 17, 0.3);
       margin-top: 0.25em;
       padding-top: 0.25em; }
   .knowledge-base-list li > ul {
@@ -13632,7 +13724,7 @@ Knowledge Base
       .knowledge-base-list > li {
         flex: 0 0 calc(50% - 15px);
         box-sizing: border-box;
-        border: 1px solid rgba(17, 17, 17, 0.1);
+        border: 1px solid rgba(17, 17, 17, 0.3);
         padding: .5em; }
         .knowledge-base-list > li:first-child {
           margin-top: 0;
@@ -13648,7 +13740,7 @@ Knowledge Base
           font-size: 22px;
           font-size: 1.375rem; }
       .knowledge-base-list .children li:not(:last-child) {
-        border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+        border-bottom: 1px solid rgba(17, 17, 17, 0.3);
         margin-bottom: 0.25em;
         padding-bottom: 0.25em; } }
 
@@ -13665,11 +13757,11 @@ span:empty {
   display: none; }
 
 .entry {
-  border-bottom: 1px solid #f2f2f3;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.3);
   margin-bottom: 1em;
   padding-bottom: 1em; }
   .entry .entry-footer:not(:empty) {
-    border-top: 1px solid #f2f2f3;
+    border-top: 1px solid rgba(17, 17, 17, 0.3);
     margin-top: 1em;
     padding-top: 1em; }
 
@@ -13721,7 +13813,7 @@ a {
   #masthead .main-navigation ul a {
     border-radius: 0; }
     #masthead .main-navigation ul a:hover, #masthead .main-navigation ul a:focus {
-      background-color: rgba(17, 17, 17, 0.1); }
+      background-color: rgba(17, 17, 17, 0.3); }
   #masthead .main-navigation ul .current-menu-item > a,
   #masthead .main-navigation ul .current-menu-ancestor > a {
     font-weight: bold; }

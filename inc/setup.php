@@ -74,16 +74,24 @@ function anp_network_main_setup() {
   /*
    * Enable support for site logo
    *
-   * @link https://make.wordpress.org/core/2016/02/24/theme-logo-support/
+   * Core support starting in v 4.5
+   * @links https://codex.wordpress.org/Theme_Logo
    */
   add_image_size( 'site-logo', 0, 100 );
-  add_theme_support( 'site-logo', array(
-      'header-text' => array(
-          'site-title',
-          'site-description'
-      ),
-      'size' => 'site-logo',
-  )); 
+
+  $custom_logo_args = array(
+    'header-text' => array(
+        'site-title',
+        'site-description'
+    ),
+    'size' => 'site-logo',
+  );
+
+  // JetPack site-logo
+  add_theme_support( 'site-logo', $custom_logo_args );
+
+  // Core custom-logo
+  //add_theme_support( 'custom-logo', $custom_logo_args );
 
   /*
    * Set up the WordPress core custom background feature.

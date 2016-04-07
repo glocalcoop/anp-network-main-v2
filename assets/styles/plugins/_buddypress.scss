@@ -415,12 +415,9 @@ body.buddypress .site-main,
     // Images
     img {
         &.avatar {
-            @extend .img-circle;
-            padding: 2px;
+            @extend %avatar;
             margin-right: .25em;
             margin-left: .25em;
-            border: 1px solid $color__background-hr-alt;
-            background-color: $color__white;
         }
     }
 
@@ -748,14 +745,9 @@ body.buddypress #members-list {
     }
 
     .item-avatar img {
-        @extend .img-circle;
+        @extend %avatar;
         width: 100px;
         height: auto;
-        padding: 2px;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: $color__white;
-        border: 1px solid $color__background-hr-alt;
     }
 
     .item-meta {

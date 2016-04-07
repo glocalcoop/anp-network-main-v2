@@ -63,7 +63,8 @@
 .tags a,
 .category a,
 .cat-links a,
-a.tag {
+a.tag,
+.entry-terms a {
     @extend %label;
     @extend %label-default;
     color: $label-link-hover-color;

@@ -20,10 +20,15 @@
 		<?php $blog_id = get_post_meta( get_the_ID(), 'site_directory_blog_id', true ); ?>
 
 		<?php 
-		if( function_exists( 'get_the_site_logo' ) ) {
-			$site_logo = get_the_site_logo( $blog_id );
-		} 
-		?>
+		/*
+		 * Site logo will be in core starting in v 4.5
+		 * @links https://codex.wordpress.org/Theme_Logo
+		 */
+		if( function_exists( 'get_site_directory_logo' ) ) : ?>
+			<div class="entry-avatar">
+				<?php echo get_site_directory_logo( $blog_id, 'thumbnail', array( 'class' => 'avatar' ) ); ?>
+			</div>
+		<?php endif; ?> 
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( $siteurl ) ), '</a></h2>' ); ?>
 
