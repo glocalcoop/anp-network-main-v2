@@ -230,16 +230,24 @@ function anp_taxonomy_filter( $taxonomy = 'category' ) {
 
 /**
  * AJAX Get Posts Filter
+ *
+ * @global $_POST['term']
+ * @global $_POST['taxonomy']
+ * @global $_POST['post_type']
+ *
+ * @param string $term
+ * @param string $taxonomy
+ * @param string $post_type
  */
-function anp_filter_get_posts( $term, $taxonomy, $post_type ) {
+function anp_filter_get_posts( $term, $taxonomy = '', $post_type = '' ) {
  
   // Verify nonce
   if( !isset( $_POST['anp_filter_nonce'] ) || !wp_verify_nonce( $_POST['anp_filter_nonce'], 'anp_filter_nonce' ) )
     die( 'Permission denied' );
  
-  $term = $_POST['term'];
-  $taxonomy = $_POST['taxonomy'];
-  $post_type = $_POST['post_type'];
+  $term = ( ! empty( $term ) ) ? $term : $_POST['term'];
+  $taxonomy = ( ! empty( $taxonomy ) ) ? $taxonomy : $_POST['taxonomy'];
+  $post_type = ( ! empty( $post_type ) ) ? $post_type : $_POST['post_type'];
  
   // WP Query
   $args = array(
