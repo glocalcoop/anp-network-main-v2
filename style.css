@@ -8351,7 +8351,7 @@ body {
     display: block;
     text-align: center; }
   #masthead .site-branding .site-logo-link {
-    min-width: 100px; }
+    width: 100px; }
     #masthead .site-branding .site-logo-link .site-logo {
       height: 100px;
       width: auto; }
