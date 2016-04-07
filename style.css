@@ -9211,6 +9211,9 @@ form {
     display: table;
     clear: both; }
 
+input {
+  font-weight: normal; }
+
 button,
 .button:not(.wpb_button_a),
 input[type="button"],
@@ -9448,7 +9451,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #313334; }
 
 input[type="text"],
 input[type="email"],
@@ -10096,7 +10099,7 @@ body.buddypress .site-main .highlight,
 body.buddypress .site-main #members-dir-list .item-header-content .is-current-user .activity,
 #bbpress-forums #members-list .item-header-content .is-current-user .activity,
 #bbpress-forums #members-dir-list .item-header-content .is-current-user .activity {
-  background-color: #3498db; }
+  background-color: #008Eb0; }
   body.buddypress .site-main [href].highlight:hover,
   #bbpress-forums [href].highlight:hover, body.buddypress .site-main #members-list .item-header-content .is-current-user [href].activity:hover,
   body.buddypress .site-main #members-dir-list .item-header-content .is-current-user [href].activity:hover,
@@ -10106,7 +10109,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .is-current-us
   body.buddypress .site-main #members-dir-list .item-header-content .is-current-user [href].activity:focus,
   #bbpress-forums #members-list .item-header-content .is-current-user [href].activity:focus,
   #bbpress-forums #members-dir-list .item-header-content .is-current-user [href].activity:focus {
-    background-color: #217dbb; }
+    background-color: #00657d; }
 
 body.buddypress .site-main #members-list .item-header-content .is-online .activity,
 body.buddypress .site-main #members-dir-list .item-header-content .is-online .activity,
@@ -13762,10 +13765,6 @@ span:empty {
   border-bottom: 1px solid rgba(17, 17, 17, 0.3);
   margin-bottom: 1em;
   padding-bottom: 1em; }
-  .entry .entry-footer:not(:empty) {
-    border-top: 1px solid rgba(17, 17, 17, 0.3);
-    margin-top: 1em;
-    padding-top: 1em; }
 
 .entry-meta,
 .meta,

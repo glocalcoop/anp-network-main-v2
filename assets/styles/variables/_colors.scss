@@ -68,7 +68,7 @@ $color__background-shaded: mix(black, color($colors__theme, 'background'), 5%);
 
 $colors__buttons: (
     'success': #509ea3,
-    'info': #3498db,
+    'info': $color__secondary,
     'warning': #f39c12,
     'danger': #eb6361,
     'default': $color__mid-grey
@@ -112,7 +112,7 @@ $color__background-ins: $color__light-grey;
 $color__background-screen: $color__light-grey;
 
 $color__text-input: $color__light-black;
-$color__text-input-focus: $color__black;
+$color__text-input-focus: $color__foreground;
 $color__text-screen: $color__primary;
 $color__text-header: $color__primary;
 
@@ -127,8 +127,8 @@ $color__text-light: $color__light-grey;
 $color__text-inverted: $color__white;
 
 $color__border-abbr: $color__light-black;
-$color__border-input: $color__mid-grey;
-$color__border-input-focus: $color__light-black;
+$color__background-hr-alt: $color__mid-grey;
+$color__border-input-focus: $color__secondary;
 $color__border-frame: 5px solid $color__background-hr-alt;
 $color__border-frame-inverted: 5px solid $color__white;
 

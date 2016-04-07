@@ -270,6 +270,30 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
 
 }
 
+/**
+ * Display Search on Archive Pages
+ * Remove action in order to not display on archive pages
+ * @link https://developer.wordpress.org/reference/functions/get_search_form/
+ * Redeclare `anp_archive_post_filter()` {function} in child theme in order to modify
+ */
+if( !function_exists( 'anp_archive_post_type_search' ) ) {
+
+  function anp_archive_post_type_search() {
+
+    if(! is_archive() && ! is_home() ) {
+
+      return;
+
+    } 
+
+    get_template_part( 'search-form-custom' );
+    
+  }
+
+  add_action( 'anp_network_main_page_header_bottom', 'anp_archive_post_type_search' );
+
+}
+
 
 /**
  * Change Default Group Icon
@@ -306,8 +330,6 @@ if( !function_exists( 'anp_buddypress_group_icon' ) ) {
      */
     define ( 'BP_AVATAR_THUMB_WIDTH', 100 );
     define ( 'BP_AVATAR_THUMB_HEIGHT', 100 );
-
-
   }
 
 }
