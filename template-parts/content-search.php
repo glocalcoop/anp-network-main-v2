@@ -6,18 +6,22 @@
  *
  * @package Activist_Network_Theme
  */
+
 ?>
 
-<article <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php do_action ( 'anp_network_main_entry_header_before' );?>
 
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+
+		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php _s_posted_on(); ?>
+			<?php anp_network_main_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 
@@ -27,10 +31,28 @@
 
 	<?php do_action ( 'anp_network_main_entry_content_before' );?>
 
-	<div class="entry-summary">
+	<div class="entry-summary entry-content">
+		<?php do_action ( 'anp_network_main_entry_content_top' );?>
+
 		<?php the_excerpt(); ?>
+
+		<?php do_action ( 'anp_network_main_entry_content_bottom' );?>
+
 	</div><!-- .entry-summary -->
 
 	<?php do_action ( 'anp_network_main_entry_content_after' );?>
 
+	<footer class="entry-footer">
+
+		<?php do_action ( 'anp_network_main_entry_footer_top' );?>
+
+		<?php anp_network_main_entry_footer(); ?>
+
+		<?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+
+	</footer><!-- .entry-footer -->
+
+	<?php do_action ( 'anp_network_main_entry_footer_after' );?>
+
 </article><!-- #post-## -->
+

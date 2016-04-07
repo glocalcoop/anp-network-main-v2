@@ -29,6 +29,7 @@ textarea {
 
 	&:focus {
 		color: $color__text-input-focus;
+		border: 1px solid $color__border-input-focus;
 	}
 }
 

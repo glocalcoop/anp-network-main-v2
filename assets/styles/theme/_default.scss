@@ -12,10 +12,9 @@ span:empty {
 .page-title {}
 
 .entry {
-    @include border(bottom, 1em);
 
-    .entry-footer:not(:empty) {
-        @include border(top, 1em);
+    &:not(:last-child) {
+      @include border(bottom, 1em);  
     }
 }
 
