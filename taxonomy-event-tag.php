@@ -21,7 +21,7 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php get_template_part( 'components/archive-header/archive-header' ); ?>
+				<?php get_template_part( 'template-parts/archive-header' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
