@@ -7,6 +7,7 @@
             'theme_location'    => 'header-menu',
             'menu_class'        => 'header-menu',
             'container_class'   => 'main-navigation-container',
+            'fallback_cb'       => false
          ) );
     ?>
 </nav><!-- #site-navigation -->
