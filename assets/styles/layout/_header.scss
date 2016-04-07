@@ -20,7 +20,7 @@
         }
 
         .site-logo-link {
-            width: 100px;
+            min-width: 100px;
 
             .site-logo {
                 height: 100px;
@@ -61,6 +61,10 @@
                     padding-left: .5em;
                 }
 
+            }
+
+            .site-logo-link {
+                width: 100px;
             }
         }
 

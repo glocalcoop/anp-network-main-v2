@@ -8351,7 +8351,7 @@ body {
     display: block;
     text-align: center; }
   #masthead .site-branding .site-logo-link {
-    width: 100px; }
+    min-width: 100px; }
     #masthead .site-branding .site-logo-link .site-logo {
       height: 100px;
       width: auto; }
@@ -8373,7 +8373,9 @@ body {
           vertical-align: middle; }
         #masthead .site-branding .site-branding-container .site-description {
           padding-right: .5em;
-          padding-left: .5em; } }
+          padding-left: .5em; }
+      #masthead .site-branding .site-logo-link {
+        width: 100px; } }
 
 #masthead .header-widgets .align-center ul {
   text-align: center; }
