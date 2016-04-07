@@ -73,6 +73,15 @@
     padding: .25em 1em;
 }
 
+%avatar {
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $color__white;
+  border: 1px solid $color__background-hr-alt;
+}
+
 %info {
   @include font-size($smaller);
   color: $color__mid-grey;

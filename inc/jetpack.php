@@ -36,6 +36,7 @@ add_theme_support( 'jetpack-responsive-videos' );
 
 /**
  * Add support for the Site Logo
+ * Loaded in setup.php
  */
 function anp_network_main_site_logo_init() {
 	add_image_size( 'component-s-logo', 200, 200 );
@@ -45,6 +46,8 @@ function anp_network_main_site_logo_init() {
 
 /**
  * Return early if Site Logo is not available.
+ * Function checks first for core v4.5 `custom_logo`
+ * Uses WP Core logo if present, otherwise use Jetpack's
  */
 function anp_network_main_the_site_logo() {
 	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
