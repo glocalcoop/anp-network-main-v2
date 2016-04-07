@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php get_template_part( 'template-parts/archive-network_directory-header' ); ?>
+			<?php get_template_part( 'template-parts/header', 'archive-network_directory' ); ?>
 
 			<div class="entries-list">
 
