@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php get_template_part( 'template-parts/archive-event-header' ); ?>
+			<?php get_template_part( 'template-parts/header', 'archive-event' ); ?>
 
 			<div class="entries-list">
 

@@ -1,15 +1,15 @@
-=== Activist Network Theme v2 ===
+=== Activist Network Theme ===
 
-Contributors: automattic
+Contributors: misfist
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.0
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A custom starter theme called Activist NetworkTheme v2.
+A custom starter theme called Activist NetworkTheme.
 
 == Description ==
 
@@ -25,14 +25,20 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 
 = Does this theme support any plugins? =
 
-Activist NetworkTheme v2 includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
+Activist NetworkTheme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 2.0.2 - April 7 2016 =
+* Added post type-specific search
+* Added Knowledge Base template
+* Changed header partial file names to begin with `header`
+
+= 2.0 - January 29 2016 =
 * Initial release
 
 == Credits ==
 
-* Based on Activist Network Theme v2 http://components.underscores.me/, (C) 2015-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Based on _s http://components.underscores.me/, (C) 2015-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Hybrid Core Framework http://themehybrid.com/hybrid-core
+* Bootstrap http://getbootstrap.com/
