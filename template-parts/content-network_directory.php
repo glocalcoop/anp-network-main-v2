@@ -63,13 +63,18 @@
 
 	<?php do_action ( 'anp_network_main_entry_content_after' );?>
 
-	<?php if( $terms = get_the_terms( $post->ID, 'subsite_category' ) ) : ?>
+	 <?php
+	 $queried_object = get_queried_object();
+	 $taxonomy = ( ! empty( $queried_object->taxonomies ) ) ? $queried_object->taxonomies[0] : '';
+	 ?>
+
+	<?php if( $taxonomy ) : ?>
 
 	<footer class="entry-footer">
 
         <?php do_action ( 'anp_network_main_entry_footer_top' );?>
 
-        <?php $terms = hybrid_post_terms( array( 'taxonomy'   => 'subsite_category' ) ); 
+        <?php $terms = hybrid_post_terms( array( 'taxonomy'   => $taxonomy ) ); 
         ?>
 
         <?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
