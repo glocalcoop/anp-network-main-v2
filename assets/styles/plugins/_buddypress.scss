@@ -44,8 +44,7 @@ body.buddypress .site-main,
 
             li {
                 padding: .5em .125em;
-                background-color: rgba($color__black,.2);
-                color: text-color( rgba($color__black,.2) );
+                background-color: $color__background-nav-alt;
                 text-align: center;
                 @include font-size($small);
 
@@ -54,25 +53,32 @@ body.buddypress .site-main,
                 &.active,
                 &.current,
                 &.selected {
-                    background-color: rgba($color__black,.4);
-                    color: text-color( rgba($color__black,.4) );
+                    a {
+                        color: $color__text-nav-hover-alt;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $color__background-nav-hover-alt;
+                }
+
+                &.active,
+                &.current,
+                &.selected {
+                    background-color: $color__background-nav-active-alt;
                 }
 
                 &:not(:last-child) {
-                    border-bottom: 1px solid rgba($color__black,.2);
+                    border-bottom: 1px solid $color__border-nav-alt;
                 }
 
                 a {
                     display: block;
                     color: $color__text-nav-alt;
 
-                    &:hover,
-                    &:focus {
-                        color: $color__text-nav-hover-alt;
-                    }
-
                     span {
-                        @include badge;
+                        @include badge($bgcolor: $color__success);
                     }
                 }
 
@@ -110,7 +116,7 @@ body.buddypress .site-main,
 
                     &:not(:last-child) {
                         border-bottom: none;
-                        border-right: 1px solid rgba($color__black,.2);
+                        border-right: 1px solid $color__border-nav-alt;
                     }
                 }
             }
@@ -124,19 +130,32 @@ body.buddypress .site-main,
             border-bottom: 1px solid $color__border-nav-alt;
 
             li {
-                background-color: $color__background-widget-alt;
-                color: $color__text-nav;
+                background-color: lighten($color__background-nav-alt, 10%);
 
                 &.active,
                 &.selected,
                 &:hover,
                 &:focus {
-                    background-color: rgba($color__black,.2);
+                    a {
+                        color: $color__text-nav-hover-alt;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: lighten($color__background-nav-hover-alt, 10%);
+                    color: $color__text-nav-hover-alt;
+                }
+
+                &.active,
+                &.selected,
+                &.current {
+                    background-color: lighten($color__background-nav-active-alt, 10%);
                     color: $color__text-nav-hover-alt;
                 }
 
                 a {
-                    color: $color__text-nav;
+                    color: $color__text-nav-alt;
                 }
 
                 &#activity-filter-select {
@@ -669,7 +688,9 @@ body.buddypress .site-main,
  * @link https://plan.glocal.coop/issues/1309
  *
  */
-body.buddypress #members-list {
+body.buddypress {
+
+    #members-list {
 
     .action {
         display: block;
@@ -730,9 +751,87 @@ body.buddypress #members-list {
 
             }
         
+        }
+
+    }
+
+    /**
+     * Group Blog
+     * @link https://plan.glocal.coop/issues/1246
+     *
+     */
+
+    #group-settings-form {
+
+        label.checkbox {
+            display: block;
+            font-weight: normal;
+
+            input {
+                margin-right: .25em;
+            }
+        }
+
+        br {
+            display: none;
+        }
+
+    }
+
+    #blog-details-fields {
+
+        label strong {
+            @include font-size($h4);
+            font-weight: normal;
+        }
+
+        &> p {
+             margin-top: 0;
+        }
+
+    }
+
+    #multisite-directory-signup-categories {
+        @include no-bullets;
+        @include border;
+        @include border($position: top);
+
+        label {
+            font-weight: normal;
+        }
+
+        &> label {
+            @include font-size($h3);
+            font-weight: 300;
+        }
+
+        &> li {
+            &> label {
+                font-weight: bold;
+            }
+        }
+
+        ul {
+            margin-left: 1em;
+        }
+    }
+
+    #groupblog-member-options {
+        label {
+            margin-top: .5em;
+            display: block;
+            strong {
+                @include font-size($h4);
+                font-weight: normal;
+            }
+        }
     }
 
 }
+
+
+
+
 
 // Widgets
 .widget-buddypress {
