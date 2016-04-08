@@ -113,6 +113,7 @@ $color__background-screen: $color__light-grey;
 
 $color__text-input: $color__light-black;
 $color__text-input-focus: $color__foreground;
+$color__text-input-placeholder: $color__mid-grey;
 $color__text-screen: $color__primary;
 $color__text-header: $color__primary;
 
@@ -127,7 +128,7 @@ $color__text-light: $color__light-grey;
 $color__text-inverted: $color__white;
 
 $color__border-hr: $color__light-grey;
-$color__border-input:$color__border-hr;
+$color__border-input: $color__border-hr;
 $color__border-input-focus: $color__secondary;
 $color__border-abbr: $color__border-hr;
 $color__border-frame: 5px solid $color__border-hr;

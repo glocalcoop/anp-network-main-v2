@@ -9,11 +9,11 @@ $gray:                   $color__mid-grey; // #555
 $gray-light:             $color__light-grey; // #777
 $gray-lighter:           $color__lightest-grey; // #eee
 
-$brand-primary:         #509EA3;
-$brand-success:         #AFBB87;
-$brand-info:            #1C2A42;
-$brand-warning:         #EFE4A6;
-$brand-danger:          #E53634;
+$brand-primary:         $color__primary;
+$brand-success:         $color__success;
+$brand-info:            $color__info;
+$brand-warning:         $color__warning;
+$brand-danger:          $color__danger;
 
 
 //== Scaffolding
@@ -185,9 +185,9 @@ $btn-danger-color:               $color__white;
 // $input-bg-disabled:              $gray-lighter;
 
 //** Text color for `<input>`s
-// $input-color:                    $gray;
+$input-color:                    $color__text-input;
 //** `<input>` border color
-$input-border:                   $gray;
+$input-border:                   $color__border-input;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -202,7 +202,7 @@ $input-border:                   $gray;
 $input-border-focus:             $color__border-input-focus;
 
 //** Placeholder text color
-$input-color-placeholder:        $gray;
+$input-color-placeholder:        $color__text-input-placeholder;
 
 //** Default `.form-control` height
 // $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
@@ -215,7 +215,7 @@ $input-color-placeholder:        $gray;
 // $form-group-margin-bottom:       15px;
 
 // $legend-color:                   $gray-dark;
-$legend-border-color:            $gray;
+$legend-border-color:            $color__border-input;
 
 //** Background color for textual input addons
 // $input-group-addon-bg:           $gray-lighter;
@@ -235,16 +235,16 @@ $dropdown-bg:                    $color__white;
 //** Dropdown menu `border-color`.
 $dropdown-border:                rgba($color__black,.15);
 //** Dropdown menu `border-color` **for IE8**.
-$dropdown-fallback-border:       $gray;
+$dropdown-fallback-border:       $color__mid-light-grey;
 //** Divider color for between dropdown items.
-$dropdown-divider-bg:            $gray-lighter;
+$dropdown-divider-bg:            $color__lightest-grey;
 
 //** Dropdown link text color.
 // $dropdown-link-color:            $gray-dark;
 //** Hover color for dropdown links.
 // $dropdown-link-hover-color:      darken($gray-dark, 5%);
 //** Hover background for dropdown links.
-$dropdown-link-hover-bg:         $gray-light;
+$dropdown-link-hover-bg:         $color__light-grey;
 
 //** Active dropdown menu item text color.
 // $dropdown-link-active-color:     $component-active-color;
