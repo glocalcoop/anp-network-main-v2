@@ -12,12 +12,12 @@
  */
 function anp_network_main_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
+		'container' => 'entries-list',
 		'render'    => 'anp_network_main_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 } // end function anp_network_main_jetpack_setup
-add_action( 'after_setup_theme', 'anp_network_main_jetpack_setup' );
+//add_action( 'after_setup_theme', 'anp_network_main_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.

@@ -12599,6 +12599,102 @@ EVENT ORGANISER
 .page-events #main {
   width: 100%; }
 
+.event-list p {
+  margin: 0;
+  line-height: 1.5; }
+
+.event-list a.button {
+  margin: 0 0 1em 0; }
+
+.event-list .event-list-header {
+  display: none; }
+
+.event-list .event {
+  padding: 10px 0;
+  clear: both; }
+
+.event-list .event-header {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .event-list .event-header {
+      float: left;
+      width: 25%; } }
+
+.event-list .event-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .event-list .event-content {
+      float: left;
+      width: 75%; } }
+
+.event-list .event-image {
+  border: 5px solid #cacccd;
+  max-height: 150px;
+  overflow: hidden; }
+  .event-list .event-image img {
+    margin: 0;
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    .event-list .event-image {
+      float: right;
+      width: 33%;
+      height: auto;
+      max-height: 300px;
+      margin-left: 20px;
+      margin-bottom: 10px; } }
+
+.event-list .event-title {
+  margin: .75em 0 .25em; }
+  @media screen and (min-width: 768px) {
+    .event-list .event-title {
+      margin-top: 0; } }
+
+.event-list .event-meta .event-day,
+.event-list .event-meta .event-date,
+.event-list .event-meta .event-time {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
+
+.event-list .event-meta .event-date {
+  display: block; }
+
+@media screen and (min-width: 768px) {
+  .event-list .event-meta .event-day,
+  .event-list .event-meta .event-date,
+  .event-list .event-meta .event-time {
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 300; } }
+
+.event-list .event-location {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #7B8083;
+  margin-bottom: 1em; }
+  .event-list .event-location span {
+    display: block; }
+    @media screen and (min-width: 0) {
+      .event-list .event-location span {
+        display: inline;
+        padding-right: 5px; }
+        .event-list .event-location span:after {
+          content: ' /'; } }
+    .event-list .event-location span:last-child:after {
+      content: ''; }
+
+.event-list .event-description {
+  margin-bottom: 1em; }
+
 .single-event h3,
 .singular-event h3 {
   margin-bottom: 0; }

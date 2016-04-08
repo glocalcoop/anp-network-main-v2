@@ -70,4 +70,9 @@ require get_template_directory() . '/inc/hooks.php';
  */
 require get_template_directory() . '/inc/theme.php';
 
+/**
+ * Load custom BuddyPress functions.
+ */
+require get_template_directory() . '/inc/buddypress.php';
+
 
