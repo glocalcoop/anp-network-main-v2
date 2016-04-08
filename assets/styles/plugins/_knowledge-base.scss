@@ -55,6 +55,7 @@ Knowledge Base
         display: -webkit-flex;
         display: flex;
         flex-wrap: wrap;
+        margin-top: .5em;
 
         &> li {
             flex: 0 0 calc(50% - #{$gutter__column});

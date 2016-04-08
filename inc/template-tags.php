@@ -210,22 +210,22 @@ add_action( 'save_post',     'anp_network_main_category_transient_flusher' );
 
 /**
  * Add Taxonomy Filter
+ * Uses custom Walker class to render hierarchical filters
  */
-function anp_taxonomy_filter( $taxonomy = 'category' ) {
-    $taxonomy = $taxonomy;
-    $terms = get_terms( $taxonomy );
+if( ! function_exists( 'anp_taxonomy_filter' ) ) {
 
-    $count = count( $terms );
- 
-    if ( $count > 0 ): ?>
-        <ul class="taxonomy-filters">
-        <?php
-        foreach ( $terms as $term ) {
-            $term_link = get_term_link( $term, $taxonomy );
-            echo '<li><a href="' . $term_link . '" class="taxonomy-filter" title="' . $term->slug . '" data-taxonomy="' . $taxonomy . '" data-term="' . $term->slug . '" data-posttype="' . get_post_type() . '">' . $term->name . '</a></li>';
-        } ?>
-        </ul>
-    <?php endif;
+    function anp_taxonomy_filter( $taxonomy = 'category' ) {
+        $args = array(
+            'taxonomy'  => $taxonomy,
+            'walker'    => new ANP_Filter_Walker,
+            'title_li'  => '',
+        );
+
+        echo '<ul class="taxonomy-filters">';
+        wp_list_categories( $args );
+        echo '</ul>';
+    }
+
 }
 
 /**
@@ -239,7 +239,7 @@ function anp_taxonomy_filter( $taxonomy = 'category' ) {
  * @param string $taxonomy
  * @param string $post_type
  */
-function anp_filter_get_posts( $term, $taxonomy = '', $post_type = '' ) {
+function anp_filter_get_posts( $term, $taxonomy = '', $post_type = '', $keyword = '' ) {
  
   // Verify nonce
   if( !isset( $_POST['anp_filter_nonce'] ) || !wp_verify_nonce( $_POST['anp_filter_nonce'], 'anp_filter_nonce' ) )
@@ -248,10 +248,12 @@ function anp_filter_get_posts( $term, $taxonomy = '', $post_type = '' ) {
   $term = ( ! empty( $term ) ) ? $term : $_POST['term'];
   $taxonomy = ( ! empty( $taxonomy ) ) ? $taxonomy : $_POST['taxonomy'];
   $post_type = ( ! empty( $post_type ) ) ? $post_type : $_POST['post_type'];
+  $keyword = ( ! empty( $keyword ) ) ? $keyword : $_POST['s'];
  
   // WP Query
   $args = array(
     'post_type' => $post_type,
+    's'         => $keyword,
     'tax_query' => array(
       array(
       'taxonomy' => $taxonomy,
@@ -279,8 +281,6 @@ function anp_filter_get_posts( $term, $taxonomy = '', $post_type = '' ) {
 
   <?php else : ?>
 
-      Why not?
-
     <?php get_template_part( 'template-parts/content', 'none' ); ?>
  
   <?php endif;
@@ -290,3 +290,51 @@ function anp_filter_get_posts( $term, $taxonomy = '', $post_type = '' ) {
  
 add_action( 'wp_ajax_filter_posts', 'anp_filter_get_posts' );
 add_action( 'wp_ajax_nopriv_filter_posts', 'anp_filter_get_posts' );
+
+
+/**
+ * AJAX Search Posts
+ *
+ * @global $_POST['post_type']
+ * @global $_POST['s']
+ *
+ * @param string $post_type
+ * @param string $keyword
+ */
+function anp_search_posts( $keyword = '', $post_type = '' ) {
+ 
+  // Verify nonce
+  if( !isset( $_POST['anp_search_nonce'] ) || !wp_verify_nonce( $_POST['anp_search_nonce'], 'anp_search_nonce' ) )
+    die( 'Permission denied' );
+ 
+  $post_type = ( ! empty( $post_type ) ) ? $post_type : $_POST['post_type'];
+  $keyword = ( ! empty( $keyword ) ) ? $keyword : $_POST['s'];
+ 
+  // WP Query
+  $args = array(
+    'post_type' => $post_type,
+    's'         => $keyword,
+  );
+ 
+  $query = new WP_Query( $args );
+ 
+  if ( $query->have_posts() ) : ?>
+
+    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+    <?php get_template_part( 'template-parts/content', $post_type ); ?>
+
+    <?php endwhile; ?>
+
+  <?php else : ?>
+
+    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+ 
+  <?php endif;
+ 
+  die();
+}
+ 
+add_action( 'wp_ajax_search_posts', 'anp_search_posts' );
+add_action( 'wp_ajax_nopriv_search_posts', 'anp_search_posts' );
+

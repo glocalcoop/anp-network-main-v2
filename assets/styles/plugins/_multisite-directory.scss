@@ -2,7 +2,8 @@
  * NETWORK CONTENT
  */
 
-.archive-network_directory {
+.archive-network_directory,
+.taxonomy-subsite_category {
 
     .entries-list {
         @include clearfix;
@@ -40,9 +41,11 @@
             flex-wrap: wrap;
         }
 
-        article {
+        article,
+        .entry:not(:last-child) {
             flex: 0 0 calc(50% - #{$gutter__column});
             margin-top: .5em;
+            margin-bottom: .5em;
             padding: .5em;
             box-sizing: border-box;
             border: 1px solid $color__border-nav-alt;

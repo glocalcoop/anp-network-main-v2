@@ -53,15 +53,30 @@
 
 	<?php do_action ( 'anp_network_main_entry_content_after' );?>
 
+	 <?php
+	 $queried_object = get_queried_object();
+
+	 /**
+	  * If there are multiple taxonomies, the object will contain `taxonomies` key - take the first one
+	  * If there is only one taxonomy, the object will contain a `taxonomy` key - use that
+	  */
+	 $taxonomy = ( ! empty( $queried_object->taxonomies ) ) ? $queried_object->taxonomies[0] : $queried_object->taxonomy;
+	 ?>
+
+	<?php if( $taxonomy ) : ?>
+
 	<footer class="entry-footer">
 
-		<?php do_action ( 'anp_network_main_entry_footer_top' );?>
+        <?php do_action ( 'anp_network_main_entry_footer_top' );?>
 
-		<?php anp_network_main_entry_footer(); ?>
+        <?php $terms = hybrid_post_terms( array( 'taxonomy'   => $taxonomy ) ); 
+        ?>
 
-		<?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+        <?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
 
 	</footer><!-- .entry-footer -->
+
+	<?php endif; ?>
 
 	<?php do_action ( 'anp_network_main_entry_footer_after' );?>
 

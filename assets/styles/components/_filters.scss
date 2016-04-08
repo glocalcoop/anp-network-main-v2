@@ -9,4 +9,21 @@
 
 		&.active {}
 	}
+
+    .has-children > a {
+        width: 100%;
+        background-color: $color__background-nav-alt;
+        color: $color__text-nav-alt;
+
+        &.active,
+        &:active {
+            background-color: $color__background-nav-inverted;
+            color: $color__text-nav-inverted;
+        }
+    }
+
+    li > ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
 }

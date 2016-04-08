@@ -106,6 +106,7 @@ function anp_network_main_setup() {
   add_theme_support( 'custom-header', array(
     'header-text' => false
   ) );
+
 }
 endif; // anp_network_main_setup
 add_action( 'after_setup_theme', 'anp_network_main_setup' );
@@ -230,9 +231,17 @@ function anp_network_main_scripts() {
   wp_enqueue_script( 'anp-network-main', get_template_directory_uri() . '/dist/scripts/app.js', array('jquery'), '', true );
 
   wp_localize_script( 'anp-network-main', 'anp_filter_vars', array(
-      'anp_filter_nonce' => wp_create_nonce( 'anp_filter_nonce' ), // Create nonce which we later will use to verify AJAX request
+      'anp_filter_nonce'    => wp_create_nonce( 'anp_filter_nonce' ), // Create nonce which we later will use to verify AJAX request
       'anp_filter_ajax_url' => admin_url( 'admin-ajax.php' ),
+      'anp_post_type'       => get_post_type()
+    )
+  );
+
+  wp_localize_script( 'anp-network-main', 'anp_search_vars', array(
+      'anp_search_nonce'    => wp_create_nonce( 'anp_search_nonce' ), // Create nonce which we later will use to verify AJAX request
+      'anp_search_ajax_url' => admin_url( 'admin-ajax.php' ),
       'anp_post_type'       => get_post_type(),
+      'anp_keyword'         => get_query_var('s'),
     )
   );
 
