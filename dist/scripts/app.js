@@ -17,9 +17,37 @@
             taxonomy: selected_taxonomy,
             term: selected_term, // selected tag
             post_type: selected_post_type,
-            };
+        };
+
+        console.log('data', data);
  
         $.post( anp_filter_vars.anp_filter_ajax_url, data, function(response) {
+ 
+            if( response ) {
+                // Display posts on page
+                $('.entries-list').html( response );
+
+            };
+        });
+ 
+    });
+
+    $('.site-main .search-submit').click( function(event) {
+ 
+        event.preventDefault();
+
+        // Get post_type from localized data
+        var selected_post_type = anp_search_vars.anp_post_type;
+        var selected_keyword = $(this).parents('form').find('.search-field').val();
+ 
+        data = {
+            action: 'search_posts', // function to execute
+            anp_search_nonce: anp_search_vars.anp_search_nonce, // wp_nonce
+            post_type: selected_post_type,
+            s: selected_keyword,
+        };
+ 
+        $.post( anp_search_vars.anp_search_ajax_url, data, function(response) {
  
             if( response ) {
                 // Display posts on page

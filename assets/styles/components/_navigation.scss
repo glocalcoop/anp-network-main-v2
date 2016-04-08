@@ -70,6 +70,16 @@
 	}
 }
 
+.breadcrumb-trail {
+	.trail-browse {
+	    @include screen-reader-text;
+	}
+	.trail-items {
+		margin-left: 0;
+		@extend .breadcrumb;
+	}
+}
+
 .footer-menu,
 .bottom-navigation {
     ul {

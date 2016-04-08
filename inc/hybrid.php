@@ -23,19 +23,34 @@ add_action( 'after_setup_theme', 'anp_network_main_hybrid_setup', 5 );
 
 function anp_network_main_hybrid_setup() {
 
-    // http://themehybrid.com/docs/hybrid-media-grabber
-    add_theme_support( 'hybrid-core-media-grabber' );
+  // http://themehybrid.com/docs/hybrid-media-grabber
+  add_theme_support( 'hybrid-core-media-grabber' );
 
-    //http://themehybrid.com/docs/post-templates
-    add_theme_support( 'hybrid-core-template-hierarchy' );
+  //http://themehybrid.com/docs/post-templates
+  add_theme_support( 'hybrid-core-template-hierarchy' );
 
-    //http://themehybrid.com/docs/theme-layouts
-    add_theme_support( 'theme-layouts', array( 
-      'default'       => '2c-r',
-      'left-sidebar'  => '2c-l',
-      'full'          => '1c',
-      'grid'          => 'grid'
-    ) );
+  //http://themehybrid.com/docs/theme-layouts
+  add_theme_support( 'theme-layouts', array( 
+    'default'       => '2c-r',
+    'left-sidebar'  => '2c-l',
+    'full'          => '1c',
+    'grid'          => 'grid'
+  ) );
+
+  /**
+   * Hybrid Breadcrumb
+   * @link http://themehybrid.com/docs/breadcrumb-trail
+   */
+  add_theme_support( 'breadcrumb-trail' );
+
+  add_filter( 'breadcrumb_trail_args', 'anp_breadcrumb_trail_args' );
+
+  function anp_breadcrumb_trail_args( $args ) {
+
+    $args['before'] = '';
+
+    return $args;
+  }
 
 }
 
