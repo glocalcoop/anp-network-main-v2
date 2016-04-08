@@ -33,6 +33,7 @@ Activist NetworkTheme includes support for Jetpack's Infinite Scroll and Site Lo
 * Added numeric pagination function to replace previous / next
 * Added pagination to archive and taxonomy templates
 * Added styling for pager
+* Updated BuddyPress activity post form to make 1 row high by default
 
 = 2.0.2 - April 7 2016 =
 * Added post type-specific search
