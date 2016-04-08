@@ -237,7 +237,6 @@ if( ! function_exists( 'anp_display_breadcrumbs' ) ) {
 }
 
 
-
 /**
  * Display Search on Archive Pages
  * Remove action in order to not display on archive pages
@@ -259,5 +258,46 @@ if( !function_exists( 'anp_archive_post_type_search' ) ) {
   }
 
   add_action( 'anp_network_main_page_header_bottom', 'anp_archive_post_type_search' );
+
+}
+
+/**
+ * Numbered Pagination
+ * Adds numbered pagination to archive pages
+ * @link https://codex.wordpress.org/Function_Reference/paginate_links
+ */
+
+if( ! function_exists( 'anp_numeric_posts_nav' ) ) {
+
+  function anp_numeric_posts_nav() {
+
+    if( is_singular() )
+      return;
+
+    global $wp_query;
+
+    $big = 12345678;
+    $page_format = paginate_links( array(
+      'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+      'format' => '?paged=%#%',
+      'current' => max( 1, get_query_var( 'paged' ) ),
+      'total' => $wp_query->max_num_pages,
+      'type'  => 'array',
+      'prev_text'          => __( '<span aria-hidden="true">&laquo;</span> <span class="screen-reader-text previous">Previous</span>', 'anp-network-main' ),
+      'next_text'          => __( '<span aria-hidden="true">&raquo;</span> <span class="screen-reader-text next">Next</span>', 'anp-network-main' ),
+    ) );
+    if( is_array( $page_format ) ) {
+      $paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var('paged');
+      echo '<nav class="navigation posts-navigation" role="navigation">';
+      echo '<h2 class="screen-reader-text">Posts navigation</h2>';
+      echo '<ul class="pagination">';
+      echo '<li><span>'. $paged . ' of ' . $wp_query->max_num_pages .'</span></li>';
+      foreach ( $page_format as $page ) {
+        echo "<li>$page</li>";
+      }
+     echo '</ul></nav>';
+    }
+
+  }
 
 }

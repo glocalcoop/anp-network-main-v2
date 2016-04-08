@@ -52,6 +52,8 @@ function anp_network_main_hybrid_setup() {
     return $args;
   }
 
+  add_theme_support( 'entry-views' );
+
 }
 
 /**

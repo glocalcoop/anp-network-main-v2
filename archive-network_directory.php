@@ -37,6 +37,7 @@ get_header(); ?>
 
 			</div>
 
+			<?php anp_numeric_posts_nav(); ?>
 
 		<?php else : ?>
 
