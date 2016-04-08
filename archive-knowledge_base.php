@@ -24,8 +24,6 @@ get_header(); ?>
 
 			</div>
 
-			<?php the_posts_navigation(); ?>
-
 		<?php endif; ?>
 
 		<?php do_action ( 'anp_network_main_site_main_bottom' );?>
