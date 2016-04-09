@@ -13971,7 +13971,8 @@ a {
   #masthead .main-navigation ul a {
     border-radius: 0; }
     #masthead .main-navigation ul a:hover, #masthead .main-navigation ul a:focus {
-      background-color: #f2f2f3; }
+      background-color: #f2f2f3;
+      color: #313334; }
   #masthead .main-navigation ul .current-menu-item > a,
   #masthead .main-navigation ul .current-menu-ancestor > a {
     font-weight: bold; }

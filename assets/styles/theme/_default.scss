@@ -111,6 +111,7 @@ a {
                 &:hover,
                 &:focus {
                     background-color: $color__background-nav-hover;
+                    color: $color__text-nav;
                 }
             }
 
@@ -125,8 +126,10 @@ a {
         @include breakpoint(md) {
             border-radius: $element__border-radius-base;
 
-            li:hover > a,
-            li:focus > a {}
+            li:hover,
+            li:focus {
+                &> a {}
+            }
 
             ul {
                 li:not(:last-child) {
