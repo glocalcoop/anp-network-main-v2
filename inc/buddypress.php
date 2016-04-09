@@ -12,18 +12,22 @@
  *
  * @see bp_legacy_theme_cover_image() to discover the one used by BP Legacy
  */
-function anp_cover_image_callback( $params = array() ) {
-    if ( empty( $params ) ) {
-        return;
-    }
- 
-    return '
-        /* Cover image - Do not forget this part */
-        #buddypress #header-cover-image {
-            height: ' . $params["height"] . 'px;
-            background-image: url(' . $params['cover_image'] . ');
-        }
-    ';
+if( ! function_exists( 'anp_cover_image_callback' ) ) {
+
+  function anp_cover_image_callback( $params = array() ) {
+      if ( empty( $params ) ) {
+          return;
+      }
+   
+      return '
+          /* Cover image - Do not forget this part */
+          #buddypress #header-cover-image {
+              height: ' . $params["height"] . 'px;
+              background-image: url(' . $params['cover_image'] . ');
+          }
+      ';
+  }
+
 }
 
 /**
@@ -90,66 +94,28 @@ if( ! function_exists( 'anp_buddypress_group_icon' ) ) {
 
 }
 
- 
-/**
- * Display a list of connected groups on single event pages.
- */
-if( function_exists( 'bpeo_get_event_groups' ) ) {
-
-  function anp_list_event_groups() {
-    $event_group_ids = bpeo_get_event_groups( get_the_ID() );
-
-    if ( empty( $event_group_ids ) ) {
-      return;
-    }
-
-    $event_groups = groups_get_groups( array(
-      'include' => $event_group_ids,
-      'show_hidden' => true, // We roll our own.
-    ) );
-
-    $markup = array();
-    foreach ( $event_groups['groups'] as $eg ) {
-      // Remove groups that the current user should not have access to.
-      if ( 'public' !== $eg->status && ! current_user_can( 'bp_moderate' ) && ! groups_is_user_member( bp_current_user_id(), $eg->id ) ) {
-        continue;
-      }
-
-      $markup[] = sprintf(
-        '<a href="%s">%s</a>',
-        esc_url( bpeo_get_group_permalink( $eg ) ),
-        esc_html( stripslashes( $eg->name ) )
-      );
-    }
-
-    if ( empty( $markup ) ) {
-      return;
-    }
-
-    $count = count( $markup );
-    $base = _n( '<span class="meta-label">Group</span> %s', '<span class="meta-label">Groups</span> %s', $count, 'anp-network-main' );
-
-    echo sprintf( '<li>' . wp_filter_kses( $base ) . '</li>', implode( ', ', $markup ) );
-  }
-  add_action( 'eventorganiser_additional_event_meta', 'anp_list_event_groups' );
-}
 
 /**
  * Display the event author on single event pages.
  */
-if( function_exists( 'bp_core_get_userlink' ) ) {
+if( ! function_exists( 'anp_event_author' ) ) {
 
-  function anp_event_author() {
-    $event = get_post( get_the_ID() );
-    $author_id = $event->post_author;
-    $base = __( '%s', 'anp-network-main' );
+  if( function_exists( 'bp_core_get_userlink' ) ) {
 
-    echo sprintf( '<div class="entry-author"><span class="meta-label">Author</span> ' . wp_filter_kses( $base ) . '</div>', bp_core_get_userlink( $author_id ) );
+    function anp_event_author() {
+      $event = get_post( get_the_ID() );
+      $author_id = $event->post_author;
+      $base = __( '%s', 'anp-network-main' );
+
+      echo sprintf( '<div class="entry-author"><span class="meta-label">Author</span> ' . wp_filter_kses( $base ) . '</div>', bp_core_get_userlink( $author_id ) );
+    }
+
+    add_action( 'eventorganiser_additional_event_meta', 'anp_event_author' );
+
   }
 
-  add_action( 'eventorganiser_additional_event_meta', 'anp_event_author' );
-
 }
+
 
 /**
  * Display BuddyPress Attribution
@@ -165,3 +131,4 @@ if( !function_exists( 'anp_buddypress_attribution' ) ) {
   add_action( 'anp_buddypress_main_bottom', 'anp_buddypress_attribution' );
 
 }
+

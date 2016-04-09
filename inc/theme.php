@@ -7,46 +7,51 @@
  * @package Activist_Network_Theme
  */
 
+
 /**
  * Count Widgets in Sidebar
  * Used to add classes to widget areas so widgets can be displayed one, two, three or four per row
  * https://gist.github.com/slobodan/6156076
  */
-function anp_network_main_count_widgets( $sidebar_id ) {
-  // If loading from front page, consult $_wp_sidebars_widgets rather than options to see if wp_convert_widget_settings() has made manipulations in memory.
-  global $_wp_sidebars_widgets;
+if( ! function_exists( 'anp_network_main_count_widgets' ) ) {
 
-  if ( empty( $_wp_sidebars_widgets ) ) :
-    $_wp_sidebars_widgets = get_option( 'sidebars_widgets', array() );
-  endif;
-  
-  $sidebars_widgets_count = $_wp_sidebars_widgets;
-  
-  if ( isset( $sidebars_widgets_count[ $sidebar_id ] ) ) :
+  function anp_network_main_count_widgets( $sidebar_id ) {
+    // If loading from front page, consult $_wp_sidebars_widgets rather than options to see if wp_convert_widget_settings() has made manipulations in memory.
+    global $_wp_sidebars_widgets;
 
-    $widget_count = count( $sidebars_widgets_count[ $sidebar_id ] );
-    $widget_classes = 'widget-count-' . count( $sidebars_widgets_count[ $sidebar_id ] );
-    if ( $widget_count % 4 == 0 || $widget_count > 6 ) :
-      // Four widgets er row if there are exactly four or more than six
-      $widget_classes .= ' per-row-4';
-    elseif ( $widget_count >= 3 ) :
-      // Three widgets per row if there's three or more widgets 
-      $widget_classes .= ' per-row-3';
-    elseif ( 2 == $widget_count ) :
-      // Otherwise show two widgets per row
-      $widget_classes .= ' per-row-2';
+    if ( empty( $_wp_sidebars_widgets ) ) :
+      $_wp_sidebars_widgets = get_option( 'sidebars_widgets', array() );
+    endif;
+    
+    $sidebars_widgets_count = $_wp_sidebars_widgets;
+    
+    if ( isset( $sidebars_widgets_count[ $sidebar_id ] ) ) :
+
+      $widget_count = count( $sidebars_widgets_count[ $sidebar_id ] );
+      $widget_classes = 'widget-count-' . count( $sidebars_widgets_count[ $sidebar_id ] );
+      if ( $widget_count % 4 == 0 || $widget_count > 6 ) :
+        // Four widgets er row if there are exactly four or more than six
+        $widget_classes .= ' per-row-4';
+      elseif ( $widget_count >= 3 ) :
+        // Three widgets per row if there's three or more widgets 
+        $widget_classes .= ' per-row-3';
+      elseif ( 2 == $widget_count ) :
+        // Otherwise show two widgets per row
+        $widget_classes .= ' per-row-2';
+      endif;
+
+      return $widget_classes;
+
     endif;
 
-    return $widget_classes;
-
-  endif;
+  }
 
 }
 
 /**
  * Custom Event Meta
  */
-if( !function_exists( 'anp_get_event_meta_list' ) ) {
+if( ! function_exists( 'anp_get_event_meta_list' ) ) {
 
   function anp_get_event_meta_list( $event_id = 0 ) {
 
@@ -90,66 +95,51 @@ remove_action( 'eventorganiser_additional_event_meta', 'bpeo_list_connected_grou
 
 remove_action( 'eventorganiser_additional_event_meta', 'bpeo_list_author' );
 
-if( function_exists( 'bpeo_get_the_ical_link' ) ) {
-
-  function anp_add_ical_link_to_eventmeta() {
-    // do not show for drafts
-    if ( 'draft' === get_post( get_the_ID() )->post_status ) {
-      return;
-    }
-  ?>
-    <li><?php
-      printf(
-      __( "%sSave to Calendar%s", 'bp-event-organiser' ),
-      '<a class="add-to-calendar button" href="' . bpeo_get_the_ical_link( get_the_ID() ) . '">',
-      '</a>'
-    ); ?></li>
-
-  <?php
-  }
-  //add_action( 'eventorganiser_additional_event_meta', 'anp_add_ical_link_to_eventmeta', 50 );
-
 
 /**
  * Display a list of connected groups on single event pages.
  */
-if( function_exists( 'bpeo_get_event_groups' ) ) {
-  function anp_list_event_groups() {
-    $event_group_ids = bpeo_get_event_groups( get_the_ID() );
+if( ! function_exists( 'anp_list_event_groups' ) ) {
 
-    if ( empty( $event_group_ids ) ) {
-      return;
-    }
+  if( function_exists( 'bpeo_get_event_groups' ) ) {
 
-    $event_groups = groups_get_groups( array(
-      'include' => $event_group_ids,
-      'show_hidden' => true, // We roll our own.
-    ) );
+    function anp_list_event_groups() {
+      $event_group_ids = bpeo_get_event_groups( get_the_ID() );
 
-    $markup = array();
-    foreach ( $event_groups['groups'] as $eg ) {
-      // Remove groups that the current user should not have access to.
-      if ( 'public' !== $eg->status && ! current_user_can( 'bp_moderate' ) && ! groups_is_user_member( bp_current_user_id(), $eg->id ) ) {
-        continue;
+      if ( empty( $event_group_ids ) ) {
+        return;
       }
 
-      $markup[] = sprintf(
-        '<a href="%s">%s</a>',
-        esc_url( bpeo_get_group_permalink( $eg ) ),
-        esc_html( stripslashes( $eg->name ) )
-      );
+      $event_groups = groups_get_groups( array(
+        'include' => $event_group_ids,
+        'show_hidden' => true, // We roll our own.
+      ) );
+
+      $markup = array();
+      foreach ( $event_groups['groups'] as $eg ) {
+        // Remove groups that the current user should not have access to.
+        if ( 'public' !== $eg->status && ! current_user_can( 'bp_moderate' ) && ! groups_is_user_member( bp_current_user_id(), $eg->id ) ) {
+          continue;
+        }
+
+        $markup[] = sprintf(
+          '<a href="%s">%s</a>',
+          esc_url( bpeo_get_group_permalink( $eg ) ),
+          esc_html( stripslashes( $eg->name ) )
+        );
+      }
+
+      if ( empty( $markup ) ) {
+        return;
+      }
+
+      $count = count( $markup );
+      $base = _n( '<span class="meta-label">Group</span> %s', '<span class="meta-label">Groups</span> %s', $count, 'anp-network-main' );
+
+      echo sprintf( '<li>' . wp_filter_kses( $base ) . '</li>', implode( ', ', $markup ) );
     }
 
-    if ( empty( $markup ) ) {
-      return;
-    }
-
-    $count = count( $markup );
-    $base = _n( '<span class="meta-label">Group</span> %s', '<span class="meta-label">Groups</span> %s', $count, 'anp-network-main' );
-
-    echo sprintf( '<li>' . wp_filter_kses( $base ) . '</li>', implode( ', ', $markup ) );
-  }
-  add_action( 'eventorganiser_additional_event_meta', 'anp_list_event_groups' );
+    add_action( 'eventorganiser_additional_event_meta', 'anp_list_event_groups' );
   }
 
 }
