@@ -46,9 +46,12 @@
         }
     }
 
-    .entry-title {
-        text-align: center;
+    #item-header {
+        .entry-title {
+            text-align: center;
+        }
     }
+
 
     #item-meta {
         text-align: center;
@@ -154,21 +157,24 @@
             float: right;
         }
 
-        .entry-title {
-            margin-top: 50px;
-            padding-top: .25em;
-            margin-bottom: 0;
-        }
+        #item-header {
+            .entry-title {
+                margin-top: 50px;
+                padding-top: .25em;
+                margin-bottom: 0;
+            }
 
-        .entry-title,
-        #item-header-content {
-            float: left;
-            width: 70%;
-        }
+            .entry-title,
+            #item-header-content {
+                float: left;
+                width: 70%;
+            }
 
-        .entry-title,
-        #item-meta {
-            text-align: left;
+            .entry-title,
+            #item-meta {
+                text-align: left;
+            }
+
         }
 
         #item-buttons {

@@ -174,6 +174,7 @@ body.buddypress .site-main,
     }
 
     // Lists
+    // General styles
     .item-list {
         @include no-bullets;
 
@@ -190,19 +191,6 @@ body.buddypress .site-main,
         .item,
         .action {
             display: block;
-        }
-
-        .activity-avatar,
-        .item-avatar,
-        .acomment-avatar {
-            text-align: center;
-            img {
-                display: inline-block;
-                width: 75px;
-                height: auto;
-                text-align: left;
-                margin: 0;
-            }
         }
 
         .action {
@@ -253,14 +241,11 @@ body.buddypress .site-main,
                 }
 
                 .activity-comments {
-                    flex: 0 0 calc(100% - 50px);
-                    margin-left: 50px;
-
+                    flex: 0 0 100%;
                     ul {
                         background-color: rgba(0,0,0,.05);
                         display: block;
                         width: 100%;
-                        margin-left: .5em;
                         margin-top: .25em;
 
                         li {
@@ -272,13 +257,16 @@ body.buddypress .site-main,
                             flex-wrap: wrap;
                             width: 100%;
 
-                            .acomment-entry {
-                                flex: 0 0 calc(100% - 85px);
-                            }
-
+                        }
+                        ul {
+                            margin-left: .5em;
                         }
                     }
 
+                }
+                .acomment-entry,
+                .activity-content {
+                    flex: 0 0 calc(100% - 85px);
                 }
 
             }
@@ -291,6 +279,28 @@ body.buddypress .site-main,
         }
 
 
+    }
+
+    /**
+     * Activity
+     */ 
+    #whats-new-form {
+        background-color: $color__background-panel;
+    }
+
+    .activity-list {
+        &> li {
+            border: 1px solid $color__background-hr;
+            border-radius: $element__border-radius-small;
+            &:not(:last-child) {
+                margin-bottom: .25em;
+            }
+        }
+
+        .ac-form {
+            margin-top: .25em;
+            background-color: $color__background-panel;
+        }
     }
 
     // Sections
@@ -440,12 +450,12 @@ body.buddypress .site-main,
         }
     }
 
-    .group-members {
-        .avatar {
-            width: 50px;
-            height: auto;
-        }
-    }
+    // .group-members {
+    //     .avatar {
+    //         width: 50px;
+    //         height: auto;
+    //     }
+    // }
 
     #whats-new-avatar,
     .activity-greeting {
@@ -508,60 +518,71 @@ body.buddypress .site-main,
     .acomment-options,
     .action {
         a {
+            @include button-icon($color: $color__mid-light-grey, $icon: cog, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            margin-bottom: .125em;
 
-            &[href$="document-title/"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            &.bp-secondary-action {
+                @include button-icon($color: $color__mid-light-grey, $icon: cog, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
+            &.view {
+                @include button-icon($color: $color__mid-light-grey, $icon: comments-o, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            }
+            &.visit {
+                @include button-icon($color: $color__mid-light-grey, $icon: globe, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            }
+            // &[href*="docs"] {
+            //     @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
+            // }
             &[href$="edit/"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &[href$="history"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: history, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: history, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.leave-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.acomment-reply {
-                @include button-icon($color: $color__mid-light-grey, $icon: reply, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: reply, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.fav {
-                @include button-icon($color: $color__mid-light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.unfav {
-                @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.delete-activity,
             &.acomment-delete {
-                @include button-icon($color: $color__mid-light-grey, $icon: trash, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: trash, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.unlink-from-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.leave-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.join-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-in, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: sign-in, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.group-subscription-options-link {
-                @include button-icon($color: $color__mid-light-grey, $icon: envelope, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: envelope, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
             &.friendship-button {
                 &.add {
-                    @include button-icon($color: $color__mid-light-grey, $icon: user-plus, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                    @include button-icon($color: $color__mid-light-grey, $icon: user-plus, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
                 }
                 &.requested {
-                    @include button-icon($color: $color__mid-light-grey, $icon: hourglass-o, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+                    @include button-icon($color: $color__mid-light-grey, $icon: hourglass-o, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
                 }
                 &.remove {
-                    @include button-icon($color: $color__mid-light-grey, $icon: user-times, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+                    @include button-icon($color: $color__mid-light-grey, $icon: user-times, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
                 }
             }
             &.mention {
-                @include button-icon($color: $color__mid-light-grey, $icon: bullhorn, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+                @include button-icon($color: $color__mid-light-grey, $icon: bullhorn, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
             }
             &.send-message {
-                @include button-icon($color: $color__mid-light-grey, $icon: comment, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white);
+                @include button-icon($color: $color__mid-light-grey, $icon: comment, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
 
             // Comment Badge
@@ -571,7 +592,7 @@ body.buddypress .site-main,
         }
 
         #user_switching_switch_to a {
-            @include button-icon($color: $color__mid-light-grey, $icon: random, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small, $background-color: $color__white); 
+            @include button-icon($color: $color__mid-light-grey, $icon: random, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
         }
     }
 
@@ -597,14 +618,14 @@ body.buddypress .site-main,
             display: block;
             &> a {
                 &.member-ban {
-                    @include button-icon($color: $color__mid-light-grey, $icon: ban, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: ban, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
                 }
                 &.member-promote-to-mod,
                 &.member-promote-to-admin {
-                    @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
                 }
                 &.confirm {
-                    @include button-icon($color: $color__mid-light-grey, $icon: times, $font-size: $small, $border-color: $color__light-grey, $border-radius: $element__border-radius-small);
+                    @include button-icon($color: $color__mid-light-grey, $icon: times, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
                 }
                 
             }
@@ -680,7 +701,13 @@ body.buddypress .site-main,
     }
 }
 
+#invite-anyone-steps {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .buddypress-attribution a {}
+
 
 /**
  * Member List and Friends List Layout
@@ -690,68 +717,69 @@ body.buddypress .site-main,
  */
 body.buddypress {
 
-    #members-list {
+    #members-list,
+    #blogs-list {
 
-    .action {
-        display: block;
-        .generic-button {
-            display: inline-block;
-        }
-    }
-
-    @include breakpoint(md) {
-
-        /**
-         * Member List and Friends List Layout
-         * @link https://plan.glocal.coop/issues/1308
-         * @link https://plan.glocal.coop/issues/1309
-         *
-         */
-        display: -ms-flex;
-        display: -webkit-flex;
-        display: flex;
-        flex-wrap: wrap;
-
-            &> li {
-                flex: 0 0 calc(50% - #{$gutter__column});
-                margin-top: .5em;
-                box-sizing: border-box;
-                border: 1px solid $color__border-nav-alt;
-
-                // Nested Flex
-                display: -ms-flex;
-                display: -webkit-flex;
-                display: flex;
-                flex-wrap: wrap;
-
-                &:nth-child(odd){
-                    margin-right: $gutter__column;
-                }
-
-                &:nth-child(even){
-                    margin-left: $gutter__column;
-                }
-
-                .item-avatar {
-                    flex: 0 0 110px;
-                    text-align: left;
-                    img {
-                        text-align: left;
-                    }
-                }
-
-                .item {
-                    flex: 0 0 calc(100% - 110px);
-                }
-
-                .action {
-                    flex: 0 0 calc(100% - 110px);
-                    margin-left: 110px;
-                }
-
+        .action {
+            display: block;
+            .generic-button {
+                display: inline-block;
             }
-        
         }
+
+        @include breakpoint(md) {
+
+            /**
+             * Member List and Friends List Layout
+             * @link https://plan.glocal.coop/issues/1308
+             * @link https://plan.glocal.coop/issues/1309
+             *
+             */
+            display: -ms-flex;
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+
+                &> li {
+                    flex: 0 0 calc(50% - #{$gutter__column});
+                    margin-top: .5em;
+                    box-sizing: border-box;
+                    border: 1px solid $color__border-nav-alt;
+
+                    // Nested Flex
+                    display: -ms-flex;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &:nth-child(odd){
+                        margin-right: $gutter__column;
+                    }
+
+                    &:nth-child(even){
+                        margin-left: $gutter__column;
+                    }
+
+                    .item-avatar {
+                        flex: 0 0 110px;
+                        text-align: left;
+                        img {
+                            text-align: left;
+                        }
+                    }
+
+                    .item {
+                        flex: 0 0 calc(100% - 110px);
+                    }
+
+                    .action {
+                        flex: 0 0 calc(100% - 110px);
+                        margin-left: 110px;
+                    }
+
+                }
+            
+            }
 
     }
 
@@ -760,7 +788,6 @@ body.buddypress {
      * @link https://plan.glocal.coop/issues/1246
      *
      */
-
     #group-settings-form {
 
         label.checkbox {
@@ -830,6 +857,41 @@ body.buddypress {
 }
 
 
+// Avatars
+
+.ac-reply-avatar img {
+    display: none;
+}
+
+//Small
+img.avatar {
+    width: 50px;
+    height: auto;
+}
+
+// Mini
+.activity-header,
+.bbp-author-avatar {
+    img.avatar {
+        width: 25px;
+    }
+}
+
+
+// Medium
+.activity-avatar,
+.item-avatar,
+.acomment-avatar {
+    text-align: center;
+    img {
+        display: inline-block;
+        width: 75px;
+        text-align: left;
+        margin: 0;
+    }
+}
+
+// Large
 
 
 
@@ -843,7 +905,7 @@ body.buddypress {
         display: block;
     }
 
-    .item-avatar img {
+    img.avatar {
         @extend %avatar;
         width: 100px;
         height: auto;
@@ -877,12 +939,10 @@ body.buddypress {
                 vertical-align: top;
             }
 
-            .item-avatar {
-                img {
-                    width: 50px;
-                    height: auto;
-                    margin-right: .25em;
-                }
+            img.avatar {
+                width: 50px;
+                height: auto;
+                margin-right: .25em;
             }
 
             .item {

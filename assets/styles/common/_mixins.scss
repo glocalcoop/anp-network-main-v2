@@ -391,7 +391,7 @@
   background: rgba($color__black, $opacity);
 }
 
-@mixin border($position: bottom, $space: .25em, $color: $color__background-hr-alt, $weight: 1px, $style: solid) {
+@mixin border($position: bottom, $space: .25em, $color: $color__border-hr, $weight: 1px, $style: solid) {
 
   @if $position == 'bottom' {
     border-bottom: $weight $style $color;

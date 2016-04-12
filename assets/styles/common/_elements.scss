@@ -116,7 +116,6 @@ time.updated {
 	}
 
 	.entry-meta:not(:empty),
-	.meta:not(:empty),
 	.pagination:not(:empty) {
 		@include border(top);
 		@include border(bottom);
@@ -138,6 +137,8 @@ time.updated {
 h1.entry-title,
 h1.page-title {
 	margin-top: 0;
+	display: block;
+	float: none;
 }
 
 .entry-image {

@@ -2083,8 +2083,8 @@ a[hreflang="es-ES"] .flag-icon-es,
     width: 50%;
     height: auto; }
 
-.bp-user #buddypress .entry-title,
-.groups #buddypress .entry-title {
+.bp-user #buddypress #item-header .entry-title,
+.groups #buddypress #item-header .entry-title {
   text-align: center; }
 
 .bp-user #buddypress #item-meta,
@@ -2239,21 +2239,21 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons {
     margin-top: 0;
     float: right; }
-  .bp-user #buddypress .entry-title,
-  .groups #buddypress .entry-title {
+  .bp-user #buddypress #item-header .entry-title,
+  .groups #buddypress #item-header .entry-title {
     margin-top: 50px;
     padding-top: .25em;
     margin-bottom: 0; }
-  .bp-user #buddypress .entry-title,
-  .bp-user #buddypress #item-header-content,
-  .groups #buddypress .entry-title,
-  .groups #buddypress #item-header-content {
+  .bp-user #buddypress #item-header .entry-title,
+  .bp-user #buddypress #item-header #item-header-content,
+  .groups #buddypress #item-header .entry-title,
+  .groups #buddypress #item-header #item-header-content {
     float: left;
     width: 70%; }
-  .bp-user #buddypress .entry-title,
-  .bp-user #buddypress #item-meta,
-  .groups #buddypress .entry-title,
-  .groups #buddypress #item-meta {
+  .bp-user #buddypress #item-header .entry-title,
+  .bp-user #buddypress #item-header #item-meta,
+  .groups #buddypress #item-header .entry-title,
+  .groups #buddypress #item-header #item-meta {
     text-align: left; }
   .bp-user #buddypress #item-buttons,
   .groups #buddypress #item-buttons {
