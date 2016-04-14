@@ -7,7 +7,9 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry' ); ?>>
+<?php $blog_id = get_post_meta( get_the_ID(), 'site_directory_blog_id', true ); ?>
+
+<article id="site-<?php echo $blog_id; ?>" <?php post_class( 'entry' ); ?>>
 
 	<?php do_action ( 'anp_network_main_entry_header_before' );?>
 
@@ -15,22 +17,30 @@
 
 		<?php do_action ( 'anp_network_main_entry_header_top' );?>
 
-		<?php $siteurl = get_post_meta( get_the_ID(), 'site_directory_siteurl', true ); ?>
-
-		<?php $blog_id = get_post_meta( get_the_ID(), 'site_directory_blog_id', true ); ?>
+		<?php
+		/*
+		 * Site URL function is provided by multisite directory plugin
+		 * @link https://wordpress.org/plugins/multisite-directory/
+		 */
+		if( function_exists( 'get_site_permalink' ) ) :
+			$siteurl = get_site_permalink( $blog_id );
+		else :
+			$siteurl = get_post_meta( get_the_ID(), 'site_directory_siteurl', true );
+		endif;
+		?>
 
 		<?php 
 		/*
 		 * Site logo will be in core starting in v 4.5
-		 * @links https://codex.wordpress.org/Theme_Logo
+		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		if( function_exists( 'get_site_directory_logo' ) ) : ?>
 			<div class="entry-avatar">
 				<?php echo get_site_directory_logo( $blog_id, 'thumbnail', array( 'class' => 'avatar' ) ); ?>
 			</div>
-		<?php endif; ?> 
+		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( $siteurl ) ), '</a></h2>' ); ?>
+		<h2 class="entry-title"><a href="<?php echo esc_url( $siteurl ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
 
