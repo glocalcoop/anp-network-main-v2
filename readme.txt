@@ -29,6 +29,10 @@ Activist NetworkTheme includes support for Jetpack's Infinite Scroll and Site Lo
 
 == Changelog ==
 
+= 2.0.5 - April 13 2016 =
+* [Bugfix]Fixed issue causing Network Directory links to not appear
+* Added pagination styling for current page
+
 = 2.0.4 - April 12 2016 =
 * Refined BuddyPress activity list styling
 * Resolved style conflict between #item-header .entry-title and .entry-title
