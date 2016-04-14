@@ -32,16 +32,25 @@
 		overflow: hidden;
 	}
 
-	& .nav-previous {
+	&.nav-previous {
 		float: left;
 		width: 50%;
 	}
 
-	& .nav-next {
+	&.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
 	}
+
+
+}
+
+.pagination {
+	&> li > span.current {
+		background-color: $color__secondary;
+		color: $color__white;
+	}	
 }
 
 .image-navigation,
