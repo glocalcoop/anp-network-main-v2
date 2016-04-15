@@ -23,8 +23,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.1");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1965,6 +1965,79 @@
 
 .icon-percent:before {
   content: ""; }
+
+.icon-gitlab:before {
+  content: ""; }
+
+.icon-wpbeginner:before {
+  content: ""; }
+
+.icon-wpforms:before {
+  content: ""; }
+
+.icon-envira:before {
+  content: ""; }
+
+.icon-universal-access:before {
+  content: ""; }
+
+.icon-wheelchair-alt:before {
+  content: ""; }
+
+.icon-question-circle-o:before {
+  content: ""; }
+
+.icon-blind:before {
+  content: ""; }
+
+.icon-audio-description:before {
+  content: ""; }
+
+.icon-volume-control-phone:before {
+  content: ""; }
+
+.icon-braille:before {
+  content: ""; }
+
+.icon-assistive-listening-systems:before {
+  content: ""; }
+
+.icon-asl-interpreting:before,
+.icon-american-sign-language-interpreting:before {
+  content: ""; }
+
+.icon-deafness:before,
+.icon-hard-of-hearing:before,
+.icon-deaf:before {
+  content: ""; }
+
+.icon-glide:before {
+  content: ""; }
+
+.icon-glide-g:before {
+  content: ""; }
+
+.icon-signing:before,
+.icon-sign-language:before {
+  content: ""; }
+
+.icon-low-vision:before {
+  content: ""; }
+
+.icon-viadeo:before {
+  content: ""; }
+
+.icon-viadeo-square:before {
+  content: ""; }
+
+.icon-snapchat:before {
+  content: ""; }
+
+.icon-snapchat-ghost:before {
+  content: ""; }
+
+.icon-snapchat-square:before {
+  content: ""; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
