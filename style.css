@@ -2716,20 +2716,20 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #16506B; }
 
-.alert, #buddypress .info, #buddypress .updated, #buddypress p.warning {
+.alert, #buddypress #message {
   padding: 15px;
   margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 0; }
-  .alert h4, #buddypress .info h4, #buddypress .updated h4, #buddypress p.warning h4 {
+  .alert h4, #buddypress #message h4 {
     margin-top: 0;
     color: inherit; }
-  .alert .alert-link, #buddypress .info .alert-link, #buddypress .updated .alert-link, #buddypress p.warning .alert-link {
+  .alert .alert-link, #buddypress #message .alert-link {
     font-weight: bold; }
-  .alert > p, #buddypress .info > p, #buddypress .updated > p, #buddypress p.warning > p,
-  .alert > ul, #buddypress .info > ul, #buddypress .updated > ul, #buddypress p.warning > ul {
+  .alert > p, #buddypress #message > p,
+  .alert > ul, #buddypress #message > ul {
     margin-bottom: 0; }
-  .alert > p + p, #buddypress .info > p + p, #buddypress .updated > p + p, #buddypress p.warning > p + p {
+  .alert > p + p, #buddypress #message > p + p {
     margin-top: 5px; }
 
 .alert-dismissable,
@@ -2742,40 +2742,40 @@ a.thumbnail.active {
     right: -21px;
     color: inherit; }
 
-.alert-success, #buddypress .updated {
+.alert-success, #buddypress #message.updated {
   background-color: #b3d7d9;
   border-color: #a1d1cc;
   color: #509ea3; }
-  .alert-success hr, #buddypress .updated hr {
+  .alert-success hr, #buddypress #message.updated hr {
     border-top-color: #90c9c3; }
-  .alert-success .alert-link, #buddypress .updated .alert-link {
+  .alert-success .alert-link, #buddypress #message.updated .alert-link {
     color: #3f7d81; }
 
-.alert-info, #buddypress .info {
+.alert-info, #buddypress #message.info {
   background-color: #4adcff;
   border-color: #26f9ff;
   color: #008Eb0; }
-  .alert-info hr, #buddypress .info hr {
+  .alert-info hr, #buddypress #message.info hr {
     border-top-color: #0df9ff; }
-  .alert-info .alert-link, #buddypress .info .alert-link {
+  .alert-info .alert-link, #buddypress #message.info .alert-link {
     color: #00657d; }
 
-.alert-warning, #buddypress p.warning {
+.alert-warning, #buddypress #message.warning, #buddypress p.warning {
   background-color: #fad9a4;
   border-color: #f9bc8b;
   color: #f39c12; }
-  .alert-warning hr, #buddypress p.warning hr {
+  .alert-warning hr, #buddypress #message.warning hr, #buddypress p.warning hr {
     border-top-color: #f8ae73; }
-  .alert-warning .alert-link, #buddypress p.warning .alert-link {
+  .alert-warning .alert-link, #buddypress #message.warning .alert-link, #buddypress p.warning .alert-link {
     color: #c87f0a; }
 
-.alert-danger {
+.alert-danger, #buddypress #message.error {
   background-color: #fce9e9;
   border-color: #f9d2d8;
   color: #eb6361; }
-  .alert-danger hr {
+  .alert-danger hr, #buddypress #message.error hr {
     border-top-color: #f6bcc5; }
-  .alert-danger .alert-link {
+  .alert-danger .alert-link, #buddypress #message.error .alert-link {
     color: #e53634; }
 
 .embed-responsive {
@@ -10657,7 +10657,8 @@ body.buddypress .site-main,
           color: #313334; }
         body.buddypress .site-main .item-list-tabs#subnav li#activity-filter-select,
         #bbpress-forums .item-list-tabs#subnav li#activity-filter-select {
-          text-align: center; }
+          text-align: center;
+          color: #313334; }
   body.buddypress .site-main #groups-order-select,
   #bbpress-forums #groups-order-select {
     background-color: transparent;
@@ -10759,7 +10760,8 @@ body.buddypress .site-main,
       border-top: 1px solid rgba(17, 17, 17, 0.1); }
   body.buddypress .site-main #whats-new-form,
   #bbpress-forums #whats-new-form {
-    background-color: #f2f2f3; }
+    background-color: #f2f2f3;
+    color: #313334; }
   body.buddypress .site-main .activity-list > li,
   #bbpress-forums .activity-list > li {
     border: 1px solid #cacccd;
@@ -13162,19 +13164,12 @@ img.avatar {
         .widget-buddypress .item-list > li .item {
           width: 75%; } }
 
-#buddypress .info {
+#buddypress #message {
+  clear: both;
   margin-top: .25em;
   margin-bottom: .25em; }
-  #buddypress .info p {
-    margin-top: 0;
-    background-color: transparent;
-    border: none;
-    color: inherit; }
-
-#buddypress .updated {
-  margin-top: .25em;
-  margin-bottom: .25em; }
-  #buddypress .updated p {
+  #buddypress #message p {
+    display: block;
     margin-top: 0;
     background-color: transparent;
     border: none;

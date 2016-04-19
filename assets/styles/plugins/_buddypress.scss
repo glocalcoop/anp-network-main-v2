@@ -160,6 +160,7 @@ body.buddypress .site-main,
 
                 &#activity-filter-select {
                     text-align: center;
+                    color: $color__foreground;
                 }
             }
         }
@@ -291,6 +292,7 @@ body.buddypress .site-main,
      */ 
     #whats-new-form {
         background-color: $color__background-panel;
+        color: $color__foreground;
     }
 
     .activity-list {
@@ -1035,36 +1037,36 @@ img.avatar {
 
 #buddypress {
     // Alerts
-    .info {
+    #message {
+        clear: both;
         @extend .alert;
-        @extend .alert-info;
+        @extend .alert-default;
         margin-top: .25em;
         margin-bottom: .25em;
-
         p {
+            display: block;
             margin-top: 0;
             background-color: transparent;
             border: none;
             color: inherit;
         }
-    }
-
-    .updated {
-        @extend .alert;
-        @extend .alert-success;
-        margin-top: .25em;
-        margin-bottom: .25em;
-
-        p {
-            margin-top: 0;
-            background-color: transparent;
-            border: none;
-            color: inherit;
+        &.info {
+            @extend .alert-info;
         }
+        &.updated {
+            @extend .alert-success;
+        }
+        &.warning {
+             @extend .alert-warning;
+        }
+        &.error {
+             @extend .alert-danger;
+        }
+
+
     }
 
     p.warning {
-        @extend .alert;
         @extend .alert-warning;
     }
 }
