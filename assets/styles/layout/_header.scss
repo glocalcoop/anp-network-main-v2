@@ -61,22 +61,37 @@
                     padding-left: .5em;
                 }
 
+                .social-links .menu {
+                    margin-left: auto;
+                    margin-right: 0;
+                    text-align: right;
+                }
             }
 
             .site-logo-link {
                 width: 100px;
             }
+
         }
 
 
     }
 
     .header-widgets {
-        .align-center ul {
+        .wrap {
+            padding: .5em;
+        }
+        .widget {
             text-align: center;
         }
-        .align-right ul {
-            text-align: right;
+
+        @include breakpoint(md) {
+            .wrap {
+                padding: 1.5em;
+            }
+            .widget.align-right {
+                text-align: right;
+            }
         }
     }
 
@@ -92,8 +107,8 @@
 
         @include breakpoint(md) {
             @include font-size($h5);
-            display: inline-block;
-            text-align: inherit;
+            display: table-cell;
+            text-align: left;
         }
         
         @include breakpoint(lg) {

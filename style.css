@@ -2716,26 +2716,20 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #16506B; }
 
-.alert, body.buddypress .site-main .info p,
-#bbpress-forums .info p {
+.alert, #buddypress #message {
   padding: 15px;
   margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 0; }
-  .alert h4, body.buddypress .site-main .info p h4,
-  #bbpress-forums .info p h4 {
+  .alert h4, #buddypress #message h4 {
     margin-top: 0;
     color: inherit; }
-  .alert .alert-link, body.buddypress .site-main .info p .alert-link,
-  #bbpress-forums .info p .alert-link {
+  .alert .alert-link, #buddypress #message .alert-link {
     font-weight: bold; }
-  .alert > p, body.buddypress .site-main .info p > p,
-  #bbpress-forums .info p > p,
-  .alert > ul, body.buddypress .site-main .info p > ul,
-  #bbpress-forums .info p > ul {
+  .alert > p, #buddypress #message > p,
+  .alert > ul, #buddypress #message > ul {
     margin-bottom: 0; }
-  .alert > p + p, body.buddypress .site-main .info p > p + p,
-  #bbpress-forums .info p > p + p {
+  .alert > p + p, #buddypress #message > p + p {
     margin-top: 5px; }
 
 .alert-dismissable,
@@ -2748,43 +2742,40 @@ a.thumbnail.active {
     right: -21px;
     color: inherit; }
 
-.alert-success {
+.alert-success, #buddypress #message.updated {
   background-color: #b3d7d9;
   border-color: #a1d1cc;
   color: #509ea3; }
-  .alert-success hr {
+  .alert-success hr, #buddypress #message.updated hr {
     border-top-color: #90c9c3; }
-  .alert-success .alert-link {
+  .alert-success .alert-link, #buddypress #message.updated .alert-link {
     color: #3f7d81; }
 
-.alert-info, body.buddypress .site-main .info p,
-#bbpress-forums .info p {
+.alert-info, #buddypress #message.info {
   background-color: #4adcff;
   border-color: #26f9ff;
   color: #008Eb0; }
-  .alert-info hr, body.buddypress .site-main .info p hr,
-  #bbpress-forums .info p hr {
+  .alert-info hr, #buddypress #message.info hr {
     border-top-color: #0df9ff; }
-  .alert-info .alert-link, body.buddypress .site-main .info p .alert-link,
-  #bbpress-forums .info p .alert-link {
+  .alert-info .alert-link, #buddypress #message.info .alert-link {
     color: #00657d; }
 
-.alert-warning {
+.alert-warning, #buddypress #message.warning, #buddypress p.warning {
   background-color: #fad9a4;
   border-color: #f9bc8b;
   color: #f39c12; }
-  .alert-warning hr {
+  .alert-warning hr, #buddypress #message.warning hr, #buddypress p.warning hr {
     border-top-color: #f8ae73; }
-  .alert-warning .alert-link {
+  .alert-warning .alert-link, #buddypress #message.warning .alert-link, #buddypress p.warning .alert-link {
     color: #c87f0a; }
 
-.alert-danger {
+.alert-danger, #buddypress #message.error {
   background-color: #fce9e9;
   border-color: #f9d2d8;
   color: #eb6361; }
-  .alert-danger hr {
+  .alert-danger hr, #buddypress #message.error hr {
     border-top-color: #f6bcc5; }
-  .alert-danger .alert-link {
+  .alert-danger .alert-link, #buddypress #message.error .alert-link {
     color: #e53634; }
 
 .embed-responsive {
@@ -2820,8 +2811,8 @@ a.thumbnail.active {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.1");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -4762,6 +4753,79 @@ a.thumbnail.active {
 
 .icon-percent:before {
   content: ""; }
+
+.icon-gitlab:before {
+  content: ""; }
+
+.icon-wpbeginner:before {
+  content: ""; }
+
+.icon-wpforms:before {
+  content: ""; }
+
+.icon-envira:before {
+  content: ""; }
+
+.icon-universal-access:before {
+  content: ""; }
+
+.icon-wheelchair-alt:before {
+  content: ""; }
+
+.icon-question-circle-o:before {
+  content: ""; }
+
+.icon-blind:before {
+  content: ""; }
+
+.icon-audio-description:before {
+  content: ""; }
+
+.icon-volume-control-phone:before {
+  content: ""; }
+
+.icon-braille:before {
+  content: ""; }
+
+.icon-assistive-listening-systems:before {
+  content: ""; }
+
+.icon-asl-interpreting:before,
+.icon-american-sign-language-interpreting:before {
+  content: ""; }
+
+.icon-deafness:before,
+.icon-hard-of-hearing:before,
+.icon-deaf:before {
+  content: ""; }
+
+.icon-glide:before {
+  content: ""; }
+
+.icon-glide-g:before {
+  content: ""; }
+
+.icon-signing:before,
+.icon-sign-language:before {
+  content: ""; }
+
+.icon-low-vision:before {
+  content: ""; }
+
+.icon-viadeo:before {
+  content: ""; }
+
+.icon-viadeo-square:before {
+  content: ""; }
+
+.icon-snapchat:before {
+  content: ""; }
+
+.icon-snapchat-ghost:before {
+  content: ""; }
+
+.icon-snapchat-square:before {
+  content: ""; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -5176,8 +5240,8 @@ a[hreflang="es-ES"] .flag-icon-es,
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.1");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -7118,6 +7182,79 @@ a[hreflang="es-ES"] .flag-icon-es,
 
 .icon-percent:before {
   content: ""; }
+
+.icon-gitlab:before {
+  content: ""; }
+
+.icon-wpbeginner:before {
+  content: ""; }
+
+.icon-wpforms:before {
+  content: ""; }
+
+.icon-envira:before {
+  content: ""; }
+
+.icon-universal-access:before {
+  content: ""; }
+
+.icon-wheelchair-alt:before {
+  content: ""; }
+
+.icon-question-circle-o:before {
+  content: ""; }
+
+.icon-blind:before {
+  content: ""; }
+
+.icon-audio-description:before {
+  content: ""; }
+
+.icon-volume-control-phone:before {
+  content: ""; }
+
+.icon-braille:before {
+  content: ""; }
+
+.icon-assistive-listening-systems:before {
+  content: ""; }
+
+.icon-asl-interpreting:before,
+.icon-american-sign-language-interpreting:before {
+  content: ""; }
+
+.icon-deafness:before,
+.icon-hard-of-hearing:before,
+.icon-deaf:before {
+  content: ""; }
+
+.icon-glide:before {
+  content: ""; }
+
+.icon-glide-g:before {
+  content: ""; }
+
+.icon-signing:before,
+.icon-sign-language:before {
+  content: ""; }
+
+.icon-low-vision:before {
+  content: ""; }
+
+.icon-viadeo:before {
+  content: ""; }
+
+.icon-viadeo-square:before {
+  content: ""; }
+
+.icon-snapchat:before {
+  content: ""; }
+
+.icon-snapchat-ghost:before {
+  content: ""; }
+
+.icon-snapchat-square:before {
+  content: ""; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -8479,14 +8616,24 @@ body {
         #masthead .site-branding .site-branding-container .site-description {
           padding-right: .5em;
           padding-left: .5em; }
+        #masthead .site-branding .site-branding-container .social-links .menu {
+          margin-left: auto;
+          margin-right: 0;
+          text-align: right; }
       #masthead .site-branding .site-logo-link {
         width: 100px; } }
 
-#masthead .header-widgets .align-center ul {
+#masthead .header-widgets .wrap {
+  padding: .5em; }
+
+#masthead .header-widgets .widget, #masthead .header-widgets article.handbook .table-of-contents, article.handbook #masthead .header-widgets .table-of-contents {
   text-align: center; }
 
-#masthead .header-widgets .align-right ul {
-  text-align: right; }
+@media screen and (min-width: 768px) {
+  #masthead .header-widgets .wrap {
+    padding: 1.5em; }
+  #masthead .header-widgets .widget.align-right, #masthead .header-widgets article.handbook .align-right.table-of-contents, article.handbook #masthead .header-widgets .align-right.table-of-contents {
+    text-align: right; } }
 
 #masthead .site-title {
   font-size: 16px;
@@ -8498,8 +8645,8 @@ body {
     #masthead .site-title {
       font-size: 18px;
       font-size: 1.125rem;
-      display: inline-block;
-      text-align: inherit; } }
+      display: table-cell;
+      text-align: left; } }
   @media screen and (min-width: 992px) {
     #masthead .site-title {
       font-size: 22px;
@@ -10510,7 +10657,12 @@ body.buddypress .site-main,
           color: #313334; }
         body.buddypress .site-main .item-list-tabs#subnav li#activity-filter-select,
         #bbpress-forums .item-list-tabs#subnav li#activity-filter-select {
-          text-align: center; }
+          text-align: center;
+          color: #313334; }
+  body.buddypress .site-main #groups-order-select,
+  #bbpress-forums #groups-order-select {
+    background-color: transparent;
+    color: #313334; }
   body.buddypress .site-main .item-body,
   #bbpress-forums .item-body {
     margin-top: .5em; }
@@ -10608,7 +10760,8 @@ body.buddypress .site-main,
       border-top: 1px solid rgba(17, 17, 17, 0.1); }
   body.buddypress .site-main #whats-new-form,
   #bbpress-forums #whats-new-form {
-    background-color: #f2f2f3; }
+    background-color: #f2f2f3;
+    color: #313334; }
   body.buddypress .site-main .activity-list > li,
   #bbpress-forums .activity-list > li {
     border: 1px solid #cacccd;
@@ -12907,6 +13060,55 @@ body.buddypress {
       font-size: 1.375rem;
       font-weight: normal; }
 
+body.invite-anyone div#content .main-column {
+  float: none;
+  margin: 0 !important;
+  width: 100% !important; }
+
+body.invite-anyone div#content .item-list li {
+  margin-top: .25em;
+  margin-bottom: .25em; }
+
+@media screen and (min-width: 768px) {
+  body.invite-anyone div#content .main-column {
+    float: left;
+    margin-left: 4% !important;
+    width: 65% !important; }
+    body.invite-anyone div#content .main-column:after {
+      content: "";
+      display: table;
+      clear: both; }
+  body.invite-anyone div#content #previous-next.submit {
+    clear: both; }
+  body.invite-anyone div#content .item-list {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    body.invite-anyone div#content .item-list li {
+      flex: 0 0 calc(50% - 15px);
+      box-sizing: border-box;
+      margin-top: .5em;
+      padding: .5em;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap; }
+      body.invite-anyone div#content .item-list li:nth-child(odd) {
+        margin-right: 15px; }
+      body.invite-anyone div#content .item-list li:nth-child(even) {
+        margin-left: 15px; }
+    body.invite-anyone div#content .item-list .avatar {
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      flex: 0 0 50px; }
+    body.invite-anyone div#content .item-list h4 {
+      margin: 0 0 0 10px;
+      flex: 0 0 calc(100% - 60px); } }
+
 .ac-reply-avatar img {
   display: none; }
 
@@ -12961,6 +13163,17 @@ img.avatar {
           margin-right: .25em; }
         .widget-buddypress .item-list > li .item {
           width: 75%; } }
+
+#buddypress #message {
+  clear: both;
+  margin-top: .25em;
+  margin-bottom: .25em; }
+  #buddypress #message p {
+    display: block;
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    color: inherit; }
 
 /**
  * BBPress Styles

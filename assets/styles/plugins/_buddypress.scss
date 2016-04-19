@@ -160,9 +160,15 @@ body.buddypress .site-main,
 
                 &#activity-filter-select {
                     text-align: center;
+                    color: $color__foreground;
                 }
             }
         }
+    }
+
+    #groups-order-select {
+        background-color: $color__background;
+        color: $color__foreground;
     }
 
     .item-body {
@@ -286,6 +292,7 @@ body.buddypress .site-main,
      */ 
     #whats-new-form {
         background-color: $color__background-panel;
+        color: $color__foreground;
     }
 
     .activity-list {
@@ -657,12 +664,6 @@ body.buddypress .site-main,
         }
     }
 
-    // Alerts
-    .info p {
-        @extend .alert;
-        @extend .alert-info;
-    }
-
     .item-list {
 
         .group-subscription-options {
@@ -856,6 +857,85 @@ body.buddypress {
 
 }
 
+// Invite Anyone
+
+body.invite-anyone div#content {
+    .left-menu {}
+    .main-column {
+        float: none;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .item-list {
+        li {
+            margin-top: .25em;
+            margin-bottom: .25em;
+        }
+    }
+}
+
+
+@include breakpoint(md) {
+
+    body.invite-anyone div#content {
+        .main-column {
+            float: left;
+            margin-left: 4% !important;
+            width: 65% !important;
+            @include clearfix;
+        }
+
+        #previous-next.submit {
+            clear: both;
+        }
+
+        .item-list {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                flex: 0 0 calc(50% - #{$gutter__column});
+                box-sizing: border-box;
+                margin-top: .5em;
+                padding: .5em;
+                border: 1px solid $color__border-nav-alt;
+
+                // Nested Flex
+                display: -ms-flex;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+
+                &:nth-child(odd){
+                    margin-right: $gutter__column;
+                }
+
+                &:nth-child(even){
+                    margin-left: $gutter__column;
+                }
+
+            }
+
+            .avatar {
+                margin: 0;
+                width: 50px;
+                height: 50px;
+                flex: 0 0 50px;
+            }
+
+            h4 {
+                margin: 0 0 0 10px;
+                flex: 0 0 calc(100% - 60px);
+            }
+        }
+    }
+ 
+}
+
 
 // Avatars
 
@@ -953,6 +1033,42 @@ img.avatar {
 
     }
 
+}
+
+#buddypress {
+    // Alerts
+    #message {
+        clear: both;
+        @extend .alert;
+        @extend .alert-default;
+        margin-top: .25em;
+        margin-bottom: .25em;
+        p {
+            display: block;
+            margin-top: 0;
+            background-color: transparent;
+            border: none;
+            color: inherit;
+        }
+        &.info {
+            @extend .alert-info;
+        }
+        &.updated {
+            @extend .alert-success;
+        }
+        &.warning {
+             @extend .alert-warning;
+        }
+        &.error {
+             @extend .alert-danger;
+        }
+
+
+    }
+
+    p.warning {
+        @extend .alert-warning;
+    }
 }
 
 
