@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.4
+Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,11 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist NetworkTheme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.6 - April 19 2016 =
+* Added custom invite-anyone template that mark-up more consistent with BuddyPress theme
+* Added styles for BuddyPress alerts
+* Updated Font Awesome version from 4.5.0 to 4.6.1 (includes new accessibility icons)
 
 = 2.0.5 - April 13 2016 =
 * [Bugfix]Fixed issue causing Network Directory links to not appear
