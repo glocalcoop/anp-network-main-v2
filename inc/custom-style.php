@@ -123,9 +123,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'output'      => array(
 			array(
 				'element'  => 'body, body li,
-				#colophon .bottom-navigation,
-				#buddypress .item-list-tabs ul li a,
-				#bbpress-forums .item-list-tabs ul li a',
+				#colophon .bottom-navigation',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_foreground'],
@@ -163,9 +161,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 			array(
 				'element'  => 'body, 
 				body li,
-				#colophon .bottom-navigation,
-				#buddypress .item-list-tabs ul li a,
-				#bbpress-forums .item-list-tabs ul li a',
+				#colophon .bottom-navigation',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -307,9 +303,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 			),
 			array(
 				'element'  => '#buddypress .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected,
-				#bbpress-forums .item-list-tabs ul li.current,
-				#bbpress-forums .item-list-tabs ul li.selected',
+				#buddypress .item-list-tabs ul li.selected',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_background'],
@@ -327,14 +321,6 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 			),
 			array(
 				'element'  => '#masthead .main-navigation-container',
-				'function' => 'css',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected,
-				#bbpress-forums .item-list-tabs ul li.current,
-				#bbpress-forums .item-list-tabs ul li.selected',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -369,30 +355,12 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	                $defaults['color_foreground'],
 	            ),
 			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected,
-				#bbpress-forums .item-list-tabs ul li.current,
-				#bbpress-forums .item-list-tabs ul li.selected',
-				'property' => 'color',
-				'exclude'  => array(
-	                $defaults['color_foreground'],
-	            ),
-			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
 				'element'  => '#masthead .main-navigation ul a,
 				#colophon .bottom-navigation a',
-				'function' => 'css',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected,
-				#bbpress-forums .item-list-tabs ul li.current,
-				#bbpress-forums .item-list-tabs ul li.selected',
 				'function' => 'css',
 				'property' => 'color',
 			),
