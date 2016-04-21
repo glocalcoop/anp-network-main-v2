@@ -301,14 +301,6 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	                $defaults['color_background'],
 	            ),
 			),
-			array(
-				'element'  => '#buddypress .item-list-tabs ul li.current,
-				#buddypress .item-list-tabs ul li.selected',
-				'property' => 'background-color',
-				'exclude'  => array(
-	                $defaults['color_background'],
-	            ),
-			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(

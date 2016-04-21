@@ -5,14 +5,20 @@ Knowledge Base
 
 .knowledge-base-list {
     @include no-bullets;
-    @extend %clearfix;
+    @include clearfix;
+
+    background-color: $color__background-panel;
+    padding: .5em;
 
     &> li {
-        @include border($weight: 1px, $color: $color__border-nav-alt);
-
-        &:first-child {
-            @include border($weight: 1px, $position: top, $color: $color__border-nav-alt);
-        }
+        padding: .5em;
+        margin-top: .25em;
+        margin-bottom: .25em;
+        background-color: $color__white;
+        border-radius: 4px;
+        border: 1px solid $color__border-nav-alt;
+        text-align: center;
+        color: $color__foreground;
     }
 
     li > ul {
@@ -61,13 +67,7 @@ Knowledge Base
             flex: 0 0 calc(50% - #{$gutter__column});
             // text-indent: 10px;
             box-sizing: border-box;
-            border: 1px solid $color__border-nav-alt;
-            padding: .5em;
-
-            &:first-child {
-                margin-top: 0;
-                padding-top: .5em;
-            }
+            text-align: left;
 
             &:nth-child(odd){
                 margin-right: $gutter__column;
