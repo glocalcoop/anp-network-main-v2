@@ -7,10 +7,19 @@
 
     .entries-list {
         @include clearfix;
+        background-color: $color__background-panel;
+        padding: .5em;
     }
 
     article {
+        padding: .5em;
+        margin-top: .25em;
+        margin-bottom: .25em;
+        background-color: $color__white;
+        border: 1px solid $color__border-nav-alt;
+        border-radius: 4px;
         text-align: center;
+        color: $color__foreground;
     }
 
     .entry-title {
@@ -44,11 +53,9 @@
         article,
         .entry:not(:last-child) {
             flex: 0 0 calc(50% - #{$gutter__column});
-            margin-top: .5em;
-            margin-bottom: .5em;
-            padding: .5em;
+            margin-top: .25em;
+            margin-bottom: .25em;
             box-sizing: border-box;
-            border: 1px solid $color__border-nav-alt;
             text-align: left;
 
             &:nth-child(odd){

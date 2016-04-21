@@ -20,6 +20,10 @@ body.buddypress {
 
 }
 
+.bp-screen-reader-text {
+    @include screen-reader-text;
+}
+
 body.buddypress .site-main,
 #bbpress-forums {
 
@@ -181,12 +185,25 @@ body.buddypress .site-main,
 
     // Lists
     // General styles
+    .dir-list,
+    .activity-list,
+    .activity-comments > ul {
+        background-color: $color__background-panel;
+        padding: .5em;
+    }
+
     .item-list {
         @include no-bullets;
 
         li {
+            padding: .5em;
+            margin-top: .25em;
+            margin-bottom: .25em;
+            background-color: $color__white;
+            border-radius: 4px;
             text-align: center;
-            padding: .25em;
+            color: $color__foreground;
+            border: 1px solid $color__border-nav-alt;
         }
 
         .item-title a {
@@ -240,16 +257,20 @@ body.buddypress .site-main,
                 }
 
                 .activity-avatar,
-                .item-avatar,
-                .acomment-avatar {
+                .item-avatar {
                     flex: 0 0 85px;
+                    text-align: left;
+                }
+
+                .acomment-avatar {
+                    flex: 0 0 50px;
                     text-align: left;
                 }
 
                 .activity-comments {
                     flex: 0 0 100%;
                     ul {
-                        background-color: rgba(0,0,0,.05);
+                        // background-color: rgba(0,0,0,.05);
                         display: block;
                         width: 100%;
                         margin-top: .25em;
@@ -270,9 +291,13 @@ body.buddypress .site-main,
                     }
 
                 }
-                .acomment-entry,
+
                 .activity-content {
                     flex: 0 0 calc(100% - 85px);
+                }
+
+                .acomment-entry {
+                    flex: 0 0 calc(100% - 60px);
                 }
 
             }
@@ -297,17 +322,18 @@ body.buddypress .site-main,
 
     .activity-list {
         &> li {
-            border: 1px solid $color__background-hr;
-            border-radius: $element__border-radius-small;
-            &:not(:last-child) {
-                margin-bottom: .25em;
-            }
+            padding: .5em;
+            margin-top: .25em;
+            margin-bottom: .25em;
+            background-color: $color__white;
+            border-radius: 4px;
+            color: $color__foreground;
         }
 
-        .ac-form {
-            margin-top: .25em;
-            background-color: $color__background-panel;
-        }
+        // .ac-form {
+        //     margin-top: .25em;
+        //     background-color: $color__background-panel;
+        // }
     }
 
     // Sections
@@ -939,6 +965,17 @@ body.invite-anyone div#content {
 
 // Avatars
 
+.activity-avatar,
+.item-avatar,
+.acomment-avatar {
+    text-align: center;
+    img {
+        display: inline-block;
+        text-align: left;
+        margin: 0;
+    }
+}
+
 .ac-reply-avatar img {
     display: none;
 }
@@ -957,17 +994,18 @@ img.avatar {
     }
 }
 
+.acomment-avatar {
+    img {
+        width: 50px;
+    }
+}
+
 
 // Medium
 .activity-avatar,
-.item-avatar,
-.acomment-avatar {
-    text-align: center;
+.item-avatar {
     img {
-        display: inline-block;
         width: 75px;
-        text-align: left;
-        margin: 0;
     }
 }
 
