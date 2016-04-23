@@ -8128,7 +8128,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: transparent;
+  background-color: transparent;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
