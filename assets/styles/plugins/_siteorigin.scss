@@ -118,15 +118,6 @@ PAGE BUILDER
             color: $color__text-widget-alt;
         }
 
-        .ow-button-base a {
-            @extend .btn;
-            @extend .btn-default;
-
-            .sow-icon-fontawesome {
-                color: $color__text-widget-alt;
-            }
-        }
-
     }
 }
 

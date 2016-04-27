@@ -1523,7 +1523,7 @@ select[multiple].input-lg {
 .btn, .home .entry.intro-content button, button,
 .button:not(.wpb_button_a),
 input[type="button"],
-input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, .so-widget-sow-cta .sow-cta-base .ow-button-base a, #secondary .sow-cta-base .ow-button-base a {
+input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, #secondary .sow-cta-base .ow-button-base a {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1545,10 +1545,10 @@ input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, .so-w
   .btn:focus, .home .entry.intro-content button:focus, button:focus,
   .button:focus:not(.wpb_button_a),
   input[type="button"]:focus,
-  input[type="submit"]:focus, input[type="reset"]:focus, .wpb_button:focus, .ow-button-base a:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry.intro-content button.focus, button.focus,
+  input[type="submit"]:focus, input[type="reset"]:focus, .wpb_button:focus, .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry.intro-content button.focus, button.focus,
   .focus.button:not(.wpb_button_a),
   input.focus[type="button"],
-  input.focus[type="submit"], input.focus[type="reset"], .focus.wpb_button, .ow-button-base a.focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus, .btn:active:focus, .home .entry.intro-content button:active:focus, button:active:focus,
+  input.focus[type="submit"], input.focus[type="reset"], .focus.wpb_button, .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus, .btn:active:focus, .home .entry.intro-content button:active:focus, button:active:focus,
   .button:active:focus:not(.wpb_button_a),
   input[type="button"]:active:focus,
   input[type="submit"]:active:focus, input[type="reset"]:active:focus, .wpb_button:active:focus, .ow-button-base a:active:focus, #secondary .sow-cta-base .ow-button-base a:active:focus, .btn:active.focus, .home .entry.intro-content button:active.focus, button:active.focus,
@@ -1567,22 +1567,22 @@ input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, .so-w
   .btn:hover, .home .entry.intro-content button:hover, button:hover,
   .button:hover:not(.wpb_button_a),
   input[type="button"]:hover,
-  input[type="submit"]:hover, input[type="reset"]:hover, .wpb_button:hover, .ow-button-base a:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover, .btn:focus, .home .entry.intro-content button:focus, button:focus,
+  input[type="submit"]:hover, input[type="reset"]:hover, .wpb_button:hover, .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover, .btn:focus, .home .entry.intro-content button:focus, button:focus,
   .button:focus:not(.wpb_button_a),
   input[type="button"]:focus,
-  input[type="submit"]:focus, input[type="reset"]:focus, .wpb_button:focus, .ow-button-base a:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry.intro-content button.focus, button.focus,
+  input[type="submit"]:focus, input[type="reset"]:focus, .wpb_button:focus, .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn.focus, .home .entry.intro-content button.focus, button.focus,
   .focus.button:not(.wpb_button_a),
   input.focus[type="button"],
-  input.focus[type="submit"], input.focus[type="reset"], .focus.wpb_button, .ow-button-base a.focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus {
+  input.focus[type="submit"], input.focus[type="reset"], .focus.wpb_button, .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus {
     color: #fff;
     text-decoration: none; }
   .btn:active, .home .entry.intro-content button:active, button:active,
   .button:active:not(.wpb_button_a),
   input[type="button"]:active,
-  input[type="submit"]:active, input[type="reset"]:active, .wpb_button:active, .ow-button-base a:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn.active, .home .entry.intro-content button.active, button.active,
+  input[type="submit"]:active, input[type="reset"]:active, .wpb_button:active, .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn.active, .home .entry.intro-content button.active, button.active,
   .active.button:not(.wpb_button_a),
   input.active[type="button"],
-  input.active[type="submit"], input.active[type="reset"], .active.wpb_button, .ow-button-base a.active, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active {
+  input.active[type="submit"], input.active[type="reset"], .active.wpb_button, .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -1590,10 +1590,10 @@ input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, .so-w
   .btn.disabled, .home .entry.intro-content button.disabled, button.disabled,
   .disabled.button:not(.wpb_button_a),
   input.disabled[type="button"],
-  input.disabled[type="submit"], input.disabled[type="reset"], .disabled.wpb_button, .ow-button-base a.disabled, .so-widget-sow-cta .sow-cta-base .ow-button-base a.disabled, #secondary .sow-cta-base .ow-button-base a.disabled, .btn[disabled], .home .entry.intro-content button[disabled], button[disabled],
+  input.disabled[type="submit"], input.disabled[type="reset"], .disabled.wpb_button, .ow-button-base a.disabled, #secondary .sow-cta-base .ow-button-base a.disabled, .btn[disabled], .home .entry.intro-content button[disabled], button[disabled],
   [disabled].button:not(.wpb_button_a),
   input[disabled][type="button"],
-  input[disabled][type="submit"], input[disabled][type="reset"], [disabled].wpb_button, .ow-button-base a[disabled], .so-widget-sow-cta .sow-cta-base .ow-button-base a[disabled], #secondary .sow-cta-base .ow-button-base a[disabled],
+  input[disabled][type="submit"], input[disabled][type="reset"], [disabled].wpb_button, .ow-button-base a[disabled], #secondary .sow-cta-base .ow-button-base a[disabled],
   fieldset[disabled] .btn,
   fieldset[disabled] .home .entry.intro-content button, .home .entry.intro-content
   fieldset[disabled] button,
@@ -1608,8 +1608,6 @@ input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, .so-w
   fieldset[disabled] .wpb_button,
   fieldset[disabled] .ow-button-base a, .ow-button-base
   fieldset[disabled] a,
-  fieldset[disabled] .so-widget-sow-cta .sow-cta-base .ow-button-base a, .so-widget-sow-cta .sow-cta-base .ow-button-base
-  fieldset[disabled] a,
   fieldset[disabled] #secondary .sow-cta-base .ow-button-base a, #secondary .sow-cta-base .ow-button-base
   fieldset[disabled] a {
     cursor: not-allowed;
@@ -1619,32 +1617,30 @@ input[type="submit"], input[type="reset"], .wpb_button, .ow-button-base a, .so-w
     box-shadow: none; }
 
 a.btn.disabled,
-a.disabled.button:not(.wpb_button_a), a.disabled.wpb_button, .ow-button-base a.disabled, .so-widget-sow-cta .sow-cta-base .ow-button-base a.disabled, #secondary .sow-cta-base .ow-button-base a.disabled,
+a.disabled.button:not(.wpb_button_a), a.disabled.wpb_button, .ow-button-base a.disabled, #secondary .sow-cta-base .ow-button-base a.disabled,
 fieldset[disabled] a.btn,
 fieldset[disabled]
 a.button:not(.wpb_button_a),
 fieldset[disabled] a.wpb_button,
 fieldset[disabled] .ow-button-base a, .ow-button-base
 fieldset[disabled] a,
-fieldset[disabled] .so-widget-sow-cta .sow-cta-base .ow-button-base a, .so-widget-sow-cta .sow-cta-base .ow-button-base
-fieldset[disabled] a,
 fieldset[disabled] #secondary .sow-cta-base .ow-button-base a, #secondary .sow-cta-base .ow-button-base
 fieldset[disabled] a {
   pointer-events: none; }
 
-.btn-default, .wpb_btn-default, .ow-button-base a, .so-widget-sow-cta .sow-cta-base .ow-button-base a, #secondary .sow-cta-base .ow-button-base a {
+.btn-default, .wpb_btn-default, .ow-button-base a, #secondary .sow-cta-base .ow-button-base a {
   color: #fff;
   background-color: #7B8083;
   border-color: rgba(123, 128, 131, 0.2); }
-  .btn-default:focus, .wpb_btn-default:focus, .ow-button-base a:focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn-default.focus, .focus.wpb_btn-default, .ow-button-base a.focus, .so-widget-sow-cta .sow-cta-base .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus {
+  .btn-default:focus, .wpb_btn-default:focus, .ow-button-base a:focus, #secondary .sow-cta-base .ow-button-base a:focus, .btn-default.focus, .focus.wpb_btn-default, .ow-button-base a.focus, #secondary .sow-cta-base .ow-button-base a.focus {
     color: #fff;
     background-color: #626669;
     border-color: rgba(61, 64, 65, 0.2); }
-  .btn-default:hover, .wpb_btn-default:hover, .ow-button-base a:hover, .so-widget-sow-cta .sow-cta-base .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover {
+  .btn-default:hover, .wpb_btn-default:hover, .ow-button-base a:hover, #secondary .sow-cta-base .ow-button-base a:hover {
     color: #fff;
     background-color: #626669;
     border-color: rgba(93, 97, 99, 0.2); }
-  .btn-default:active, .wpb_btn-default:active, .ow-button-base a:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn-default.active, .active.wpb_btn-default, .ow-button-base a.active, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active,
+  .btn-default:active, .wpb_btn-default:active, .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn-default.active, .active.wpb_btn-default, .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active,
   .open > .btn-default.dropdown-toggle,
   .open > .dropdown-toggle.wpb_btn-default, .ow-button-base
   .open > a.dropdown-toggle, #secondary .sow-cta-base .ow-button-base
@@ -1668,7 +1664,7 @@ fieldset[disabled] a {
       color: #fff;
       background-color: #515456;
       border-color: rgba(61, 64, 65, 0.2); }
-  .btn-default:active, .wpb_btn-default:active, .ow-button-base a:active, .so-widget-sow-cta .sow-cta-base .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn-default.active, .active.wpb_btn-default, .ow-button-base a.active, .so-widget-sow-cta .sow-cta-base .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active,
+  .btn-default:active, .wpb_btn-default:active, .ow-button-base a:active, #secondary .sow-cta-base .ow-button-base a:active, .btn-default.active, .active.wpb_btn-default, .ow-button-base a.active, #secondary .sow-cta-base .ow-button-base a.active,
   .open > .btn-default.dropdown-toggle,
   .open > .dropdown-toggle.wpb_btn-default, .ow-button-base
   .open > a.dropdown-toggle, #secondary .sow-cta-base .ow-button-base
@@ -1695,7 +1691,7 @@ fieldset[disabled] a {
   fieldset[disabled] a.focus {
     background-color: #7B8083;
     border-color: rgba(123, 128, 131, 0.2); }
-  .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
+  .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
     color: #7B8083;
     background-color: #fff; }
 
@@ -2616,7 +2612,7 @@ input[type="button"].btn-block {
   .btn .badge, .home .entry.intro-content button .badge, button .badge,
   .button:not(.wpb_button_a) .badge,
   input[type="button"] .badge,
-  input[type="submit"] .badge, input[type="reset"] .badge, .wpb_button .badge, .ow-button-base a .badge, .so-widget-sow-cta .sow-cta-base .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
+  input[type="submit"] .badge, input[type="reset"] .badge, .wpb_button .badge, .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
     position: relative;
     top: -1px; }
   .btn-xs .badge,
@@ -9837,7 +9833,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] .tags a, .tags
   input[type="reset"] a,
   input[type="submit"] .tags a, .tags
-  input[type="submit"] a, input[type="reset"] .tags a, .tags input[type="reset"] a, .wpb_button .tags a, .tags .wpb_button a, .ow-button-base a .tags a, .tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a .tags a, .tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a .tags a, .tags #secondary .sow-cta-base .ow-button-base a a, .btn
+  input[type="submit"] a, input[type="reset"] .tags a, .tags input[type="reset"] a, .wpb_button .tags a, .tags .wpb_button a, .ow-button-base a .tags a, .tags .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a .tags a, .tags #secondary .sow-cta-base .ow-button-base a a, .btn
   .category a,
   .category .btn a, .home .entry.intro-content button
   .category a,
@@ -9865,9 +9861,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   .category a,
   .category .wpb_button a, .ow-button-base a
   .category a,
-  .category .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  .category a,
-  .category .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  .category .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   .category a,
   .category #secondary .sow-cta-base .ow-button-base a a, .btn
   .cat-links a,
@@ -9897,9 +9891,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   .cat-links a,
   .cat-links .wpb_button a, .ow-button-base a
   .cat-links a,
-  .cat-links .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  .cat-links a,
-  .cat-links .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  .cat-links .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   .cat-links a,
   .cat-links #secondary .sow-cta-base .ow-button-base a a, .btn
   a.tag, .home .entry.intro-content button
@@ -9915,7 +9907,6 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   a.tag, input[type="reset"]
   a.tag, .wpb_button
   a.tag, .ow-button-base a
-  a.tag, .so-widget-sow-cta .sow-cta-base .ow-button-base a
   a.tag, #secondary .sow-cta-base .ow-button-base a
   a.tag, .btn
   .entry-terms a,
@@ -9945,9 +9936,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   .entry-terms a,
   .entry-terms .wpb_button a, .ow-button-base a
   .entry-terms a,
-  .entry-terms .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  .entry-terms a,
-  .entry-terms .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  .entry-terms .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   .entry-terms a,
   .entry-terms #secondary .sow-cta-base .ow-button-base a a, .btn body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .home .entry.intro-content button .activity, button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta button .activity,
   .button:not(.wpb_button_a) body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta
@@ -9957,7 +9946,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta
   input[type="reset"] .activity,
   input[type="submit"] body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta
-  input[type="submit"] .activity, input[type="reset"] body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta input[type="reset"] .activity, .wpb_button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn
+  input[type="submit"] .activity, input[type="reset"] body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta input[type="reset"] .activity, .wpb_button body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main #item-header-cover-image #item-meta .activity, body.buddypress .site-main #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #bbpress-forums #item-header-cover-image #item-meta .activity,
   #bbpress-forums #item-header-cover-image #item-meta .btn .activity, .home .entry.intro-content button
   #bbpress-forums #item-header-cover-image #item-meta .activity,
@@ -9985,9 +9974,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums #item-header-cover-image #item-meta .activity,
   #bbpress-forums #item-header-cover-image #item-meta .wpb_button .activity, .ow-button-base a
   #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums #item-header-cover-image #item-meta .activity,
-  #bbpress-forums #item-header-cover-image #item-meta .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums #item-header-cover-image #item-meta .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums #item-header-cover-image #item-meta .activity,
   #bbpress-forums #item-header-cover-image #item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn body.buddypress .site-main .highlight, body.buddypress .site-main .btn .highlight, .home .entry.intro-content button body.buddypress .site-main .highlight, body.buddypress .site-main .home .entry.intro-content button .highlight, button body.buddypress .site-main .highlight, body.buddypress .site-main button .highlight,
   .button:not(.wpb_button_a) body.buddypress .site-main .highlight, body.buddypress .site-main
@@ -9997,7 +9984,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] body.buddypress .site-main .highlight, body.buddypress .site-main
   input[type="reset"] .highlight,
   input[type="submit"] body.buddypress .site-main .highlight, body.buddypress .site-main
-  input[type="submit"] .highlight, input[type="reset"] body.buddypress .site-main .highlight, body.buddypress .site-main input[type="reset"] .highlight, .wpb_button body.buddypress .site-main .highlight, body.buddypress .site-main .wpb_button .highlight, .ow-button-base a body.buddypress .site-main .highlight, body.buddypress .site-main .ow-button-base a .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a body.buddypress .site-main .highlight, body.buddypress .site-main .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .highlight, body.buddypress .site-main #secondary .sow-cta-base .ow-button-base a .highlight, .btn
+  input[type="submit"] .highlight, input[type="reset"] body.buddypress .site-main .highlight, body.buddypress .site-main input[type="reset"] .highlight, .wpb_button body.buddypress .site-main .highlight, body.buddypress .site-main .wpb_button .highlight, .ow-button-base a body.buddypress .site-main .highlight, body.buddypress .site-main .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .highlight, body.buddypress .site-main #secondary .sow-cta-base .ow-button-base a .highlight, .btn
   #bbpress-forums .highlight,
   #bbpress-forums .btn .highlight, .home .entry.intro-content button
   #bbpress-forums .highlight,
@@ -10025,9 +10012,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums .highlight,
   #bbpress-forums .wpb_button .highlight, .ow-button-base a
   #bbpress-forums .highlight,
-  #bbpress-forums .ow-button-base a .highlight, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .highlight,
-  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .ow-button-base a .highlight, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .highlight,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base a .highlight, .btn body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .btn a, .home .entry.intro-content button body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .home .entry.intro-content button a, button body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags button a,
   .button:not(.wpb_button_a) body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags
@@ -10037,7 +10022,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags
   input[type="reset"] a,
   input[type="submit"] body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags
-  input[type="submit"] a, input[type="reset"] body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags input[type="reset"] a, .wpb_button body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .wpb_button a, .ow-button-base a body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn
+  input[type="submit"] a, input[type="reset"] body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags input[type="reset"] a, .wpb_button body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .wpb_button a, .ow-button-base a body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .bbp-topic-tags a, body.buddypress .site-main .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn
   #bbpress-forums .bbp-topic-tags a,
   #bbpress-forums .bbp-topic-tags .btn a, .home .entry.intro-content button
   #bbpress-forums .bbp-topic-tags a,
@@ -10065,9 +10050,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums .bbp-topic-tags a,
   #bbpress-forums .bbp-topic-tags .wpb_button a, .ow-button-base a
   #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .bbp-topic-tags a,
-  #bbpress-forums .bbp-topic-tags .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .bbp-topic-tags .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .bbp-topic-tags a,
   #bbpress-forums .bbp-topic-tags #secondary .sow-cta-base .ow-button-base a a, .btn body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .btn a, .home .entry.intro-content button body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .home .entry.intro-content button a, button body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell button a,
   .button:not(.wpb_button_a) body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell
@@ -10077,7 +10060,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell
   input[type="reset"] a,
   input[type="submit"] body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell
-  input[type="submit"] a, input[type="reset"] body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell input[type="reset"] a, .wpb_button body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .wpb_button a, .ow-button-base a body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn
+  input[type="submit"] a, input[type="reset"] body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell input[type="reset"] a, .wpb_button body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .wpb_button a, .ow-button-base a body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .tags-cell a, body.buddypress .site-main .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn
   #bbpress-forums .tags-cell a,
   #bbpress-forums .tags-cell .btn a, .home .entry.intro-content button
   #bbpress-forums .tags-cell a,
@@ -10105,9 +10088,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums .tags-cell a,
   #bbpress-forums .tags-cell .wpb_button a, .ow-button-base a
   #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .ow-button-base a a, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .tags-cell a,
-  #bbpress-forums .tags-cell .so-widget-sow-cta .sow-cta-base .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .tags-cell .ow-button-base a a, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .tags-cell a,
   #bbpress-forums .tags-cell #secondary .sow-cta-base .ow-button-base a a, .btn body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .btn .bbp-reply-permalink, .home .entry.intro-content button body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .home .entry.intro-content button .bbp-reply-permalink, button body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main button .bbp-reply-permalink,
   .button:not(.wpb_button_a) body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main
@@ -10117,7 +10098,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main
   input[type="reset"] .bbp-reply-permalink,
   input[type="submit"] body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main
-  input[type="submit"] .bbp-reply-permalink, input[type="reset"] body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main input[type="reset"] .bbp-reply-permalink, .wpb_button body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .wpb_button .bbp-reply-permalink, .ow-button-base a body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .ow-button-base a .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
+  input[type="submit"] .bbp-reply-permalink, input[type="reset"] body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main input[type="reset"] .bbp-reply-permalink, .wpb_button body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .wpb_button .bbp-reply-permalink, .ow-button-base a body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main .bbp-reply-permalink, body.buddypress .site-main #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
   body.buddypress .site-main span.time-since,
   body.buddypress .site-main .btn span.time-since, .home .entry.intro-content button
   body.buddypress .site-main span.time-since,
@@ -10145,9 +10126,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   body.buddypress .site-main span.time-since,
   body.buddypress .site-main .wpb_button span.time-since, .ow-button-base a
   body.buddypress .site-main span.time-since,
-  body.buddypress .site-main .ow-button-base a span.time-since, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  body.buddypress .site-main span.time-since,
-  body.buddypress .site-main .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
+  body.buddypress .site-main .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
   body.buddypress .site-main span.time-since,
   body.buddypress .site-main #secondary .sow-cta-base .ow-button-base a span.time-since, .btn
   #bbpress-forums .bbp-reply-permalink,
@@ -10177,9 +10156,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums .bbp-reply-permalink,
   #bbpress-forums .wpb_button .bbp-reply-permalink, .ow-button-base a
   #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .ow-button-base a .bbp-reply-permalink, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums .bbp-reply-permalink,
-  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .ow-button-base a .bbp-reply-permalink, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums .bbp-reply-permalink,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base a .bbp-reply-permalink, .btn
   #bbpress-forums span.time-since,
@@ -10209,9 +10186,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums span.time-since,
   #bbpress-forums .wpb_button span.time-since, .ow-button-base a
   #bbpress-forums span.time-since,
-  #bbpress-forums .ow-button-base a span.time-since, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums span.time-since,
-  #bbpress-forums .so-widget-sow-cta .sow-cta-base .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums .ow-button-base a span.time-since, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums span.time-since,
   #bbpress-forums #secondary .sow-cta-base .ow-button-base a span.time-since, .btn body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .btn .activity, .home .entry.intro-content button body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .home .entry.intro-content button .activity, button body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content button .activity,
   .button:not(.wpb_button_a) body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content
@@ -10221,7 +10196,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content
   input[type="reset"] .activity,
   input[type="submit"] body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content
-  input[type="submit"] .activity, input[type="reset"] body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content input[type="reset"] .activity, .wpb_button body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .wpb_button .activity, .ow-button-base a body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
+  input[type="submit"] .activity, input[type="reset"] body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content input[type="reset"] .activity, .wpb_button body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .wpb_button .activity, .ow-button-base a body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a body.buddypress .site-main #members-list .item-header-content .activity, body.buddypress .site-main #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
   body.buddypress .site-main #members-dir-list .item-header-content .activity,
   body.buddypress .site-main #members-dir-list .item-header-content .btn .activity, .home .entry.intro-content button
   body.buddypress .site-main #members-dir-list .item-header-content .activity,
@@ -10249,9 +10224,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   body.buddypress .site-main #members-dir-list .item-header-content .activity,
   body.buddypress .site-main #members-dir-list .item-header-content .wpb_button .activity, .ow-button-base a
   body.buddypress .site-main #members-dir-list .item-header-content .activity,
-  body.buddypress .site-main #members-dir-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  body.buddypress .site-main #members-dir-list .item-header-content .activity,
-  body.buddypress .site-main #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  body.buddypress .site-main #members-dir-list .item-header-content .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
   body.buddypress .site-main #members-dir-list .item-header-content .activity,
   body.buddypress .site-main #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #bbpress-forums #members-list .item-header-content .activity,
@@ -10281,9 +10254,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-list .item-header-content .activity,
   #bbpress-forums #members-list .item-header-content .wpb_button .activity, .ow-button-base a
   #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums #members-list .item-header-content .activity,
-  #bbpress-forums #members-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums #members-list .item-header-content .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums #members-list .item-header-content .activity,
   #bbpress-forums #members-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn
   #bbpress-forums #members-dir-list .item-header-content .activity,
@@ -10313,9 +10284,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-dir-list .item-header-content .wpb_button .activity, .ow-button-base a
   #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .ow-button-base a .activity, .so-widget-sow-cta .sow-cta-base .ow-button-base a
-  #bbpress-forums #members-dir-list .item-header-content .activity,
-  #bbpress-forums #members-dir-list .item-header-content .so-widget-sow-cta .sow-cta-base .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
+  #bbpress-forums #members-dir-list .item-header-content .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a
   #bbpress-forums #members-dir-list .item-header-content .activity,
   #bbpress-forums #members-dir-list .item-header-content #secondary .sow-cta-base .ow-button-base a .activity, .btn .knowledge-base-list .count, .knowledge-base-list .btn .count, .home .entry.intro-content button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content button .count, button .knowledge-base-list .count, .knowledge-base-list button .count,
   .button:not(.wpb_button_a) .knowledge-base-list .count, .knowledge-base-list
@@ -10325,7 +10294,7 @@ body.buddypress .site-main #members-dir-list .item-header-content .activity,
   input[type="reset"] .knowledge-base-list .count, .knowledge-base-list
   input[type="reset"] .count,
   input[type="submit"] .knowledge-base-list .count, .knowledge-base-list
-  input[type="submit"] .count, input[type="reset"] .knowledge-base-list .count, .knowledge-base-list input[type="reset"] .count, .wpb_button .knowledge-base-list .count, .knowledge-base-list .wpb_button .count, .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .ow-button-base a .count, .so-widget-sow-cta .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .so-widget-sow-cta .sow-cta-base .ow-button-base a .count, #secondary .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base a .count {
+  input[type="submit"] .count, input[type="reset"] .knowledge-base-list .count, .knowledge-base-list input[type="reset"] .count, .wpb_button .knowledge-base-list .count, .knowledge-base-list .wpb_button .count, .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .ow-button-base a .count, #secondary .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base a .count {
     position: relative;
     top: -1px; }
 
@@ -14030,8 +13999,6 @@ article.handbook .so-panel.table-of-contents {
     font-size: 2.25rem;
     color: #111; }
   .so-widget-sow-cta .sow-cta-base h5 {
-    color: #111; }
-  .so-widget-sow-cta .sow-cta-base .ow-button-base a .sow-icon-fontawesome {
     color: #111; }
 
 #secondary .sow-cta-base {
