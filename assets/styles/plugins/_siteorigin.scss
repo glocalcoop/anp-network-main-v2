@@ -31,10 +31,10 @@ PAGE BUILDER
 .ow-button-base a {
     @extend .btn;
     @extend .btn-default;
-    border-radius: $element__border-radius-base !important;
+    border-radius: $element__border-radius-base;
 
     .sow-icon-fontawesome {
-        color: $color__text-button !important;
+        color: $color__text-button;
     }
 }
 
@@ -59,7 +59,6 @@ PAGE BUILDER
 
     h3 a {
         @extend .post-excerpt;
-        // color: $color__text-main;
         font-weight: 300;
     }
 	.sow-carousel-thumbnail {
@@ -108,8 +107,8 @@ PAGE BUILDER
 .so-widget-sow-cta {
 
     .sow-cta-base {
-        background-color: $color__background-widget-alt !important;
-        border-color: $color__border-widget-alt !important;
+        background-color: $color__background-widget-alt;
+        border-color: $color__border-widget-alt;
 
         h4 {
             @include font-size($h2);
@@ -135,8 +134,8 @@ PAGE BUILDER
 
     // Call to Action
     .sow-cta-base {
-        background-color: $color__background-widget !important;
-        border-color: $color__border-widget !important;
+        background-color: $color__background-widget;
+        border-color: $color__border-widget;
         color: $color__text-widget;
 
         h4 {
@@ -152,7 +151,7 @@ PAGE BUILDER
             @extend .btn-default;
 
             .sow-icon-fontawesome {
-                color: $color__text-widget !important;
+                color: $color__text-widget;
             }
         }
 

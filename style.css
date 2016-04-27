@@ -13978,9 +13978,9 @@ PAGE BUILDER
  * Buttons
  */
 .ow-button-base a {
-  border-radius: 0 !important; }
+  border-radius: 0; }
   .ow-button-base a .sow-icon-fontawesome {
-    color: #fff !important; }
+    color: #fff; }
 
 /**
  * Override theme widget settings
@@ -14023,8 +14023,8 @@ article.handbook .so-panel.table-of-contents {
     color: #fff; }
 
 .so-widget-sow-cta .sow-cta-base {
-  background-color: #f2f2f3 !important;
-  border-color: rgba(17, 17, 17, 0.3) !important; }
+  background-color: #f2f2f3;
+  border-color: rgba(17, 17, 17, 0.3); }
   .so-widget-sow-cta .sow-cta-base h4 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -14035,8 +14035,8 @@ article.handbook .so-panel.table-of-contents {
     color: #111; }
 
 #secondary .sow-cta-base {
-  background-color: #16506B !important;
-  border-color: rgba(17, 17, 17, 0.3) !important;
+  background-color: #16506B;
+  border-color: rgba(17, 17, 17, 0.3);
   color: #fff; }
   #secondary .sow-cta-base h4 {
     font-size: 36px;
@@ -14045,7 +14045,7 @@ article.handbook .so-panel.table-of-contents {
   #secondary .sow-cta-base h5 {
     color: #fff; }
   #secondary .sow-cta-base .ow-button-base a .sow-icon-fontawesome {
-    color: #fff !important; }
+    color: #fff; }
 
 .so-widget-sow-slider .sow-slider-base {
   border: 5px solid #cacccd; }
