@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.8
+Stable tag: 2.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,9 +25,14 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 
 = Does this theme support any plugins? =
 
-Activist NetworkTheme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
+Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.9 - May 4 2016 =
+* [Bugfix]Fixed Notice: Trying to get property of non-object in wp-content/themes/anp-network-main/template-parts/content.php on line 63
+* Updated package.json to include bower as a dev-dependency
+* Fixed SASS compilation errors
 
 = 2.0.8 - April 22 2016 =
 * [Bugfix]Fixed body background scrolling issue.
