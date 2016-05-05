@@ -192,17 +192,15 @@ MEETINGS ARCHIVE & SINGLE STYLES
 
                 li {
 
-                    @extend %fa-before;
-
                     &.agenda-link {
-                        @extend %fa-list;
+                        @include icon-font($icon: list, $position: before);
                     }
                     &.summary-link,
                     &.meeting-link {
-                        @extend %fa-clipboard;
+                        @include icon-font($icon: clipboard, $position: before);
                     }
                     &.proposal-link {
-                        @extend %fa-gavel;
+                        @include icon-font($icon: gavel, $position: before);
                     }
 
                     &::before {

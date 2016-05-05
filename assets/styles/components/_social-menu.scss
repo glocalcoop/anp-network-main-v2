@@ -55,7 +55,7 @@
             @include icon-font(digg);
         }
         a[href*="dribbble.com"]:before {
-             @include icon-font(dribble);
+             @include icon-font(dribbble);
         }
         a[href*="dropbox.com"]:before {
              @include icon-font(dropbox);

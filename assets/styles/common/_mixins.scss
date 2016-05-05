@@ -171,7 +171,7 @@
  */
 @mixin button($font-size: $small, $bg-color: $color__default, $border-radius: $element__border-radius-base) {
 
-  @include transition(all 0.25s ease);
+  transition: all 0.25s ease;
   @include font-size($font-size);
   text-align: center;
   background-color: $bg-color;

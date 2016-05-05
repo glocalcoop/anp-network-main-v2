@@ -58,7 +58,7 @@ PAGE BUILDER
 .so-widget-sow-post-carousel {
 
     h3 a {
-        @extend .post-excerpt;
+        @extend .entry-content;
         font-weight: 300;
     }
 	.sow-carousel-thumbnail {

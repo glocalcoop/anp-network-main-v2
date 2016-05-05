@@ -372,7 +372,7 @@ body.buddypress .site-main,
         }
 
         .bbp-footer {
-            @extend .panel-footer;
+            @extend .panel-footer !optional;
         }
     }
 
@@ -433,9 +433,9 @@ body.buddypress .site-main,
 
     // Tables
     table {
-        @extend .table;
-        @extend .table-striped;
-        @extend .table-hover;
+        @extend .table !optional;
+        @extend .table-striped !optional;
+        @extend .table-hover !optional;
 
         border-top: 1px solid $color__border-nav;
 
@@ -1078,7 +1078,7 @@ img.avatar {
     #message {
         clear: both;
         @extend .alert;
-        @extend .alert-default;
+        @extend .alert-default !optional;
         margin-top: .25em;
         margin-bottom: .25em;
         p {

@@ -3,7 +3,7 @@ HANDBOOK STYLES
 *********************/
 
 article.handbook {
-    @extend .post;
+    @extend .entry;
 
     .byline {
         display: none;
@@ -26,8 +26,7 @@ article.handbook {
         color: transparent;
         width: 0;
         &:before {
-            @extend %fa;
-            @extend %fa-link;
+            @include icon-font(chain);
             opacity: 1;
             color: $color__link;
         }
@@ -47,8 +46,7 @@ article.handbook {
             width: 0;
 
             &:before {
-                @extend %fa;
-                @extend %fa-angle-up;
+                @include icon-font(angle-up);
                 opacity: 1;
                 color: $color__link;
                 font-size: 2.75em;
