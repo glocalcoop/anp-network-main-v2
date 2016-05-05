@@ -60,10 +60,14 @@
 	  * If there are multiple taxonomies, the object will contain `taxonomies` key - take the first one
 	  * If there is only one taxonomy, the object will contain a `taxonomy` key - use that
 	  */
-	 $taxonomy = ( ! empty( $queried_object->taxonomies ) ) ? $queried_object->taxonomies[0] : $queried_object->taxonomy;
+	 if( ! empty( $queried_object->taxonomies ) ) {
+	 	$taxonomy = $queried_object->taxonomies[0];
+	 } elseif( ! empty( $queried_object->taxonomy ) ) {
+	 	$taxonomy = $queried_object->taxonomy;
+	 }
 	 ?>
 
-	<?php if( $taxonomy ) : ?>
+	<?php if( isset( $taxonomy ) ) : ?>
 
 	<footer class="entry-footer">
 
