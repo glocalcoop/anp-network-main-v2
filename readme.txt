@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.9
+Stable tag: 2.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,14 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.10 - May 10 2016 =
+* Added custom-logo support for 4.5
+* Added display of custom-logo, with fallback to Jetpack site-logo, then site name
+* Added styling for multisite directory shortcode
+* Cleaned up entry-meta display
+* Fixed custom-logo and tagline display
+* Updated Font Awesome library to 4.6.2
 
 = 2.0.9 - May 4 2016 =
 * [Bugfix]Fixed Notice: Trying to get property of non-object in wp-content/themes/anp-network-main/template-parts/content.php on line 63
