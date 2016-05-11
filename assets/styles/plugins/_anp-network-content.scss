@@ -2,6 +2,25 @@
 NETWORK CONTENT
 *********************/
 
+
+.site-main {
+
+    .anp-network-posts {
+
+        .entry:not(:last-child) {
+            margin-bottom: 2em;
+            padding-bottom: 2em;
+        }
+
+        .entry-content {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+}
+
+
 .widget__anp-network-posts,
 .widget__anp-network-sites,
 .widget__anp-network-events {
