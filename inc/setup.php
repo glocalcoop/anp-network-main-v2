@@ -84,6 +84,8 @@ function anp_network_main_setup() {
         'site-title',
         'site-description'
     ),
+    'flex-height' => true,
+    'flex-width'  => true,
     'size' => 'site-logo',
   );
 
@@ -91,7 +93,7 @@ function anp_network_main_setup() {
   add_theme_support( 'site-logo', $custom_logo_args );
 
   // Core custom-logo
-  //add_theme_support( 'custom-logo', $custom_logo_args );
+  add_theme_support( 'custom-logo', $custom_logo_args );
 
   /*
    * Set up the WordPress core custom background feature.
