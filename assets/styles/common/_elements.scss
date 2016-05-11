@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background-color: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote, q {
@@ -117,9 +117,28 @@ time.updated {
 
 	.entry-meta:not(:empty),
 	.pagination:not(:empty) {
-		@include border(top);
-		@include border(bottom);
+		// @include border(top);
+		// @include border(bottom);
+		.site-name,
+		.post-date {
+			&:after {
+				content: ' / ';
+			}
+		}
+
 	}
+}
+
+.entry-header {
+	.entry-meta:not(:empty) {}
+}
+
+.entry-footer {
+	.entry-meta:not(:empty) {}
+}
+
+.meta-label {
+	@extend %visuallyhidden;
 }
 
 .entry-meta ul {

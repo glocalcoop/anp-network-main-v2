@@ -23,14 +23,14 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.1");
-  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.1") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.1") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.1") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.1") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular") format("svg");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.2");
+  src: url("dist/vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.2") format("embedded-opentype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2") format("woff2"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.2") format("woff"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.2") format("truetype"), url("dist/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.2#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 .icon {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -1265,7 +1265,7 @@
 .icon-digg:before {
   content: ""; }
 
-.icon-pied-piper:before {
+.icon-pied-piper-pp:before {
   content: ""; }
 
 .icon-pied-piper-alt:before {
@@ -1391,6 +1391,7 @@
   content: ""; }
 
 .icon-ra:before,
+.icon-resistance:before,
 .icon-rebel:before {
   content: ""; }
 
@@ -2039,6 +2040,18 @@
 .icon-snapchat-square:before {
   content: ""; }
 
+.icon-pied-piper:before {
+  content: ""; }
+
+.icon-first-order:before {
+  content: ""; }
+
+.icon-yoast:before {
+  content: ""; }
+
+.icon-themeisle:before {
+  content: ""; }
+
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 .bp-user #buddypress #item-buttons #user_switching_switch_to a:before,
@@ -2125,6 +2138,20 @@ a[hreflang="es-ES"] .flag-icon-es,
 /**
  * Utilities
  */
+/**
+ * Extends
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.bp-user #buddypress #item-header #item-header header:after,
+.groups #buddypress #item-header #item-header header:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .bp-user #buddypress #header-cover-image,
 .groups #buddypress #header-cover-image {
   background-size: cover;
@@ -2180,7 +2207,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .leave-group:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2190,7 +2217,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .join-group:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2200,7 +2227,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .group-subscription-options-link:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2210,7 +2237,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .friendship-button.add:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2220,7 +2247,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .friendship-button.requested:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2230,7 +2257,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .friendship-button.remove:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2240,7 +2267,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons #user_switching_switch_to a:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2250,7 +2277,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .mention:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -2260,7 +2287,7 @@ a[hreflang="es-ES"] .flag-icon-es,
   .groups #buddypress #item-buttons .send-message:before {
     margin-right: .5em;
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;

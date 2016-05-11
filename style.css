@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.9
+Version: 2.0.10
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -7824,6 +7824,16 @@ body.buddypress .site-main .forums .bbp-body .entry:after, body.buddypress .site
   margin: 0 auto;
   width: 90%; }
 
+.meta-label {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute; }
+
 .archive-meeting .content-filter li,
 .archive-agenda .content-filter li,
 .archive-summary .content-filter li,
@@ -8229,7 +8239,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: transparent;
+  background: transparent;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -8325,18 +8335,19 @@ time.updated {
 .comment-content blockquote blockquote:not(.alignleft):not(.alignright) {
   margin-left: 0; }
 
-.entry-content .entry-meta:not(:empty), .so-widget-sow-post-carousel h3 a .entry-meta:not(:empty),
-.entry-content .pagination:not(:empty), .so-widget-sow-post-carousel h3 a .pagination:not(:empty),
-.entry-summary .entry-meta:not(:empty),
-.entry-summary .pagination:not(:empty),
-.comment-content .entry-meta:not(:empty),
-.comment-content .pagination:not(:empty) {
-  border-top: 1px solid #cacccd;
-  margin-top: 0.25em;
-  padding-top: 0.25em;
-  border-bottom: 1px solid #cacccd;
-  margin-bottom: 0.25em;
-  padding-bottom: 0.25em; }
+.entry-content .entry-meta:not(:empty) .site-name:after, .so-widget-sow-post-carousel h3 a .entry-meta:not(:empty) .site-name:after,
+.entry-content .entry-meta:not(:empty) .post-date:after, .so-widget-sow-post-carousel h3 a .entry-meta:not(:empty) .post-date:after,
+.entry-content .pagination:not(:empty) .site-name:after, .so-widget-sow-post-carousel h3 a .pagination:not(:empty) .site-name:after,
+.entry-content .pagination:not(:empty) .post-date:after, .so-widget-sow-post-carousel h3 a .pagination:not(:empty) .post-date:after,
+.entry-summary .entry-meta:not(:empty) .site-name:after,
+.entry-summary .entry-meta:not(:empty) .post-date:after,
+.entry-summary .pagination:not(:empty) .site-name:after,
+.entry-summary .pagination:not(:empty) .post-date:after,
+.comment-content .entry-meta:not(:empty) .site-name:after,
+.comment-content .entry-meta:not(:empty) .post-date:after,
+.comment-content .pagination:not(:empty) .site-name:after,
+.comment-content .pagination:not(:empty) .post-date:after {
+  content: ' / '; }
 
 .entry-meta ul {
   margin: 0;
@@ -8707,38 +8718,12 @@ body {
     vertical-align: middle; }
     #masthead .site-branding .social-links ul li {
       display: table-cell; }
-  @media screen and (min-width: 768px) {
-    #masthead .site-branding {
-      width: 100%; }
-      #masthead .site-branding .site-branding-container {
-        display: table; }
-        #masthead .site-branding .site-branding-container .site-logo-link,
-        #masthead .site-branding .site-branding-container .site-description,
-        #masthead .site-branding .site-branding-container .social-links {
-          display: table-cell;
-          text-align: left;
-          vertical-align: middle; }
-        #masthead .site-branding .site-branding-container .site-description {
-          padding-right: .5em;
-          padding-left: .5em; }
-        #masthead .site-branding .site-branding-container .social-links .menu {
-          margin-left: auto;
-          margin-right: 0;
-          text-align: right; }
-      #masthead .site-branding .site-logo-link {
-        width: 100px; } }
 
-#masthead .header-widgets .wrap {
-  padding: .5em; }
-
-#masthead .header-widgets .widget, #masthead .header-widgets article.handbook .table-of-contents, article.handbook #masthead .header-widgets .table-of-contents {
+#masthead .header-widgets .align-center ul {
   text-align: center; }
 
-@media screen and (min-width: 768px) {
-  #masthead .header-widgets .wrap {
-    padding: 1.5em; }
-  #masthead .header-widgets .widget.align-right, #masthead .header-widgets article.handbook .align-right.table-of-contents, article.handbook #masthead .header-widgets .align-right.table-of-contents {
-    text-align: right; } }
+#masthead .header-widgets .align-right ul {
+  text-align: right; }
 
 #masthead .site-title {
   font-size: 16px;
@@ -8750,7 +8735,7 @@ body {
     #masthead .site-title {
       font-size: 18px;
       font-size: 1.125rem;
-      display: table-cell;
+      display: inline-block;
       text-align: left; } }
   @media screen and (min-width: 992px) {
     #masthead .site-title {
@@ -8770,6 +8755,28 @@ body {
     #masthead .site-description {
       font-size: 28px;
       font-size: 1.75rem; } }
+
+@media screen and (min-width: 768px) {
+  #masthead {
+    width: 100%; }
+    #masthead .site-branding-container {
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: no-wrap;
+      text-align: left;
+      align-items: center;
+      justify-content: center; }
+      #masthead .site-branding-container .site-logo-link,
+      #masthead .site-branding-container .site-description,
+      #masthead .site-branding-container .social-links {
+        text-align: left;
+        vertical-align: middle; }
+      #masthead .site-branding-container .site-description {
+        padding-left: .5em;
+        flex: 1; }
+    #masthead .social-links {
+      text-align: right; } }
 
 #colophon {
   margin-top: 1em; }
@@ -13241,9 +13248,9 @@ img.avatar {
 /**
  * BBPress Styles
  */
-/*********************
-EVENT ORGANISER
-*********************/
+/**
+ * EVENT ORGANISER
+ */
 .page-events #main {
   width: 100%; }
 
@@ -14449,6 +14456,14 @@ article.handbook .so-panel.table-of-contents {
 /*********************
 NETWORK CONTENT
 *********************/
+.site-main .anp-network-posts .entry:not(:last-child), .site-main .anp-network-posts article.handbook:not(:last-child) {
+  margin-bottom: 2em;
+  padding-bottom: 2em; }
+
+.site-main .anp-network-posts .entry-content, .site-main .anp-network-posts .so-widget-sow-post-carousel h3 a, .so-widget-sow-post-carousel h3 .site-main .anp-network-posts a {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
 .widget__anp-network-posts.widget li a:hover, article.handbook .widget__anp-network-posts.table-of-contents li a:hover, .widget__anp-network-posts.widget li a:focus, article.handbook .widget__anp-network-posts.table-of-contents li a:focus,
 .widget__anp-network-sites.widget li a:hover, article.handbook .widget__anp-network-sites.table-of-contents li a:hover,
 .widget__anp-network-sites.widget li a:focus, article.handbook .widget__anp-network-sites.table-of-contents li a:focus,
@@ -14584,26 +14599,15 @@ NETWORK CONTENT
 /**
  * NETWORK CONTENT
  */
-.archive-network_directory .entries-list,
-.taxonomy-subsite_category .entries-list {
-  background-color: #f2f2f3;
-  padding: .5em; }
-  .archive-network_directory .entries-list:after,
-  .taxonomy-subsite_category .entries-list:after {
-    content: "";
-    display: table;
-    clear: both; }
+.archive-network_directory .entries-list:after,
+.taxonomy-subsite_category .entries-list:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .archive-network_directory article,
 .taxonomy-subsite_category article {
-  padding: .5em;
-  margin-top: .25em;
-  margin-bottom: .25em;
-  background-color: #fff;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 4px;
-  text-align: center;
-  color: #313334; }
+  text-align: center; }
 
 .archive-network_directory .entry-title,
 .taxonomy-subsite_category .entry-title {
@@ -14638,9 +14642,11 @@ NETWORK CONTENT
   .taxonomy-subsite_category .entry:not(:last-child),
   .taxonomy-subsite_category article.handbook:not(:last-child) {
     flex: 0 0 calc(50% - 5px);
-    margin-top: .25em;
-    margin-bottom: .25em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
     box-sizing: border-box;
+    border: 1px solid rgba(17, 17, 17, 0.1);
     text-align: left; }
     .archive-network_directory article:nth-child(odd),
     .archive-network_directory .entry:not(:last-child):nth-child(odd),
@@ -14679,6 +14685,52 @@ NETWORK CONTENT
   .taxonomy-subsite_category .has-post-thumbnail .entry-title {
     flex: 0 0 calc(100% - 85px);
     justify-content: flex-end; } }
+
+.network-directory-sites {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: bold; }
+  .network-directory-sites > li {
+    font-size: 28px;
+    font-size: 1.75rem;
+    border-bottom: 1px solid #cacccd;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em; }
+    .network-directory-sites > li > ul {
+      margin-left: 0; }
+  .network-directory-sites ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .network-directory-sites a {
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .network-directory-sites {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap; }
+    .network-directory-sites > li {
+      flex: 0 0 calc(50% - 5px);
+      margin-top: .5em;
+      margin-bottom: .5em;
+      padding: .5em;
+      box-sizing: border-box;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      text-align: left;
+      font-size: 28px;
+      font-size: 1.75rem; }
+      .network-directory-sites > li:nth-child(odd) {
+        margin-right: 5px; }
+      .network-directory-sites > li:nth-child(even) {
+        margin-left: 5px; }
+    .network-directory-sites a {
+      font-size: 16px;
+      font-size: 1rem; } }
 
 /*********************
 NETWORK CONTENT
