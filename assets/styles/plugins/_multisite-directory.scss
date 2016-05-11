@@ -7,19 +7,10 @@
 
     .entries-list {
         @include clearfix;
-        background-color: $color__background-panel;
-        padding: .5em;
     }
 
     article {
-        padding: .5em;
-        margin-top: .25em;
-        margin-bottom: .25em;
-        background-color: $color__white;
-        border: 1px solid $color__border-nav-alt;
-        border-radius: 4px;
         text-align: center;
-        color: $color__foreground;
     }
 
     .entry-title {
@@ -53,9 +44,11 @@
         article,
         .entry:not(:last-child) {
             flex: 0 0 calc(50% - #{$gutter__column});
-            margin-top: .25em;
-            margin-bottom: .25em;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            padding: .5em;
             box-sizing: border-box;
+            border: 1px solid $color__border-nav-alt;
             text-align: left;
 
             &:nth-child(odd){
@@ -97,5 +90,60 @@
 
     }
 
+}
+
+.network-directory-sites {
+    @include no-bullets;
+    font-weight: bold;
+
+    &> li {
+        @include font-size($h3);
+        @include border(bottom);
+
+        &> ul {
+            margin-left: 0;
+        }
+    }
+    ul {
+       @include no-bullets; 
+    }
+    a {
+        font-weight: normal;
+        @include font-size($h6);
+    }
+}
+
+@include breakpoint(md) {
+
+    .network-directory-sites {
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+        &> li {
+            flex: 0 0 calc(50% - #{$gutter__column});
+            margin-top: .5em;
+            margin-bottom: .5em;
+            padding: .5em;
+            box-sizing: border-box;
+            border: 1px solid $color__border-nav-alt;
+            text-align: left;
+            @include font-size($h3);
+
+            &:nth-child(odd){
+                margin-right: $gutter__column;
+            }
+
+            &:nth-child(even){
+                margin-left: $gutter__column;
+            }
+        }
+        ul {
+        }
+        a {
+            @include font-size($h6);
+        }
+    }
 
 }
