@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.10
+Version: 2.0.11
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -8705,12 +8705,17 @@ body {
     display: table;
     clear: both; }
   #masthead .site-branding .site-logo-link,
+  #masthead .site-branding .custom-logo-link,
   #masthead .site-branding .social-links {
     display: block;
     text-align: center; }
-  #masthead .site-branding .site-logo-link {
+  #masthead .site-branding .site-logo-link,
+  #masthead .site-branding .custom-logo-link {
     min-width: 100px; }
-    #masthead .site-branding .site-logo-link .site-logo {
+    #masthead .site-branding .site-logo-link .site-logo,
+    #masthead .site-branding .site-logo-link .custom-logo,
+    #masthead .site-branding .custom-logo-link .site-logo,
+    #masthead .site-branding .custom-logo-link .custom-logo {
       height: 100px;
       width: auto; }
   #masthead .site-branding .social-links ul {
@@ -8768,6 +8773,7 @@ body {
       align-items: center;
       justify-content: center; }
       #masthead .site-branding-container .site-logo-link,
+      #masthead .site-branding-container .custom-logo-link,
       #masthead .site-branding-container .site-description,
       #masthead .site-branding-container .social-links {
         text-align: left;
