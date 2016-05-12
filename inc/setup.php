@@ -89,11 +89,14 @@ function anp_network_main_setup() {
     'size' => 'site-logo',
   );
 
-  // JetPack site-logo
-  add_theme_support( 'site-logo', $custom_logo_args );
-
-  // Core custom-logo
-  add_theme_support( 'custom-logo', $custom_logo_args );
+  global $wp_version;
+  if ( $wp_version >= 4.5 ) {
+    // Core custom-logo
+    add_theme_support( 'custom-logo', $custom_logo_args );
+  } else {
+    // JetPack site-logo
+    add_theme_support( 'site-logo', $custom_logo_args );
+  }
 
   /*
    * Set up the WordPress core custom background feature.
