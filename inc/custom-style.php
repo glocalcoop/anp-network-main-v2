@@ -708,4 +708,42 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'priority'    => 500,
 	) );
 
+	/**
+     * Add BuddyPress options
+     *
+     * @link https://kirki.org/docs/controls/image.html
+     */
+	if( class_exists( 'Buddypress' ) ) :
+
+	    ANP_Kirki::add_section( 'buddypress', array(
+	        'title'          => esc_attr__( 'BuddyPress', 'activist-network-main' ),
+	        'description'    => __( 'Settings for BuddyPress, if it is active', 'activist-network-main' ),
+	        'priority'       => 150,
+	        'capability'     => 'edit_theme_options',
+	    ) );
+
+	    ANP_Kirki::add_field( 'anp_custom_style', array(
+	        'type'        => 'image',
+	        'settings'    => 'buddypress_default_cover',
+	        'label'       => __( 'Default BuddyPress Cover Image', 'activist-network-main' ),
+	        'section'     => 'buddypress',
+	        'default'     => '',
+	        'output'      => array(
+			    array(
+			        'element'   => '#cover-image-container #header-cover-image',
+			        'property'  => 'background-image',
+			   ),
+			),
+			'transport' 	=> 'postMessage',
+			'js_vars'     	=> array(
+				array(
+					'element'  		=> '#header-cover-image',
+					'function' 		=> 'style',
+					'property' 		=> 'background-image',
+				),
+			),
+	    ) );
+    endif;
+
+
 }
