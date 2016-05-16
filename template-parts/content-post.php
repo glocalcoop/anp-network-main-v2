@@ -15,6 +15,14 @@
 
 		<?php do_action ( 'anp_network_main_entry_header_top' );?>
 
+		<?php if( has_post_thumbnail() ) : ?>
+
+        <div class="entry-image">
+            <?php the_post_thumbnail('medium'); ?> 
+        </div>
+
+        <?php endif; ?>
+
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<div class="entry-meta">
@@ -32,12 +40,7 @@
 		<?php do_action ( 'anp_network_main_entry_content_top' );?>
 
 		<?php
-			/* translators: %s: Name of current post */
 			the_excerpt();
-			// the_content( sprintf(
-			// 	wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'anp-network-main' ), array( 'span' => array( 'class' => array() ) ) ),
-			// 	the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			// ) );
 		?>
 
 		<?php
