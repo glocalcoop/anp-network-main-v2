@@ -4,12 +4,19 @@
 
 body.buddypress {
 
+    color: $color__foreground;
+
     .page-title {
         margin-bottom: 35px;
     }
 
     h1 {
         text-align: center;
+    }
+
+    .current,
+    .selected {
+        font-weight: bold;
     }
 
     @include breakpoint(md) {
@@ -24,11 +31,17 @@ body.buddypress {
     @include screen-reader-text;
 }
 
+
 body.buddypress .site-main,
 #bbpress-forums {
 
     form {
         padding: .5em;
+    }
+
+    .standard-form,
+    #send-invite-form {
+        background-color: $color__background-panel;
     }
 
     ul {
@@ -52,15 +65,15 @@ body.buddypress .site-main,
                 text-align: center;
                 @include font-size($small);
 
-                &:hover,
-                &:focus,
-                &.active,
-                &.current,
-                &.selected {
-                    a {
-                        color: $color__text-nav-hover-alt;
-                    }
-                }
+                // &:hover,
+                // &:focus,
+                // &.active,
+                // &.current,
+                // &.selected {
+                //     a {
+                //         color: $color__text-nav-hover-alt;
+                //     }
+                // }
 
                 &:hover,
                 &:focus {
@@ -329,11 +342,6 @@ body.buddypress .site-main,
             border-radius: 4px;
             color: $color__foreground;
         }
-
-        // .ac-form {
-        //     margin-top: .25em;
-        //     background-color: $color__background-panel;
-        // }
     }
 
     // Sections
