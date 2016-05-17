@@ -45,20 +45,20 @@ $color__darkest-grey: color($colors__grey, 'darkest-grey');
  * See: theme directory for sample palettes
  */
 $colors__theme: (
-  'primary': #16506B, 
+  'primary': #ffcc00, 
   'accent': $color__mid-grey,
-  'secondary':  #008Eb0,
-  'foreground': $color__dark-grey,
-  'background': $color__white
+  'secondary':  $color__mid-dark-grey,
+  'foreground': $color__white,
+  'background': $color__black
 );
 
-$color__primary: color($colors__theme, 'primary') !default;
-$color__secondary: color($colors__theme, 'secondary') !default;
-$color__tertiary: color($colors__theme, 'accent') !default;
-$color__accent: color($colors__theme, 'accent') !default;
-$color__highlight: color($colors__theme, 'accent') !default;
-$color__background: transparent !default;
-$color__foreground: color($colors__theme, 'foreground') !default;
+$color__primary: color($colors__theme, 'primary');
+$color__secondary: color($colors__theme, 'secondary');
+$color__tertiary: color($colors__theme, 'accent');
+$color__accent: color($colors__theme, 'accent');
+$color__highlight: color($colors__theme, 'accent');
+$color__background: color($colors__theme, 'background');
+$color__foreground: color($colors__theme, 'foreground');
 
 $color__primary-tinted: mix(white, $color__primary, 10%);
 $color__primary-shaded: mix(black, $color__primary, 10%);

@@ -103,3 +103,19 @@
   padding: 0.25rem 9999rem;
   background: rgba($color__black, 0.5);
 }
+
+%alert-default {
+  @include alert($color__default);
+}
+%alert-info {
+  @include alert($color__info);
+}
+%alert-warning {
+  @include alert($color__warning);
+}
+%alert-danger {
+  @include alert($color__danger);
+}
+%alert-success {
+  @include alert($color__success);
+}

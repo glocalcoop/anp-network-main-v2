@@ -22,6 +22,27 @@
   }
 }
 
+@mixin include-font($font-family, $file-name, $weight: normal, $style: normal) {
+@font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+        //IE9 Compatibility Mode
+        src: url('../fonts/#{$file-name}.eot');
+        //IE6-IE8
+        src: url('../fonts/#{$file-name}.eot?#iefix') format('embedded-opentype'),
+             //Super Modern Browsers
+             url('../fonts/#{$file-name}.woff2') format('woff2'),
+              url('../fonts/#{$file-name}.otf') format('otf'),
+             //Majority of Modern Browsers
+             url('../fonts/#{$file-name}.woff') format('woff'),
+             //Safari, Android, iOS
+             url('../fonts/#{$file-name}.ttf') format('truetype'),
+             //Legacy iOS
+             url('../fonts/#{$file-name}.svg##{$file-name}') format('svg');
+    }
+}
+
 
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
@@ -414,6 +435,13 @@
     padding-left: $space;
   }
 
+}
+
+@mixin alert($color: $color__default) {
+  padding: 1em;
+  border: 1px solid $color;
+  background-color: lighten($color, 80%);
+  color: $color;
 }
 
 // Sliding hover effect
