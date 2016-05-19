@@ -84,13 +84,6 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	                $defaults['color_background'],
 	            ),
 			),
-			array(
-				'element'  => '#colophon .bottom-navigation',
-				'property' => 'color',
-				'exclude'  => array(
-	                $defaults['color_foreground'],
-	            ),
-			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
@@ -99,11 +92,6 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 				#colophon .bottom-navigation',
 				'function' => 'css',
 				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#colophon .bottom-navigation',
-				'function' => 'css',
-				'property' => 'color',
 			),
 		),
 	) );
@@ -286,8 +274,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'output'      => array(
 			array(
 				'element'  		=> '#masthead .main-navigation,
-				#masthead .main-navigation ul ul,
-				#colophon .bottom-navigation',
+				#masthead .main-navigation ul ul',
 				'media_query'	=> '@media only screen and (min-width: 768px)',
 				'property' 		=> 'background-color',
 				'exclude'  => array(
@@ -306,8 +293,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'js_vars'     => array(
 			array(
 				'element'  => '#masthead .main-navigation,
-				#masthead .main-navigation ul ul,
-				#colophon .bottom-navigation',
+				#masthead .main-navigation ul ul',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -340,8 +326,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .main-navigation ul a,
-				#colophon .bottom-navigation a',
+				'element'  => '#masthead .main-navigation ul a',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_foreground'],
@@ -351,8 +336,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .main-navigation ul a,
-				#colophon .bottom-navigation a',
+				'element'  => '#masthead .main-navigation ul a',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -380,8 +364,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding,
-				#colophon .bottom-navigation',
+				'element'  => '#masthead .site-branding',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_background'],
@@ -391,8 +374,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding,
-				#colophon .bottom-navigation',
+				'element'  => '#masthead .site-branding',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -419,8 +401,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a,
-				#colophon .bottom-navigation a',
+				'element'  => '#masthead .site-branding .site-title a',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_primary'],
@@ -463,8 +444,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a,
-				#colophon .bottom-navigation a',
+				'element'  => '#masthead .site-branding .site-title a',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -744,6 +724,8 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 			),
 	    ) );
     endif;
+
+    $accent_color = get_theme_mod( 'my_setting', '#000000' );
 
 
 }

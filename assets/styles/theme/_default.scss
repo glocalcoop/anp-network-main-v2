@@ -224,7 +224,6 @@ a {
         }
     }
 
-    .bottom-navigation,
     .copyright {
         color: $color__text-inverted;
         a {
@@ -238,8 +237,7 @@ a {
     }
 
     .bottom-navigation {
-        background-color: $color__secondary;
-        color: $color__text-inverted;
+        background-color: rgba($color__black,.1);
     }
     .copyright {
         background-color: $color__primary;
