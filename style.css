@@ -10556,6 +10556,7 @@ a.tag,
   a.tag:focus,
   .entry-terms a:hover,
   .entry-terms a:focus {
+    background-color: #7B8083;
     color: #fff;
     text-decoration: none;
     cursor: pointer; }

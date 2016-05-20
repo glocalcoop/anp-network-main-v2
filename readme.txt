@@ -36,6 +36,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 * Modified display of post thumbnails in lists
 * Changed `#secondary` widget text to use foreground color
 * Removed transparent background from a that is defined in normalize
+* Added hover background image to fix 'disappearing' tag display
 
 
 = 2.0.14 - May 19 2016 =

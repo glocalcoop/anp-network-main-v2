@@ -71,6 +71,7 @@ a.tag,
     
     &:hover,
     &:focus {
+        background-color: $color__default;
         color: $label-link-hover-color;
         text-decoration: none;
         cursor: pointer;
