@@ -126,8 +126,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'  => '.home .entry.intro-content,
-				#secondary .wrap',
+				'element'  => '#secondary .wrap',
 				'property' => 'border-top-color',
 				'exclude'  => array(
 	                $defaults['color_accent'],
@@ -135,8 +134,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'  => '.home .entry.intro-content,
-				#secondary .wrap',
+				'element'  => '#secondary .wrap',
 				'property' => 'border-bottom-color',
 				'exclude'  => array(
 	                $defaults['color_accent'],
@@ -159,14 +157,12 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '.home .entry.intro-content,
-				#secondary .wrap',
+				'element'  => '#secondary .wrap',
 				'function' => 'css',
 				'property' => 'border-top-color',
 			),
 			array(
-				'element'  => '.home .entry.intro-content,
-				#secondary .wrap',
+				'element'  => '#secondary .wrap',
 				'function' => 'css',
 				'property' => 'border-bottom-color',
 			),

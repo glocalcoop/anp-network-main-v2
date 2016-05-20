@@ -117,8 +117,6 @@ time.updated {
 
 	.entry-meta:not(:empty),
 	.pagination:not(:empty) {
-		// @include border(top);
-		// @include border(bottom);
 		.site-name,
 		.post-date {
 			&:after {
@@ -160,30 +158,34 @@ h1.page-title {
 	float: none;
 }
 
+
 .entry-image {
 	width: 100%;
-	height: 150px;
+	height: 200px;
 	margin-bottom: .25em;
 	overflow: hidden;
 
 	img {
 		width: 100%;
 		height: auto;
+		border: 2px solid $color__background-hr;
 	}
 }
 
 @include breakpoint(md) {
-	.entry-image {
-		float: left;
-		width: 25%;
-		margin-right: .5em;
+	.entry-content {
+		.entry-image {
+			float: left;
+			width: 25%;
+			margin-right: .5em;
 
-		img {
-			width: 100%;
-			height: auto;
-			overflow: visible;
-			min-width: 50px;
-			max-width: 300px;
+			img {
+				width: 100%;
+				height: auto;
+				overflow: visible;
+				min-width: 50px;
+				max-width: 300px;
+			}
 		}
 	}
 }

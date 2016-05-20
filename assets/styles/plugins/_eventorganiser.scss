@@ -8,102 +8,106 @@
 
 // EVENT LIST
 
-.event-list {
-    p {
-        margin: 0;
-        line-height: 1.5;
-    }
-    a {
-        &.button {
-            margin: 0 0 1em 0;
-        }
-    }
-    .event-list-header {
-        display: none;
-    }
-    .event {
-        padding: 10px 0;
-        clear: both;
-    }
-    .event-header {
-        @include make-md-column(3); 
-        margin: 0;
-        padding: 0;
-
-        @include breakpoint(md) {}
-    }
-    .event-content {
-        @include make-md-column(9); 
-        padding: 0;
-    }
-    .event-image {
-        border: $color__border-frame;  
-        max-height: 150px;
-        overflow: hidden;
-
-        img {
+.site-main {
+    .event-list {
+        p {
             margin: 0;
-            width: 100%;
+            line-height: 1.5;
         }
+        a {
+            &.button {
+                margin: 0 0 1em 0;
+            }
+        }
+        .event-list-header {
+            display: none;
+        }
+        .event {
+            padding: 10px 0;
+            clear: both;
+        }
+        .event-header {
+            @include make-md-column(3); 
+            margin: 0;
+            padding: 0;
 
-        @include breakpoint(md) {
-            float: right; 
-            width: 33%; 
-            height: auto; 
-            max-height: 300px; 
-            margin-left: 20px; 
-            margin-bottom: 10px;
+            @include breakpoint(md) {}
         }
-    }
-    .event-title {
-        margin: .75em 0 .25em;
-        @include breakpoint(md) {
-            margin-top: 0;
+        .event-content {
+            @include make-md-column(9); 
+            padding: 0;
         }
-    }
-    .event-meta {
-        .event-day,
-        .event-date,
-        .event-time {
-            @include font-size($h6);
-            font-weight: 300;
-        }
-        .event-date {
-            display: block;
-        }
+        .event-image {
+            border: $color__border-frame;  
+            max-height: 150px;
+            overflow: hidden;
 
-        @include breakpoint(md) {
+            img {
+                margin: 0;
+                width: 100%;
+            }
+
+            @include breakpoint(md) {
+                float: right; 
+                width: 33%; 
+                height: auto; 
+                max-height: 300px; 
+                margin-left: 20px; 
+                margin-bottom: 10px;
+            }
+        }
+        .event-title {
+            margin: .75em 0 .25em;
+            @include breakpoint(md) {
+                margin-top: 0;
+            }
+        }
+        .event-meta {
             .event-day,
             .event-date,
             .event-time {
-                @include font-size($h4);
+                @include font-size($h6);
                 font-weight: 300;
             }
-        }
-    }
+            .event-date {
+                display: block;
+            }
 
-    .event-location {
-        @include font-size($h6);
-        color: $color__mid-grey;
-        margin-bottom: 1em;
-        span {
-            display: block;
-            @include breakpoint(xs) {
-                display: inline; 
-                padding-right: 5px; 
-                &:after {
-                    content: ' /';
+            @include breakpoint(md) {
+                .event-day,
+                .event-date,
+                .event-time {
+                    @include font-size($h4);
+                    font-weight: 300;
                 }
             }
-            &:last-child:after {
-                content: '';
+        }
+
+        .event-location {
+            @include font-size($h6);
+            color: $color__mid-grey;
+            margin-bottom: 1em;
+            span {
+                display: block;
+                @include breakpoint(xs) {
+                    display: inline; 
+                    padding-right: 5px; 
+                    &:after {
+                        content: ' /';
+                    }
+                }
+                &:last-child:after {
+                    content: '';
+                }
             }
         }
+        .event-description {
+            margin-bottom: 1em;
+        }
     }
-    .event-description {
-        margin-bottom: 1em;
-    }
+    
 }
+
 
 // SINGLE EVENT PAGE
 .single-event,
