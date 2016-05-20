@@ -14580,7 +14580,7 @@ NETWORK CONTENT
 #secondary .widget__anp-network-events.widget,
 #secondary article.handbook .widget__anp-network-events.table-of-contents, article.handbook
 #secondary .widget__anp-network-events.table-of-contents {
-  color: #fff; }
+  color: #313334; }
   #secondary .widget__anp-network-posts.widget .entry-meta, #secondary article.handbook .widget__anp-network-posts.table-of-contents .entry-meta, article.handbook #secondary .widget__anp-network-posts.table-of-contents .entry-meta,
   #secondary .widget__anp-network-sites.widget .entry-meta,
   #secondary article.handbook .widget__anp-network-sites.table-of-contents .entry-meta, article.handbook
@@ -14588,33 +14588,7 @@ NETWORK CONTENT
   #secondary .widget__anp-network-events.widget .entry-meta,
   #secondary article.handbook .widget__anp-network-events.table-of-contents .entry-meta, article.handbook
   #secondary .widget__anp-network-events.table-of-contents .entry-meta {
-    color: rgba(255, 255, 255, 0.2); }
-    #secondary .widget__anp-network-posts.widget .entry-meta time, #secondary article.handbook .widget__anp-network-posts.table-of-contents .entry-meta time, article.handbook #secondary .widget__anp-network-posts.table-of-contents .entry-meta time,
-    #secondary .widget__anp-network-posts.widget .entry-meta .category,
-    #secondary article.handbook .widget__anp-network-posts.table-of-contents .entry-meta .category, article.handbook
-    #secondary .widget__anp-network-posts.table-of-contents .entry-meta .category,
-    #secondary .widget__anp-network-posts.widget .entry-meta a,
-    #secondary article.handbook .widget__anp-network-posts.table-of-contents .entry-meta a, article.handbook
-    #secondary .widget__anp-network-posts.table-of-contents .entry-meta a,
-    #secondary .widget__anp-network-sites.widget .entry-meta time,
-    #secondary article.handbook .widget__anp-network-sites.table-of-contents .entry-meta time, article.handbook
-    #secondary .widget__anp-network-sites.table-of-contents .entry-meta time,
-    #secondary .widget__anp-network-sites.widget .entry-meta .category,
-    #secondary article.handbook .widget__anp-network-sites.table-of-contents .entry-meta .category, article.handbook
-    #secondary .widget__anp-network-sites.table-of-contents .entry-meta .category,
-    #secondary .widget__anp-network-sites.widget .entry-meta a,
-    #secondary article.handbook .widget__anp-network-sites.table-of-contents .entry-meta a, article.handbook
-    #secondary .widget__anp-network-sites.table-of-contents .entry-meta a,
-    #secondary .widget__anp-network-events.widget .entry-meta time,
-    #secondary article.handbook .widget__anp-network-events.table-of-contents .entry-meta time, article.handbook
-    #secondary .widget__anp-network-events.table-of-contents .entry-meta time,
-    #secondary .widget__anp-network-events.widget .entry-meta .category,
-    #secondary article.handbook .widget__anp-network-events.table-of-contents .entry-meta .category, article.handbook
-    #secondary .widget__anp-network-events.table-of-contents .entry-meta .category,
-    #secondary .widget__anp-network-events.widget .entry-meta a,
-    #secondary article.handbook .widget__anp-network-events.table-of-contents .entry-meta a, article.handbook
-    #secondary .widget__anp-network-events.table-of-contents .entry-meta a {
-      color: rgba(255, 255, 255, 0.2); }
+    color: #6f7071; }
 
 @media screen and (min-width: 768px) {
   .widget-count-3 .widget__anp-network-posts .entry-meta .site-name,
