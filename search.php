@@ -10,7 +10,7 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php do_action ( 'anp_network_main_site_main_top' );?>
+		<?php do_action ( 'anp_site_main_top' );?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -38,7 +38,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		<?php do_action ( 'anp_network_main_site_main_bottom' );?>
+		<?php do_action ( 'anp_site_main_bottom' );?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

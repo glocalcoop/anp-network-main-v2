@@ -17,7 +17,7 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses anp_network_main_header_style()
+ * @uses anp_header_style()
  */
 function anp_network_main_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'anp_network_main_custom_header_args', array(
@@ -26,18 +26,18 @@ function anp_network_main_custom_header_setup() {
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'anp_network_main_header_style',
+		'wp-head-callback'       => 'anp_header_style',
 	) ) );
 }
 add_action( 'after_setup_theme', 'anp_network_main_custom_header_setup' );
 
-if ( ! function_exists( 'anp_network_main_header_style' ) ) :
+if ( ! function_exists( 'anp_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
  * @see anp_network_main_custom_header_setup().
  */
-function anp_network_main_header_style() {
+function anp_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -65,4 +65,4 @@ function anp_network_main_header_style() {
 	</style>
 	<?php
 }
-endif; // anp_network_main_header_style
+endif; // anp_header_style

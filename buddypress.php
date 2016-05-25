@@ -17,7 +17,7 @@ get_header(); ?>
 
         <?php do_action ( 'anp_network_main_buddypress_site_main_top' );?>
 
-        <?php do_action ( 'anp_network_main_site_main_top' );?>
+        <?php do_action ( 'anp_site_main_top' );?>
 
         <?php do_action ( 'anp_buddypress_main_top' );?>
 
@@ -29,9 +29,9 @@ get_header(); ?>
 
         <?php do_action ( 'anp_buddypress_main_bottom' );?>
 
-        <?php do_action ( 'anp_network_main_site_main_bottom' );?>
+        <?php do_action ( 'anp_site_main_bottom' );?>
 
-        <?php do_action ( 'anp_network_main_buddypress_site_main_bottom' );?>
+        <?php do_action ( 'anp_buddypress_site_main_bottom' );?>
 
         </main><!-- #main -->
     </div><!-- #primary -->

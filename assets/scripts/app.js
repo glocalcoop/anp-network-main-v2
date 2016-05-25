@@ -58,3 +58,21 @@
  
     });
 } )( jQuery );
+
+/**
+ * BP Docs
+ * Fix bad JS handling of hide/show 
+ *
+ */
+( function( $ ) {
+    $( '#toggle-folders-hide' ).click( function( event ) {
+        event.preventDefault();
+        $( this ).removeAttr( 'style' ).attr( 'aria-expanded', 'false' ).removeClass( 'show' ).addClass( 'hide' );
+        $( '#toggle-folders-show' ).removeAttr( 'style' ).attr( 'aria-expanded', 'true' ).removeClass( 'hide' ).addClass( 'show' );
+    } );
+    $( '#toggle-folders-show' ).click( function( event ) {
+        event.preventDefault();
+        $( this ).removeAttr( 'style' ).attr( 'aria-expanded', 'false' ).removeClass( 'show' ).addClass( 'hide' );
+        $( '#toggle-folders-hide' ).removeAttr( 'style' ).attr( 'aria-expanded', 'true' ).removeClass( 'hide' ).addClass( 'show' );
+    } );
+} )( jQuery );

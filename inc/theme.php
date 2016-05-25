@@ -197,7 +197,7 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
 
   }
 
-  add_action( 'anp_network_main_page_header_bottom', 'anp_archive_post_filter' );
+  add_action( 'anp_page_header_bottom', 'anp_archive_post_filter' );
 
 }
 
@@ -222,7 +222,7 @@ if( ! function_exists( 'anp_display_breadcrumbs' ) ) {
 
   }
 
-  add_action( 'anp_network_main_site_main_top', 'anp_display_breadcrumbs' );
+  add_action( 'anp_site_main_top', 'anp_display_breadcrumbs' );
 
 }
 
@@ -247,7 +247,7 @@ if( !function_exists( 'anp_archive_post_type_search' ) ) {
     
   }
 
-  add_action( 'anp_network_main_page_header_bottom', 'anp_archive_post_type_search' );
+  add_action( 'anp_page_header_bottom', 'anp_archive_post_type_search' );
 
 }
 

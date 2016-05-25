@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.14
+Stable tag: 2.0.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.15 - May 19 2016 =
+* Modified `.bottom-navigation` customizer settings to be assigned the background-color, if one is selected
+* Changed default background color of `.bottom-navigation` to black with opacity .1 to create a slight overlay on any background color. This will be overridden if a background color is defined in the customizer.
 
 = 2.0.14 - May 19 2016 =
 * Modified `.bottom-navigation` customizer settings to be assigned the background-color, if one is selected

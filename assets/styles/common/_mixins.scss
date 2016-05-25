@@ -440,7 +440,7 @@
 @mixin alert($color: $color__default) {
   padding: 1em;
   border: 1px solid $color;
-  background-color: lighten($color, 80%);
+  background-color: rgba($color,.2);
   color: $color;
 }
 

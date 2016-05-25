@@ -104,6 +104,9 @@
   background: rgba($color__black, 0.5);
 }
 
+%alert {
+  @include alert($color__default);
+}
 %alert-default {
   @include alert($color__default);
 }

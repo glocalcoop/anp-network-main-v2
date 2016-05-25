@@ -14,11 +14,11 @@ get_header(); ?>
 		<div class="primary content-area">
 			<main class="site-main">
 
-            <?php do_action ( 'anp_network_main_site_main_top' );?>    
+            <?php do_action ( 'anp_site_main_top' );?>    
 
 			<?php the_content(); ?>
 
-            <?php do_action ( 'anp_network_main_site_main_bottom' );?>
+            <?php do_action ( 'anp_site_main_bottom' );?>
 
 			</main><!-- #main -->
 		</div><!-- .primary -->

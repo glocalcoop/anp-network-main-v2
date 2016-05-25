@@ -1,28 +1,54 @@
 /**
- * BuddyPress Styles
+ * BuddyPress
+ * @link https://buddypress.org
+ *
  */
+body.buddypress,
+body.bbpress,
+body.bp-docs {
 
-body.buddypress {
+    #primary {
+        color: $color__foreground;
 
-    color: $color__foreground;
-
-    .page-title {
-        margin-bottom: 35px;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .current,
-    .selected {
-        font-weight: bold;
-    }
-
-    @include breakpoint(md) {
-        h1 {
-            text-align: left;
+        li {
+            color: $color__foreground;
         }
+
+        .postbox .inside {
+            @include font-size($h6);
+        }
+
+        #item-header {
+            background-color: $color__white;
+        }
+
+        #item-body {
+            background-color: $color__white;
+
+            h3.hndle {
+                @include font-size($h4);
+            }
+        }
+
+        .page-title {
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .current,
+        .selected {
+            font-weight: bold;
+        }
+
+        @include breakpoint(md) {
+            h1 {
+                text-align: left;
+            }
+        }
+
     }
 
 }
@@ -31,16 +57,17 @@ body.buddypress {
     @include screen-reader-text;
 }
 
+#bbpress-forums {
+    background-color: $color__background-panel;
+}
 
 body.buddypress .site-main,
-#bbpress-forums {
-
-    form {
-        padding: .5em;
-    }
+#bbpress-forums,
+.site-main #buddypress {
 
     .standard-form,
-    #send-invite-form {
+    #send-invite-form,
+    .bbp-topic-form {
         background-color: $color__background-panel;
     }
 
@@ -64,16 +91,6 @@ body.buddypress .site-main,
                 background-color: $color__background-nav-alt;
                 text-align: center;
                 @include font-size($small);
-
-                // &:hover,
-                // &:focus,
-                // &.active,
-                // &.current,
-                // &.selected {
-                //     a {
-                //         color: $color__text-nav-hover-alt;
-                //     }
-                // }
 
                 &:hover,
                 &:focus {
@@ -331,6 +348,7 @@ body.buddypress .site-main,
     #whats-new-form {
         background-color: $color__background-panel;
         color: $color__foreground;
+        padding: .5em;
     }
 
     .activity-list {
@@ -491,13 +509,6 @@ body.buddypress .site-main,
         }
     }
 
-    // .group-members {
-    //     .avatar {
-    //         width: 50px;
-    //         height: auto;
-    //     }
-    // }
-
     #whats-new-avatar,
     .activity-greeting {
         text-align: center;
@@ -571,9 +582,6 @@ body.buddypress .site-main,
             &.visit {
                 @include button-icon($color: $color__mid-light-grey, $icon: globe, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
-            // &[href*="docs"] {
-            //     @include button-icon($color: $color__mid-light-grey, $icon: eye, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            // }
             &[href$="edit/"] {
                 @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
             }
@@ -649,8 +657,16 @@ body.buddypress .site-main,
         }
     }
 
+    .wp-media-buttons-icon {
+        @include icon-font(plus, before, $color__white);
+    }
+
     #bp-create-doc-button {
         @include button-icon($icon: plus, $font-size: $small, $border-color: transparent);
+    }
+
+    a.group-create {
+        @include icon-font(plus, before, $color__foreground);
     }
 
     #members-list,
@@ -729,6 +745,20 @@ body.buddypress .site-main,
     }
 }
 
+
+/**
+ * Invite Anyone
+ *
+ */
+body.buddypress #group-create-body ul.acfb-holder {
+   @include no-bullets;
+}
+
+#invite-anyone-steps {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 #send-invite-form {
     .submit {
         float: left;
@@ -736,10 +766,6 @@ body.buddypress .site-main,
     }
 }
 
-#invite-anyone-steps {
-    margin-left: 0;
-    padding-left: 0;
-}
 
 .buddypress-attribution a {}
 
@@ -752,8 +778,8 @@ body.buddypress .site-main,
  */
 body.buddypress {
 
-    #members-list,
-    #blogs-list {
+    #primary #members-list,
+    #primary #blogs-list {
 
         .action {
             display: block;
@@ -823,7 +849,21 @@ body.buddypress {
      * @link https://plan.glocal.coop/issues/1246
      *
      */
-    #group-settings-form {
+    #group-settings-form,
+    #group-create-body {
+
+        ul {
+            margin-left: 1em;
+            list-style-type: disc;
+        }
+
+        br {
+            display: none;
+        }
+
+        h2 {
+            @include font-size($h3);
+        }
 
         label.checkbox {
             display: block;
@@ -834,8 +874,35 @@ body.buddypress {
             }
         }
 
-        br {
-            display: none;
+        td {
+            display: table-cell;
+
+            &.label {
+                width: 40%;
+                background-color: transparent;
+            }
+
+            label {
+                max-width: none;
+                color: $color__foreground;
+            }
+        }
+
+        .radio label {
+            font-weight: bold;
+            margin: .5em 0;
+        }
+
+        label[for="group-status-public"] {
+            @include icon-font(eye, after, $color__foreground);
+        }
+
+        label[for="group-status-private"] {
+            @include icon-font(user-secret, after, $color__foreground);
+        }
+
+        label[for="group-status-hidden"] {
+            @include icon-font(eye-slash, after, $color__foreground);
         }
 
     }
@@ -843,8 +910,7 @@ body.buddypress {
     #blog-details-fields {
 
         label strong {
-            @include font-size($h4);
-            font-weight: normal;
+            font-weight: bold;
         }
 
         &> p {
@@ -863,8 +929,7 @@ body.buddypress {
         }
 
         &> label {
-            @include font-size($h3);
-            font-weight: 300;
+            font-weight: bold;
         }
 
         &> li {
@@ -883,16 +948,127 @@ body.buddypress {
             margin-top: .5em;
             display: block;
             strong {
-                @include font-size($h4);
-                font-weight: normal;
+                font-weight: bold;
             }
         }
     }
 
 }
 
-// Invite Anyone
 
+/**
+ * Events Organiser
+ *
+ */
+.events.buddypress {
+
+    .item-body {
+        background-color: $color__background-panel;
+    }
+
+}
+
+/**
+ * Docs
+ * @link https://github.com/boonebgorges/buddypress-docs
+ *
+ */
+.bp-docs {
+
+    @include font-size($h6);
+
+    // Reset font size to theme base 
+    p.currently-viewing,
+    .docs-filters > p,
+    div.manage-folders-link {
+        @include font-size($h6);
+    }
+
+    h2.directory-title {
+        @include font-size($h3);
+    }
+
+    #docs-filter-meta {
+        a {
+            background-color: $color__background-nav-alt;
+            color: $color__text-nav-alt;
+            padding: .25em .5em;
+            margin-right: .25em;
+            margin-bottom: .25em;
+
+            &.current {
+                background-color: $color__background-nav-inverted;
+                color: $color__text-nav-inverted;
+            }
+
+        }
+    }
+
+    div.manage-folders-link {
+        a {
+            @include button-icon;
+        }
+    }
+
+    #toggle-folders-hide {
+        @include button-icon($icon: eye-slash);
+
+        &.show {
+            display: inline-block !important;
+        }
+        &.hide {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    #toggle-folders-show {
+        @include button-icon($icon: eye);
+        display: none;
+
+        &.show {
+            display: inline-block !important;
+        }
+        &.hide {
+            display: none !important;
+            visibility: hidden;
+        }
+    }
+    .row-actions a {
+        @include font-size($h6);
+    }
+
+    .doc-content {
+        padding: 0;
+        border: none;
+    }
+
+    // .toggle-table,
+    // .doctable {
+    //     background-color: $color__white;
+    //     color: $color__foreground;
+    // }
+
+    // .doc-content-wrapper {
+    //     label {
+    //         color: $color__foreground;
+    //     }
+    // }
+
+    span.description {
+        display: block;
+        @include font-size($h6);
+    }
+ }
+
+
+
+
+
+/**
+ * Invite Anyone
+ * @link https://wordpress.org/plugins/invite-anyone/
+ * 
+ */
 body.invite-anyone div#content {
     .left-menu {}
     .main-column {
@@ -1046,7 +1222,6 @@ img.avatar {
         text-align: left;
 
         .item-options {
-            // display: inline-block;
             text-align: center;
         }
 
@@ -1065,14 +1240,18 @@ img.avatar {
                 vertical-align: top;
             }
 
-            img.avatar {
-                width: 50px;
-                height: auto;
-                margin-right: .25em;
+            .item-avatar {
+                width: 25%;
             }
 
             .item {
                 width: 75%;
+            }
+
+            img.avatar {
+                width: 50px;
+                height: auto;
+                margin-right: .25em;
             }
 
         }
@@ -1085,13 +1264,12 @@ img.avatar {
     // Alerts
     #message {
         clear: both;
-        @extend .alert;
-        @extend .alert-default !optional;
+        @extend %alert;
         margin-top: .25em;
         margin-bottom: .25em;
         p {
             display: block;
-            margin-top: 0;
+            margin: 0;
             background-color: transparent;
             border: none;
             color: inherit;
@@ -1113,8 +1291,22 @@ img.avatar {
     }
 
     p.warning {
-        @extend .alert-warning;
+        @extend %alert-warning;
     }
+
+    .bbp-template-notice p {
+        @extend %alert;
+    }
+
+    p.no-docs {
+        @extend %alert;
+        @extend %alert-info;
+    }
+
+    #item-header #message {
+        margin: .25em;
+    }
+
 }
 
 

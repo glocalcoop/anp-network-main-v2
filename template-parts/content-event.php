@@ -38,7 +38,7 @@
 
     <div class="entry-content event-content">
 
-        <?php do_action ( 'anp_network_main_site_content_top' );?>
+        <?php do_action ( 'anp_site_content_top' );?>
 
         <?php if( has_post_thumbnail() ) : ?>
         <div class="entry-image event-image">
@@ -56,7 +56,7 @@
             <?php the_excerpt(); ?>
         </p>
 
-        <?php do_action ( 'anp_network_main_site_content_bottom' );?>
+        <?php do_action ( 'anp_site_content_bottom' );?>
         
     </div><!-- .entry-content -->
 

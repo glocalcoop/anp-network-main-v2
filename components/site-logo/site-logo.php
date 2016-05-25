@@ -1,4 +1,4 @@
-<?php do_action ( 'anp_network_main_site_title' );?>
+<?php do_action ( 'anp_site_title' );?>
 
 <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
 

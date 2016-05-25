@@ -128,7 +128,8 @@ if( !function_exists( 'anp_buddypress_attribution' ) ) {
 
   }
 
-  add_action( 'anp_buddypress_main_bottom', 'anp_buddypress_attribution' );
-
+  add_action( 'anp_entry_content_bottom', 'anp_buddypress_attribution' );
+  
+  
 }
 
