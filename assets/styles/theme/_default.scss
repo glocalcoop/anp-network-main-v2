@@ -11,10 +11,11 @@ span:empty {
 
 .page-title {}
 
+
 .entry {
 
     &:not(:last-child) {
-      @include border(bottom, 1em);  
+      @include border($position: bottom, $space: 1em, $color: $color__border-hr);  
     }
 }
 
@@ -246,8 +247,8 @@ a {
 }
 
 .home .entry.intro-content {
-        border-top: 5px solid $color__primary;
-        border-bottom: 5px solid $color__primary;
+        border-top: 5px solid $color__background-hr;
+        border-bottom: 5px solid $color__background-hr;
         background-color: $color__background-body;
         border-radius: $element__border-radius-base;
 }
@@ -293,7 +294,7 @@ a {
 .taxonomy-filters {
     a {
         @include button($bg-color: $color__white);
-        border: 1px solid $color__light-grey;
+        border: 1px solid $color__background-hr-alt;
 
         &.active {
             @include button($bg-color: $color__light-grey);
