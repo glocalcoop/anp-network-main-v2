@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.15
+Version: 2.0.16
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -8524,7 +8524,7 @@ a {
     font-weight: bold; }
 
 hr {
-  background-color: #cacccd;
+  background-color: rgba(17, 17, 17, 0.1);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -8643,7 +8643,7 @@ h1.page-title {
   .entry-image img {
     width: 100%;
     height: auto;
-    border: 2px solid #cacccd; }
+    border: 2px solid rgba(17, 17, 17, 0.1); }
 
 @media screen and (min-width: 768px) {
   .entry-content .entry-image, .so-widget-sow-post-carousel h3 a .entry-image {
@@ -16573,8 +16573,8 @@ a {
   color: #fff; }
 
 .home .entry.intro-content, .home article.intro-content.handbook {
-  border-top: 5px solid #cacccd;
-  border-bottom: 5px solid #cacccd;
+  border-top: 5px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 5px solid rgba(17, 17, 17, 0.1);
   background-color: transparent;
   border-radius: 0; }
 
