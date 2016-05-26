@@ -112,6 +112,15 @@ function anp_network_main_setup() {
     'header-text' => false
   ) );
 
+  /**
+   * Disable Event Organizer templating
+   * 
+   * @since 2.0.17
+   * @link http://docs.wp-event-organiser.com/theme-integration/turning-off-template-handling/
+   */
+  
+  //add_theme_support( 'event-organiser' );
+
 }
 endif; // anp_network_main_setup
 add_action( 'after_setup_theme', 'anp_network_main_setup' );
