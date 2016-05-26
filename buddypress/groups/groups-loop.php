@@ -87,7 +87,8 @@ do_action( 'bp_before_groups_loop' ); ?>
 
 				<div class="meta">
 
-					<?php bp_group_type(); ?> / <?php bp_group_member_count(); ?>
+					<span class="group-type"><?php bp_group_type(); ?></span> 
+					<span class="member-count"><?php bp_group_member_count(); ?></span>
 
 				</div>
 

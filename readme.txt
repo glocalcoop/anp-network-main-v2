@@ -48,6 +48,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 * Added group status class to header so public, private and hidden can be customized
 * Changed "favorite" to "like" because it's better understood by users (thanks facebook :/ )
 * Updated some functions, mixins and color variables.
+* Added `group-type` and `member-count` mark-up to groups list 
 
 = 2.0.16 - May 24 2016 =
 * Issue #1408 - Updated BuddyPress styles to force consistency across child themes.

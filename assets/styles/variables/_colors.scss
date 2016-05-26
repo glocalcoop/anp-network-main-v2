@@ -123,7 +123,7 @@ $color__link-hover: darken($color__link, 10%);
 $color__link-active: $color__link;
 
 $color__text-main: $color__foreground;
-$color__text-meta: mix(white, $color__foreground, 30%);
+$color__text-meta: $color__mid-grey;
 $color__text-light: $color__light-grey;
 $color__text-inverted: $color__white;
 
