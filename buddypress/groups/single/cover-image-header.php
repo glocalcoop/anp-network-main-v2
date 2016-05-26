@@ -68,7 +68,9 @@ do_action( 'bp_before_group_header' ); ?>
 			 */
 			do_action( 'bp_group_header_meta' ); ?>
 
-			<span class="highlight"><?php bp_group_type(); ?></span>
+			<?php $group_class = str_replace( ' ', '-', strtolower( bp_get_group_type() ) ); ?>
+
+			<span class="highlight <?php echo $group_class; ?>"><?php bp_group_type(); ?></span>
 			<span class="activity"><?php printf( __( 'active %s', 'anp-network-main' ), bp_get_group_last_active() ); ?></span>
 
 			<?php bp_group_description(); ?>
