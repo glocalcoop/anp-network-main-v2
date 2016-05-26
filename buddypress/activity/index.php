@@ -105,7 +105,7 @@ do_action( 'bp_before_directory_activity' ); ?>
 
 				<?php if ( bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) ) : ?>
 
-					<li id="activity-favorites"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/favorites/'; ?>" title="<?php esc_attr_e( "The activity I've marked as a favorite.", 'buddypress' ); ?>"><?php printf( __( 'My Favorites %s', 'buddypress' ), '<span>' . bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) . '</span>' ); ?></a></li>
+					<li id="activity-favorites"><a href="<?php echo bp_loggedin_user_domain() . bp_get_activity_slug() . '/favorites/'; ?>" title="<?php esc_attr_e( "The activity I've liked.", 'buddypress' ); ?>"><?php printf( __( 'My Likes %s', 'buddypress' ), '<span>' . bp_get_total_favorite_count_for_user( bp_loggedin_user_id() ) . '</span>' ); ?></a></li>
 
 				<?php endif; ?>
 
