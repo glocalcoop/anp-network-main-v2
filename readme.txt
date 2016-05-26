@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.16
+Stable tag: 2.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,26 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.17 - May 26 2016 =
+* Issue #1408 - Optimized BuddyPress stylesheet for easier managability
+* `#buddypress` background is white and text is dark gray regardless of theme
+   * For dark colored backgrounds, the following can be added to fix padding issues:
+    #buddypress {
+        padding: 0 .25em .5em .25em;
+
+        #cover-image-container,
+        #item-nav {
+            margin-right: -.25em;
+            margin-left: -.25em;
+        }
+    }
+* Moved BP docs templates to `/buddypress/docs` directory
+* Updated BP template markup for consistency.
+* Turned back on Event Organizer event handling
+* Added group status class to header so public, private and hidden can be customized
+* Changed "favorite" to "like" because it's better understood by users (thanks facebook :/ )
+* Updated some functions, mixins and color variables.
 
 = 2.0.16 - May 24 2016 =
 * Issue #1408 - Updated BuddyPress styles to force consistency across child themes.
