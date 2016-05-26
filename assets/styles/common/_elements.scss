@@ -190,3 +190,8 @@ h1.page-title {
 	}
 }
 
+img.avatar {
+    @extend %avatar;
+}
+
+

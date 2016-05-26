@@ -71,7 +71,7 @@ $colors__buttons: (
     'info': #008Eb0,
     'warning': #f39c12,
     'danger': #eb6361,
-    'default': $color__mid-grey
+    'default': $color__mid-light-grey
 );
 
 $color__success: color($colors__buttons, 'success');
@@ -114,8 +114,8 @@ $color__background-screen: $color__light-grey;
 $color__text-input: $color__light-black;
 $color__text-input-focus: $color__foreground;
 $color__text-input-placeholder: $color__mid-grey;
-$color__text-screen: $color__primary;
-$color__text-header: $color__primary;
+$color__text-screen: $color__foreground;
+$color__text-header: $color__foreground;
 
 $color__link: $color__secondary;
 $color__link-visited: $color__link;
@@ -134,11 +134,11 @@ $color__border-abbr: $color__border-hr;
 $color__border-frame: 5px solid $color__border-hr;
 $color__border-frame-inverted: 5px solid $color__white;
 
-$color__background-nav: $color__white;
-$color__background-nav-hover: $color__lightest-grey;
-$color__background-nav-active: $color__background-nav-hover;
+$color__background-nav: $color__lightest-grey;
+$color__background-nav-hover: darken($color__background-nav, 20%);
+$color__background-nav-active: $color__foreground;
 $color__text-nav: $color__foreground;
-$color__text-nav-active: $color__text-nav;
+$color__text-nav-active: $color__white;
 $color__text-nav-hover: $color__text-nav-active;
 $color__border-nav: rgba($color__text-nav,.2);
 

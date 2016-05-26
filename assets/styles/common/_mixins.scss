@@ -190,13 +190,13 @@
 /**
  * Buttons
  */
-@mixin button($font-size: $small, $bg-color: $color__default, $border-radius: $element__border-radius-base) {
+@mixin button($font-size: $small, $color: text-color( $color__default ), $bg-color: $color__default, $border-radius: $element__border-radius-base) {
 
   transition: all 0.25s ease;
   @include font-size($font-size);
   text-align: center;
   background-color: $bg-color;
-  color: text-color( $bg-color );
+  color: $color;
   display: inline-block;
   border-radius: $border-radius;
 
@@ -332,7 +332,7 @@
   }
 }
 
-@mixin badge($color: $color__white, $bgcolor: $color__default, $font-size: $tiny) {
+@mixin badge($color: $color__white, $bgcolor: $color__warning, $font-size: $tiny) {
   @include font-size($font-size);
   background-color: $bgcolor;
   border-radius: 10px;

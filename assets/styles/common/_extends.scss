@@ -59,6 +59,24 @@
   border: 1px solid $color__background-hr-alt;
 }
 
+// Avatars
+%avatar__large {
+    width: 150px;
+    height: auto;
+}
+%avatar__medium {
+    width: 75px;
+    height: auto;
+}
+%avatar__small {
+    width: 50px;
+    height: auto;
+}
+%avatar__mini {
+    width: 25px;
+    height: auto;
+}
+
 %info {
   @include font-size($smaller);
   color: $color__mid-grey;
