@@ -3,218 +3,241 @@
  * @link https://buddypress.org
  *
  */
-body.buddypress,
-body.bbpress,
-body.bp-docs {
 
-    #primary {
-        color: $color__foreground;
+/**
+ * Generic Styles
+ *
+ */
+#buddypress {
 
-        li {
-            color: $color__foreground;
-        }
+    background-color: $color__white;
+    color: $color__foreground;
+    @include font-size($h6);
 
-        .postbox .inside {
-            @include font-size($h6);
+    #item-header {
+        text-align: center;
+    }
+    #item-buttons {}
+
+    #item-header-content{}
+
+    #item-actions {}
+
+    #item-nav {}
+
+    #item-body {
+        text-align: center;
+    }
+
+}
+
+@include breakpoint(md) {
+    #buddypress {
+
+        #item-nav {
+            @include clearfix;
         }
 
         #item-header {
-            background-color: $color__white;
+            text-align: left;
+            @include clearfix;
         }
 
         #item-body {
-            background-color: $color__white;
-
-            h3.hndle {
-                @include font-size($h4);
-            }
-        }
-
-        .page-title {
-            margin-bottom: 35px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .current,
-        .selected {
-            font-weight: bold;
-        }
-
-        @include breakpoint(md) {
-            h1 {
-                text-align: left;
-            }
+            text-align: left;
+            @include clearfix;
         }
 
     }
-
 }
 
-.bp-screen-reader-text {
-    @include screen-reader-text;
-}
+/**
+ * Modules
+ *
+ */
 
-#bbpress-forums {
-    background-color: $color__background-panel;
-}
+// Navigation
+#buddypress {
 
-body.buddypress .site-main,
-#bbpress-forums,
-.site-main #buddypress {
-
-    .standard-form,
-    #send-invite-form,
-    .bbp-topic-form {
-        background-color: $color__background-panel;
-    }
-
-    ul {
-        @include no-bullets;
-    }
-
-    #item-header {
-        @include clearfix;
-        margin-bottom: .5em;
-    }
-
-    .item-list-tabs {
-        width: 100%;
+     .item-list-tabs {
+        @include font-size($smaller);
 
         ul {
             @include no-bullets;
+            border-top: 1px solid $color__border-nav;
+            text-align: center;
 
             li {
-                padding: .5em .125em;
-                background-color: $color__background-nav-alt;
-                text-align: center;
-                @include font-size($small);
-
-                &:hover,
-                &:focus {
-                    background-color: $color__background-nav-hover-alt;
-                }
-
-                &.active,
-                &.current,
-                &.selected {
-                    background-color: $color__background-nav-active-alt;
-                }
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color__border-nav-alt;
-                }
+                padding: .25em;
+                background-color: $color__background-nav;
+                border-bottom: 1px solid $color__border-nav;
 
                 a {
                     display: block;
-                    color: $color__text-nav-alt;
+                    color: $color__foreground;
+                }
 
-                    span {
-                        @include badge($bgcolor: $color__success);
+                &:hover,
+                &:focus {
+                    background-color: $color__background-nav-hover;
+                }
+
+                &.current,
+                &.selected {
+                    background-color: $color__background-nav-active;
+                    font-weight: bold;
+
+                    a {
+                        color: $color__white;
                     }
                 }
-
-                input {
-                    @include font-size($small);
-                }
-            }
-
-        }
-
-        li {
-            @include font-size($smaller);
-        }
-
-        @include breakpoint(sm) {
-
-            li {
-                @include font-size($small);
-            }
-        }
-
-        @include breakpoint(md) {
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                max-width: 100%;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    list-style: none;
-                    flex-grow: 1;
-                    border-bottom: none;
-
-                    &:not(:last-child) {
-                        border-bottom: none;
-                        border-right: 1px solid $color__border-nav-alt;
-                    }
-                }
-            }
-
-            li {
-                @include font-size($h6);
             }
         }
 
         &#subnav {
-            border-bottom: 1px solid $color__border-nav-alt;
+            ul {
+                border-top: none;
+            }
 
             li {
-                background-color: lighten($color__background-nav-alt, 10%);
+                background-color: $color__white;
 
-                &.active,
-                &.selected,
-                &:hover,
-                &:focus {
-                    a {
-                        color: $color__text-nav-hover-alt;
-                    }
-                }
-
-                &:hover,
-                &:focus {
-                    background-color: lighten($color__background-nav-hover-alt, 10%);
-                    color: $color__text-nav-hover-alt;
-                }
-
-                &.active,
-                &.selected,
-                &.current {
-                    background-color: lighten($color__background-nav-active-alt, 10%);
-                    color: $color__text-nav-hover-alt;
-                }
-
-                a {
-                    color: $color__text-nav-alt;
-                }
-
-                &#activity-filter-select {
-                    text-align: center;
+                &.current a,
+                &.selected a {
                     color: $color__foreground;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $color__white;
                 }
             }
         }
+
+        &#group-create-tabs {
+
+            // Step-form doesn't have roll-overs
+            ul {
+                li:hover,
+                li:focus {
+                    background-color: $color__background-nav;
+                }
+                li.current:hover,
+                li.selected:hover {
+                    background-color: $color__background-nav-active;
+                }
+
+            }
+        }
+     }
+}
+
+@include breakpoint(md) {
+    #buddypress {
+
+        .item-list-tabs {
+
+            @include font-size($small);
+
+             ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    flex-grow: 1;
+                }
+             }
+
+        }
+    }
+}
+
+// Header
+#buddypress {
+
+    #item-header-cover-image {
+
+        #item-header-avatar,
+        #item-header-content,
+        #item-actions {
+            text-align: center;
+
+        }
+
+        @include breakpoint(md) {
+            #item-header-avatar,
+            #item-header-content,
+            #item-actions {
+                @include font-size($h6);
+            }
+        }
+
+        #item-header-avatar {}
+        #item-header-content {}
+        #item-actions {
+
+            .group-members {
+                @include make-md-column(6);
+
+                ul {
+                    padding-left: 0;
+                }
+            }
+
+            h3 {
+                margin-top: 0;
+                @include font-size($small);
+
+                @include breakpoint(md) {  
+                    @include font-size($h6);
+                }
+
+            }
+            ul {
+                @include inline-list;
+                padding-left: 0;
+                li {
+                    padding: .25em;
+                }
+
+            }
+        }
+
+        #item-meta {
+            .activity {
+                @extend %label;
+                @extend %label-default;
+            }
+
+            .activity + p {
+                margin-top: .5em;
+            }
+        }
+    }
+}
+
+// Admins
+#buddypress {
+    .group-members {
+        ul {
+            padding-left: 0;
+        }
+    }
+}
+
+// Pagination
+#buddypress {
+
+    .bbp-pagination-links {}
+    .pagination {
+        display: block;
     }
 
-    #groups-order-select {
-        background-color: $color__background;
-        color: $color__foreground;
-    }
+}
 
-    .item-body {
-        margin-top: .5em;
-    }
+ // Lists
+ #buddypress {
 
-    .item-meta {
-        color: $color__text-meta;
-    }
-
-    // Lists
-    // General styles
     .dir-list,
     .activity-list,
     .activity-comments > ul {
@@ -224,6 +247,12 @@ body.buddypress .site-main,
 
     .item-list {
         @include no-bullets;
+        background-color: $color__background-panel;
+        padding: .25em;
+
+        ul {
+            @include no-bullets;
+        }
 
         li {
             padding: .5em;
@@ -290,17 +319,20 @@ body.buddypress .site-main,
                 .item-avatar {
                     flex: 0 0 85px;
                     text-align: left;
+                    margin-right: 5px;
                 }
 
                 .acomment-avatar {
-                    flex: 0 0 50px;
+                    flex: 0 0 55px;
+                    margin-right: 5px;
                     text-align: left;
                 }
 
                 .activity-comments {
-                    flex: 0 0 100%;
+                    flex: 0 0 calc(100% - 85px);
+                    margin-left: 85px;
+                    margin-top: .25em;
                     ul {
-                        // background-color: rgba(0,0,0,.05);
                         display: block;
                         width: 100%;
                         margin-top: .25em;
@@ -323,11 +355,20 @@ body.buddypress .site-main,
                 }
 
                 .activity-content {
-                    flex: 0 0 calc(100% - 85px);
+                    flex: 0 0 calc(100% - 90px);
                 }
 
                 .acomment-entry {
                     flex: 0 0 calc(100% - 60px);
+                }
+
+                .ac-reply-content {
+                   flex: 0 0 calc(100% - 60px);
+                   margin-left: 60px; 
+                }
+
+                .ac-form {
+                    width: 100%;
                 }
 
             }
@@ -342,15 +383,6 @@ body.buddypress .site-main,
 
     }
 
-    /**
-     * Activity
-     */ 
-    #whats-new-form {
-        background-color: $color__background-panel;
-        color: $color__foreground;
-        padding: .5em;
-    }
-
     .activity-list {
         &> li {
             padding: .5em;
@@ -362,7 +394,480 @@ body.buddypress .site-main,
         }
     }
 
-    // Sections
+
+ }
+
+ @include breakpoint(md) {
+
+    #buddypress {
+
+        #members-list,
+        #blogs-list,
+        #invite-anyone-invite-list {
+
+        /**
+         * Member List and Friends List Layout
+         * @link https://plan.glocal.coop/issues/1308
+         * @link https://plan.glocal.coop/issues/1309
+         *
+         */
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+            &> li {
+                flex: 0 0 calc(50% - #{$gutter__column});
+                margin-top: .5em;
+                box-sizing: border-box;
+                border: 1px solid $color__border-nav-alt;
+
+                // Nested Flex
+                display: -ms-flex;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+
+                &:nth-child(odd){
+                    margin-right: $gutter__column;
+                }
+
+                &:nth-child(even){
+                    margin-left: $gutter__column;
+                }
+
+                .item-avatar {
+                    flex: 0 0 110px;
+                    text-align: left;
+                    img {
+                        text-align: left;
+                    }
+                }
+
+                .item {
+                    flex: 0 0 calc(100% - 110px);
+                }
+
+                .action {
+                    flex: 0 0 calc(100% - 110px);
+                    margin-left: 110px;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+ // Forms
+ #buddypress {
+
+     #whats-new-form {
+        background-color: $color__background-panel;
+        color: $color__foreground;
+        padding: .5em;
+    }
+
+ }
+
+
+/**
+ * Elements
+ *
+ */
+
+// Labels
+#buddypress {
+
+    .highlight {
+        @extend %label;
+        @extend %label-info;
+
+        @include icon-font(users, before, $color__white);
+
+        &.private-group {
+            background-color: $color__warning;
+            @include icon-font(user-secret, before, $color__white);
+        }
+        &.hidden-group {
+            background-color: $color__default;
+            @include icon-font(eye-slash, before, $color__white);
+        }
+    }
+
+}
+
+// Tags
+#buddypress {
+    .bbp-topic-tags {
+        a {
+            @extend %label;
+            @extend %label-default;
+        }
+    }
+
+    .tags-cell {
+        a {
+            @extend %label;
+            @extend %label-default;
+        }
+    }
+
+    .bbp-reply-permalink,
+    span.time-since {
+        @extend %label;
+        @extend %label-default;
+    }
+
+}
+
+// Badges
+#buddypress {
+    a:not(.bpeo-ical-link) {
+        span {
+            @include badge;
+
+        }
+    }
+    a span.no-count {
+        @include screen-reader-text;
+    }
+}
+
+// Buttons
+#buddypress {
+
+    .button-primary {
+        background-color: $color__warning;
+        color: $color__white;
+    }
+
+    .row-actions,
+    .activity-meta,
+    .acomment-options,
+    .action,
+    .major-publishing-actions {
+        a {
+            @include button-icon($icon: cog, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            margin-bottom: .125em;
+
+            // &.bp-secondary-action {
+            //     @include button-icon($icon: cog, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            // }
+            &.view {
+                @include button-icon($icon: comments-o, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.visit {
+                @include button-icon($icon: globe, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &[href$="edit/"] {
+                @include button-icon($icon: pencil, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &[href$="history"] {
+                @include button-icon($icon: history, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.leave-group {
+                @include button-icon($icon: sign-out, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.acomment-reply {
+                @include button-icon($icon: reply, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.fav {
+                @include button-icon($icon: heart-o, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.unfav {
+                @include button-icon($icon: heart, $color: $color__white, $font-size: $small, $border-color: $color__danger, $border-radius: $element__border-radius-base, $background-color: $color__danger);
+            }
+            &.delete-activity,
+            &.acomment-delete {
+                @include button-icon($icon: trash, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.unlink-from-group {
+                @include button-icon($icon: chain-broken, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.leave-group {
+                @include button-icon($icon: sign-out, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.join-group {
+                @include button-icon($icon: sign-in, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.group-subscription-options-link {
+                @include button-icon($icon: envelope, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.friendship-button {
+                &.add {
+                    @include button-icon($icon: user-plus, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+                }
+                &.requested {
+                    @include button-icon($icon: hourglass-o, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default); 
+                }
+                &.remove {
+                    @include button-icon($icon: user-times, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default); 
+                }
+            }
+            &.remove {
+                @include button-icon($icon: user-times, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default); 
+            }
+            &.mention {
+                @include button-icon($icon: bullhorn, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default); 
+            }
+            &.send-message {
+                @include button-icon($icon: comment, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+            &.deletion {
+                @include button-icon($icon: trash, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+            }
+
+            // Comment Badge
+            span {
+                @include badge;
+            }
+        }
+
+        #user_switching_switch_to a {
+            @include button-icon($icon: random, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default); 
+        }
+    }
+
+    #favorite-toggle {
+        a {
+            @include icon-font(heart-o, before, $color__text-light);
+
+        }
+        .is-favorite {
+            a {
+                @include icon-font(heart, before, $color__danger);
+            }
+        }
+        a.unfav {
+            @include icon-font(heart, before, $color__danger);
+        }
+    }
+
+    #subscription-toggle {
+        a {
+            @include button-icon($icon: envelope, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+        }
+        .is-subscribed a {
+            @include button-icon($icon: times, $color: $color__white, $font-size: $small, $border-color: $color__default, $border-radius: $element__border-radius-base, $background-color: $color__default);
+        }
+    }
+
+    .wp-media-buttons-icon {
+        @include icon-font(plus, before, $color__white);
+    }
+
+    #bp-create-doc-button {
+        @include button-icon($icon: plus, $font-size: $small, $border-color: transparent);
+    }
+    a.group-create,
+    #new-event {
+        @include icon-font(plus, before, $color__foreground);
+    }
+
+    a#invite-new-members {
+        @include icon-font(plus, before, $color__foreground);
+    }
+
+    a#sent-invites {
+        @include icon-font(send, before, $color__foreground);
+    }
+
+    #members-list,
+    #members-dir-list {
+        .small {
+            display: block;
+            &> a {
+                &.member-ban {
+                    @include button-icon($icon: ban, $color: $color__mid-light-grey, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
+                }
+                &.member-promote-to-mod,
+                &.member-promote-to-admin {
+                    @include button-icon($icon: level-up, $color: $color__mid-light-grey, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
+                }
+                &.confirm {
+                    @include button-icon($icon: times, $color: $color__mid-light-grey, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
+                }
+                
+            }
+        }    
+    }
+
+    .group-subscription-options {
+        li {
+            background-color: $color__background;
+        }
+
+        button a {
+            color: $color__white;
+        }
+    }
+
+
+}
+
+ // Icons
+ .feed {
+    a {
+        @include icon-font(rss, before, $color__foreground);
+    }
+ }
+
+ a.bpeo-ical-link {
+    span {
+        display: none;
+    }
+    @include icon-font(calendar, before, $color__foreground);
+ }
+
+
+// Images
+#buddypress {
+
+    img.avatar {
+        margin-right: .25em;
+        margin-left: .25em;
+    }
+
+    .group-members {
+        img.avatar {
+            @extend %avatar__small; 
+        }
+    }
+
+    #whats-new-avatar,
+    .activity-greeting {
+        text-align: center;
+
+        img {
+           @extend %avatar__small; 
+        }
+        
+    }
+
+    @include breakpoint(md) {
+        #whats-new-avatar,
+        .activity-greeting {
+            text-align: left;
+        }
+
+        #whats-new-avatar img {
+            float: left;
+            margin-right: .5em;
+        }
+    }
+
+    .activity-avatar,
+    .item-avatar,
+    .acomment-avatar {
+        text-align: center;
+        img {
+            display: inline-block;
+            text-align: left;
+        }
+    }
+
+    .activity-avatar,
+    .item-avatar {
+        img {
+            @extend %avatar__medium; 
+        }
+    }
+
+    .acomment-avatar {
+        img {
+            @extend %avatar__small; 
+        }
+    }
+
+    .ac-reply-avatar {
+        @include screen-reader-text;
+    }
+
+
+ }
+
+
+// Alerts
+#buddypress {
+    #message {
+        clear: both;
+        @extend %alert;
+        margin-top: .25em;
+        margin-bottom: .25em;
+
+        p {
+            display: block;
+            margin: 0;
+            background-color: transparent;
+            border: none;
+            color: inherit;
+        }
+        &.info {
+            @extend %alert-info;
+        }
+        &.updated {
+            @extend %alert-success;
+        }
+        &.warning {
+             @extend %alert-warning;
+        }
+        &.error {
+             @extend %alert-danger;
+        }
+
+
+    }
+
+    p.warning {
+        @extend %alert-warning;
+    }
+
+    .bbp-template-notice {
+        background-color: transparent;
+        border: none;
+
+        p {
+            @extend %alert;
+        }
+
+        &.info p {
+            @extend %alert-info;
+        }
+        &.updated p {
+            @extend %alert-success;
+        }
+        &.warning p {
+             @extend %alert-warning;
+        }
+        &.error p {
+             @extend %alert-danger;
+        }
+    }
+
+    p.no-docs {
+        @extend %alert;
+        @extend %alert-info;
+    }
+
+    #item-header #message {
+        margin: .25em;
+    }
+
+}
+
+
+// Accessibility
+.bp-screen-reader-text {
+    @include screen-reader-text;
+}
+
+/**
+ * Plugins
+ *
+ */
+#buddypress {
     .forums {
         @include no-bullets;
 
@@ -402,50 +907,92 @@ body.buddypress .site-main,
         }
     }
 
-    #item-header-cover-image {
+}
 
-        #item-header-avatar,
-        #item-header-content,
-        #item-actions {
-            text-align: center;
+// Events
+#buddypress {
 
+    .bpeo-ical-download {
+        ul {
+            @include no-bullets;
+            margin-left: 0;
         }
 
-        @include breakpoint(md) {
-            #item-header-avatar,
-            #item-header-content,
-            #item-actions {
-                @include font-size($h6);
-            }
+        // .bpeo-ical-link {
+        //     @include icon-font(calendar, before);
+        // }
+    }
+
+    .fc-prev-button {
+        .fc-icon {
+            @include icon-font(caret-left, none, $color__foreground);
+        }
+    }
+    .fc-next-button {
+        .fc-icon {
+            @include icon-font(caret-right, none, $color__foreground);
+        }
+    }
+}
+
+// Invite Anyone
+#buddypress {
+
+    #group-create-body ul.acfb-holder {
+       @include no-bullets;
+    }
+    
+    // Reset font sizes
+    #send-invite-form,
+    #invite-anyone-member-list,
+    #invite-anyone-invite-list,
+    #invite-anyone-group-list,
+    #invite-anyone-by-email,
+    #welcome-message {
+        @include font-size($h6);
+    }
+
+    a#invite-new-members,
+    a#sent-invites {
+        &:before {
+            background-image: none !important;
+        }
+    }
+
+    #send-invite-form {
+        .submit {
+            float: left;
+            margin-left: 4%;
+        }
+        .left-menu {
+            width: 100%;
+        }
+        .main-column {
+            width: 100%;
+            margin-left: 0;
+        }
+        ul.acfb-holder {
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }  
+
+    #invite-anyone-member-list {
+        ul {
+            padding-left: 0;
+            text-align: left;
+        }
+    }
+
+    #invite-anyone-invite-list {
+
+        .item-avatar {}
+        .item {}
+        .action {
+            margin-top: .25em;
         }
 
-        #item-header-avatar {}
-        #item-header-content {}
-        #item-actions {
-
-            .group-members {
-                @include make-md-column(6);
-            }
-
-            h3 {
-                margin-top: 0;
-                @include font-size($small);
-
-                @include breakpoint(md) {  
-                    @include font-size($h6);
-                }
-
-            }
-            ul {
-                @include inline-list;
-                li {
-                    padding: .25em;
-                }
-
-            }
-        }
-
-        #item-meta {
+        .item-meta {
             .activity {
                 @extend %label;
                 @extend %label-default;
@@ -457,317 +1004,54 @@ body.buddypress .site-main,
         }
     }
 
-    // Tables
-    table {
-        @extend .table !optional;
-        @extend .table-striped !optional;
-        @extend .table-hover !optional;
-
-        border-top: 1px solid $color__border-nav;
-
-        tr {
-            border-top: none;
-            border-bottom: 1px solid $color__border-nav;
-
-            td {
-                border: none;
-
-                &.label {
-                    display: block;
-                    border: none;
-                    background-color: lighten($color__background-nav-alt, 40%);
-                    @include font-size($h6);
-                    color: $color__white;
-                    border-radius: $element__border-radius-base;
-                }
-
-                p {
-                    margin-bottom: 0;
-                    padding-bottom: 0;
-                }
-            }
+    #invite-anyone-group-list {
+        .avatar {
+            @extend %avatar__medium;
         }
-
-        tbody > tr > td {
-            border: none;
-        }
-
-    }
-
-    // Pagination
-    .bbp-pagination-links {}
-    .pagination {
-        display: block;
-    }
-
-    // Images
-    img {
-        &.avatar {
-            @extend %avatar;
-            margin-right: .25em;
-            margin-left: .25em;
+        .invite-anyone-group-name span,
+        .description {
+            @include font-size($h6);
         }
     }
 
-    #whats-new-avatar,
-    .activity-greeting {
-        text-align: center;
-    }
-
-    @include breakpoint(md) {
-        #whats-new-avatar,
-        .activity-greeting {
-            text-align: left;
-        }
-    }
-
-    #whats-new-avatar {
-        @include breakpoint(md) {
-            img {
-                float: left;
-                margin-right: .5em;
-            }
-        }
-    }
-
-    // Labels
-    .highlight {
-        @extend %label;
-        @extend %label-info;
-    }
-
-    .bbp-topic-tags {
-        a {
-            @extend %label;
-            @extend %label-default;
-        }
-    }
-
-    .tags-cell {
-        a {
-            @extend %label;
-            @extend %label-default;
-        }
-    }
-
-    .bbp-reply-permalink,
-    span.time-since {
-        @extend %label;
-        @extend %label-default;
-    }
-
-    // Badges
-    a {
-        span {
-            @include badge;
-
-        }
-    }
-
-    // Buttons
-    .row-actions,
-    .activity-meta,
-    .acomment-options,
-    .action {
-        a {
-            @include button-icon($color: $color__mid-light-grey, $icon: cog, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            margin-bottom: .125em;
-
-            &.bp-secondary-action {
-                @include button-icon($color: $color__mid-light-grey, $icon: cog, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.view {
-                @include button-icon($color: $color__mid-light-grey, $icon: comments-o, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.visit {
-                @include button-icon($color: $color__mid-light-grey, $icon: globe, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &[href$="edit/"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: pencil, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &[href$="history"] {
-                @include button-icon($color: $color__mid-light-grey, $icon: history, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.leave-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.acomment-reply {
-                @include button-icon($color: $color__mid-light-grey, $icon: reply, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.fav {
-                @include button-icon($color: $color__mid-light-grey, $icon: heart-o, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.unfav {
-                @include button-icon($color: $color__danger, $icon: heart, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.delete-activity,
-            &.acomment-delete {
-                @include button-icon($color: $color__mid-light-grey, $icon: trash, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.unlink-from-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: chain-broken, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.leave-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-out, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.join-group {
-                @include button-icon($color: $color__mid-light-grey, $icon: sign-in, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.group-subscription-options-link {
-                @include button-icon($color: $color__mid-light-grey, $icon: envelope, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-            &.friendship-button {
-                &.add {
-                    @include button-icon($color: $color__mid-light-grey, $icon: user-plus, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-                }
-                &.requested {
-                    @include button-icon($color: $color__mid-light-grey, $icon: hourglass-o, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
-                }
-                &.remove {
-                    @include button-icon($color: $color__mid-light-grey, $icon: user-times, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
-                }
-            }
-            &.mention {
-                @include button-icon($color: $color__mid-light-grey, $icon: bullhorn, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
-            }
-            &.send-message {
-                @include button-icon($color: $color__mid-light-grey, $icon: comment, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white);
-            }
-
-            // Comment Badge
-            span {
-                @include badge;
-            }
-        }
-
-        #user_switching_switch_to a {
-            @include button-icon($color: $color__mid-light-grey, $icon: random, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small, $background-color: $color__white); 
-        }
-    }
-
-    #favorite-toggle {
-        a {
-            @include icon-font(heart-o, before, $color__text-light);
-
-        }
-        .is-favorite {
-            a {
-                @include icon-font(heart, before, $color__danger);
-            }
-        }
-    }
-
-    .wp-media-buttons-icon {
-        @include icon-font(plus, before, $color__white);
-    }
-
-    #bp-create-doc-button {
-        @include button-icon($icon: plus, $font-size: $small, $border-color: transparent);
-    }
-
-    a.group-create {
-        @include icon-font(plus, before, $color__foreground);
-    }
-
-    #members-list,
-    #members-dir-list {
-        .small {
-            display: block;
-            &> a {
-                &.member-ban {
-                    @include button-icon($color: $color__mid-light-grey, $icon: ban, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
-                }
-                &.member-promote-to-mod,
-                &.member-promote-to-admin {
-                    @include button-icon($color: $color__mid-light-grey, $icon: level-up, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
-                }
-                &.confirm {
-                    @include button-icon($color: $color__mid-light-grey, $icon: times, $font-size: $small, $border-color: $color__border-hr, $border-radius: $element__border-radius-small);
-                }
-                
-            }
-        }
-
-        .item-header-content {
-            text-align: center;
-
-            @include breakpoint(md) {
-                text-align: left;
-            }
-
-            .item-title {
-                font-weight: bold;
-            }
-
-            .activity {
-                display: inline-block;
-                @extend %label;
-                @extend %label-default;
-            }
-
-            .is-online .activity {
-                @extend %label-warning;
-            }
-            .is-current-user .activity {
-                @extend %label-info;
-            }
-        }
-    }
-
-    .item-list {
-
-        .group-subscription-options {
-            li {
-                background-color: $color__background;
-            }
-
-            button a {
-                color: $color__white;
-            }
+    #invite-anyone-by-email {
+        ol {
+            margin-left: 0;
+            padding-left: 0;
         }
     }
 
 }
 
-.bp-user {
-
-    // Events
-    &.events {
-        .bpeo-ical-download {
-            ul {
-                @include no-bullets;
+@include breakpoint(md) {
+    #buddypress {
+        #send-invite-form {
+            .left-menu {
+                width: 30%;
             }
+            .main-column {
+                width: 65%;
+                margin-left: 4%;
+            }
+        }
 
-            .bpeo-ical-link {
-                @include icon-font(calendar, before);
+        #invite-anyone-invite-list {
+            &> li {
+                .item-avatar {
+                    flex: 0 0 50px;
+                    margin-right: 5px;
+                }
+                .item {
+                    flex: 0 0 calc(100% - 55px);
+                }
+                .action {
+                    flex: 0 0 calc(100% - 58px);
+                    margin-left: 58px;
+                }
             }
         }
     }
 }
-
-
-/**
- * Invite Anyone
- *
- */
-body.buddypress #group-create-body ul.acfb-holder {
-   @include no-bullets;
-}
-
-#invite-anyone-steps {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-#send-invite-form {
-    .submit {
-        float: left;
-        margin-left: 4%;
-    }
-}
-
-
-.buddypress-attribution a {}
 
 
 /**
@@ -776,10 +1060,10 @@ body.buddypress #group-create-body ul.acfb-holder {
  * @link https://plan.glocal.coop/issues/1309
  *
  */
-body.buddypress {
+#buddypress {
 
-    #primary #members-list,
-    #primary #blogs-list {
+    #members-list,
+    #blogs-list {
 
         .action {
             display: block;
@@ -787,60 +1071,6 @@ body.buddypress {
                 display: inline-block;
             }
         }
-
-        @include breakpoint(md) {
-
-            /**
-             * Member List and Friends List Layout
-             * @link https://plan.glocal.coop/issues/1308
-             * @link https://plan.glocal.coop/issues/1309
-             *
-             */
-            display: -ms-flex;
-            display: -webkit-flex;
-            display: flex;
-            flex-wrap: wrap;
-
-                &> li {
-                    flex: 0 0 calc(50% - #{$gutter__column});
-                    margin-top: .5em;
-                    box-sizing: border-box;
-                    border: 1px solid $color__border-nav-alt;
-
-                    // Nested Flex
-                    display: -ms-flex;
-                    display: -webkit-flex;
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    &:nth-child(odd){
-                        margin-right: $gutter__column;
-                    }
-
-                    &:nth-child(even){
-                        margin-left: $gutter__column;
-                    }
-
-                    .item-avatar {
-                        flex: 0 0 110px;
-                        text-align: left;
-                        img {
-                            text-align: left;
-                        }
-                    }
-
-                    .item {
-                        flex: 0 0 calc(100% - 110px);
-                    }
-
-                    .action {
-                        flex: 0 0 calc(100% - 110px);
-                        margin-left: 110px;
-                    }
-
-                }
-            
-            }
 
     }
 
@@ -853,7 +1083,6 @@ body.buddypress {
     #group-create-body {
 
         ul {
-            margin-left: 1em;
             list-style-type: disc;
         }
 
@@ -891,6 +1120,12 @@ body.buddypress {
         .radio label {
             font-weight: bold;
             margin: .5em 0;
+        }
+
+        label[for="group-name"],
+        label[for="group-desc"] {
+            display: block;
+            margin-top: .25em;
         }
 
         label[for="group-status-public"] {
@@ -955,18 +1190,6 @@ body.buddypress {
 
 }
 
-
-/**
- * Events Organiser
- *
- */
-.events.buddypress {
-
-    .item-body {
-        background-color: $color__background-panel;
-    }
-
-}
 
 /**
  * Docs
@@ -1042,18 +1265,6 @@ body.buddypress {
         border: none;
     }
 
-    // .toggle-table,
-    // .doctable {
-    //     background-color: $color__white;
-    //     color: $color__foreground;
-    // }
-
-    // .doc-content-wrapper {
-    //     label {
-    //         color: $color__foreground;
-    //     }
-    // }
-
     span.description {
         display: block;
         @include font-size($h6);
@@ -1061,143 +1272,10 @@ body.buddypress {
  }
 
 
-
-
-
 /**
- * Invite Anyone
- * @link https://wordpress.org/plugins/invite-anyone/
- * 
+ * Widgets
+ *
  */
-body.invite-anyone div#content {
-    .left-menu {}
-    .main-column {
-        float: none;
-        margin: 0 !important;
-        width: 100% !important;
-    }
-
-    .item-list {
-        li {
-            margin-top: .25em;
-            margin-bottom: .25em;
-        }
-    }
-}
-
-
-@include breakpoint(md) {
-
-    body.invite-anyone div#content {
-        .main-column {
-            float: left;
-            margin-left: 4% !important;
-            width: 65% !important;
-            @include clearfix;
-        }
-
-        #previous-next.submit {
-            clear: both;
-        }
-
-        .item-list {
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-
-            li {
-                flex: 0 0 calc(50% - #{$gutter__column});
-                box-sizing: border-box;
-                margin-top: .5em;
-                padding: .5em;
-                border: 1px solid $color__border-nav-alt;
-
-                // Nested Flex
-                display: -ms-flex;
-                display: -webkit-flex;
-                display: flex;
-                flex-wrap: wrap;
-
-                &:nth-child(odd){
-                    margin-right: $gutter__column;
-                }
-
-                &:nth-child(even){
-                    margin-left: $gutter__column;
-                }
-
-            }
-
-            .avatar {
-                margin: 0;
-                width: 50px;
-                height: 50px;
-                flex: 0 0 50px;
-            }
-
-            h4 {
-                margin: 0 0 0 10px;
-                flex: 0 0 calc(100% - 60px);
-            }
-        }
-    }
- 
-}
-
-
-// Avatars
-
-.activity-avatar,
-.item-avatar,
-.acomment-avatar {
-    text-align: center;
-    img {
-        display: inline-block;
-        text-align: left;
-        margin: 0;
-    }
-}
-
-.ac-reply-avatar img {
-    display: none;
-}
-
-//Small
-img.avatar {
-    width: 50px;
-    height: auto;
-}
-
-// Mini
-.activity-header,
-.bbp-author-avatar {
-    img.avatar {
-        width: 25px;
-    }
-}
-
-.acomment-avatar {
-    img {
-        width: 50px;
-    }
-}
-
-
-// Medium
-.activity-avatar,
-.item-avatar {
-    img {
-        width: 75px;
-    }
-}
-
-// Large
-
-
-
-// Widgets
 .widget-buddypress {
 
     text-align: center;
@@ -1260,53 +1338,16 @@ img.avatar {
 
 }
 
-#buddypress {
-    // Alerts
-    #message {
-        clear: both;
-        @extend %alert;
-        margin-top: .25em;
-        margin-bottom: .25em;
-        p {
-            display: block;
-            margin: 0;
-            background-color: transparent;
-            border: none;
-            color: inherit;
-        }
-        &.info {
-            @extend %alert-info;
-        }
-        &.updated {
-            @extend %alert-success;
-        }
-        &.warning {
-             @extend %alert-warning;
-        }
-        &.error {
-             @extend %alert-danger;
-        }
 
 
-    }
+.buddypress-attribution a {}
 
-    p.warning {
-        @extend %alert-warning;
-    }
 
-    .bbp-template-notice p {
-        @extend %alert;
-    }
 
-    p.no-docs {
-        @extend %alert;
-        @extend %alert-info;
-    }
 
-    #item-header #message {
-        margin: .25em;
-    }
 
-}
+
+
+
 
 
