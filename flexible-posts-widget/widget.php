@@ -23,7 +23,7 @@ if ( $flexible_posts->have_posts() ):
 	<?php while ( $flexible_posts->have_posts() ) : $flexible_posts->the_post(); global $post; ?>
 		<li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<a href="<?php echo the_permalink(); ?>" rel="bookmark">
-				
+
 				<?php if ( $thumbnail == true ) : ?>
 
 					<?php if( has_post_thumbnail() ) : ?>
@@ -31,14 +31,6 @@ if ( $flexible_posts->have_posts() ):
 						<div class="entry-image">
 
 							<?php the_post_thumbnail( $thumbsize ); ?>
-
-						</div>
-
-					<?php elseif( 'image/' == substr( $post->post_mime_type, 0, 6 ) ) : ?>
-
-						<div class="entry-image">
-
-						<?php echo wp_get_attachment_image( $post->ID, $thumbsize ); ?>
 
 						</div>
 
