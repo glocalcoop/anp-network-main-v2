@@ -1,0 +1,46 @@
+/**
+ * Flexible Posts Widget
+ */
+
+.widget_dpe_fp_widget {
+
+    ul {
+        li,
+        .entry {
+            margin: 0;
+            padding: 0;
+        }  
+    }
+
+    .entry-image {
+        height: auto;
+    }
+    .entry-title {
+        margin: 0;
+        padding: 0;
+        @include font-size($h4);
+    }
+    .entry-meta {}
+}
+
+@include breakpoint(md) {
+
+    .widget_dpe_fp_widget {
+        .entry-image {
+            width: 10%;
+            float: left;
+            margin-right: .5em;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .entry-title {
+            @include font-size($h6);
+        }
+        .entry {
+            @include clearfix;
+        }
+    }
+}
