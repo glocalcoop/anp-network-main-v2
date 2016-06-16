@@ -7,6 +7,29 @@
  * @package Activist_Network_Theme
  */
 
+/**
+ * Adds custom classes to the array of body classes.
+ *
+ * @param array $classes Classes for the body element.
+ * @return array
+ */
+function anp_network_main_body_classes( $classes ) {
+  // Adds a class of group-blog to blogs with more than 1 published author.
+  if ( is_multi_author() ) {
+    $classes[] = 'group-blog';
+  }
+
+  if( is_page() ) {
+
+    global $post;
+    $classes[] = 'page-' . $post->post_name;
+
+  }
+
+  return $classes;
+}
+add_filter( 'body_class', 'anp_network_main_body_classes' );
+
 
 /**
  * Count Widgets in Sidebar
