@@ -7,8 +7,18 @@
 
 ?>
 
+<?php 
+/**
+ * Hide sidebar for full and grid layouts
+ *
+ * @since 2.0.20
+ *
+ * @link http://themehybrid.com/docs/theme-layouts
+ */
+?>
+
 <!-- Don't show sidebar if full-width or grid layout -->
-<?php if( 'full' != hybrid_get_post_layout( get_the_id() ) && 'grid' != hybrid_get_post_layout( get_the_id() ) ) : ?>
+<?php if( 'full' != hybrid_get_theme_layout() && 'grid' != hybrid_get_theme_layout() ) : ?>
 
     <?php do_action ( 'anp_network_main_sidebar_before' );?>
 
