@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area posts-list">
 		<main id="main" class="site-main" role="main">
 
 		<?php do_action ( 'anp_site_main_top' );?>

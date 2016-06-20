@@ -11,11 +11,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php do_action ( 'anp_network_main_entry_header_before' );?>
+	<?php do_action ( 'anp_entry_header_before' );?>
 
 	<header class="entry-header">
 
-		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+		<?php do_action ( 'anp_entry_header_top' );?>
 
 		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
@@ -25,34 +25,34 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 
-		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+		<?php do_action ( 'anp_entry_header_bottom' );?>
 		
 	</header><!-- .entry-header -->
 
-	<?php do_action ( 'anp_network_main_entry_content_before' );?>
+	<?php do_action ( 'anp_entry_content_before' );?>
 
 	<div class="entry-summary entry-content">
-		<?php do_action ( 'anp_network_main_entry_content_top' );?>
+		<?php do_action ( 'anp_entry_content_top' );?>
 
 		<?php the_excerpt(); ?>
 
-		<?php do_action ( 'anp_network_main_entry_content_bottom' );?>
+		<?php do_action ( 'anp_entry_content_bottom' );?>
 
 	</div><!-- .entry-summary -->
 
-	<?php do_action ( 'anp_network_main_entry_content_after' );?>
+	<?php do_action ( 'anp_entry_content_after' );?>
 
 	<footer class="entry-footer">
 
-		<?php do_action ( 'anp_network_main_entry_footer_top' );?>
+		<?php do_action ( 'anp_entry_footer_top' );?>
 
 		<?php anp_network_main_entry_footer(); ?>
 
-		<?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+		<?php do_action ( 'anp_entry_footer_bottom' );?>
 
 	</footer><!-- .entry-footer -->
 
-	<?php do_action ( 'anp_network_main_entry_footer_after' );?>
+	<?php do_action ( 'anp_entry_footer_after' );?>
 
 </article><!-- #post-## -->
 

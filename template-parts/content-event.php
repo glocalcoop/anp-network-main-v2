@@ -15,11 +15,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'entry event' ); ?>>
 
-    <?php do_action ( 'anp_network_main_entry_header_before' );?>
+    <?php do_action ( 'anp_entry_header_before' );?>
 
     <header class="entry-header event-header">
 
-        <?php do_action ( 'anp_network_main_entry_header_top' );?>
+        <?php do_action ( 'anp_entry_header_top' );?>
 
         <div class="entry-meta event-meta">
             <span class="event-day"><?php eo_the_start( 'l' ); ?></span>
@@ -30,11 +30,11 @@
             <?php echo anp_get_event_meta_list(); ?>
         <?php endif; ?>
 
-        <?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+        <?php do_action ( 'anp_entry_header_bottom' );?>
 
     </header>
 
-    <?php do_action ( 'anp_network_main_entry_content_before' );?>
+    <?php do_action ( 'anp_entry_content_before' );?>
 
     <div class="entry-content event-content">
 
@@ -60,18 +60,18 @@
         
     </div><!-- .entry-content -->
 
-    <?php do_action ( 'anp_network_main_entry_content_after' );?>
+    <?php do_action ( 'anp_entry_content_after' );?>
 
     <footer class="entry-footer">
 
-        <?php do_action ( 'anp_network_main_entry_footer_top' );?>
+        <?php do_action ( 'anp_entry_footer_top' );?>
 
         <?php anp_network_main_entry_footer(); ?>
 
-        <?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+        <?php do_action ( 'anp_entry_footer_bottom' );?>
 
     </footer><!-- .entry-footer -->
 
-    <?php do_action ( 'anp_network_main_entry_footer_after' );?>       
+    <?php do_action ( 'anp_entry_footer_after' );?>       
 
 </article><!-- #post-<?php the_ID(); ?> -->

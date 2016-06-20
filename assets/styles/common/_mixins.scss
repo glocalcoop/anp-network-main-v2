@@ -214,6 +214,7 @@
       @include fa-icon;
       @extend %icon-#{$icon};
       color: $color;
+      visibility: visible;
     }
   }
   @elseif $position == "before" {
@@ -222,6 +223,7 @@
       @include fa-icon;
       @extend %icon-#{$icon};
       color: $color;
+      visibility: visible;
     }
   }
   @else {

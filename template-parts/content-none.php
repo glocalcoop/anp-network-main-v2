@@ -11,23 +11,23 @@
 
 <section class="no-results not-found">
 
-	<?php do_action ( 'anp_network_main_entry_header_before' );?>
+	<?php do_action ( 'anp_entry_header_before' );?>
 
 	<header class="page-header">
 
-		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+		<?php do_action ( 'anp_entry_header_top' );?>
 
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'anp-network-main' ); ?></h1>
 
-		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+		<?php do_action ( 'anp_entry_header_bottom' );?>
 
 	</header><!-- .page-header -->
 
-	<?php do_action ( 'anp_network_main_entry_content_before' );?>
+	<?php do_action ( 'anp_entry_content_before' );?>
 
 	<div class="page-content">
 
-		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+		<?php do_action ( 'anp_entry_header_top' );?>
 
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -45,10 +45,10 @@
 
 		<?php endif; ?>
 
-		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+		<?php do_action ( 'anp_entry_header_bottom' );?>
 
 	</div><!-- .page-content -->
 
-	<?php do_action ( 'anp_network_main_entry_content_after' );?>
+	<?php do_action ( 'anp_entry_content_after' );?>
 
 </section><!-- .no-results -->

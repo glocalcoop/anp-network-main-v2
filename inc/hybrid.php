@@ -29,6 +29,9 @@ function anp_network_main_hybrid_setup() {
   //http://themehybrid.com/docs/post-templates
   add_theme_support( 'hybrid-core-template-hierarchy' );
 
+  //http://themehybrid.com/docs/get-the-image
+  add_theme_support( 'get-the-image' );
+
   //http://themehybrid.com/docs/theme-layouts
   add_theme_support( 'theme-layouts', array( 
     'default'       => '2c-r',

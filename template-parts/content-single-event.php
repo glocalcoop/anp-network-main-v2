@@ -9,11 +9,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php do_action ( 'anp_network_main_entry_header_before' );?>
+    <?php do_action ( 'anp_entry_header_before' );?>
 
 	<header class="entry-header">
 
-        <?php do_action ( 'anp_network_main_entry_header_top' );?>
+        <?php do_action ( 'anp_entry_header_top' );?>
 
 		<?php if( has_post_thumbnail() ) : ?>
 		<div class="entry-image event-image">
@@ -23,15 +23,15 @@
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-        <?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+        <?php do_action ( 'anp_entry_header_bottom' );?>
 
 	</header><!-- .entry-header -->
 
-    <?php do_action ( 'anp_network_main_entry_content_before' );?>
+    <?php do_action ( 'anp_entry_content_before' );?>
 
 	<div class="entry-content">
 
-        <?php do_action ( 'anp_network_main_entry_content_top' );?>
+        <?php do_action ( 'anp_entry_content_top' );?>
 
 		<?php get_template_part( 'template-parts/content', 'event-meta' ); ?>
 
@@ -41,15 +41,15 @@
 
         </div>
 
-        <?php do_action ( 'anp_network_main_entry_content_bottom' );?>
+        <?php do_action ( 'anp_entry_content_bottom' );?>
 
 	</div><!-- .entry-content -->
 
-    <?php do_action ( 'anp_network_main_entry_content_after' );?>
+    <?php do_action ( 'anp_entry_content_after' );?>
 
 	<footer class="entry-footer">
 
-        <?php do_action ( 'anp_network_main_entry_footer_top' );?>
+        <?php do_action ( 'anp_entry_footer_top' );?>
 
 		<?php if ( is_active_sidebar( 'content-bottom' ) ) : ?>
 		<?php $widget_class = anp_network_main_count_widgets( 'content-bottom' ); ?>
@@ -58,11 +58,11 @@
         </div>
         <?php endif; ?>
 
-        <?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+        <?php do_action ( 'anp_entry_footer_bottom' );?>
 
 	</footer><!-- .entry-footer -->
 
-    <?php do_action ( 'anp_network_main_entry_footer_after' );?>
+    <?php do_action ( 'anp_entry_footer_after' );?>
     
 </article><!-- #post-## -->
 

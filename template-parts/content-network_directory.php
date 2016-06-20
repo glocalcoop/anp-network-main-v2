@@ -11,11 +11,11 @@
 
 <article id="site-<?php echo $blog_id; ?>" <?php post_class( 'entry' ); ?>>
 
-	<?php do_action ( 'anp_network_main_entry_header_before' );?>
+	<?php do_action ( 'anp_entry_header_before' );?>
 
 	<header class="entry-header">
 
-		<?php do_action ( 'anp_network_main_entry_header_top' );?>
+		<?php do_action ( 'anp_entry_header_top' );?>
 
 		<?php
 		/*
@@ -42,15 +42,15 @@
 
 		<h2 class="entry-title"><a href="<?php echo esc_url( $siteurl ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-		<?php do_action ( 'anp_network_main_entry_header_bottom' );?>
+		<?php do_action ( 'anp_entry_header_bottom' );?>
 
 	</header><!-- .entry-header -->
 
-	<?php do_action ( 'anp_network_main_entry_content_before' );?>
+	<?php do_action ( 'anp_entry_content_before' );?>
 
 	<div class="entry-content">
 
-		<?php do_action ( 'anp_network_main_entry_content_top' );?>
+		<?php do_action ( 'anp_entry_content_top' );?>
 
 		<?php
 			/* translators: %s: Name of current post */
@@ -67,23 +67,23 @@
 			) );
 		?>
 
-		<?php do_action ( 'anp_network_main_entry_content_bottom' );?>
+		<?php do_action ( 'anp_entry_content_bottom' );?>
 
 	</div><!-- .entry-content -->
 
-	<?php do_action ( 'anp_network_main_entry_content_after' );?>
+	<?php do_action ( 'anp_entry_content_after' );?>
 
 	<footer class="entry-footer">
 
-        <?php do_action ( 'anp_network_main_entry_footer_top' );?>
+        <?php do_action ( 'anp_entry_footer_top' );?>
 
         <?php $terms = hybrid_post_terms( array( 'taxonomy'   => 'subsite_category' ) ); 
         ?>
 
-        <?php do_action ( 'anp_network_main_entry_footer_bottom' );?>
+        <?php do_action ( 'anp_entry_footer_bottom' );?>
 
 	</footer><!-- .entry-footer -->
 
-    <?php do_action ( 'anp_network_main_entry_footer_after' );?>
+    <?php do_action ( 'anp_entry_footer_after' );?>
 
 </article><!-- #post-## -->

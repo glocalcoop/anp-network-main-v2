@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.18
+Version: 2.0.19
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -9106,7 +9106,8 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd; }
+  color: #cacccd;
+  visibility: visible; }
 
 .nav-links .nav-next:after {
   margin-left: .5em;
@@ -9116,7 +9117,8 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd; }
+  color: #cacccd;
+  visibility: visible; }
 
 /*--------------------------------------------------------------
 ## Menus
@@ -9179,7 +9181,8 @@ body {
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #cacccd; }
+        color: #cacccd;
+        visibility: visible; }
       .social-links ul a:before {
         margin-top: 8px;
         height: 33px;
@@ -9445,7 +9448,8 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd; }
+  color: #cacccd;
+  visibility: visible; }
 
 @media screen and (min-width: 768px) {
   .main-navigation ul {
@@ -9475,7 +9479,8 @@ body {
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #cacccd; }
+        color: #cacccd;
+        visibility: visible; }
   .main-navigation li {
     float: left;
     position: relative; } }
@@ -10155,7 +10160,8 @@ a[href*="=edit"] {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #cacccd; }
+    color: #cacccd;
+    visibility: visible; }
 
 .page-content .wp-smiley,
 .entry-content .wp-smiley, .so-widget-sow-post-carousel h3 a .wp-smiley,
@@ -10553,7 +10559,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff; }
+  color: #fff;
+  visibility: visible; }
 
 #buddypress .highlight.private-group {
   background-color: #f39c12; }
@@ -10565,7 +10572,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff; }
+    color: #fff;
+    visibility: visible; }
 
 #buddypress .highlight.hidden-group {
   background-color: #a3a6a8; }
@@ -10577,7 +10585,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff; }
+    color: #fff;
+    visibility: visible; }
 
 #buddypress a:not(.bpeo-ical-link) span {
   font-size: 11px;
@@ -10654,7 +10663,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff; }
+    color: #fff;
+    visibility: visible; }
   #buddypress .row-actions a:before,
   #buddypress .activity-meta a:before,
   #buddypress .acomment-options a:before,
@@ -10711,7 +10721,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.view:before,
     #buddypress .activity-meta a.view:before,
     #buddypress .acomment-options a.view:before,
@@ -10768,7 +10779,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.visit:before,
     #buddypress .activity-meta a.visit:before,
     #buddypress .acomment-options a.visit:before,
@@ -10825,7 +10837,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a[href$="edit/"]:before,
     #buddypress .activity-meta a[href$="edit/"]:before,
     #buddypress .acomment-options a[href$="edit/"]:before,
@@ -10882,7 +10895,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a[href$="history"]:before,
     #buddypress .activity-meta a[href$="history"]:before,
     #buddypress .acomment-options a[href$="history"]:before,
@@ -10939,7 +10953,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
     #buddypress .acomment-options a.leave-group:before,
@@ -10996,7 +11011,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.acomment-reply:before,
     #buddypress .activity-meta a.acomment-reply:before,
     #buddypress .acomment-options a.acomment-reply:before,
@@ -11053,7 +11069,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.fav:before,
     #buddypress .activity-meta a.fav:before,
     #buddypress .acomment-options a.fav:before,
@@ -11110,7 +11127,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.unfav:before,
     #buddypress .activity-meta a.unfav:before,
     #buddypress .acomment-options a.unfav:before,
@@ -11191,7 +11209,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
     #buddypress .activity-meta a.delete-activity:before,
     #buddypress .activity-meta a.acomment-delete:before,
@@ -11252,7 +11271,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.unlink-from-group:before,
     #buddypress .activity-meta a.unlink-from-group:before,
     #buddypress .acomment-options a.unlink-from-group:before,
@@ -11309,7 +11329,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
     #buddypress .acomment-options a.leave-group:before,
@@ -11366,7 +11387,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.join-group:before,
     #buddypress .activity-meta a.join-group:before,
     #buddypress .acomment-options a.join-group:before,
@@ -11423,7 +11445,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.group-subscription-options-link:before,
     #buddypress .activity-meta a.group-subscription-options-link:before,
     #buddypress .acomment-options a.group-subscription-options-link:before,
@@ -11480,7 +11503,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.friendship-button.add:before,
     #buddypress .activity-meta a.friendship-button.add:before,
     #buddypress .acomment-options a.friendship-button.add:before,
@@ -11537,7 +11561,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.friendship-button.requested:before,
     #buddypress .activity-meta a.friendship-button.requested:before,
     #buddypress .acomment-options a.friendship-button.requested:before,
@@ -11594,7 +11619,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.friendship-button.remove:before,
     #buddypress .activity-meta a.friendship-button.remove:before,
     #buddypress .acomment-options a.friendship-button.remove:before,
@@ -11651,7 +11677,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.remove:before,
     #buddypress .activity-meta a.remove:before,
     #buddypress .acomment-options a.remove:before,
@@ -11708,7 +11735,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.mention:before,
     #buddypress .activity-meta a.mention:before,
     #buddypress .acomment-options a.mention:before,
@@ -11765,7 +11793,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.send-message:before,
     #buddypress .activity-meta a.send-message:before,
     #buddypress .acomment-options a.send-message:before,
@@ -11822,7 +11851,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff; }
+      color: #fff;
+      visibility: visible; }
     #buddypress .row-actions a.deletion:before,
     #buddypress .activity-meta a.deletion:before,
     #buddypress .acomment-options a.deletion:before,
@@ -11894,7 +11924,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff; }
+    color: #fff;
+    visibility: visible; }
   #buddypress .row-actions #user_switching_switch_to a:before,
   #buddypress .activity-meta #user_switching_switch_to a:before,
   #buddypress .acomment-options #user_switching_switch_to a:before,
@@ -11910,7 +11941,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd; }
+  color: #cacccd;
+  visibility: visible; }
 
 #buddypress #favorite-toggle .is-favorite a:before {
   margin-right: .5em;
@@ -11920,7 +11952,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eb6361; }
+  color: #eb6361;
+  visibility: visible; }
 
 #buddypress #favorite-toggle a.unfav:before {
   margin-right: .5em;
@@ -11930,7 +11963,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eb6361; }
+  color: #eb6361;
+  visibility: visible; }
 
 #buddypress #subscription-toggle a {
   transition: all 0.25s ease;
@@ -11958,7 +11992,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff; }
+    color: #fff;
+    visibility: visible; }
   #buddypress #subscription-toggle a:before {
     margin-right: 4px; }
 
@@ -11988,7 +12023,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff; }
+    color: #fff;
+    visibility: visible; }
   #buddypress #subscription-toggle .is-subscribed a:before {
     margin-right: 4px; }
 
@@ -12000,7 +12036,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff; }
+  color: #fff;
+  visibility: visible; }
 
 #buddypress #bp-create-doc-button {
   transition: all 0.25s ease;
@@ -12028,7 +12065,8 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334; }
+    color: #313334;
+    visibility: visible; }
   #buddypress #bp-create-doc-button:before {
     margin-right: 4px; }
 
@@ -12041,7 +12079,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334; }
+  color: #313334;
+  visibility: visible; }
 
 #buddypress a#invite-new-members:before {
   margin-right: .5em;
@@ -12051,7 +12090,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334; }
+  color: #313334;
+  visibility: visible; }
 
 #buddypress a#sent-invites:before {
   margin-right: .5em;
@@ -12061,7 +12101,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334; }
+  color: #313334;
+  visibility: visible; }
 
 #buddypress #members-list .small,
 #buddypress #members-dir-list .small {
@@ -12098,7 +12139,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
+      color: #a3a6a8;
+      visibility: visible; }
     #buddypress #members-list .small > a.member-ban:before,
     #buddypress #members-dir-list .small > a.member-ban:before {
       margin-right: 4px; }
@@ -12140,7 +12182,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
+      color: #a3a6a8;
+      visibility: visible; }
     #buddypress #members-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:before {
@@ -12177,7 +12220,8 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8; }
+      color: #a3a6a8;
+      visibility: visible; }
     #buddypress #members-list .small > a.confirm:before,
     #buddypress #members-dir-list .small > a.confirm:before {
       margin-right: 4px; }
@@ -12196,7 +12240,8 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334; }
+  color: #313334;
+  visibility: visible; }
 
 a.bpeo-ical-link span {
   display: none; }
@@ -12209,7 +12254,8 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334; }
+  color: #313334;
+  visibility: visible; }
 
 #buddypress .public .group-type:before {
   margin-right: .5em;
@@ -12219,7 +12265,8 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #7B8083; }
+  color: #7B8083;
+  visibility: visible; }
 
 #buddypress .private .group-type:before {
   margin-right: .5em;
@@ -12229,7 +12276,8 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #7B8083; }
+  color: #7B8083;
+  visibility: visible; }
 
 #buddypress .hidden .group-type:before {
   margin-right: .5em;
@@ -12239,7 +12287,8 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #7B8083; }
+  color: #7B8083;
+  visibility: visible; }
 
 #buddypress .member-count:before {
   content: ' | '; }
@@ -12496,7 +12545,8 @@ a.bpeo-ical-link:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334; }
+    color: #313334;
+    visibility: visible; }
   #buddypress #group-settings-form label[for="group-status-private"]:after,
   #buddypress #group-create-body label[for="group-status-private"]:after {
     margin-left: .5em;
@@ -12506,7 +12556,8 @@ a.bpeo-ical-link:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334; }
+    color: #313334;
+    visibility: visible; }
   #buddypress #group-settings-form label[for="group-status-hidden"]:after,
   #buddypress #group-create-body label[for="group-status-hidden"]:after {
     margin-left: .5em;
@@ -12516,7 +12567,8 @@ a.bpeo-ical-link:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334; }
+    color: #313334;
+    visibility: visible; }
   #buddypress #blog-details-fields label strong {
     font-weight: bold; }
   #buddypress #blog-details-fields > p {
@@ -12596,7 +12648,8 @@ a.bpeo-ical-link:before {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #313334; }
+      color: #313334;
+      visibility: visible; }
     .bp-docs div.manage-folders-link a:before {
       margin-right: 4px; }
   .bp-docs #toggle-folders-hide {
@@ -12625,7 +12678,8 @@ a.bpeo-ical-link:before {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #313334; }
+      color: #313334;
+      visibility: visible; }
     .bp-docs #toggle-folders-hide:before {
       margin-right: 4px; }
     .bp-docs #toggle-folders-hide.show {
@@ -12660,7 +12714,8 @@ a.bpeo-ical-link:before {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #313334; }
+      color: #313334;
+      visibility: visible; }
     .bp-docs #toggle-folders-show:before {
       margin-right: 4px; }
     .bp-docs #toggle-folders-show.show {
@@ -13263,7 +13318,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      color: #cacccd;
+      visibility: visible; }
     .archive-meeting .entry .connected-content li.summary-link:before, .archive-meeting article.handbook .connected-content li.summary-link:before, .archive-meeting .entry .connected-content li.meeting-link:before, .archive-meeting article.handbook .connected-content li.meeting-link:before,
     .archive-agenda .entry .connected-content li.summary-link:before,
     .archive-agenda article.handbook .connected-content li.summary-link:before,
@@ -13296,7 +13352,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      color: #cacccd;
+      visibility: visible; }
     .archive-meeting .entry .connected-content li.proposal-link:before, .archive-meeting article.handbook .connected-content li.proposal-link:before,
     .archive-agenda .entry .connected-content li.proposal-link:before,
     .archive-agenda article.handbook .connected-content li.proposal-link:before,
@@ -13317,7 +13374,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      color: #cacccd;
+      visibility: visible; }
 
 .archive-meeting .entry .tags:before, .archive-meeting article.handbook .tags:before,
 .archive-agenda .entry .tags:before,
@@ -13339,7 +13397,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd; }
+  color: #cacccd;
+  visibility: visible; }
 
 .archive-meeting .entry .article-footer, .archive-meeting article.handbook .article-footer,
 .archive-agenda .entry .article-footer,
@@ -13603,7 +13662,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      color: #cacccd;
+      visibility: visible; }
     .single-meeting article .entry-content .connected-content li.summary-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.summary-link:before, .single-meeting article .entry-content .connected-content li.meeting-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.meeting-link:before,
     .single-proposal article .entry-content .connected-content li.summary-link:before,
     .single-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3
@@ -13630,7 +13690,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      color: #cacccd;
+      visibility: visible; }
     .single-meeting article .entry-content .connected-content li.proposal-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.proposal-link:before,
     .single-proposal article .entry-content .connected-content li.proposal-link:before,
     .single-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3
@@ -13648,7 +13709,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      color: #cacccd;
+      visibility: visible; }
     .single-meeting article .entry-content .connected-content li::before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li::before,
     .single-proposal article .entry-content .connected-content li::before,
     .single-proposal article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3
@@ -14227,7 +14289,8 @@ Knowledge Base
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334; }
+    color: #313334;
+    visibility: visible; }
   .knowledge-base-list .count {
     float: right; }
   @media screen and (min-width: 768px) {
