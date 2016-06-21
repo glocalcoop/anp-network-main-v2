@@ -207,13 +207,12 @@
   }
 }
 
-@mixin icon-font($icon: cog, $position: none, $color: $color__light-grey) {
+@mixin icon-font($icon: cog, $position: none) {
   @if $position == "after" {
     &:after {
       margin-left: .5em;
       @include fa-icon;
       @extend %icon-#{$icon};
-      color: $color;
       visibility: visible;
     }
   }
@@ -222,14 +221,12 @@
       margin-right: .5em;
       @include fa-icon;
       @extend %icon-#{$icon};
-      color: $color;
       visibility: visible;
     }
   }
   @else {
     @include fa-icon;
     @extend %icon-#{$icon};
-    color: $color;
   }
 }
 

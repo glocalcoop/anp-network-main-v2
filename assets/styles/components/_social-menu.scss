@@ -47,6 +47,7 @@
         }
         a:before {
             @include icon-font(cog);
+            color: $color__light-grey;
         }
         a[href*="codepen.io"]:before {
             @include icon-font(codepen);
