@@ -11,15 +11,9 @@
 
     <?php do_action ( 'anp_entry_header_before' );?>
 
-	<header class="entry-header">
+	<header class="page-header">
 
         <?php do_action ( 'anp_entry_header_top' );?>
-
-		<?php if( has_post_thumbnail() ) : ?>
-		<div class="entry-image event-image">
-			<?php the_post_thumbnail('full'); ?> 
-		</div>
-		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
@@ -32,6 +26,12 @@
 	<div class="entry-content">
 
         <?php do_action ( 'anp_entry_content_top' );?>
+
+        <?php if( has_post_thumbnail() ) : ?>
+        <div class="main-image">
+            <?php the_post_thumbnail('full'); ?> 
+        </div>
+        <?php endif; ?>
 
 		<?php get_template_part( 'template-parts/content', 'event-meta' ); ?>
 

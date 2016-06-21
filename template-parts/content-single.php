@@ -11,7 +11,7 @@
 
 	<?php do_action ( 'anp_entry_header_before' );?>
 
-	<header class="entry-header">
+	<header class="page-header">
 
 		<?php do_action ( 'anp_entry_header_top' );?>
 		
