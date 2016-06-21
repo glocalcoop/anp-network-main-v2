@@ -11,15 +11,15 @@
 
 	<?php do_action ( 'anp_entry_header_before' );?>
 
-	<header class="entry-header">
+	<header class="page-header">
 
 		<?php do_action ( 'anp_entry_header_top' );?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 		<?php do_action ( 'anp_entry_header_bottom' );?>
 
-	</header><!-- .entry-header -->
+	</header><!-- .page-header -->
 
 	<?php do_action ( 'anp_entry_content_before' );?>
 
