@@ -23,6 +23,8 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/header', 'archive' ); ?>
 
+				<div class="entries-list">
+
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -37,6 +39,8 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
+
+				</div>
 
 				<?php anp_numeric_posts_nav(); ?>
 

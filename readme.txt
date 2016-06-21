@@ -31,6 +31,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 
 = 2.0.24 - June, 21 2016 =
 * Changed single post header to page-header class.
+* Added `entries-list` class to event archive templates.
 
 = 2.0.23 - June, 21 2016 =
 * Removed color specification from icon-font mixin.
@@ -47,7 +48,6 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 * Added `posts-list` class to index and archive templates
 * Globally changed template action hooks to `anp_*` instead of `anp_network_main_` 
 * Properly hid sidebar for full and grid layouts
-
 
 = 2.0.19 - June, 16 2016 =
 * Added page slug body class and removed call to `inc/extras.php`.
