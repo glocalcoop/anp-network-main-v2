@@ -45,7 +45,10 @@ Knowledge Base
 
         &> li {
             a {
-                @include icon-font($icon: file-text-o, $position: before, $color: $color__foreground);
+                @include icon-font(file-text-o, before);
+                &:before {
+                    color: $color__foreground;
+                }
             }
         }
     }
@@ -65,7 +68,6 @@ Knowledge Base
 
         &> li {
             flex: 0 0 calc(50% - #{$gutter__column});
-            // text-indent: 10px;
             box-sizing: border-box;
             text-align: left;
 

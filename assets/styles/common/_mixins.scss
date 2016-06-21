@@ -267,10 +267,11 @@
       color: darken($color, 10%);
   }
 
-  @include icon-font($icon, before, $color);
+  @include icon-font($icon, before);
   
   &:before {
     margin-right: 4px;
+    color: $color;
   }
 }
 

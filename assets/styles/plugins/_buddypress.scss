@@ -495,15 +495,25 @@
         @extend %label;
         @extend %label-info;
 
-        @include icon-font(users, before, $color__white);
+        @include icon-font(users, before);
+
+        &:before {
+            color: $color__white;
+        }
 
         &.private-group {
             background-color: $color__warning;
-            @include icon-font(user-secret, before, $color__white);
+            @include icon-font(user-secret, before);
+            &:before {
+                color: $color__white;
+            }
         }
         &.hidden-group {
             background-color: $color__default;
-            @include icon-font(eye-slash, before, $color__white);
+            @include icon-font(eye-slash, before);
+            &:before {
+                color: $color__white;
+            }
         }
     } 
 
@@ -643,16 +653,25 @@
 
     #favorite-toggle {
         a {
-            @include icon-font(heart-o, before, $color__text-light);
+            @include icon-font(heart-o, before);
+            &:before {
+                color: $color__text-light
+            }
 
         }
         .is-favorite {
             a {
-                @include icon-font(heart, before, $color__danger);
+                @include icon-font(heart, before);
+                &:before {
+                    color: $color__danger;
+                }
             }
         }
         a.unfav {
-            @include icon-font(heart, before, $color__danger);
+            @include icon-font(heart, before);
+            &:before {
+                color: $color__danger;
+            }
         }
     }
 
@@ -666,7 +685,10 @@
     }
 
     .wp-media-buttons-icon {
-        @include icon-font(plus, before, $color__white);
+        @include icon-font(plus, before);
+        &:before {
+            color: $color__white;
+        }
     }
 
     #bp-create-doc-button {
@@ -674,15 +696,24 @@
     }
     a.group-create,
     #new-event {
-        @include icon-font(plus, before, $color__foreground);
+        @include icon-font(plus, before);
+        &:before {
+            color: $color__foreground;
+        }
     }
 
     a#invite-new-members {
-        @include icon-font(plus, before, $color__foreground);
+        @include icon-font(plus, before);
+        &:before {
+            color: $color__foreground;
+        }
     }
 
     a#sent-invites {
-        @include icon-font(send, before, $color__foreground);
+        @include icon-font(send, before);
+        &:before {
+            color: $color__foreground;
+        }
     }
 
     #members-list,
@@ -721,7 +752,10 @@
  // Icons
  .feed {
     a {
-        @include icon-font(rss, before, $color__foreground);
+        @include icon-font(rss, before);
+        &:before {
+            color: $color__foreground;
+        }
     }
  }
 
@@ -729,23 +763,35 @@
     span {
         display: none;
     }
-    @include icon-font(calendar, before, $color__foreground);
+    @include icon-font(calendar, before);
+    &:before {
+        color: $color__foreground;
+    }
  }
 
  #buddypress {
     .public {
         .group-type {
-            @include icon-font(users, before, $color__text-meta);
+            @include icon-font(users, before);
+            &:before {
+                color: $color__text-meta;
+            }
         }
     }
     .private {
         .group-type {
-            @include icon-font(user-secret, before, $color__text-meta);
+            @include icon-font(user-secret, before);
+            &:before {
+                color: $color__text-meta;
+            }
         }
     }
     .hidden {
         .group-type {
-            @include icon-font(eye-slash, before, $color__text-meta);
+            @include icon-font(eye-slash, before);
+            &:before {
+                color: $color__text-meta;
+            }
         }
     }
 
@@ -959,12 +1005,14 @@
 
     .fc-prev-button {
         .fc-icon {
-            @include icon-font(caret-left, none, $color__foreground);
+            @include icon-font(caret-left, none);
+            color: $color__foreground;
         }
     }
     .fc-next-button {
         .fc-icon {
-            @include icon-font(caret-right, none, $color__foreground);
+            @include icon-font(caret-right, none);
+            color: $color__foreground;
         }
     }
 }
@@ -1163,15 +1211,24 @@
         }
 
         label[for="group-status-public"] {
-            @include icon-font(eye, after, $color__foreground);
+            @include icon-font(eye, after);
+            &:after {
+                color: $color__foreground;
+            }
         }
 
         label[for="group-status-private"] {
-            @include icon-font(user-secret, after, $color__foreground);
+            @include icon-font(user-secret, after);
+            &:after {
+                color: $color__foreground;
+            }
         }
 
         label[for="group-status-hidden"] {
-            @include icon-font(eye-slash, after, $color__foreground);
+            @include icon-font(eye-slash, after);
+            &:after {
+                color: $color__foreground;
+            }
         }
 
     }

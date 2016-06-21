@@ -31,6 +31,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 
 = 2.0.23 - June, 21 2016 =
 * Removed color specification from icon-font mixin.
+* Fixed all instances of icon-font containing color variable.
 
 = 2.0.22 - June, 20 2016 =
 * Changed page heading class.

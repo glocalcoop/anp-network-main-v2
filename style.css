@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.22
+Version: 2.0.23
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -9106,7 +9106,6 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd;
   visibility: visible; }
 
 .nav-links .nav-next:after {
@@ -9117,7 +9116,6 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd;
   visibility: visible; }
 
 /*--------------------------------------------------------------
@@ -9181,7 +9179,6 @@ body {
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #cacccd;
         visibility: visible; }
       .social-links ul a:before {
         margin-top: 8px;
@@ -9210,208 +9207,182 @@ body {
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="digg.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="dribbble.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="dropbox.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="facebook.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="flickr.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="foursquare.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="plus.google.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="github.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="instagram.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="linkedin.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="pinterest.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="getpocket.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="reddit.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="skype.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="stumbleupon.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="tumblr.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="twitter.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="vimeo.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="wordpress.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="wordpress.org"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="youtube.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href^="mailto:"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="spotify.com"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href*="twitch.tv"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
     .social-links ul a[href$="/feed/"]:before {
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #cacccd; }
+      -moz-osx-font-smoothing: grayscale; }
 
 /**
  * Main Navigation Styles
@@ -9448,7 +9419,6 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd;
   visibility: visible; }
 
 @media screen and (min-width: 768px) {
@@ -9479,7 +9449,6 @@ body {
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #cacccd;
         visibility: visible; }
   .main-navigation li {
     float: left;
@@ -10160,7 +10129,6 @@ a[href*="=edit"] {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #cacccd;
     visibility: visible; }
 
 .page-content .wp-smiley,
@@ -10559,8 +10527,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
   visibility: visible; }
+
+#buddypress .highlight:before {
+  color: #fff; }
 
 #buddypress .highlight.private-group {
   background-color: #f39c12; }
@@ -10572,8 +10542,9 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
     visibility: visible; }
+  #buddypress .highlight.private-group:before {
+    color: #fff; }
 
 #buddypress .highlight.hidden-group {
   background-color: #a3a6a8; }
@@ -10585,8 +10556,9 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
     visibility: visible; }
+  #buddypress .highlight.hidden-group:before {
+    color: #fff; }
 
 #buddypress a:not(.bpeo-ical-link) span {
   font-size: 11px;
@@ -10663,14 +10635,14 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
     visibility: visible; }
   #buddypress .row-actions a:before,
   #buddypress .activity-meta a:before,
   #buddypress .acomment-options a:before,
   #buddypress .action a:before,
   #buddypress .major-publishing-actions a:before {
-    margin-right: 4px; }
+    margin-right: 4px;
+    color: #fff; }
   #buddypress .row-actions a.view,
   #buddypress .activity-meta a.view,
   #buddypress .acomment-options a.view,
@@ -10721,14 +10693,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.view:before,
     #buddypress .activity-meta a.view:before,
     #buddypress .acomment-options a.view:before,
     #buddypress .action a.view:before,
     #buddypress .major-publishing-actions a.view:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.visit,
   #buddypress .activity-meta a.visit,
   #buddypress .acomment-options a.visit,
@@ -10779,14 +10751,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.visit:before,
     #buddypress .activity-meta a.visit:before,
     #buddypress .acomment-options a.visit:before,
     #buddypress .action a.visit:before,
     #buddypress .major-publishing-actions a.visit:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a[href$="edit/"],
   #buddypress .activity-meta a[href$="edit/"],
   #buddypress .acomment-options a[href$="edit/"],
@@ -10837,14 +10809,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a[href$="edit/"]:before,
     #buddypress .activity-meta a[href$="edit/"]:before,
     #buddypress .acomment-options a[href$="edit/"]:before,
     #buddypress .action a[href$="edit/"]:before,
     #buddypress .major-publishing-actions a[href$="edit/"]:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a[href$="history"],
   #buddypress .activity-meta a[href$="history"],
   #buddypress .acomment-options a[href$="history"],
@@ -10895,14 +10867,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a[href$="history"]:before,
     #buddypress .activity-meta a[href$="history"]:before,
     #buddypress .acomment-options a[href$="history"]:before,
     #buddypress .action a[href$="history"]:before,
     #buddypress .major-publishing-actions a[href$="history"]:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.leave-group,
   #buddypress .activity-meta a.leave-group,
   #buddypress .acomment-options a.leave-group,
@@ -10953,14 +10925,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
     #buddypress .acomment-options a.leave-group:before,
     #buddypress .action a.leave-group:before,
     #buddypress .major-publishing-actions a.leave-group:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.acomment-reply,
   #buddypress .activity-meta a.acomment-reply,
   #buddypress .acomment-options a.acomment-reply,
@@ -11011,14 +10983,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.acomment-reply:before,
     #buddypress .activity-meta a.acomment-reply:before,
     #buddypress .acomment-options a.acomment-reply:before,
     #buddypress .action a.acomment-reply:before,
     #buddypress .major-publishing-actions a.acomment-reply:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.fav,
   #buddypress .activity-meta a.fav,
   #buddypress .acomment-options a.fav,
@@ -11069,14 +11041,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.fav:before,
     #buddypress .activity-meta a.fav:before,
     #buddypress .acomment-options a.fav:before,
     #buddypress .action a.fav:before,
     #buddypress .major-publishing-actions a.fav:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.unfav,
   #buddypress .activity-meta a.unfav,
   #buddypress .acomment-options a.unfav,
@@ -11127,14 +11099,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.unfav:before,
     #buddypress .activity-meta a.unfav:before,
     #buddypress .acomment-options a.unfav:before,
     #buddypress .action a.unfav:before,
     #buddypress .major-publishing-actions a.unfav:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.delete-activity, #buddypress .row-actions a.acomment-delete,
   #buddypress .activity-meta a.delete-activity,
   #buddypress .activity-meta a.acomment-delete,
@@ -11209,7 +11181,6 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.delete-activity:before, #buddypress .row-actions a.acomment-delete:before,
     #buddypress .activity-meta a.delete-activity:before,
@@ -11220,7 +11191,8 @@ object {
     #buddypress .action a.acomment-delete:before,
     #buddypress .major-publishing-actions a.delete-activity:before,
     #buddypress .major-publishing-actions a.acomment-delete:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.unlink-from-group,
   #buddypress .activity-meta a.unlink-from-group,
   #buddypress .acomment-options a.unlink-from-group,
@@ -11271,14 +11243,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.unlink-from-group:before,
     #buddypress .activity-meta a.unlink-from-group:before,
     #buddypress .acomment-options a.unlink-from-group:before,
     #buddypress .action a.unlink-from-group:before,
     #buddypress .major-publishing-actions a.unlink-from-group:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.leave-group,
   #buddypress .activity-meta a.leave-group,
   #buddypress .acomment-options a.leave-group,
@@ -11329,14 +11301,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.leave-group:before,
     #buddypress .activity-meta a.leave-group:before,
     #buddypress .acomment-options a.leave-group:before,
     #buddypress .action a.leave-group:before,
     #buddypress .major-publishing-actions a.leave-group:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.join-group,
   #buddypress .activity-meta a.join-group,
   #buddypress .acomment-options a.join-group,
@@ -11387,14 +11359,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.join-group:before,
     #buddypress .activity-meta a.join-group:before,
     #buddypress .acomment-options a.join-group:before,
     #buddypress .action a.join-group:before,
     #buddypress .major-publishing-actions a.join-group:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.group-subscription-options-link,
   #buddypress .activity-meta a.group-subscription-options-link,
   #buddypress .acomment-options a.group-subscription-options-link,
@@ -11445,14 +11417,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.group-subscription-options-link:before,
     #buddypress .activity-meta a.group-subscription-options-link:before,
     #buddypress .acomment-options a.group-subscription-options-link:before,
     #buddypress .action a.group-subscription-options-link:before,
     #buddypress .major-publishing-actions a.group-subscription-options-link:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.friendship-button.add,
   #buddypress .activity-meta a.friendship-button.add,
   #buddypress .acomment-options a.friendship-button.add,
@@ -11503,14 +11475,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.friendship-button.add:before,
     #buddypress .activity-meta a.friendship-button.add:before,
     #buddypress .acomment-options a.friendship-button.add:before,
     #buddypress .action a.friendship-button.add:before,
     #buddypress .major-publishing-actions a.friendship-button.add:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.friendship-button.requested,
   #buddypress .activity-meta a.friendship-button.requested,
   #buddypress .acomment-options a.friendship-button.requested,
@@ -11561,14 +11533,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.friendship-button.requested:before,
     #buddypress .activity-meta a.friendship-button.requested:before,
     #buddypress .acomment-options a.friendship-button.requested:before,
     #buddypress .action a.friendship-button.requested:before,
     #buddypress .major-publishing-actions a.friendship-button.requested:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.friendship-button.remove,
   #buddypress .activity-meta a.friendship-button.remove,
   #buddypress .acomment-options a.friendship-button.remove,
@@ -11619,14 +11591,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.friendship-button.remove:before,
     #buddypress .activity-meta a.friendship-button.remove:before,
     #buddypress .acomment-options a.friendship-button.remove:before,
     #buddypress .action a.friendship-button.remove:before,
     #buddypress .major-publishing-actions a.friendship-button.remove:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.remove,
   #buddypress .activity-meta a.remove,
   #buddypress .acomment-options a.remove,
@@ -11677,14 +11649,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.remove:before,
     #buddypress .activity-meta a.remove:before,
     #buddypress .acomment-options a.remove:before,
     #buddypress .action a.remove:before,
     #buddypress .major-publishing-actions a.remove:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.mention,
   #buddypress .activity-meta a.mention,
   #buddypress .acomment-options a.mention,
@@ -11735,14 +11707,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.mention:before,
     #buddypress .activity-meta a.mention:before,
     #buddypress .acomment-options a.mention:before,
     #buddypress .action a.mention:before,
     #buddypress .major-publishing-actions a.mention:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.send-message,
   #buddypress .activity-meta a.send-message,
   #buddypress .acomment-options a.send-message,
@@ -11793,14 +11765,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.send-message:before,
     #buddypress .activity-meta a.send-message:before,
     #buddypress .acomment-options a.send-message:before,
     #buddypress .action a.send-message:before,
     #buddypress .major-publishing-actions a.send-message:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a.deletion,
   #buddypress .activity-meta a.deletion,
   #buddypress .acomment-options a.deletion,
@@ -11851,14 +11823,14 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff;
       visibility: visible; }
     #buddypress .row-actions a.deletion:before,
     #buddypress .activity-meta a.deletion:before,
     #buddypress .acomment-options a.deletion:before,
     #buddypress .action a.deletion:before,
     #buddypress .major-publishing-actions a.deletion:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #fff; }
   #buddypress .row-actions a span,
   #buddypress .activity-meta a span,
   #buddypress .acomment-options a span,
@@ -11924,14 +11896,14 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
     visibility: visible; }
   #buddypress .row-actions #user_switching_switch_to a:before,
   #buddypress .activity-meta #user_switching_switch_to a:before,
   #buddypress .acomment-options #user_switching_switch_to a:before,
   #buddypress .action #user_switching_switch_to a:before,
   #buddypress .major-publishing-actions #user_switching_switch_to a:before {
-    margin-right: 4px; }
+    margin-right: 4px;
+    color: #fff; }
 
 #buddypress #favorite-toggle a:before {
   margin-right: .5em;
@@ -11941,8 +11913,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd;
   visibility: visible; }
+
+#buddypress #favorite-toggle a:before {
+  color: #cacccd; }
 
 #buddypress #favorite-toggle .is-favorite a:before {
   margin-right: .5em;
@@ -11952,8 +11926,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eb6361;
   visibility: visible; }
+
+#buddypress #favorite-toggle .is-favorite a:before {
+  color: #eb6361; }
 
 #buddypress #favorite-toggle a.unfav:before {
   margin-right: .5em;
@@ -11963,8 +11939,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eb6361;
   visibility: visible; }
+
+#buddypress #favorite-toggle a.unfav:before {
+  color: #eb6361; }
 
 #buddypress #subscription-toggle a {
   transition: all 0.25s ease;
@@ -11992,10 +11970,10 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
     visibility: visible; }
   #buddypress #subscription-toggle a:before {
-    margin-right: 4px; }
+    margin-right: 4px;
+    color: #fff; }
 
 #buddypress #subscription-toggle .is-subscribed a {
   transition: all 0.25s ease;
@@ -12023,10 +12001,10 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
     visibility: visible; }
   #buddypress #subscription-toggle .is-subscribed a:before {
-    margin-right: 4px; }
+    margin-right: 4px;
+    color: #fff; }
 
 #buddypress .wp-media-buttons-icon:before {
   margin-right: .5em;
@@ -12036,8 +12014,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
   visibility: visible; }
+
+#buddypress .wp-media-buttons-icon:before {
+  color: #fff; }
 
 #buddypress #bp-create-doc-button {
   transition: all 0.25s ease;
@@ -12065,10 +12045,10 @@ object {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334;
     visibility: visible; }
   #buddypress #bp-create-doc-button:before {
-    margin-right: 4px; }
+    margin-right: 4px;
+    color: #313334; }
 
 #buddypress a.group-create:before,
 #buddypress #new-event:before {
@@ -12079,8 +12059,11 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334;
   visibility: visible; }
+
+#buddypress a.group-create:before,
+#buddypress #new-event:before {
+  color: #313334; }
 
 #buddypress a#invite-new-members:before {
   margin-right: .5em;
@@ -12090,8 +12073,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334;
   visibility: visible; }
+
+#buddypress a#invite-new-members:before {
+  color: #313334; }
 
 #buddypress a#sent-invites:before {
   margin-right: .5em;
@@ -12101,8 +12086,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334;
   visibility: visible; }
+
+#buddypress a#sent-invites:before {
+  color: #313334; }
 
 #buddypress #members-list .small,
 #buddypress #members-dir-list .small {
@@ -12139,11 +12126,11 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8;
       visibility: visible; }
     #buddypress #members-list .small > a.member-ban:before,
     #buddypress #members-dir-list .small > a.member-ban:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #a3a6a8; }
   #buddypress #members-list .small > a.member-promote-to-mod, #buddypress #members-list .small > a.member-promote-to-admin,
   #buddypress #members-dir-list .small > a.member-promote-to-mod,
   #buddypress #members-dir-list .small > a.member-promote-to-admin {
@@ -12182,12 +12169,12 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8;
       visibility: visible; }
     #buddypress #members-list .small > a.member-promote-to-mod:before, #buddypress #members-list .small > a.member-promote-to-admin:before,
     #buddypress #members-dir-list .small > a.member-promote-to-mod:before,
     #buddypress #members-dir-list .small > a.member-promote-to-admin:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #a3a6a8; }
   #buddypress #members-list .small > a.confirm,
   #buddypress #members-dir-list .small > a.confirm {
     transition: all 0.25s ease;
@@ -12220,11 +12207,11 @@ object {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #a3a6a8;
       visibility: visible; }
     #buddypress #members-list .small > a.confirm:before,
     #buddypress #members-dir-list .small > a.confirm:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #a3a6a8; }
 
 #buddypress .group-subscription-options li {
   background-color: transparent; }
@@ -12240,8 +12227,10 @@ object {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334;
   visibility: visible; }
+
+.feed a:before {
+  color: #313334; }
 
 a.bpeo-ical-link span {
   display: none; }
@@ -12254,8 +12243,10 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #313334;
   visibility: visible; }
+
+a.bpeo-ical-link:before {
+  color: #313334; }
 
 #buddypress .public .group-type:before {
   margin-right: .5em;
@@ -12265,8 +12256,10 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #7B8083;
   visibility: visible; }
+
+#buddypress .public .group-type:before {
+  color: #7B8083; }
 
 #buddypress .private .group-type:before {
   margin-right: .5em;
@@ -12276,8 +12269,10 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #7B8083;
   visibility: visible; }
+
+#buddypress .private .group-type:before {
+  color: #7B8083; }
 
 #buddypress .hidden .group-type:before {
   margin-right: .5em;
@@ -12287,8 +12282,10 @@ a.bpeo-ical-link:before {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #7B8083;
   visibility: visible; }
+
+#buddypress .hidden .group-type:before {
+  color: #7B8083; }
 
 #buddypress .member-count:before {
   content: ' | '; }
@@ -12545,8 +12542,10 @@ a.bpeo-ical-link:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334;
     visibility: visible; }
+  #buddypress #group-settings-form label[for="group-status-public"]:after,
+  #buddypress #group-create-body label[for="group-status-public"]:after {
+    color: #313334; }
   #buddypress #group-settings-form label[for="group-status-private"]:after,
   #buddypress #group-create-body label[for="group-status-private"]:after {
     margin-left: .5em;
@@ -12556,8 +12555,10 @@ a.bpeo-ical-link:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334;
     visibility: visible; }
+  #buddypress #group-settings-form label[for="group-status-private"]:after,
+  #buddypress #group-create-body label[for="group-status-private"]:after {
+    color: #313334; }
   #buddypress #group-settings-form label[for="group-status-hidden"]:after,
   #buddypress #group-create-body label[for="group-status-hidden"]:after {
     margin-left: .5em;
@@ -12567,8 +12568,10 @@ a.bpeo-ical-link:before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334;
     visibility: visible; }
+  #buddypress #group-settings-form label[for="group-status-hidden"]:after,
+  #buddypress #group-create-body label[for="group-status-hidden"]:after {
+    color: #313334; }
   #buddypress #blog-details-fields label strong {
     font-weight: bold; }
   #buddypress #blog-details-fields > p {
@@ -12648,10 +12651,10 @@ a.bpeo-ical-link:before {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #313334;
       visibility: visible; }
     .bp-docs div.manage-folders-link a:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #313334; }
   .bp-docs #toggle-folders-hide {
     transition: all 0.25s ease;
     font-size: 16px;
@@ -12678,10 +12681,10 @@ a.bpeo-ical-link:before {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #313334;
       visibility: visible; }
     .bp-docs #toggle-folders-hide:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #313334; }
     .bp-docs #toggle-folders-hide.show {
       display: inline-block !important; }
     .bp-docs #toggle-folders-hide.hide {
@@ -12714,10 +12717,10 @@ a.bpeo-ical-link:before {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #313334;
       visibility: visible; }
     .bp-docs #toggle-folders-show:before {
-      margin-right: 4px; }
+      margin-right: 4px;
+      color: #313334; }
     .bp-docs #toggle-folders-show.show {
       display: inline-block !important; }
     .bp-docs #toggle-folders-show.hide {
@@ -13159,7 +13162,6 @@ article.handbook a.anchor {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #cacccd;
     opacity: 1;
     color: #008Eb0; }
   article.handbook a.anchor:hover, article.handbook a.anchor:focus {
@@ -13178,7 +13180,6 @@ article.handbook .toc-jump a {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #cacccd;
     opacity: 1;
     color: #008Eb0;
     font-size: 2.75em; }
@@ -13318,7 +13319,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd;
       visibility: visible; }
     .archive-meeting .entry .connected-content li.summary-link:before, .archive-meeting article.handbook .connected-content li.summary-link:before, .archive-meeting .entry .connected-content li.meeting-link:before, .archive-meeting article.handbook .connected-content li.meeting-link:before,
     .archive-agenda .entry .connected-content li.summary-link:before,
@@ -13352,7 +13352,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd;
       visibility: visible; }
     .archive-meeting .entry .connected-content li.proposal-link:before, .archive-meeting article.handbook .connected-content li.proposal-link:before,
     .archive-agenda .entry .connected-content li.proposal-link:before,
@@ -13374,7 +13373,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd;
       visibility: visible; }
 
 .archive-meeting .entry .tags:before, .archive-meeting article.handbook .tags:before,
@@ -13397,7 +13395,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #cacccd;
   visibility: visible; }
 
 .archive-meeting .entry .article-footer, .archive-meeting article.handbook .article-footer,
@@ -13662,7 +13659,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd;
       visibility: visible; }
     .single-meeting article .entry-content .connected-content li.summary-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.summary-link:before, .single-meeting article .entry-content .connected-content li.meeting-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.meeting-link:before,
     .single-proposal article .entry-content .connected-content li.summary-link:before,
@@ -13690,7 +13686,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd;
       visibility: visible; }
     .single-meeting article .entry-content .connected-content li.proposal-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.proposal-link:before,
     .single-proposal article .entry-content .connected-content li.proposal-link:before,
@@ -13709,7 +13704,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #cacccd;
       visibility: visible; }
     .single-meeting article .entry-content .connected-content li::before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li::before,
     .single-proposal article .entry-content .connected-content li::before,
@@ -14289,8 +14283,9 @@ Knowledge Base
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #313334;
     visibility: visible; }
+  .knowledge-base-list .post-list > li a:before {
+    color: #313334; }
   .knowledge-base-list .count {
     float: right; }
   @media screen and (min-width: 768px) {
