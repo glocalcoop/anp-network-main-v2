@@ -56,13 +56,17 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'settings'    => 'theme_palette',
 		'label'       => __( 'Palette', 'activist-network-main' ),
 		'section'     => 'colors',
-		'default'     => 'light',
+		'default'     => 'monochrome',
 		'priority'    => 10,
 		'choices'     => array(
 			'monochrome'   => esc_attr__( 'Monochrome', 'activist-network-main' ),
 			'colored' => esc_attr__( 'Multi-color', 'activist-network-main' ),
 		),
 	) );
+
+	/**
+	 * Monochrome Color Scheme
+	 */
 
 	/**
 	 * Background Color
@@ -77,8 +81,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'priority'    => 15,
 		'output'      => array(
 			array(
-				'element'  => 'body,
-				#colophon .bottom-navigation',
+				'element'  => 'body',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_background'],
@@ -88,8 +91,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => 'body,
-				#colophon .bottom-navigation',
+				'element'  => 'body',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -110,61 +112,20 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'priority'    => 20,
 		'output'      => array(
 			array(
-				'element'  => 'body, body li,
-				#colophon .bottom-navigation',
+				'element'  => 'body, p, li',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_foreground'],
-	            ),
-			),
-			array(
-				'element'  => '#colophon .copyright',
-				'property' => 'background-color',
-				'exclude'  => array(
-	                $defaults['color_background'],
-	                $defaults['color_foreground']
-	            ),
-			),
-			array(
-				'element'  => '#secondary .wrap',
-				'property' => 'border-top-color',
-				'exclude'  => array(
-	                $defaults['color_accent'],
-	                $defaults['color_primary'],
-	            ),
-			),
-			array(
-				'element'  => '#secondary .wrap',
-				'property' => 'border-bottom-color',
-				'exclude'  => array(
-	                $defaults['color_accent'],
-	                $defaults['color_primary'],
 	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => 'body, 
-				body li,
-				#colophon .bottom-navigation',
+				'element'  => 'body, p, li,
+				.bottom-navigation',
 				'function' => 'css',
 				'property' => 'color',
-			),
-			array(
-				'element'  => '#colophon .copyright',
-				'function' => 'css',
-				'property' => 'background-color',
-			),
-			array(
-				'element'  => '#secondary .wrap',
-				'function' => 'css',
-				'property' => 'border-top-color',
-			),
-			array(
-				'element'  => '#secondary .wrap',
-				'function' => 'css',
-				'property' => 'border-bottom-color',
 			),
 		),
 	) );
@@ -183,14 +144,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'priority'    => 30,
 		'output'      => array(
 			array(
-				'element'  => 'a,
-				a:hover,
-				a:focus,
-				a:visited,
-				#masthead .social-links a,
-				#masthead .social-links a:before,
-				#masthead .site-branding .site-description,
-				.widget h3',
+				'element'  => 'a',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_accent'],
@@ -198,7 +152,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'	=> '#masthead .social-links a',
+				'element'	=> '.social-links a',
 				'property' => 'border-color',
 				'exclude'  => array(
 	                $defaults['color_accent'],
@@ -206,47 +160,51 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'  => '#masthead .menu-toggle,
-				#colophon .copyright',
+				'element'	=> '.social-links a:before',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+			array(
+				'element'	=> '.menu-toggle',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_accent'],
-	                $defaults['color_primary']
+	                $defaults['color_primary'],
 	            ),
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => 'a,
-				a:hover,
-				a:focus,
-				a:visited,
-				#masthead .social-links a,
-				#masthead .social-links a:before,
-				#masthead .site-branding .site-description,
-				.widget h3',
+				'element'  => 'a',
 				'function' => 'css',
 				'property' => 'color',
 			),
 			array(
-				'element'  => '.home .entry.intro-content',
+				'element'  => '.social-links a',
 				'function' => 'css',
-				'property' => 'border-top-color',
+				'property' => 'border-color',
 			),
 			array(
-				'element'  => '.home .entry.intro-content',
+				'element'  => '.social-links a:before',
 				'function' => 'css',
-				'property' => 'border-bottom-color',
+				'property' => 'color',
 			),
 			array(
-				'element'  => '#masthead .menu-toggle,
-				#colophon .copyright',
+				'element'  => '.menu-toggle,
+				.copyright',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
 		),
 	) );
+
+	/**
+	 * Multi-color Color Scheme
+	 */
 
 	/**
 	 * Nav Background Color
@@ -269,8 +227,8 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  		=> '#masthead .main-navigation,
-				#masthead .main-navigation ul ul',
+				'element'  		=> '.main-navigation,
+				.main-navigation ul ul',
 				'media_query'	=> '@media only screen and (min-width: 768px)',
 				'property' 		=> 'background-color',
 				'exclude'  => array(
@@ -278,7 +236,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'  => '#masthead .main-navigation-container',
+				'element'  => '.main-navigation-container',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_background'],
@@ -288,13 +246,13 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .main-navigation,
-				#masthead .main-navigation ul ul',
+				'element'  => '.main-navigation,
+				.main-navigation ul ul',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '#masthead .main-navigation-container',
+				'element'  => '.main-navigation-container',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -322,7 +280,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .main-navigation ul a',
+				'element'  => '.main-navigation ul a',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_foreground'],
@@ -332,7 +290,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .main-navigation ul a',
+				'element'  => '.main-navigation ul a',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -360,7 +318,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding',
+				'element'  => '.site-branding',
 				'property' => 'background-color',
 				'exclude'  => array(
 	                $defaults['color_background'],
@@ -370,7 +328,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding',
+				'element'  => '.site-branding',
 				'function' => 'css',
 				'property' => 'background-color',
 			),
@@ -397,7 +355,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a',
+				'element'  => '.site-branding .site-title a',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_primary'],
@@ -405,31 +363,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	            ),
 			),
 			array(
-				'element'  => '#masthead .site-branding .site-description',
-				'property' => 'color',
-				'exclude'  => array(
-	                $defaults['color_primary'],
-	                $defaults['color_foreground'],
-	            ),
-			),
-			array(
-				'element'  => '#masthead .social-links ul a',
-				'property' => 'color',
-				'exclude'  => array(
-	                $defaults['color_primary'],
-	                $defaults['color_foreground'],
-	            ),
-			),
-			array(
-				'element'  => '#masthead .social-links a',
-				'property' => 'border-color',
-				'exclude'  => array(
-	                $defaults['color_primary'],
-	                $defaults['color_foreground'],
-	            ),
-			),
-			array(
-				'element'  => '#masthead .social-links ul a:before',
+				'element'  => '.site-branding .site-description',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_primary'],
@@ -440,27 +374,12 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a',
+				'element'  => '.site-branding .site-title a',
 				'function' => 'css',
 				'property' => 'color',
 			),
 			array(
-				'element'  => '#masthead .site-branding .site-description',
-				'function' => 'css',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '#masthead .social-links ul a',
-				'function' => 'css',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '#masthead .social-links a',
-				'function' => 'css',
-				'property' => 'border-color',
-			),
-			array(
-				'element'  => '#masthead .social-links ul a:before',
+				'element'  => '.site-branding .site-description',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -473,9 +392,8 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	ANP_Kirki::add_field( 'anp_custom_style', array(
 		'type'        => 'color-alpha',
 		'settings'    => 'color_widget_background',
-		'label'       => esc_attr__( 'Widget Background', 'activist-network-main' ),
-		'description' => esc_attr__( 'Widget Background Color', 'activist-network-main' ),
-		'help'        => esc_attr__( 'Color of the widget area background', 'activist-network-main' ),
+		'label'       => esc_attr__( 'Widget Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of widget area background.', 'activist-network-main' ),
 		'section'     => 'colors',
 		'default'     => $defaults['color_background'],
 		'priority'    => 90,
@@ -488,7 +406,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '#colophon .footer-widgets,
+				'element'  => '.footer-widgets,
 				.content-widgets .wrap,
 				.home-widgets .wrap',
 				'property' => 'background-color',
@@ -496,41 +414,15 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 	                $defaults['color_background'],
 	            ),
 			),
-			array(
-				'element'  => '.home .entry.intro-content',
-				'property' => 'border-top-color',
-				'exclude'  => array(
-	                $defaults['color_accent'],
-	                $defaults['color_foreground'],
-	            ),
-			),
-			array(
-				'element'  => '.home .entry.intro-content',
-				'property' => 'border-bottom-color',
-				'exclude'  => array(
-	                $defaults['color_accent'],
-	                $defaults['color_foreground'],
-	            ),
-			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#colophon .footer-widgets,
-				.content-widgets .wrap,
-				.home-widgets .wrap',
+				'element'  => '.footer-widgets,
+								.content-widgets .wrap,
+								.home-widgets .wrap',
 				'function' => 'css',
 				'property' => 'background-color',
-			),
-			array(
-				'element'  => '.home .entry.intro-content',
-				'function' => 'css',
-				'property' => 'border-top-color',
-			),
-			array(
-				'element'  => '.home .entry.intro-content',
-				'function' => 'css',
-				'property' => 'border-bottom-color',
 			),
 		),
 	) );
@@ -555,18 +447,13 @@ if ( class_exists( 'ANP_Kirki' ) ) {
         ),
 		'output'      => array(
 			array(
-				'element'  => '.content-widgets .wrap,
-				.content-widgets .wrap a,
-				.home-widgets .wrap,
-				.home-widgets .wrap a,
-				.home-widgets .widget h3,
-				.home-widgets .widget-title,
-				.content-widgets h3,
-				.content-widgets .widget-title,
-				.footer-widgets .wrap,
-				.footer-widgets .wrap a,
-				.footer-widgets .widget h3,
-				.footer-widgets .widget-title',
+				'element'  => '.footer-widgets,
+				.footer-widgets a,
+				.footer-widgets a,
+				.content-widgets,
+				.content-widgets a,
+				.home-widgets,
+				.home-widgets a',
 				'property' => 'color',
 				'exclude'  => array(
 	                $defaults['color_primary'],
@@ -577,18 +464,12 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '.content-widgets .wrap,
-				.content-widgets .wrap a,
-				.home-widgets .wrap,
-				.home-widgets .wrap a,
-				.home-widgets .widget h3,
-				.home-widgets .widget-title,
-				.content-widgets h3,
-				.content-widgets .widget-title,
-				.footer-widgets .wrap,
-				.footer-widgets .wrap a,
-				.footer-widgets .widget h3,
-				.footer-widgets .widget-title',
+				'element'  => '.footer-widgets,
+				.footer-widgets a,
+				.content-widgets,
+				.content-widgets a,
+				.home-widgets,
+				.home-widgets a',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -604,26 +485,26 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'label'       => esc_attr__( 'Branding Fonts', 'activist-network-main' ),
 		'section'     => 'fonts',
 		'default'     => array(
-			'font-family'    => 'Helvetica,Arial,sans-serif',
+			'font-family'    => 'Helvetica, Arial, sans-serif',
 			'variant'        => '300',
 			'subset'		 => 'latin-ext',
 		),
 		'priority'    => 10,
 		'output'      => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a,
-				#masthead .site-branding .site-description',
+				'element'  => '.site-branding .site-title a,
+				.site-branding .site-description',
 			),
 		),
 		'transport'   => 'postMessage',
 		'js_vars'     => array(
 			array(
-				'element'  => '#masthead .site-branding .site-title a',
+				'element'  => '.site-branding .site-title a',
 				'function' => 'css',
 				'property' => 'color',
 			),
 			array(
-				'element'  => '#masthead .site-branding .site-description',
+				'element'  => '.site-branding .site-description',
 				'function' => 'css',
 				'property' => 'color',
 			),
@@ -639,7 +520,7 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'label'       => esc_attr__( 'Headings', 'activist-network-main' ),
 		'section'     => 'fonts',
 		'default'     => array(
-			'font-family'    => 'Helvetica,Arial,sans-serif',
+			'font-family'    => 'Helvetica, Arial, sans-serif',
 			'variant'        => '300',
 			'subset'		 => 'latin-ext',
 		),
@@ -667,6 +548,78 @@ if ( class_exists( 'ANP_Kirki' ) ) {
 		'output'      => array(
 			array(
 				'element' => 'body, p, li',
+			),
+		),
+	) );
+
+	/**
+	 * Link Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_link_text',
+		'label'       => esc_attr__( 'Link Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the branding area text', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_accent'],
+		'priority'    => 80,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => 'a, a:visited',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),
+			array(
+				'element'	=> '.social-links a',
+				'property' => 'border-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),
+			array(
+				'element'	=> '.social-links a:before',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),
+			array(
+				'element'	=> '.menu-toggle',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => 'a, a:visited',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.social-links a',
+				'function' => 'css',
+				'property' => 'border-color',
+			),
+			array(
+				'element'  => '.social-links a:before',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.menu-toggle',
+				'function' => 'css',
+				'property' => 'background-color',
 			),
 		),
 	) );
