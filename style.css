@@ -14386,59 +14386,59 @@ a {
 /**
  * Header elements color
  */
-#masthead .site-branding {
+.site-branding {
   background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   color: #313334; }
-  #masthead .site-branding .site-title,
-  #masthead .site-branding .site-title a,
-  #masthead .site-branding .site-description {
+  .site-branding .site-title,
+  .site-branding .site-title a,
+  .site-branding .site-description {
     color: #313334; }
 
-#masthead .custom-header {
+.custom-header {
   background-color: transparent;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   color: #313334; }
 
-#masthead .main-navigation {
+.main-navigation {
   border-top: 1px solid rgba(49, 51, 52, 0.2); }
-  #masthead .main-navigation ul li {
+  .main-navigation ul li {
     border-radius: 0; }
-    #masthead .main-navigation ul li:not(:last-child) {
+    .main-navigation ul li:not(:last-child) {
       border-bottom: 1px solid rgba(49, 51, 52, 0.2); }
-  #masthead .main-navigation ul ul {
+  .main-navigation ul ul {
     border: none; }
-  #masthead .main-navigation ul a {
+  .main-navigation ul a {
     border-radius: 0; }
-    #masthead .main-navigation ul a:hover, #masthead .main-navigation ul a:focus {
+    .main-navigation ul a:hover, .main-navigation ul a:focus {
       background-color: #bdbdc2;
       color: #313334; }
-  #masthead .main-navigation ul .current-menu-item > a,
-  #masthead .main-navigation ul .current-menu-ancestor > a {
+  .main-navigation ul .current-menu-item > a,
+  .main-navigation ul .current-menu-ancestor > a {
     font-weight: bold; }
   @media screen and (min-width: 768px) {
-    #masthead .main-navigation {
+    .main-navigation {
       border-radius: 0; }
-      #masthead .main-navigation ul li:not(:last-child) {
+      .main-navigation ul li:not(:last-child) {
         border-bottom-width: 0; }
-      #masthead .main-navigation ul ul {
+      .main-navigation ul ul {
         background-color: #f2f2f3;
         border-bottom: 1px solid rgba(49, 51, 52, 0.2);
         box-shadow: 2px 2px 2px rgba(49, 51, 52, 0.2); }
-        #masthead .main-navigation ul ul li {
+        .main-navigation ul ul li {
           border-bottom-width: 0;
           border-radius: 0; } }
 
-#masthead .social-links a {
+.social-links a {
   border: 1px solid #008Eb0;
   border-radius: 50%;
   color: #16506B; }
-  #masthead .social-links a:before {
+  .social-links a:before {
     color: #16506B; }
 
-#masthead .menu-toggle {
+.menu-toggle {
   background-color: #008Eb0; }
 
 /**
@@ -14460,27 +14460,24 @@ a {
 /**
  * Footer elements color
  */
-#colophon .footer-widgets {
+.footer-widgets {
   background-color: transparent; }
-  #colophon .footer-widgets .wrap {
+  .footer-widgets .wrap {
     border-top-width: 0;
     border-bottom-width: 0;
     background-color: rgba(255, 255, 255, 0.5); }
 
-#colophon .copyright {
-  color: #fff; }
-  #colophon .copyright a {
-    color: #fff; }
-  #colophon .copyright a:hover,
-  #colophon .copyright a:focus {
-    color: #fff; }
-
-#colophon .bottom-navigation {
-  background-color: rgba(17, 17, 17, 0.1); }
-
-#colophon .copyright {
+.copyright {
   background-color: #16506B;
   color: #fff; }
+  .copyright a {
+    color: #fff; }
+  .copyright a:hover,
+  .copyright a:focus {
+    color: #fff; }
+
+.bottom-navigation {
+  background-color: rgba(17, 17, 17, 0.1); }
 
 .home .entry.intro-content, .home article.intro-content.handbook {
   border-top: 5px solid rgba(17, 17, 17, 0.1);
