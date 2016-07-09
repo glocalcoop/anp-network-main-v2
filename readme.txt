@@ -30,6 +30,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 == Changelog ==
 
 = 2.0.26 - July, 9 2016 =
+* [Feature #1456] - Added grid layout styling. This would primarily be used for post index pages.
 * [Feature #1433] - Made blog (index.html), archive and taxonomy templates use consistent content partials.
 * [Feature #1434] - Added conditional to show start and end date if event is longer than 1 day.
 * Reorganized the event partials for greater clarity.

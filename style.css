@@ -8660,6 +8660,36 @@ body {
   .layout-2c-l:not(.page-template-template-front) #secondary {
     padding-right: .5em; } }
 
+.layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  padding-right: 0;
+  padding-left: 0; }
+
+@media screen and (min-width: 544px) {
+  .layout-grid .entries-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0; }
+    .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
+      margin: 7.5px;
+      padding: .5em;
+      flex: 1 0 calc(50% - 15px);
+      justify-content: space-between;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-radius: 0.125em; }
+    .layout-grid .entries-list .entry-title {
+      margin-top: 0; } }
+
+@media screen and (min-width: 768px) {
+  .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
+    flex-basis: calc(33% - 15px); } }
+
+@media screen and (min-width: 992px) {
+  .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
+    flex-basis: calc(25% - 15px); } }
+
 #masthead .custom-header img {
   width: 100%;
   height: auto; }
