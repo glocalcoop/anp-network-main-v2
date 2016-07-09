@@ -15,6 +15,14 @@
 
 		<?php do_action ( 'anp_entry_header_top' );?>
 
+		<?php if( has_post_thumbnail() ) : ?>
+		
+        <div class="entry-image">
+            <?php the_post_thumbnail( 'medium' ); ?> 
+        </div>
+
+        <?php endif; ?>
+
 		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
