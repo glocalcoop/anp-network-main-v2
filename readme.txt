@@ -5,11 +5,11 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.25
+Stable tag: 2.0.26
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A custom starter theme called Activist NetworkTheme.
+A custom starter theme called Activist Network Theme.
 
 == Description ==
 
@@ -28,6 +28,10 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.26 - July, 9 2016 =
+* [Feature #1434] - Added conditional to show start and end date if event is longer than 1 day.
+* Reorganized the event partials for greater clarity.
 
 = 2.0.25 - June, 29 2016 =
 * To make it easier to customize child themes:

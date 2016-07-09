@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying single event posts.
  *
  * @package Activist_Network_Theme
  */
@@ -33,7 +33,7 @@
         </div>
         <?php endif; ?>
 
-		<?php get_template_part( 'template-parts/content', 'event-meta' ); ?>
+		<?php get_template_part( 'template-parts/event', 'meta' ); ?>
 
         <div class="entry-description event-description">
 

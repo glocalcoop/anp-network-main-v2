@@ -7,25 +7,16 @@
 
 ?>
 
-
-<!-- Choose a different date format depending on whether we want to include time -->
-<?php 
-	$time_format = get_option( 'time_format' );
-	$date_format = get_option( 'date_format' );
-?>
-
 <div class="event-details">
-	<h4 class="date-time">
-		<span class="event-day"><?php eo_the_start( 'l,' ); ?></span>
-		<span class="event-date"><?php eo_the_start( $date_format ); ?></span>
-		<span class="event-time"><?php eo_the_start( $time_format ); ?> - <?php eo_the_end( $time_format ); ?></span>
-	</h4>
+	<?php get_template_part( 'template-parts/event', 'dates' ); ?>
 
 	<ul class="eo-event-meta">
 
 		<?php do_action( 'eventorganiser_additional_event_meta' ) ?>
 
-		<?php get_template_part( 'template-parts/content', 'event-address' ); ?>
+		<?php get_template_part( 'template-parts/event', 'address' ); ?>
+
+		<?php get_template_part( 'template-parts/event', 'address-map' ); ?>
 
 		<?php if ( eo_recurs() ) {
 				//Event recurs - display dates.
