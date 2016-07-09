@@ -80,7 +80,7 @@ $padding: $gutter__column * 3;
 			.entry {
 				margin: $padding/2;
 				padding: .5em;
-				flex: 1 0 calc(50% - #{$padding});
+				flex: 0 0 calc(50% - #{$padding});
 				justify-content: space-between;
 				border: 1px solid $color__background-hr;
 				border-radius: $element__border-radius-small;

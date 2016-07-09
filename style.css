@@ -8675,7 +8675,7 @@ body {
     .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
       margin: 7.5px;
       padding: .5em;
-      flex: 1 0 calc(50% - 15px);
+      flex: 0 0 calc(50% - 15px);
       justify-content: space-between;
       border: 1px solid rgba(17, 17, 17, 0.1);
       border-radius: 0.125em; }
