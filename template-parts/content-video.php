@@ -14,10 +14,20 @@
 	<header class="entry-header">
 
 		<?php do_action ( 'anp_entry_header_top' );?>
+
+		<?php if( has_post_thumbnail() ) : ?>
 		
+        <div class="entry-image">
+            <?php the_post_thumbnail( 'medium' ); ?> 
+        </div>
+
+        <?php else; ?>
+
         <div class="entry-video">
             <?php the_content(); ?> 
         </div>
+
+	    <?php endif; ?>
 
 		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
