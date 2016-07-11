@@ -8255,15 +8255,6 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-time.updated {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-  /* many screen reader and browser combinations announce broken words as they would appear visually */
-  word-wrap: normal !important; }
-
 .entry-content ul, .so-widget-sow-post-carousel h3 a ul,
 .entry-content ol, .so-widget-sow-post-carousel h3 a ol,
 .entry-summary ul,

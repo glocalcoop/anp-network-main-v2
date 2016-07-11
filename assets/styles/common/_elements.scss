@@ -77,7 +77,7 @@ table {
 }
 
 time.updated {
-	@include screen-reader-text;
+	//@include screen-reader-text;
 }
 
 .entry-content,
