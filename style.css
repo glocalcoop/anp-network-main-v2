@@ -8667,6 +8667,17 @@ body {
   padding-right: 0;
   padding-left: 0; }
 
+.layout-grid .entries-list .entry-video p,
+.layout-grid .entries-list .entry-video .more-link,
+.layout-grid .entries-list .entry-video figcation {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  /* many screen reader and browser combinations announce broken words as they would appear visually */
+  word-wrap: normal !important; }
+
 @media screen and (min-width: 544px) {
   .layout-grid .entries-list {
     display: flex;

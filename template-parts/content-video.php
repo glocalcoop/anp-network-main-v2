@@ -21,7 +21,7 @@
             <?php the_post_thumbnail( 'medium' ); ?> 
         </div>
 
-        <?php else; ?>
+        <?php else : ?>
 
         <div class="entry-video">
             <?php the_content(); ?> 

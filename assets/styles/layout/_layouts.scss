@@ -64,6 +64,15 @@
 
 			padding-right: 0;
 			padding-left: 0;
+
+		}
+
+		.entry-video {
+			p,
+			.more-link,
+			figcation {
+				@include screen-reader-text;
+			}
 		}
 	}
 }

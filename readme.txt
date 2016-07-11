@@ -30,7 +30,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 == Changelog ==
 
 = 2.0.27 - July 11, 2016 =
-* [Feature #1457] - Added video template partial and added styling.
+* [Feature #1457] - Added post listing video template partial and added styling. Note: If a featured image is supplied, it will be displayed. Otherwise, the post content will be displayed. Any content besides the video (e.g. caption, story, etc.) should be added under the video, either after the `<!--more-->` tag or within a `<figcaption>` tag.
 * [Feature #1468] - Added default screenshot.
 
 = 2.0.26 - July, 9 2016 =
