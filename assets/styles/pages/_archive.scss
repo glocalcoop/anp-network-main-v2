@@ -5,3 +5,13 @@ body.blog {
         .entry {} 
     }
 }
+
+.entries-list {
+    .format-video {
+        p,
+        .more-link,
+        figcation {
+            @include screen-reader-text;
+        }
+    }
+}

@@ -67,13 +67,6 @@
 
 		}
 
-		.entry-video {
-			p,
-			.more-link,
-			figcation {
-				@include screen-reader-text;
-			}
-		}
 	}
 }
 

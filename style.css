@@ -9114,6 +9114,17 @@ body {
 .home .entry.empty, .home article.empty.handbook {
   display: none; }
 
+.entries-list .format-video p,
+.entries-list .format-video .more-link,
+.entries-list .format-video figcation {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  /* many screen reader and browser combinations announce broken words as they would appear visually */
+  word-wrap: normal !important; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
