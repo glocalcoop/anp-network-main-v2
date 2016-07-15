@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.27
+Stable tag: 2.0.28
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.28 - July 15, 2016 =
+* [Feature #1483] - Template and style updates related to changes to Meetings plugin
 
 = 2.0.27 - July 11, 2016 =
 * [Feature #1457] - Added post listing video template partial and added styling. Note: If a featured image is supplied, it will be displayed. Otherwise, the post content will be displayed. Any content besides the video (e.g. caption, story, etc.) should be added under the video, either after the `<!--more-->` tag or within a `<figcaption>` tag.

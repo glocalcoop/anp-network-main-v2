@@ -112,13 +112,18 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .single-meeting,
 .single-proposal,
 .single-agenda,
-.single-summary {
+.single-summary,
+.singular-meeting,
+.singular-proposal,
+.singular-agenda,
+.singular-meeting, {
     
     article {
         
         p.meta {
-            margin-bottom: 0;
+            margin: 0 .5em 0 0;
             @include font-size($small);
+            display: inline-block;
         }
 
         header {
@@ -135,7 +140,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
 
             h2 {
                 @include font-size($h3);
-                //border-top: 1px solid $color__light-grey;
                 margin-top:  .5em;
                 padding-top:  .5em;
 
@@ -179,16 +183,24 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 }
             }
 
-            .connected-content,
-            .post-content {
-                margin: .125em 0;
-                padding: 2%;
-                // border-top: 1px solid $color__light-grey;
-                background-color: $color__white;
-           }
+            .meta-approval-date time {
+                @include icon-font(check-circle, before);
+            }
+            .meta-effective-date time {
+                @include icon-font(info-circle, before);
+            }
+            .meta-approval-date time,
+            .meta-effective-date time {
+                &:before {
+                    margin-right: .15em;
+                }
+            }
 
             .connected-content {
-                list-style: none;
+                @include no-bullets
+                margin-top: .5em;
+                padding-top: .5em;
+                border-top: 1px solid $color__light-grey;
 
                 li {
 
@@ -211,17 +223,6 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 }
 
             }
-
-            .post-content {
-                h2 {
-                    margin: 0;
-                }
-                
-                li {
-                    font-weight: normal;
-                }
-                
-            }
             
         }
 
@@ -229,11 +230,9 @@ MEETINGS ARCHIVE & SINGLE STYLES
             display: none;
         }
         
-        .post-footer {
+        .entry-footer {
             margin: 1em 0 .5em 0;
             padding: .5em 0;
-            // border-top: 1px solid $color__light-grey;
-            border-bottom: 1px solid $color__light-grey;
             
             .meta {
                 margin-top: .5em;

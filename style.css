@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.27
+Version: 2.0.28
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -4804,7 +4804,16 @@ a.thumbnail.active {
 .single-agenda article a .connected-content li.agenda-link:before,
 .single-summary article .entry-content .connected-content li.agenda-link:before,
 .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
-.single-summary article a .connected-content li.agenda-link:before {
+.single-summary article a .connected-content li.agenda-link:before,
+.singular-meeting article .entry-content .connected-content li.agenda-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.agenda-link:before,
+.singular-proposal article .entry-content .connected-content li.agenda-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.agenda-link:before,
+.singular-agenda article .entry-content .connected-content li.agenda-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.agenda-link:before {
   content: ""; }
 
 a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
@@ -4813,6 +4822,48 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
 #buddypress .action a[href$="edit/"]:before,
 #buddypress .major-publishing-actions a[href$="edit/"]:before {
   content: ""; }
+
+.single-meeting article .entry-content .meta-approval-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-approval-date time:before,
+.single-proposal article .entry-content .meta-approval-date time:before,
+.single-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.single-proposal article a .meta-approval-date time:before,
+.single-agenda article .entry-content .meta-approval-date time:before,
+.single-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.single-agenda article a .meta-approval-date time:before,
+.single-summary article .entry-content .meta-approval-date time:before,
+.single-summary article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.single-summary article a .meta-approval-date time:before,
+.singular-meeting article .entry-content .meta-approval-date time:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.singular-meeting article a .meta-approval-date time:before,
+.singular-proposal article .entry-content .meta-approval-date time:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.singular-proposal article a .meta-approval-date time:before,
+.singular-agenda article .entry-content .meta-approval-date time:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.singular-agenda article a .meta-approval-date time:before {
+  content: ""; }
+
+.single-meeting article .entry-content .meta-effective-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-effective-date time:before,
+.single-proposal article .entry-content .meta-effective-date time:before,
+.single-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.single-proposal article a .meta-effective-date time:before,
+.single-agenda article .entry-content .meta-effective-date time:before,
+.single-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.single-agenda article a .meta-effective-date time:before,
+.single-summary article .entry-content .meta-effective-date time:before,
+.single-summary article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.single-summary article a .meta-effective-date time:before,
+.singular-meeting article .entry-content .meta-effective-date time:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.singular-meeting article a .meta-effective-date time:before,
+.singular-proposal article .entry-content .meta-effective-date time:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.singular-proposal article a .meta-effective-date time:before,
+.singular-agenda article .entry-content .meta-effective-date time:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.singular-agenda article a .meta-effective-date time:before {
+  content: ""; }
 
 #buddypress #members-list .small > a.member-ban:before,
 #buddypress #members-dir-list .small > a.member-ban:before {
@@ -4955,7 +5006,19 @@ article.handbook a.anchor:before {
 .single-summary article .entry-content .connected-content li.proposal-link:before,
 .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
 .so-widget-sow-post-carousel h3
-.single-summary article a .connected-content li.proposal-link:before {
+.single-summary article a .connected-content li.proposal-link:before,
+.singular-meeting article .entry-content .connected-content li.proposal-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
+.so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.proposal-link:before,
+.singular-proposal article .entry-content .connected-content li.proposal-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
+.so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.proposal-link:before,
+.singular-agenda article .entry-content .connected-content li.proposal-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
+.so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.proposal-link:before {
   content: ""; }
 
 #buddypress .row-actions a.view:before,
@@ -5023,7 +5086,31 @@ article.handbook a.anchor:before {
 .single-summary article .entry-content .connected-content li.meeting-link:before,
 .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
 .so-widget-sow-post-carousel h3
-.single-summary article a .connected-content li.meeting-link:before {
+.single-summary article a .connected-content li.meeting-link:before,
+.singular-meeting article .entry-content .connected-content li.summary-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before,
+.so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.summary-link:before,
+.singular-meeting article .entry-content .connected-content li.meeting-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
+.so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.meeting-link:before,
+.singular-proposal article .entry-content .connected-content li.summary-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before,
+.so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.summary-link:before,
+.singular-proposal article .entry-content .connected-content li.meeting-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
+.so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.meeting-link:before,
+.singular-agenda article .entry-content .connected-content li.summary-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before,
+.so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.summary-link:before,
+.singular-agenda article .entry-content .connected-content li.meeting-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
+.so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.meeting-link:before {
   content: ""; }
 
 .knowledge-base-list .post-list > li a:before {
@@ -7309,7 +7396,16 @@ a[hreflang="es-ES"] .flag-icon-es,
 .single-agenda article a .connected-content li.agenda-link:before,
 .single-summary article .entry-content .connected-content li.agenda-link:before,
 .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
-.single-summary article a .connected-content li.agenda-link:before {
+.single-summary article a .connected-content li.agenda-link:before,
+.singular-meeting article .entry-content .connected-content li.agenda-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.agenda-link:before,
+.singular-proposal article .entry-content .connected-content li.agenda-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.agenda-link:before,
+.singular-agenda article .entry-content .connected-content li.agenda-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.agenda-link:before {
   content: ""; }
 
 a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
@@ -7318,6 +7414,48 @@ a[href*="=edit"]:before, #buddypress .row-actions a[href$="edit/"]:before,
 #buddypress .action a[href$="edit/"]:before,
 #buddypress .major-publishing-actions a[href$="edit/"]:before {
   content: ""; }
+
+.single-meeting article .entry-content .meta-approval-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-approval-date time:before,
+.single-proposal article .entry-content .meta-approval-date time:before,
+.single-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.single-proposal article a .meta-approval-date time:before,
+.single-agenda article .entry-content .meta-approval-date time:before,
+.single-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.single-agenda article a .meta-approval-date time:before,
+.single-summary article .entry-content .meta-approval-date time:before,
+.single-summary article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.single-summary article a .meta-approval-date time:before,
+.singular-meeting article .entry-content .meta-approval-date time:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.singular-meeting article a .meta-approval-date time:before,
+.singular-proposal article .entry-content .meta-approval-date time:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.singular-proposal article a .meta-approval-date time:before,
+.singular-agenda article .entry-content .meta-approval-date time:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+.singular-agenda article a .meta-approval-date time:before {
+  content: ""; }
+
+.single-meeting article .entry-content .meta-effective-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-effective-date time:before,
+.single-proposal article .entry-content .meta-effective-date time:before,
+.single-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.single-proposal article a .meta-effective-date time:before,
+.single-agenda article .entry-content .meta-effective-date time:before,
+.single-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.single-agenda article a .meta-effective-date time:before,
+.single-summary article .entry-content .meta-effective-date time:before,
+.single-summary article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.single-summary article a .meta-effective-date time:before,
+.singular-meeting article .entry-content .meta-effective-date time:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.singular-meeting article a .meta-effective-date time:before,
+.singular-proposal article .entry-content .meta-effective-date time:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.singular-proposal article a .meta-effective-date time:before,
+.singular-agenda article .entry-content .meta-effective-date time:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+.singular-agenda article a .meta-effective-date time:before {
+  content: ""; }
 
 #buddypress #members-list .small > a.member-ban:before,
 #buddypress #members-dir-list .small > a.member-ban:before {
@@ -7460,7 +7598,19 @@ article.handbook a.anchor:before {
 .single-summary article .entry-content .connected-content li.proposal-link:before,
 .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
 .so-widget-sow-post-carousel h3
-.single-summary article a .connected-content li.proposal-link:before {
+.single-summary article a .connected-content li.proposal-link:before,
+.singular-meeting article .entry-content .connected-content li.proposal-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
+.so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.proposal-link:before,
+.singular-proposal article .entry-content .connected-content li.proposal-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
+.so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.proposal-link:before,
+.singular-agenda article .entry-content .connected-content li.proposal-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before,
+.so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.proposal-link:before {
   content: ""; }
 
 #buddypress .row-actions a.view:before,
@@ -7528,7 +7678,31 @@ article.handbook a.anchor:before {
 .single-summary article .entry-content .connected-content li.meeting-link:before,
 .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
 .so-widget-sow-post-carousel h3
-.single-summary article a .connected-content li.meeting-link:before {
+.single-summary article a .connected-content li.meeting-link:before,
+.singular-meeting article .entry-content .connected-content li.summary-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before,
+.so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.summary-link:before,
+.singular-meeting article .entry-content .connected-content li.meeting-link:before,
+.singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
+.so-widget-sow-post-carousel h3
+.singular-meeting article a .connected-content li.meeting-link:before,
+.singular-proposal article .entry-content .connected-content li.summary-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before,
+.so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.summary-link:before,
+.singular-proposal article .entry-content .connected-content li.meeting-link:before,
+.singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
+.so-widget-sow-post-carousel h3
+.singular-proposal article a .connected-content li.meeting-link:before,
+.singular-agenda article .entry-content .connected-content li.summary-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before,
+.so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.summary-link:before,
+.singular-agenda article .entry-content .connected-content li.meeting-link:before,
+.singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before,
+.so-widget-sow-post-carousel h3
+.singular-agenda article a .connected-content li.meeting-link:before {
   content: ""; }
 
 .knowledge-base-list .post-list > li a:before {
@@ -8657,17 +8831,6 @@ body {
   padding-bottom: 1em;
   padding-right: 0;
   padding-left: 0; }
-
-.layout-grid .entries-list .entry-video p,
-.layout-grid .entries-list .entry-video .more-link,
-.layout-grid .entries-list .entry-video figcation {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-  /* many screen reader and browser combinations announce broken words as they would appear visually */
-  word-wrap: normal !important; }
 
 @media screen and (min-width: 544px) {
   .layout-grid .entries-list {
@@ -13461,15 +13624,24 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .single-meeting article p.meta,
 .single-proposal article p.meta,
 .single-agenda article p.meta,
-.single-summary article p.meta {
-  margin-bottom: 0;
+.single-summary article p.meta,
+.singular-meeting article p.meta,
+.singular-proposal article p.meta,
+.singular-agenda article p.meta,
+.singular-meeting article p.meta {
+  margin: 0 .5em 0 0;
   font-size: 14px;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  display: inline-block; }
 
 .single-meeting article header .meta,
 .single-proposal article header .meta,
 .single-agenda article header .meta,
-.single-summary article header .meta {
+.single-summary article header .meta,
+.singular-meeting article header .meta,
+.singular-proposal article header .meta,
+.singular-agenda article header .meta,
+.singular-meeting article header .meta {
   font-size: 16px;
   font-size: 1rem; }
 
@@ -13482,7 +13654,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .single-agenda article a,
 .single-summary article .entry-content,
 .single-summary article .so-widget-sow-post-carousel h3 a, .so-widget-sow-post-carousel h3
-.single-summary article a {
+.single-summary article a,
+.singular-meeting article .entry-content,
+.singular-meeting article .so-widget-sow-post-carousel h3 a, .so-widget-sow-post-carousel h3
+.singular-meeting article a,
+.singular-proposal article .entry-content,
+.singular-proposal article .so-widget-sow-post-carousel h3 a, .so-widget-sow-post-carousel h3
+.singular-proposal article a,
+.singular-agenda article .entry-content,
+.singular-agenda article .so-widget-sow-post-carousel h3 a, .so-widget-sow-post-carousel h3
+.singular-agenda article a,
+.singular-meeting article .entry-content,
+.singular-meeting article .so-widget-sow-post-carousel h3 a, .so-widget-sow-post-carousel h3
+.singular-meeting article a {
   margin-top: .5em; }
   .single-meeting article .entry-content h2, .single-meeting article .so-widget-sow-post-carousel h3 a h2, .so-widget-sow-post-carousel h3 .single-meeting article a h2,
   .single-proposal article .entry-content h2,
@@ -13493,7 +13677,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
   .single-agenda article a h2,
   .single-summary article .entry-content h2,
   .single-summary article .so-widget-sow-post-carousel h3 a h2, .so-widget-sow-post-carousel h3
-  .single-summary article a h2 {
+  .single-summary article a h2,
+  .singular-meeting article .entry-content h2,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a h2, .so-widget-sow-post-carousel h3
+  .singular-meeting article a h2,
+  .singular-proposal article .entry-content h2,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a h2, .so-widget-sow-post-carousel h3
+  .singular-proposal article a h2,
+  .singular-agenda article .entry-content h2,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a h2, .so-widget-sow-post-carousel h3
+  .singular-agenda article a h2,
+  .singular-meeting article .entry-content h2,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a h2, .so-widget-sow-post-carousel h3
+  .singular-meeting article a h2 {
     font-size: 28px;
     font-size: 1.75rem;
     margin-top: .5em;
@@ -13507,7 +13703,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article a h2:first-child,
     .single-summary article .entry-content h2:first-child,
     .single-summary article .so-widget-sow-post-carousel h3 a h2:first-child, .so-widget-sow-post-carousel h3
-    .single-summary article a h2:first-child {
+    .single-summary article a h2:first-child,
+    .singular-meeting article .entry-content h2:first-child,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a h2:first-child, .so-widget-sow-post-carousel h3
+    .singular-meeting article a h2:first-child,
+    .singular-proposal article .entry-content h2:first-child,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a h2:first-child, .so-widget-sow-post-carousel h3
+    .singular-proposal article a h2:first-child,
+    .singular-agenda article .entry-content h2:first-child,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a h2:first-child, .so-widget-sow-post-carousel h3
+    .singular-agenda article a h2:first-child,
+    .singular-meeting article .entry-content h2:first-child,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a h2:first-child, .so-widget-sow-post-carousel h3
+    .singular-meeting article a h2:first-child {
       padding-top: 0; }
   .single-meeting article .entry-content h3, .single-meeting article .so-widget-sow-post-carousel h3 a h3, .so-widget-sow-post-carousel h3 .single-meeting article a h3,
   .single-proposal article .entry-content h3,
@@ -13518,7 +13726,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
   .single-agenda article a h3,
   .single-summary article .entry-content h3,
   .single-summary article .so-widget-sow-post-carousel h3 a h3, .so-widget-sow-post-carousel h3
-  .single-summary article a h3 {
+  .single-summary article a h3,
+  .singular-meeting article .entry-content h3,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a h3, .so-widget-sow-post-carousel h3
+  .singular-meeting article a h3,
+  .singular-proposal article .entry-content h3,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a h3, .so-widget-sow-post-carousel h3
+  .singular-proposal article a h3,
+  .singular-agenda article .entry-content h3,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a h3, .so-widget-sow-post-carousel h3
+  .singular-agenda article a h3,
+  .singular-meeting article .entry-content h3,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a h3, .so-widget-sow-post-carousel h3
+  .singular-meeting article a h3 {
     font-size: 22px;
     font-size: 1.375rem;
     margin: 1em 0 .25em 0; }
@@ -13531,7 +13751,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
   .single-agenda article a h4,
   .single-summary article .entry-content h4,
   .single-summary article .so-widget-sow-post-carousel h3 a h4, .so-widget-sow-post-carousel h3
-  .single-summary article a h4 {
+  .single-summary article a h4,
+  .singular-meeting article .entry-content h4,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a h4, .so-widget-sow-post-carousel h3
+  .singular-meeting article a h4,
+  .singular-proposal article .entry-content h4,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a h4, .so-widget-sow-post-carousel h3
+  .singular-proposal article a h4,
+  .singular-agenda article .entry-content h4,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a h4, .so-widget-sow-post-carousel h3
+  .singular-agenda article a h4,
+  .singular-meeting article .entry-content h4,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a h4, .so-widget-sow-post-carousel h3
+  .singular-meeting article a h4 {
     font-size: 18px;
     font-size: 1.125rem; }
   .single-meeting article .entry-content p, .single-meeting article .so-widget-sow-post-carousel h3 a p, .so-widget-sow-post-carousel h3 .single-meeting article a p, .single-meeting article .entry-content li, .single-meeting article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3 .single-meeting article a li, .single-meeting article .entry-content dt, .single-meeting article .so-widget-sow-post-carousel h3 a dt, .so-widget-sow-post-carousel h3 .single-meeting article a dt, .single-meeting article .entry-content dd, .single-meeting article .so-widget-sow-post-carousel h3 a dd, .so-widget-sow-post-carousel h3 .single-meeting article a dd,
@@ -13570,7 +13802,55 @@ MEETINGS ARCHIVE & SINGLE STYLES
   .single-summary article a dt,
   .single-summary article .entry-content dd,
   .single-summary article .so-widget-sow-post-carousel h3 a dd, .so-widget-sow-post-carousel h3
-  .single-summary article a dd {
+  .single-summary article a dd,
+  .singular-meeting article .entry-content p,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a p, .so-widget-sow-post-carousel h3
+  .singular-meeting article a p,
+  .singular-meeting article .entry-content li,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-meeting article a li,
+  .singular-meeting article .entry-content dt,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a dt, .so-widget-sow-post-carousel h3
+  .singular-meeting article a dt,
+  .singular-meeting article .entry-content dd,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a dd, .so-widget-sow-post-carousel h3
+  .singular-meeting article a dd,
+  .singular-proposal article .entry-content p,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a p, .so-widget-sow-post-carousel h3
+  .singular-proposal article a p,
+  .singular-proposal article .entry-content li,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-proposal article a li,
+  .singular-proposal article .entry-content dt,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a dt, .so-widget-sow-post-carousel h3
+  .singular-proposal article a dt,
+  .singular-proposal article .entry-content dd,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a dd, .so-widget-sow-post-carousel h3
+  .singular-proposal article a dd,
+  .singular-agenda article .entry-content p,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a p, .so-widget-sow-post-carousel h3
+  .singular-agenda article a p,
+  .singular-agenda article .entry-content li,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-agenda article a li,
+  .singular-agenda article .entry-content dt,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a dt, .so-widget-sow-post-carousel h3
+  .singular-agenda article a dt,
+  .singular-agenda article .entry-content dd,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a dd, .so-widget-sow-post-carousel h3
+  .singular-agenda article a dd,
+  .singular-meeting article .entry-content p,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a p, .so-widget-sow-post-carousel h3
+  .singular-meeting article a p,
+  .singular-meeting article .entry-content li,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-meeting article a li,
+  .singular-meeting article .entry-content dt,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a dt, .so-widget-sow-post-carousel h3
+  .singular-meeting article a dt,
+  .singular-meeting article .entry-content dd,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a dd, .so-widget-sow-post-carousel h3
+  .singular-meeting article a dd {
     font-size: 16px;
     font-size: 1rem; }
   .single-meeting article .entry-content li, .single-meeting article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3 .single-meeting article a li,
@@ -13582,7 +13862,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
   .single-agenda article a li,
   .single-summary article .entry-content li,
   .single-summary article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
-  .single-summary article a li {
+  .single-summary article a li,
+  .singular-meeting article .entry-content li,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-meeting article a li,
+  .singular-proposal article .entry-content li,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-proposal article a li,
+  .singular-agenda article .entry-content li,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-agenda article a li,
+  .singular-meeting article .entry-content li,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a li, .so-widget-sow-post-carousel h3
+  .singular-meeting article a li {
     margin-bottom: .25em; }
   .single-meeting article .entry-content ul, .single-meeting article .so-widget-sow-post-carousel h3 a ul, .so-widget-sow-post-carousel h3 .single-meeting article a ul,
   .single-proposal article .entry-content ul,
@@ -13593,7 +13885,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
   .single-agenda article a ul,
   .single-summary article .entry-content ul,
   .single-summary article .so-widget-sow-post-carousel h3 a ul, .so-widget-sow-post-carousel h3
-  .single-summary article a ul {
+  .single-summary article a ul,
+  .singular-meeting article .entry-content ul,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a ul, .so-widget-sow-post-carousel h3
+  .singular-meeting article a ul,
+  .singular-proposal article .entry-content ul,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a ul, .so-widget-sow-post-carousel h3
+  .singular-proposal article a ul,
+  .singular-agenda article .entry-content ul,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a ul, .so-widget-sow-post-carousel h3
+  .singular-agenda article a ul,
+  .singular-meeting article .entry-content ul,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a ul, .so-widget-sow-post-carousel h3
+  .singular-meeting article a ul {
     padding: 0 0 0 .75em; }
     .single-meeting article .entry-content ul > li, .single-meeting article .so-widget-sow-post-carousel h3 a ul > li, .so-widget-sow-post-carousel h3 .single-meeting article a ul > li,
     .single-proposal article .entry-content ul > li,
@@ -13604,7 +13908,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article a ul > li,
     .single-summary article .entry-content ul > li,
     .single-summary article .so-widget-sow-post-carousel h3 a ul > li, .so-widget-sow-post-carousel h3
-    .single-summary article a ul > li {
+    .single-summary article a ul > li,
+    .singular-meeting article .entry-content ul > li,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul > li, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul > li,
+    .singular-proposal article .entry-content ul > li,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a ul > li, .so-widget-sow-post-carousel h3
+    .singular-proposal article a ul > li,
+    .singular-agenda article .entry-content ul > li,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a ul > li, .so-widget-sow-post-carousel h3
+    .singular-agenda article a ul > li,
+    .singular-meeting article .entry-content ul > li,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul > li, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul > li {
       font-weight: bold; }
     .single-meeting article .entry-content ul ul li, .single-meeting article .so-widget-sow-post-carousel h3 a ul ul li, .so-widget-sow-post-carousel h3 .single-meeting article a ul ul li,
     .single-proposal article .entry-content ul ul li,
@@ -13615,7 +13931,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article a ul ul li,
     .single-summary article .entry-content ul ul li,
     .single-summary article .so-widget-sow-post-carousel h3 a ul ul li, .so-widget-sow-post-carousel h3
-    .single-summary article a ul ul li {
+    .single-summary article a ul ul li,
+    .singular-meeting article .entry-content ul ul li,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul li, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul li,
+    .singular-proposal article .entry-content ul ul li,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a ul ul li, .so-widget-sow-post-carousel h3
+    .singular-proposal article a ul ul li,
+    .singular-agenda article .entry-content ul ul li,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a ul ul li, .so-widget-sow-post-carousel h3
+    .singular-agenda article a ul ul li,
+    .singular-meeting article .entry-content ul ul li,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul li, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul li {
       font-weight: normal; }
     .single-meeting article .entry-content ul ul, .single-meeting article .so-widget-sow-post-carousel h3 a ul ul, .so-widget-sow-post-carousel h3 .single-meeting article a ul ul,
     .single-meeting article .entry-content ul ul ul,
@@ -13650,44 +13978,179 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-summary article a ul ul ul,
     .single-summary article .entry-content ul ul ul ul,
     .single-summary article .so-widget-sow-post-carousel h3 a ul ul ul ul, .so-widget-sow-post-carousel h3
-    .single-summary article a ul ul ul ul {
+    .single-summary article a ul ul ul ul,
+    .singular-meeting article .entry-content ul ul,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul,
+    .singular-meeting article .entry-content ul ul ul,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul ul,
+    .singular-meeting article .entry-content ul ul ul ul,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul ul ul,
+    .singular-proposal article .entry-content ul ul,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a ul ul, .so-widget-sow-post-carousel h3
+    .singular-proposal article a ul ul,
+    .singular-proposal article .entry-content ul ul ul,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-proposal article a ul ul ul,
+    .singular-proposal article .entry-content ul ul ul ul,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a ul ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-proposal article a ul ul ul ul,
+    .singular-agenda article .entry-content ul ul,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a ul ul, .so-widget-sow-post-carousel h3
+    .singular-agenda article a ul ul,
+    .singular-agenda article .entry-content ul ul ul,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-agenda article a ul ul ul,
+    .singular-agenda article .entry-content ul ul ul ul,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a ul ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-agenda article a ul ul ul ul,
+    .singular-meeting article .entry-content ul ul,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul,
+    .singular-meeting article .entry-content ul ul ul,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul ul,
+    .singular-meeting article .entry-content ul ul ul ul,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a ul ul ul ul, .so-widget-sow-post-carousel h3
+    .singular-meeting article a ul ul ul ul {
       padding-left: .25em; }
+  .single-meeting article .entry-content .meta-approval-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-approval-date time:before,
+  .single-proposal article .entry-content .meta-approval-date time:before,
+  .single-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .single-proposal article a .meta-approval-date time:before,
+  .single-agenda article .entry-content .meta-approval-date time:before,
+  .single-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .single-agenda article a .meta-approval-date time:before,
+  .single-summary article .entry-content .meta-approval-date time:before,
+  .single-summary article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .single-summary article a .meta-approval-date time:before,
+  .singular-meeting article .entry-content .meta-approval-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-approval-date time:before,
+  .singular-proposal article .entry-content .meta-approval-date time:before,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-proposal article a .meta-approval-date time:before,
+  .singular-agenda article .entry-content .meta-approval-date time:before,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-agenda article a .meta-approval-date time:before,
+  .singular-meeting article .entry-content .meta-approval-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-approval-date time:before {
+    margin-right: .5em;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    visibility: visible; }
+  .single-meeting article .entry-content .meta-effective-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-effective-date time:before,
+  .single-proposal article .entry-content .meta-effective-date time:before,
+  .single-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-proposal article a .meta-effective-date time:before,
+  .single-agenda article .entry-content .meta-effective-date time:before,
+  .single-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-agenda article a .meta-effective-date time:before,
+  .single-summary article .entry-content .meta-effective-date time:before,
+  .single-summary article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-summary article a .meta-effective-date time:before,
+  .singular-meeting article .entry-content .meta-effective-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-effective-date time:before,
+  .singular-proposal article .entry-content .meta-effective-date time:before,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-proposal article a .meta-effective-date time:before,
+  .singular-agenda article .entry-content .meta-effective-date time:before,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-agenda article a .meta-effective-date time:before,
+  .singular-meeting article .entry-content .meta-effective-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-effective-date time:before {
+    margin-right: .5em;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    visibility: visible; }
+  .single-meeting article .entry-content .meta-approval-date time:before, .single-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3 .single-meeting article a .meta-approval-date time:before,
+  .single-meeting article .entry-content .meta-effective-date time:before,
+  .single-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-meeting article a .meta-effective-date time:before,
+  .single-proposal article .entry-content .meta-approval-date time:before,
+  .single-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .single-proposal article a .meta-approval-date time:before,
+  .single-proposal article .entry-content .meta-effective-date time:before,
+  .single-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-proposal article a .meta-effective-date time:before,
+  .single-agenda article .entry-content .meta-approval-date time:before,
+  .single-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .single-agenda article a .meta-approval-date time:before,
+  .single-agenda article .entry-content .meta-effective-date time:before,
+  .single-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-agenda article a .meta-effective-date time:before,
+  .single-summary article .entry-content .meta-approval-date time:before,
+  .single-summary article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .single-summary article a .meta-approval-date time:before,
+  .single-summary article .entry-content .meta-effective-date time:before,
+  .single-summary article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .single-summary article a .meta-effective-date time:before,
+  .singular-meeting article .entry-content .meta-approval-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-approval-date time:before,
+  .singular-meeting article .entry-content .meta-effective-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-effective-date time:before,
+  .singular-proposal article .entry-content .meta-approval-date time:before,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-proposal article a .meta-approval-date time:before,
+  .singular-proposal article .entry-content .meta-effective-date time:before,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-proposal article a .meta-effective-date time:before,
+  .singular-agenda article .entry-content .meta-approval-date time:before,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-agenda article a .meta-approval-date time:before,
+  .singular-agenda article .entry-content .meta-effective-date time:before,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-agenda article a .meta-effective-date time:before,
+  .singular-meeting article .entry-content .meta-approval-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-approval-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-approval-date time:before,
+  .singular-meeting article .entry-content .meta-effective-date time:before,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .meta-effective-date time:before, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .meta-effective-date time:before {
+    margin-right: .15em; }
   .single-meeting article .entry-content .connected-content, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content,
-  .single-meeting article .entry-content .post-content,
-  .single-meeting article .so-widget-sow-post-carousel h3 a .post-content, .so-widget-sow-post-carousel h3
-  .single-meeting article a .post-content,
   .single-proposal article .entry-content .connected-content,
   .single-proposal article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
   .single-proposal article a .connected-content,
-  .single-proposal article .entry-content .post-content,
-  .single-proposal article .so-widget-sow-post-carousel h3 a .post-content, .so-widget-sow-post-carousel h3
-  .single-proposal article a .post-content,
   .single-agenda article .entry-content .connected-content,
   .single-agenda article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
   .single-agenda article a .connected-content,
-  .single-agenda article .entry-content .post-content,
-  .single-agenda article .so-widget-sow-post-carousel h3 a .post-content, .so-widget-sow-post-carousel h3
-  .single-agenda article a .post-content,
   .single-summary article .entry-content .connected-content,
   .single-summary article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
   .single-summary article a .connected-content,
-  .single-summary article .entry-content .post-content,
-  .single-summary article .so-widget-sow-post-carousel h3 a .post-content, .so-widget-sow-post-carousel h3
-  .single-summary article a .post-content {
-    margin: .125em 0;
-    padding: 2%;
-    background-color: #fff; }
-  .single-meeting article .entry-content .connected-content, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content,
-  .single-proposal article .entry-content .connected-content,
-  .single-proposal article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
-  .single-proposal article a .connected-content,
-  .single-agenda article .entry-content .connected-content,
-  .single-agenda article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
-  .single-agenda article a .connected-content,
-  .single-summary article .entry-content .connected-content,
-  .single-summary article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
-  .single-summary article a .connected-content {
-    list-style: none; }
+  .singular-meeting article .entry-content .connected-content,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .connected-content,
+  .singular-proposal article .entry-content .connected-content,
+  .singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
+  .singular-proposal article a .connected-content,
+  .singular-agenda article .entry-content .connected-content,
+  .singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
+  .singular-agenda article a .connected-content,
+  .singular-meeting article .entry-content .connected-content,
+  .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content, .so-widget-sow-post-carousel h3
+  .singular-meeting article a .connected-content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: .5em;
+    padding-top: .5em;
+    border-top: 1px solid #cacccd; }
     .single-meeting article .entry-content .connected-content li.agenda-link:before, .single-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3 .single-meeting article a .connected-content li.agenda-link:before,
     .single-proposal article .entry-content .connected-content li.agenda-link:before,
     .single-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
@@ -13697,7 +14160,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article a .connected-content li.agenda-link:before,
     .single-summary article .entry-content .connected-content li.agenda-link:before,
     .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
-    .single-summary article a .connected-content li.agenda-link:before {
+    .single-summary article a .connected-content li.agenda-link:before,
+    .singular-meeting article .entry-content .connected-content li.agenda-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.agenda-link:before,
+    .singular-proposal article .entry-content .connected-content li.agenda-link:before,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+    .singular-proposal article a .connected-content li.agenda-link:before,
+    .singular-agenda article .entry-content .connected-content li.agenda-link:before,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+    .singular-agenda article a .connected-content li.agenda-link:before,
+    .singular-meeting article .entry-content .connected-content li.agenda-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.agenda-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.agenda-link:before {
       margin-right: .5em;
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -13724,7 +14199,31 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-summary article a .connected-content li.summary-link:before,
     .single-summary article .entry-content .connected-content li.meeting-link:before,
     .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3
-    .single-summary article a .connected-content li.meeting-link:before {
+    .single-summary article a .connected-content li.meeting-link:before,
+    .singular-meeting article .entry-content .connected-content li.summary-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.summary-link:before,
+    .singular-meeting article .entry-content .connected-content li.meeting-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.meeting-link:before,
+    .singular-proposal article .entry-content .connected-content li.summary-link:before,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3
+    .singular-proposal article a .connected-content li.summary-link:before,
+    .singular-proposal article .entry-content .connected-content li.meeting-link:before,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3
+    .singular-proposal article a .connected-content li.meeting-link:before,
+    .singular-agenda article .entry-content .connected-content li.summary-link:before,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3
+    .singular-agenda article a .connected-content li.summary-link:before,
+    .singular-agenda article .entry-content .connected-content li.meeting-link:before,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3
+    .singular-agenda article a .connected-content li.meeting-link:before,
+    .singular-meeting article .entry-content .connected-content li.summary-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.summary-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.summary-link:before,
+    .singular-meeting article .entry-content .connected-content li.meeting-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.meeting-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.meeting-link:before {
       margin-right: .5em;
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -13742,7 +14241,19 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article a .connected-content li.proposal-link:before,
     .single-summary article .entry-content .connected-content li.proposal-link:before,
     .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3
-    .single-summary article a .connected-content li.proposal-link:before {
+    .single-summary article a .connected-content li.proposal-link:before,
+    .singular-meeting article .entry-content .connected-content li.proposal-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.proposal-link:before,
+    .singular-proposal article .entry-content .connected-content li.proposal-link:before,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3
+    .singular-proposal article a .connected-content li.proposal-link:before,
+    .singular-agenda article .entry-content .connected-content li.proposal-link:before,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3
+    .singular-agenda article a .connected-content li.proposal-link:before,
+    .singular-meeting article .entry-content .connected-content li.proposal-link:before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li.proposal-link:before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li.proposal-link:before {
       margin-right: .5em;
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -13760,94 +14271,123 @@ MEETINGS ARCHIVE & SINGLE STYLES
     .single-agenda article a .connected-content li::before,
     .single-summary article .entry-content .connected-content li::before,
     .single-summary article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3
-    .single-summary article a .connected-content li::before {
+    .single-summary article a .connected-content li::before,
+    .singular-meeting article .entry-content .connected-content li::before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li::before,
+    .singular-proposal article .entry-content .connected-content li::before,
+    .singular-proposal article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3
+    .singular-proposal article a .connected-content li::before,
+    .singular-agenda article .entry-content .connected-content li::before,
+    .singular-agenda article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3
+    .singular-agenda article a .connected-content li::before,
+    .singular-meeting article .entry-content .connected-content li::before,
+    .singular-meeting article .so-widget-sow-post-carousel h3 a .connected-content li::before, .so-widget-sow-post-carousel h3
+    .singular-meeting article a .connected-content li::before {
       margin-right: .125em;
       color: #7B8083;
       font-weight: normal; }
-  .single-meeting article .entry-content .post-content h2, .single-meeting article .so-widget-sow-post-carousel h3 a .post-content h2, .so-widget-sow-post-carousel h3 .single-meeting article a .post-content h2,
-  .single-proposal article .entry-content .post-content h2,
-  .single-proposal article .so-widget-sow-post-carousel h3 a .post-content h2, .so-widget-sow-post-carousel h3
-  .single-proposal article a .post-content h2,
-  .single-agenda article .entry-content .post-content h2,
-  .single-agenda article .so-widget-sow-post-carousel h3 a .post-content h2, .so-widget-sow-post-carousel h3
-  .single-agenda article a .post-content h2,
-  .single-summary article .entry-content .post-content h2,
-  .single-summary article .so-widget-sow-post-carousel h3 a .post-content h2, .so-widget-sow-post-carousel h3
-  .single-summary article a .post-content h2 {
-    margin: 0; }
-  .single-meeting article .entry-content .post-content li, .single-meeting article .so-widget-sow-post-carousel h3 a .post-content li, .so-widget-sow-post-carousel h3 .single-meeting article a .post-content li,
-  .single-proposal article .entry-content .post-content li,
-  .single-proposal article .so-widget-sow-post-carousel h3 a .post-content li, .so-widget-sow-post-carousel h3
-  .single-proposal article a .post-content li,
-  .single-agenda article .entry-content .post-content li,
-  .single-agenda article .so-widget-sow-post-carousel h3 a .post-content li, .so-widget-sow-post-carousel h3
-  .single-agenda article a .post-content li,
-  .single-summary article .entry-content .post-content li,
-  .single-summary article .so-widget-sow-post-carousel h3 a .post-content li, .so-widget-sow-post-carousel h3
-  .single-summary article a .post-content li {
-    font-weight: normal; }
 
 .single-meeting article .byline,
 .single-proposal article .byline,
 .single-agenda article .byline,
-.single-summary article .byline {
+.single-summary article .byline,
+.singular-meeting article .byline,
+.singular-proposal article .byline,
+.singular-agenda article .byline,
+.singular-meeting article .byline {
   display: none; }
 
-.single-meeting article .post-footer,
-.single-proposal article .post-footer,
-.single-agenda article .post-footer,
-.single-summary article .post-footer {
+.single-meeting article .entry-footer,
+.single-proposal article .entry-footer,
+.single-agenda article .entry-footer,
+.single-summary article .entry-footer,
+.singular-meeting article .entry-footer,
+.singular-proposal article .entry-footer,
+.singular-agenda article .entry-footer,
+.singular-meeting article .entry-footer {
   margin: 1em 0 .5em 0;
-  padding: .5em 0;
-  border-bottom: 1px solid #cacccd; }
-  .single-meeting article .post-footer .meta,
-  .single-proposal article .post-footer .meta,
-  .single-agenda article .post-footer .meta,
-  .single-summary article .post-footer .meta {
+  padding: .5em 0; }
+  .single-meeting article .entry-footer .meta,
+  .single-proposal article .entry-footer .meta,
+  .single-agenda article .entry-footer .meta,
+  .single-summary article .entry-footer .meta,
+  .singular-meeting article .entry-footer .meta,
+  .singular-proposal article .entry-footer .meta,
+  .singular-agenda article .entry-footer .meta,
+  .singular-meeting article .entry-footer .meta {
     margin-top: .5em;
     padding-top: .75em;
     margin-bottom: .5em;
     padding-bottom: .75em;
     border-top: 1px solid #cacccd;
     border-bottom: 1px solid #cacccd; }
-  .single-meeting article .post-footer h3,
-  .single-proposal article .post-footer h3,
-  .single-agenda article .post-footer h3,
-  .single-summary article .post-footer h3 {
+  .single-meeting article .entry-footer h3,
+  .single-proposal article .entry-footer h3,
+  .single-agenda article .entry-footer h3,
+  .single-summary article .entry-footer h3,
+  .singular-meeting article .entry-footer h3,
+  .singular-proposal article .entry-footer h3,
+  .singular-agenda article .entry-footer h3,
+  .singular-meeting article .entry-footer h3 {
     font-size: 22px;
     font-size: 1.375rem;
     margin: 0 0 .25em 0; }
-  .single-meeting article .post-footer ul,
-  .single-proposal article .post-footer ul,
-  .single-agenda article .post-footer ul,
-  .single-summary article .post-footer ul {
+  .single-meeting article .entry-footer ul,
+  .single-proposal article .entry-footer ul,
+  .single-agenda article .entry-footer ul,
+  .single-summary article .entry-footer ul,
+  .singular-meeting article .entry-footer ul,
+  .singular-proposal article .entry-footer ul,
+  .singular-agenda article .entry-footer ul,
+  .singular-meeting article .entry-footer ul {
     padding: 0 0 0 .75em; }
-    .single-meeting article .post-footer ul li,
-    .single-proposal article .post-footer ul li,
-    .single-agenda article .post-footer ul li,
-    .single-summary article .post-footer ul li {
+    .single-meeting article .entry-footer ul li,
+    .single-proposal article .entry-footer ul li,
+    .single-agenda article .entry-footer ul li,
+    .single-summary article .entry-footer ul li,
+    .singular-meeting article .entry-footer ul li,
+    .singular-proposal article .entry-footer ul li,
+    .singular-agenda article .entry-footer ul li,
+    .singular-meeting article .entry-footer ul li {
       list-style: square;
       font-size: 16px;
       font-size: 1rem;
       margin-bottom: .25em; }
-    .single-meeting article .post-footer ul ul,
-    .single-meeting article .post-footer ul ul ul,
-    .single-meeting article .post-footer ul ul ul ul,
-    .single-proposal article .post-footer ul ul,
-    .single-proposal article .post-footer ul ul ul,
-    .single-proposal article .post-footer ul ul ul ul,
-    .single-agenda article .post-footer ul ul,
-    .single-agenda article .post-footer ul ul ul,
-    .single-agenda article .post-footer ul ul ul ul,
-    .single-summary article .post-footer ul ul,
-    .single-summary article .post-footer ul ul ul,
-    .single-summary article .post-footer ul ul ul ul {
+    .single-meeting article .entry-footer ul ul,
+    .single-meeting article .entry-footer ul ul ul,
+    .single-meeting article .entry-footer ul ul ul ul,
+    .single-proposal article .entry-footer ul ul,
+    .single-proposal article .entry-footer ul ul ul,
+    .single-proposal article .entry-footer ul ul ul ul,
+    .single-agenda article .entry-footer ul ul,
+    .single-agenda article .entry-footer ul ul ul,
+    .single-agenda article .entry-footer ul ul ul ul,
+    .single-summary article .entry-footer ul ul,
+    .single-summary article .entry-footer ul ul ul,
+    .single-summary article .entry-footer ul ul ul ul,
+    .singular-meeting article .entry-footer ul ul,
+    .singular-meeting article .entry-footer ul ul ul,
+    .singular-meeting article .entry-footer ul ul ul ul,
+    .singular-proposal article .entry-footer ul ul,
+    .singular-proposal article .entry-footer ul ul ul,
+    .singular-proposal article .entry-footer ul ul ul ul,
+    .singular-agenda article .entry-footer ul ul,
+    .singular-agenda article .entry-footer ul ul ul,
+    .singular-agenda article .entry-footer ul ul ul ul,
+    .singular-meeting article .entry-footer ul ul,
+    .singular-meeting article .entry-footer ul ul ul,
+    .singular-meeting article .entry-footer ul ul ul ul {
       padding-left: .25em; }
 
 .single-meeting article .article-footer,
 .single-proposal article .article-footer,
 .single-agenda article .article-footer,
-.single-summary article .article-footer {
+.single-summary article .article-footer,
+.singular-meeting article .article-footer,
+.singular-proposal article .article-footer,
+.singular-agenda article .article-footer,
+.singular-meeting article .article-footer {
   display: none; }
 
 /* want to style individual post classes? Booya! */
