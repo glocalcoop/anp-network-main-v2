@@ -37,7 +37,6 @@ function anp_network_main_hybrid_setup() {
     'default'       => '2c-r',
     'left-sidebar'  => '2c-l',
     'full'          => '1c',
-    'grid'          => 'grid'
   ) );
 
   /**
@@ -82,11 +81,5 @@ function anp_network_main_register_layouts() {
       'label' => esc_html__( 'Full Width', 'anp-network-main' ), 
       'image' => trailingslashit( get_template_directory_uri() ) . 'assets/images/layouts/1c.png' )
     );
-
-    hybrid_register_layout( 'grid', array( 
-      'label' => esc_html__( 'Grid', 'anp-network-main' ), 
-      'image' => trailingslashit( get_template_directory_uri() ) . 'assets/images/layouts/grid.png' )
-    );
-
 
 }

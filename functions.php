@@ -26,14 +26,20 @@ require get_template_directory() . '/inc/include-kirki.php';
 require get_template_directory() . '/inc/kirki-fallback.php';
 
 /**
+ * Customizer additions.
+ *
+ * Uses Kirki library to implement customizer functions.
+ *
+ * @since 2.0.29
+ *
+ * @link https://kirki.org/
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Implement the Custom Colors.
- */
-require get_template_directory() . '/inc/custom-style.php';
 
 /**
  * Custom template tags for this theme.
@@ -48,12 +54,7 @@ require get_template_directory() . '/inc/shortcodes.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
-//require get_template_directory() . '/inc/extras.php';
-
-/**
- * Customizer additions.
- */
-//require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/extras.php';
 
 /**
  * Load Jetpack compatibility file.

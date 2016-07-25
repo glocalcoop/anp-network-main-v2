@@ -14,16 +14,19 @@
  * @return array
  */
 function anp_network_main_body_classes( $classes ) {
-  // Adds a class of group-blog to blogs with more than 1 published author.
+
   if ( is_multi_author() ) {
     $classes[] = 'group-blog';
   }
 
   if( is_page() ) {
-
     global $post;
     $classes[] = 'page-' . $post->post_name;
+  }
 
+  if( is_archive() ) {
+      $layout = get_theme_mod( 'archive_layout', 'list' );
+      $classes[] = 'layout-' . $layout;
   }
 
   return $classes;
@@ -220,7 +223,13 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
 
   }
 
-  add_action( 'anp_page_header_bottom', 'anp_archive_post_filter' );
+  $option = get_theme_mod( 'archive_filters', '0' );
+
+  if( $option ) {
+    add_action( 'anp_page_header_bottom', 'anp_archive_post_filter' );
+  } else {
+    return;
+  }
 
 }
 
@@ -235,16 +244,20 @@ if( !function_exists( 'anp_archive_post_type_search' ) ) {
   function anp_archive_post_type_search() {
 
     if(! is_archive() && ! is_home() ) {
-
       return;
-
     } 
 
     get_template_part( 'search-form-custom' );
     
   }
 
-  add_action( 'anp_page_header_bottom', 'anp_archive_post_type_search' );
+  $option = get_theme_mod( 'archive_search', '0' );
+
+  if( $option ) {
+    add_action( 'anp_page_header_bottom', 'anp_archive_post_type_search' );
+  } else {
+    return;
+  }
 
 }
 
@@ -279,7 +292,6 @@ if( ! function_exists( 'anp_display_breadcrumbs' ) ) {
  * Adds numbered pagination to archive pages
  * @link https://codex.wordpress.org/Function_Reference/paginate_links
  */
-
 if( ! function_exists( 'anp_numeric_posts_nav' ) ) {
 
   function anp_numeric_posts_nav() {
@@ -313,4 +325,25 @@ if( ! function_exists( 'anp_numeric_posts_nav' ) ) {
 
   }
 
+}
+
+/**
+ * Is of post type
+ * Checks if page is related to specific post type
+ *
+ * @since 2.0.29
+ *
+ * @uses get_post_type()
+ * @uses is_post_type_archive()
+ * @uses is_tax()
+ *
+ * @param string $post_type
+ * @param string/array $taxonomy
+ * @return bool true/false
+ *
+ *
+ * @link https://codex.wordpress.org/Conditional_Tags#Conditional_Tags_Index
+ */
+function anp_is_post_type( $post_type ) {
+  return ( $post_type == get_post_type() || is_post_type_archive( $post_type ) || is_page( $post_type ) );
 }

@@ -1,0 +1,17 @@
+#customize-theme-controls .customize-control-kirki-radio-image img {
+  margin-right: .25em;
+  padding: 1px;
+  border: 4px solid transparent; }
+  #customize-theme-controls .customize-control-kirki-radio-image img:hover, #customize-theme-controls .customize-control-kirki-radio-image img:focus {
+    border-color: #ccc; }
+
+#customize-theme-controls .customize-control-kirki-radio-image input:checked + label img {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #fff;
+  border-color: #16506B; }
+  #customize-theme-controls .customize-control-kirki-radio-image input:checked + label img:hover, #customize-theme-controls .customize-control-kirki-radio-image input:checked + label img:focus {
+    border-color: #16506B; }
+
+#customize-theme-controls .customize-control-radio-image input:checked + span + img {
+  border-color: #16506B; }

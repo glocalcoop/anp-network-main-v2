@@ -1,91 +1,763 @@
 <?php
 /**
- * Activist Network Theme Customizer
+ * Custom Colors feature
+ * http://codex.wordpress.org/Custom_Headers
+ *
  *
  * @package Activist_Network_Theme
  */
 
 /**
- * Add postMessage support for site title and description for the Theme Customizer.
+ * Configuration for the Kirki Customizer.
+ * The function's argument is an array of existing config values
+ * The function returns the array with the addition of our own arguments
+ * and then that result is used in the kirki/config filter
+ * @since 2.0.29
  *
- * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+ * @param $config the configuration array
+ *
+ * @return array
+ *
+ * @link https://kirki.org/docs/advanced/styling-the-customizer.html
  */
-function anp_network_main_customize_register( $wp_customize ) {
-
-    $default_color_settings = array(
-        'type'              => 'theme_mod',
-        'capabilities'      => 'edit_theme_options',
-        'transport'         => 'postMessage',
-        'sanitize_callback' => 'sanitize_hex_color'
-    );
-
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	// $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-
-    /**
-     * Add Settings
-     */
-    $wp_customize->add_setting( 'primary_color', $default_color_settings );
-    $wp_customize->add_setting( 'accent_color', $default_color_settings );
-    $wp_customize->add_setting( 'site_branding_backgroundcolor', $default_color_settings );
-    $wp_customize->add_setting( 'main_navigation_backgroundcolor', $default_color_settings );
-    $wp_customize->add_setting( 'main_navigation_textcolor', $default_color_settings );
-    $wp_customize->add_setting( 'content_area_backgroundcolor', $default_color_settings );
-    $wp_customize->add_setting( 'content_area_textcolor', $default_color_settings );
-
-    /**
-     * Add Controls
-     */
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
-          'label'   => __( 'Primary Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'accent_color', array(
-          'label'   => __( 'Accent Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'content_area_backgroundcolor', array(
-          'label'   => __( 'Content Area Background Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'content_area_textcolor', array(
-          'label'   => __( 'Content Area Text Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'site_branding_backgroundcolor', array(
-          'label'   => __( 'Branding Background Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-    // Uses built-in header_textcolor
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_textcolor', array(
-          'label'   => __( 'Branding Text Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_navigation_backgroundcolor', array(
-          'label'   => __( 'Main Navigation Background Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_navigation_textcolor', array(
-          'label'   => __( 'Main Navigation Text Color', 'activist-network-main' ),
-          'section' => 'colors',
-        ))
-    );
-
+function anp_customizer_style( $config ) {
+	return wp_parse_args( array(
+		'logo_image'   		=> get_template_directory_uri() . '/dist/images/customizer-logo.png',
+		'color_accent' 		=> '#16506B',
+		'disable_loader' 	=> true,
+	), $config );
 }
-add_action( 'customize_register', 'anp_network_main_customize_register' );
+add_filter( 'kirki/config', 'anp_customizer_style' );
 
 /**
- * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
+ * Add the theme's styles.css
  */
-function anp_network_main_customize_preview_js() {
-	wp_enqueue_script( 'anp_network_main_customizer', get_template_directory_uri() . '/dist/scripts/customizer.js', array( 'customize-preview' ), '20130508', true );
+function anp_custom_style_scripts() {
+	wp_enqueue_style( 'anp-custom-style', get_stylesheet_uri(), array(), time() );
 }
-add_action( 'customize_preview_init', 'anp_network_main_customize_preview_js' );
+add_action( 'wp_enqueue_scripts', 'anp_custom_style_scripts' );
+
+/**
+ * Customizer Settings.
+ * @since 2.0.29
+ *
+ * @link https://kirki.org/docs/advanced/styling-the-customizer.html
+ */
+if ( class_exists( 'ANP_Kirki' ) ) {
+
+	/**
+	 * Add Section
+	 */
+	ANP_Kirki::add_section( 'archives', array(
+		'title'          => esc_attr__( 'Blog/Archive', 'activist-network-main' ),
+		'priority'       => 30,
+		'capability'     => 'edit_theme_options',
+	) );
+
+	/**
+	 * Add Layout Options
+	 *
+	 * @since 2.0.29
+	 *
+	 * @uses `radio-image` setting
+	 * 
+	 * @link https://kirki.org/
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'radio-image',
+		'settings'    => 'archive_layout',
+		'label'       => esc_html__( 'Layout', 'activist-network-main' ),
+		'section'     => 'archives',
+		'default'     => 'list',
+		'priority'    => 10,
+		'choices'     => array(
+			'list' => get_template_directory_uri() . '/dist/images/layouts/list.png',
+			'grid'   => get_template_directory_uri() . '/dist/images/layouts/grid.png',
+		),
+	) );
+
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'switch',
+		'settings'    => 'archive_search',
+		'label'       => __( 'Display Search?', 'activist-network-main' ),
+		'section'     => 'archives',
+		'default'     => '0',
+		'priority'    => 20,
+		'choices'     => array(
+			'yes'  => esc_attr__( 'Enable', 'activist-network-main' ),
+			'no' => esc_attr__( 'Disable', 'activist-network-main' ),
+		),
+	) );
+
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'switch',
+		'settings'    => 'archive_filters',
+		'label'       => __( 'Display Filters?', 'activist-network-main' ),
+		'section'     => 'archives',
+		'default'     => '0',
+		'priority'    => 30,
+		'choices'     => array(
+			'yes'  => esc_attr__( 'Enable', 'activist-network-main' ),
+			'no' => esc_attr__( 'Disable', 'activist-network-main' ),
+		),
+	) );
+
+	/**
+	 * Add Section
+	 */
+	ANP_Kirki::add_section( 'fonts', array(
+		'title'          => esc_attr__( 'Typography', 'activist-network-main' ),
+		'priority'       => 40,
+		'capability'     => 'edit_theme_options',
+	) );
+
+	/**
+	 * Add the configuration.
+	 * This way all the fields using the 'anp_custom_style' ID
+	 * will inherit these options
+	 */
+	ANP_Kirki::add_config( 'anp_custom_style', array(
+		'capability'    => 'edit_theme_options',
+		'option_type'   => 'theme_mod',
+	) );
+
+	$defaults = array(
+		'copyright'			=> date('Y') . ' ' . get_bloginfo( 'name' ),
+		'color_primary'		=> '#16506B',
+		'color_accent'		=> '#008Eb0',
+		'color_background'	=> 'rgba(255,255,255,0)',
+		'color_foreground'	=> '#54595C',
+		'color_default'		=> '#54595C',
+		'color_transparent'	=> 'rgba(255,255,255,0)',
+		'screen_md'			=> '768px'
+	);
+	/**
+	 * Palette
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'radio-buttonset',
+		'settings'    => 'theme_palette',
+		'label'       => __( 'Palette', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => 'monochrome',
+		'priority'    => 10,
+		'choices'     => array(
+			'monochrome'   => esc_attr__( 'Monochrome', 'activist-network-main' ),
+			'colored' => esc_attr__( 'Multi-color', 'activist-network-main' ),
+		),
+	) );
+
+	/**
+	 * Monochrome Color Scheme
+	 */
+
+	/**
+	 * Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'custom-background',
+		'label'       => esc_attr__( 'Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Site background color', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_background'],
+		'priority'    => 15,
+		'output'      => array(
+			array(
+				'element'  => 'body',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => 'body',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+		),
+	) );
+
+	/**
+	 * Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_textcolor',
+		'label'       => esc_attr__( 'Text Color', 'activist-network-main' ),
+		'description' => esc_attr__( 'Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of text.', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 20,
+		'output'      => array(
+			array(
+				'element'  => 'body, p, li',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_foreground'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => 'body, p, li,
+				.bottom-navigation',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Accent
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_accent',
+		'label'       => esc_attr__( 'Accent Color', 'activist-network-main' ),
+		'description' => esc_attr__( 'The accent theme color.', 'activist-network-main' ),
+		'help'        => esc_attr__( 'The accent theme color used for links and accent elements', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_accent'],
+		'priority'    => 30,
+		'output'      => array(
+			array(
+				'element'  => 'a',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+			array(
+				'element'	=> '.social-links a',
+				'property' => 'border-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+			array(
+				'element'	=> '.social-links a:before',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+			array(
+				'element'	=> '.menu-toggle',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	                $defaults['color_primary'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => 'a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.social-links a',
+				'function' => 'css',
+				'property' => 'border-color',
+			),
+			array(
+				'element'  => '.social-links a:before',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.menu-toggle,
+				.copyright',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+		),
+	) );
+
+	/**
+	 * Multi-color Color Scheme
+	 */
+
+	/**
+	 * Nav Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color',
+		'settings'    => 'color_nav_background',
+		'label'       => esc_attr__( 'Navigation Background', 'activist-network-main' ),
+		'description' => esc_attr__( 'Navigation Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Background color of the main navigation and footer navigation', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_background'],
+		'priority'    => 60,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  		=> '.main-navigation,
+				.main-navigation ul ul',
+				'media_query'	=> '@media only screen and (min-width: 768px)',
+				'property' 		=> 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+			array(
+				'element'  => '.main-navigation-container',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.main-navigation,
+				.main-navigation ul ul',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+			array(
+				'element'  => '.main-navigation-container',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+		),
+	) );
+
+	/**
+	 * Nav Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_nav_text',
+		'label'       => esc_attr__( 'Navigation Text', 'activist-network-main' ),
+		'description' => esc_attr__( 'Navigation Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Text color of the main navigation and footer navigation', 'activist-network-main', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 70,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '.main-navigation ul a',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_foreground'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.main-navigation ul a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Branding Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_branding_background',
+		'label'       => esc_attr__( 'Branding Background', 'activist-network-main' ),
+		'description' => esc_attr__( 'Branding Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the branding area background', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_background'],
+		'priority'    => 75,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '.site-branding',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.site-branding',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+		),
+	) );
+
+	/**
+	 * Branding Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_branding_text',
+		'label'       => esc_attr__( 'Branding Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the branding area text', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 80,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '.site-branding .site-title a',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
+			),
+			array(
+				'element'  => '.site-branding .site-description',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.site-branding .site-title a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.site-branding .site-description',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Widget Background Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_widget_background',
+		'label'       => esc_attr__( 'Widget Background Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of widget area background.', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_background'],
+		'priority'    => 90,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '.footer-widgets,
+				.content-widgets .wrap,
+				.home-widgets .wrap',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_background'],
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.footer-widgets,
+								.content-widgets .wrap,
+								.home-widgets .wrap',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+		),
+	) );
+
+	/**
+	 * Widget Text Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_widget_text',
+		'label'       => esc_attr__( 'Widget Text Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the widget area text', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_foreground'],
+		'priority'    => 100,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => '.footer-widgets,
+				.footer-widgets a,
+				.footer-widgets a,
+				.content-widgets,
+				.content-widgets a,
+				.home-widgets,
+				.home-widgets a',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_primary'],
+	                $defaults['color_foreground']
+	            ),
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.footer-widgets,
+				.footer-widgets a,
+				.content-widgets,
+				.content-widgets a,
+				.home-widgets,
+				.home-widgets a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Typography - Branding Fonts
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'typography',
+		'settings'    => 'fonts_branding',
+		'label'       => esc_attr__( 'Branding Fonts', 'activist-network-main' ),
+		'section'     => 'fonts',
+		'default'     => array(
+			'font-family'    => 'Helvetica, Arial, sans-serif',
+			'variant'        => '300',
+			'subset'		 => 'latin-ext',
+		),
+		'priority'    => 10,
+		'output'      => array(
+			array(
+				'element'  => '.site-branding .site-title a,
+				.site-branding .site-description',
+			),
+		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => '.site-branding .site-title a',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.site-branding .site-description',
+				'function' => 'css',
+				'property' => 'color',
+			),
+		),
+	) );
+
+	/**
+	 * Headings
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'typography',
+		'settings'    => 'fonts_headings',
+		'label'       => esc_attr__( 'Headings', 'activist-network-main' ),
+		'section'     => 'fonts',
+		'default'     => array(
+			'font-family'    => 'Helvetica, Arial, sans-serif',
+			'variant'        => '300',
+			'subset'		 => 'latin-ext',
+		),
+		'priority'    => 20,
+		'output'      => array(
+			array(
+				'element' => 'h1, h2, h3, h4, h5',
+			),
+		),
+	) );
+
+	/**
+	 * Body Text
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'typography',
+		'settings'    => 'fonts_body',
+		'label'       => esc_attr__( 'Body Text', 'activist-network-main' ),
+		'section'     => 'fonts',
+		'default'     => array(
+			'font-family'    => 'Helvetica,Arial,sans-serif',
+			'variant'        => '400',
+		),
+		'priority'    => 30,
+		'output'      => array(
+			array(
+				'element' => 'body, p, li',
+			),
+		),
+	) );
+
+	/**
+	 * Link Color
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'color-alpha',
+		'settings'    => 'color_link_text',
+		'label'       => esc_attr__( 'Link Color', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Color of the branding area text', 'activist-network-main' ),
+		'section'     => 'colors',
+		'default'     => $defaults['color_accent'],
+		'priority'    => 80,
+		'required'  =>  array(
+            array(
+                'setting'   =>  'theme_palette',
+                'operator'  =>  '==',
+                'value' =>  'colored'
+            )
+        ),
+		'output'      => array(
+			array(
+				'element'  => 'a, a:visited',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),
+			array(
+				'element'	=> '.social-links a',
+				'property' => 'border-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),
+			array(
+				'element'	=> '.social-links a:before',
+				'property' => 'color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),
+			array(
+				'element'	=> '.menu-toggle',
+				'property' => 'background-color',
+				'exclude'  => array(
+	                $defaults['color_accent'],
+	            ),
+			),		),
+		'transport'   => 'postMessage',
+		'js_vars'     => array(
+			array(
+				'element'  => 'a, a:visited',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.social-links a',
+				'function' => 'css',
+				'property' => 'border-color',
+			),
+			array(
+				'element'  => '.social-links a:before',
+				'function' => 'css',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.menu-toggle',
+				'function' => 'css',
+				'property' => 'background-color',
+			),
+		),
+	) );
+
+	/**
+	 * Footer - Copyright Text
+	 */
+	ANP_Kirki::add_field( 'anp_custom_style', array(
+		'type'        => 'textarea',
+		'settings'    => 'textarea_footer_copyright',
+		'label'       => esc_attr__( 'Copyright', 'activist-network-main' ),
+		'help'        => esc_attr__( 'Enter content for the copyright area that appears in the footer', 'activist-network-main' ),
+		'default'     => esc_attr__( $defaults['copyright'], 'activist-network-main' ),
+		'section'     => 'title_tagline',
+		'priority'    => 500,
+	) );
+
+	/**
+     * Add BuddyPress options
+     *
+     * @link https://kirki.org/docs/controls/image.html
+     */
+	if( class_exists( 'Buddypress' ) ) :
+
+	    ANP_Kirki::add_section( 'buddypress', array(
+	        'title'          => esc_attr__( 'BuddyPress', 'activist-network-main' ),
+	        'description'    => __( 'Settings for BuddyPress, if it is active', 'activist-network-main' ),
+	        'priority'       => 150,
+	        'capability'     => 'edit_theme_options',
+	    ) );
+
+	    ANP_Kirki::add_field( 'anp_custom_style', array(
+	        'type'        => 'image',
+	        'settings'    => 'buddypress_default_cover',
+	        'label'       => __( 'Default BuddyPress Cover Image', 'activist-network-main' ),
+	        'section'     => 'buddypress',
+	        'default'     => '',
+	        'output'      => array(
+			    array(
+			        'element'   => '#cover-image-container #header-cover-image',
+			        'property'  => 'background-image',
+			   ),
+			),
+			'transport' 	=> 'postMessage',
+			'js_vars'     	=> array(
+				array(
+					'element'  		=> '#header-cover-image',
+					'function' 		=> 'style',
+					'property' 		=> 'background-image',
+				),
+			),
+	    ) );
+    endif;
+
+    $accent_color = get_theme_mod( 'my_setting', '#000000' );
+
+
+}
