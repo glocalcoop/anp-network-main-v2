@@ -179,7 +179,11 @@ require get_template_directory() . '/inc/class-anp-filter-walker.php';
 
 /**
  * Display Post Filter on Archive Pages
- * Remove action in order to not display on archive pages
+ * Render filter if customizer settings set to show (default: false)
+ * 
+ * @since 2.0.29
+ *
+ * @uses get_theme_mod()
  * @link https://codex.wordpress.org/Function_Reference/remove_action
  * Redeclare `anp_archive_post_filter()` {function} in child theme in order to modify
  */
@@ -188,9 +192,7 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
   function anp_archive_post_filter() {
 
     if(! is_archive() && ! is_home() ) {
-
       return;
-
     } 
 
     if( function_exists( 'anp_taxonomy_filter' ) ) {
@@ -235,6 +237,11 @@ if( !function_exists( 'anp_archive_post_filter' ) ) {
 
 /**
  * Display Search on Archive Pages
+ * Render search if customizer settings set to show (default: false)
+ * 
+ * @since 2.0.29
+ *
+ * @uses get_theme_mod()
  * Remove action in order to not display on archive pages
  * @link https://developer.wordpress.org/reference/functions/get_search_form/
  * Redeclare `anp_archive_post_filter()` {function} in child theme in order to modify
