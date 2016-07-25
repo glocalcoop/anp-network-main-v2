@@ -60,7 +60,7 @@
 .layout-grid {
 	.entries-list {
 		.entry {
-			@include border(bottom, 1em, $color__background-hr)
+			@include border(bottom, 1em, $color__border-hr);
 
 			padding-right: 0;
 			padding-left: 0;
@@ -72,6 +72,9 @@
 
 $padding: $gutter__column * 3;
 
+/**
+ * Small Screen - 2 columns
+ */
 @include breakpoint(sm) {
 	.layout-grid {
 		.entries-list {
@@ -84,8 +87,14 @@ $padding: $gutter__column * 3;
 				padding: .5em;
 				flex: 0 0 calc(50% - #{$padding});
 				justify-content: space-between;
-				border: 1px solid $color__background-hr;
+				border: 1px solid $color__border-hr;
 				border-radius: $element__border-radius-small;
+				&:nth-child(2n+1) {
+					margin-left: 0;
+				}
+				&:nth-child(2n+2) {
+					margin-right: 0;
+				}
 			}
 
 			.entry-title {
@@ -100,21 +109,51 @@ $padding: $gutter__column * 3;
 	}
 }
 
+/**
+ * Medium Screen - 3 columns
+ */
 @include breakpoint(md) {
 	.layout-grid {
 		.entries-list {
 			.entry {
 				flex-basis: calc(33% - #{$padding});
+				&:nth-child(2n+1) {
+					margin-left: .5em;
+				}
+				&:nth-child(2n+2) {
+					margin-right: .5em;
+				}
+				&:nth-child(3n+1) {
+					margin-left: initial;
+				}
+				&:nth-child(3n+3) {
+					margin-right: initial;
+				}
 			}
 		}
 	}
 }
 
+/**
+ * Large Screen - 4 columns
+ */
 @include breakpoint(lg) {
-	.layout-grid {
+	.layout-full.layout-grid {
 		.entries-list {
 			.entry {
 				flex-basis: calc(25% - #{$padding});
+				&:nth-child(3n+1) {
+					margin-left: .5em;
+				}
+				&:nth-child(3n+3) {
+					margin-right:  .5em;
+				}
+				&:nth-child(4n+1) {
+					margin-left: initial;
+				}
+				&:nth-child(4n+4) {
+					margin-right: initial;
+				}
 			}
 		}
 	}

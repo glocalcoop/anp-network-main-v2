@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.28
+Stable tag: 2.0.29
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,8 +29,24 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 
 == Changelog ==
 
+= 2.0.29 - July 25, 2016 =
+* [Feature #1486] - Add Customizer Option for Archive Layout
+   * Removed global grid layout option
+   * Added blog/archive layout options, using Kirki framework
+   * Added `layout-list` and `layout-grid` body class to archive pages
+   * Moved `custom-styles.php` to `customizer.php`
+   * Added admin stylesheet to add custom styling to customizer layout settings
+   * Modified sidebar logic based on new layout options
+* Added ANP logo and colors to customizer, using Kirki framework config
+* Simplified Knowledge Base stylesheet, adheres to blog/archive layout settings
+* Added `anp_is_post_type` helper function
+* [Feature #1495] - Added Ability to Selectively Display Search and Filter on Blog/Archive Pages
+   * Added customizer selector for search
+   * Added customizer selector for filter
+   * Added conditionals to display or hide based on customizer setting
+
 = 2.0.28 - July 15, 2016 =
-* [Feature #1483] - Template and style updates related to changes to Meetings plugin
+* [Feature #1483] - Template and style updates related to changes to Meetings plugin.
 
 = 2.0.27 - July 11, 2016 =
 * [Feature #1457] - Added post listing video template partial and added styling. Note: If a featured image is supplied, it will be displayed. Otherwise, the post content will be displayed. Any content besides the video (e.g. caption, story, etc.) should be added under the video, either after the `<!--more-->` tag or within a `<figcaption>` tag.

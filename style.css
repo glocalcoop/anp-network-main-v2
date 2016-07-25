@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.28
+Version: 2.0.29
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -1359,7 +1359,7 @@ fieldset[disabled] a {
   fieldset[disabled] a.focus {
     background-color: #7B8083;
     border-color: rgba(123, 128, 131, 0.2); }
-  .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
+  .btn-default .badge, .wpb_btn-default .badge, .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge, .btn-default .knowledge-base-list .count, .knowledge-base-list .btn-default .count, .wpb_btn-default .knowledge-base-list .count, .knowledge-base-list .wpb_btn-default .count, .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .ow-button-base a .count, #secondary .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base a .count {
     color: #7B8083;
     background-color: #fff; }
 
@@ -1396,7 +1396,7 @@ fieldset[disabled] a {
   fieldset[disabled] .btn-primary.focus {
     background-color: #16506B;
     border-color: #124056; }
-  .btn-primary .badge {
+  .btn-primary .badge, .btn-primary .knowledge-base-list .count, .knowledge-base-list .btn-primary .count {
     color: #16506B;
     background-color: #fff; }
 
@@ -1441,7 +1441,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-success {
     background-color: #509ea3;
     border-color: #488d92; }
-  .btn-success .badge, .wpb_btn-success .badge {
+  .btn-success .badge, .wpb_btn-success .badge, .btn-success .knowledge-base-list .count, .knowledge-base-list .btn-success .count, .wpb_btn-success .knowledge-base-list .count, .knowledge-base-list .wpb_btn-success .count {
     color: #509ea3;
     background-color: #fff; }
 
@@ -1486,7 +1486,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-info {
     background-color: #008Eb0;
     border-color: #007997; }
-  .btn-info .badge, .wpb_btn-info .badge {
+  .btn-info .badge, .wpb_btn-info .badge, .btn-info .knowledge-base-list .count, .knowledge-base-list .btn-info .count, .wpb_btn-info .knowledge-base-list .count, .knowledge-base-list .wpb_btn-info .count {
     color: #008Eb0;
     background-color: #fff; }
 
@@ -1531,7 +1531,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-warning {
     background-color: #f39c12;
     border-color: #e08e0b; }
-  .btn-warning .badge, .wpb_btn-warning .badge {
+  .btn-warning .badge, .wpb_btn-warning .badge, .btn-warning .knowledge-base-list .count, .knowledge-base-list .btn-warning .count, .wpb_btn-warning .knowledge-base-list .count, .knowledge-base-list .wpb_btn-warning .count {
     color: #f39c12;
     background-color: #fff; }
 
@@ -1598,7 +1598,7 @@ fieldset[disabled] a {
   fieldset[disabled] .focus.wpb_btn-danger {
     background-color: #eb6361;
     border-color: #e84d4a; }
-  .btn-danger .badge, .home .entry.intro-content button .badge, .home article.intro-content.handbook button .badge, .wpb_btn-danger .badge {
+  .btn-danger .badge, .home .entry.intro-content button .badge, .home article.intro-content.handbook button .badge, .wpb_btn-danger .badge, .btn-danger .knowledge-base-list .count, .knowledge-base-list .btn-danger .count, .home .entry.intro-content button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content button .count, .home article.intro-content.handbook button .knowledge-base-list .count, .knowledge-base-list .home article.intro-content.handbook button .count, .wpb_btn-danger .knowledge-base-list .count, .knowledge-base-list .wpb_btn-danger .count {
     color: #eb6361;
     background-color: #fff; }
 
@@ -2273,7 +2273,7 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.badge {
+.badge, .knowledge-base-list .count {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -2286,16 +2286,24 @@ input[type="button"].btn-block {
   text-align: center;
   background-color: #cacccd;
   border-radius: 10px; }
-  .badge:empty {
+  .badge:empty, .knowledge-base-list .count:empty {
     display: none; }
   .btn .badge, .home .entry.intro-content button .badge, .home article.intro-content.handbook button .badge, button .badge,
   .button:not(.wpb_button_a) .badge,
   input[type="button"] .badge,
   input[type="reset"] .badge,
-  input[type="submit"] .badge, .wpb_button .badge, .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge {
+  input[type="submit"] .badge, .wpb_button .badge, .ow-button-base a .badge, #secondary .sow-cta-base .ow-button-base a .badge, .btn .knowledge-base-list .count, .knowledge-base-list .btn .count, .home .entry.intro-content button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content button .count, .home article.intro-content.handbook button .knowledge-base-list .count, .knowledge-base-list .home article.intro-content.handbook button .count, button .knowledge-base-list .count, .knowledge-base-list button .count,
+  .button:not(.wpb_button_a) .knowledge-base-list .count, .knowledge-base-list
+  .button:not(.wpb_button_a) .count,
+  input[type="button"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="button"] .count,
+  input[type="reset"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="reset"] .count,
+  input[type="submit"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="submit"] .count, .wpb_button .knowledge-base-list .count, .knowledge-base-list .wpb_button .count, .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .ow-button-base a .count, #secondary .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base a .count {
     position: relative;
     top: -1px; }
-  .btn-xs .badge,
+  .btn-xs .badge, .btn-xs .knowledge-base-list .count, .knowledge-base-list .btn-xs .count,
   .btn-group-xs > .btn .badge, .home .entry.intro-content
   .btn-group-xs > button .badge, .home article.intro-content.handbook
   .btn-group-xs > button .badge,
@@ -2310,21 +2318,52 @@ input[type="button"].btn-block {
   input[type="submit"] .badge,
   .btn-group-xs > .wpb_button .badge, .ow-button-base
   .btn-group-xs > a .badge, #secondary .sow-cta-base .ow-button-base
-  .btn-group-xs > a .badge {
+  .btn-group-xs > a .badge,
+  .btn-group-xs > .btn .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs > .btn .count, .home .entry.intro-content
+  .btn-group-xs > button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content
+  .btn-group-xs > button .count, .home article.intro-content.handbook
+  .btn-group-xs > button .knowledge-base-list .count, .knowledge-base-list .home article.intro-content.handbook
+  .btn-group-xs > button .count,
+  .btn-group-xs > button .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs > button .count,
+  .btn-group-xs >
+  .button:not(.wpb_button_a) .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs >
+  .button:not(.wpb_button_a) .count,
+  .btn-group-xs >
+  input[type="button"] .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs >
+  input[type="button"] .count,
+  .btn-group-xs >
+  input[type="reset"] .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs >
+  input[type="reset"] .count,
+  .btn-group-xs >
+  input[type="submit"] .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs >
+  input[type="submit"] .count,
+  .btn-group-xs > .wpb_button .knowledge-base-list .count, .knowledge-base-list
+  .btn-group-xs > .wpb_button .count, .ow-button-base
+  .btn-group-xs > a .knowledge-base-list .count, .knowledge-base-list .ow-button-base
+  .btn-group-xs > a .count, #secondary .sow-cta-base .ow-button-base
+  .btn-group-xs > a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base
+  .btn-group-xs > a .count {
     top: 0;
     padding: 1px 5px; }
-  .list-group-item.active > .badge,
-  .nav-pills > .active > a > .badge {
+  .list-group-item.active > .badge, .knowledge-base-list .list-group-item.active > .count,
+  .nav-pills > .active > a > .badge, .knowledge-base-list
+  .nav-pills > .active > a > .count {
     color: #16506B;
     background-color: #fff; }
-  .list-group-item > .badge {
+  .list-group-item > .badge, .knowledge-base-list .list-group-item > .count {
     float: right; }
-  .list-group-item > .badge + .badge {
+  .list-group-item > .badge + .badge, .knowledge-base-list .list-group-item > .count + .badge, .knowledge-base-list .list-group-item > .badge + .count, .knowledge-base-list .list-group-item > .count + .count {
     margin-right: 5px; }
-  .nav-pills > li > a > .badge {
+  .nav-pills > li > a > .badge, .knowledge-base-list .nav-pills > li > a > .count {
     margin-left: 3px; }
 
-a.badge:hover, a.badge:focus {
+a.badge:hover, .knowledge-base-list a.count:hover, a.badge:focus, .knowledge-base-list a.count:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer; }
@@ -8832,6 +8871,9 @@ body {
   padding-right: 0;
   padding-left: 0; }
 
+/**
+ * Small Screen - 2 columns
+ */
 @media screen and (min-width: 544px) {
   .layout-grid .entries-list {
     display: flex;
@@ -8844,19 +8886,45 @@ body {
       justify-content: space-between;
       border: 1px solid rgba(17, 17, 17, 0.1);
       border-radius: 0.125em; }
+      .layout-grid .entries-list .entry:nth-child(2n+1), .layout-grid .entries-list article.handbook:nth-child(2n+1) {
+        margin-left: 0; }
+      .layout-grid .entries-list .entry:nth-child(2n+2), .layout-grid .entries-list article.handbook:nth-child(2n+2) {
+        margin-right: 0; }
     .layout-grid .entries-list .entry-title {
       margin-top: 0;
       margin-bottom: .5em; }
     .layout-grid .entries-list .jetpack-video-wrapper {
       margin-bottom: 0; } }
 
+/**
+ * Medium Screen - 3 columns
+ */
 @media screen and (min-width: 768px) {
   .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
-    flex-basis: calc(33% - 15px); } }
+    flex-basis: calc(33% - 15px); }
+    .layout-grid .entries-list .entry:nth-child(2n+1), .layout-grid .entries-list article.handbook:nth-child(2n+1) {
+      margin-left: .5em; }
+    .layout-grid .entries-list .entry:nth-child(2n+2), .layout-grid .entries-list article.handbook:nth-child(2n+2) {
+      margin-right: .5em; }
+    .layout-grid .entries-list .entry:nth-child(3n+1), .layout-grid .entries-list article.handbook:nth-child(3n+1) {
+      margin-left: initial; }
+    .layout-grid .entries-list .entry:nth-child(3n+3), .layout-grid .entries-list article.handbook:nth-child(3n+3) {
+      margin-right: initial; } }
 
+/**
+ * Large Screen - 4 columns
+ */
 @media screen and (min-width: 992px) {
-  .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
-    flex-basis: calc(25% - 15px); } }
+  .layout-full.layout-grid .entries-list .entry, .layout-full.layout-grid .entries-list article.handbook {
+    flex-basis: calc(25% - 15px); }
+    .layout-full.layout-grid .entries-list .entry:nth-child(3n+1), .layout-full.layout-grid .entries-list article.handbook:nth-child(3n+1) {
+      margin-left: .5em; }
+    .layout-full.layout-grid .entries-list .entry:nth-child(3n+3), .layout-full.layout-grid .entries-list article.handbook:nth-child(3n+3) {
+      margin-right: .5em; }
+    .layout-full.layout-grid .entries-list .entry:nth-child(4n+1), .layout-full.layout-grid .entries-list article.handbook:nth-child(4n+1) {
+      margin-left: initial; }
+    .layout-full.layout-grid .entries-list .entry:nth-child(4n+4), .layout-full.layout-grid .entries-list article.handbook:nth-child(4n+4) {
+      margin-right: initial; } }
 
 #masthead .custom-header img {
   width: 100%;
@@ -9265,7 +9333,7 @@ body {
     fieldset[disabled] .home article.intro-content.handbook button.focus {
       background-color: #7B8083;
       border-color: rgba(123, 128, 131, 0.2); }
-    .home .entry.intro-content button .badge, .home article.intro-content.handbook button .badge {
+    .home .entry.intro-content button .badge, .home article.intro-content.handbook button .badge, .home .entry.intro-content button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content button .count, .home article.intro-content.handbook button .knowledge-base-list .count, .knowledge-base-list .home article.intro-content.handbook button .count {
       color: #7B8083;
       background-color: #fff; }
   @media screen and (min-width: 768px) {
@@ -9946,11 +10014,19 @@ input[type="submit"] {
   input[type="submit"].focus {
     background-color: #7B8083;
     border-color: rgba(123, 128, 131, 0.2); }
-  button .badge,
+  button .badge, button .knowledge-base-list .count, .knowledge-base-list button .count,
   .button:not(.wpb_button_a) .badge,
+  .button:not(.wpb_button_a) .knowledge-base-list .count, .knowledge-base-list
+  .button:not(.wpb_button_a) .count,
   input[type="button"] .badge,
+  input[type="button"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="button"] .count,
   input[type="reset"] .badge,
-  input[type="submit"] .badge {
+  input[type="reset"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="reset"] .count,
+  input[type="submit"] .badge,
+  input[type="submit"] .knowledge-base-list .count, .knowledge-base-list
+  input[type="submit"] .count {
     color: #7B8083;
     background-color: #fff; }
 
@@ -9987,7 +10063,7 @@ input[type="reset"] {
   fieldset[disabled] input[type="reset"].focus {
     background-color: #eb6361;
     border-color: #eb6361; }
-  input[type="reset"] .badge {
+  input[type="reset"] .badge, input[type="reset"] .knowledge-base-list .count, .knowledge-base-list input[type="reset"] .count {
     color: #eb6361;
     background-color: #fff; }
 
@@ -10054,7 +10130,7 @@ textarea {
 .cat-links a,
 a.tag,
 .entry-terms a, #buddypress #item-header-cover-image #item-meta .activity, #buddypress .highlight, #buddypress .bbp-topic-tags a, #buddypress .tags-cell a, #buddypress .bbp-reply-permalink,
-#buddypress span.time-since, #buddypress #invite-anyone-invite-list .item-meta .activity, .knowledge-base-list .count {
+#buddypress span.time-since, #buddypress #invite-anyone-invite-list .item-meta .activity {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -10070,14 +10146,14 @@ a.tag,
   .cat-links a:visited,
   a.tag:visited,
   .entry-terms a:visited, #buddypress #item-header-cover-image #item-meta .activity:visited, #buddypress .highlight:visited, #buddypress .bbp-topic-tags a:visited, #buddypress .tags-cell a:visited, #buddypress .bbp-reply-permalink:visited,
-  #buddypress span.time-since:visited, #buddypress #invite-anyone-invite-list .item-meta .activity:visited, .knowledge-base-list .count:visited {
+  #buddypress span.time-since:visited, #buddypress #invite-anyone-invite-list .item-meta .activity:visited {
     color: #fff; }
   .tags a:empty,
   .category a:empty,
   .cat-links a:empty,
   a.tag:empty,
   .entry-terms a:empty, #buddypress #item-header-cover-image #item-meta .activity:empty, #buddypress .highlight:empty, #buddypress .bbp-topic-tags a:empty, #buddypress .tags-cell a:empty, #buddypress .bbp-reply-permalink:empty,
-  #buddypress span.time-since:empty, #buddypress #invite-anyone-invite-list .item-meta .activity:empty, .knowledge-base-list .count:empty {
+  #buddypress span.time-since:empty, #buddypress #invite-anyone-invite-list .item-meta .activity:empty {
     display: none; }
   .btn .tags a, .tags .btn a, .home .entry.intro-content button .tags a, .tags .home .entry.intro-content button a, .home article.intro-content.handbook button .tags a, .tags .home article.intro-content.handbook button a, button .tags a, .tags button a,
   .button:not(.wpb_button_a) .tags a, .tags
@@ -10270,15 +10346,7 @@ a.tag,
   input[type="reset"] #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta
   input[type="reset"] .activity,
   input[type="submit"] #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta
-  input[type="submit"] .activity, .wpb_button #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta .wpb_button .activity, .ow-button-base a #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta #secondary .sow-cta-base .ow-button-base a .activity, .btn .knowledge-base-list .count, .knowledge-base-list .btn .count, .home .entry.intro-content button .knowledge-base-list .count, .knowledge-base-list .home .entry.intro-content button .count, .home article.intro-content.handbook button .knowledge-base-list .count, .knowledge-base-list .home article.intro-content.handbook button .count, button .knowledge-base-list .count, .knowledge-base-list button .count,
-  .button:not(.wpb_button_a) .knowledge-base-list .count, .knowledge-base-list
-  .button:not(.wpb_button_a) .count,
-  input[type="button"] .knowledge-base-list .count, .knowledge-base-list
-  input[type="button"] .count,
-  input[type="reset"] .knowledge-base-list .count, .knowledge-base-list
-  input[type="reset"] .count,
-  input[type="submit"] .knowledge-base-list .count, .knowledge-base-list
-  input[type="submit"] .count, .wpb_button .knowledge-base-list .count, .knowledge-base-list .wpb_button .count, .ow-button-base a .knowledge-base-list .count, .knowledge-base-list .ow-button-base a .count, #secondary .sow-cta-base .ow-button-base a .knowledge-base-list .count, .knowledge-base-list #secondary .sow-cta-base .ow-button-base a .count {
+  input[type="submit"] .activity, .wpb_button #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta .wpb_button .activity, .ow-button-base a #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta .ow-button-base a .activity, #secondary .sow-cta-base .ow-button-base a #buddypress #invite-anyone-invite-list .item-meta .activity, #buddypress #invite-anyone-invite-list .item-meta #secondary .sow-cta-base .ow-button-base a .activity {
     position: relative;
     top: -1px; }
 
@@ -10287,19 +10355,19 @@ a.tag,
 .cat-links a,
 a.tag,
 .entry-terms a, #buddypress #item-header-cover-image #item-meta .activity, #buddypress .bbp-topic-tags a, #buddypress .tags-cell a, #buddypress .bbp-reply-permalink,
-#buddypress span.time-since, #buddypress #invite-anyone-invite-list .item-meta .activity, .knowledge-base-list .count {
+#buddypress span.time-since, #buddypress #invite-anyone-invite-list .item-meta .activity {
   background-color: #a3a6a8; }
   .tags a[href]:hover,
   .category a[href]:hover,
   .cat-links a[href]:hover,
   a[href].tag:hover,
   .entry-terms a[href]:hover, #buddypress #item-header-cover-image #item-meta [href].activity:hover, #buddypress .bbp-topic-tags a[href]:hover, #buddypress .tags-cell a[href]:hover, #buddypress [href].bbp-reply-permalink:hover,
-  #buddypress span[href].time-since:hover, #buddypress #invite-anyone-invite-list .item-meta [href].activity:hover, .knowledge-base-list [href].count:hover, .tags a[href]:focus,
+  #buddypress span[href].time-since:hover, #buddypress #invite-anyone-invite-list .item-meta [href].activity:hover, .tags a[href]:focus,
   .category a[href]:focus,
   .cat-links a[href]:focus,
   a[href].tag:focus,
   .entry-terms a[href]:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus, #buddypress .bbp-topic-tags a[href]:focus, #buddypress .tags-cell a[href]:focus, #buddypress [href].bbp-reply-permalink:focus,
-  #buddypress span[href].time-since:focus, #buddypress #invite-anyone-invite-list .item-meta [href].activity:focus, .knowledge-base-list [href].count:focus {
+  #buddypress span[href].time-since:focus, #buddypress #invite-anyone-invite-list .item-meta [href].activity:focus {
     background-color: #898d8f; }
 
 #buddypress .highlight {
@@ -14831,36 +14899,15 @@ Knowledge Base
 .knowledge-base-list {
   margin: 0;
   padding: 0;
-  list-style: none;
-  background-color: #f2f2f3;
-  padding: .5em; }
+  list-style: none; }
   .knowledge-base-list:after {
     content: "";
     display: table;
     clear: both; }
-  .knowledge-base-list > li {
-    padding: .5em;
-    margin-top: .25em;
-    margin-bottom: .25em;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    text-align: center;
-    color: #313334; }
   .knowledge-base-list li > ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-    margin-left: 0; }
-  .knowledge-base-list .tax-item {
-    font-size: 22px;
-    font-size: 1.375rem; }
-    .knowledge-base-list .tax-item .children .tax-item {
-      font-size: 18px;
-      font-size: 1.125rem; }
-  .knowledge-base-list .children {
-    margin-top: .25em;
-    margin-left: 1.25em; }
+    list-style: none; }
   .knowledge-base-list .post-list > li a:before {
     margin-right: .5em;
     display: inline-block;
@@ -14874,31 +14921,6 @@ Knowledge Base
     color: #313334; }
   .knowledge-base-list .count {
     float: right; }
-  @media screen and (min-width: 768px) {
-    .knowledge-base-list {
-      display: -ms-flex;
-      display: -webkit-flex;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: .5em; }
-      .knowledge-base-list > li {
-        flex: 0 0 calc(50% - 5px);
-        box-sizing: border-box;
-        text-align: left; }
-        .knowledge-base-list > li:nth-child(odd) {
-          margin-right: 5px; }
-        .knowledge-base-list > li:nth-child(even) {
-          margin-left: 5px; }
-      .knowledge-base-list .tax-item {
-        font-size: 28px;
-        font-size: 1.75rem; }
-        .knowledge-base-list .tax-item .children .tax-item {
-          font-size: 22px;
-          font-size: 1.375rem; }
-      .knowledge-base-list .children li:not(:last-child) {
-        border-bottom: 1px solid rgba(17, 17, 17, 0.1);
-        margin-bottom: 0.25em;
-        padding-bottom: 0.25em; } }
 
 /**
  * Flexible Posts Widget
@@ -15150,3 +15172,23 @@ a {
 /*--------------------------------------------------------------
 # Hacks
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Admin
+--------------------------------------------------------------*/
+#customize-theme-controls .customize-control-kirki-radio-image img {
+  margin-right: .25em;
+  padding: 1px;
+  border: 4px solid transparent; }
+  #customize-theme-controls .customize-control-kirki-radio-image img:hover, #customize-theme-controls .customize-control-kirki-radio-image img:focus {
+    border-color: #ccc; }
+
+#customize-theme-controls .customize-control-kirki-radio-image input:checked + label img {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #fff;
+  border-color: #16506B; }
+  #customize-theme-controls .customize-control-kirki-radio-image input:checked + label img:hover, #customize-theme-controls .customize-control-kirki-radio-image input:checked + label img:focus {
+    border-color: #16506B; }
+
+#customize-theme-controls .customize-control-radio-image input:checked + span + img {
+  border-color: #16506B; }
