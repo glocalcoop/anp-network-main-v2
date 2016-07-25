@@ -219,7 +219,14 @@ if( ! function_exists( 'anp_taxonomy_filter' ) ) {
             'taxonomy'  => $taxonomy,
             'walker'    => new ANP_Filter_Walker,
             'title_li'  => '',
+            'show_option_all' => 'All',
         );
+
+        $terms = get_terms( $args );
+
+        if( empty( $terms ) ) {
+            return;
+        }
 
         echo '<ul class="taxonomy-filters">';
         wp_list_categories( $args );
