@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.29
+Stable tag: 2.0.30
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.30 - July 25, 2016 =
+* Updated multi-site directory markup and styles.
 
 = 2.0.29 - July 25, 2016 =
 * [Feature #1486] - Add Customizer Option for Archive Layout

@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.29
+Version: 2.0.30
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -8865,7 +8865,7 @@ body {
     padding-right: .5em; } }
 
 .layout-grid .entries-list .entry, .layout-grid .entries-list article.handbook {
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid #cacccd;
   margin-bottom: 1em;
   padding-bottom: 1em;
   padding-right: 0;
@@ -8884,7 +8884,7 @@ body {
       padding: .5em;
       flex: 0 0 calc(50% - 15px);
       justify-content: space-between;
-      border: 1px solid rgba(17, 17, 17, 0.1);
+      border: 1px solid #cacccd;
       border-radius: 0.125em; }
       .layout-grid .entries-list .entry:nth-child(2n+1), .layout-grid .entries-list article.handbook:nth-child(2n+1) {
         margin-left: 0; }
@@ -14754,138 +14754,16 @@ NETWORK CONTENT
 /**
  * NETWORK CONTENT
  */
-.archive-network_directory .entries-list:after,
-.taxonomy-subsite_category .entries-list:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.archive-network_directory article,
-.taxonomy-subsite_category article {
+.archive-network_directory .entry-avatar,
+.taxonomy-subsite_category .entry-avatar {
   text-align: center; }
 
-.archive-network_directory .entry-title,
-.taxonomy-subsite_category .entry-title {
-  margin-top: .5em;
-  margin-bottom: .25em; }
-
-.archive-network_directory .entry-content:empty, .archive-network_directory .so-widget-sow-post-carousel h3 a:empty, .so-widget-sow-post-carousel h3 .archive-network_directory a:empty,
-.taxonomy-subsite_category .entry-content:empty,
-.taxonomy-subsite_category .so-widget-sow-post-carousel h3 a:empty, .so-widget-sow-post-carousel h3
-.taxonomy-subsite_category a:empty {
-  display: none; }
-
-.archive-network_directory .entry .entry-footer:not(:empty), .archive-network_directory article.handbook .entry-footer:not(:empty),
-.archive-network_directory .entry-footer,
-.taxonomy-subsite_category .entry .entry-footer:not(:empty),
-.taxonomy-subsite_category article.handbook .entry-footer:not(:empty),
-.taxonomy-subsite_category .entry-footer {
-  padding-top: 0;
-  border-top: none; }
-
-@media screen and (min-width: 768px) {
-  .archive-network_directory .entries-list,
-  .taxonomy-subsite_category .entries-list {
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap; }
-  .archive-network_directory article,
-  .archive-network_directory .entry:not(:last-child),
-  .archive-network_directory article.handbook:not(:last-child),
-  .taxonomy-subsite_category article,
-  .taxonomy-subsite_category .entry:not(:last-child),
-  .taxonomy-subsite_category article.handbook:not(:last-child) {
-    flex: 0 0 calc(50% - 5px);
-    margin-top: .5em;
-    margin-bottom: .5em;
-    padding: .5em;
-    box-sizing: border-box;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    text-align: left; }
-    .archive-network_directory article:nth-child(odd),
-    .archive-network_directory .entry:not(:last-child):nth-child(odd),
-    .archive-network_directory article.handbook:not(:last-child):nth-child(odd),
-    .taxonomy-subsite_category article:nth-child(odd),
-    .taxonomy-subsite_category .entry:not(:last-child):nth-child(odd),
-    .taxonomy-subsite_category article.handbook:not(:last-child):nth-child(odd) {
-      margin-right: 5px; }
-    .archive-network_directory article:nth-child(even),
-    .archive-network_directory .entry:not(:last-child):nth-child(even),
-    .archive-network_directory article.handbook:not(:last-child):nth-child(even),
-    .taxonomy-subsite_category article:nth-child(even),
-    .taxonomy-subsite_category .entry:not(:last-child):nth-child(even),
-    .taxonomy-subsite_category article.handbook:not(:last-child):nth-child(even) {
-      margin-left: 5px; }
-  .archive-network_directory .entry-title,
-  .taxonomy-subsite_category .entry-title {
-    font-size: 28px;
-    font-size: 1.75rem; }
-  .archive-network_directory .has-post-thumbnail .entry-header,
-  .taxonomy-subsite_category .has-post-thumbnail .entry-header {
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap; }
-  .archive-network_directory .has-post-thumbnail .entry-avatar,
-  .taxonomy-subsite_category .has-post-thumbnail .entry-avatar {
-    flex: 0 0 85px;
-    padding-right: .5em; }
-    .archive-network_directory .has-post-thumbnail .entry-avatar img,
-    .taxonomy-subsite_category .has-post-thumbnail .entry-avatar img {
-      text-align: left;
-      width: 100%;
-      height: auto; }
-  .archive-network_directory .has-post-thumbnail .entry-title,
-  .taxonomy-subsite_category .has-post-thumbnail .entry-title {
-    flex: 0 0 calc(100% - 85px);
-    justify-content: flex-end; } }
-
-.network-directory-sites {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-weight: bold; }
-  .network-directory-sites > li {
-    font-size: 28px;
-    font-size: 1.75rem;
-    border-bottom: 1px solid #cacccd;
-    margin-bottom: 0.25em;
-    padding-bottom: 0.25em; }
-    .network-directory-sites > li > ul {
-      margin-left: 0; }
-  .network-directory-sites ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-  .network-directory-sites a {
-    font-weight: normal;
-    font-size: 16px;
-    font-size: 1rem; }
-
-@media screen and (min-width: 768px) {
-  .network-directory-sites {
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap; }
-    .network-directory-sites > li {
-      flex: 0 0 calc(50% - 5px);
-      margin-top: .5em;
-      margin-bottom: .5em;
-      padding: .5em;
-      box-sizing: border-box;
-      border: 1px solid rgba(17, 17, 17, 0.1);
-      text-align: left;
-      font-size: 28px;
-      font-size: 1.75rem; }
-      .network-directory-sites > li:nth-child(odd) {
-        margin-right: 5px; }
-      .network-directory-sites > li:nth-child(even) {
-        margin-left: 5px; }
-    .network-directory-sites a {
-      font-size: 16px;
-      font-size: 1rem; } }
+@media screen and (min-width: 544px) {
+  .archive-network_directory .entry-avatar,
+  .taxonomy-subsite_category .entry-avatar {
+    max-width: 25%;
+    float: left;
+    padding-right: .5em; } }
 
 /*********************
 NETWORK CONTENT
