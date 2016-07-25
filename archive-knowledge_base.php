@@ -18,11 +18,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/header', 'archive' ); ?>
 
-			<div class="entries-list">
-
 			<?php echo do_shortcode( '[knowledge-base]' ); ?>
-
-			</div>
 
 		<?php endif; ?>
 
