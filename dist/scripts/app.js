@@ -1,4 +1,6 @@
 ( function( $ ) {    
+    $('.taxonomy-filters .cat-item-all a').addClass('active');
+
     $('.taxonomy-filter').click( function(event) {
  
         event.preventDefault();
@@ -31,6 +33,11 @@
         });
  
     });
+
+    $('.taxonomy-filters .cat-item-all a').click( function(event) {
+        $(this).addClass('active');
+        $('.active').not(this).removeClass('active');
+    } );
 
     $('.site-main .search-submit').click( function(event) {
  

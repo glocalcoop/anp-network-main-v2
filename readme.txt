@@ -44,6 +44,10 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
    * Added customizer selector for search
    * Added customizer selector for filter
    * Added conditionals to display or hide based on customizer setting
+   * Display filter only if terms exist
+   * Updated filter to display "All"
+   * Updated filter JS to highlight "All"
+* Updated numeric pagination template tag function
 
 = 2.0.28 - July 15, 2016 =
 * [Feature #1483] - Template and style updates related to changes to Meetings plugin.
