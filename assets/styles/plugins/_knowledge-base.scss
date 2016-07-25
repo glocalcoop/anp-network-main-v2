@@ -7,36 +7,8 @@ Knowledge Base
     @include no-bullets;
     @include clearfix;
 
-    background-color: $color__background-panel;
-    padding: .5em;
-
-    &> li {
-        padding: .5em;
-        margin-top: .25em;
-        margin-bottom: .25em;
-        background-color: $color__white;
-        border-radius: 4px;
-        border: 1px solid $color__border-nav-alt;
-        text-align: center;
-        color: $color__foreground;
-    }
-
     li > ul {
         @include no-bullets; 
-        margin-left: 0;
-
-    }
-
-    .tax-item {
-        @include font-size($h4);
-        .children .tax-item {
-            @include font-size($h5);
-        }
-    }
-
-    .children {
-        margin-top: .25em;
-        margin-left: 1.25em;
     }
 
     .post-list {
@@ -54,46 +26,8 @@ Knowledge Base
     }
 
     .count {
-        @extend %label;
-        @extend %label-default;
+        @extend .badge;
         float: right;
     }
 
-    @include breakpoint(md) {
-        display: -ms-flex;
-        display: -webkit-flex;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: .5em;
-
-        &> li {
-            flex: 0 0 calc(50% - #{$gutter__column});
-            box-sizing: border-box;
-            text-align: left;
-
-            &:nth-child(odd){
-                margin-right: $gutter__column;
-            }
-
-            &:nth-child(even){
-                margin-left: $gutter__column;
-            }
-        }
-
-        .tax-item {
-            @include font-size($h3);
-            .children .tax-item {
-                @include font-size($h4);
-            }
-        }
-
-        .children {
-            li {
-                &:not(:last-child) {
-                    @include border($weight: 1px, $color: $color__border-nav-alt);
-                }
-            }
-        }
-
-    }
 }
