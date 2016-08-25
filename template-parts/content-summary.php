@@ -16,9 +16,9 @@
 		<?php do_action ( 'anp_entry_header_top' );?>
 
 		<?php if( has_post_thumbnail() ) : ?>
-		
+
         <div class="entry-image">
-            <?php the_post_thumbnail( 'medium' ); ?> 
+            <?php the_post_thumbnail( 'medium' ); ?>
         </div>
 
         <?php endif; ?>
@@ -61,34 +61,13 @@
 
 	<?php do_action ( 'anp_entry_content_after' );?>
 
-	 <?php
-	 $queried_object = get_queried_object();
-
-	 /**
-	  * If there are multiple taxonomies, the object will contain `taxonomies` key - take the first one
-	  * If there is only one taxonomy, the object will contain a `taxonomy` key - use that
-	  */
-	 if( ! empty( $queried_object->taxonomies ) ) {
-	 	$taxonomy = $queried_object->taxonomies[0];
-	 } elseif( ! empty( $queried_object->taxonomy ) ) {
-	 	$taxonomy = $queried_object->taxonomy;
-	 }
-	 ?>
-
-	<?php if( isset( $taxonomy ) ) : ?>
-
 	<footer class="entry-footer">
 
         <?php do_action ( 'anp_entry_footer_top' );?>
 
-        <?php $terms = hybrid_post_terms( array( 'taxonomy'   => $taxonomy ) ); 
-        ?>
-
         <?php do_action ( 'anp_entry_footer_bottom' );?>
 
 	</footer><!-- .entry-footer -->
-
-	<?php endif; ?>
 
 	<?php do_action ( 'anp_entry_footer_after' );?>
 
