@@ -5,7 +5,7 @@ Theme URI: https://plan.glocal.coop/projects/anp-network-main-theme
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: A theme for the main site of an ANP network, based on _s with Hybrid Core and Bootstrap
-Version: 2.0.30
+Version: 2.0.31
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main
@@ -10129,6 +10129,7 @@ textarea {
 .category a,
 .cat-links a,
 a.tag,
+.tag > a,
 .entry-terms a, #buddypress #item-header-cover-image #item-meta .activity, #buddypress .highlight, #buddypress .bbp-topic-tags a, #buddypress .tags-cell a, #buddypress .bbp-reply-permalink,
 #buddypress span.time-since, #buddypress #invite-anyone-invite-list .item-meta .activity {
   display: inline;
@@ -10145,6 +10146,7 @@ a.tag,
   .category a:visited,
   .cat-links a:visited,
   a.tag:visited,
+  .tag > a:visited,
   .entry-terms a:visited, #buddypress #item-header-cover-image #item-meta .activity:visited, #buddypress .highlight:visited, #buddypress .bbp-topic-tags a:visited, #buddypress .tags-cell a:visited, #buddypress .bbp-reply-permalink:visited,
   #buddypress span.time-since:visited, #buddypress #invite-anyone-invite-list .item-meta .activity:visited {
     color: #fff; }
@@ -10152,6 +10154,7 @@ a.tag,
   .category a:empty,
   .cat-links a:empty,
   a.tag:empty,
+  .tag > a:empty,
   .entry-terms a:empty, #buddypress #item-header-cover-image #item-meta .activity:empty, #buddypress .highlight:empty, #buddypress .bbp-topic-tags a:empty, #buddypress .tags-cell a:empty, #buddypress .bbp-reply-permalink:empty,
   #buddypress span.time-since:empty, #buddypress #invite-anyone-invite-list .item-meta .activity:empty {
     display: none; }
@@ -10239,6 +10242,21 @@ a.tag,
   a.tag, .ow-button-base a
   a.tag, #secondary .sow-cta-base .ow-button-base a
   a.tag, .btn
+  .tag > a, .home .entry.intro-content button
+  .tag > a, .home article.intro-content.handbook button
+  .tag > a, button
+  .tag > a,
+  .button:not(.wpb_button_a)
+  .tag > a,
+  input[type="button"]
+  .tag > a,
+  input[type="reset"]
+  .tag > a,
+  input[type="submit"]
+  .tag > a, .wpb_button
+  .tag > a, .ow-button-base a
+  .tag > a, #secondary .sow-cta-base .ow-button-base a
+  .tag > a, .btn
   .entry-terms a,
   .entry-terms .btn a, .home .entry.intro-content button
   .entry-terms a,
@@ -10354,6 +10372,7 @@ a.tag,
 .category a,
 .cat-links a,
 a.tag,
+.tag > a,
 .entry-terms a, #buddypress #item-header-cover-image #item-meta .activity, #buddypress .bbp-topic-tags a, #buddypress .tags-cell a, #buddypress .bbp-reply-permalink,
 #buddypress span.time-since, #buddypress #invite-anyone-invite-list .item-meta .activity {
   background-color: #a3a6a8; }
@@ -10361,11 +10380,13 @@ a.tag,
   .category a[href]:hover,
   .cat-links a[href]:hover,
   a[href].tag:hover,
+  .tag > a[href]:hover,
   .entry-terms a[href]:hover, #buddypress #item-header-cover-image #item-meta [href].activity:hover, #buddypress .bbp-topic-tags a[href]:hover, #buddypress .tags-cell a[href]:hover, #buddypress [href].bbp-reply-permalink:hover,
   #buddypress span[href].time-since:hover, #buddypress #invite-anyone-invite-list .item-meta [href].activity:hover, .tags a[href]:focus,
   .category a[href]:focus,
   .cat-links a[href]:focus,
   a[href].tag:focus,
+  .tag > a[href]:focus,
   .entry-terms a[href]:focus, #buddypress #item-header-cover-image #item-meta [href].activity:focus, #buddypress .bbp-topic-tags a[href]:focus, #buddypress .tags-cell a[href]:focus, #buddypress [href].bbp-reply-permalink:focus,
   #buddypress span[href].time-since:focus, #buddypress #invite-anyone-invite-list .item-meta [href].activity:focus {
     background-color: #898d8f; }
@@ -10379,6 +10400,7 @@ a.tag,
 .category a,
 .cat-links a,
 a.tag,
+.tag > a,
 .entry-terms a {
   color: #fff; }
   .tags a:hover, .tags a:focus,
@@ -10388,6 +10410,8 @@ a.tag,
   .cat-links a:focus,
   a.tag:hover,
   a.tag:focus,
+  .tag > a:hover,
+  .tag > a:focus,
   .entry-terms a:hover,
   .entry-terms a:focus {
     background-color: #a3a6a8;
@@ -13689,18 +13713,18 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .taxonomy-proposal_status article.handbook .article-footer {
   display: none; }
 
-.single-meeting article p.meta,
-.single-proposal article p.meta,
-.single-agenda article p.meta,
-.single-summary article p.meta,
-.singular-meeting article p.meta,
-.singular-proposal article p.meta,
-.singular-agenda article p.meta,
-.singular-meeting article p.meta {
+.single-meeting article .meta,
+.single-proposal article .meta,
+.single-agenda article .meta,
+.single-summary article .meta,
+.singular-meeting article .meta,
+.singular-proposal article .meta,
+.singular-agenda article .meta,
+.singular-meeting article .meta {
   margin: 0 .5em 0 0;
   font-size: 14px;
   font-size: 0.875rem;
-  display: inline-block; }
+  /*display: inline-block;*/ }
 
 .single-meeting article header .meta,
 .single-proposal article header .meta,

@@ -2,12 +2,6 @@
 MEETINGS ARCHIVE & SINGLE STYLES
 *********************/
 
-// <ul class="sort js-menu">
-// <li class="is-on" data-sort="id">Most Recently Added</li>
-// <li data-sort="slug">Alphabetically</li>
-// <li data-sort="posts">Most Active</li>
-// </ul>
-
 // Meetings List - Archive
 .archive-meeting,
 .archive-agenda,
@@ -53,7 +47,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
     }
 
     .entry {
-        
+
         p.meta {
             margin-bottom: 0;
         }
@@ -69,11 +63,9 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 margin-bottom: 0;
 
                 a {
-
                     &:hover,
                     &:focus {}
                 }
-
 
                 &.agenda-link {
                     @include icon-font(list, before);
@@ -104,8 +96,8 @@ MEETINGS ARCHIVE & SINGLE STYLES
     }
 
 
-    
-  
+
+
 }
 
 // Single Post
@@ -117,13 +109,13 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .singular-proposal,
 .singular-agenda,
 .singular-meeting, {
-    
+
     article {
-        
-        p.meta {
+
+        .meta {
             margin: 0 .5em 0 0;
             @include font-size($small);
-            display: inline-block;
+            /*display: inline-block;*/
         }
 
         header {
@@ -131,7 +123,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 @include font-size($h6);
             }
         }
-        
+
         .entry-content {
             margin-top: .5em;
 
@@ -146,7 +138,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 &:first-child {
                     padding-top: 0;
                 }
-                
+
             }
             h3 {
                 @include font-size($h4);
@@ -155,31 +147,31 @@ MEETINGS ARCHIVE & SINGLE STYLES
             h4 {
                 @include font-size($h5);
             }
-            
+
             p, li, dt, dd {
                 @include font-size($h6);
             }
-            
+
             li {
                 margin-bottom: .25em;
             }
-                        
+
             ul {
                 padding: 0 0 0 .75em;
-                
+
                 &>li {
                     font-weight: bold;
                 }
-                
+
                 ul li {
                     font-weight: normal;
                 }
-                
+
                 ul,
                 ul ul,
                 ul ul ul {
                     padding-left: .25em;
-                    
+
                 }
             }
 
@@ -223,17 +215,17 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 }
 
             }
-            
+
         }
 
         .byline {
             display: none;
         }
-        
+
         .entry-footer {
             margin: 1em 0 .5em 0;
             padding: .5em 0;
-            
+
             .meta {
                 margin-top: .5em;
                 padding-top: .75em;
@@ -242,15 +234,15 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 border-top: 1px solid $color__light-grey;
                 border-bottom: 1px solid $color__light-grey;
             }
-            
+
             h3 {
                 @include font-size($h4);
                 margin: 0 0 .25em 0;
             }
-            
+
             ul {
                 padding: 0 0 0 .75em;
-                
+
                 li {
                     list-style: square;
                     @include font-size($h6);
@@ -263,7 +255,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
                 }
             }
 
-            
+
         }
 
         .article-footer {
@@ -271,7 +263,7 @@ MEETINGS ARCHIVE & SINGLE STYLES
             display: none;
 
         }
-    
+
     }
 
 }
@@ -287,5 +279,3 @@ MEETINGS ARCHIVE & SINGLE STYLES
 .hentry {}          /* hentry class */
 .category-slug {}   /* style by category (i.e. category-videos) */
 .tag-slug {}        /* style by tag (i.e. tag-news) */
-
-

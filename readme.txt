@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 2.0.30
+Stable tag: 2.0.31
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 2.0.31 - Aug 24, 2016 =
+*[Feature #1524] Added templates and updated styles in support of Meetings.
 
 = 2.0.30 - July 25, 2016 =
 * Updated multi-site directory markup and styles.
@@ -89,7 +92,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 = 2.0.20 - June, 20 2016 =
 * Added theme support for Hybrid Core 'get-the-image'
 * Added `posts-list` class to index and archive templates
-* Globally changed template action hooks to `anp_*` instead of `anp_network_main_` 
+* Globally changed template action hooks to `anp_*` instead of `anp_network_main_`
 * Properly hid sidebar for full and grid layouts
 
 = 2.0.19 - June, 16 2016 =
@@ -118,7 +121,7 @@ Activist Network Theme includes support for Jetpack's Infinite Scroll and Site L
 * Added group status class to header so public, private and hidden can be customized
 * Changed "favorite" to "like" because it's better understood by users (thanks facebook :/ )
 * Updated some functions, mixins and color variables.
-* Added `group-type` and `member-count` mark-up to groups list 
+* Added `group-type` and `member-count` mark-up to groups list
 
 = 2.0.16 - May 24 2016 =
 * Issue #1408 - Updated BuddyPress styles to force consistency across child themes.
